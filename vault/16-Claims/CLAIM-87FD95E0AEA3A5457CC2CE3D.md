@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:87FD95E0AEA3A5457CC2CE3D
+title: 'CVE:CVE-2024-7347: description'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2024-7347: description'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2024-7347: description
+
+`CLAIM:87FD95E0AEA3A5457CC2CE3D` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2024-7347|CVE-2024-7347]]. Predicate: `description`.
+
+```json
+"NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-98AA650589527FE324CA3595|CVE-2024-7347]]
+
+Locator: EVIDENCE:98AA650589527FE324CA3595: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:26:31+00:00. Truy xuất: 2026-11-25T02:26:27+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

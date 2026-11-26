@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:0202F0A901783E3BE7EAD6F2",
+    "claim_value": "\"Use-after-free in HTTP/3\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:54+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F"
+    ],
+    "id": "CLAIM:0202F0A901783E3BE7EAD6F2",
+    "name": "CVE:CVE-2026-121810: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T02:26:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:54+00:00",
+  "entity_id": "CLAIM:0202F0A901783E3BE7EAD6F2",
+  "id": "HISTORY:5A801538FDAC7A71B653FA14"
+}

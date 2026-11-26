@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:FA87C3DDAF37F4F6CE2E5159"
+    ],
+    "created_at": "2026-11-25T02:27:26+00:00",
+    "description": "CVE:CVE-2026-1642 distribution_fix PACKAGE:86435E2E2CBAB06471C6999E",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:FBFE6AED95101EEB986D9EFF",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:86435E2E2CBAB06471C6999E",
+    "predicate": "distribution_fix",
+    "rationale": "Legacy association: Distribution-specific package statement. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Distribution-specific package statement",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:A54E83700B231ECBE004319A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T04:13:10+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:FA87C3DDAF37F4F6CE2E5159"
+    ],
+    "created_at": "2026-11-25T02:27:26+00:00",
+    "description": "CVE:CVE-2026-1642 distribution_fix PACKAGE:86435E2E2CBAB06471C6999E",
+    "entity_type": "Relationship",
+    "id": "REL:FBFE6AED95101EEB986D9EFF",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:86435E2E2CBAB06471C6999E",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A54E83700B231ECBE004319A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:10+00:00",
+  "entity_id": "REL:FBFE6AED95101EEB986D9EFF",
+  "id": "HISTORY:A4666DF0D40D6C46F18EE310"
+}

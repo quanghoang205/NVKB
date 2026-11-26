@@ -1,0 +1,37 @@
+{
+  "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "claim_refs": [
+    "CLAIM:2D216E2C9815DE30CF36CA16",
+    "CLAIM:A18FBB156E31B6FD874DF25A",
+    "CLAIM:C2D971CF38DCB1C27DE6DD3E",
+    "CLAIM:2850E45759388D21B168C2A8",
+    "CLAIM:CF89298AFFA4507E084632EE",
+    "CLAIM:681D6940336C91D7C5194DC0",
+    "CLAIM:41D545C22944E3E3B4134C2D",
+    "CLAIM:9A06AD3D40DE19E7C40E6678"
+  ],
+  "created_at": "2026-11-25T02:32:43+00:00",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.",
+  "description": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.",
+  "diagram": "",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+  "learning_objectives": [
+    "Giải thích ngx_http_rewrite_module bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "ngx_http_rewrite_module",
+  "normal_behavior": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:8C4CFCAEA38B3A1A6F92A183"
+  ],
+  "updated_at": "2026-11-25T04:13:03+00:00",
+  "verification_status": "INFERRED"
+}

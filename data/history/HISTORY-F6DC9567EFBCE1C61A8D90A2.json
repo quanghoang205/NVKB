@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:3A9D9020154783D5CA5BFE33",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:96504E1359EE545DA5EA027E",
+    "claim_value": "\"CNA mô tả xử lý CRLF không đúng từ DNS response dẫn đến header injection. Phân tích giữ ở ranh giới dữ liệu/cú pháp, không cung cấp chuỗi đầu vào.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:16:34+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7D52DA84713F311C08E1FB9A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:96504E1359EE545DA5EA027E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-28753: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:16:34+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7D52DA84713F311C08E1FB9A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T05:16:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:16:34+00:00",
+  "entity_id": "CLAIM:96504E1359EE545DA5EA027E",
+  "id": "HISTORY:F6DC9567EFBCE1C61A8D90A2"
+}

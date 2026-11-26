@@ -1,0 +1,70 @@
+{
+  "answer_explanations": "Nó là dữ liệu đề xuất trong handshake, chưa phải kết quả xác thực và authorization của endpoint.",
+  "architecture_position": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "article_body": "Nguồn xác nhận: [[CLAIM-57A4F144F0087F859CE4E2CD|phạm vi tài liệu]].\n\n## Cơ chế và ownership\n\nPreread quan sát phần đầu connection để lấy metadata phục vụ quyết định định tuyến. Proxy chưa kết thúc TLS nên không có cùng chứng cứ với endpoint hoàn tất handshake. Buffer đầu vào, vị trí đã đọc và biến kết quả cần được giữ trong context connection; đọc thiếu dữ liệu phải dẫn đến chờ hoặc lỗi có kiểm soát, không để biến chưa xác định thành quyết định routing.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-E8A2065F039778F6967F868F|Claim của section]].\n\n## Invariant giữa hai bên\n\nDiễn giải: giá trị được proxy sử dụng và ý nghĩa backend gán cho cùng ClientHello phải tương thích trong phạm vi phiên bản giao thức. Metadata không phải chứng thư và không chứng minh quyền vào backend. Routing segmentation không nên dựa vào giả định rằng một biến parser có thể thay thế authentication ở đích.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-6DAAAEF71E240D400456826C|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nKhông terminate TLS cho phép backend giữ vai trò bảo mật đầu cuối nhưng làm proxy có ít thông tin đã xác thực hơn. Cần kiểm soát tập backend được định tuyến và policy độc lập tại backend. Giữ version support của backend trong tài liệu thiết kế. Đây là nguyên tắc phòng vệ, không là cấu hình workaround đã được vendor xác nhận cho một CVE.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-1F02C9AA00CB46FE6FCD5A19|Claim của section]].",
+  "assessment": "Vì sao tên SNI quan sát ở preread không chứng minh client được phép truy cập server đó?",
+  "claim_refs": [
+    "CLAIM:57A4F144F0087F859CE4E2CD",
+    "CLAIM:E8A2065F039778F6967F868F",
+    "CLAIM:6DAAAEF71E240D400456826C",
+    "CLAIM:1F02C9AA00CB46FE6FCD5A19"
+  ],
+  "created_at": "2026-11-25T02:32:56+00:00",
+  "curated_fields": [
+    "answer_explanations",
+    "article_body",
+    "assessment",
+    "claim_refs",
+    "curation_version",
+    "definition",
+    "description",
+    "diagram",
+    "editorial_maturity",
+    "editorial_review_note",
+    "learning_objectives",
+    "name",
+    "prerequisites",
+    "related_knowledge",
+    "research_claim_refs",
+    "source_refs",
+    "verification_limitations"
+  ],
+  "curation_version": "1.3.0",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "Module ssl_preread lấy thông tin từ ClientHello ở preread phase, không cần kết thúc TLS tại proxy; biến thu được có thể phục vụ routing.",
+  "description": "Module ssl_preread lấy thông tin từ ClientHello ở preread phase, không cần kết thúc TLS tại proxy; biến thu được có thể phục vụ routing.",
+  "diagram": "",
+  "editorial_maturity": "AI_REVIEWED",
+  "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+  "learning_objectives": [
+    "Phân biệt metadata ClientHello với identity đã được xác thực.",
+    "Giải thích yêu cầu nhất quán parser giữa proxy và backend."
+  ],
+  "name": "TLS preread — routing metadata và giới hạn tin cậy",
+  "normal_behavior": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "prerequisites": [
+    "PROTOCOL:TLS"
+  ],
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [
+    "PROTOCOL:TLS"
+  ],
+  "research_claim_refs": [
+    "CLAIM:57A4F144F0087F859CE4E2CD",
+    "CLAIM:E8A2065F039778F6967F868F",
+    "CLAIM:6DAAAEF71E240D400456826C",
+    "CLAIM:1F02C9AA00CB46FE6FCD5A19"
+  ],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:4BA76FA5ED0E407DE3B76040"
+  ],
+  "updated_at": "2026-11-25T05:15:05+00:00",
+  "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+  "verification_status": "INFERRED"
+}

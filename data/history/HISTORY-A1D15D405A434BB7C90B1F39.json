@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "description": "COMPONENT:MEMORY-POOL PARTICIPATES_IN COMPONENT:CONNECTION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:6DA4F8669AA2EFCE8425E361",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "PARTICIPATES_IN",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "PARTICIPATES_IN",
+    "rationale": "Pool gắn với lifetime đối tượng; scope của pool phải được phân biệt với socket.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject participates in object lifecycle",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:21:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:17+00:00",
+  "entity_id": "REL:6DA4F8669AA2EFCE8425E361",
+  "id": "HISTORY:A1D15D405A434BB7C90B1F39"
+}

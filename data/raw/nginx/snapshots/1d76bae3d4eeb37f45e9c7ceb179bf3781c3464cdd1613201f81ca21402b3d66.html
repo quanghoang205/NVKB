@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [nginx-announce] nginx security advisory (CVE-2024-7347)
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2024-7347%29&In-Reply-To=%3CBYAPR01MB5334473439FF990AF535437DA9872%40BYAPR01MB5334.prod.exchangelabs.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <LINK REL="Previous"  HREF="IZ4EX6IFVEXNNLBVLFXFYKNQR5BDWIWS.html">
+   <LINK REL="Next"  HREF="ITL3AOQSAJANFJXMM3VOVOIGOUADWFFK.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[nginx-announce] nginx security advisory (CVE-2024-7347)</H1>
+    <B>F5SIRT</B> 
+    <A HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2024-7347%29&In-Reply-To=%3CBYAPR01MB5334473439FF990AF535437DA9872%40BYAPR01MB5334.prod.exchangelabs.com%3E"
+       TITLE="[nginx-announce] nginx security advisory (CVE-2024-7347)">f5sirt at F5.com
+       </A><BR>
+    <I>Wed Aug 14 15:07:13 UTC 2024</I>
+    <P><UL>
+        <LI>Previous message (by thread): <A HREF="IZ4EX6IFVEXNNLBVLFXFYKNQR5BDWIWS.html">[nginx-announce] nginx-1.26.2
+</A></li>
+        <LI>Next message (by thread): <A HREF="ITL3AOQSAJANFJXMM3VOVOIGOUADWFFK.html">[nginx-announce] NGINX has moved to Github!
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#356">[ date ]</a>
+              <a href="thread.html#356">[ thread ]</a>
+              <a href="subject.html#356">[ subject ]</a>
+              <a href="author.html#356">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>
+A security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.
+ 
+The issue affects nginx 1.5.13+.
+The issue is fixed in 1.27.1, 1.26.2.
+ 
+Patch for the issue can be found here: <A HREF="https://nginx.org/download/patch.2024.mp4.txt">https://nginx.org/download/patch.2024.mp4.txt</A>
+ 
+Thanks to Nils Bars for the initial report.
+ 
+ 
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message (by thread): <A HREF="IZ4EX6IFVEXNNLBVLFXFYKNQR5BDWIWS.html">[nginx-announce] nginx-1.26.2
+</A></li>
+	<LI>Next message (by thread): <A HREF="ITL3AOQSAJANFJXMM3VOVOIGOUADWFFK.html">[nginx-announce] NGINX has moved to Github!
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#356">[ date ]</a>
+              <a href="thread.html#356">[ thread ]</a>
+              <a href="subject.html#356">[ subject ]</a>
+              <a href="author.html#356">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://mailman.nginx.org/mailman/listinfo/nginx-announce">More information about the nginx-announce
+mailing list</a><br>
+</body></html>

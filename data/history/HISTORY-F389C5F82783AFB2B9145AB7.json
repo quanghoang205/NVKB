@@ -1,0 +1,91 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:5DEB8014C341BE35357890C9",
+      "CLAIM:A1B7C779890BE13284E0DD94",
+      "CLAIM:CF0568F5EC23A1332C2819D6",
+      "CLAIM:7DE7C35B3E8D337642CEA73F",
+      "CLAIM:F814B1AF6B6225E3FAC62503",
+      "CLAIM:9A3AF95D2E9086CDC8F1F65B",
+      "CLAIM:0F417F14B72717121BEF2EF4",
+      "CLAIM:320ABAF1E3A39289B2BB897E"
+    ],
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cwe_id": "CWE-125",
+    "defensive_principles": "Kiểm tra biên ở mọi đường đọc và bảo đảm parser xử lý dữ liệu bị cắt ngắn.",
+    "definition": "Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.",
+    "description": "Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Đọc nhầm dữ liệu, crash hoặc lộ bộ nhớ theo advisory.",
+    "id": "WEAKNESS:CWE-125",
+    "learning_objectives": [
+      "Giải thích CWE-125 — Out-of-bounds read bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-125 — Out-of-bounds read",
+    "normal_behavior": "Index và offset được kiểm tra trong phạm vi đối tượng trước khi đọc.",
+    "related_failure_classes": "Out-of-bounds read",
+    "related_knowledge": [],
+    "safety_assumptions": "Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:A8E0CD4EC39541F68F84D25F",
+      "EVIDENCE:C64041668867A3477B753896",
+      "EVIDENCE:F43E09B91F0D0A09B4E42149",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:A3DC9A6BC75E4BB324A8F880",
+      "CLAIM:C2847A272B46BC3323078D15",
+      "CLAIM:C4341E2A589B67454006B5DB",
+      "CLAIM:103531E11950E195147E611D",
+      "CLAIM:1B08D4F3A491363FD90D1ADC",
+      "CLAIM:0ADAA8AE9812F2DD9BB19067",
+      "CLAIM:6BB5FC8945E9C1D4390D02E8",
+      "CLAIM:00917D5C0A9D77CA71C35B7E"
+    ],
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cwe_id": "CWE-125",
+    "defensive_principles": "Kiểm tra biên ở mọi đường đọc và bảo đảm parser xử lý dữ liệu bị cắt ngắn.",
+    "definition": "Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.",
+    "description": "Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Đọc nhầm dữ liệu, crash hoặc lộ bộ nhớ theo advisory.",
+    "id": "WEAKNESS:CWE-125",
+    "learning_objectives": [
+      "Giải thích CWE-125 — Out-of-bounds read bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-125 — Out-of-bounds read",
+    "normal_behavior": "Index và offset được kiểm tra trong phạm vi đối tượng trước khi đọc.",
+    "related_failure_classes": "Out-of-bounds read",
+    "related_knowledge": [],
+    "safety_assumptions": "Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:C64041668867A3477B753896",
+      "EVIDENCE:F43E09B91F0D0A09B4E42149",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "updated_at": "2026-11-25T02:32:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "WEAKNESS:CWE-125",
+  "id": "HISTORY:F389C5F82783AFB2B9145AB7"
+}

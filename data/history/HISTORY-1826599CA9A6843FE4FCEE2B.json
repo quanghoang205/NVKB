@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9DC579C7AD0F88ABE819C745",
+    "claim_value": "\"Chuyển tiếp HTTP request/response đến upstream.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4CC5D57B6B6573849287D7EB"
+    ],
+    "id": "CLAIM:9DC579C7AD0F88ABE819C745",
+    "name": "MODULE:NGX-HTTP-PROXY-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4CC5D57B6B6573849287D7EB"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:9DC579C7AD0F88ABE819C745",
+  "id": "HISTORY:1826599CA9A6843FE4FCEE2B"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:41+00:00",
+  "content_hash": "71dcc8e9c6fb168e09d59e81a3ff967e9ee2292bda36f64feecb3f51becd413e",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"9c97fc1b1cbdf27daa8fe6b6c4f43b8826aa3c2ac4bac53a252c80cbda20dffb\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/71dcc8e9c6fb168e09d59e81a3ff967e9ee2292bda36f64feecb3f51becd413e.json",
+  "retrieved_at": "2026-11-25T02:27:41+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28755.json"
+}

@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:6CDA8660C74316CA0EFAB996"
+    ],
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "description": "CVE:CVE-2026-56434 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:9B1F79572C3F778495B59C9D",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1729A41D4AF1446592600F42"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T02:28:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:30+00:00",
+  "entity_id": "REL:9B1F79572C3F778495B59C9D",
+  "id": "HISTORY:FAE5507651E8F2702348C8AB"
+}

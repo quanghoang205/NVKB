@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:51184D27F430B3B6DB406310",
+    "claim_value": "\"Privilege misconfiguration.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "id": "CLAIM:51184D27F430B3B6DB406310",
+    "name": "COMPONENT:PROCESS-PRIVILEGES: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "subject_entity_id": "COMPONENT:PROCESS-PRIVILEGES",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:51184D27F430B3B6DB406310",
+  "id": "HISTORY:14231E2F96ECC82D821F5699"
+}

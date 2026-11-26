@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:9B8AFC1B9D13A98964C2C548"
+    ],
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:2FAF6D999E86CCF5EE275E19",
+    "name": "Điều kiện được công bố — CVE-2026-120993",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:9B8AFC1B9D13A98964C2C548"
+    ],
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:2FAF6D999E86CCF5EE275E19",
+    "name": "Điều kiện được công bố — CVE-2026-120993",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "updated_at": "2026-11-25T02:26:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:2FAF6D999E86CCF5EE275E19",
+  "id": "HISTORY:A31BB9FB8D28B5E5CDD01C02"
+}

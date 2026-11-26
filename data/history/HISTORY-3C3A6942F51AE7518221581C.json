@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:06900A5B69F3353B6E27DD41"
+    ],
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "CVE:CVE-2026-123007 classified_as WEAKNESS:CWE-191",
+    "entity_type": "Relationship",
+    "id": "REL:80934A3A1A9FD9C2FE8F3409",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-191",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "REL:80934A3A1A9FD9C2FE8F3409",
+  "id": "HISTORY:3C3A6942F51AE7518221581C"
+}

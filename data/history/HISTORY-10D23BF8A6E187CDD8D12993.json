@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1F65F2C7D357F72C8C1547D3",
+    "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "id": "CLAIM:1F65F2C7D357F72C8C1547D3",
+    "name": "MODULE:NGX-HTTP-V2-MODULE: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+    "updated_at": "2026-11-25T02:32:41+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:41+00:00",
+  "entity_id": "CLAIM:1F65F2C7D357F72C8C1547D3",
+  "id": "HISTORY:10D23BF8A6E187CDD8D12993"
+}

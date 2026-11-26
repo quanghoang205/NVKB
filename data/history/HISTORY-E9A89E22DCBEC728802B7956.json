@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe",
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Chuyển tiếp HTTP request/response đến upstream.",
+    "document_title": "Module ngx_http_proxy_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:4CC5D57B6B6573849287D7EB",
+    "id": "EVIDENCE:4CC5D57B6B6573849287D7EB",
+    "local_snapshot_path": "data/raw/documentation/snapshots/4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe.html",
+    "name": "Module ngx_http_proxy_module",
+    "paraphrase": "Chuyển tiếp HTTP request/response đến upstream.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_proxy_module; topic=MODULE:NGX-HTTP-PROXY-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "EVIDENCE:4CC5D57B6B6573849287D7EB",
+  "id": "HISTORY:E9A89E22DCBEC728802B7956"
+}

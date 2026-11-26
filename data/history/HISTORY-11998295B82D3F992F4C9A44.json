@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:EAB260880EB2CEF4E49CA121"
+    ],
+    "created_at": "2026-11-25T02:26:27+00:00",
+    "description": "CVE:CVE-2024-35200 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:F80D3D076AF15C80B6F3338D",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B250179A33F97BECB42DB182"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:27+00:00",
+  "entity_id": "REL:F80D3D076AF15C80B6F3338D",
+  "id": "HISTORY:11998295B82D3F992F4C9A44"
+}

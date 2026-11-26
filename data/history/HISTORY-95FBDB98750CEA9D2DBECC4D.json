@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới URI, đường dẫn tài nguyên và cấu hình kiểm soát truy cập.",
+    "claim_refs": [
+      "CLAIM:6A4EB78ED792469443EA208E",
+      "CLAIM:B526034539F6FFB51DE32154",
+      "CLAIM:1EFB031009E3FC89838A91EE",
+      "CLAIM:2F723E3B6C092215AE6D2BC1",
+      "CLAIM:95EBE24E92FDFA0B1F321693",
+      "CLAIM:BEA78C16C7B22E916854FB74",
+      "CLAIM:CC408193ADA0153A4D64BA5F",
+      "CLAIM:9A4671690BEFD0A43B517B29"
+    ],
+    "created_at": "2026-11-25T02:32:09+00:00",
+    "defensive_principles": "Kiểm thử các trường hợp URI đại diện và kiểm tra sự tương tác giữa location, alias và rewrite.",
+    "definition": "Chọn cấu hình xử lý theo URI.",
+    "description": "Chọn cấu hình xử lý theo URI.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Request đi vào handler hoặc tài nguyên ngoài dự kiến.",
+    "id": "COMPONENT:LOCATION-MATCHING",
+    "learning_objectives": [
+      "Giải thích Location matching bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Location matching",
+    "normal_behavior": "NGINX xử lý location có exact match, prefix và regular expression theo quy tắc của core module; internal redirect có thể chọn lại location.",
+    "related_failure_classes": "Configuration policy bypass; path mapping error.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không giả định thứ tự dòng trong tệp luôn là thứ tự ưu tiên match.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới URI, đường dẫn tài nguyên và cấu hình kiểm soát truy cập.",
+    "source_refs": [
+      "EVIDENCE:E42B729D9B934D293D76DB8C"
+    ],
+    "updated_at": "2026-11-25T02:32:09+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:09+00:00",
+  "entity_id": "COMPONENT:LOCATION-MATCHING",
+  "id": "HISTORY:95FBDB98750CEA9D2DBECC4D"
+}

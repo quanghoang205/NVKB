@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6e7add725657d1d5b785b5acf7de93cdb253f387b5c797c331f0b7fe1a86a7e8",
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "description": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "document_title": "UDP",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C",
+    "id": "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C",
+    "local_snapshot_path": "data/raw/documentation/snapshots/6e7add725657d1d5b785b5acf7de93cdb253f387b5c797c331f0b7fe1a86a7e8.html",
+    "name": "UDP",
+    "paraphrase": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc768.html",
+    "updated_at": "2026-11-25T02:32:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:16+00:00",
+  "entity_id": "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C",
+  "id": "HISTORY:D0854242DC6350A840D5B539"
+}

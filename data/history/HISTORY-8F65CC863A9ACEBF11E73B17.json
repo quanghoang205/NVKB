@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:45520DA2744856A364242F83",
+    "claim_value": "\"OCSP result bypass in stream\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:43+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B86044C589898E6D9A035C45"
+    ],
+    "id": "CLAIM:45520DA2744856A364242F83",
+    "name": "CVE:CVE-2026-28755: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B86044C589898E6D9A035C45"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28755",
+    "updated_at": "2026-11-25T02:27:43+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:43+00:00",
+  "entity_id": "CLAIM:45520DA2744856A364242F83",
+  "id": "HISTORY:8F65CC863A9ACEBF11E73B17"
+}

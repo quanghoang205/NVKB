@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:A440503AE319F0CD606C3D28",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1EE5AEA73DF5EDD6813E44CE",
+    "claim_value": "\"Advisory gọi lỗi NULL pointer dereference; nguồn CNA mô tả worker termination. Việc giả định một context luôn tồn tại là mô hình lỗi khái niệm, không xác định nhánh mã gây ra nó.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:38+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B3BCCE5ED0DA5392D153C089"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1EE5AEA73DF5EDD6813E44CE",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-24989: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:08:38+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:B3BCCE5ED0DA5392D153C089"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T05:08:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:38+00:00",
+  "entity_id": "CLAIM:1EE5AEA73DF5EDD6813E44CE",
+  "id": "HISTORY:4F0CE223AD2F647C8E6CE2EE"
+}

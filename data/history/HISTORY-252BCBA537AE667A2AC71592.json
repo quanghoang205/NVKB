@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from WEAKNESS:CWE-190",
+    "entity_type": "Relationship",
+    "id": "REL:8C53468D3CB133BC1304B8CD",
+    "name": "learns_from",
+    "object_entity_id": "WEAKNESS:CWE-190",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8E30599D1D514858A998A326"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from WEAKNESS:CWE-190",
+    "entity_type": "Relationship",
+    "id": "REL:8C53468D3CB133BC1304B8CD",
+    "name": "learns_from",
+    "object_entity_id": "WEAKNESS:CWE-190",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:8C53468D3CB133BC1304B8CD",
+  "id": "HISTORY:252BCBA537AE667A2AC71592"
+}

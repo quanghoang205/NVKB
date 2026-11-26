@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:0CFCEEEE1C2B30FFCAE162DB"
+  ],
+  "created_at": "2026-11-25T02:26:34+00:00",
+  "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_mail_smtp_module that might allow an unauthenticated attacker to over-read NGINX SMTP authentication process memory; as a result, the server side may leak arbitrary bytes sent in a request to the authentication server. This issue happens during the NGINX SMTP authentication process and requires the attacker to make preparations against the target system to extract the leaked data. The issue affects NGINX only if (1) it is built with the ngx_mail_smtp_module, (2) the smtp_auth directive is configured with method \"none,\" and (3) the authentication server returns the \"Auth-Wait\" response header.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:42C2F152817565B7EDD05338",
+  "name": "Điều kiện được công bố — CVE-2025-53859",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:ED3FFFAC9D39C0D9C5057BC3"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

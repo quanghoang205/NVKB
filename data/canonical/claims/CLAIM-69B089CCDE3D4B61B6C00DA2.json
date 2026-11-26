@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:0A0CFA7776630E9CEA4899B7",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:69B089CCDE3D4B61B6C00DA2",
+  "claim_value": "\"1.29.2-1.31.5\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:37+00:00",
+  "description": "upstream_affected_expression",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:A71EC4E15514D61BE101A79A: li containing CVE-2026-90439",
+  "evidence_refs": [
+    "EVIDENCE:A71EC4E15514D61BE101A79A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:69B089CCDE3D4B61B6C00DA2",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-90439: upstream_affected_expression",
+  "observation_key": "OBSERVATION:FC28547BF85EEC4DAB19F1AA",
+  "observed_at": "2026-11-25T02:28:37+00:00",
+  "predicate": "upstream_affected_expression",
+  "product_scope": "CVE:CVE-2026-90439",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:10+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:A71EC4E15514D61BE101A79A"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-90439",
+  "updated_at": "2026-11-25T04:12:39+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:DD64D2DEF9D614FF61E8B38F",
+  "authority": "NGINX / F5",
+  "claim_id": "CLAIM:04713563C5E55DDA4423EBD3",
+  "claim_value": "\"worker_connections giới hạn số connection của một worker, bao gồm kết nối tới upstream; khả năng mở file descriptor và giới hạn hệ điều hành còn ràng buộc capacity thực tế.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:29:00+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "#worker_connections; #worker_rlimit_nofile; #worker_shutdown_timeout",
+  "evidence_refs": [
+    "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:04713563C5E55DDA4423EBD3",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "UNVERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CONTROL:RESOURCE-BOUNDS: v1.3:knowledge_fact",
+  "observed_at": "2026-11-25T05:29:00+00:00",
+  "predicate": "v1.3:knowledge_fact",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:29:01+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+  ],
+  "source_support_status": "SUPPORTED",
+  "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+  "updated_at": "2026-11-25T05:29:01+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "UNVERIFIED",
+  "version_scope": "Document snapshot 2026-11-25T02:49:05+00:00; CVE versions are scoped separately."
+}

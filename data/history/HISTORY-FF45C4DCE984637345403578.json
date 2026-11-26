@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:BDF733EC133D970E80AF30CB",
+    "claim_value": "\"http subsystem của NGINX; giữa input protocol và handler cấu hình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:31+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C0851D7E9E66145AD3D7C8EA"
+    ],
+    "id": "CLAIM:BDF733EC133D970E80AF30CB",
+    "name": "MODULE:NGX-HTTP-UWSGI-MODULE: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C0851D7E9E66145AD3D7C8EA"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-UWSGI-MODULE",
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:31+00:00",
+  "entity_id": "CLAIM:BDF733EC133D970E80AF30CB",
+  "id": "HISTORY:FF45C4DCE984637345403578"
+}

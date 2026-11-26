@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "claim_value": "\"Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:22+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "name": "CVE:CVE-2026-113425: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-113425",
+    "updated_at": "2026-11-25T02:40:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:23+00:00",
+  "entity_id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+  "id": "HISTORY:8866260E42477AF6827F8DBD"
+}

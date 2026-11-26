@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:F61C2B3FA697DC8E4ADE1330",
+    "claim_value": "\"Mỗi allocation có một đường ownership quyết định giải phóng; các đường lỗi không lặp cleanup.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:35+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "id": "CLAIM:F61C2B3FA697DC8E4ADE1330",
+    "name": "WEAKNESS:CWE-415: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-415",
+    "updated_at": "2026-11-25T02:32:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:35+00:00",
+  "entity_id": "CLAIM:F61C2B3FA697DC8E4ADE1330",
+  "id": "HISTORY:59E7CEFE6DF40265AFAD9CCA"
+}

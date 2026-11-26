@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:DD24E3716EC4E9EEC2E1FB4E",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:58B67A40031968C5E147348C",
+    "claim_value": "\"## So sánh đúng loại\\n\\nVersion Debian có thể chứa epoch, upstream phần chính và revision distribution; comparator hiểu quy tắc này, không cắt bỏ hậu tố để so SemVer. Ubuntu dùng họ so sánh Debian nhưng vẫn phải có dữ liệu package đúng Ubuntu release. RPM có quy tắc EVR riêng; comparator của NVKB từ chối caret ordering chưa hỗ trợ thay vì đoán.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:12+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:58B67A40031968C5E147348C",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:BACKPORT: pilot_section:So sánh đúng loại",
+    "observed_at": "2026-11-25T04:21:13+00:00",
+    "predicate": "pilot_section:So sánh đúng loại",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T04:21:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:13+00:00",
+  "entity_id": "CLAIM:58B67A40031968C5E147348C",
+  "id": "HISTORY:CFBA1DC9043D904D51CD37D2"
+}

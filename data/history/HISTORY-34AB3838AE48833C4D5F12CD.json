@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CCF7BB5E5C9D7652506FF72A",
+    "claim_value": "\"Master có thể cần quyền tạo tài nguyên; worker sử dụng user/group cấu hình. Quyền thực tế phụ thuộc cách vận hành dịch vụ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "id": "CLAIM:CCF7BB5E5C9D7652506FF72A",
+    "name": "COMPONENT:PROCESS-PRIVILEGES: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "subject_entity_id": "COMPONENT:PROCESS-PRIVILEGES",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:CCF7BB5E5C9D7652506FF72A",
+  "id": "HISTORY:34AB3838AE48833C4D5F12CD"
+}

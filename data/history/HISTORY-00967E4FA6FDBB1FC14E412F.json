@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:FA1434A2088840F18AEF4EEF",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1945CB2CD633DBCEFE235982",
+    "claim_value": "\"## Session không đồng nhất connection\\n\\nConnection mới có thể dùng state từ một lần trao đổi trước để thiết lập khóa qua PSK resumption. RFC 8446 §2.2 và §4.6.1 mô tả vé và handshake tiếp theo. [[CLAIM-7EBD5B4A979DE0E75612046B|nhận định nguồn: CLAIM:7EBD5B4A979DE0E75612046B]] NewSessionTicket là message sau handshake, còn ticket là dữ liệu opaque cho client; server có thể dùng nó làm khóa tra cứu hoặc dữ liệu được bảo vệ tự chứa context. Không mặc định mọi ticket có cùng cấu trúc nội bộ.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:59+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1945CB2CD633DBCEFE235982",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:TLS-SESSION-LIFECYCLE: pilot_section:Session không đồng nhất connection",
+    "observed_at": "2026-11-25T04:21:00+00:00",
+    "predicate": "pilot_section:Session không đồng nhất connection",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "updated_at": "2026-11-25T04:21:00+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:00+00:00",
+  "entity_id": "CLAIM:1945CB2CD633DBCEFE235982",
+  "id": "HISTORY:00967E4FA6FDBB1FC14E412F"
+}

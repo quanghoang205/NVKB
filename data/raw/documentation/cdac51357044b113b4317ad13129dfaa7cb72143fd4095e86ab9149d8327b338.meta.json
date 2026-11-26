@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:51+00:00",
+  "content_hash": "fc5154bbeaed8a98e6fff9f11e95761ef008db2fe2874481a8bce3329c8e8599",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac73-8cb\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:39 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/fc5154bbeaed8a98e6fff9f11e95761ef008db2fe2874481a8bce3329c8e8599.html",
+  "retrieved_at": "2026-11-25T02:32:51+00:00",
+  "source_url": "https://nginx.org/en/docs/mail/ngx_mail_smtp_module.html"
+}

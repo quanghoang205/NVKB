@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:FEF11B5F7295CFA061B9B028",
+      "CLAIM:A14FFA0BB129452B7BE7A65B",
+      "CLAIM:B6F74D127EF3C0F71287A508",
+      "CLAIM:90B753E0A63B329E4A7051F1",
+      "CLAIM:5994777577706D26829EC147",
+      "CLAIM:AC00721D6820AB2D5E173A2A",
+      "CLAIM:7CBCF29E944C4CDA5D5D9A2B",
+      "CLAIM:474A89BCA14CA7F1AEC4FE97"
+    ],
+    "created_at": "2026-11-25T02:32:54+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "description": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_auth_http_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_auth_http_module",
+    "normal_behavior": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:FEF11B5F7295CFA061B9B028",
+      "CLAIM:A14FFA0BB129452B7BE7A65B",
+      "CLAIM:B6F74D127EF3C0F71287A508",
+      "CLAIM:90B753E0A63B329E4A7051F1",
+      "CLAIM:5994777577706D26829EC147",
+      "CLAIM:AC00721D6820AB2D5E173A2A",
+      "CLAIM:7CBCF29E944C4CDA5D5D9A2B",
+      "CLAIM:474A89BCA14CA7F1AEC4FE97"
+    ],
+    "created_at": "2026-11-25T02:32:54+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "description": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_auth_http_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_auth_http_module",
+    "normal_behavior": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+  "id": "HISTORY:CAC5F3A779ACF354AA50C058"
+}

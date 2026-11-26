@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:CF4F61C3B6DD32688EB91E57",
+    "claim_value": "\"Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "id": "CLAIM:CF4F61C3B6DD32688EB91E57",
+    "name": "WEAKNESS:CWE-789: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-789",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:CF4F61C3B6DD32688EB91E57",
+  "id": "HISTORY:6CA684B0E5D6F067F10E90A3"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_refs": [
+    "CLAIM:E1873C7756FC30FC51F113F2"
+  ],
+  "created_at": "2026-11-25T02:26:16+00:00",
+  "description": "CVE:CVE-2024-31079 distribution_fix PACKAGE:5DF98E687CBD9950679F038E",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:7CC4BCA26DF7BBE0434EBA88",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "distribution_fix",
+  "object_entity_id": "PACKAGE:5DF98E687CBD9950679F038E",
+  "predicate": "distribution_fix",
+  "rationale": "Legacy association: Distribution-specific package statement. Source references alone do not establish causation.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Distribution-specific package statement",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:FC5331713F2C199DADA7F56B"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-31079",
+  "updated_at": "2026-11-25T04:13:08+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy evidence scope; no all-version generalization"
+}

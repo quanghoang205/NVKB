@@ -1,0 +1,151 @@
+{
+  "action": "created",
+  "after": {
+    "affected_feature_description": "SSL upstream injection",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:D281B5ED6525F41E985742FC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:16C95B30018E555CFFCD6EE6",
+      "CLAIM:26F478BFC9E21C155CA8EA98",
+      "CLAIM:2A5D2C4271E968DD06C28C48",
+      "CLAIM:2DA597839292D6289F7C42F3",
+      "CLAIM:351561FBD0B0CF1FDA1F9ECD",
+      "CLAIM:388C85CDECF45A0458BDE178",
+      "CLAIM:507D6AA3C4D00A0197534E9E",
+      "CLAIM:51CB66772074A24425BE994F",
+      "CLAIM:58497CFA25AF0F267DA75989",
+      "CLAIM:603A487AACE3AF2E6DDC102B",
+      "CLAIM:65B8322486B57304034AD337",
+      "CLAIM:73C977348852BBABF39CF8F4",
+      "CLAIM:7B6D745D78463AF56ACF68F8",
+      "CLAIM:7CDAD61A218D9AD0BBBC543A",
+      "CLAIM:7DC76CA0AA381DBBA48415E4",
+      "CLAIM:877348593948455174FE76FF",
+      "CLAIM:89AB71FA615C2334090F6123",
+      "CLAIM:8BF50B9381BBDE86CEF42942",
+      "CLAIM:9907A80B33B5AA79B2D5145D",
+      "CLAIM:9C8ED2BB890EBCD8C3DAB4F3",
+      "CLAIM:BC550A18312866406E2D7C09",
+      "CLAIM:EEB577D7E73BD34D340BFE9C"
+    ],
+    "condition_refs": [
+      "CONDITION:0E18BE574BDBD97058FB972B"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "cve_id": "CVE-2026-1642",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:08201E39CFAC9A859D35B562",
+      "PACKAGE:86435E2E2CBAB06471C6999E",
+      "PACKAGE:4F5B82E4DF9CEA128C7532AE",
+      "PACKAGE:3E2361D4F4CD950219396E33"
+    ],
+    "distribution_status": [
+      "PACKAGE:08201E39CFAC9A859D35B562",
+      "PACKAGE:86435E2E2CBAB06471C6999E",
+      "PACKAGE:4F5B82E4DF9CEA128C7532AE",
+      "PACKAGE:3E2361D4F4CD950219396E33"
+    ],
+    "documented_configuration_context": "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-1642 ghi nhận: SSL upstream injection. Phạm vi upstream: 1.3.0-1.29.4. Bản sửa được công bố: 1.29.5+, 1.28.2+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.2",
+      "VERSION:NGINX-1.29.5"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.2",
+      "VERSION:NGINX-1.29.5"
+    ],
+    "id": "CVE:CVE-2026-1642",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-02-05T05:25:39.303000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-1642",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-02-04T15:02:06.154000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:85EF870D5E0B32AC0466D7DF"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-349"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: SSL upstream injection. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:0FD3323C032C4375ACC14382",
+      "SEVERITY:4B00F8AF700263B2001FF513",
+      "SEVERITY:74EC33CB080AEC61DC6D069A",
+      "SEVERITY:9ECD47964CD603C47A74C306",
+      "SEVERITY:B2AA8996D4DAE356F42339FE"
+    ],
+    "source_refs": [
+      "EVIDENCE:379925BC759F8C386C7E131C",
+      "EVIDENCE:390C6877B8808296F820D86C",
+      "EVIDENCE:7DB98717E0F189C8F1B33024",
+      "EVIDENCE:9474EFFCFC5405DF9D3DC4BF",
+      "EVIDENCE:A2BCF524D9999A4A889B1918",
+      "EVIDENCE:B02977874051A26F86F71669",
+      "EVIDENCE:BBCDF7FEBA69B07CE7B151BE",
+      "EVIDENCE:D7320C1149DE577A4D797353"
+    ],
+    "title": "SSL upstream injection",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [
+      "CONFLICT:1F647D4CE80BDAD1D5C6FEB8",
+      "CONFLICT:45BFB32D8AC61C9C33E22087"
+    ],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:27:26+00:00",
+    "upstream_affected_expression": "1.3.0-1.29.4",
+    "upstream_unaffected_expression": "1.29.5+, 1.28.2+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "CONFLICTED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:26+00:00",
+  "entity_id": "CVE:CVE-2026-1642",
+  "id": "HISTORY:5640545FBAB804CF4B7234E5"
+}

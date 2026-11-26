@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "f34fbf6f7be13551de8b31ff5e843a1d1cfe22553f344653df6d8de49f0f395d",
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "document_title": "Module ngx_http_mp4_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:75862F23DA8A4FFDD6B7CFA1",
+    "id": "EVIDENCE:75862F23DA8A4FFDD6B7CFA1",
+    "local_snapshot_path": "data/raw/documentation/snapshots/f34fbf6f7be13551de8b31ff5e843a1d1cfe22553f344653df6d8de49f0f395d.html",
+    "name": "Module ngx_http_mp4_module",
+    "paraphrase": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:42+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_mp4_module; topic=MODULE:NGX-HTTP-MP4-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_mp4_module.html",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "EVIDENCE:75862F23DA8A4FFDD6B7CFA1",
+  "id": "HISTORY:17F5E9154D4C0359D6514EDB"
+}

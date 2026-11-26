@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:EF0D562A59F60FA12140E39E",
+    "claim_value": "\"CVE-2024-31079\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "id": "CLAIM:EF0D562A59F60FA12140E39E",
+    "name": "CVE:CVE-2024-31079: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "CLAIM:EF0D562A59F60FA12140E39E",
+  "id": "HISTORY:D9732BE38686C80058259C2B"
+}

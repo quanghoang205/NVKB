@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "08a99d935b64893096fab6d430e7b5ffdf0c0b9b99fb280f0d4e29beba10bba7",
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.",
+    "document_title": "CVSS v4.0 Specification Document",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:8670D43F5B9389833DFC54A0",
+    "id": "EVIDENCE:8670D43F5B9389833DFC54A0",
+    "local_snapshot_path": "data/raw/documentation/snapshots/08a99d935b64893096fab6d430e7b5ffdf0c0b9b99fb280f0d4e29beba10bba7.html",
+    "name": "CVSS v4.0 Specification Document",
+    "paraphrase": "Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.",
+    "publisher": "FIRST",
+    "retrieved_at": "2026-11-25T02:33:04+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Overview / documented record",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.first.org/cvss/v4.0/specification-document",
+    "updated_at": "2026-11-25T02:33:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:04+00:00",
+  "entity_id": "EVIDENCE:8670D43F5B9389833DFC54A0",
+  "id": "HISTORY:218A87811D632BF5FE22A99A"
+}

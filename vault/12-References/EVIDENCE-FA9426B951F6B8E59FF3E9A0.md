@@ -1,0 +1,35 @@
+---
+entity_type: evidence
+id: EVIDENCE:FA9426B951F6B8E59FF3E9A0
+title: "CWE -\r\n\n    CWE-190: Integer Overflow or Wraparound (5.0)"
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- "CWE -\r\n\n    CWE-190: Integer Overflow or Wraparound (5.0)"
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CWE -
+
+    CWE-190: Integer Overflow or Wraparound (5.0)
+
+Kết quả số học vượt miền biểu diễn của kiểu số.
+
+- Nguồn: [MITRE CWE](https://cwe.mitre.org/data/definitions/190.html)
+- Authority gốc: MITRE CWE
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Description / Potential Mitigations`
+
+- Truy xuất: 2026-11-25T02:32:37+00:00
+- SHA-256: `182758f7fce9f0f03cd89ef49ca78012c087d4527b53bf20597fecd74918c63e`
+- Snapshot từ project root: `data/raw/documentation/snapshots/182758f7fce9f0f03cd89ef49ca78012c087d4527b53bf20597fecd74918c63e.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

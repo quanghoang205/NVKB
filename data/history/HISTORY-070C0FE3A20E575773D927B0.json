@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1BA208C9F2F8D003D7B18784",
+    "claim_value": "[\"1.30.5\", \"1.31.6\"]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "description": "upstream_fixed_releases",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A71EC4E15514D61BE101A79A"
+    ],
+    "id": "CLAIM:1BA208C9F2F8D003D7B18784",
+    "name": "CVE:CVE-2026-90439: upstream_fixed_releases",
+    "predicate": "upstream_fixed_releases",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A71EC4E15514D61BE101A79A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-90439",
+    "updated_at": "2026-11-25T02:28:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:37+00:00",
+  "entity_id": "CLAIM:1BA208C9F2F8D003D7B18784",
+  "id": "HISTORY:070C0FE3A20E575773D927B0"
+}

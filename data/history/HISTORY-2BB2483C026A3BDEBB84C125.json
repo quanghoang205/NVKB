@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:E742E73EA122C2D8D6C2FD53",
+    "claim_value": "\"Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "id": "CLAIM:E742E73EA122C2D8D6C2FD53",
+    "name": "WEAKNESS:CWE-863: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "CLAIM:E742E73EA122C2D8D6C2FD53",
+  "id": "HISTORY:2BB2483C026A3BDEBB84C125"
+}

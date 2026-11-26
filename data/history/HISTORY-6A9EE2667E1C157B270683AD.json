@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:16+00:00",
+    "description": "COMPONENT:MASTER-PROCESS ASSESSED_BY LEARNING:PATH-01",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:DA6D625DEC85C0350A509600",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "ASSESSED_BY",
+    "object_entity_id": "LEARNING:PATH-01",
+    "predicate": "ASSESSED_BY",
+    "rationale": "Capstone yêu cầu vận dụng cơ chế này; đáp án và rubric nằm trong learning path.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Object contains assessment of subject",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:21:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:16+00:00",
+  "entity_id": "REL:DA6D625DEC85C0350A509600",
+  "id": "HISTORY:6A9EE2667E1C157B270683AD"
+}

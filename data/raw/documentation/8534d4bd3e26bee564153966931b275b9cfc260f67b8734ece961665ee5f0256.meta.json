@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:18:16+00:00",
+  "content_hash": "c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac70-da71\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:36 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4.html",
+  "retrieved_at": "2026-11-25T02:18:16+00:00",
+  "source_url": "https://nginx.org/en/docs/dev/development_guide.html"
+}

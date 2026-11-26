@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:ED733F7EEC8A1F4D86B131C4",
+    "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "id": "CLAIM:ED733F7EEC8A1F4D86B131C4",
+    "name": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:ED733F7EEC8A1F4D86B131C4",
+  "id": "HISTORY:2660590404C81BC16615DCFC"
+}

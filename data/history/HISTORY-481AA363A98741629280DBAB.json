@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "cwe_id": "CWE-823",
+    "description": "CWE-823: Use of Out-of-range Pointer Offset",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-823",
+    "name": "CWE-823",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "updated_at": "2026-11-25T02:28:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:23+00:00",
+  "entity_id": "WEAKNESS:CWE-823",
+  "id": "HISTORY:481AA363A98741629280DBAB"
+}

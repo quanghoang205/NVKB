@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "b7c9d87fca12b4fa0e81f84a991e20717fddcd435061f2d470846112ad40debc",
+    "created_at": "2026-11-25T02:49:01+00:00",
+    "description": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "document_title": "CWE -\r\n\n    CWE-835: Loop with Unreachable Exit Condition (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0062C4E072953C3410CED3E5",
+    "id": "EVIDENCE:0062C4E072953C3410CED3E5",
+    "local_snapshot_path": "data/raw/documentation/snapshots/b7c9d87fca12b4fa0e81f84a991e20717fddcd435061f2d470846112ad40debc.html",
+    "name": "CWE -\r\n\n    CWE-835: Loop with Unreachable Exit Condition (5.0)",
+    "paraphrase": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:49:01+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-835",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/835.html",
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:01+00:00",
+  "entity_id": "EVIDENCE:0062C4E072953C3410CED3E5",
+  "id": "HISTORY:AEEA0B4FF6B5F3EF6CADA5F5"
+}

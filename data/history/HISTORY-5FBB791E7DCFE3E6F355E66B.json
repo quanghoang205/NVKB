@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:327CB4712E6DDB60C4A46E65",
+    "claim_value": "\"Out-of-bounds access; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "id": "CLAIM:327CB4712E6DDB60C4A46E65",
+    "name": "COMPONENT:RESPONSE-BUFFERING: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "subject_entity_id": "COMPONENT:RESPONSE-BUFFERING",
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:12+00:00",
+  "entity_id": "CLAIM:327CB4712E6DDB60C4A46E65",
+  "id": "HISTORY:5FBB791E7DCFE3E6F355E66B"
+}

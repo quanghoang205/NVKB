@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "redhat-SADP",
+    "claim_id": "CLAIM:773D0463C069A4CBBDBA9A94",
+    "claim_value": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 7.5, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H\", \"version\": \"3.1\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:28+00:00",
+    "description": "severity:CIRCL mirror:redhat-SADP:3.1",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "id": "CLAIM:773D0463C069A4CBBDBA9A94",
+    "name": "CVE:CVE-2026-27651: severity:CIRCL mirror:redhat-SADP:3.1",
+    "predicate": "severity:CIRCL mirror:redhat-SADP:3.1",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T02:27:28+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:28+00:00",
+  "entity_id": "CLAIM:773D0463C069A4CBBDBA9A94",
+  "id": "HISTORY:D2229D33B8840C2DFEC6C83A"
+}

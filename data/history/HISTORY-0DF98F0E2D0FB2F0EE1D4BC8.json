@@ -1,0 +1,48 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:6C3CA3D211980E3F7CD8D8B6",
+    "claim_value": "\"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:11+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0F5E0F0BEDA42DD3016D3C1C",
+      "EVIDENCE:2F9CCE813050871069A738D5",
+      "EVIDENCE:3F321A701805CF3F6CD8D45D",
+      "EVIDENCE:4123724170DE61098087FBA4",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:71362C6FD38E82A400DFCC59",
+      "EVIDENCE:87D9A7069F362A007391E943",
+      "EVIDENCE:89A71DECA0CDA7465848AA99",
+      "EVIDENCE:99E9B5AAF5C505E7365C525F",
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "id": "CLAIM:6C3CA3D211980E3F7CD8D8B6",
+    "name": "CVE:CVE-2026-123640: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0F5E0F0BEDA42DD3016D3C1C",
+      "EVIDENCE:2F9CCE813050871069A738D5",
+      "EVIDENCE:3F321A701805CF3F6CD8D45D",
+      "EVIDENCE:4123724170DE61098087FBA4",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:71362C6FD38E82A400DFCC59",
+      "EVIDENCE:87D9A7069F362A007391E943",
+      "EVIDENCE:89A71DECA0CDA7465848AA99",
+      "EVIDENCE:99E9B5AAF5C505E7365C525F",
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:49:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:11+00:00",
+  "entity_id": "CLAIM:6C3CA3D211980E3F7CD8D8B6",
+  "id": "HISTORY:0DF98F0E2D0FB2F0EE1D4BC8"
+}

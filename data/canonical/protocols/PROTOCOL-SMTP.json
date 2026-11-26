@@ -1,0 +1,37 @@
+{
+  "architecture_position": "Kênh mail proxy ↔ mail backend.",
+  "claim_refs": [
+    "CLAIM:8F1D6E0CEF4925A00E24FAB3",
+    "CLAIM:36C88427E8FC8D70BDA57E22",
+    "CLAIM:C71830ABF78E56C7B06790EB",
+    "CLAIM:D0FA6AAAC9B38FA356F5A191",
+    "CLAIM:2122938B8CF18F4035BC28B6",
+    "CLAIM:4F3D5D30729887CD3E23C744",
+    "CLAIM:D4853368E59A49D074C35927",
+    "CLAIM:C503DF9CACF0C685DE63F019"
+  ],
+  "created_at": "2026-11-25T02:32:25+00:00",
+  "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+  "definition": "Giao thức chuyển tiếp thư theo command/reply.",
+  "description": "Giao thức chuyển tiếp thư theo command/reply.",
+  "diagram": "",
+  "entity_type": "Protocol",
+  "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+  "id": "PROTOCOL:SMTP",
+  "learning_objectives": [
+    "Giải thích SMTP bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "SMTP",
+  "normal_behavior": "Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư; parser phân biệt rõ chế độ command với dữ liệu.",
+  "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+  "related_knowledge": [],
+  "safety_assumptions": "Framing, authentication và thông tin chuyển tiếp phải nhất quán.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Kênh mail proxy ↔ mail backend.",
+  "source_refs": [
+    "EVIDENCE:1C89351EAC105E9377F3948E"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "INFERRED"
+}

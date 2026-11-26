@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:389F384D996F4E0260E3EDB9",
+      "CLAIM:3930DF0B0BCD896D4FA18994",
+      "CLAIM:0C253F1F4DC65FADED1E6B26",
+      "CLAIM:FB41F1C7C069810BFE5A4ECA",
+      "CLAIM:31665461C047939EB8708301",
+      "CLAIM:43C7020BC70F0FDE6BBE8EB3",
+      "CLAIM:C8BFCEBE1C52BCFD049A3BB7",
+      "CLAIM:7D8FC3FE137F215023C9A185"
+    ],
+    "created_at": "2026-11-25T02:33:07+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "description": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:ADVISORY",
+    "learning_objectives": [
+      "Giải thích Security advisory bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Security advisory",
+    "normal_behavior": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:4BEAF2797342B956FE14B3CA"
+    ],
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:E822DEDDE1CBD82BEE62BA82",
+      "CLAIM:53DAAF09CE6062BF251881DF",
+      "CLAIM:E1468423AE5F5947A3CCBC4C",
+      "CLAIM:36EACE678B55A484AFB59ABE",
+      "CLAIM:85A8559440E754FE259A8F04",
+      "CLAIM:DA0FEF5C4E8186F196D5D518",
+      "CLAIM:912A3E9348290DFA11908E26",
+      "CLAIM:322176810AFD9C9CBB71F1E5"
+    ],
+    "created_at": "2026-11-25T02:33:07+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "description": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:ADVISORY",
+    "learning_objectives": [
+      "Giải thích Security advisory bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Security advisory",
+    "normal_behavior": "Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:570365D44AC2D3327870962A"
+    ],
+    "updated_at": "2026-11-25T02:33:07+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CONCEPT:ADVISORY",
+  "id": "HISTORY:3A9874E41D449396950AD5AA"
+}

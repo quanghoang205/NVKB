@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-01 learns_from COMPONENT:MASTER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:A75F3BF9DF461FF77ED44B0A",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MASTER-PROCESS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-01 learns_from COMPONENT:MASTER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:A75F3BF9DF461FF77ED44B0A",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MASTER-PROCESS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:A75F3BF9DF461FF77ED44B0A",
+  "id": "HISTORY:C698C45A6D09D459B85229B7"
+}

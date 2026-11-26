@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:14FE5737E4E5544F734F961E",
+    "claim_value": "\"Handler đọc/ghi một phần dữ liệu, lưu offset và đăng ký chờ sự kiện tiếp theo khi socket chưa sẵn sàng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9B8ACCA74E379BD21D09B52D"
+    ],
+    "id": "CLAIM:14FE5737E4E5544F734F961E",
+    "name": "COMPONENT:NONBLOCKING-IO: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9B8ACCA74E379BD21D09B52D"
+    ],
+    "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:04+00:00",
+  "entity_id": "CLAIM:14FE5737E4E5544F734F961E",
+  "id": "HISTORY:BF8BEFF9167B893F3BA98042"
+}

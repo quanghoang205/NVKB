@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "f5",
+    "claim_id": "CLAIM:8B743493785CC8A5E2AE6673",
+    "claim_value": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "severity:CIRCL mirror:f5:3.1",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:22772223BB8A0147236E2BFA"
+    ],
+    "id": "CLAIM:8B743493785CC8A5E2AE6673",
+    "name": "CVE:CVE-2026-123634: severity:CIRCL mirror:f5:3.1",
+    "predicate": "severity:CIRCL mirror:f5:3.1",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:22772223BB8A0147236E2BFA"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "CLAIM:8B743493785CC8A5E2AE6673",
+  "id": "HISTORY:80309801B1AF06FE89676150"
+}

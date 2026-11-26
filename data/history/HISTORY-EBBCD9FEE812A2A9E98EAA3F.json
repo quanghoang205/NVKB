@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:A0330C739B8824DFB69D08EB",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:28+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:615DFFE187613A1CA1FF6541"
+    ],
+    "id": "CLAIM:A0330C739B8824DFB69D08EB",
+    "name": "PROTOCOL:IMAP: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:615DFFE187613A1CA1FF6541"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:32:28+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:28+00:00",
+  "entity_id": "CLAIM:A0330C739B8824DFB69D08EB",
+  "id": "HISTORY:EBBCD9FEE812A2A9E98EAA3F"
+}

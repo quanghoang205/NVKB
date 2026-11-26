@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "9c655729b340f926b29dd1d5ee5bd684acbc31d8025ba73498dfcccf6f604c44",
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "description": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "document_title": "CVE-2024-7347",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:FDDF8361C7CDD452453122B7",
+    "id": "EVIDENCE:FDDF8361C7CDD452453122B7",
+    "local_snapshot_path": "data/raw/cve/snapshots/9c655729b340f926b29dd1d5ee5bd684acbc31d8025ba73498dfcccf6f604c44.json",
+    "modified_at": "2025-11-03T20:56:24.679000+00:00",
+    "name": "CVE-2024-7347",
+    "paraphrase": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "published_at": "2024-08-14T14:32:33.913000+00:00",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:26:27+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/cveMetadata",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/7xxx/CVE-2024-7347.json",
+    "updated_at": "2026-11-25T02:26:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:31+00:00",
+  "entity_id": "EVIDENCE:FDDF8361C7CDD452453122B7",
+  "id": "HISTORY:C9531C13542E21182051FF00"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:47+00:00",
+  "content_hash": "4bfe1b8bdc2a5e7b2e7cd2b0334331c6214879996f1077f322c5433fb49de75e",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/4bfe1b8bdc2a5e7b2e7cd2b0334331c6214879996f1077f322c5433fb49de75e.html",
+  "retrieved_at": "2026-11-25T02:26:47+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-120967"
+}

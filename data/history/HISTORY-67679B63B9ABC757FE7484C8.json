@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D7E315FC1B601C6ACD7642E8",
+    "claim_value": "\"Thành phần nhận request client và chuyển tới upstream rồi trả response.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "id": "CLAIM:D7E315FC1B601C6ACD7642E8",
+    "name": "COMPONENT:REVERSE-PROXY: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "subject_entity_id": "COMPONENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:D7E315FC1B601C6ACD7642E8",
+  "id": "HISTORY:67679B63B9ABC757FE7484C8"
+}

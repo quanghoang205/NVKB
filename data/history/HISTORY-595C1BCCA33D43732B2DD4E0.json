@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:694C308A511F7E551F980585",
+    "claim_value": "\"Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:36+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FB491B5B390E474876C2488A"
+    ],
+    "id": "CLAIM:694C308A511F7E551F980585",
+    "name": "LEARNING:PATH-05: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FB491B5B390E474876C2488A"
+    ],
+    "subject_entity_id": "LEARNING:PATH-05",
+    "updated_at": "2026-11-25T02:44:36+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:36+00:00",
+  "entity_id": "CLAIM:694C308A511F7E551F980585",
+  "id": "HISTORY:595C1BCCA33D43732B2DD4E0"
+}

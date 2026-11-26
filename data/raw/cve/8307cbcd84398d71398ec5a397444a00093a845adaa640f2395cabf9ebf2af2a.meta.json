@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:10+00:00",
+  "content_hash": "4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"05ec9c888578780b5b445d18e37359fc80626af1bf2f4c6092e85f37a5a7a348\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7.json",
+  "retrieved_at": "2026-11-25T02:26:10+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24990.json"
+}

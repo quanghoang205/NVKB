@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:871189286B8F970E18AA2574",
+    "claim_value": "\"Buffer overflow when using alias with try_files\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:49BF08A476CD657BA7A48B80"
+    ],
+    "id": "CLAIM:871189286B8F970E18AA2574",
+    "name": "CVE:CVE-2026-125283: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:49BF08A476CD657BA7A48B80"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T02:27:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:13+00:00",
+  "entity_id": "CLAIM:871189286B8F970E18AA2574",
+  "id": "HISTORY:07E2D02217256A687325EF65"
+}

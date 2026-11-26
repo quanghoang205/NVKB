@@ -1,0 +1,31 @@
+{
+  "claim_refs": [],
+  "created_at": "2026-11-25T04:21:16+00:00",
+  "description": "COMPONENT:EVENT-DRIVEN REQUIRES_KNOWLEDGE_OF COMPONENT:MASTER-PROCESS",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "LEARNING",
+  "id": "REL:EFE5B762E4B3903F8B6FE9BD",
+  "inference_type": "PEDAGOGICAL",
+  "legacy_verification_status": "INFERRED",
+  "name": "REQUIRES_KNOWLEDGE_OF",
+  "object_entity_id": "COMPONENT:MASTER-PROCESS",
+  "predicate": "REQUIRES_KNOWLEDGE_OF",
+  "rationale": "Cần Master, worker và graceful reload để giải thích mục tiêu: Phân biệt readiness với hoàn tất I/O qua một timeline.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Subject lesson requires object prerequisite",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:D35DA452C2D1E165CD488B2C"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+  "updated_at": "2026-11-25T04:21:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

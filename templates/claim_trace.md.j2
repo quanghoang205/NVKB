@@ -1,0 +1,9 @@
+{% if claims %}## Truy vết nhận định
+
+Mỗi link mở đúng Claim ID và giá trị; nhãn legacy không phải semantic approval.
+
+| Claim / giá trị | Authority | Hiệu lực | Source support / review | Evidence locator |
+| --- | --- | --- | --- | --- |
+{% for claim in claims %}| {{ links([claim.id]) | table_link }} — {{ claim.claim_value | claim_preview }} | {{ claim.authority | table_text }} | {{ claim.get('lifecycle_status', 'PENDING_REVIEW') }} | {{ claim.get('source_support_status', 'NOT_REVIEWED') }} / {{ claim.get('review_status', 'NOT_REVIEWED') }} | {{ claim.get('evidence_locator', 'UNKNOWN') | table_text }} — {{ links(claim.evidence_refs) | table_link }} |
+{% endfor %}
+{% endif %}

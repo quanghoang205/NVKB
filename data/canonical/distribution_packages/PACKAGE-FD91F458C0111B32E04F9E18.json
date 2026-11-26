@@ -1,0 +1,24 @@
+{
+  "claim_refs": [
+    "CLAIM:795AE58C5B0CB2AF923F1F08"
+  ],
+  "created_at": "2026-11-25T02:27:14+00:00",
+  "cve_ref": "CVE:CVE-2026-125283",
+  "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+  "distribution": "debian",
+  "ecosystem": "debian",
+  "entity_type": "DistributionPackage",
+  "fixed_version": "1.26.3-3+deb13u11",
+  "id": "PACKAGE:FD91F458C0111B32E04F9E18",
+  "name": "nginx / Debian trixie / CVE-2026-125283",
+  "package_name": "nginx",
+  "patch_status": "fixed",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "release": "trixie",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:074ED43739B7EB4023F161CB"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "VERIFIED"
+}

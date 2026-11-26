@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:3EB3ADEC38CA2F30297FC735",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:9C868AD5A594A13A6E701257",
+    "claim_value": "\"Cấu hình TLS cho stream proxy.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:C647424099945F001973EF53: ngx_stream_ssl_module",
+    "evidence_refs": [
+      "EVIDENCE:C647424099945F001973EF53"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9C868AD5A594A13A6E701257",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: definition",
+    "observation_key": "OBSERVATION:D1768C9CD985CBBB5051AEF8",
+    "observed_at": "2026-11-25T02:32:56+00:00",
+    "predicate": "definition",
+    "product_scope": "MODULE:NGX-STREAM-SSL-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:56+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:C647424099945F001973EF53"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T04:12:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9C868AD5A594A13A6E701257",
+    "claim_value": "\"Cấu hình TLS cho stream proxy.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C647424099945F001973EF53"
+    ],
+    "id": "CLAIM:9C868AD5A594A13A6E701257",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C647424099945F001973EF53"
+    ],
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T02:32:56+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:45+00:00",
+  "entity_id": "CLAIM:9C868AD5A594A13A6E701257",
+  "id": "HISTORY:60A5D8DF7C46AAC95488278E"
+}

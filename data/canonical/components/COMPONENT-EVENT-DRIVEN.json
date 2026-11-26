@@ -1,0 +1,49 @@
+{
+  "answer_explanations": "1. Không; readiness chỉ cho biết có khả năng tiến triển I/O. Parser vẫn giữ trạng thái chờ phần còn thiếu.\n2. Không; event loop không tự offload tính toán. Phải xem đường offload được hỗ trợ và scope của nó. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]] cùng các section I/O/timer/posted events giải thích cơ chế. 0–2 điểm mỗi câu.",
+  "architecture_position": "Event loop thuộc worker và các tiến trình I/O; dispatcher phối hợp I/O events, timer và posted work.",
+  "article_body": "## Readiness và tiến độ\n\nEvent-driven không có nghĩa mỗi connection có một thread riêng. Worker lưu trạng thái để tiếp tục xử lý khi có sự kiện phù hợp. Backend I/O báo socket có thể sẵn sàng; callback thử đọc/ghi, xử lý lượng dữ liệu đã có rồi trả quyền điều khiển khi cần chờ. Ready không bảo đảm toàn bộ message ứng dụng đã đến, cũng không bảo đảm mọi byte muốn ghi đã được gửi. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]]\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1D1D846BA118D5F4878A92A0|Claim theo section]].\n\n## Vòng đời callback\n\nDevelopment guide phân biệt I/O events, timer và posted events. Timer biểu diễn hạn chờ; posted event trì hoãn xử lý trong luồng event loop, không tự tạo thread. Mã callback phải duy trì vị trí đã xử lý và trạng thái chờ của đối tượng. Một response có thể cần nhiều lần callback trước khi hoàn tất. Khi kết nối đóng, các tham chiếu sự kiện liên quan phải tương thích với lifetime đối tượng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-2CF6401DB3A7E756F86936E7|Claim theo section]].\n\n## Ownership và invariant phòng vệ\n\nDiễn giải từ cơ chế: callback chỉ được truy cập context còn sống và phải trả quyền cho vòng lặp trong thời gian phù hợp với thiết kế. Kernel readiness là thông tin về khả năng I/O, không phải phê duyệt dữ liệu từ peer. Parse và authorization vẫn là nhiệm vụ ở lớp tương ứng. Ngân sách tài nguyên cần xét tổng các kết nối trên worker, không chỉ từng request.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-91DFF79891134742C71BF8C2|Claim theo section]].\n\n## Tradeoff và hiểu lầm\n\nNon-blocking socket hạn chế thời gian chờ I/O trong callback, nhưng không làm mọi đoạn tính toán hoặc thư viện ngoài trở nên bất đồng bộ. Một tác vụ CPU dài hay lời gọi blocking có thể giữ worker bận, làm chậm các kết nối khác. Thread pool/offload chỉ áp dụng cho các đường được triển khai hỗ trợ, không tự động bao mọi module. Cấu trúc event-driven giảm nhu cầu thread-per-connection nhưng khiến state machine và cleanup cần được thiết kế rõ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-3AACD36DD5D6FF55A2579CB8|Claim theo section]].\n\n## Ví dụ đọc timeline\n\nT0 socket ready; T1 callback đọc được phần đầu; T2 cần thêm dữ liệu và trả; T3 timer cho một request khác được xử lý; T4 socket ready lần nữa. Giải thích được T3 là đã hiểu lợi ích trả quyền cho event loop. Nếu callback T1 quay vòng chờ dữ liệu, đây là vi phạm mô hình của ví dụ, không cần chạy một chương trình gây treo để học.\n\nChưa đo scheduler fairness, latency hoặc backend cụ thể trong deployment. Thứ tự chi tiết cần đọc phiên bản mã nguồn tương ứng; sơ đồ dưới đây chỉ là chu kỳ khái niệm.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-9970C2D5D5603FB16C467573|Claim theo section]].\n",
+  "assessment": "1. Ready-read có đồng nghĩa HTTP request đầy đủ không?\n2. Callback làm phép tính dài có được non-blocking socket tự động chuyển sang thread khác không?",
+  "claim_refs": [
+    "CLAIM:D17E29368273C82888C95A90",
+    "CLAIM:1D1D846BA118D5F4878A92A0",
+    "CLAIM:2CF6401DB3A7E756F86936E7",
+    "CLAIM:91DFF79891134742C71BF8C2",
+    "CLAIM:3AACD36DD5D6FF55A2579CB8",
+    "CLAIM:9970C2D5D5603FB16C467573"
+  ],
+  "created_at": "2026-11-25T02:32:04+00:00",
+  "curation_version": "1.2.0",
+  "defensive_principles": "Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.",
+  "definition": "Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.",
+  "description": "Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.",
+  "diagram": "flowchart LR\n  P[Chờ sự kiện hoặc timeout] --> D[Dispatch callback]\n  D --> S[Lưu state và trả quyền]\n  S --> T[Xử lý timer và posted work theo loop]\n  T --> P",
+  "entity_type": "Component",
+  "failure_impact": "Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.",
+  "id": "COMPONENT:EVENT-DRIVEN",
+  "learning_objectives": [
+    "Phân biệt readiness với hoàn tất I/O qua một timeline.",
+    "Giải thích tác động của callback blocking lên các kết nối cùng worker."
+  ],
+  "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+  "name": "Event loop và non-blocking I/O",
+  "normal_behavior": "Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.",
+  "prerequisites": [
+    "COMPONENT:MASTER-PROCESS"
+  ],
+  "related_failure_classes": "Use-after-free; state-machine inconsistency.",
+  "related_knowledge": [
+    "COMPONENT:MASTER-PROCESS",
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "LEARNING:PATH-01"
+  ],
+  "safety_assumptions": "Callback chỉ dùng context còn sống và trả quyền cho loop sau lượng công việc có giới hạn phù hợp.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Readiness của kernel không xác minh dữ liệu peer; parser và policy ở lớp xử lý tương ứng.",
+  "source_refs": [
+    "EVIDENCE:D35DA452C2D1E165CD488B2C"
+  ],
+  "updated_at": "2026-11-25T04:30:42+00:00",
+  "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+  "verification_status": "INFERRED",
+  "version_scope": "See per-claim source snapshot/version scope"
+}

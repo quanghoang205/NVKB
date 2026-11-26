@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:A4153C4A54BA395B897D72A0",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:1FB32BB0993D099CE413E717",
+    "claim_value": "\"Đường lỗi không tiếp tục như đường thành công.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:27+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:AA8B7EDD8456037A5C73C2CB: Description / Potential Mitigations; topic=WEAKNESS:CWE-476",
+    "evidence_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1FB32BB0993D099CE413E717",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-476: safety_assumptions",
+    "observation_key": "OBSERVATION:0CD6AD9252D1ABC29E621FC1",
+    "observed_at": "2026-11-25T02:44:27+00:00",
+    "predicate": "safety_assumptions",
+    "product_scope": "WEAKNESS:CWE-476",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:36+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-476",
+    "updated_at": "2026-11-25T04:12:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:1FB32BB0993D099CE413E717",
+    "claim_value": "\"Đường lỗi không tiếp tục như đường thành công.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:27+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "id": "CLAIM:1FB32BB0993D099CE413E717",
+    "name": "WEAKNESS:CWE-476: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-476",
+    "updated_at": "2026-11-25T02:44:27+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:30+00:00",
+  "entity_id": "CLAIM:1FB32BB0993D099CE413E717",
+  "id": "HISTORY:134FFAF2C3D319999744F35F"
+}

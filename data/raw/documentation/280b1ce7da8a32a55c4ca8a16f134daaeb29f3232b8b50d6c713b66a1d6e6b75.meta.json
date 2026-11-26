@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:09+00:00",
+  "content_hash": "68c0842933bda49c66aa1e15a8e93b7c23a99ebb7a4498f859977d329a5da328",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac73-d9a\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:39 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/68c0842933bda49c66aa1e15a8e93b7c23a99ebb7a4498f859977d329a5da328.html",
+  "retrieved_at": "2026-11-25T02:28:09+00:00",
+  "source_url": "https://nginx.org/en/docs/http/request_processing.html"
+}

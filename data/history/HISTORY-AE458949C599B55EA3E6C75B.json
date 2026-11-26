@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:77D6D61E63E1D30E731EDB2F",
+      "CLAIM:010B1B3F46D1905CFD333F8F",
+      "CLAIM:68A77AA6A064B16EE9AB7EF1",
+      "CLAIM:B4340C6F90A8479ABB252A80",
+      "CLAIM:EAD8FB41A87F3D9B5EBCFAA1"
+    ],
+    "created_at": "2026-11-25T05:24:26+00:00",
+    "description": "CVE:CVE-2026-42934 learns_from MODULE:NGX-HTTP-CHARSET-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-42934",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:49F65FA3A4B251CA9AC7D293",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "predicate": "learns_from",
+    "rationale": "Đọc Charset filter — chuyển mã trên các buffer để thảo luận: Tắt buffering có loại bỏ nhu cầu buffer hợp lệ ở filter không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Charset filter — chuyển mã trên các buffer để thảo luận: Tắt buffering có loại bỏ nhu cầu buffer hợp lệ ở filter không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:26+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:61274833A24B2819EF33D8A3",
+      "EVIDENCE:C5FCC8D4BF4A615B0AA8C3BE"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-42934",
+    "updated_at": "2026-11-25T05:24:26+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:26+00:00",
+  "entity_id": "REL:49F65FA3A4B251CA9AC7D293",
+  "id": "HISTORY:AE458949C599B55EA3E6C75B"
+}

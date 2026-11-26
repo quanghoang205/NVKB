@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:63DDCCB445A129774D4E1B09",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:4080379FA5AE42027550CF8B",
+    "claim_value": "\"## Invariant biên tập\\n\\nDiễn giải: phải giữ tuple gồm subject, predicate, value, authority, scope và source locator. Không dùng CVSS thay mô tả hậu quả; không dùng PUBLISHED thay bằng chứng mọi host bị ảnh hưởng; không dùng hash thay source support. Khi nguồn chỉ là HTML shell không có nội dung, Claim phải giữ UNSUPPORTED dù URL hợp lệ. Các Claim v1.0 của khái niệm này được lưu ở lịch sử và không được hợp thức hóa bằng schema mới.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/description; /definitions/cveMetadataPublished; /definitions/cnaPublishedContainer; /definitions/affected",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:4080379FA5AE42027550CF8B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Invariant biên tập",
+    "observed_at": "2026-11-25T05:15:15+00:00",
+    "predicate": "v1.3:knowledge:Invariant biên tập",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:15+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T04:16:41+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:63DDCCB445A129774D4E1B09",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:4080379FA5AE42027550CF8B",
+    "claim_value": "\"## Invariant biên tập\\n\\nDiễn giải: phải giữ tuple gồm subject, predicate, value, authority, scope và source locator. Không dùng CVSS thay mô tả hậu quả; không dùng PUBLISHED thay bằng chứng mọi host bị ảnh hưởng; không dùng hash thay source support. Khi nguồn chỉ là HTML shell không có nội dung, Claim phải giữ UNSUPPORTED dù URL hợp lệ. Các Claim v1.0 của khái niệm này được lưu ở lịch sử và không được hợp thức hóa bằng schema mới.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:4080379FA5AE42027550CF8B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Invariant biên tập",
+    "observed_at": "2026-11-25T05:15:15+00:00",
+    "predicate": "v1.3:knowledge:Invariant biên tập",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:15:15+00:00",
+  "entity_id": "CLAIM:4080379FA5AE42027550CF8B",
+  "id": "HISTORY:907F2A1175A21A872361A8E1"
+}

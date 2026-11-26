@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:2FA1B5ABB85F74B2C3EC3E99
+title: DNS
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- DNS
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# DNS
+
+Hệ thống phân giải tên phân cấp.
+
+- Nguồn: [IETF / RFC Editor](https://www.rfc-editor.org/rfc/rfc1034.html)
+- Authority gốc: IETF / RFC Editor
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Protocol overview and state machine; topic=PROTOCOL:DNS`
+
+- Truy xuất: 2026-11-25T02:32:23+00:00
+- SHA-256: `b836375d9ce5b9d3565c8f4c55066764d8572bcad65d7a1af53d3662c94fd59e`
+- Snapshot từ project root: `data/raw/documentation/snapshots/b836375d9ce5b9d3565c8f4c55066764d8572bcad65d7a1af53d3662c94fd59e.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

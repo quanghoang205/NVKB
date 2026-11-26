@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:320ABAF1E3A39289B2BB897E",
+    "claim_value": "\"Kiểm tra biên ở mọi đường đọc và bảo đảm parser xử lý dữ liệu bị cắt ngắn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A8E0CD4EC39541F68F84D25F"
+    ],
+    "id": "CLAIM:320ABAF1E3A39289B2BB897E",
+    "name": "WEAKNESS:CWE-125: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A8E0CD4EC39541F68F84D25F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-125",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "CLAIM:320ABAF1E3A39289B2BB897E",
+  "id": "HISTORY:D4F16A8E2F45624D9C6B7798"
+}

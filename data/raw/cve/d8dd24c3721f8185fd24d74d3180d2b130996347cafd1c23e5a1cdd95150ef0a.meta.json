@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:57+00:00",
+  "content_hash": "252267e60c2b91dd1aa866033a43cd33aa0ee4368443d0a4e65fa0d7b8438cc9",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"15b0b5115ed2e9a25d0587d41af2601214f35582ae7410921515e17319365b88\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/252267e60c2b91dd1aa866033a43cd33aa0ee4368443d0a4e65fa0d7b8438cc9.json",
+  "retrieved_at": "2026-11-25T02:25:57+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2018/16xxx/CVE-2018-16845.json"
+}

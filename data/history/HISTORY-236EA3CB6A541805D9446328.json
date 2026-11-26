@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Danh tính certificate ↔ quyết định authorization ứng dụng.",
+    "claim_refs": [
+      "CLAIM:27DECF97A638F277ADB1A1F1",
+      "CLAIM:6F115B8FE2A13A651C26F767",
+      "CLAIM:41349320BAD79778BED0D487",
+      "CLAIM:E63772D5D6C53AF95901E705",
+      "CLAIM:EC6093B0D97B5D0728E9B9C3",
+      "CLAIM:9F370F551BE7A0023EE6D9A1",
+      "CLAIM:9806EC6CBA992FE6967B019B",
+      "CLAIM:7539F0EDA6DC7CA7A1329282"
+    ],
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.",
+    "description": "TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:MTLS",
+    "learning_objectives": [
+      "Giải thích MTLS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "MTLS",
+    "normal_behavior": "Server yêu cầu certificate client, kiểm tra chuỗi tin cậy và chữ ký; ứng dụng ánh xạ danh tính đã xác thực thành quyền.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Authentication không tự thay thế authorization; context phiên phải gắn đúng policy.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Danh tính certificate ↔ quyết định authorization ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:23+00:00",
+  "entity_id": "PROTOCOL:MTLS",
+  "id": "HISTORY:236EA3CB6A541805D9446328"
+}

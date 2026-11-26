@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "558312faada98f2a2e426c64cabab7532f0d5ff2017e9eacc3f45c70e2f7ed63",
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "description": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "document_title": "Module ngx_http_rewrite_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:98E122F56AC9EFC999816DB9",
+    "id": "EVIDENCE:98E122F56AC9EFC999816DB9",
+    "local_snapshot_path": "data/raw/documentation/snapshots/558312faada98f2a2e426c64cabab7532f0d5ff2017e9eacc3f45c70e2f7ed63.html",
+    "name": "Module ngx_http_rewrite_module",
+    "paraphrase": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:10+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_rewrite_module",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_rewrite_module.html",
+    "updated_at": "2026-11-25T02:32:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:10+00:00",
+  "entity_id": "EVIDENCE:98E122F56AC9EFC999816DB9",
+  "id": "HISTORY:366328218FA33C0387A612AC"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:658D04A9F2D19F4FE000B5E6",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:BAC7B248F8B51251B74FA7DF",
+  "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:43+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:A4AD25701CA2C1EE7F32EFF4: ngx_http_grpc_module",
+  "evidence_refs": [
+    "EVIDENCE:A4AD25701CA2C1EE7F32EFF4"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:BAC7B248F8B51251B74FA7DF",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-GRPC-MODULE: failure_impact",
+  "observation_key": "OBSERVATION:675B9C7346F13DFB5EB724BD",
+  "observed_at": "2026-11-25T02:32:43+00:00",
+  "predicate": "failure_impact",
+  "product_scope": "MODULE:NGX-HTTP-GRPC-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:43+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:A4AD25701CA2C1EE7F32EFF4"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-GRPC-MODULE",
+  "updated_at": "2026-11-25T04:12:48+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "778c62fdd8e8fe775ced86de8206f6490624515f21ef937446b53e0a7cd7dd7d",
+    "created_at": "2026-11-25T02:26:27+00:00",
+    "description": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-35200",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:08A072CFE45F7B9B3C581AED",
+    "id": "EVIDENCE:08A072CFE45F7B9B3C581AED",
+    "local_snapshot_path": "data/raw/distribution/snapshots/778c62fdd8e8fe775ced86de8206f6490624515f21ef937446b53e0a7cd7dd7d.html",
+    "name": "CVE-2024-35200",
+    "paraphrase": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:27+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-35200",
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:27+00:00",
+  "entity_id": "EVIDENCE:08A072CFE45F7B9B3C581AED",
+  "id": "HISTORY:517A7709CF76CB06BF492BB4"
+}

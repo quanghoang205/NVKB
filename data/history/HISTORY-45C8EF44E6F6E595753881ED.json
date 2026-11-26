@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:AF7FA105D6644DF4819B0282",
+    "claim_value": "\"Request parsing inconsistencies; integer overflow.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "id": "CLAIM:AF7FA105D6644DF4819B0282",
+    "name": "COMPONENT:REQUEST-PARSING: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "subject_entity_id": "COMPONENT:REQUEST-PARSING",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:AF7FA105D6644DF4819B0282",
+  "id": "HISTORY:45C8EF44E6F6E595753881ED"
+}

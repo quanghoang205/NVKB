@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:67311AC03571B70D24013029",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:C0550D6C4040E7C0597890EB",
+  "claim_value": "\"## Invariant và lifecycle\\n\\nDiễn giải: bộ đọc chỉ được lấy byte trong input hợp lệ; bộ ghi phải có dung lượng cho biểu diễn đích. State chuyển đổi phải hoàn tất hoặc bị hủy đúng cùng response. Input buffer không được tái dùng khi filter còn tham chiếu; output đã gửi không được âm thầm thay đổi. Buffering off làm thay đổi nhịp chuyển dữ liệu, không bỏ các nghĩa vụ đó.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:24:16+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "Introduction;",
+  "evidence_refs": [
+    "EVIDENCE:E127D95D2D770043E3AAD29B"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:C0550D6C4040E7C0597890EB",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "MODULE:NGX-HTTP-CHARSET-MODULE: v1.3:knowledge:Invariant và lifecycle",
+  "observed_at": "2026-11-25T05:24:16+00:00",
+  "predicate": "v1.3:knowledge:Invariant và lifecycle",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:24:16+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E127D95D2D770043E3AAD29B"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+  "updated_at": "2026-11-25T05:24:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:46+00:00; CVE versions are scoped separately."
+}

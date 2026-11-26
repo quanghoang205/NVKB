@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:B9CC0242565A999A83381888",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "claim_value": "\"TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:933B8CBD189D3FD36D12481D: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:MTLS: definition",
+    "observation_key": "OBSERVATION:386955B221BCF24604BE90B3",
+    "observed_at": "2026-11-25T02:32:23+00:00",
+    "predicate": "definition",
+    "product_scope": "PROTOCOL:MTLS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:22+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T04:12:31+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "claim_value": "\"TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "name": "PROTOCOL:MTLS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:31+00:00",
+  "entity_id": "CLAIM:27DECF97A638F277ADB1A1F1",
+  "id": "HISTORY:34E5289912E6744C1B829F74"
+}

@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:DE71D5196AB5210853E8F7AB"
+    ],
+    "created_at": "2026-11-25T02:28:46+00:00",
+    "description": "CVE:CVE-2026-93479 distribution_fix PACKAGE:BF751A03F08FF1420A2B6FA7",
+    "entity_type": "Relationship",
+    "id": "REL:34ADD9A74120CD9ED0192D0E",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:BF751A03F08FF1420A2B6FA7",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:874B40F7427F51B1CBCB376C"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-93479",
+    "updated_at": "2026-11-25T02:28:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:46+00:00",
+  "entity_id": "REL:34ADD9A74120CD9ED0192D0E",
+  "id": "HISTORY:9D97855391161E43E3C8A567"
+}

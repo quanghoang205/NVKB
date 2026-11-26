@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E46D92DD727B55844C937536",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:F87E0006154514A22F31018B",
+    "claim_value": "\"Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:64D90A0163303F39A538DD0C: Educational synthesis from linked knowledge notes; topic=LEARNING:PATH-03",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F87E0006154514A22F31018B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "LEARNING:PATH-03: normal_behavior",
+    "observation_key": "OBSERVATION:710DE0AC136F50E149EE006D",
+    "observed_at": "2026-11-25T02:44:35+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "LEARNING:PATH-03",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T04:12:56+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F87E0006154514A22F31018B",
+    "claim_value": "\"Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "id": "CLAIM:F87E0006154514A22F31018B",
+    "name": "LEARNING:PATH-03: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:56+00:00",
+  "entity_id": "CLAIM:F87E0006154514A22F31018B",
+  "id": "HISTORY:1230A44BD641417B8D76BB47"
+}

@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:D22627CD65F2C28B752E92D9",
+      "CLAIM:02E95C616529AFBA01A889ED",
+      "CLAIM:510F7FF0A64C701DD3C7D5C1",
+      "CLAIM:2A03B359FA671C698215BFF3",
+      "CLAIM:19BA609ACD54C969649088C0",
+      "CLAIM:489EC1983245961E351EBCAC",
+      "CLAIM:F55207E448F9945E415F12A5",
+      "CLAIM:7446110567E9E14EB8035410"
+    ],
+    "created_at": "2026-11-25T02:32:45+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.",
+    "description": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-DAV-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_dav_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_dav_module",
+    "normal_behavior": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:F7BAFA25BE402FB66F4E396E"
+    ],
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:D1DED34F87C596EE446B156B",
+      "CLAIM:C75634479AF8B1D9227D9F3B",
+      "CLAIM:825D8324E5EEF242FCF1132B",
+      "CLAIM:89900B65897E2AAB9B9BB3DF",
+      "CLAIM:3C73B37A27C13828BE2ADC68",
+      "CLAIM:BD818721F22C2BA68C9E08F9",
+      "CLAIM:47BDCF7237A3140E3F34B6BF",
+      "CLAIM:342BC2EFC02C18B8F0E8FFDA"
+    ],
+    "created_at": "2026-11-25T02:32:45+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.",
+    "description": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-DAV-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_dav_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_dav_module",
+    "normal_behavior": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+    ],
+    "updated_at": "2026-11-25T02:32:45+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "MODULE:NGX-HTTP-DAV-MODULE",
+  "id": "HISTORY:5225F11749AC0046FCBEAB5C"
+}

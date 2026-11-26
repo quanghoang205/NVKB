@@ -1,0 +1,68 @@
+---
+entity_type: claim
+id: CLAIM:D7A0F15AA6BDB74E636988AA
+title: 'CVE:CVE-2026-93479: v1.3:applicability'
+verification_status: UNVERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-93479: v1.3:applicability'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-93479: v1.3:applicability
+
+`CLAIM:D7A0F15AA6BDB74E636988AA` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-93479|CVE-2026-93479]]. Predicate: `v1.3:applicability`.
+
+```json
+"Map regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện."
+```
+
+## Nguồn và phạm vi
+
+Authority: CNA F5 / CVE Program. 
+
+[[EVIDENCE-662D152F4BC6298A07F60B8A|CVE-2026-93479.json: /containers/cna/descriptions/0/value]]
+
+Locator: /containers/cna/descriptions/0/value
+
+Phạm vi phiên bản: Document snapshot 2026-11-25T02:28:42+00:00; CVE versions are scoped separately.
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | MATCHED |
+| Nguồn hỗ trợ | SUPPORTED |
+| Review | AI_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | UNVERIFIED — nhãn pipeline cũ |
+
+Reviewer: `nvkb-v1.3-ai-curator` · 2026-11-25T05:24:24+00:00
+
+Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+New source observation; source support is separate.
+
+Quan sát: 2026-11-25T05:24:24+00:00. Truy xuất: UNKNOWN.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

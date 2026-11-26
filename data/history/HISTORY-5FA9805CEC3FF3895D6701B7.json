@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:959C3084E91CE8FAE9DD0EF6"
+    ],
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "Nhãn severity từ upstream; không tự ánh xạ thành CVSS.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4DD4D40245C9BD4C82421B16",
+    "name": "NGINX severity: major",
+    "schema_version": "1.0.0",
+    "scoring_authority": "NGINX / F5",
+    "severity_label": "major",
+    "source_refs": [
+      "EVIDENCE:8FB561518A4F0171E5D1F239"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "SEVERITY:4DD4D40245C9BD4C82421B16",
+  "id": "HISTORY:5FA9805CEC3FF3895D6701B7"
+}

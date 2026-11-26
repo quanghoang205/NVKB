@@ -1,0 +1,61 @@
+group: resolver
+name: Resolver — tên miền, callback và lifecycle
+shared_knowledge: [PROTOCOL:DNS, COMPONENT:MEMORY-POOL, COMPONENT:CONNECTION-LIFECYCLE]
+knowledge:
+  - id: PROTOCOL:DNS
+    name: DNS resolver — cache, công việc chờ và quyền sở hữu
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html
+    locator: '#resolver; #resolver_timeout'
+    excerpt: Configures name servers
+    source_fact: Directive resolver chỉ định name servers để phân giải tên upstream; tài liệu mô tả TTL/cache, phạm vi truy vấn và timeout. Resolver context không phải identity đã được TLS xác thực.
+    prerequisites: [COMPONENT:EVENT-DRIVEN, COMPONENT:CONNECTION-LIFECYCLE]
+    objectives: [Phân biệt cached DNS result với context chờ của request., Giải thích vì sao timeout và cancellation cần ownership riêng.]
+    body: |
+      ## Cơ chế bình thường
+
+      Khi cần địa chỉ từ một tên upstream, resolver gửi truy vấn đến name server cấu hình và nhận kết quả để kết nối. Tài liệu NGINX mô tả cache theo TTL và khả năng cấu hình thời gian hiệu lực. Timeout chờ truy vấn không cùng ý nghĩa với thời hạn cache: hết thời gian chờ của một request không buộc mọi kết quả cache phải biến mất.
+
+      ## Ownership và lifecycle
+
+      Mô hình thiết kế gồm yêu cầu phân giải, state truy vấn và những công việc ứng dụng đang chờ. Nhiều request hoặc subrequest có thể cần cùng tên nhưng có thời gian kết thúc khác nhau. Chia sẻ kết quả tiết kiệm truy vấn; nó không có nghĩa mọi người chờ chung một lifetime. Khi client hủy request hoặc tác vụ OCSP kết thúc, callback chưa chạy phải không còn quyền dùng context đã giải phóng.
+
+      ## Invariant và trust boundary
+
+      Diễn giải: mỗi callback trả lời phải tìm được một owner còn hợp lệ, và chỉ tác động đúng tác vụ đang chờ. Trả lời DNS là dữ liệu, không phải chứng cứ peer được phép phục vụ ứng dụng. TLS identity verification và authorization vẫn là nghĩa vụ riêng sau khi đã có địa chỉ. Giới hạn phạm vi resolver có ích cho vận hành nhưng không sửa UAF trong quản lý callback.
+
+      ## Tradeoff và kiểm soát
+
+      Cache lâu giảm latency và lưu lượng truy vấn nhưng trì hoãn phản ánh thay đổi; nhiều truy vấn đồng thời tăng state chờ. Giới hạn timeout giảm thời gian giữ tài nguyên, đồng thời tạo thêm nhánh cleanup phải đúng. Đọc riêng CVE OCSP và CVE subrequest: chúng cùng dùng resolver nhưng không chứng minh cùng đường lỗi. Tài liệu directive không cho đủ cấu trúc dữ liệu nội bộ để xác định fault location bằng từ khóa.
+    assessment: Subrequest bị hủy có cho phép giải phóng mọi state DNS của tên mà nó dùng không?
+    answer: Không thể kết luận vậy; có thể có các owner khác còn chờ hoặc cache còn hiệu lực. Cần contract chia sẻ và lifetime thực tế.
+articles:
+  - cve: CVE-2026-40701
+    summary: Use-after-free trong đường resolver phục vụ OCSP có thể restart worker hoặc gây sửa đổi bộ nhớ giới hạn.
+    architecture: HTTP SSL client-certificate OCSP validation dùng resolver; không suy toàn bộ DNS resolver đều gặp cùng lỗi.
+    normal: OCSP chờ địa chỉ responder và kết quả xác minh trong context còn hợp lệ; cleanup phải hủy liên hệ tới callback muộn.
+    mechanism: CNA xác nhận heap-use-after-free trong điều kiện OCSP/resolver. Diễn giải theo lifetime công việc chờ; chưa có cặp allocation/free được review.
+    applicability: HTTP ssl_verify_client on hoặc optional, OCSP on hoặc leaf cùng resolver theo mô tả CNA; còn điều kiện ngoài kiểm soát tác nhân.
+    impact: Limited data modification hoặc worker restart theo CNA.
+    potential: Không mở rộng thành confirmed RCE hay thu hồi quyền root; nguồn của CVE này nêu tác động giới hạn.
+    principle: Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.
+    defense: Vá NGINX và rà soát xử lý timeout/cancellation; chỉ chọn resolver tin cậy không chứng minh lỗi lifetime đã hết.
+    patch_note: Fix 1.30.1/1.31.0; affected từ 1.19.0, khác resolver subrequest CVE-2026-123634.
+    question: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?
+    answer: Memory safety phụ thuộc ownership và xử lý trạng thái của implementation, kể cả khi dữ liệu đến từ nguồn tin cậy.
+    unknown: Object, callback và điểm cleanup của OCSP/resolver chưa xác minh độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-123634
+    summary: Resolver response processing có thể dùng context đã giải phóng khi proxy và subrequest cùng phân giải một tên.
+    architecture: Resolver phục vụ proxy với tên upstream động và SSI/mirror subrequest.
+    normal: Các request dùng chung kết quả phân giải nhưng phải giữ owner và lifetime riêng cho từng người chờ.
+    mechanism: CNA nêu use-after-free trong response processing; diễn giải là quản lý chia sẻ công việc chờ không bảo đảm tham chiếu còn sống, chưa xác định cấu trúc cụ thể.
+    applicability: Proxy server name chứa biến; SSI hoặc mirror gửi subrequest đến location phân giải cùng tên theo CNA.
+    impact: Worker crash hoặc memory corruption được CNA công bố.
+    potential: CNA nêu RCE với điều kiện ASLR; chưa xác minh thực thi thực tế hay đặc quyền đạt được.
+    principle: Chia sẻ kết quả không gộp ownership; kết thúc một consumer không được phá state mà consumer khác còn dùng.
+    defense: Vá bản đang chạy và review reference ownership ở đường subrequest; tách cấu hình chưa được vendor xác nhận không là mitigation chính thức.
+    patch_note: Fix 1.30.7/1.31.9; affected từ 0.6.18 theo upstream, khác lỗi OCSP 40701.
+    question: Hai request cùng tên DNS có nhất thiết cùng lifecycle không?
+    answer: Không; request có thể hoàn tất/hủy khác lúc, dù dùng cùng lookup result.
+    unknown: Cấu trúc chia sẻ, trạng thái refcount hoặc callback lỗi chưa được review patch.
+    maturity: TECHNICAL_DRAFT

@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from WEAKNESS:CWE-125",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:01E8E6F5BB4E4EEF9C0B48AB",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "WEAKNESS:CWE-125",
+    "predicate": "learns_from",
+    "rationale": "Learning Path 02 — Memory Safety recommends CWE-125 — Out-of-bounds read as background. This legacy curriculum choice has no measured learner validation; not a technical causal edge.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:8E30599D1D514858A998A326"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from WEAKNESS:CWE-125",
+    "entity_type": "Relationship",
+    "id": "REL:01E8E6F5BB4E4EEF9C0B48AB",
+    "name": "learns_from",
+    "object_entity_id": "WEAKNESS:CWE-125",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8E30599D1D514858A998A326"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REL:01E8E6F5BB4E4EEF9C0B48AB",
+  "id": "HISTORY:8F23D0A26447F7507D9EC19C"
+}

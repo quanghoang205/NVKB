@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:E307D3150620B62FBEC7B907",
+    "claim_value": "\"Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:46+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D32367C77A9F742D86D1CF52"
+    ],
+    "id": "CLAIM:E307D3150620B62FBEC7B907",
+    "name": "CVE:CVE-2026-48142: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D32367C77A9F742D86D1CF52"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-48142",
+    "updated_at": "2026-11-25T02:44:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:46+00:00",
+  "entity_id": "CLAIM:E307D3150620B62FBEC7B907",
+  "id": "HISTORY:26B8B1472320E47405A68933"
+}

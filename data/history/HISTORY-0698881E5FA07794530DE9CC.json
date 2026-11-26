@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:D77B9EC5D31F51AC3FF67AF2",
+      "CLAIM:8A26ADDD09E13F66B5387F75",
+      "CLAIM:50F47FAC4C415B3496C8B4A8",
+      "CLAIM:94E5B508DAA586B7B2744E24",
+      "CLAIM:13B21F3B73CE2444E036029A",
+      "CLAIM:813551191218C951EA132637",
+      "CLAIM:825C634DB69C4C91E8957B4D",
+      "CLAIM:87CA01326310E9414F8BB799"
+    ],
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "description": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_mp4_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_mp4_module",
+    "normal_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:1CDCB888CCB0632471F24884",
+      "CLAIM:8FC40757BF8BFAC6A0CCA602",
+      "CLAIM:8FD865FF49E315E07178C184",
+      "CLAIM:B9938BC7F16D0DD219A1A95A",
+      "CLAIM:E34B1BD885DD923143D354BD",
+      "CLAIM:07C9A59A9B7FDF10900C9A17",
+      "CLAIM:5D15E1E4E48B14F13375C954",
+      "CLAIM:1886BB1E9EF28B1C4630F374"
+    ],
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "description": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_mp4_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_mp4_module",
+    "normal_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:901A85C60DC32BEE5D2273B6"
+    ],
+    "updated_at": "2026-11-25T02:32:42+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+  "id": "HISTORY:0698881E5FA07794530DE9CC"
+}

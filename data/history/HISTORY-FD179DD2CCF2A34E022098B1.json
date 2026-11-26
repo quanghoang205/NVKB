@@ -1,0 +1,305 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Session forgery when using TLS session tickets",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:510B5C1DD771C61B998008FE"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0F113CC365B51E992D1F7E3C",
+      "CLAIM:11C7A2EF323E6A8F604BDEA8",
+      "CLAIM:152D156B81537838F30A1E58",
+      "CLAIM:1B4E0EA27F5C3843FAFE7D7A",
+      "CLAIM:1BDAEAA9CC7170E29F062893",
+      "CLAIM:44F36A38EB7D3AB004990C92",
+      "CLAIM:554DCA9E6D047E16EE1E0DCB",
+      "CLAIM:555B883F73A801D53E836348",
+      "CLAIM:57DEE5EDB93893ED20C6B49B",
+      "CLAIM:639036D0903D99453ECE3802",
+      "CLAIM:98898E1C91078DB3511DF23A",
+      "CLAIM:B87B4625B6E6F4B3331B8B33",
+      "CLAIM:BD629706C61BE0A8BE4328F5",
+      "CLAIM:BFE47277C7F3043C3CBCFB64",
+      "CLAIM:C35C53975663BCE106860758",
+      "CLAIM:C6F648E7D3452710FBD224E9",
+      "CLAIM:D5DF8335B917D699450B0E29",
+      "CLAIM:D9BEDD0800B1BF6C2D8B9476",
+      "CLAIM:DBFD5167C54CE9208ECCA54A",
+      "CLAIM:E70670F537025B2A70564F7F",
+      "CLAIM:E9AF6FBC6E9DE5D26FF59496",
+      "CLAIM:EBB48D7FEDEA87F02475D1DF",
+      "CLAIM:EF2BB2C3E54FFFF0BABE69D6",
+      "CLAIM:EF5CA8379180E2EABA30A003",
+      "CLAIM:FE489E169F289FAD7FC7A5C4"
+    ],
+    "condition_refs": [
+      "CONDITION:9708A25239ED66F69C8EABA3"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:58+00:00",
+    "cve_id": "CVE-2026-97629",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:082D9420FFD9E9C8DDF0FF40",
+      "PACKAGE:C1799662DB9E37095CE727A0",
+      "PACKAGE:6047720675D15BD0C6C5768F"
+    ],
+    "distribution_status": [
+      "PACKAGE:082D9420FFD9E9C8DDF0FF40",
+      "PACKAGE:C1799662DB9E37095CE727A0",
+      "PACKAGE:6047720675D15BD0C6C5768F"
+    ],
+    "documented_configuration_context": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-97629 ghi nhận: Session forgery when using TLS session tickets. Phạm vi upstream: 1.23.2-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-97629",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-29T16:59:42.330000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-97629",
+    "normal_component_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:26.740000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6F10DC2E4EDDC368C1FBDAB8"
+    ],
+    "related_components": [
+      "COMPONENT:VIRTUAL-HOSTS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-908"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Session forgery when using TLS session tickets. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:15E5F630841A33A3834C2C17",
+      "SEVERITY:23DDC11E1D0FA530B26CB712",
+      "SEVERITY:5AA9EDB579968F262D6C100E",
+      "SEVERITY:AC4D0B97B4B7AF40B6B45733",
+      "SEVERITY:D5F55AED2D0C2CBAB91552AA"
+    ],
+    "source_refs": [
+      "EVIDENCE:1249755E98DEA4B654F56927",
+      "EVIDENCE:A716EB10BF59F23E716FB566",
+      "EVIDENCE:B76F07A8D7C0CE6F98B12DF7",
+      "EVIDENCE:B82A818F173B70E95BF7A4CA",
+      "EVIDENCE:C0ADED0070CDAC451657B373",
+      "EVIDENCE:CCFC9BF2753C7667965D7C4A",
+      "EVIDENCE:D11C098D135782D0EDB90A6E",
+      "EVIDENCE:D6E1989BD982410CC0CF78D0"
+    ],
+    "title": "Session forgery when using TLS session tickets",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:48+00:00",
+    "upstream_affected_expression": "1.23.2-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Session forgery when using TLS session tickets",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:510B5C1DD771C61B998008FE"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0F113CC365B51E992D1F7E3C",
+      "CLAIM:11C7A2EF323E6A8F604BDEA8",
+      "CLAIM:152D156B81537838F30A1E58",
+      "CLAIM:1B4E0EA27F5C3843FAFE7D7A",
+      "CLAIM:1BDAEAA9CC7170E29F062893",
+      "CLAIM:44F36A38EB7D3AB004990C92",
+      "CLAIM:555B883F73A801D53E836348",
+      "CLAIM:57DEE5EDB93893ED20C6B49B",
+      "CLAIM:639036D0903D99453ECE3802",
+      "CLAIM:98898E1C91078DB3511DF23A",
+      "CLAIM:B87B4625B6E6F4B3331B8B33",
+      "CLAIM:BD629706C61BE0A8BE4328F5",
+      "CLAIM:BFE47277C7F3043C3CBCFB64",
+      "CLAIM:C35C53975663BCE106860758",
+      "CLAIM:C6F648E7D3452710FBD224E9",
+      "CLAIM:D5DF8335B917D699450B0E29",
+      "CLAIM:D9BEDD0800B1BF6C2D8B9476",
+      "CLAIM:DBFD5167C54CE9208ECCA54A",
+      "CLAIM:E70670F537025B2A70564F7F",
+      "CLAIM:E9AF6FBC6E9DE5D26FF59496",
+      "CLAIM:EBB48D7FEDEA87F02475D1DF",
+      "CLAIM:EF2BB2C3E54FFFF0BABE69D6",
+      "CLAIM:EF5CA8379180E2EABA30A003",
+      "CLAIM:FE489E169F289FAD7FC7A5C4"
+    ],
+    "condition_refs": [
+      "CONDITION:9708A25239ED66F69C8EABA3"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:58+00:00",
+    "cve_id": "CVE-2026-97629",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:082D9420FFD9E9C8DDF0FF40",
+      "PACKAGE:C1799662DB9E37095CE727A0",
+      "PACKAGE:6047720675D15BD0C6C5768F"
+    ],
+    "distribution_status": [
+      "PACKAGE:082D9420FFD9E9C8DDF0FF40",
+      "PACKAGE:C1799662DB9E37095CE727A0",
+      "PACKAGE:6047720675D15BD0C6C5768F"
+    ],
+    "documented_configuration_context": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-97629 ghi nhận: Session forgery when using TLS session tickets. Phạm vi upstream: 1.23.2-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-97629",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-29T16:59:42.330000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-97629",
+    "normal_component_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:26.740000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6F10DC2E4EDDC368C1FBDAB8"
+    ],
+    "related_components": [
+      "COMPONENT:VIRTUAL-HOSTS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-908"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Session forgery when using TLS session tickets. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:15E5F630841A33A3834C2C17",
+      "SEVERITY:23DDC11E1D0FA530B26CB712",
+      "SEVERITY:5AA9EDB579968F262D6C100E",
+      "SEVERITY:AC4D0B97B4B7AF40B6B45733",
+      "SEVERITY:D5F55AED2D0C2CBAB91552AA"
+    ],
+    "source_refs": [
+      "EVIDENCE:1249755E98DEA4B654F56927",
+      "EVIDENCE:A716EB10BF59F23E716FB566",
+      "EVIDENCE:B76F07A8D7C0CE6F98B12DF7",
+      "EVIDENCE:B82A818F173B70E95BF7A4CA",
+      "EVIDENCE:C0ADED0070CDAC451657B373",
+      "EVIDENCE:CCFC9BF2753C7667965D7C4A",
+      "EVIDENCE:D11C098D135782D0EDB90A6E",
+      "EVIDENCE:D6E1989BD982410CC0CF78D0"
+    ],
+    "title": "Session forgery when using TLS session tickets",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:50+00:00",
+    "upstream_affected_expression": "1.23.2-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:44:48+00:00",
+  "entity_id": "CVE:CVE-2026-97629",
+  "id": "HISTORY:FD179DD2CCF2A34E022098B1"
+}

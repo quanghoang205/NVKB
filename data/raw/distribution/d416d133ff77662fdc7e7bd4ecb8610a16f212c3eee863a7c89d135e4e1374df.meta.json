@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:14+00:00",
+  "content_hash": "e25dc6295dc6fd052926836be651c5ea18420ac442bfe8d16886f6d6a0a3b3ad",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/e25dc6295dc6fd052926836be651c5ea18420ac442bfe8d16886f6d6a0a3b3ad.html",
+  "retrieved_at": "2026-11-25T02:28:14+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42934"
+}

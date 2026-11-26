@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:366EED625CCA7CA591962AE6"
+    ],
+    "created_at": "2026-11-25T02:27:22+00:00",
+    "description": "CVE:CVE-2026-15176 distribution_fix PACKAGE:BB7F076B9544EB5CB2764430",
+    "entity_type": "Relationship",
+    "id": "REL:AF87D44CA935054C87C78436",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:BB7F076B9544EB5CB2764430",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CC6E7C02D2289A94B6B175E0"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-15176",
+    "updated_at": "2026-11-25T02:27:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:22+00:00",
+  "entity_id": "REL:AF87D44CA935054C87C78436",
+  "id": "HISTORY:71EA5D58D6F3F93D85E8FDE8"
+}

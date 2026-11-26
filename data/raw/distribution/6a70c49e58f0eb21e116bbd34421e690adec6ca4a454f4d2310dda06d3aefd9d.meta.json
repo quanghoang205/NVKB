@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:30+00:00",
+  "content_hash": "6350b1494192ac53559dcbeaf4484b53b82ac160b5afc06238c22ad30debb886",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/6350b1494192ac53559dcbeaf4484b53b82ac160b5afc06238c22ad30debb886.html",
+  "retrieved_at": "2026-11-25T02:28:30+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-56434"
+}

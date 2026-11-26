@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:23+00:00",
+  "content_hash": "e19448c33dd07189774aa7ae732033becda7164104fc7f99c39f89f3de1a4a29",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"82fcdb5be2822f72581da6623fc3a8cedd602d22c075e65072db3911acd89641\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/e19448c33dd07189774aa7ae732033becda7164104fc7f99c39f89f3de1a4a29.json",
+  "retrieved_at": "2026-11-25T02:27:23+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/1xxx/CVE-2026-1642.json"
+}

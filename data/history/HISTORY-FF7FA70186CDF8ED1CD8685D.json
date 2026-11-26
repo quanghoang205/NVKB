@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:1D33EFFFF081ABBA88E0BF2F",
+    "claim_value": "\"Các hop phải thống nhất cách xử lý framing và thông điệp không hợp lệ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8F398F8452AFF9B2EB8ABBC3"
+    ],
+    "id": "CLAIM:1D33EFFFF081ABBA88E0BF2F",
+    "name": "PROTOCOL:HTTP-1.1: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8F398F8452AFF9B2EB8ABBC3"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-1.1",
+    "updated_at": "2026-11-25T02:32:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:18+00:00",
+  "entity_id": "CLAIM:1D33EFFFF081ABBA88E0BF2F",
+  "id": "HISTORY:FF7FA70186CDF8ED1CD8685D"
+}

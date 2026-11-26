@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:09331A8831FFD146485584BB",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:7AA661DA7FED8DDB3DB8028C",
+    "claim_value": "\"Use-after-free; state-machine inconsistency.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:7CACEF491477F7E109DDAC32: Events",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7AA661DA7FED8DDB3DB8028C",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:EVENT-DRIVEN: related_failure_classes",
+    "observation_key": "OBSERVATION:E9CF8BA579F8924B5FE62014",
+    "observed_at": "2026-11-25T02:32:04+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "COMPONENT:EVENT-DRIVEN",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:12:41+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7AA661DA7FED8DDB3DB8028C",
+    "claim_value": "\"Use-after-free; state-machine inconsistency.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "id": "CLAIM:7AA661DA7FED8DDB3DB8028C",
+    "name": "COMPONENT:EVENT-DRIVEN: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:41+00:00",
+  "entity_id": "CLAIM:7AA661DA7FED8DDB3DB8028C",
+  "id": "HISTORY:1CA95965576ECC52DD630A94"
+}

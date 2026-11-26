@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A68F13920E9ADB4B31D8166C",
+    "claim_value": "\"Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "id": "CLAIM:A68F13920E9ADB4B31D8166C",
+    "name": "COMPONENT:REWRITE-ENGINE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:32:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:10+00:00",
+  "entity_id": "CLAIM:A68F13920E9ADB4B31D8166C",
+  "id": "HISTORY:37BF69750F4E889DC4D62CA5"
+}

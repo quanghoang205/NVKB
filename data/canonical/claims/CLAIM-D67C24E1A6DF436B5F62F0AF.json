@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:75E72293E9272CB29E49B7FB",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:D67C24E1A6DF436B5F62F0AF",
+  "claim_value": "\"## Cơ chế hoạt động\\n\\nSau accept, worker chờ dữ liệu và tạo ngữ cảnh HTTP phù hợp. Parser tích lũy request line/headers, các phase chọn và thực hiện handler, rồi output filter chuyển response qua chuỗi buffer. Finalization cần xét công việc chưa kết thúc; subrequest hoặc buffered output khiến 'handler trả về' khác với 'mọi tài nguyên đã được giải phóng'. Sau hoàn tất, connection có thể về trạng thái keepalive hoặc đóng theo quyết định tương ứng.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:20:48+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#connection; #http_connection; #http_request; #http_request_finalization",
+  "evidence_refs": [
+    "EVIDENCE:73508A92036558C7B2D50317"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:D67C24E1A6DF436B5F62F0AF",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:CONNECTION-LIFECYCLE: pilot_section:Cơ chế hoạt động",
+  "observed_at": "2026-11-25T04:20:49+00:00",
+  "predicate": "pilot_section:Cơ chế hoạt động",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read development at #connection; #http_connection; #http_request; #http_request_finalization; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:20:49+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:73508A92036558C7B2D50317"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+  "updated_at": "2026-11-25T04:20:49+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+}

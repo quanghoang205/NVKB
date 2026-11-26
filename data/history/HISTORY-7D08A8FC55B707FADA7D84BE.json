@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D04E27EBA5A98C45C8C8F815",
+    "claim_value": "\"Review thứ tự phase, giới hạn request và bảo đảm cleanup đúng vòng đời.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "id": "CLAIM:D04E27EBA5A98C45C8C8F815",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:D04E27EBA5A98C45C8C8F815",
+  "id": "HISTORY:7D08A8FC55B707FADA7D84BE"
+}

@@ -1,0 +1,23 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:75E64B241997FF88342CF04F"
+    ],
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:7D811FBFB34C6AA823E36071",
+    "name": "Điều kiện được công bố — CVE-2026-123634",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A2163880C26D9E0DFAE927BB"
+    ],
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "CONDITION:7D811FBFB34C6AA823E36071",
+  "id": "HISTORY:55D3E2FEA85F499C48C5FCEC"
+}

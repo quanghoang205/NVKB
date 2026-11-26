@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:B5F5BCFD126BE443D0301140",
+    "claim_value": "\"When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module and the network infrastructure supports a Maximum Transmission Unit (MTU) of 4096 or greater without fragmentation, undisclosed QUIC packets can cause NGINX worker processes to leak previously freed memory.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:23+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C3D1517BAEDAAEDC26809A8B"
+    ],
+    "id": "CLAIM:B5F5BCFD126BE443D0301140",
+    "name": "CVE:CVE-2024-34161: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C3D1517BAEDAAEDC26809A8B"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-34161",
+    "updated_at": "2026-11-25T02:26:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:23+00:00",
+  "entity_id": "CLAIM:B5F5BCFD126BE443D0301140",
+  "id": "HISTORY:A6F9178A0D1CFA7312E0D489"
+}

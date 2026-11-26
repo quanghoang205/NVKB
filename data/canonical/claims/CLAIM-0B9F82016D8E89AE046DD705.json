@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:7382D5770BE3BCCAECFA1EDA",
+  "authority": "MITRE CWE",
+  "authority_scope": "MITRE CWE",
+  "claim_id": "CLAIM:0B9F82016D8E89AE046DD705",
+  "claim_value": "\"Tiêu thụ tài nguyên mà không có giới hạn phù hợp.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:38+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:0838953B2BE98F7124CC4F87: Description / Potential Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:0838953B2BE98F7124CC4F87"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:0B9F82016D8E89AE046DD705",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "WEAKNESS:CWE-400: definition",
+  "observation_key": "OBSERVATION:A38C80B33CC53FD2BC710621",
+  "observed_at": "2026-11-25T02:32:38+00:00",
+  "predicate": "definition",
+  "product_scope": "WEAKNESS:CWE-400",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:37+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:0838953B2BE98F7124CC4F87"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "WEAKNESS:CWE-400",
+  "updated_at": "2026-11-25T04:12:28+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

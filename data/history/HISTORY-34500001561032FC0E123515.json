@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "33b357de2f9aad621dfbd5daa0b43f8214e864e59fd7b701df5898588c5a36a4",
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.",
+    "document_title": "CWE -\r\n\n    CWE-787: Out-of-bounds Write (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:93E077BF039FAE4289B5A57E",
+    "id": "EVIDENCE:93E077BF039FAE4289B5A57E",
+    "local_snapshot_path": "data/raw/documentation/snapshots/33b357de2f9aad621dfbd5daa0b43f8214e864e59fd7b701df5898588c5a36a4.html",
+    "name": "CWE -\r\n\n    CWE-787: Out-of-bounds Write (5.0)",
+    "paraphrase": "Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:33+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-787",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/787.html",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "EVIDENCE:93E077BF039FAE4289B5A57E",
+  "id": "HISTORY:34500001561032FC0E123515"
+}

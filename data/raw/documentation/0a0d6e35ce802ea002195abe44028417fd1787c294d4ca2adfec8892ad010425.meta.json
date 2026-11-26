@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:33:06+00:00",
+  "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac75-1226\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:41 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+  "retrieved_at": "2026-11-25T02:33:06+00:00",
+  "source_url": "https://nginx.org/en/security_advisories.html"
+}

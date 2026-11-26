@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:58+00:00",
+  "content_hash": "57271c1ffb74f4841d16c858d731340c9a40e63de246ac757adf76d361be2101",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"8ee91d95338b6b80212f4e1a279b20d5fc767bd6973ec07fa3b7bd2fd63f9cd4\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/57271c1ffb74f4841d16c858d731340c9a40e63de246ac757adf76d361be2101.json",
+  "retrieved_at": "2026-11-25T02:25:58+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2019/9xxx/CVE-2019-9511.json"
+}

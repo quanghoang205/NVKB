@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:11+00:00",
+  "content_hash": "4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac72-4917\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:38 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe.html",
+  "retrieved_at": "2026-11-25T02:32:11+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html"
+}

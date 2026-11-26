@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "fd11c70bca4e530b0da818740605bd905ce17a9aaaae46b65a1bd6e52e02fa6e",
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "Mô tả và điều kiện do CNA công bố.",
+    "document_title": "CVE-2024-24989",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:D7C1C7751911E167923A1A43",
+    "id": "EVIDENCE:D7C1C7751911E167923A1A43",
+    "local_snapshot_path": "data/raw/cve/snapshots/fd11c70bca4e530b0da818740605bd905ce17a9aaaae46b65a1bd6e52e02fa6e.json",
+    "name": "CVE-2024-24989",
+    "paraphrase": "Mô tả và điều kiện do CNA công bố.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:26:03+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/descriptions",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24989.json",
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:07+00:00",
+  "entity_id": "EVIDENCE:D7C1C7751911E167923A1A43",
+  "id": "HISTORY:0E65D9122B4C118995F6C82B"
+}

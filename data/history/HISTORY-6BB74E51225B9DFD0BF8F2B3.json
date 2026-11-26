@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "a55a345ba690768c75cc94266acaf1b5166cc0863ec2ee76eb892553305bce75",
+    "created_at": "2026-11-25T02:28:58+00:00",
+    "description": "Debian unstable: fixed_version=1.30.4-8, status=fixed.",
+    "document_title": "CVE-2026-97629",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:24196ED39E03A5191BF0C523",
+    "id": "EVIDENCE:24196ED39E03A5191BF0C523",
+    "local_snapshot_path": "data/raw/distribution/snapshots/a55a345ba690768c75cc94266acaf1b5166cc0863ec2ee76eb892553305bce75.html",
+    "name": "CVE-2026-97629",
+    "paraphrase": "Debian unstable: fixed_version=1.30.4-8, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:58+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:58+00:00",
+  "entity_id": "EVIDENCE:24196ED39E03A5191BF0C523",
+  "id": "HISTORY:6BB74E51225B9DFD0BF8F2B3"
+}

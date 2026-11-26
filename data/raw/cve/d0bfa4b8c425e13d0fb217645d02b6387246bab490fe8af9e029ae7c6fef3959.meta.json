@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:47+00:00",
+  "content_hash": "e16f10603fbcf1dba4b29da40b42f40f48c4bbe831243c0c575c544d787b1132",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"9c6ebf0b64046ead9e7a14f06c414ba21a095e8cd70db63c1886787b7d1629e6\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/e16f10603fbcf1dba4b29da40b42f40f48c4bbe831243c0c575c544d787b1132.json",
+  "retrieved_at": "2026-11-25T02:28:47+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/95xxx/CVE-2026-95101.json"
+}

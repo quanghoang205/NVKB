@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:7B07C10F7F4A1FBB64251DD1",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:62856B03C81BE8D679DE34E8",
+    "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:F1911FDE0179646EC603B606: Protocol overview and state machine; topic=PROTOCOL:QUIC",
+    "evidence_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:62856B03C81BE8D679DE34E8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:QUIC: defensive_principles",
+    "observation_key": "OBSERVATION:41AFE503E7A1EE465F021F74",
+    "observed_at": "2026-11-25T02:44:22+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "PROTOCOL:QUIC",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:21+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T04:12:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:62856B03C81BE8D679DE34E8",
+    "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "id": "CLAIM:62856B03C81BE8D679DE34E8",
+    "name": "PROTOCOL:QUIC: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:38+00:00",
+  "entity_id": "CLAIM:62856B03C81BE8D679DE34E8",
+  "id": "HISTORY:8ACFFB7065AD242601B36EAE"
+}

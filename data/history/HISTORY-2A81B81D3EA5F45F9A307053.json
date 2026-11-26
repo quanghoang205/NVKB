@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:CF848A7C389BB4158190612A",
+    "claim_value": "\"Encoder/decoder tuân thủ cùng quy tắc và duy trì chiều dài đầu vào/đầu ra.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:56+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "id": "CLAIM:CF848A7C389BB4158190612A",
+    "name": "WEAKNESS:CWE-172: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-172",
+    "updated_at": "2026-11-25T02:48:56+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:56+00:00",
+  "entity_id": "CLAIM:CF848A7C389BB4158190612A",
+  "id": "HISTORY:2A81B81D3EA5F45F9A307053"
+}

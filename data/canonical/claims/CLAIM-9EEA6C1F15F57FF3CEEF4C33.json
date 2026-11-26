@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:0E4A293BC96FD80EA19BCC17",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+  "claim_value": "\"When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\\n\\nImpact:\\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:27:13+00:00",
+  "description": "description",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:EBC00C4C250179C07BC479C5: /containers/cna/descriptions",
+  "evidence_refs": [
+    "EVIDENCE:EBC00C4C250179C07BC479C5"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-125283: description",
+  "observation_key": "OBSERVATION:0A1B4EAE69DC3C3273D0215A",
+  "observed_at": "2026-11-25T02:27:13+00:00",
+  "predicate": "description",
+  "product_scope": "CVE:CVE-2026-125283",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:27:11+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:EBC00C4C250179C07BC479C5"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-125283",
+  "updated_at": "2026-11-25T04:12:45+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

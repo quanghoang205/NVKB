@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:9AAB92789092D21348FFB4EC",
+    "claim_value": "\"Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:41+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1500C9EE039C423FD775669A"
+    ],
+    "id": "CLAIM:9AAB92789092D21348FFB4EC",
+    "name": "CVE:CVE-2026-121810: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1500C9EE039C423FD775669A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T02:44:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:41+00:00",
+  "entity_id": "CLAIM:9AAB92789092D21348FFB4EC",
+  "id": "HISTORY:2C219E9DD605419256C7EE9B"
+}

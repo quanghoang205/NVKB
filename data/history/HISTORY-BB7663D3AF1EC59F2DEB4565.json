@@ -1,0 +1,48 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Client → NGINX → backend.",
+    "claim_refs": [
+      "CLAIM:25049F8C3A8C0ED57A14FD8C",
+      "CLAIM:034D00750146B2091214ABB4",
+      "CLAIM:FA489524214237C05AF2CEF0",
+      "CLAIM:3A13F25F7E4AF7B4C07554D1",
+      "CLAIM:3161DEF149ABFFFC4480E0DA",
+      "CLAIM:1223F6677CA20A226856AB5B",
+      "CLAIM:9ACD9458CC46EBA03C6CC250",
+      "CLAIM:1489AE6A09A76F996B081C0A"
+    ],
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "defensive_principles": "Lập sơ đồ trust boundary, kiểm tra TLS từng chặng và giới hạn header tin cậy.",
+    "definition": "NGINX đứng giữa client và dịch vụ upstream.",
+    "description": "NGINX đứng giữa client và dịch vụ upstream.",
+    "diagram": "flowchart LR\nC[Client] --> N[NGINX policy boundary]\nN --> U[Upstream service]\nN --> L[Restricted logs]",
+    "entity_type": "DeploymentArchitecture",
+    "failure_impact": "Rò rỉ thông tin hoặc routing sai tùy ứng dụng.",
+    "id": "DEPLOYMENT:REVERSE-PROXY",
+    "learning_objectives": [
+      "Giải thích Reverse proxy deployment bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Reverse proxy deployment",
+    "normal_behavior": "TLS và HTTP policy có thể kết thúc tại NGINX; upstream có kết nối và trust context riêng.",
+    "related_failure_classes": "Header trust errors; parsing differences.",
+    "related_knowledge": [
+      "COMPONENT:REVERSE-PROXY",
+      "COMPONENT:UPSTREAM-COMMUNICATION",
+      "PROTOCOL:TLS"
+    ],
+    "safety_assumptions": "Không chuyển tiếp danh tính giả định mà không kiểm tra.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Client → NGINX → backend.",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "DEPLOYMENT:REVERSE-PROXY",
+  "id": "HISTORY:BB7663D3AF1EC59F2DEB4565"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:5D92EF465E2988A01161B523",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:FDAEF40408A61E5B3072BB29",
+  "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:40+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:21CE7F049B27FEF9D9BE6542: ngx_http_ssl_module",
+  "evidence_refs": [
+    "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:FDAEF40408A61E5B3072BB29",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SSL-MODULE: defensive_principles",
+  "observation_key": "OBSERVATION:429AF568189E7C269EC61AB9",
+  "observed_at": "2026-11-25T02:32:40+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "MODULE:NGX-HTTP-SSL-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:08+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

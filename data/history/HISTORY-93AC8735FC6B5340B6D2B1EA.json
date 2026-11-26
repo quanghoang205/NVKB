@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:07E23984E58B3F7630B7E709",
+    "claim_value": "\"Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:39+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "id": "CLAIM:07E23984E58B3F7630B7E709",
+    "name": "CVE:CVE-2024-7347: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T02:44:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:39+00:00",
+  "entity_id": "CLAIM:07E23984E58B3F7630B7E709",
+  "id": "HISTORY:93AC8735FC6B5340B6D2B1EA"
+}

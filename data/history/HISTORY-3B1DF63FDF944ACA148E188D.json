@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A2FA26908F500FEF51517179",
+    "claim_value": "\"Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "id": "CLAIM:A2FA26908F500FEF51517179",
+    "name": "LEARNING:PATH-01: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T02:33:08+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:08+00:00",
+  "entity_id": "CLAIM:A2FA26908F500FEF51517179",
+  "id": "HISTORY:3B1DF63FDF944ACA148E188D"
+}

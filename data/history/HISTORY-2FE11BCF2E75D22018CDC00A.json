@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:752F8B484DF973C56B722CD3",
+    "claim_value": "\"Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:13+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "id": "CLAIM:752F8B484DF973C56B722CD3",
+    "name": "COMPONENT:NONBLOCKING-IO: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+    "updated_at": "2026-11-25T02:44:13+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:13+00:00",
+  "entity_id": "CLAIM:752F8B484DF973C56B722CD3",
+  "id": "HISTORY:2FE11BCF2E75D22018CDC00A"
+}

@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:D830680F93568497A95F53C5"
+    ],
+    "created_at": "2026-11-25T02:26:10+00:00",
+    "description": "CVE:CVE-2024-24989 distribution_fix PACKAGE:99512DFD25CC0301B4112CA5",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:67D18A2507666FC7D149BBD6",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:99512DFD25CC0301B4112CA5",
+    "predicate": "distribution_fix",
+    "rationale": "Legacy association: Distribution-specific package statement. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Distribution-specific package statement",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:C81A3C94ED171186D0EAEDEE"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T04:13:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:D830680F93568497A95F53C5"
+    ],
+    "created_at": "2026-11-25T02:26:10+00:00",
+    "description": "CVE:CVE-2024-24989 distribution_fix PACKAGE:99512DFD25CC0301B4112CA5",
+    "entity_type": "Relationship",
+    "id": "REL:67D18A2507666FC7D149BBD6",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:99512DFD25CC0301B4112CA5",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C81A3C94ED171186D0EAEDEE"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T02:26:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:07+00:00",
+  "entity_id": "REL:67D18A2507666FC7D149BBD6",
+  "id": "HISTORY:BF53B8855ED0EB65329761C4"
+}

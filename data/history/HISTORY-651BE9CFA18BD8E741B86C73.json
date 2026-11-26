@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa giá trị động của request và cấu hình điều khiển.",
+    "claim_refs": [
+      "CLAIM:770CF979A2B20851566AD49F",
+      "CLAIM:B81A5AE901224E63EC14CA5F",
+      "CLAIM:D335CC678712131842920707",
+      "CLAIM:2678AD1659DAE941DA26BB01",
+      "CLAIM:4CED377C7BB690F606CFB947",
+      "CLAIM:42D630EE390948F2586404C9",
+      "CLAIM:64F96EA8462A26F92D29DC08",
+      "CLAIM:97EBFE1FC01304D4866CA966"
+    ],
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "defensive_principles": "Giữ cấu hình dễ kiểm tra, tránh chu kỳ và dùng bản đã sửa theo advisory liên quan.",
+    "definition": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "description": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng bộ nhớ hoặc xử lý URI sai.",
+    "id": "COMPONENT:REWRITE-ENGINE",
+    "learning_objectives": [
+      "Giải thích Rewrite engine bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Rewrite engine",
+    "normal_behavior": "Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.",
+    "related_failure_classes": "Buffer overflow; excessive rewrite iterations.",
+    "related_knowledge": [],
+    "safety_assumptions": "Độ dài chuỗi, biến và trạng thái redirect phải được quản lý nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa giá trị động của request và cấu hình điều khiển.",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa giá trị động của request và cấu hình điều khiển.",
+    "claim_refs": [
+      "CLAIM:770CF979A2B20851566AD49F",
+      "CLAIM:B81A5AE901224E63EC14CA5F",
+      "CLAIM:D335CC678712131842920707",
+      "CLAIM:2678AD1659DAE941DA26BB01",
+      "CLAIM:4CED377C7BB690F606CFB947",
+      "CLAIM:42D630EE390948F2586404C9",
+      "CLAIM:64F96EA8462A26F92D29DC08",
+      "CLAIM:97EBFE1FC01304D4866CA966"
+    ],
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "defensive_principles": "Giữ cấu hình dễ kiểm tra, tránh chu kỳ và dùng bản đã sửa theo advisory liên quan.",
+    "definition": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "description": "Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng bộ nhớ hoặc xử lý URI sai.",
+    "id": "COMPONENT:REWRITE-ENGINE",
+    "learning_objectives": [
+      "Giải thích Rewrite engine bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Rewrite engine",
+    "normal_behavior": "Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.",
+    "related_failure_classes": "Buffer overflow; excessive rewrite iterations.",
+    "related_knowledge": [],
+    "safety_assumptions": "Độ dài chuỗi, biến và trạng thái redirect phải được quản lý nhất quán.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa giá trị động của request và cấu hình điều khiển.",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:REWRITE-ENGINE",
+  "id": "HISTORY:651BE9CFA18BD8E741B86C73"
+}

@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DEPLOYMENT:REVERSE-PROXY learns_from PROTOCOL:TLS",
+    "entity_type": "Relationship",
+    "id": "REL:1AA79F42A1CDEAE9205668CA",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:TLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:33:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:32+00:00",
+  "entity_id": "REL:1AA79F42A1CDEAE9205668CA",
+  "id": "HISTORY:F5D58FCC5FD4E0F22E68B3D0"
+}

@@ -1,0 +1,52 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "claim_refs": [
+      "CLAIM:B746A9E74B4DF18AF6A26914",
+      "CLAIM:6E82767CB3C13DDA17E46479",
+      "CLAIM:BD860305059A2E76863F9F1B",
+      "CLAIM:63403CB768EBE071F93A813D",
+      "CLAIM:AA36630AF0384D3A4416FEEF",
+      "CLAIM:4803C9DC26FE9A58C1B3A350",
+      "CLAIM:B9920181CFDDBC423B58DFAC",
+      "CLAIM:89B095809B3D6638CE0ACBA7"
+    ],
+    "created_at": "2026-11-25T02:33:09+00:00",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-02",
+    "learning_objectives": [
+      "Giải thích Learning Path 02 — Memory Safety bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Learning Path 02 — Memory Safety",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "WEAKNESS:CWE-125",
+      "WEAKNESS:CWE-787",
+      "WEAKNESS:CWE-416",
+      "WEAKNESS:CWE-415",
+      "WEAKNESS:CWE-190"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "updated_at": "2026-11-25T02:33:09+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:09+00:00",
+  "entity_id": "LEARNING:PATH-02",
+  "id": "HISTORY:F50D0FDDEAFCFFEA7DDAA358"
+}

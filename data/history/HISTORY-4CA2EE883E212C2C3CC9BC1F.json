@@ -1,0 +1,127 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Không. CWE phân loại weakness; cần evidence riêng cho hậu quả và điều kiện được nguồn công bố.",
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-9152EC0FFF2E4DF223C54BA7|phạm vi tài liệu]].\n\n## Ba câu hỏi về bộ nhớ\n\nMột lần truy cập cần trả lời ba câu riêng: địa chỉ có nằm trong vùng hợp lệ không, allocation có còn sống không, và dữ liệu đã được khởi tạo cho mục đích hiện tại chưa? CWE-787 tập trung ghi ngoài biên buffer. Dùng taxonomy chi tiết ở bài CVE để phân biệt over-read, overwrite, use-after-free hay uninitialized access; không gộp tất cả thành một root cause. Các phần lifetime và initialization dưới đây là so sánh sư phạm, không mở rộng định nghĩa CWE-787.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-FAD86353F9C9DA531271C500|Claim của section]].\n\n## Ownership và lifecycle\n\nAllocation tạo capacity; owner xác định ai chịu trách nhiệm kết thúc lifetime; consumer chỉ được dùng trong contract đó. Pool giải phóng tài nguyên theo nhóm giúp quản lý hiệu quả nhưng không tự theo dõi mọi con trỏ mà module khác giữ. Một callback còn chờ hoặc subrequest còn chạy làm việc xác định lifetime khó hơn. Spatial safety không sửa temporal safety và ngược lại.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-B660A7FCCC621BB9AFBA7475|Claim của section]].\n\n## Invariant và tradeoff\n\nDiễn giải: kiểm kích thước trước chuyển kiểu/cấp phát, giữ con trỏ/độ dài đồng bộ, và bảo đảm mọi đường cleanup thống nhất. Ownership rõ có thể làm thiết kế dài hơn nhưng giảm phụ thuộc ngầm; sao chép dữ liệu giảm chia sẻ lifetime nhưng tốn memory và CPU. Chia sẻ buffer giúp throughput nhưng cần protocol trả ownership hoặc reference management rõ ràng.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-31D00EBDEFF632BD91B7F270|Claim của section]].\n\n## Hậu quả và kiểm soát\n\nOver-read không tự chứng minh dữ liệu đã được gửi ra ngoài; overwrite không tự chứng minh code execution; worker crash không tự chứng minh toàn host ngừng hoạt động. Đọc source impact của từng CVE trước khi kết luận. Hardening có thể giảm khả năng hoặc hậu quả của một số lớp lỗi nhưng không làm phép truy cập sai trở thành đúng. Giữ quyền worker thấp, kiểm chứng bản vá và review các đường lỗi là các lớp bổ sung, không phải phép đo miễn nhiễm.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-986BA3F6AA09638B5F978268|Claim của section]].",
+    "assessment": "Một lỗi thuộc CWE memory có đủ để gắn confirmed RCE không?",
+    "claim_refs": [
+      "CLAIM:9152EC0FFF2E4DF223C54BA7",
+      "CLAIM:FAD86353F9C9DA531271C500",
+      "CLAIM:B660A7FCCC621BB9AFBA7475",
+      "CLAIM:31D00EBDEFF632BD91B7F270",
+      "CLAIM:986BA3F6AA09638B5F978268"
+    ],
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "cwe_id": "CWE-787",
+    "defensive_principles": "Theo dõi capacity riêng với length; kiểm thử các giá trị biên.",
+    "definition": "CWE-787 mô tả ghi ngoài biên buffer dự định; các hậu quả và biện pháp giảm thiểu được taxonomy nêu không chứng minh tất cả cùng xảy ra ở một CVE cụ thể.",
+    "description": "CWE-787 mô tả ghi ngoài biên buffer dự định; các hậu quả và biện pháp giảm thiểu được taxonomy nêu không chứng minh tất cả cùng xảy ra ở một CVE cụ thể.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Weakness",
+    "failure_impact": "Hỏng đối tượng lân cận hoặc dừng tiến trình.",
+    "id": "WEAKNESS:CWE-787",
+    "learning_objectives": [
+      "Phân biệt spatial safety",
+      "temporal safety và initialization.",
+      "Tách lớp lỗi memory khỏi hậu quả cụ thể được chứng minh."
+    ],
+    "name": "Out-of-bounds Write — biên bộ nhớ và giới hạn tác động",
+    "normal_behavior": "Địa chỉ ghi phải thuộc buffer đích và được cấp phát đủ dung lượng.",
+    "prerequisites": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Out-of-bounds write",
+    "related_knowledge": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "research_claim_refs": [
+      "CLAIM:9152EC0FFF2E4DF223C54BA7",
+      "CLAIM:FAD86353F9C9DA531271C500",
+      "CLAIM:B660A7FCCC621BB9AFBA7475",
+      "CLAIM:31D00EBDEFF632BD91B7F270",
+      "CLAIM:986BA3F6AA09638B5F978268"
+    ],
+    "safety_assumptions": "Tính toán offset và kích thước không overflow/underflow.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+      "EVIDENCE:2EA269027FEA7940F910D54E",
+      "EVIDENCE:93E077BF039FAE4289B5A57E",
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "updated_at": "2026-11-25T05:29:00+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:8B7C84C4339617FC13CB31AA",
+      "CLAIM:D77544A1B95B48D400E388C8",
+      "CLAIM:04296729BB3C187FA5352963",
+      "CLAIM:95B8CDA15944426E9E467587",
+      "CLAIM:E8381698C651F762F19926F7",
+      "CLAIM:60A95C227CE7336D6BCC3BF0",
+      "CLAIM:6D3639AB4CDF57BF3C6FC5A2",
+      "CLAIM:C6BD580A95F88F274B63C25D"
+    ],
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "cwe_id": "CWE-787",
+    "defensive_principles": "Theo dõi capacity riêng với length; kiểm thử các giá trị biên.",
+    "definition": "Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.",
+    "description": "Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Hỏng đối tượng lân cận hoặc dừng tiến trình.",
+    "id": "WEAKNESS:CWE-787",
+    "learning_objectives": [
+      "Giải thích CWE-787 — Out-of-bounds write bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-787 — Out-of-bounds write",
+    "normal_behavior": "Địa chỉ ghi phải thuộc buffer đích và được cấp phát đủ dung lượng.",
+    "related_failure_classes": "Out-of-bounds write",
+    "related_knowledge": [],
+    "safety_assumptions": "Tính toán offset và kích thước không overflow/underflow.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+      "EVIDENCE:93E077BF039FAE4289B5A57E",
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "updated_at": "2026-11-25T04:13:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:29:00+00:00",
+  "entity_id": "WEAKNESS:CWE-787",
+  "id": "HISTORY:4CA2EE883E212C2C3CC9BC1F"
+}

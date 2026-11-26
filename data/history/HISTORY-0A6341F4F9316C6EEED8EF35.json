@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:C49975A0B6069C448CB5C94E",
+    "authority": "CVE Program / CNA",
+    "authority_scope": "CVE Program / CNA",
+    "claim_id": "CLAIM:8540AED7F8B2613EF691BC13",
+    "claim_value": "\"When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\\n\\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "description",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:D7C987F4E116133786DC9C36: /containers/cna/descriptions",
+    "evidence_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:8540AED7F8B2613EF691BC13",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-118899: description",
+    "observation_key": "OBSERVATION:F67B617B9CA8CF8615C2EAC0",
+    "observed_at": "2026-11-25T02:26:42+00:00",
+    "predicate": "description",
+    "product_scope": "CVE:CVE-2026-118899",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:26:39+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program / CNA",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T04:12:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:8540AED7F8B2613EF691BC13",
+    "claim_value": "\"When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\\n\\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "id": "CLAIM:8540AED7F8B2613EF691BC13",
+    "name": "CVE:CVE-2026-118899: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:42+00:00",
+  "entity_id": "CLAIM:8540AED7F8B2613EF691BC13",
+  "id": "HISTORY:0A6341F4F9316C6EEED8EF35"
+}

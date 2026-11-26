@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:0C651C7E86523356BA4DD2F5",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:199254F3FE776AC5A5B968DB",
+    "claim_value": "\"NGINX OSS: affected 1.1.19-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:06+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "li containing CVE-2026-27784",
+    "evidence_refs": [
+      "EVIDENCE:80D33BBF70F07DB821F5232D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:199254F3FE776AC5A5B968DB",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-27784: v1.3:versions",
+    "observed_at": "2026-11-25T04:57:07+00:00",
+    "predicate": "v1.3:versions",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:57:07+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:80D33BBF70F07DB821F5232D"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T04:57:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:33:06+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:0C651C7E86523356BA4DD2F5",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:199254F3FE776AC5A5B968DB",
+    "claim_value": "\"NGINX OSS: affected 1.1.19-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:06+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:80D33BBF70F07DB821F5232D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:199254F3FE776AC5A5B968DB",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-27784: v1.3:versions",
+    "observed_at": "2026-11-25T04:57:07+00:00",
+    "predicate": "v1.3:versions",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:80D33BBF70F07DB821F5232D"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T04:57:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T04:57:07+00:00",
+  "entity_id": "CLAIM:199254F3FE776AC5A5B968DB",
+  "id": "HISTORY:4F46340D8795D51E4983598D"
+}

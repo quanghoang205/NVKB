@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:FDD84977E61D293BA487747C",
+      "CLAIM:81C43A4C036B1395DFD7F3A6",
+      "CLAIM:E27C166E6953AF4BDB128B04",
+      "CLAIM:4F16C766DCD107A997525262",
+      "CLAIM:0053283B7E46903B1A0C44D4"
+    ],
+    "created_at": "2026-11-25T05:28:23+00:00",
+    "description": "CVE:CVE-2026-42946 learns_from CONTROL:RESOURCE-BOUNDS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-42946",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:4A67CE628497DC01C3A14966",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "predicate": "learns_from",
+    "rationale": "Đọc Resource bounds để thảo luận: Allocation thành công có chứng minh số byte được đọc tồn tại trong input không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Resource bounds để thảo luận: Allocation thành công có chứng minh số byte được đọc tồn tại trong input không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:28:23+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1C43E772F27127F2E496D09C",
+      "EVIDENCE:CB63D563A0774619A90C5C94"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T05:28:23+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:23+00:00",
+  "entity_id": "REL:4A67CE628497DC01C3A14966",
+  "id": "HISTORY:FE84CCA0DF56AFAD2A2BE192"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:29836B626BC6179A43DF4554",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:51A61F687541435EAB3EE0DF",
+  "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:32+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:25D294C72DC04B09747CE615: ngx_http_ssi_module; topic=MODULE:NGX-HTTP-SSI-MODULE",
+  "evidence_refs": [
+    "EVIDENCE:25D294C72DC04B09747CE615"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:51A61F687541435EAB3EE0DF",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SSI-MODULE: failure_impact",
+  "observation_key": "OBSERVATION:CFA2ED88C889CEDEA77BACF7",
+  "observed_at": "2026-11-25T02:44:32+00:00",
+  "predicate": "failure_impact",
+  "product_scope": "MODULE:NGX-HTTP-SSI-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:49+00:00",
+  "review_reason": "Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:25D294C72DC04B09747CE615"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+  "updated_at": "2026-11-25T05:24:18+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

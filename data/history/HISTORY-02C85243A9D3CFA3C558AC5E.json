@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:B910A92D1220DE5491BFBC9E",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:20+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "id": "CLAIM:B910A92D1220DE5491BFBC9E",
+    "name": "PROTOCOL:HTTP-3: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T02:32:20+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:20+00:00",
+  "entity_id": "CLAIM:B910A92D1220DE5491BFBC9E",
+  "id": "HISTORY:02C85243A9D3CFA3C558AC5E"
+}

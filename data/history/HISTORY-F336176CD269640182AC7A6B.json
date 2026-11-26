@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:F164FBA65E226984ED082AF3",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:5817E8E0654EA757A7B452A2",
+    "claim_value": "\"## Cơ chế và ownership\\n\\nHeader Content-Type công bố cách hiểu byte; filter chuyển mã có thể tạo tập byte khác. Tài liệu giới hạn các loại charset được hỗ trợ và hướng chuyển đổi. Khi dữ liệu đi qua nhiều buffer, biên callback không nhất thiết là biên một ký tự. Mô hình implementation cần giữ phần chưa hoàn thành trong context còn sống, rồi tạo output tương thích với charset đích.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:16+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5817E8E0654EA757A7B452A2",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: v1.3:knowledge:Cơ chế và ownership",
+    "observed_at": "2026-11-25T05:24:16+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế và ownership",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T05:24:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:16+00:00",
+  "entity_id": "CLAIM:5817E8E0654EA757A7B452A2",
+  "id": "HISTORY:F336176CD269640182AC7A6B"
+}

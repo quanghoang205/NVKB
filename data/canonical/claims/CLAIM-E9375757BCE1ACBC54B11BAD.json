@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:BBACD19EF17F7E77C3076CFA",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:E9375757BCE1ACBC54B11BAD",
+  "claim_value": "\"WEAKNESS:CWE-126\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:26:31+00:00",
+  "description": "related_weaknesses",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:96277BC472ED92F8657D0FC0: /containers/cna/problemTypes",
+  "evidence_refs": [
+    "EVIDENCE:96277BC472ED92F8657D0FC0"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:E9375757BCE1ACBC54B11BAD",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2024-7347: related_weaknesses",
+  "observation_key": "OBSERVATION:23361E41058A43342D564482",
+  "observed_at": "2026-11-25T02:26:31+00:00",
+  "predicate": "related_weaknesses",
+  "product_scope": "CVE:CVE-2024-7347",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:26:27+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:96277BC472ED92F8657D0FC0"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-7347",
+  "updated_at": "2026-11-25T04:12:54+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

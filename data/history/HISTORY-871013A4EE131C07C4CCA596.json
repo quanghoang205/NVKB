@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:0B15F7CC67EF2502808C9C3D",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:C83D5FFCCD77560857C92D49",
+    "claim_value": "\"CNA nêu thứ tự tham chiếu capture/map hoặc non-cacheable variable. Mô hình phòng vệ là giữ dữ liệu giữa pha sizing và pha tạo output nhất quán.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:23+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:47DB8699C597DB21777ADFB7"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C83D5FFCCD77560857C92D49",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42533: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:24:23+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:47DB8699C597DB21777ADFB7"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42533",
+    "updated_at": "2026-11-25T05:24:23+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:23+00:00",
+  "entity_id": "CLAIM:C83D5FFCCD77560857C92D49",
+  "id": "HISTORY:871013A4EE131C07C4CCA596"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3A13F25F7E4AF7B4C07554D1",
+    "claim_value": "\"Client → NGINX → backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "id": "CLAIM:3A13F25F7E4AF7B4C07554D1",
+    "name": "DEPLOYMENT:REVERSE-PROXY: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "CLAIM:3A13F25F7E4AF7B4C07554D1",
+  "id": "HISTORY:F066770B1ACFBBC647204A42"
+}

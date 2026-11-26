@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:1809A1858BAA65C98980E30A",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1D1D846BA118D5F4878A92A0",
+    "claim_value": "\"## Readiness và tiến độ\\n\\nEvent-driven không có nghĩa mỗi connection có một thread riêng. Worker lưu trạng thái để tiếp tục xử lý khi có sự kiện phù hợp. Backend I/O báo socket có thể sẵn sàng; callback thử đọc/ghi, xử lý lượng dữ liệu đã có rồi trả quyền điều khiển khi cần chờ. Ready không bảo đảm toàn bộ message ứng dụng đã đến, cũng không bảo đảm mọi byte muốn ghi đã được gửi. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]]\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:40+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#event_loop; #i_o_events; #timer_events; #posted_events",
+    "evidence_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1D1D846BA118D5F4878A92A0",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:EVENT-DRIVEN: pilot_section:Readiness và tiến độ",
+    "observed_at": "2026-11-25T04:20:40+00:00",
+    "predicate": "pilot_section:Readiness và tiến độ",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read development at #event_loop; #i_o_events; #timer_events; #posted_events; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:41+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:20:41+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:1809A1858BAA65C98980E30A",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1D1D846BA118D5F4878A92A0",
+    "claim_value": "\"## Readiness và tiến độ\\n\\nEvent-driven không có nghĩa mỗi connection có một thread riêng. Worker lưu trạng thái để tiếp tục xử lý khi có sự kiện phù hợp. Backend I/O báo socket có thể sẵn sàng; callback thử đọc/ghi, xử lý lượng dữ liệu đã có rồi trả quyền điều khiển khi cần chờ. Ready không bảo đảm toàn bộ message ứng dụng đã đến, cũng không bảo đảm mọi byte muốn ghi đã được gửi. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]]\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:40+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1D1D846BA118D5F4878A92A0",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:EVENT-DRIVEN: pilot_section:Readiness và tiến độ",
+    "observed_at": "2026-11-25T04:20:40+00:00",
+    "predicate": "pilot_section:Readiness và tiến độ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:20:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:41+00:00",
+  "entity_id": "CLAIM:1D1D846BA118D5F4878A92A0",
+  "id": "HISTORY:6B5AAD6EFA30B02957BE3418"
+}

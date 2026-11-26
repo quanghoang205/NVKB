@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066",
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Phân loại CWE được CNA gán.",
+    "document_title": "CVE-2025-23419",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+    "id": "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+    "local_snapshot_path": "data/raw/cve/snapshots/eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066.json",
+    "name": "CVE-2025-23419",
+    "paraphrase": "Phân loại CWE được CNA gán.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:21:55+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/problemTypes",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json",
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+  "id": "HISTORY:611433F6994C4CD5C7ABBF8A"
+}

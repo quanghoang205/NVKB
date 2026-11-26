@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:75030FE045C62FF3C4306035",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:C49DD0691E11CE3BE7D1D540",
+    "claim_value": "\"## Ownership và invariant\\n\\nDiễn giải thiết kế: main request, subrequest, buffer và thao tác I/O có thể hoàn thành khác thời điểm. Callback hoàn tất phải được ràng buộc với owner còn sống; hủy main request không cho phép callback muộn tiếp tục dùng bộ nhớ cũ. Bộ lọc giữ con trỏ input phải biết khi nào upstream hoặc pool được quyền tái dùng vùng đó. Việc chuyển sang đường AIO còn thêm một mốc hoàn tất ngoài lần gọi hiện tại.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:17+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C49DD0691E11CE3BE7D1D540",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-SSI-MODULE: v1.3:knowledge:Ownership và invariant",
+    "observed_at": "2026-11-25T05:24:18+00:00",
+    "predicate": "v1.3:knowledge:Ownership và invariant",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "updated_at": "2026-11-25T05:24:18+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:18+00:00",
+  "entity_id": "CLAIM:C49DD0691E11CE3BE7D1D540",
+  "id": "HISTORY:FC7E47288A87423F27E850C3"
+}

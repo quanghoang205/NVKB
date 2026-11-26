@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:742DD3EDAFA58270FE55B50A",
+    "claim_value": "\"Chứng thực tài khoản ↔ dữ liệu hộp thư.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:52133EFF4255B050D755A95C"
+    ],
+    "id": "CLAIM:742DD3EDAFA58270FE55B50A",
+    "name": "PROTOCOL:POP3: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:52133EFF4255B050D755A95C"
+    ],
+    "subject_entity_id": "PROTOCOL:POP3",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:742DD3EDAFA58270FE55B50A",
+  "id": "HISTORY:395C465AB29620A569AC7CC2"
+}

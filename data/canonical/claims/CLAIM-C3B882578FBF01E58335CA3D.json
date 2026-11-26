@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:1AC4D4756A77A1DAA5094F5C",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:C3B882578FBF01E58335CA3D",
+  "claim_value": "\"Transport bảo mật dựa trên UDP với nhiều stream độc lập.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:22+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:6801A47EFE6E65BE5BBD2F98: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:6801A47EFE6E65BE5BBD2F98"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:C3B882578FBF01E58335CA3D",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:QUIC: definition",
+  "observation_key": "OBSERVATION:CFC2B50F2DA6E5346C72CD6D",
+  "observed_at": "2026-11-25T02:32:22+00:00",
+  "predicate": "definition",
+  "product_scope": "PROTOCOL:QUIC",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:21+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:6801A47EFE6E65BE5BBD2F98"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:QUIC",
+  "updated_at": "2026-11-25T04:12:49+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

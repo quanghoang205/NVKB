@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:A0000A278A20C9DDEF0DBC6E
+title: 'CONCEPT:CVE: safety_assumptions'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CONCEPT:CVE: safety_assumptions'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CONCEPT:CVE: safety_assumptions
+
+`CLAIM:A0000A278A20C9DDEF0DBC6E` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[CONCEPT-CVE|CVE record — định danh, authority và trạng thái tri thức]]. Predicate: `safety_assumptions`.
+
+```json
+"Không thay một loại bằng chứng bằng loại khác."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program. CVE Program
+
+[[EVIDENCE-A7E3093DD56E544722EF8FDD|CVE]]
+
+Locator: EVIDENCE:A7E3093DD56E544722EF8FDD: Overview / documented record; topic=CONCEPT:CVE
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | UNSUPPORTED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Evidence separation is author policy; replacement labels it interpretation.
+
+Quan sát: 2026-11-25T02:44:33+00:00. Truy xuất: 2026-11-25T02:32:59+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

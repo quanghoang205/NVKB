@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:2BD756965AD54C854FF76E79",
+  "authority": "f5",
+  "authority_scope": "f5",
+  "claim_id": "CLAIM:83CE6EF7252417FF6022564D",
+  "claim_value": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N\", \"version\": \"3.1\"}",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:26:23+00:00",
+  "description": "severity:CIRCL mirror:f5:3.1",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:20F2B35C51C31C17CD1F79AA: /containers/cna/metrics",
+  "evidence_refs": [
+    "EVIDENCE:20F2B35C51C31C17CD1F79AA"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:83CE6EF7252417FF6022564D",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2024-34161: severity:CIRCL mirror:f5:3.1",
+  "observation_key": "OBSERVATION:E063775EB7FC890267903B69",
+  "observed_at": "2026-11-25T02:26:23+00:00",
+  "predicate": "severity:CIRCL mirror:f5:3.1",
+  "product_scope": "CVE:CVE-2024-34161",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:26:23+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "f5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:20F2B35C51C31C17CD1F79AA"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-34161",
+  "updated_at": "2026-11-25T04:12:42+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:37+00:00",
+    "description": "LEARNING:PATH-05 learns_from CONCEPT:ADVISORY",
+    "entity_type": "Relationship",
+    "id": "REL:03F1331932C7608C81906F61",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:ADVISORY",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-05",
+    "updated_at": "2026-11-25T02:33:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:37+00:00",
+  "entity_id": "REL:03F1331932C7608C81906F61",
+  "id": "HISTORY:DD5993C485A44F7D688A2F50"
+}

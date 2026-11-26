@@ -1,0 +1,91 @@
+group: mail
+name: Mail proxy — authentication, retry và serialization
+shared_knowledge: [MODULE:NGX-MAIL-AUTH-HTTP-MODULE, COMPONENT:MEMORY-POOL, COMPONENT:EVENT-DRIVEN]
+knowledge:
+  - id: MODULE:NGX-MAIL-AUTH-HTTP-MODULE
+    name: Mail auth HTTP — trust boundary và vòng đời phiên
+    source: https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html
+    locator: '#protocol; #auth_http_timeout'
+    excerpt: The HTTP protocol is used to communicate
+    source_fact: NGINX dùng HTTP để trao đổi với authentication server và lấy kết quả từ response headers; bộ nhớ mỗi lần authentication chỉ được giải phóng khi phiên kết thúc theo tài liệu.
+    prerequisites: [COMPONENT:CONNECTION-LIFECYCLE, COMPONENT:MEMORY-POOL]
+    objectives: [Phân biệt phiên mail với một lần authentication., Giải thích trust boundary khi serialize metadata sang auth server.]
+    body: |
+      ## Cơ chế bình thường
+
+      Mail proxy trao đổi với authentication server qua HTTP để lấy quyết định và thông tin backend. Response body không mang quyết định; các header có nghĩa riêng trong contract. HTTP status thành công tự nó không thay Auth-Status. Auth-Wait cho phép retry trong cùng phiên; timeout điều chỉnh thời gian chờ, không phải số lần thử.
+
+      ## Ownership và lifecycle
+
+      Tài liệu nói mỗi lần authentication cấp phát bộ nhớ và giải phóng khi session kết thúc. Vì vậy một lần thất bại không nhất thiết trả lại toàn bộ tài nguyên phiên. Khi retry, state của lần trước phải được giữ hoặc thay theo quy tắc rõ: con trỏ, độ dài và trạng thái phương thức không thể được dùng như vẫn hợp lệ nếu owner đã đổi. Giới hạn số retry là phần của ngân sách tài nguyên, không phải bản vá mọi lỗi retry.
+
+      ## Serialization và identity
+
+      Metadata có thể đi qua nhiều giao thức: mail, HTTP authentication, resolver và upstream mail. Diễn giải phòng vệ: dữ liệu ở một miền không được đổi thành cú pháp điều khiển ở miền khác khi serialize. DNS host name là dữ liệu đầu vào, không có quyền bổ sung header. Authentication server và upstream server là hai vai trò; thông tin đi tới auth server không tự chứng minh client nhận lại được nó.
+
+      ## Tradeoff và kiểm soát
+
+      Retry giúp người dùng sửa thông tin nhập nhưng kéo dài session và tăng số allocation. Tách quyết định xác thực ra dịch vụ riêng giúp quản trị identity nhưng thêm timeout và trust boundary. Review giới hạn retry, serialization và cleanup cùng nhau; giữ quyền worker tối thiểu và dùng bản sửa khi advisory nêu lỗi memory. Đây là nguyên tắc thiết kế, không cung cấp phương thức quan sát hoặc lấy dữ liệu rò.
+    assessment: Auth-Wait tồn tại có chứng minh lỗi nằm ở authentication server không?
+    answer: Không; nó là điều kiện tương tác. Bên nào vi phạm memory/serialization contract cần evidence riêng.
+articles:
+  - cve: CVE-2025-53859
+    summary: Over-read trong SMTP authentication có thể đưa byte bộ nhớ vào request gửi authentication server; không mặc nhiên đồng nghĩa client thấy được byte đó.
+    architecture: ngx_mail_smtp_module và trao đổi tới authentication server trong phiên SMTP.
+    normal: Request auth chỉ chứa trường hợp lệ với độ dài được xác định; retry không được tái dùng dữ liệu ngoài miền buffer.
+    mechanism: CNA mô tả over-read trong authentication process và byte có thể đi sang auth server. Chưa có căn cứ xác định hàm hoặc allocation gây lỗi.
+    applicability: Build có SMTP mail module, smtp_auth dùng none và auth server trả Auth-Wait; CNA còn nêu việc lấy dữ liệu cần chuẩn bị thêm.
+    impact: Rò byte vào request gửi authentication server là hậu quả được CNA mô tả.
+    potential: Khả năng client quan sát, nội dung bí mật và độ dài dữ liệu chưa được xác minh; không suy RCE.
+    principle: Giữ length/state của từng lần authentication, phân biệt bên nhận dữ liệu với tác nhân có thể quan sát.
+    defense: Vá SMTP module và review retry/serialization; quản trị authentication server trong trust boundary riêng.
+    patch_note: Advisory nêu fix 1.29.1+; không tự bịa bản sửa nhánh ổn định khi entry không nêu.
+    question: Dữ liệu gửi auth server có tự chứng minh bị gửi trực tiếp cho client không?
+    answer: Không; cần evidence về đường quan sát thứ hai mà nguồn chưa xác minh trong nghiên cứu này.
+    unknown: Buffer, độ dài rò và khả năng truy cập dữ liệu của bên ngoài chưa rõ.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-27651
+    summary: NULL pointer dereference trong mail authentication có liên hệ retry với CRAM-MD5/APOP.
+    architecture: Mail auth HTTP state và lifecycle phương thức xác thực ở worker.
+    normal: Lần authentication tiếp theo phải có context hợp lệ, kể cả khi auth server cho retry.
+    mechanism: Advisory gọi NULL dereference; CNA nêu phương thức authentication và Auth-Wait, chưa xác định object NULL.
+    applicability: Mail auth HTTP module, CRAM-MD5 hoặc APOP và Auth-Wait cho retry theo CNA.
+    impact: Worker processes có thể kết thúc theo nguồn.
+    potential: Không có xác nhận lộ bí mật hoặc thực thi mã trong mô tả đã đọc.
+    principle: Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.
+    defense: Vá implementation, review state initialization trên nhánh retry; giới hạn retry là kiểm soát tài nguyên bổ sung.
+    patch_note: Fix 1.28.3/1.29.7; không dùng phạm vi của lỗi SMTP over-read 53859.
+    question: Hai CVE đều nhắc Auth-Wait có cùng impact không?
+    answer: Không; 27651 mô tả termination, còn 53859 mô tả byte đi tới auth server.
+    unknown: Object và đường lỗi cụ thể sau retry chưa review mã nguồn.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-28753
+    summary: Metadata từ DNS có thể làm thay đổi cấu trúc trao đổi authentication/SMTP upstream.
+    architecture: Resolver output đi vào serialization của mail SMTP, auth_http và XCLIENT context theo advisory.
+    normal: Tên host là dữ liệu; bộ serialize giữ ranh giới trường điều khiển của giao thức đích.
+    mechanism: CNA mô tả xử lý CRLF không đúng từ DNS response dẫn đến header injection. Phân tích giữ ở ranh giới dữ liệu/cú pháp, không cung cấp chuỗi đầu vào.
+    applicability: ngx_mail_smtp_module và DNS response do bên ngoài kiểm soát theo CNA; không suy mọi resolver lookup đều dẫn đến lỗi.
+    impact: Arbitrary header injection vào SMTP upstream request và khả năng request manipulation được nguồn công bố.
+    potential: Quyền auth, tác động dữ liệu downstream và hành vi backend cụ thể chưa xác minh.
+    principle: Dữ liệu qua trust boundary phải được biểu diễn theo grammar đích, không mang quyền tạo cấu trúc mới.
+    defense: Vá serializer và quản trị nguồn resolver; tin cậy DNS không thay kiểm biểu diễn ở ranh giới giao thức.
+    patch_note: Fix 1.28.3/1.29.7; giữ riêng phạm vi mail, không gán lỗi cho mọi HTTP proxy.
+    question: Vì sao giá trị từ một giao thức không tự hợp lệ trong header giao thức khác?
+    answer: Hai grammar có ký tự điều khiển và ranh giới khác nhau; dữ liệu phải được kiểm theo context đích.
+    unknown: Đường chuyển metadata và hậu quả tại từng auth/backend chưa được review độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-113425
+    summary: Use-after-free khi NGINX làm mail proxy có thể crash hoặc corrupt memory của worker.
+    architecture: Mail proxy data plane trong worker; chưa có fault location ở một phương thức xác thực cụ thể.
+    normal: Client/upstream mail connection và context phiên phải dọn theo thứ tự không để callback còn dùng state đã giải phóng.
+    mechanism: CNA xác nhận use-after-free nhưng traffic và đường state cụ thể không được công bố trong mô tả; không suy do Auth-Wait.
+    applicability: NGINX cấu hình làm mail proxy; nguồn không cho thêm điều kiện đủ để thu hẹp theo SMTP/IMAP/POP3 riêng.
+    impact: Crash worker hoặc memory corruption làm gián đoạn dịch vụ được CNA mô tả.
+    potential: RCE được nêu là tác động tiềm năng có điều kiện ASLR; không xác nhận root hoặc control-plane exposure.
+    principle: Ownership của phiên và connection upstream phải được xử lý trên cả đường lỗi và đóng.
+    defense: Cập nhật bản sửa và bảo toàn phân quyền worker; hardening là giảm thiểu hậu quả, không sửa UAF.
+    patch_note: Fix 1.30.7/1.31.9; khoảng affected từ 0.5.33 theo upstream.
+    question: Có được thêm Auth-Wait vào applicability chỉ vì CVE mail khác nhắc nó không?
+    answer: Không; mỗi điều kiện phải được đúng nguồn của CVE hỗ trợ.
+    unknown: Phương thức mail, object và transition gây lỗi chưa được nguồn đủ chi tiết.
+    maturity: TECHNICAL_DRAFT

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A10A22A979A40A48F2EE1909",
+    "claim_value": "\"Chuyển tiếp request đến SCGI server.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:47+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+    ],
+    "id": "CLAIM:A10A22A979A40A48F2EE1909",
+    "name": "MODULE:NGX-HTTP-SCGI-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SCGI-MODULE",
+    "updated_at": "2026-11-25T02:32:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:47+00:00",
+  "entity_id": "CLAIM:A10A22A979A40A48F2EE1909",
+  "id": "HISTORY:489E04AB4FD43F6FE08288DF"
+}

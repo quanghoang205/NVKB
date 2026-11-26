@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "description": "PROTOCOL:TLS PRECEDES COMPONENT:TLS-SESSION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:2EB3DE5E4ACA020D5F1B2BDB",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "PRECEDES",
+    "object_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "predicate": "PRECEDES",
+    "rationale": "Thứ tự pilot chuyển từ cơ chế vừa học sang mục tiêu kế tiếp; là quyết định sư phạm, chưa learner-tested.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject taught before object",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:21:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:17+00:00",
+  "entity_id": "REL:2EB3DE5E4ACA020D5F1B2BDB",
+  "id": "HISTORY:4543A5AA595AB8697879D1A5"
+}

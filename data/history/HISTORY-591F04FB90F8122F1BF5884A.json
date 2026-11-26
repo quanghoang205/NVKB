@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:9346609357EC55421D448214",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:AC031036DF7A6A7C1E064CAD",
+    "claim_value": "\"## Tradeoff và điều không được suy diễn\\n\\nThu hồi theo nhóm làm đơn giản cleanup và giảm chi phí quản lý nhiều allocation nhỏ, nhưng một object sống lâu có thể giữ bộ nhớ không còn cần đến cho đến khi owner kết thúc. Pool không ngăn buffer overrun, số học kích thước sai hay sử dụng context sai. Ngược lại, tên CWE memory safety không chứng minh một CVE cụ thể bắt nguồn từ pool. Cần review mã hoặc thông báo kỹ thuật rõ ràng cho kết luận đó.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:54+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#pool; #shared_memory; #manual_memory_management",
+    "evidence_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:AC031036DF7A6A7C1E064CAD",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MEMORY-POOL: pilot_section:Tradeoff và điều không được suy diễn",
+    "observed_at": "2026-11-25T04:20:54+00:00",
+    "predicate": "pilot_section:Tradeoff và điều không được suy diễn",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read development at #pool; #shared_memory; #manual_memory_management; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:54+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:20:54+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:9346609357EC55421D448214",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:AC031036DF7A6A7C1E064CAD",
+    "claim_value": "\"## Tradeoff và điều không được suy diễn\\n\\nThu hồi theo nhóm làm đơn giản cleanup và giảm chi phí quản lý nhiều allocation nhỏ, nhưng một object sống lâu có thể giữ bộ nhớ không còn cần đến cho đến khi owner kết thúc. Pool không ngăn buffer overrun, số học kích thước sai hay sử dụng context sai. Ngược lại, tên CWE memory safety không chứng minh một CVE cụ thể bắt nguồn từ pool. Cần review mã hoặc thông báo kỹ thuật rõ ràng cho kết luận đó.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:54+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:AC031036DF7A6A7C1E064CAD",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MEMORY-POOL: pilot_section:Tradeoff và điều không được suy diễn",
+    "observed_at": "2026-11-25T04:20:54+00:00",
+    "predicate": "pilot_section:Tradeoff và điều không được suy diễn",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:20:54+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:54+00:00",
+  "entity_id": "CLAIM:AC031036DF7A6A7C1E064CAD",
+  "id": "HISTORY:591F04FB90F8122F1BF5884A"
+}

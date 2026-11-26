@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:707CFDE49AA6B7E36EFE8AFC",
+    "claim_value": "\"Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:34+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B52E5E1DCD6E4C83A52DD2CD"
+    ],
+    "id": "CLAIM:707CFDE49AA6B7E36EFE8AFC",
+    "name": "CONCEPT:BACKPORT: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B52E5E1DCD6E4C83A52DD2CD"
+    ],
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CLAIM:707CFDE49AA6B7E36EFE8AFC",
+  "id": "HISTORY:333E98BFD66CA2539E543B11"
+}

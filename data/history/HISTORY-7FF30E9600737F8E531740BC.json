@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:63169CD0AC45F0FE2D3E54E4",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+    "claim_value": "\"Hello!\\n\\nFour security issues were identified in nginx HTTP/3 implementation, which\\nmight allow an attacker that uses a specially crafted QUIC session to cause\\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\\nworker process memory disclosure on systems with MTU larger than 4096\\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\\nCVE-2024-32760).\\n\\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\\n(not compiled by default) if the \\\"quic\\\" option of the \\\"listen\\\" directive\\nis used in a configuration file.\\n\\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\\nThe issues are fixed in nginx 1.27.0, 1.26.1.\\n\\nThanks to Nils Bars of CISPA.\\n\\n\\n-- \\nSergey Kandaurov\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:19+00:00",
+    "description": "vendor_advisory_statement",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:ADE803DD55AF1C4D6A59D83F: advisory body",
+    "evidence_refs": [
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-35200: vendor_advisory_statement",
+    "observation_key": "OBSERVATION:A651294478269A41D3D32D59",
+    "observed_at": "2026-11-25T02:40:19+00:00",
+    "predicate": "vendor_advisory_statement",
+    "product_scope": "CVE:CVE-2024-35200",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:26:15+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T04:12:41+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+    "claim_value": "\"Hello!\\n\\nFour security issues were identified in nginx HTTP/3 implementation, which\\nmight allow an attacker that uses a specially crafted QUIC session to cause\\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\\nworker process memory disclosure on systems with MTU larger than 4096\\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\\nCVE-2024-32760).\\n\\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\\n(not compiled by default) if the \\\"quic\\\" option of the \\\"listen\\\" directive\\nis used in a configuration file.\\n\\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\\nThe issues are fixed in nginx 1.27.0, 1.26.1.\\n\\nThanks to Nils Bars of CISPA.\\n\\n\\n-- \\nSergey Kandaurov\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:19+00:00",
+    "description": "vendor_advisory_statement",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+    ],
+    "id": "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+    "name": "CVE:CVE-2024-35200: vendor_advisory_statement",
+    "predicate": "vendor_advisory_statement",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:40:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:41+00:00",
+  "entity_id": "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+  "id": "HISTORY:7FF30E9600737F8E531740BC"
+}

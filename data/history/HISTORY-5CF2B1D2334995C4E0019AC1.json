@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:730F0849007E585A09BE89E1",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:E1147B065A605EEF9000EB6F",
+    "claim_value": "\"## Cơ chế bình thường\\n\\nSSI là filter có thể tạo công việc bổ sung để lấy nội dung và ghép vào response. Công việc con tham gia lifecycle của request nhưng không đồng nhất với một client connection mới. Một phần output có thể đã sẵn sàng trong khi phần khác còn chờ; mô hình dữ liệu cần biểu diễn thứ tự và điểm hoàn tất rõ ràng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:17+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E1147B065A605EEF9000EB6F",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-SSI-MODULE: v1.3:knowledge:Cơ chế bình thường",
+    "observed_at": "2026-11-25T05:24:17+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế bình thường",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:17+00:00",
+  "entity_id": "CLAIM:E1147B065A605EEF9000EB6F",
+  "id": "HISTORY:5CF2B1D2334995C4E0019AC1"
+}

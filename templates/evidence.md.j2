@@ -1,0 +1,19 @@
+{{ frontmatter }}
+# {{ item.document_title }}
+
+{{ item.paraphrase }}
+
+- Nguồn: [{{ item.publisher }}]({{ item.source_url }})
+- Authority gốc: {{ item.get('source_authority', 'UNKNOWN') }}
+- Vai trò kênh: {{ item.get('source_role', 'UNKNOWN') }}
+- Locator: `{{ item.source_locator }}`
+{% if item.source_locator.startswith('#') %}- [Mở section đầu tiên]({{ item.source_url }}{{ item.source_locator.split(';')[0] }}){% endif %}
+- Truy xuất: {{ item.retrieved_at }}
+- SHA-256: `{{ item.content_hash }}`
+- Snapshot từ project root: `{{ item.get('local_snapshot_path', 'UNKNOWN') }}`
+- Reference: {{ item.get('reference_availability', 'UNKNOWN') }}; integrity: {{ item.get('source_integrity', 'NOT_CHECKED') }}
+- Source support: {{ item.get('source_support_status', 'NOT_REVIEWED') }}; review: {{ item.get('review_status', 'NOT_REVIEWED') }}
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

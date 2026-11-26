@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:691CA68E9900CC86B45FA8ED",
+    "claim_value": "\"Xác định rõ header tin cậy, timeout, TLS upstream và kích thước buffer.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "id": "CLAIM:691CA68E9900CC86B45FA8ED",
+    "name": "COMPONENT:REVERSE-PROXY: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "subject_entity_id": "COMPONENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:691CA68E9900CC86B45FA8ED",
+  "id": "HISTORY:422FFCF3B014B8E03831F476"
+}

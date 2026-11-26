@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:A7E3093DD56E544722EF8FDD
+title: CVE
+verification_status: UNVERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CVE
+
+Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.
+
+- Nguồn: [CVE Program](https://www.cve.org/ResourcesSupport/AllResources/CNARules)
+- Authority gốc: CVE Program / original CNA (see record)
+- Vai trò kênh: DISTRIBUTION_CHANNEL
+- Locator: `Overview / documented record; topic=CONCEPT:CVE`
+
+- Truy xuất: 2026-11-25T02:32:59+00:00
+- SHA-256: `3bd3355bf49fe686b0c96fd3e9efe5099f033a0ad7ab77015c72eecc39c8f0c8`
+- Snapshot từ project root: `data/raw/documentation/snapshots/3bd3355bf49fe686b0c96fd3e9efe5099f033a0ad7ab77015c72eecc39c8f0c8.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: UNSUPPORTED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

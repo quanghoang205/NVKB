@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:0C418A9F7156D57CA8E3F9FA",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "id": "CLAIM:0C418A9F7156D57CA8E3F9FA",
+    "name": "PROTOCOL:HTTP-2: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:19+00:00",
+  "entity_id": "CLAIM:0C418A9F7156D57CA8E3F9FA",
+  "id": "HISTORY:BA5C0DF074ADBC6E3DEF77E9"
+}

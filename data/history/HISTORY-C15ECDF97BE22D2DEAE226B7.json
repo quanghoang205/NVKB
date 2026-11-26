@@ -1,0 +1,86 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:0FE52C7852A904DDCBD066D4",
+      "CLAIM:037D6727EAB6184020C8F238",
+      "CLAIM:4867AF9D182D90BC010AEF48",
+      "CLAIM:5643513783D41D1136C995A8",
+      "CLAIM:F2AE3460E575E476448E6107",
+      "CLAIM:8942A18F94AF6AFDE048F0A1",
+      "CLAIM:57B62F81B7149288914C8224",
+      "CLAIM:C38A1433A76D377491A9DE58"
+    ],
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "cwe_id": "CWE-835",
+    "defensive_principles": "Đặt giới hạn công việc, kiểm tra invariant tiến triển và xử lý trạng thái không đổi.",
+    "definition": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "description": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-835",
+    "learning_objectives": [
+      "Giải thích CWE-835 — Infinite Loop bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-835 — Infinite Loop",
+    "normal_behavior": "Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.",
+    "related_failure_classes": "Infinite Loop",
+    "related_knowledge": [],
+    "safety_assumptions": "Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5",
+      "EVIDENCE:A0E312C3345B2591EBD6E89B",
+      "EVIDENCE:DE52FE1407841B766BE78251"
+    ],
+    "updated_at": "2026-11-25T04:13:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:0FE52C7852A904DDCBD066D4",
+      "CLAIM:037D6727EAB6184020C8F238",
+      "CLAIM:4867AF9D182D90BC010AEF48",
+      "CLAIM:5643513783D41D1136C995A8",
+      "CLAIM:F2AE3460E575E476448E6107",
+      "CLAIM:8942A18F94AF6AFDE048F0A1",
+      "CLAIM:57B62F81B7149288914C8224",
+      "CLAIM:C38A1433A76D377491A9DE58"
+    ],
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "cwe_id": "CWE-835",
+    "defensive_principles": "Đặt giới hạn công việc, kiểm tra invariant tiến triển và xử lý trạng thái không đổi.",
+    "definition": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "description": "Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-835",
+    "learning_objectives": [
+      "Giải thích CWE-835 — Infinite Loop bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-835 — Infinite Loop",
+    "normal_behavior": "Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.",
+    "related_failure_classes": "Infinite Loop",
+    "related_knowledge": [],
+    "safety_assumptions": "Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5",
+      "EVIDENCE:A0E312C3345B2591EBD6E89B",
+      "EVIDENCE:DE52FE1407841B766BE78251"
+    ],
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:15+00:00",
+  "entity_id": "WEAKNESS:CWE-835",
+  "id": "HISTORY:C15ECDF97BE22D2DEAE226B7"
+}

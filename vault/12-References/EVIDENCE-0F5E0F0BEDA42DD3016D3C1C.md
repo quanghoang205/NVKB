@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:0F5E0F0BEDA42DD3016D3C1C
+title: CVE-2026-123640
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE-2026-123640
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CVE-2026-123640
+
+Sản phẩm và phiên bản được CNA liệt kê.
+
+- Nguồn: [CIRCL mirror](https://vulnerability.circl.lu/api/vulnerability/CVE-2026-123640)
+- Authority gốc: CVE Program / original CNA (see record)
+- Vai trò kênh: AGGREGATOR
+- Locator: `/containers/cna/affected`
+
+- Truy xuất: 2026-11-25T02:27:10+00:00
+- SHA-256: `7d87aaf136182c7d458eb289fb784ced23c403640dc454b0911ebaeb1f4d64d9`
+- Snapshot từ project root: `data/raw/vulnerability_lookup/snapshots/7d87aaf136182c7d458eb289fb784ced23c403640dc454b0911ebaeb1f4d64d9.json`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

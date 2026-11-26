@@ -1,0 +1,37 @@
+{
+  "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+  "claim_refs": [
+    "CLAIM:EA4F12285878691F4D64F609",
+    "CLAIM:49E4E059214F7562E95BE03C",
+    "CLAIM:102C70E0DA3E03A98592D952",
+    "CLAIM:E3A22E254E5E684D0191F186",
+    "CLAIM:939B3E94CDDDAC4DD5E86822",
+    "CLAIM:B9F6E5459921CD814E355CD6",
+    "CLAIM:093D6E631D8ADD90652C59E0",
+    "CLAIM:E9637CB09D202A1EAC6F74E1"
+  ],
+  "created_at": "2026-11-25T02:33:04+00:00",
+  "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+  "definition": "Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.",
+  "description": "Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.",
+  "diagram": "",
+  "entity_type": "Component",
+  "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+  "id": "CONCEPT:CVSS",
+  "learning_objectives": [
+    "Giải thích CVSS bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CVSS",
+  "normal_behavior": "Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.",
+  "related_failure_classes": "Incorrect inference; stale metadata.",
+  "related_knowledge": [],
+  "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+  "source_refs": [
+    "EVIDENCE:AD97F945283CADAECB352952"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "INFERRED"
+}

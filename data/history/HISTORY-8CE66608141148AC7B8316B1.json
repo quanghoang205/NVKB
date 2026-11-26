@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:3352AD3ECD6C59C63592C37F",
+    "claim_value": "\"Integer overflow\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "id": "CLAIM:3352AD3ECD6C59C63592C37F",
+    "name": "WEAKNESS:CWE-190: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T02:32:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:37+00:00",
+  "entity_id": "CLAIM:3352AD3ECD6C59C63592C37F",
+  "id": "HISTORY:8CE66608141148AC7B8316B1"
+}

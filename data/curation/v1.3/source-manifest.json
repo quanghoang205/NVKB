@@ -1,0 +1,398 @@
+{
+  "https://cwe.mitre.org/data/definitions/787.html": {
+    "content_hash": "33b357de2f9aad621dfbd5daa0b43f8214e864e59fd7b701df5898588c5a36a4",
+    "local_snapshot_path": "data/raw/documentation/snapshots/33b357de2f9aad621dfbd5daa0b43f8214e864e59fd7b701df5898588c5a36a4.html",
+    "retrieved_at": "2026-11-25T02:32:33+00:00",
+    "source_url": "https://cwe.mitre.org/data/definitions/787.html"
+  },
+  "https://mailman.nginx.org/pipermail/nginx-announce/2024/GMY32CSHFH6VFTN76HJNX7WNEX4RLHF6.html": {
+    "content_hash": "baa351e71298505004cb32ae3eb73ba8c6af2f84218a7e7adf32e48c34c17885",
+    "local_snapshot_path": "data/raw/nginx/snapshots/baa351e71298505004cb32ae3eb73ba8c6af2f84218a7e7adf32e48c34c17885.html",
+    "retrieved_at": "2026-11-25T02:26:15+00:00",
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/GMY32CSHFH6VFTN76HJNX7WNEX4RLHF6.html"
+  },
+  "https://mailman.nginx.org/pipermail/nginx-announce/2024/NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html": {
+    "content_hash": "38f7c830dd0a16edb57732c9221fcb0a02b9115484f96e6b08d45abc96fd2a5a",
+    "local_snapshot_path": "data/raw/nginx/snapshots/38f7c830dd0a16edb57732c9221fcb0a02b9115484f96e6b08d45abc96fd2a5a.html",
+    "retrieved_at": "2026-11-25T02:26:07+00:00",
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html"
+  },
+  "https://mailman.nginx.org/pipermail/nginx-announce/2024/UUOCLLONPR6244YQYU65PO5LB7JDYCWM.html": {
+    "content_hash": "1d76bae3d4eeb37f45e9c7ceb179bf3781c3464cdd1613201f81ca21402b3d66",
+    "local_snapshot_path": "data/raw/nginx/snapshots/1d76bae3d4eeb37f45e9c7ceb179bf3781c3464cdd1613201f81ca21402b3d66.html",
+    "retrieved_at": "2026-11-25T02:26:31+00:00",
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/UUOCLLONPR6244YQYU65PO5LB7JDYCWM.html"
+  },
+  "https://mailman.nginx.org/pipermail/nginx-announce/2025/NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html": {
+    "content_hash": "4044ee06abc10f17f34fe81dbd4a3b63223384a08c4d437da833fc120ad57357",
+    "local_snapshot_path": "data/raw/nginx/snapshots/4044ee06abc10f17f34fe81dbd4a3b63223384a08c4d437da833fc120ad57357.html",
+    "retrieved_at": "2026-11-25T02:26:33+00:00",
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2025/NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_charset_module.html": {
+    "content_hash": "0c6b43318d45d3795bf1a916fef9d0703f923939d77ce35ce5fa7b432aefcb18",
+    "local_snapshot_path": "data/raw/documentation/snapshots/0c6b43318d45d3795bf1a916fef9d0703f923939d77ce35ce5fa7b432aefcb18.html",
+    "retrieved_at": "2026-11-25T02:32:46+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_charset_module.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_core_module.html": {
+    "content_hash": "7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e",
+    "local_snapshot_path": "data/raw/documentation/snapshots/7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e.html",
+    "retrieved_at": "2026-11-25T02:32:09+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_core_module.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_mp4_module.html": {
+    "content_hash": "f34fbf6f7be13551de8b31ff5e843a1d1cfe22553f344653df6d8de49f0f395d",
+    "local_snapshot_path": "data/raw/documentation/snapshots/f34fbf6f7be13551de8b31ff5e843a1d1cfe22553f344653df6d8de49f0f395d.html",
+    "retrieved_at": "2026-11-25T02:32:42+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_mp4_module.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_proxy_module.html": {
+    "content_hash": "4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe",
+    "local_snapshot_path": "data/raw/documentation/snapshots/4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe.html",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_rewrite_module.html": {
+    "content_hash": "558312faada98f2a2e426c64cabab7532f0d5ff2017e9eacc3f45c70e2f7ed63",
+    "local_snapshot_path": "data/raw/documentation/snapshots/558312faada98f2a2e426c64cabab7532f0d5ff2017e9eacc3f45c70e2f7ed63.html",
+    "retrieved_at": "2026-11-25T02:32:10+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_rewrite_module.html"
+  },
+  "https://nginx.org/en/docs/http/ngx_http_ssi_module.html": {
+    "content_hash": "be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb",
+    "local_snapshot_path": "data/raw/documentation/snapshots/be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb.html",
+    "retrieved_at": "2026-11-25T02:32:49+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_ssi_module.html"
+  },
+  "https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html": {
+    "content_hash": "b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5",
+    "local_snapshot_path": "data/raw/documentation/snapshots/b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5.html",
+    "retrieved_at": "2026-11-25T02:32:54+00:00",
+    "source_url": "https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html"
+  },
+  "https://nginx.org/en/docs/ngx_core_module.html": {
+    "content_hash": "539e8520f03b421d3795cd21bd6d1032d869d6690a8e609acd3db47f4e501b7e",
+    "local_snapshot_path": "data/raw/documentation/snapshots/539e8520f03b421d3795cd21bd6d1032d869d6690a8e609acd3db47f4e501b7e.html",
+    "retrieved_at": "2026-11-25T02:49:05+00:00",
+    "source_url": "https://nginx.org/en/docs/ngx_core_module.html"
+  },
+  "https://nginx.org/en/docs/stream/ngx_stream_ssl_module.html": {
+    "content_hash": "7d5fa78cb33bd4f0c3200acd4d2255e93096287e697148ee614f3b7f9ec2c235",
+    "local_snapshot_path": "data/raw/documentation/snapshots/7d5fa78cb33bd4f0c3200acd4d2255e93096287e697148ee614f3b7f9ec2c235.html",
+    "retrieved_at": "2026-11-25T02:32:56+00:00",
+    "source_url": "https://nginx.org/en/docs/stream/ngx_stream_ssl_module.html"
+  },
+  "https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html": {
+    "content_hash": "c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078.html",
+    "retrieved_at": "2026-11-25T02:32:56+00:00",
+    "source_url": "https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html"
+  },
+  "https://nginx.org/en/security_advisories.html": {
+    "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+    "local_snapshot_path": "data/raw/documentation/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+    "retrieved_at": "2026-11-25T02:33:06+00:00",
+    "source_url": "https://nginx.org/en/security_advisories.html"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cve-schema/main/schema/CVE_Record_Format.json": {
+    "content_hash": "33f7517424facfc712c7b808be1b6503fc74b2e6b85979bbaacb9b623ddfde67",
+    "local_snapshot_path": "data/raw/research/snapshots/33f7517424facfc712c7b808be1b6503fc74b2e6b85979bbaacb9b623ddfde67.json",
+    "retrieved_at": "2026-11-25T04:16:41+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cve-schema/main/schema/CVE_Record_Format.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24989.json": {
+    "content_hash": "fd11c70bca4e530b0da818740605bd905ce17a9aaaae46b65a1bd6e52e02fa6e",
+    "local_snapshot_path": "data/raw/cve/snapshots/fd11c70bca4e530b0da818740605bd905ce17a9aaaae46b65a1bd6e52e02fa6e.json",
+    "retrieved_at": "2026-11-25T02:26:03+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24989.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24990.json": {
+    "content_hash": "4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7",
+    "local_snapshot_path": "data/raw/cve/snapshots/4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7.json",
+    "retrieved_at": "2026-11-25T02:26:10+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24990.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/31xxx/CVE-2024-31079.json": {
+    "content_hash": "807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0",
+    "local_snapshot_path": "data/raw/cve/snapshots/807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0.json",
+    "retrieved_at": "2026-11-25T02:26:12+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/31xxx/CVE-2024-31079.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/32xxx/CVE-2024-32760.json": {
+    "content_hash": "d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95",
+    "local_snapshot_path": "data/raw/cve/snapshots/d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95.json",
+    "retrieved_at": "2026-11-25T02:26:16+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/32xxx/CVE-2024-32760.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/34xxx/CVE-2024-34161.json": {
+    "content_hash": "fe99b8ddd891dbe933af48f9af29118b84f0515f2ea9d115fac5840bd6ca29ec",
+    "local_snapshot_path": "data/raw/cve/snapshots/fe99b8ddd891dbe933af48f9af29118b84f0515f2ea9d115fac5840bd6ca29ec.json",
+    "retrieved_at": "2026-11-25T02:26:20+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/34xxx/CVE-2024-34161.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/35xxx/CVE-2024-35200.json": {
+    "content_hash": "8f741316c7d1c7f926bebd971695a270853f5eb55fb19c0c727ebe3dbd0897b9",
+    "local_snapshot_path": "data/raw/cve/snapshots/8f741316c7d1c7f926bebd971695a270853f5eb55fb19c0c727ebe3dbd0897b9.json",
+    "retrieved_at": "2026-11-25T02:26:24+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/35xxx/CVE-2024-35200.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/7xxx/CVE-2024-7347.json": {
+    "content_hash": "9c655729b340f926b29dd1d5ee5bd684acbc31d8025ba73498dfcccf6f604c44",
+    "local_snapshot_path": "data/raw/cve/snapshots/9c655729b340f926b29dd1d5ee5bd684acbc31d8025ba73498dfcccf6f604c44.json",
+    "retrieved_at": "2026-11-25T02:26:27+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/7xxx/CVE-2024-7347.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json": {
+    "content_hash": "eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066",
+    "local_snapshot_path": "data/raw/research/snapshots/eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066.json",
+    "retrieved_at": "2026-11-25T04:13:42+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/53xxx/CVE-2025-53859.json": {
+    "content_hash": "16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd",
+    "local_snapshot_path": "data/raw/cve/snapshots/16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd.json",
+    "retrieved_at": "2026-11-25T02:26:33+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/53xxx/CVE-2025-53859.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/113xxx/CVE-2026-113425.json": {
+    "content_hash": "904f5c789f20d2a6260a3b171a08bb680ecb98be5a857fd0052ab4bed5664777",
+    "local_snapshot_path": "data/raw/cve/snapshots/904f5c789f20d2a6260a3b171a08bb680ecb98be5a857fd0052ab4bed5664777.json",
+    "retrieved_at": "2026-11-25T02:26:35+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/113xxx/CVE-2026-113425.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/118xxx/CVE-2026-118899.json": {
+    "content_hash": "da885bda619889c063d9cfebd90365ce731f01374ec3bd58579a1759da51db96",
+    "local_snapshot_path": "data/raw/cve/snapshots/da885bda619889c063d9cfebd90365ce731f01374ec3bd58579a1759da51db96.json",
+    "retrieved_at": "2026-11-25T02:26:39+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/118xxx/CVE-2026-118899.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/120xxx/CVE-2026-120967.json": {
+    "content_hash": "d06d911e187e76cc766237dd74dac2f61193114356349e5bdf6e8ee466898892",
+    "local_snapshot_path": "data/raw/cve/snapshots/d06d911e187e76cc766237dd74dac2f61193114356349e5bdf6e8ee466898892.json",
+    "retrieved_at": "2026-11-25T02:26:43+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/120xxx/CVE-2026-120967.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/120xxx/CVE-2026-120993.json": {
+    "content_hash": "d9af6cc821684c38a5bc4301048a2a812beebd412f91a98d932dc898fe1c24ef",
+    "local_snapshot_path": "data/raw/cve/snapshots/d9af6cc821684c38a5bc4301048a2a812beebd412f91a98d932dc898fe1c24ef.json",
+    "retrieved_at": "2026-11-25T02:26:47+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/120xxx/CVE-2026-120993.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/121xxx/CVE-2026-121810.json": {
+    "content_hash": "d7160140c15dae95fffcfb99702c151e7c82cd0e4a758e01fe20d2ea99dbff02",
+    "local_snapshot_path": "data/raw/cve/snapshots/d7160140c15dae95fffcfb99702c151e7c82cd0e4a758e01fe20d2ea99dbff02.json",
+    "retrieved_at": "2026-11-25T02:26:52+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/121xxx/CVE-2026-121810.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123007.json": {
+    "content_hash": "3978dfd1e284d9bbdc971156b582ed1a9b283c2d2c234efe7779bed9ca119125",
+    "local_snapshot_path": "data/raw/cve/snapshots/3978dfd1e284d9bbdc971156b582ed1a9b283c2d2c234efe7779bed9ca119125.json",
+    "retrieved_at": "2026-11-25T02:26:56+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123007.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123633.json": {
+    "content_hash": "3ed899ef75d54761eed71c62c199b60ba2f659312fd7362dd2b0129c3e51d7c4",
+    "local_snapshot_path": "data/raw/cve/snapshots/3ed899ef75d54761eed71c62c199b60ba2f659312fd7362dd2b0129c3e51d7c4.json",
+    "retrieved_at": "2026-11-25T02:27:01+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123633.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123634.json": {
+    "content_hash": "5afee59118544d8dd083f8be85ffe84cb94220c64a493b97e2b4649c18d25cbc",
+    "local_snapshot_path": "data/raw/cve/snapshots/5afee59118544d8dd083f8be85ffe84cb94220c64a493b97e2b4649c18d25cbc.json",
+    "retrieved_at": "2026-11-25T02:27:04+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123634.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123640.json": {
+    "content_hash": "9d8642455320eda04e6b75d6f88a25eca927eb600fc4f61ab59cf7c3f29cfe68",
+    "local_snapshot_path": "data/raw/cve/snapshots/9d8642455320eda04e6b75d6f88a25eca927eb600fc4f61ab59cf7c3f29cfe68.json",
+    "retrieved_at": "2026-11-25T02:27:08+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123640.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/125xxx/CVE-2026-125283.json": {
+    "content_hash": "5f92a4723efc54b7ef60d90ced7cc22d67b82945cb721ce071f9b2ab0461dcfa",
+    "local_snapshot_path": "data/raw/cve/snapshots/5f92a4723efc54b7ef60d90ced7cc22d67b82945cb721ce071f9b2ab0461dcfa.json",
+    "retrieved_at": "2026-11-25T02:27:11+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/125xxx/CVE-2026-125283.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/132xxx/CVE-2026-132779.json": {
+    "content_hash": "0a420eecde3f84ba6f456f2dd99c9747d5173a34f7da60d851e3d331fd333adb",
+    "local_snapshot_path": "data/raw/cve/snapshots/0a420eecde3f84ba6f456f2dd99c9747d5173a34f7da60d851e3d331fd333adb.json",
+    "retrieved_at": "2026-11-25T02:27:15+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/132xxx/CVE-2026-132779.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/15xxx/CVE-2026-15176.json": {
+    "content_hash": "af6828ac575f82bd15e67d27f40f19c6e6d630c17b6929bca48275cc81a17e12",
+    "local_snapshot_path": "data/raw/cve/snapshots/af6828ac575f82bd15e67d27f40f19c6e6d630c17b6929bca48275cc81a17e12.json",
+    "retrieved_at": "2026-11-25T02:27:19+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/15xxx/CVE-2026-15176.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/1xxx/CVE-2026-1642.json": {
+    "content_hash": "e19448c33dd07189774aa7ae732033becda7164104fc7f99c39f89f3de1a4a29",
+    "local_snapshot_path": "data/raw/cve/snapshots/e19448c33dd07189774aa7ae732033becda7164104fc7f99c39f89f3de1a4a29.json",
+    "retrieved_at": "2026-11-25T02:27:23+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/1xxx/CVE-2026-1642.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27651.json": {
+    "content_hash": "a7a9eda48b2d84b03653b0fba7e277378210edf63d980a83efbc9aab4accec8d",
+    "local_snapshot_path": "data/raw/cve/snapshots/a7a9eda48b2d84b03653b0fba7e277378210edf63d980a83efbc9aab4accec8d.json",
+    "retrieved_at": "2026-11-25T02:27:27+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27651.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27654.json": {
+    "content_hash": "23fd667d3763e6ee0994bfb1c8afb7c39b2974a6589a5054098846c88c075886",
+    "local_snapshot_path": "data/raw/cve/snapshots/23fd667d3763e6ee0994bfb1c8afb7c39b2974a6589a5054098846c88c075886.json",
+    "retrieved_at": "2026-11-25T02:27:30+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27654.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27784.json": {
+    "content_hash": "06dfac63965c7d6387075d573a516a9ee8a5cef3bff2d73430623244501c633a",
+    "local_snapshot_path": "data/raw/cve/snapshots/06dfac63965c7d6387075d573a516a9ee8a5cef3bff2d73430623244501c633a.json",
+    "retrieved_at": "2026-11-25T02:27:34+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/27xxx/CVE-2026-27784.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28753.json": {
+    "content_hash": "ae3aa2311e37c69daee3dad0d2f39db7f76b6e9162c215ce5372b84b151d2be5",
+    "local_snapshot_path": "data/raw/cve/snapshots/ae3aa2311e37c69daee3dad0d2f39db7f76b6e9162c215ce5372b84b151d2be5.json",
+    "retrieved_at": "2026-11-25T02:27:37+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28753.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28755.json": {
+    "content_hash": "71dcc8e9c6fb168e09d59e81a3ff967e9ee2292bda36f64feecb3f51becd413e",
+    "local_snapshot_path": "data/raw/cve/snapshots/71dcc8e9c6fb168e09d59e81a3ff967e9ee2292bda36f64feecb3f51becd413e.json",
+    "retrieved_at": "2026-11-25T02:27:41+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28755.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/32xxx/CVE-2026-32647.json": {
+    "content_hash": "3ba7ba09103b6e4c9a3bc0f4a1888ed98d4b0c22cf4d6eaf3e31cc2e42a8578d",
+    "local_snapshot_path": "data/raw/cve/snapshots/3ba7ba09103b6e4c9a3bc0f4a1888ed98d4b0c22cf4d6eaf3e31cc2e42a8578d.json",
+    "retrieved_at": "2026-11-25T02:27:45+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/32xxx/CVE-2026-32647.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40460.json": {
+    "content_hash": "b130b9530c23f428981142386f8512b4099e4de171ecac67883a84658d01824d",
+    "local_snapshot_path": "data/raw/cve/snapshots/b130b9530c23f428981142386f8512b4099e4de171ecac67883a84658d01824d.json",
+    "retrieved_at": "2026-11-25T02:27:49+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40460.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40701.json": {
+    "content_hash": "910a32278130b3d9342779a2fa299d28ada75ec4984a9929336f6091ff1942b4",
+    "local_snapshot_path": "data/raw/cve/snapshots/910a32278130b3d9342779a2fa299d28ada75ec4984a9929336f6091ff1942b4.json",
+    "retrieved_at": "2026-11-25T02:27:52+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40701.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42055.json": {
+    "content_hash": "1dd39d53f9a06012b325900165cd9b5e3dc95299f9ded9e44db5e719ee9f8c7e",
+    "local_snapshot_path": "data/raw/cve/snapshots/1dd39d53f9a06012b325900165cd9b5e3dc95299f9ded9e44db5e719ee9f8c7e.json",
+    "retrieved_at": "2026-11-25T02:27:56+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42055.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42530.json": {
+    "content_hash": "282909de49d938c31e2e8cc4f30aca7af347cf80cd76e5ba77b50281ebbb24ec",
+    "local_snapshot_path": "data/raw/cve/snapshots/282909de49d938c31e2e8cc4f30aca7af347cf80cd76e5ba77b50281ebbb24ec.json",
+    "retrieved_at": "2026-11-25T02:28:00+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42530.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42533.json": {
+    "content_hash": "ecc5783ffd8a061126373f15b4ab94535c007aef7cbc4d047339f5b0680cd24f",
+    "local_snapshot_path": "data/raw/cve/snapshots/ecc5783ffd8a061126373f15b4ab94535c007aef7cbc4d047339f5b0680cd24f.json",
+    "retrieved_at": "2026-11-25T02:28:04+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42533.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42926.json": {
+    "content_hash": "49a454796fd5a4c6971c2d94f0b8b0cc15204307c066dbeeddf8283614d2888c",
+    "local_snapshot_path": "data/raw/cve/snapshots/49a454796fd5a4c6971c2d94f0b8b0cc15204307c066dbeeddf8283614d2888c.json",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42926.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42934.json": {
+    "content_hash": "a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314",
+    "local_snapshot_path": "data/raw/cve/snapshots/a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314.json",
+    "retrieved_at": "2026-11-25T02:28:11+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42934.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42945.json": {
+    "content_hash": "55604c01146860e32346e0124c567b7f75e741bea6023699549a8901830552d3",
+    "local_snapshot_path": "data/raw/cve/snapshots/55604c01146860e32346e0124c567b7f75e741bea6023699549a8901830552d3.json",
+    "retrieved_at": "2026-11-25T02:28:15+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42945.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42946.json": {
+    "content_hash": "75cb1fd22bcb638fa6a56aa84c2a8991fcc7971cbb88e8155859f22b6c9982b7",
+    "local_snapshot_path": "data/raw/cve/snapshots/75cb1fd22bcb638fa6a56aa84c2a8991fcc7971cbb88e8155859f22b6c9982b7.json",
+    "retrieved_at": "2026-11-25T02:28:20+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42946.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/48xxx/CVE-2026-48142.json": {
+    "content_hash": "f60ef156460c11db03bc5dd84f3aa9b4cfd5b47727a1779ab8ff806be8695700",
+    "local_snapshot_path": "data/raw/cve/snapshots/f60ef156460c11db03bc5dd84f3aa9b4cfd5b47727a1779ab8ff806be8695700.json",
+    "retrieved_at": "2026-11-25T02:28:24+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/48xxx/CVE-2026-48142.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/56xxx/CVE-2026-56434.json": {
+    "content_hash": "9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb",
+    "local_snapshot_path": "data/raw/cve/snapshots/9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb.json",
+    "retrieved_at": "2026-11-25T02:28:27+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/56xxx/CVE-2026-56434.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/60xxx/CVE-2026-60005.json": {
+    "content_hash": "cc519d75408b2f95c40ae7c77642ba2d9b749b9ef33bc9495f73f8174ec5c11a",
+    "local_snapshot_path": "data/raw/cve/snapshots/cc519d75408b2f95c40ae7c77642ba2d9b749b9ef33bc9495f73f8174ec5c11a.json",
+    "retrieved_at": "2026-11-25T02:28:31+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/60xxx/CVE-2026-60005.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/90xxx/CVE-2026-90439.json": {
+    "content_hash": "ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080",
+    "local_snapshot_path": "data/raw/cve/snapshots/ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080.json",
+    "retrieved_at": "2026-11-25T02:28:35+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/90xxx/CVE-2026-90439.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/93xxx/CVE-2026-93479.json": {
+    "content_hash": "1ec2a026502ba05dad93d14dff97a98ba122c6168098e77e58761a95db17cfd9",
+    "local_snapshot_path": "data/raw/cve/snapshots/1ec2a026502ba05dad93d14dff97a98ba122c6168098e77e58761a95db17cfd9.json",
+    "retrieved_at": "2026-11-25T02:28:42+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/93xxx/CVE-2026-93479.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/95xxx/CVE-2026-95101.json": {
+    "content_hash": "e16f10603fbcf1dba4b29da40b42f40f48c4bbe831243c0c575c544d787b1132",
+    "local_snapshot_path": "data/raw/cve/snapshots/e16f10603fbcf1dba4b29da40b42f40f48c4bbe831243c0c575c544d787b1132.json",
+    "retrieved_at": "2026-11-25T02:28:47+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/95xxx/CVE-2026-95101.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/97xxx/CVE-2026-97205.json": {
+    "content_hash": "4d6f28cdd08613ef5592f4cd60f4f7a3483953c58b795e839bab4e81d073e9c2",
+    "local_snapshot_path": "data/raw/cve/snapshots/4d6f28cdd08613ef5592f4cd60f4f7a3483953c58b795e839bab4e81d073e9c2.json",
+    "retrieved_at": "2026-11-25T02:28:50+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/97xxx/CVE-2026-97205.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/97xxx/CVE-2026-97629.json": {
+    "content_hash": "96d0ae5a1493b256b1218d76c7f1c52a305c24e07af978652530a540698c430b",
+    "local_snapshot_path": "data/raw/cve/snapshots/96d0ae5a1493b256b1218d76c7f1c52a305c24e07af978652530a540698c430b.json",
+    "retrieved_at": "2026-11-25T02:28:55+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/97xxx/CVE-2026-97629.json"
+  },
+  "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/9xxx/CVE-2026-9256.json": {
+    "content_hash": "6bd79b7fb44bc4c4e2e08d53052ef32d526ef4ed0fc1485e3a99da02f7d747f8",
+    "local_snapshot_path": "data/raw/cve/snapshots/6bd79b7fb44bc4c4e2e08d53052ef32d526ef4ed0fc1485e3a99da02f7d747f8.json",
+    "retrieved_at": "2026-11-25T02:28:39+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/9xxx/CVE-2026-9256.json"
+  },
+  "https://www.rfc-editor.org/rfc/rfc9000.html": {
+    "content_hash": "2606485275c113d6d153d4e7144d8ea56e2dcdd899ccc3659531a40e392f2445",
+    "local_snapshot_path": "data/raw/documentation/snapshots/2606485275c113d6d153d4e7144d8ea56e2dcdd899ccc3659531a40e392f2445.html",
+    "retrieved_at": "2026-11-25T02:32:21+00:00",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc9000.html"
+  },
+  "https://www.rfc-editor.org/rfc/rfc9113.html": {
+    "content_hash": "df5a65a455e7060a7e23a361f7bd7ce7bca2685d246b687623ce2c7068d80d42",
+    "local_snapshot_path": "data/raw/documentation/snapshots/df5a65a455e7060a7e23a361f7bd7ce7bca2685d246b687623ce2c7068d80d42.html",
+    "retrieved_at": "2026-11-25T02:32:18+00:00",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc9113.html"
+  },
+  "https://www.rfc-editor.org/rfc/rfc9114.html": {
+    "content_hash": "9295268c32dacf5298a199016f95d75a7c649f83450eb38905c12de6cd12cd66",
+    "local_snapshot_path": "data/raw/documentation/snapshots/9295268c32dacf5298a199016f95d75a7c649f83450eb38905c12de6cd12cd66.html",
+    "retrieved_at": "2026-11-25T02:32:20+00:00",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc9114.html"
+  }
+}

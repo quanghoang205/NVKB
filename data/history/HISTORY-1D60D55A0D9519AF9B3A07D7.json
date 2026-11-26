@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:16+00:00",
+    "description": "COMPONENT:MASTER-PROCESS REQUIRES_KNOWLEDGE_OF DEPLOYMENT:REVERSE-PROXY",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:50E752007691EFB830A1C392",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Cần Kiến trúc NGINX: tiến trình, kết nối và ranh giới tin cậy để giải thích mục tiêu: Sắp xếp đúng các bước reload và xác định nhánh thất bại.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:21:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:16+00:00",
+  "entity_id": "REL:50E752007691EFB830A1C392",
+  "id": "HISTORY:1D60D55A0D9519AF9B3A07D7"
+}

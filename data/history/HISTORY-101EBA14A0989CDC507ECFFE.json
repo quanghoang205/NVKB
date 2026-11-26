@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:0C495438D05CA158EA72C085",
+    "claim_value": "\"Không có bất đồng parser giữa frontend và backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "id": "CLAIM:0C495438D05CA158EA72C085",
+    "name": "WEAKNESS:CWE-444: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:0C495438D05CA158EA72C085",
+  "id": "HISTORY:101EBA14A0989CDC507ECFFE"
+}

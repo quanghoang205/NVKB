@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:E4E74684042AF17116E0616F",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "id": "CLAIM:E4E74684042AF17116E0616F",
+    "name": "CONCEPT:CWE: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "subject_entity_id": "CONCEPT:CWE",
+    "updated_at": "2026-11-25T02:33:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:02+00:00",
+  "entity_id": "CLAIM:E4E74684042AF17116E0616F",
+  "id": "HISTORY:49893A6C3F1F43611946AF58"
+}

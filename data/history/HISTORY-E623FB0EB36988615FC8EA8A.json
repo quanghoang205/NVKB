@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "67e0e1b98c259f7175634ecef1c2247c3fefcf2e386f2dd3272b985c7d08595f",
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-90439",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E22B6DDECF64286781AE8961",
+    "id": "EVIDENCE:E22B6DDECF64286781AE8961",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/67e0e1b98c259f7175634ecef1c2247c3fefcf2e386f2dd3272b985c7d08595f.json",
+    "name": "CVE-2026-90439",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:37+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-90439",
+    "updated_at": "2026-11-25T02:28:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:37+00:00",
+  "entity_id": "EVIDENCE:E22B6DDECF64286781AE8961",
+  "id": "HISTORY:E623FB0EB36988615FC8EA8A"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:52+00:00",
+  "content_hash": "910a32278130b3d9342779a2fa299d28ada75ec4984a9929336f6091ff1942b4",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"774946bcd176d31d37062f5551a61619c643ddd78f25442d5f1862684f72dbb3\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/910a32278130b3d9342779a2fa299d28ada75ec4984a9929336f6091ff1942b4.json",
+  "retrieved_at": "2026-11-25T02:27:52+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40701.json"
+}

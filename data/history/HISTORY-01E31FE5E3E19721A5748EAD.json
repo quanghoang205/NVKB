@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:64C76D9A08F95A7C466A35C2"
+    ],
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:DCE3E4D5C96ED73E20E8CC7D",
+    "name": "Điều kiện được công bố — CVE-2026-121810",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:64C76D9A08F95A7C466A35C2"
+    ],
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:DCE3E4D5C96ED73E20E8CC7D",
+    "name": "Điều kiện được công bố — CVE-2026-121810",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445"
+    ],
+    "updated_at": "2026-11-25T02:26:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:DCE3E4D5C96ED73E20E8CC7D",
+  "id": "HISTORY:01E31FE5E3E19721A5748EAD"
+}

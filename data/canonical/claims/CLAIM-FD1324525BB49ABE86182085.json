@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:27831059F8FC783ED9039EFF",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:FD1324525BB49ABE86182085",
+  "claim_value": "\"Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:44:31+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:D32367C77A9F742D86D1CF52: ngx_http_charset_module; topic=MODULE:NGX-HTTP-CHARSET-MODULE",
+  "evidence_refs": [
+    "EVIDENCE:D32367C77A9F742D86D1CF52"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:FD1324525BB49ABE86182085",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-CHARSET-MODULE: normal_behavior",
+  "observation_key": "OBSERVATION:44CECB59A38F2172AC4BF87E",
+  "observed_at": "2026-11-25T02:44:31+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "MODULE:NGX-HTTP-CHARSET-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:46+00:00",
+  "review_reason": "Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:D32367C77A9F742D86D1CF52"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+  "updated_at": "2026-11-25T05:24:17+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:6E9C09DFC7BF99BCA44FC968"
+  ],
+  "created_at": "2026-11-25T02:27:40+00:00",
+  "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:23F8B5C103A4330189BD94A6",
+  "name": "Điều kiện được công bố — CVE-2026-28753",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:B08BA542EDDE73461AFF4370"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

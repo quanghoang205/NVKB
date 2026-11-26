@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:CD31F3792D2BDE87B569196A",
+      "CLAIM:534425F0EF5D99126ADD1887",
+      "CLAIM:821E73A262E47256DDE718A1",
+      "CLAIM:D3BECC7FB805BBE919480CEB",
+      "CLAIM:129F5843C1446AF028FC5212"
+    ],
+    "created_at": "2026-11-25T05:24:30+00:00",
+    "description": "CVE:CVE-2026-97205 learns_from MODULE:NGX-HTTP-SSI-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-97205",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:C0C52E9D606ECE953ED19DAA",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "predicate": "learns_from",
+    "rationale": "Đọc SSI và subrequest — công việc con, output và cleanup để thảo luận: Vì sao AIO làm thời điểm trả về hàm khác với điểm kết thúc lifetime của buffer? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc SSI và subrequest — công việc con, output và cleanup để thảo luận: Vì sao AIO làm thời điểm trả về hàm khác với điểm kết thúc lifetime của buffer? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:30+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9B12705ADDD0A1674C9D2C6B",
+      "EVIDENCE:BB3F86930A1E39AD58131B03"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T05:24:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:30+00:00",
+  "entity_id": "REL:C0C52E9D606ECE953ED19DAA",
+  "id": "HISTORY:7ED142036FC995B575700A9A"
+}

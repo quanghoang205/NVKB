@@ -1,0 +1,804 @@
+- id: DEPLOYMENT:REVERSE-PROXY
+  name: 'Kiến trúc NGINX: tiến trình, kết nối và ranh giới tin cậy'
+  learning_objectives:
+  - Vẽ đường đi request qua worker và upstream, phân biệt với đường điều khiển của master.
+  - Chỉ ra ba nơi cần kiểm chứng identity hoặc policy trong một reverse proxy được quản trị.
+  prerequisites: []
+  source: development
+  locator: '#processes; #http; #connection'
+  source_claim: Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối
+    client.
+  excerpt: handles client connections
+  article_body: '## Mô hình hệ thống và phạm vi
+
+
+    NGINX reverse proxy tiếp nhận HTTP từ client và tạo trao đổi riêng với upstream. Trong mô hình đa tiến trình
+    thông thường, đường điều khiển của master khác đường xử lý lưu lượng của worker. {C1} Mô hình này không có nghĩa
+    master chuyển từng request cho worker: worker có event loop và các connection riêng. Cache manager/loader có
+    trách nhiệm phụ trợ nếu tính năng tương ứng được dùng; cấu hình single-process là ngoại lệ được development
+    guide mô tả.
+
+
+    ## Cơ chế và ownership
+
+
+    Một client connection và một upstream connection là hai đối tượng có thời hạn, timeout và lỗi riêng. Worker
+    tiếp nhận dữ liệu, chọn cấu hình HTTP, thực hiện các phase, rồi gửi nội dung ra socket; khi proxy, upstream
+    có thể được tái sử dụng theo cấu hình. Request không sở hữu toàn bộ thế giới bên ngoài nó. Những tài nguyên
+    được chia sẻ giữa worker phải có cơ chế shared memory riêng; một biến trong heap worker không tự trở thành trạng
+    thái chung.
+
+
+    ## Security boundary không phải hộp trên sơ đồ
+
+
+    Phần này là suy luận phòng vệ từ cấu trúc trên. Ranh giới client → proxy cần quyết định dữ liệu nào được tin;
+    proxy → upstream cần xác định danh tính đích và chính sách truyền metadata. Master → worker là quan hệ quản
+    lý tiến trình, chưa tự chứng minh mỗi virtual host bị cô lập như một container. TLS kết thúc tại proxy cũng
+    không tự làm đoạn upstream được mã hóa. Những điều này phải được kiểm tra từ cấu hình triển khai, không suy
+    ra từ vị trí trong sơ đồ.
+
+
+    Invariant thiết kế: chỉ dùng một thuộc tính identity để quyết định quyền nếu nguồn sinh thuộc tính đó và nơi
+    kiểm tra nó đã được xác định. Đổi tên header không tạo ra nguồn tin cậy. Một bản vẽ tốt ghi cả ai tạo state,
+    ai dùng state và ai hủy state.
+
+
+    ## Tradeoff và ví dụ phòng vệ
+
+
+    Mô hình nhiều worker tận dụng nhiều CPU; shared cache cải thiện tái sử dụng nhưng thêm state có scope khác heap
+    cục bộ. Buffering có thể giảm phụ thuộc tốc độ giữa hai đầu, đổi lại chi phí bộ nhớ/đĩa và latency. Đây là lựa
+    chọn thiết kế, không bảo đảm throughput trong mọi workload.
+
+
+    Bài tập giấy: với sơ đồ client → proxy → ứng dụng, đánh dấu nơi TLS kết thúc và nơi ứng dụng kiểm tra quyền
+    đọc tài liệu. Nếu chưa có cấu hình upstream, ghi UNKNOWN cho bảo vệ đoạn đó. Không tạo traffic hoặc dùng địa
+    chỉ hệ thống thật.
+
+
+    ## Ngộ nhận và câu hỏi mở
+
+
+    Một worker không phải một virtual host. Có TLS không đồng nghĩa đã cấp quyền đúng. Chưa có inventory, build
+    flags hoặc cấu hình thật để xác nhận các ranh giới trong một deployment cụ thể. Nguồn: development guide theo
+    snapshot, không cam kết mọi module bên thứ ba.'
+  assessment: '1. Master có cần xử lý từng request để điều phối worker không? Giải thích đường điều khiển.
+
+    2. Một sơ đồ có hai hộp proxy/app và biểu tượng khóa phía client đã chứng minh TLS phía upstream chưa?'
+  answer_explanations: '1. Không trong mô hình đa tiến trình: worker xử lý kết nối; master điều phối lifecycle ({C1}).
+
+    2. Chưa. Khóa phía client chỉ mô tả một đoạn. Cần cấu hình và bằng chứng TLS của kết nối upstream; đáp án UNKNOWN
+    là đúng khi thiếu dữ liệu. Mỗi câu 0–2 điểm: kết luận và lý do tách biệt.'
+  diagram: "flowchart LR\n  C[Client] -->|HTTP hoặc TLS theo cấu hình| W[Worker: event loop]\n  M[Master: cấu hình\
+    \ và lifecycle] -. điều khiển .-> W\n  W -->|kết nối upstream riêng| U[Ứng dụng]\n  W --- S[Shared zone nếu\
+    \ có]\n  W --- H[Heap riêng của worker]"
+- id: COMPONENT:MASTER-PROCESS
+  name: Master, worker và graceful reload
+  learning_objectives:
+  - Sắp xếp đúng các bước reload và xác định nhánh thất bại.
+  - Giải thích vì sao hai thế hệ worker có thể cùng tồn tại.
+  prerequisites:
+  - DEPLOYMENT:REVERSE-PROXY
+  source: control
+  locator: '#reconfiguration'
+  source_claim: Khi nhận HUP, master kiểm tra cấu hình mới và thử áp dụng; nếu thất bại nó quay về cấu hình cũ,
+    nếu thành công nó khởi chạy worker mới và yêu cầu worker cũ kết thúc nhẹ nhàng.
+  excerpt: old worker processes
+  article_body: '## Định nghĩa và điều khiển
+
+
+    Master quản lý thế hệ cấu hình và worker, còn worker phục vụ kết nối. Graceful reload là chuyển cấu hình cho
+    công việc mới trong khi cho phép công việc cũ kết thúc. Nó khác shutdown ngay và khác thay binary. Tài liệu
+    điều khiển mô tả nhánh HUP kiểm cú pháp, thử mở tài nguyên cần thiết rồi mới khởi tạo worker mới. {C1}
+
+
+    ## State, trách nhiệm và invariant
+
+
+    Trước reload, thế hệ A nhận kết nối. Nếu cấu hình B không áp dụng được, A tiếp tục dùng cấu hình trước đó; không
+    được coi việc gửi tín hiệu là chứng cứ B đã chạy. Nếu B thành công, worker mới nhận công việc và worker cũ đóng
+    listening sockets, hoàn tất kết nối đang phục vụ rồi thoát. Do đó A và B có thể đồng thời tồn tại trong một
+    khoảng chuyển tiếp.
+
+
+    Diễn giải phòng vệ: trạng thái cấu hình cần gắn với thế hệ tiến trình, không chỉ với file trên đĩa. Quyền của
+    worker phụ thuộc cấu hình và môi trường khởi chạy; master/worker không tự là hai tenant cô lập. Invariant vận
+    hành của bài là không xác nhận thay đổi đã hoàn tất chỉ từ việc file cấu hình mới tồn tại.
+
+
+    ## Lựa chọn kỹ thuật
+
+
+    Drain kết nối giúp giảm gián đoạn nhưng thời gian kết thúc phụ thuộc công việc còn sống và cấu hình shutdown.
+    Reload cấu hình không thay binary của tiến trình đang chạy. Cập nhật package, chuyển cấu hình và chuyển binary
+    là ba sự kiện cần kiểm chứng riêng. Worker cũ còn sống không tự chứng minh lỗi, nhưng có ý nghĩa khi một chính
+    sách mới cần hiệu lực đồng nhất.
+
+
+    ## Ví dụ an toàn và giới hạn
+
+
+    Đọc một bảng sự kiện giả định: T0 cấu hình A; T1 yêu cầu reload; T2 phát hiện lỗi mở tài nguyên; T3 log tiếp
+    tục A. Kết luận hợp lệ là B chưa được áp dụng. Với T2 thành công, chỉ ghi B đã khởi chạy; cần bằng chứng riêng
+    về thời điểm worker A kết thúc. Không gửi tín hiệu cho máy thực trong bài này.
+
+
+    Ngộ nhận thường gặp là đồng nhất reload với restart hoặc cho rằng mọi kết nối chuyển tức thì sang policy mới.
+    Guide mô tả quản lý tiến trình, không là bằng chứng cho thời hạn drain của một cấu hình bất kỳ. Câu hỏi mở:
+    build, module và timeout của deployment có làm thay đổi kỳ vọng shutdown không?'
+  assessment: '1. File B đúng cú pháp nhưng không mở được tài nguyên cần thiết: trạng thái nào còn phục vụ?
+
+    2. Tại sao inventory package mới chưa đủ chứng minh worker đã chạy binary mới?'
+  answer_explanations: '1. Nhánh lỗi giữ cấu hình cũ theo {C1}; cần phân biệt kiểm cú pháp với áp dụng thành công.
+
+    2. Package trên đĩa và tiến trình đang chạy có lifecycle khác; reload cấu hình không chứng minh thay executable.
+    Chấm 2 điểm mỗi câu nếu giải thích được cả kết luận và giới hạn.'
+  diagram: "flowchart TD\n  A[Worker A phục vụ] --> H[Master nhận HUP]\n  H --> V{Kiểm tra và áp dụng B}\n  V -->|thất\
+    \ bại| A\n  V -->|thành công| B[Worker B nhận kết nối mới]\n  B --> D[Worker A drain kết nối cũ]\n  D --> E[Worker\
+    \ A thoát]"
+- id: COMPONENT:EVENT-DRIVEN
+  name: Event loop và non-blocking I/O
+  learning_objectives:
+  - Phân biệt readiness với hoàn tất I/O qua một timeline.
+  - Giải thích tác động của callback blocking lên các kết nối cùng worker.
+  prerequisites:
+  - COMPONENT:MASTER-PROCESS
+  source: development
+  locator: '#event_loop; #i_o_events; #timer_events; #posted_events'
+  source_claim: Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.
+  excerpt: event loop
+  article_body: '## Readiness và tiến độ
+
+
+    Event-driven không có nghĩa mỗi connection có một thread riêng. Worker lưu trạng thái để tiếp tục xử lý khi
+    có sự kiện phù hợp. Backend I/O báo socket có thể sẵn sàng; callback thử đọc/ghi, xử lý lượng dữ liệu đã có
+    rồi trả quyền điều khiển khi cần chờ. Ready không bảo đảm toàn bộ message ứng dụng đã đến, cũng không bảo đảm
+    mọi byte muốn ghi đã được gửi. {C1}
+
+
+    ## Vòng đời callback
+
+
+    Development guide phân biệt I/O events, timer và posted events. Timer biểu diễn hạn chờ; posted event trì hoãn
+    xử lý trong luồng event loop, không tự tạo thread. Mã callback phải duy trì vị trí đã xử lý và trạng thái chờ
+    của đối tượng. Một response có thể cần nhiều lần callback trước khi hoàn tất. Khi kết nối đóng, các tham chiếu
+    sự kiện liên quan phải tương thích với lifetime đối tượng.
+
+
+    ## Ownership và invariant phòng vệ
+
+
+    Diễn giải từ cơ chế: callback chỉ được truy cập context còn sống và phải trả quyền cho vòng lặp trong thời gian
+    phù hợp với thiết kế. Kernel readiness là thông tin về khả năng I/O, không phải phê duyệt dữ liệu từ peer. Parse
+    và authorization vẫn là nhiệm vụ ở lớp tương ứng. Ngân sách tài nguyên cần xét tổng các kết nối trên worker,
+    không chỉ từng request.
+
+
+    ## Tradeoff và hiểu lầm
+
+
+    Non-blocking socket hạn chế thời gian chờ I/O trong callback, nhưng không làm mọi đoạn tính toán hoặc thư viện
+    ngoài trở nên bất đồng bộ. Một tác vụ CPU dài hay lời gọi blocking có thể giữ worker bận, làm chậm các kết nối
+    khác. Thread pool/offload chỉ áp dụng cho các đường được triển khai hỗ trợ, không tự động bao mọi module. Cấu
+    trúc event-driven giảm nhu cầu thread-per-connection nhưng khiến state machine và cleanup cần được thiết kế
+    rõ.
+
+
+    ## Ví dụ đọc timeline
+
+
+    T0 socket ready; T1 callback đọc được phần đầu; T2 cần thêm dữ liệu và trả; T3 timer cho một request khác được
+    xử lý; T4 socket ready lần nữa. Giải thích được T3 là đã hiểu lợi ích trả quyền cho event loop. Nếu callback
+    T1 quay vòng chờ dữ liệu, đây là vi phạm mô hình của ví dụ, không cần chạy một chương trình gây treo để học.
+
+
+    Chưa đo scheduler fairness, latency hoặc backend cụ thể trong deployment. Thứ tự chi tiết cần đọc phiên bản
+    mã nguồn tương ứng; sơ đồ dưới đây chỉ là chu kỳ khái niệm.'
+  assessment: '1. Ready-read có đồng nghĩa HTTP request đầy đủ không?
+
+    2. Callback làm phép tính dài có được non-blocking socket tự động chuyển sang thread khác không?'
+  answer_explanations: '1. Không; readiness chỉ cho biết có khả năng tiến triển I/O. Parser vẫn giữ trạng thái chờ
+    phần còn thiếu.
+
+    2. Không; event loop không tự offload tính toán. Phải xem đường offload được hỗ trợ và scope của nó. {C1} cùng
+    các section I/O/timer/posted events giải thích cơ chế. 0–2 điểm mỗi câu.'
+  diagram: "flowchart LR\n  P[Chờ sự kiện hoặc timeout] --> D[Dispatch callback]\n  D --> S[Lưu state và trả quyền]\n\
+    \  S --> T[Xử lý timer và posted work theo loop]\n  T --> P"
+- id: COMPONENT:CONNECTION-LIFECYCLE
+  name: 'Connection và HTTP request: hai vòng đời'
+  learning_objectives:
+  - Vẽ hai request tuần tự trên một HTTP/1.1 keepalive connection.
+  - Xác định vì sao finalize request không luôn đồng nghĩa đóng socket.
+  prerequisites:
+  - COMPONENT:EVENT-DRIVEN
+  source: development
+  locator: '#connection; #http_connection; #http_request; #http_request_finalization'
+  source_claim: Connection giữ ngữ cảnh socket và các sự kiện đọc/ghi; HTTP request có cấu trúc và quy trình finalization
+    riêng.
+  excerpt: HTTP request
+  article_body: '## Hai đối tượng cần phân biệt
+
+
+    Connection biểu diễn trao đổi ở mức kết nối; request là một công việc HTTP với parsing, phase processing và
+    response. Trong keepalive HTTP/1.1, một connection có thể phục vụ nhiều request kế tiếp. Phần HTTP trong development
+    guide mô tả creation/finalization của request riêng với connection. {C1} Bài này không áp mô hình một-request-tại-một-thời-điểm
+    cho multiplexing HTTP/2 hoặc HTTP/3.
+
+
+    ## Cơ chế hoạt động
+
+
+    Sau accept, worker chờ dữ liệu và tạo ngữ cảnh HTTP phù hợp. Parser tích lũy request line/headers, các phase
+    chọn và thực hiện handler, rồi output filter chuyển response qua chuỗi buffer. Finalization cần xét công việc
+    chưa kết thúc; subrequest hoặc buffered output khiến ''handler trả về'' khác với ''mọi tài nguyên đã được giải
+    phóng''. Sau hoàn tất, connection có thể về trạng thái keepalive hoặc đóng theo quyết định tương ứng.
+
+
+    ## Ownership và security boundary
+
+
+    Một dữ liệu có lifetime request không được giữ như thể nó tồn tại suốt connection. Ngược lại, hủy request không
+    tự là quyền hủy dữ liệu chia sẻ còn được request khác dùng. Diễn giải invariant: mỗi callback cần biết nó gắn
+    với connection hay request nào, và điều kiện để context đó còn sống. Boundary tin cậy xuất hiện lúc diễn giải
+    dữ liệu client và lựa chọn policy, không phải cứ tạo một struct là tạo isolation.
+
+
+    ## Tradeoff, điều khiển và giới hạn
+
+
+    Keepalive giảm chi phí tạo kết nối, nhưng giữ thêm state và cần timeout/ngân sách connection. Streaming giảm
+    buffering toàn bộ nhưng yêu cầu quản lý backpressure và partial output. Không suy từ chữ ''buffer'' trong advisory
+    rằng lỗi ở memory pool: chỉ mô tả nguồn hoặc review mã mới xác định subsystem.
+
+
+    ## Ví dụ giấy và ngộ nhận
+
+
+    Vẽ socket S chứa request A rồi B. A kết thúc, request pool A hết lifetime, nhưng S vẫn sống để nhận B. Đánh
+    dấu dữ liệu nào phải sao chép hoặc tái tạo nếu B cần dùng; không mặc định con trỏ cũ hợp lệ. Đây là bài reasoning
+    ownership, không là đầu vào tái hiện lỗi.
+
+
+    Câu hỏi mở: giao thức, module lọc và upstream configuration cụ thể ảnh hưởng finalization như thế nào? Cần phiên
+    bản và mã nguồn tương ứng trước khẳng định chi tiết thứ tự cleanup.'
+  assessment: '1. Một connection đã xử lý A và đang chờ B có thể còn sống khi pool A đã hủy không?
+
+    2. Khi handler trả về, có được kết luận output đã gửi hết không?'
+  answer_explanations: '1. Có trong mô hình keepalive của bài; request lifetime hẹp hơn connection lifetime.
+
+    2. Không; phải xét buffered output và cơ chế finalization. Tham chiếu {C1} và #http_request_finalization. Mỗi
+    câu 2 điểm khi nêu được đúng đối tượng và trạng thái.'
+  diagram: "stateDiagram-v2\n  [*] --> Accepted\n  Accepted --> RequestA\n  RequestA --> FinalizeA\n  FinalizeA\
+    \ --> Keepalive\n  Keepalive --> RequestB\n  RequestB --> FinalizeB\n  FinalizeB --> Closed\n  Closed --> [*]"
+- id: COMPONENT:MEMORY-POOL
+  name: 'Memory pool: ownership, lifetime và cleanup'
+  learning_objectives:
+  - Gán owner/lifetime cho ba tài nguyên trong request.
+  - Giải thích vì sao pool không tự bảo đảm mọi con trỏ còn hợp lệ.
+  prerequisites:
+  - COMPONENT:CONNECTION-LIFECYCLE
+  source: development
+  locator: '#pool; #shared_memory; #manual_memory_management'
+  source_claim: Pool gom các allocation theo lifetime; khi pool bị hủy, bộ nhớ của pool được giải phóng và cleanup
+    handlers đã đăng ký được gọi.
+  excerpt: Most nginx allocations are done in pools.
+  article_body: '## Đơn vị cấp phát và trách nhiệm
+
+
+    Pool là cơ chế quản lý bộ nhớ theo vòng đời đối tượng, thường gắn với request hoặc đối tượng NGINX khác. Allocation
+    nhỏ lấy từ các block của pool; allocation lớn có thể dùng system allocator và được pool theo dõi để giải phóng.
+    Cleanup callback giúp đóng tài nguyên ngoài heap như file descriptor. {C1}
+
+
+    ## Lifecycle có thể suy luận
+
+
+    Create owner → cấp phát state → dùng trong các callback hợp lệ → hoàn tất công việc → hủy pool và cleanup. Cleanup
+    là thao tác cuối vòng đời đã định, không phải garbage collector theo dõi mọi tham chiếu bên ngoài. Pool không
+    biết một module đã lưu địa chỉ ở đâu; việc phối hợp event/timer với lifetime vẫn thuộc trách nhiệm code sử dụng.
+
+
+    ## Invariant và ranh giới
+
+
+    Diễn giải phòng vệ: mọi lần dùng một con trỏ phải xảy ra khi allocation và owner tương ứng còn sống. Một callback
+    còn trong queue không tự kéo dài tuổi pool; nhà phát triển phải dùng cơ chế lifecycle thích hợp. Process heap
+    và shared memory có phạm vi khác nhau. Hủy pool trong một worker không chứng minh state dùng chung giữa worker
+    đã được xử lý đúng.
+
+
+    ## Tradeoff và điều không được suy diễn
+
+
+    Thu hồi theo nhóm làm đơn giản cleanup và giảm chi phí quản lý nhiều allocation nhỏ, nhưng một object sống lâu
+    có thể giữ bộ nhớ không còn cần đến cho đến khi owner kết thúc. Pool không ngăn buffer overrun, số học kích
+    thước sai hay sử dụng context sai. Ngược lại, tên CWE memory safety không chứng minh một CVE cụ thể bắt nguồn
+    từ pool. Cần review mã hoặc thông báo kỹ thuật rõ ràng cho kết luận đó.
+
+
+    ## Ví dụ an toàn
+
+
+    Lập bảng: request R sở hữu buffer B; connection C sống dài hơn R; callback K dự định đọc B. Hỏi điều kiện nào
+    phải chứng minh trước khi K được gọi. Đáp án không cần viết mã lỗi: R/B phải còn sống, hoặc K dùng bản sao với
+    owner phù hợp, hoặc K đã được hủy theo lifecycle. Cách nào đúng phụ thuộc API/module, nên không tự áp một cleanup
+    order toàn cục.
+
+
+    Chưa có review độc lập implementation pool của từng phiên bản hay module bên thứ ba. Tài liệu cơ chế là nền
+    cho reasoning; không là chứng nhận memory safety của một binary.'
+  assessment: '1. Vì sao xóa một request không tự làm mọi tham chiếu bên ngoài trở nên an toàn?
+
+    2. Từ một advisory nói buffer issue, có thể kết luận lỗi nằm ở pool không?'
+  answer_explanations: '1. Pool thu hồi allocation, không tự truy tìm mọi con trỏ do module giữ; phải phối hợp lifecycle
+    callback.
+
+    2. Không; đó là bước suy luận thiếu nguồn về fault location. {C1} giải thích pool, không giải thích CVE bất
+    kỳ. 0–2 điểm mỗi câu.'
+  diagram: "flowchart LR\n  R[Owner request] --> P[Pool]\n  P --> B[Allocation nhỏ hoặc lớn]\n  P --> K[Cleanup\
+    \ handlers]\n  E[Kết thúc owner] --> D[Hủy pool]\n  D --> F[Giải phóng bộ nhớ và tài nguyên]\n  X[Callback ngoài\
+    \ lifetime] -. cần chứng minh an toàn .-> B"
+- id: PROTOCOL:TLS
+  name: 'TLS 1.3: handshake, identity và protected records'
+  learning_objectives:
+  - Phân biệt key establishment, peer authentication và application authorization.
+  - Giải thích vai trò transcript và Finished trong handshake ở mức nguyên lý.
+  prerequisites:
+  - COMPONENT:CONNECTION-LIFECYCLE
+  source: tls13
+  locator: '#section-2; #section-4.4; #section-5'
+  source_claim: TLS 1.3 kết hợp handshake thiết lập khóa và xác thực với record protection; certificate authentication
+    và PSK là các cơ chế khác nhau được RFC mô tả.
+  excerpt: Handshake Protocol
+  article_body: '## Phạm vi chuẩn
+
+
+    Bài này theo RFC 8446 cho TLS 1.3; không dùng hình handshake này để mô tả chính xác TLS 1.2. Handshake thương
+    lượng tham số, thiết lập key material và xác thực theo cơ chế được chọn. Record layer bảo vệ dữ liệu với các
+    khóa tương ứng. Các section 2, 4.4 và 5 là phạm vi nguồn của {C1}.
+
+
+    ## Cơ chế và trạng thái
+
+
+    Với certificate authentication, chứng thư mang thông tin khóa/danh tính còn CertificateVerify chứng minh quyền
+    dùng khóa ký trong context handshake. Finished ràng buộc transcript bằng key material đã dẫn xuất. Kiểm chứng
+    không chỉ là nhìn thấy một certificate: peer phải thực hiện kiểm tra chain, tên đích và policy liên quan trong
+    phạm vi vai trò của nó. Handshake hoàn tất và ứng dụng cấp quyền là hai quyết định khác nhau.
+
+
+    Một connection có các giai đoạn key schedule và traffic secrets; không nên coi một khóa duy nhất được dùng bất
+    biến cho mọi hướng và mọi giai đoạn. RFC xác định các message và chuyển tiếp hợp lệ; sơ đồ rút gọn của bài chỉ
+    hỗ trợ phân biệt handshake với dữ liệu ứng dụng, không mô tả mọi nhánh optional.
+
+
+    ## Ownership và security reasoning
+
+
+    TLS endpoint sở hữu secret và context handshake. Nếu proxy kết thúc TLS, ứng dụng phía sau cần quy ước rõ về
+    metadata identity do proxy chuyển tiếp. Diễn giải invariant: một bằng chứng xác thực phải được dùng đúng peer,
+    đúng transcript/context và đúng policy. Authorization nghiệp vụ vẫn phải kiểm tra hành động trên tài nguyên
+    dù kênh TLS đã xác thực.
+
+
+    ## Tradeoff và giới hạn phòng vệ
+
+
+    Resumption giảm chi phí handshake nhưng thêm state và policy về tái sử dụng. Early data có giới hạn replay riêng,
+    không được coi như dữ liệu sau full handshake trong mọi ứng dụng. Hỗ trợ giao thức của NGINX còn phụ thuộc build
+    và thư viện TLS; RFC là chuẩn giao thức, không chứng minh compile flags của binary đang chạy.
+
+
+    Ví dụ: chứng thư client hợp lệ cho tài khoản A không đủ chứng minh A được sửa tài liệu của B. Xác định kiểm
+    tra nào thuộc TLS và kiểm tra nào thuộc ứng dụng. Câu hỏi mở: trust store, revocation policy và tên peer được
+    xác minh ở thành phần nào trong deployment?'
+  assessment: '1. CertificateVerify và một certificate được gửi đến có cùng chức năng không?
+
+    2. TLS client authentication có thay thế kiểm tra quyền sửa dữ liệu không?'
+  answer_explanations: '1. Không: certificate mang thông tin identity/key; CertificateVerify chứng minh sử dụng
+    khóa ký gắn transcript. Xem RFC §4.4.2–4.4.3 trong {C1}.
+
+    2. Không: xác thực peer không quyết định quyền trên tài nguyên ứng dụng. 2 điểm mỗi câu, trừ một điểm nếu nhầm
+    authentication với encryption.'
+  diagram: "flowchart LR\n  N[Thương lượng và key establishment] --> A[Authentication theo certificate hoặc PSK]\n\
+    \  A --> F[Finished: ràng buộc transcript]\n  F --> R[Protected application records]\n  R --> Z[Ứng dụng kiểm\
+    \ tra authorization]"
+- id: COMPONENT:TLS-SESSION-LIFECYCLE
+  name: 'TLS resumption: state, ticket và policy hiện hành'
+  learning_objectives:
+  - So sánh lifetime của connection với resumption state.
+  - Giải thích vì sao dùng lại phiên không được coi là tái dùng mọi quyền cũ.
+  prerequisites:
+  - PROTOCOL:TLS
+  source: tls13
+  locator: '#section-2.2; #section-4.6.1; #section-8'
+  source_claim: Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực
+    hiện handshake resumption và early data có yêu cầu chống replay riêng.
+  excerpt: NewSessionTicket
+  article_body: '## Session không đồng nhất connection
+
+
+    Connection mới có thể dùng state từ một lần trao đổi trước để thiết lập khóa qua PSK resumption. RFC 8446 §2.2
+    và §4.6.1 mô tả vé và handshake tiếp theo. {C1} NewSessionTicket là message sau handshake, còn ticket là dữ
+    liệu opaque cho client; server có thể dùng nó làm khóa tra cứu hoặc dữ liệu được bảo vệ tự chứa context. Không
+    mặc định mọi ticket có cùng cấu trúc nội bộ.
+
+
+    ## Chu trình và trách nhiệm
+
+
+    Kết nối đầu thiết lập state → server cấp ticket → client giữ trong giới hạn cho phép → kết nối sau đề xuất resumption
+    → server quyết định chấp nhận hay từ chối theo context → key schedule của handshake mới. Ticket lifetime, rotation
+    và policy server làm giới hạn sử dụng; một ticket tồn tại không buộc server phải tiếp tục chấp nhận nó. Resumption
+    cũng không có nghĩa socket cũ sống mãi.
+
+
+    Trong NGINX, tham chiếu bổ sung là các directive `ssl_session_cache`, `ssl_session_tickets`, `ssl_session_timeout`
+    trong module SSL. Chúng mô tả lưu trữ và thời hạn, nhưng hiệu lực còn phụ thuộc phiên bản TLS và thư viện. Không
+    đồng nhất cache truyền thống với mọi dạng resumption TLS 1.3.
+
+
+    ## Invariant phòng vệ — diễn giải có phạm vi
+
+
+    Policy dùng để chấp nhận identity/context của phiên phải phù hợp server đang xử lý. Việc chứng minh một secret
+    hay có một ticket không tự chứng minh mọi quyền ở virtual server khác. Đây là nguyên tắc reasoning cho case
+    advisory, chưa phải phân tích dòng mã hoặc xác nhận nguyên nhân CVE. Nguồn RFC và directive là nền; kết luận
+    CVE phải đọc nguồn riêng.
+
+
+    ## Early data và tradeoff
+
+
+    Resumption giúp giảm công việc handshake. 0-RTT còn giảm chờ trước khi gửi dữ liệu nhưng có vấn đề replay được
+    RFC §8 xử lý riêng. Không suy ra ''đã mã hóa'' thành ''chỉ xử lý một lần''. Ứng dụng cần xem tính chất thao
+    tác trước khi cho phép early data; bài này không bật cấu hình hoặc tạo traffic kiểm thử.
+
+
+    Ví dụ giấy: đánh dấu ticket được cấp tại T1, policy thay đổi ở T2, connection mới ở T3. Liệt kê bằng chứng cần
+    có để kết luận state ở T1 còn được chấp nhận đúng tại T3. Không có policy/version thì kết luận UNKNOWN. Câu
+    hỏi mở gồm invalidation khi đổi cấu hình, đặc tính thư viện TLS và phạm vi shared cache thực tế.'
+  assessment: '1. Connection cũ đóng có bắt buộc mọi resumption state biến mất không?
+
+    2. Vì sao encrypted 0-RTT không đủ chứng minh một giao dịch chỉ xử lý một lần?'
+  answer_explanations: '1. Không; state/ticket có lifetime khác connection, theo RFC §2.2/§4.6.1 ({C1}).
+
+    2. Replay là thuộc tính riêng của early data; RFC §8 yêu cầu reasoning ở mức server/application. Không được
+    suy từ confidentiality ra at-most-once. Mỗi câu 0–2 điểm.'
+  diagram: "flowchart LR\n  H[Handshake đầu] --> T[NewSessionTicket]\n  T --> S[Client giữ resumption state]\n \
+    \ S --> N[Connection và handshake mới]\n  N --> P{Policy chấp nhận}\n  P -->|có| R[Resumption]\n  P -->|không|\
+    \ F[Fallback hoặc từ chối theo giao thức]"
+- id: WEAKNESS:CWE-863
+  name: Incorrect Authorization
+  learning_objectives:
+  - Phân loại đúng bốn phát biểu về authentication, authorization, access control và session management.
+  - Giải thích vì sao giữ CWE do CNA gán mà không đổi nghĩa thuật ngữ.
+  prerequisites:
+  - COMPONENT:TLS-SESSION-LIFECYCLE
+  source: cwe863
+  locator: '#Description; #Potential_Mitigations'
+  source_claim: 'CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.'
+  excerpt: Incorrect Authorization
+  article_body: '## Thuật ngữ chuẩn
+
+
+    Tên MITRE là Incorrect Authorization. {C1} Authentication hỏi chủ thể là ai hoặc có bằng chứng identity phù
+    hợp không; authorization hỏi chủ thể được làm hành động nào trên tài nguyên nào trong context hiện tại. Identity
+    verification là việc kiểm chứng một khai báo danh tính theo cơ chế đã chọn. Access control là cơ chế thực thi
+    chính sách truy cập; session management duy trì và giới hạn context qua nhiều trao đổi. Các lớp này liên quan
+    nhưng không thể thay tên cho nhau.
+
+
+    ## Cơ chế quyết định quyền
+
+
+    Mô hình khái niệm: nhận subject/context → xác định resource và action → nạp policy áp dụng → kiểm tra điều kiện
+    → cho phép hoặc từ chối. Một kiểm tra hiện diện nhưng bỏ qua một chiều cần thiết của policy có thể thuộc lớp
+    Incorrect Authorization. Không có kiểm tra và kiểm tra sai là hai mô tả cần phân biệt; chỉ gán CWE cụ thể khi
+    có bằng chứng thích hợp.
+
+
+    ## Ranh giới và invariant
+
+
+    Diễn giải phòng vệ: quyết định phải dựa trên context đáng tin và tài nguyên thực sự đang được truy cập. Kiểm
+    tra vai trò không luôn giải quyết quyền giữa hai người cùng vai trò. MITRE ghi nhận giới hạn này trong phần
+    mitigations; do đó RBAC là công cụ, không là bảo đảm mọi kiểm tra theo object đều đúng.
+
+
+    ## Liên hệ case study
+
+
+    CNA gán CWE-863 cho CVE-2025-23419 trong khi mô tả nói về yêu cầu xác thực chứng chỉ client và TLS session resumption.
+    Hai điều này được trình bày song song: tên taxonomy chuẩn giữ nguyên, câu mô tả sản phẩm giữ provenance riêng.
+    Không đổi CWE thành lớp authentication vì suy đoán, và không đổi tên CWE-863 thành ''Authentication policy violation''.
+    Cần nguồn CNA khác hoặc review được ghi nhận trước khi sửa classification.
+
+
+    ## Bài tập giấy, tradeoff và giới hạn
+
+
+    Xét A có chứng thư hợp lệ nhưng chưa có quyền đọc tài liệu T. Kênh TLS xác thực A không trả lời quyền đọc T.
+    Policy tập trung giảm phân tán nhưng cần truyền context tin cậy; policy cục bộ giảm phụ thuộc nhưng dễ thiếu
+    nhất quán. Đó là tradeoff thiết kế, không là remediation cụ thể đã được vendor công bố.
+
+
+    Không suy root cause cấp mã nguồn từ nhãn CWE. Câu hỏi mở của một deployment là nơi thực thi policy, sự sống
+    của context phiên và phiên bản đang chạy; bài không xác minh các thông tin đó.'
+  assessment: '1. Client certificate hợp lệ nhưng tài khoản không có quyền đọc object: kiểm tra còn thiếu thuộc
+    lớp nào?
+
+    2. CNA nói client authentication nhưng gán CWE-863: curator có được tự đổi CWE không?'
+  answer_explanations: '1. Authorization theo object/context. Authentication thành công không cấp mọi quyền.
+
+    2. Không. Giữ tên chuẩn {C1}, giữ classification nguồn và nêu giới hạn; không biến diễn giải thành correction
+    không chứng cứ. 0–2 điểm mỗi câu.'
+  diagram: ''
+- id: CONTROL:LEAST-PRIVILEGE
+  name: Security invariants và trách nhiệm kiểm soát
+  learning_objectives:
+  - Viết một invariant có owner, scope và điều kiện hiệu lực.
+  - Phân biệt vị trí kiến trúc với ranh giới quyền bằng ví dụ worker và ứng dụng.
+  prerequisites:
+  - WEAKNESS:CWE-863
+  - COMPONENT:MEMORY-POOL
+  source: cwe863
+  locator: '#Potential_Mitigations'
+  source_claim: MITRE khuyến nghị ánh xạ vai trò với dữ liệu/chức năng và thực thi tại ranh giới thích hợp; kiểm
+    soát theo vai trò vẫn có giới hạn với quyền ngang giữa các chủ thể cùng vai trò.
+  excerpt: horizontal authorization
+  article_body: '## Invariant là điều gì
+
+
+    Trong bài này, invariant bảo mật là điều kiện phải được giữ qua các chuyển trạng thái thuộc phạm vi đã nêu.
+    Nó không chỉ là khẩu hiệu ''an toàn'' hoặc một tên công nghệ. Ví dụ do tác giả suy luận: trước khi đọc tài nguyên
+    T, decision phải dựa trên principal/context đúng và policy áp dụng cho T. {C1} cung cấp nền về kiểm soát theo
+    vai trò và giới hạn của nó, không tự chứng minh invariant cho mọi ứng dụng.
+
+
+    ## Từ ownership đến kiểm soát
+
+
+    Ở memory pool, owner/lifetime giới hạn khi được dùng state. Ở TLS, endpoint quản lý secret và authentication
+    context. Ở ứng dụng, policy xác định quyền trên resource. Ba trách nhiệm này có thể nằm trong cùng process nhưng
+    không trở thành cùng một quyết định. Least privilege giới hạn quyền của một chủ thể theo nhu cầu; nó giảm phạm
+    vi ảnh hưởng nếu có lỗi, không chứng minh mọi check quyền đã đúng.
+
+
+    Một invariant dùng được cần bốn thông tin: đối tượng chịu ràng buộc; các trạng thái/chuyển tiếp có liên quan;
+    thành phần chịu trách nhiệm giữ điều kiện; bằng chứng dùng để kiểm tra. Khi thiếu một phần, ghi câu hỏi review
+    thay vì gắn VERIFIED.
+
+
+    ## Điều khiển và giới hạn
+
+
+    Policy ở server side tránh phụ thuộc đơn thuần vào trạng thái do client tự khai báo. Tách quyền của tiến trình
+    và hạn chế tài nguyên có thể giảm hậu quả, nhưng không thay cập nhật bản vá hay sửa logic. Một worker chạy quyền
+    hạn chế vẫn có thể truy cập dữ liệu mà ứng dụng đã cho phép nó đọc; ranh giới OS không giải quyết tự động quyền
+    giữa khách hàng.
+
+
+    ## Tradeoff và ví dụ an toàn
+
+
+    Giảm quyền có thể yêu cầu thiết kế đường truy cập tài nguyên rõ hơn và làm việc vận hành phức tạp hơn. Policy
+    cache cải thiện hiệu suất nhưng cần quy tắc invalidation khi quyền đổi. Bài tập giấy: ghi invariant ''quyền
+    đã thu hồi không tiếp tục được dùng sau thời điểm hiệu lực quy định'', rồi chỉ ra yêu cầu về timestamp, invalidation
+    và policy owner. Chưa có cấu hình nên không khẳng định hệ thống thật giữ được điều kiện đó.
+
+
+    Ngộ nhận: thêm một lớp kiểm soát đồng nghĩa đã kiểm chứng invariant; hoặc process boundary chính là tenant boundary.
+    Câu hỏi mở: thời điểm nào policy mới có hiệu lực với phiên đang tồn tại?'
+  assessment: '1. Chuyển câu “session phải an toàn” thành invariant đo được trong mô hình giấy.
+
+    2. Worker ít quyền có chứng minh authorization theo object đúng không?'
+  answer_explanations: '1. Ví dụ: mỗi quyết định đọc T phải dùng principal và policy version áp dụng tại thời điểm
+    quyết định; phải có owner và bằng chứng context/version. Nhiều đáp án hợp lệ nếu có bốn thành phần.
+
+    2. Không; đó là hai phạm vi kiểm soát khác nhau. {C1} giải thích giới hạn kiểm quyền. Câu 1: 4 điểm, câu 2:
+    2 điểm.'
+  diagram: ''
+- id: CONCEPT:ADVISORY
+  name: 'Đọc advisory: dữ kiện, điều kiện và điều chưa biết'
+  learning_objectives:
+  - Trích đúng product, phạm vi phiên bản và bản sửa từ entry CVE.
+  - Phân biệt background, invariant suy luận và root cause đã review.
+  prerequisites:
+  - CONTROL:LEAST-PRIVILEGE
+  source: advisories
+  locator: li containing CVE-2025-23419
+  source_claim: Entry NGINX cho CVE-2025-23419 công bố bản không bị ảnh hưởng từ 1.26.3 trên nhánh ổn định tương
+    ứng và từ 1.27.4 trên nhánh tương ứng.
+  excerpt: 1.27.4+, 1.26.3+
+  article_body: '## Một entry không phải toàn bộ nghiên cứu
+
+
+    Advisory là thông báo có product/version/scope do authority công bố tại một thời điểm. Entry NGINX cho case
+    này ghi affected expression và các bản sửa theo nhánh. {C1} Phải đọc toàn entry: khoảng 1.11.4–1.27.3 không
+    được dùng tách khỏi ngoại lệ nhánh sửa 1.26.3. Một phép so số phiên bản tuyến tính đơn lẻ có thể bỏ mất ý nghĩa
+    nhánh.
+
+
+    ## Quy trình đọc nguồn
+
+
+    Ghi identity CVE; xác định sản phẩm OSS/Plus; đọc publication và modified dates từ CVE record; tách lời mô tả
+    điều kiện khỏi severity; đối chiếu fixes với release/distribution tương ứng. Lưu URL, locator, snapshot hash
+    và thời điểm truy xuất. Không coi mirror CVE Program qua aggregator là đánh giá thứ hai độc lập.
+
+
+    ## Cơ chế tri thức và invariant
+
+
+    Claim là một nhận định; Evidence là observation nguồn có locator. Snapshot hash chứng minh bytes, extraction
+    match chứng minh giá trị được lấy đúng, source support cần review ý nghĩa, còn human approval là gate khác.
+    Diễn giải invariant cho học tập phải ghi là inference, kể cả khi có nguồn tham khảo đúng chủ đề.
+
+
+    ## Case CVE-2025-23419
+
+
+    Nguồn CNA nói về TLS session resumption và yêu cầu xác thực chứng chỉ client trong context server blocks; module/RFC
+    giúp hiểu nền nhưng không thay source-code root cause review. Case study trong CVE note phân tách dữ kiện, background,
+    tác động và remediation. Bài này không cung cấp cấu hình tái hiện hoặc quy trình bypass.
+
+
+    ## Ví dụ và đánh giá giới hạn
+
+
+    Trên giấy, cho hai version 1.26.3 và 1.27.3: cần đọc branch fixes để đánh giá advisory status, thay vì suy từ
+    việc 1.27.3 có số lớn hơn. Nếu inventory chỉ ghi ''nginx'' mà không build/distribution, không kết luận runtime
+    đã vá. Advisory có thể đổi; observed/retrieved/checked timestamps phải giữ ý nghĩa riêng.
+
+
+    Tradeoff curation: nguồn trực tiếp thường đáng ưu tiên nhưng có thể không công bố mọi chi tiết. Giữ UNKNOWN
+    làm corpus trung thực hơn việc lấy title cộng CWE rồi gọi đó là root cause. Câu hỏi mở gồm điều kiện không được
+    công bố, build context và thời điểm policy đã triển khai.'
+  assessment: '1. Vì sao không được kết luận 1.27.3 đã sửa chỉ vì lớn hơn 1.26.3?
+
+    2. Hash đúng và field match có đủ để nói human-reviewed không?'
+  answer_explanations: '1. Fixes theo nhánh: {C1} nêu 1.26.3 và 1.27.4; 1.27.3 phải đọc theo nhánh và scope.
+
+    2. Không; đó là integrity/extraction, khác semantic review và human approval. Mỗi câu 0–2 điểm.'
+  diagram: ''
+- id: CONCEPT:BACKPORT
+  name: Upstream version và distribution backport
+  learning_objectives:
+  - Đọc đúng release row và fixed package trong Debian tracker.
+  - Giải thích vì sao upstream banner không quyết định trạng thái backport.
+  prerequisites:
+  - CONCEPT:ADVISORY
+  source: debian
+  locator: table Fixed Version; package=nginx; release=bookworm
+  source_claim: Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với
+    CVE-2025-23419.
+  excerpt: 1.22.1-9+deb12u1
+  article_body: '## Hai không gian phiên bản
+
+
+    Upstream phát hành source version; distribution có thể đưa bản sửa vào dòng package riêng mà không chuyển toàn
+    bộ lên upstream version mới. Vì vậy package Debian 1.22.1-9+deb12u1 có thể mang bản sửa của case này trong bookworm
+    dù phần upstream 1.22.1 nhỏ hơn 1.26.3. Đây là thông tin đúng row do tracker công bố, không phải suy từ số.
+    {C1}
+
+
+    ## Cơ chế provenance
+
+
+    Chuỗi cần đọc là advisory/CVE → distribution và release → source package → fixed version → package mà quản trị
+    viên khai báo. Source package và binary package không luôn cùng vai trò; build repository và bản custom cần
+    được xác định riêng. Đừng thay row bookworm bằng bullseye hoặc lấy Debian làm bằng chứng cho Ubuntu chỉ vì cú
+    pháp version gần nhau.
+
+
+    ## So sánh đúng loại
+
+
+    Version Debian có thể chứa epoch, upstream phần chính và revision distribution; comparator hiểu quy tắc này,
+    không cắt bỏ hậu tố để so SemVer. Ubuntu dùng họ so sánh Debian nhưng vẫn phải có dữ liệu package đúng Ubuntu
+    release. RPM có quy tắc EVR riêng; comparator của NVKB từ chối caret ordering chưa hỗ trợ thay vì đoán.
+
+
+    ## State và giới hạn kết luận
+
+
+    Package row có thể fixed, not affected, affected hoặc chưa được đánh giá. Fixed version là ngưỡng theo nguồn;
+    không tự xác nhận binary đã được cài hay đang chạy. Một tracker được kiểm tra ngày hôm nay cũng không biến một
+    inventory cũ thành hiện tại. Owner của inventory là quản trị viên; owner của package advisory là distribution;
+    chúng là hai provenance cần giữ.
+
+
+    ## Bài tập và tradeoff
+
+
+    Trên giấy so package bookworm đúng nguồn với ngưỡng {C1}, sau đó liệt kê điều chưa biết về runtime. Backport
+    giúp ổn định ABI và hệ sinh thái, nhưng người đọc phải theo dõi provenance thay vì chỉ nhìn upstream release.
+    Bản custom dùng số tương tự cần NEEDS_REVIEW khi chưa có build evidence.
+
+
+    Ngộ nhận: thấp hơn upstream fix luôn bị ảnh hưởng; cao hơn fixed package chứng minh mọi process đã thay; Ubuntu/RPM
+    tự có support vì có comparator. Câu hỏi mở là repository, package origin và bằng chứng chuyển binary do quản
+    trị viên cung cấp.'
+  assessment: '1. Vì sao package bookworm mang 1.22.1 vẫn có thể đạt ngưỡng sửa của CVE này?
+
+    2. Có thể dùng row Debian bookworm để kết luận Ubuntu noble không?'
+  answer_explanations: '1. Backport cùng revision distribution, được tracker xác nhận tại {C1}; không suy từ upstream
+    component.
+
+    2. Không; cần row Ubuntu đúng release/package và comparator đúng hệ. Mỗi câu 0–2 điểm.'
+  diagram: ''
+- id: CONTROL:PATCH-VERIFICATION
+  name: Xác minh bản vá từ inventory và bằng chứng triển khai
+  learning_objectives:
+  - Phân tách năm trạng thái patch, package, support lifecycle, KEV và runtime.
+  - Lập kết luận giới hạn từ inventory thiếu provenance mà không phỏng đoán.
+  prerequisites:
+  - CONCEPT:BACKPORT
+  - COMPONENT:MASTER-PROCESS
+  source: advisories
+  locator: li containing CVE-2025-23419
+  source_claim: Bản sửa upstream do NGINX công bố cho CVE-2025-23419 là 1.26.3 và 1.27.4 theo nhánh.
+  excerpt: 1.27.4+, 1.26.3+
+  article_body: '## Năm câu hỏi khác nhau
+
+
+    Advisory patch status trả lời version được nguồn nêu đã sửa chưa. Distribution package status trả lời row release/package
+    nói gì. Product support lifecycle trả lời dòng sản phẩm còn hỗ trợ theo nguồn phù hợp không. KEV membership
+    trả lời CVE có trong snapshot catalogue CISA tại thời điểm nào. Runtime verification trả lời bằng chứng quản
+    trị cung cấp có xác nhận binary/process hiện hành không. {C1} chỉ hỗ trợ câu hỏi upstream fix, không giải quyết
+    cả năm.
+
+
+    ## Luồng quyết định phòng vệ
+
+
+    Bắt đầu từ inventory do quản trị viên cung cấp: product chính xác, version, distribution/release/package nếu
+    có, origin và thời điểm quan sát. Thiếu product hoặc dữ liệu release phù hợp thì NEEDS_REVIEW. Chọn source đúng
+    scope; so sánh version đúng ecosystem; ghi kết quả so sánh cùng locator. Sau đó tách kết luận runtime khỏi kết
+    quả số học.
+
+
+    ## Lifecycle và responsibility
+
+
+    Package trên đĩa, executable của process và worker generation có thể khác nhau trong một lần cập nhật. Quản
+    trị viên cung cấp bằng chứng restart/rollover và build provenance; thư viện chỉ ghi nhận và đối chiếu. Không
+    quét từ xa hoặc gọi endpoint hệ thống để tự thu inventory. Bằng chứng do quản trị viên khai báo vẫn không là
+    attestation độc lập.
+
+
+    ## Invariants và tradeoff
+
+
+    Không suy ''đã vá một CVE'' thành ''được hỗ trợ'' hoặc ''an toàn với mọi CVE''. Không suy ''vắng trong KEV''
+    thành ''chưa bị khai thác''. Không suy ''version lớn hơn'' thành ''custom binary chứa đúng patch''. Snapshot
+    cũ hoặc refresh lỗi phải hiển thị freshness và UNKNOWN khi không đủ nguồn hiện hành. Chính sách bảo thủ có thể
+    tăng lượng review, đổi lại giảm kết luận chắc chắn sai khi input thiếu.
+
+
+    ## Ví dụ kiểm tra trên giấy
+
+
+    Asset A khai báo nginx Debian bookworm đạt ngưỡng tracker nhưng thiếu repository và runtime evidence. Ghi package
+    comparison đạt theo inventory; runtime UNKNOWN; manual review còn cần. Asset B có version upstream không tồn
+    tại trong release catalogue hiện có: NEEDS_REVIEW, không tự nhận patched. Đây là workflow dựa trên dữ liệu được
+    cung cấp, không là hướng dẫn kiểm thử khai thác.
+
+
+    Câu hỏi mở: package có từ repository dự kiến không, lần quan sát inventory khi nào, worker cũ đã hết chưa và
+    product có nguồn EOL tương ứng không? Chữ ký patch, source-code fix review và runtime attestation chưa được
+    thực hiện trong pilot.'
+  assessment: '1. Package comparison đạt nhưng không có runtime evidence: ghi kết luận thế nào?
+
+    2. KEV không có CVE trong snapshot có chứng minh không cần vá không?
+
+    3. Vì sao lifecycle EOL phải là cột riêng?'
+  answer_explanations: '1. Ghi kết quả advisory/package có phạm vi, runtime UNKNOWN và required manual review. {C1}
+    là evidence fix, không evidence process.
+
+    2. Không; catalogue membership chỉ là membership tại snapshot, không phủ định exploitation.
+
+    3. Một release có thể đã sửa CVE này nhưng hết hỗ trợ; cần evidence lifecycle độc lập. 0–2 điểm mỗi câu.'
+  diagram: ''

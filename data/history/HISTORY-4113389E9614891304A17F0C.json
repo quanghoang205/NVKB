@@ -1,0 +1,37 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cwe_id": "CWE-125",
+    "description": "CWE-125 Out-of-bounds Read",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-125",
+    "name": "CWE-125",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "updated_at": "2026-11-25T02:28:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cwe_id": "CWE-125",
+    "description": "CWE-125 Out-of-bounds Read",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-125",
+    "name": "CWE-125",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "updated_at": "2026-11-25T02:27:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:28:14+00:00",
+  "entity_id": "WEAKNESS:CWE-125",
+  "id": "HISTORY:4113389E9614891304A17F0C"
+}

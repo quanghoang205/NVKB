@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:E0F471371509A25B4F5DEE03",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:07C9A59A9B7FDF10900C9A17",
+  "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:42+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:901A85C60DC32BEE5D2273B6: ngx_http_mp4_module",
+  "evidence_refs": [
+    "EVIDENCE:901A85C60DC32BEE5D2273B6"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:07C9A59A9B7FDF10900C9A17",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-MP4-MODULE: related_failure_classes",
+  "observation_key": "OBSERVATION:C03E7FE46E50CD1AB5B9A855",
+  "observed_at": "2026-11-25T02:32:42+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "MODULE:NGX-HTTP-MP4-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:42+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:901A85C60DC32BEE5D2273B6"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+  "updated_at": "2026-11-25T04:12:27+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

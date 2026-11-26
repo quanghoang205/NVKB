@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "claim_value": "\"HTTP upgrade ↔ kênh dài hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "name": "PROTOCOL:WEBSOCKET: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+  "id": "HISTORY:98246C4177629B18F0A62045"
+}

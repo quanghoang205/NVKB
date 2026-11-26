@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:175C13CEA5EFE70345477741"
+    ],
+    "created_at": "2026-11-25T05:24:17+00:00",
+    "description": "MODULE:NGX-HTTP-CHARSET-MODULE REQUIRES_KNOWLEDGE_OF COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "Introduction;",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:4412AF6991D7AD5A6C67118E",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Mục tiêu 'Phân biệt đổi nhãn charset với chuyển byte.' cần mô hình Memory pool: ownership, lifetime và cleanup. Quyết định sư phạm, không là fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Mục tiêu 'Phân biệt đổi nhãn charset với chuyển byte.' cần mô hình Memory pool: ownership, lifetime và cleanup. Quyết định sư phạm, không là fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:17+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:17+00:00",
+  "entity_id": "REL:4412AF6991D7AD5A6C67118E",
+  "id": "HISTORY:FD71BBBF97BBB29C2420F953"
+}

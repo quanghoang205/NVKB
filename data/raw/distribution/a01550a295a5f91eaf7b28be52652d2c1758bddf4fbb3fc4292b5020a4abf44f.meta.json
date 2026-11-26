@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:50+00:00",
+  "content_hash": "e1fe460d19e896ac2e406a83c364a29030ca08ea8c8aa602fce9c1b2dbd3c71a",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/e1fe460d19e896ac2e406a83c364a29030ca08ea8c8aa602fce9c1b2dbd3c71a.html",
+  "retrieved_at": "2026-11-25T02:28:50+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-95101"
+}

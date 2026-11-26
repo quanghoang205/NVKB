@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:E0D2101BB46280C76CEDFC3F",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:9F370F551BE7A0023EE6D9A1",
+  "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:23+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:933B8CBD189D3FD36D12481D: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:933B8CBD189D3FD36D12481D"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:9F370F551BE7A0023EE6D9A1",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:MTLS: related_failure_classes",
+  "observation_key": "OBSERVATION:23237F085428B0E23FDD9486",
+  "observed_at": "2026-11-25T02:32:23+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "PROTOCOL:MTLS",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:22+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:933B8CBD189D3FD36D12481D"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:MTLS",
+  "updated_at": "2026-11-25T04:12:45+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

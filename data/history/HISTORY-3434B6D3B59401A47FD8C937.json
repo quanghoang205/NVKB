@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9C8ED2BB890EBCD8C3DAB4F3",
+    "claim_value": "\"SSL upstream injection\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:24+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A2BCF524D9999A4A889B1918"
+    ],
+    "id": "CLAIM:9C8ED2BB890EBCD8C3DAB4F3",
+    "name": "CVE:CVE-2026-1642: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A2BCF524D9999A4A889B1918"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:24+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:24+00:00",
+  "entity_id": "CLAIM:9C8ED2BB890EBCD8C3DAB4F3",
+  "id": "HISTORY:3434B6D3B59401A47FD8C937"
+}

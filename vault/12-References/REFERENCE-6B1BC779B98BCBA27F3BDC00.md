@@ -1,0 +1,36 @@
+---
+entity_type: reference
+id: REFERENCE:6B1BC779B98BCBA27F3BDC00
+title: K000162098
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- K000162098
+tags:
+- nginx
+- reference
+- provenance
+---
+
+# K000162098
+
+Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.
+
+| Thuộc tính | Giá trị |
+| --- | --- |
+| document_title | K000162098 |
+| source_url | https://my.f5.com/manage/s/article/K000162098 |
+
+
+
+
+
+
+## Nguồn
+
+[[EVIDENCE-03C2467C91A6D22077768FBC|CVE-2026-56434]]
+
+Legacy: VERIFIED. Xem Claim để biết source support và hiệu lực; package comparison không xác minh binary đang chạy.
+
+[[Patch-Management-Library|Patch Management Library]] · [[Research-Library|Research Library]]

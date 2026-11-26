@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:83B66F275F9FC239810D0185",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:616EE3AAE352CCCA47DC7FC1",
+    "claim_value": "\"Integer Underflow\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:57+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:F92CFDA044BB160372AF06A6: Description / Potential Mitigations; topic=WEAKNESS:CWE-191",
+    "evidence_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:616EE3AAE352CCCA47DC7FC1",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-191: related_failure_classes",
+    "observation_key": "OBSERVATION:0637A0D85D814C498F0AE793",
+    "observed_at": "2026-11-25T02:48:57+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "WEAKNESS:CWE-191",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:48:57+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-191",
+    "updated_at": "2026-11-25T04:12:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:616EE3AAE352CCCA47DC7FC1",
+    "claim_value": "\"Integer Underflow\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:57+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "id": "CLAIM:616EE3AAE352CCCA47DC7FC1",
+    "name": "WEAKNESS:CWE-191: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-191",
+    "updated_at": "2026-11-25T02:48:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:38+00:00",
+  "entity_id": "CLAIM:616EE3AAE352CCCA47DC7FC1",
+  "id": "HISTORY:5495E418F53E07EB22E3CE18"
+}

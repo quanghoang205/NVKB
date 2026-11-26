@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:5E581E126945AFE328789B60",
+    "authority": "NGINX official documentation",
+    "authority_scope": "NGINX official documentation",
+    "claim_id": "CLAIM:DDFF794E0BF8480EF782CE9F",
+    "claim_value": "\"Cấu hình server, location, connection và xử lý HTTP nền tảng. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:49+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:8C4CEE1D3F9D8C6212E73662: ngx_http_core_module",
+    "evidence_refs": [
+      "EVIDENCE:8C4CEE1D3F9D8C6212E73662"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DDFF794E0BF8480EF782CE9F",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CVE:CVE-2026-97205: normal_component_behavior",
+    "observation_key": "OBSERVATION:91F34EE2F45BF049C2A39301",
+    "observed_at": "2026-11-25T02:40:49+00:00",
+    "predicate": "normal_component_behavior",
+    "product_scope": "CVE:CVE-2026-97205",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:09+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX official documentation",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:8C4CEE1D3F9D8C6212E73662"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T04:12:52+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:DDFF794E0BF8480EF782CE9F",
+    "claim_value": "\"Cấu hình server, location, connection và xử lý HTTP nền tảng. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:49+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8C4CEE1D3F9D8C6212E73662"
+    ],
+    "id": "CLAIM:DDFF794E0BF8480EF782CE9F",
+    "name": "CVE:CVE-2026-97205: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8C4CEE1D3F9D8C6212E73662"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T02:40:50+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:52+00:00",
+  "entity_id": "CLAIM:DDFF794E0BF8480EF782CE9F",
+  "id": "HISTORY:0E9B0D1B85CB55B58B7C1C8B"
+}

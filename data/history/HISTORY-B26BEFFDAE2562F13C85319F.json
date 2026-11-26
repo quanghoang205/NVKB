@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:20BB3B3A1149729DFF7BCF3D",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:427B93525744D03B18CE4AAA",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nBuffering tách tốc độ hai bên nhưng tiêu thụ tài nguyên; streaming giảm chờ nhưng kéo dài sự phụ thuộc lifecycle. TLS bảo vệ đường truyền trong phạm vi identity và state được triển khai đúng; nó không loại bỏ lỗi xử lý dữ liệu đã giải mã. Quản trị nguồn upstream, chứng thư, timeout và package update là các lớp riêng. Không áp dụng cùng cấu hình mitigation cho HTTP proxy, gRPC, SCGI và uwsgi chỉ vì tất cả đều có upstream.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:16+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:866DA2E2D0C2FB0A535A8A90"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:427B93525744D03B18CE4AAA",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:28:16+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:866DA2E2D0C2FB0A535A8A90"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T05:28:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:16+00:00",
+  "entity_id": "CLAIM:427B93525744D03B18CE4AAA",
+  "id": "HISTORY:B26BEFFDAE2562F13C85319F"
+}

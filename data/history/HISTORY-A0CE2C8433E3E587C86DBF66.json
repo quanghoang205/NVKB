@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:3550929442963C1C80CF6ABA",
+    "claim_value": "\"MODULE:NGX-HTTP-CORE-MODULE\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:57+00:00",
+    "description": "Module được nêu tên trực tiếp trong nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "id": "CLAIM:3550929442963C1C80CF6ABA",
+    "name": "CVE:CVE-2026-97205: related_modules",
+    "predicate": "related_modules",
+    "reviewer_notes": "Module được nêu tên trực tiếp trong nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T02:33:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:57+00:00",
+  "entity_id": "CLAIM:3550929442963C1C80CF6ABA",
+  "id": "HISTORY:A0CE2C8433E3E587C86DBF66"
+}

@@ -1,0 +1,76 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:4B40B348550459EF00148062"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-27784 related_modules MODULE:NGX-HTTP-MP4-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:DE2BC593DBE5D9D24768A4F1",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "predicate": "related_modules",
+    "rationale": "Legacy association: Document context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Document context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T04:13:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:4B40B348550459EF00148062"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-27784 related_modules MODULE:NGX-HTTP-MP4-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:DE2BC593DBE5D9D24768A4F1",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "predicate": "related_modules",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:33:48+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:09+00:00",
+  "entity_id": "REL:DE2BC593DBE5D9D24768A4F1",
+  "id": "HISTORY:705DB2AE698EA48E7BFE01EE"
+}

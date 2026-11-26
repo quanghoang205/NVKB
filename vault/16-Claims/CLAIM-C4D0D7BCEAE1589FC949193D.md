@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:C4D0D7BCEAE1589FC949193D
+title: 'CVE:CVE-2026-42934: root_cause_summary'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-42934: root_cause_summary'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-42934: root_cause_summary
+
+`CLAIM:C4D0D7BCEAE1589FC949193D` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-42934|CVE-2026-42934]]. Predicate: `root_cause_summary`.
+
+```json
+"Nguồn phân loại vấn đề: Buffer overread in the ngx_http_charset_module.\n\nCWE-125 — Out-of-bounds read: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-0F3AAED1C80B201D753C0C7D|CVE-2026-42934]], [[EVIDENCE-45386D7260F8A021FA642272|CVE-2026-42934]], [[EVIDENCE-61274833A24B2819EF33D8A3|NGINX security advisories]], [[EVIDENCE-662C7E7EF279A8418B10DAAC|CVE-2026-42934]], [[EVIDENCE-7437F7F7F59D47F5642B61C4|CVE-2026-42934]], [[EVIDENCE-7BB1B2DFE97D5E0D0A8019E0|CVE-2025-53859]], [[EVIDENCE-8018563939CFD1B6D984B5B2|CVE-2026-42934]], [[EVIDENCE-A8E0CD4EC39541F68F84D25F|CWE - CWE-125: Out-of-bounds Read (5.0)]], [[EVIDENCE-AB46026A75280CA89AFB224F|CVE-2026-42934]], [[EVIDENCE-AB6E40B85C793808DE349809|CVE-2026-42934]], [[EVIDENCE-C64041668867A3477B753896|CVE-2026-48142]], [[EVIDENCE-F43E09B91F0D0A09B4E42149|CWE - CWE-125: Out-of-bounds Read (5.0)]], [[EVIDENCE-FB2A7E51F617D62E623BB202|CVE-2026-32647]]
+
+Locator: EVIDENCE:0F3AAED1C80B201D753C0C7D: /cveMetadata; EVIDENCE:45386D7260F8A021FA642272: /containers/cna/affected; EVIDENCE:61274833A24B2819EF33D8A3: li containing CVE-2026-42934; EVIDENCE:662C7E7EF279A8418B10DAAC: /containers/cna/problemTypes; EVIDENCE:7437F7F7F59D47F5642B61C4: /containers/cna/affected; EVIDENCE:7BB1B2DFE97D5E0D0A8019E0: /containers/cna/problemTypes; EVIDENCE:8018563939CFD1B6D984B5B2: /containers/cna/metrics; EVIDENCE:A8E0CD4EC39541F68F84D25F: Description / Potential Mitigations; topic=WEAKNESS:CWE-125; EVIDENCE:AB46026A75280CA89AFB224F: /containers/cna/metrics; EVIDENCE:AB6E40B85C793808DE349809: /containers/cna/descriptions; EVIDENCE:C64041668867A3477B753896: /containers/cna/problemTypes; EVIDENCE:F43E09B91F0D0A09B4E42149: Description / Potential Mitigations; EVIDENCE:FB2A7E51F617D62E623BB202: /containers/cna/problemTypes
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Earlier generated interpretation retained; the v1.3 article supplies bounded source claims and explicit author reasoning.
+
+Quan sát: 2026-11-25T02:44:46+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

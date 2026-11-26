@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:2C3479DA69C20FDBA07AC92B
+title: CVE-2026-90439
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE-2026-90439
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CVE-2026-90439
+
+Mô tả và điều kiện do CNA công bố.
+
+- Nguồn: [CVE Program / CNA](https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/90xxx/CVE-2026-90439.json)
+- Authority gốc: CVE Program / original CNA (see record)
+- Vai trò kênh: DISTRIBUTION_CHANNEL
+- Locator: `/containers/cna/descriptions`
+
+- Truy xuất: 2026-11-25T02:28:35+00:00
+- SHA-256: `ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080`
+- Snapshot từ project root: `data/raw/cve/snapshots/ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080.json`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

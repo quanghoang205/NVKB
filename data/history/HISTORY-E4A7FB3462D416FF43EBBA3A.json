@@ -1,0 +1,35 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "cwe_id": "CWE-191",
+    "description": "CWE-191 Integer Underflow (Wrap or Wraparound)",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-191",
+    "name": "CWE-191",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E5D6A097B43D7EB31179D3D5",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "updated_at": "2026-11-25T02:27:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "cwe_id": "CWE-191",
+    "description": "CWE-191 Integer Underflow (Wrap or Wraparound)",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-191",
+    "name": "CWE-191",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:27:14+00:00",
+  "entity_id": "WEAKNESS:CWE-191",
+  "id": "HISTORY:E4A7FB3462D416FF43EBBA3A"
+}

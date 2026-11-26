@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:096370B46BDACACF02E53F0B",
+    "claim_value": "\"Dịch vụ không khởi động hoặc thực thi cấu hình ngoài dự kiến.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:096370B46BDACACF02E53F0B",
+    "name": "COMPONENT:MASTER-PROCESS: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:10+00:00",
+  "entity_id": "CLAIM:096370B46BDACACF02E53F0B",
+  "id": "HISTORY:9CF98864EBD0C2B26D688B97"
+}

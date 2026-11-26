@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:3E77A277EF6492A446EBE106",
+    "claim_value": "\"Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở hữu.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:54+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AC77FAA5BCFF7678FAEA0D75"
+    ],
+    "id": "CLAIM:3E77A277EF6492A446EBE106",
+    "name": "WEAKNESS:CWE-122: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AC77FAA5BCFF7678FAEA0D75"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-122",
+    "updated_at": "2026-11-25T02:48:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:54+00:00",
+  "entity_id": "CLAIM:3E77A277EF6492A446EBE106",
+  "id": "HISTORY:3AC2EB1F4E0D17EEB548EBD5"
+}

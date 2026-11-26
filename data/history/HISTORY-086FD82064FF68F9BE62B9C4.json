@@ -1,0 +1,145 @@
+{
+  "action": "created",
+  "after": {
+    "affected_feature_description": "Infinite loop while reading client request body over TLS 1.3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2CADEBC451569F4C497EACB7"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0E4C2162604B0AA59FF539C6",
+      "CLAIM:2ED19F76C674FBF66684C6A4",
+      "CLAIM:300DFA4DD61A64312618AB02",
+      "CLAIM:3681A7F5410799D5693DA937",
+      "CLAIM:3BA2D82371BF5BE34A7854A4",
+      "CLAIM:42DB2745BF24504563D81AEF",
+      "CLAIM:57C336E73CF6D25B2CE5898D",
+      "CLAIM:610FE73C7F17BECF8B7FCE62",
+      "CLAIM:63256B6C45D0BED9DE4BCE8B",
+      "CLAIM:78850C17B23C5B7996CD2D25",
+      "CLAIM:8540AED7F8B2613EF691BC13",
+      "CLAIM:8BB8B9AA56EC6BA616E0D354",
+      "CLAIM:97FD9FE3EC1EEB2BBC8674A1",
+      "CLAIM:D2A1FB913507C32E168BCA19",
+      "CLAIM:D7903F0E63532C9CF3D9CF9E",
+      "CLAIM:E42B499CB99E65FD9617FAC2",
+      "CLAIM:E5C5C74628E8E6DBB5A258ED",
+      "CLAIM:EA30B417C782F82B2642B467",
+      "CLAIM:ECBCC256062C60FB2791119C",
+      "CLAIM:F5FA8A09A5002F440703398F"
+    ],
+    "condition_refs": [
+      "CONDITION:C3154CD214965C7265CDB8F4"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "cve_id": "CVE-2026-118899",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:6F855D1A5B15624C4E54871B",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE"
+    ],
+    "distribution_status": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:6F855D1A5B15624C4E54871B",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE"
+    ],
+    "documented_configuration_context": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-118899 ghi nhận: Infinite loop while reading client request body over TLS 1.3. Phạm vi upstream: 1.13.0-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-118899",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T16:50:46.713000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-118899",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:27.916000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6D644D83AE620C3FB010C884"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-835"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Infinite loop while reading client request body over TLS 1.3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:1BF51A4ACC0A1F5EC2C23749",
+      "SEVERITY:24FBD5317DA752F996C8E078",
+      "SEVERITY:590E1BA1E4B2B4E68DCDFC26",
+      "SEVERITY:6B2C9910FBBE623BD191F915",
+      "SEVERITY:A2B5CBCCBB13B53F7E32036E"
+    ],
+    "source_refs": [
+      "EVIDENCE:34F3711874B251EBA21C9F2C",
+      "EVIDENCE:3A257C452F78A5723E7844BB",
+      "EVIDENCE:A385E425C764FAC0A0EFE831",
+      "EVIDENCE:D03A9707FBFCA977C0D0404B",
+      "EVIDENCE:D7C987F4E116133786DC9C36",
+      "EVIDENCE:DE52FE1407841B766BE78251",
+      "EVIDENCE:E9FFCF9998096FFA361D67A7",
+      "EVIDENCE:EF6E0723EBD781894867EE69"
+    ],
+    "title": "Infinite loop while reading client request body over TLS 1.3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "upstream_affected_expression": "1.13.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:42+00:00",
+  "entity_id": "CVE:CVE-2026-118899",
+  "id": "HISTORY:086FD82064FF68F9BE62B9C4"
+}

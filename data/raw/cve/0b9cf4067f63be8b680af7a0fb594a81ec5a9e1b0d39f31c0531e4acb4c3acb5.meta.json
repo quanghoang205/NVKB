@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:39+00:00",
+  "content_hash": "002a5077706a41a2a1d3e19e576e421afa0eaa7830ba7fdf23714a0468349b76",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"3fd98d1187f8f1303b50160168afe5795341486e53915bf7b29389a5848c1798\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/002a5077706a41a2a1d3e19e576e421afa0eaa7830ba7fdf23714a0468349b76.json",
+  "retrieved_at": "2026-11-25T02:25:39+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2009/2xxx/CVE-2009-2629.json"
+}

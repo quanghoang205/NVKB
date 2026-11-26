@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:DED5F8E424E94A3EB73FB499",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:EEAE0421FC9A1209E3936CE7",
+    "claim_value": "\"TLS 1.3 với ssl_early_data on theo CNA.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:EEAE0421FC9A1209E3936CE7",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:applicability",
+    "observed_at": "2026-11-25T05:15:13+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:13+00:00",
+  "entity_id": "CLAIM:EEAE0421FC9A1209E3936CE7",
+  "id": "HISTORY:770621B4699D6828D3096F75"
+}

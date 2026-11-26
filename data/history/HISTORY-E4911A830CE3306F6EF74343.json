@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:17686B6369029950CD0AB5E5"
+    ],
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "cve_ref": "CVE:CVE-2026-40701",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.30.0-4",
+    "id": "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+    "name": "nginx / Debian unstable / CVE-2026-40701",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "unstable",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:2733F2D101377E3E6CBFD01A"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:17686B6369029950CD0AB5E5"
+    ],
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "cve_ref": "CVE:CVE-2026-40701",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.30.0-4",
+    "id": "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+    "name": "nginx / Debian unstable / CVE-2026-40701",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "unstable",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2733F2D101377E3E6CBFD01A"
+    ],
+    "updated_at": "2026-11-25T02:27:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+  "id": "HISTORY:E4911A830CE3306F6EF74343"
+}

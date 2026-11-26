@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:EA24392EEA3F276E9915B6C6"
+    ],
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "description": "CVE:CVE-2024-7347 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:0AE2BC8B5F8BE49734910AF9",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T02:26:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:31+00:00",
+  "entity_id": "REL:0AE2BC8B5F8BE49734910AF9",
+  "id": "HISTORY:1CE1A4C02424E8B2D1C95956"
+}

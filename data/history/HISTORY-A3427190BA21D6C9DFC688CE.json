@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:89A33475F1DD01537E59A290",
+      "CLAIM:0CCB7C874DF5EE0353568439",
+      "CLAIM:6A97F8543CC30C66657BFEE0",
+      "CLAIM:32E6D0ACC75EEA413725BC4D",
+      "CLAIM:4E951F500F4446D10B8B58D3"
+    ],
+    "created_at": "2026-11-25T05:18:39+00:00",
+    "description": "CVE:CVE-2026-40701 learns_from COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-40701",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:E44BED8595A67857CEC9A9EF",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:18:39+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1E38E9538EDEC757A6052B25",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T05:18:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:18:39+00:00",
+  "entity_id": "REL:E44BED8595A67857CEC9A9EF",
+  "id": "HISTORY:A3427190BA21D6C9DFC688CE"
+}

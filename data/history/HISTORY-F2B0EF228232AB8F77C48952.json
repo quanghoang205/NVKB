@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:C53738A9A724F7ADFC9BDC7C"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "description": "CVE:CVE-2026-123640 distribution_fix PACKAGE:87FA2F56ED088580AAE66792",
+    "entity_type": "Relationship",
+    "id": "REL:4E68BFCCB019D239CE11AA08",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:87FA2F56ED088580AAE66792",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2DA74DC126FD20C54F34572B"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "REL:4E68BFCCB019D239CE11AA08",
+  "id": "HISTORY:F2B0EF228232AB8F77C48952"
+}

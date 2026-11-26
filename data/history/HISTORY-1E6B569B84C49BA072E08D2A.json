@@ -1,0 +1,404 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Infinite loop while reading client request body over TLS 1.3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2CADEBC451569F4C497EACB7"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:03E6621C29A5BD646EEDBFFB",
+      "CLAIM:0E353EA0F7314D4E7573195D",
+      "CLAIM:0E4C2162604B0AA59FF539C6",
+      "CLAIM:26D10F4D5FF89AD6580411AF",
+      "CLAIM:2A9BBAC05A678D9EB8496D1E",
+      "CLAIM:2ED19F76C674FBF66684C6A4",
+      "CLAIM:2ED97C820519F03752219FCB",
+      "CLAIM:300DFA4DD61A64312618AB02",
+      "CLAIM:3681A7F5410799D5693DA937",
+      "CLAIM:3BA2D82371BF5BE34A7854A4",
+      "CLAIM:42DB2745BF24504563D81AEF",
+      "CLAIM:455FBD849E33E455392084C0",
+      "CLAIM:57C336E73CF6D25B2CE5898D",
+      "CLAIM:610FE73C7F17BECF8B7FCE62",
+      "CLAIM:63256B6C45D0BED9DE4BCE8B",
+      "CLAIM:6C64759F8495ABC35FF1B4FE",
+      "CLAIM:78850C17B23C5B7996CD2D25",
+      "CLAIM:7DB094961A40EF2E10296628",
+      "CLAIM:8540AED7F8B2613EF691BC13",
+      "CLAIM:8BB8B9AA56EC6BA616E0D354",
+      "CLAIM:8EE279A848391956E704BA18",
+      "CLAIM:97FD9FE3EC1EEB2BBC8674A1",
+      "CLAIM:A61666A0AFD9F9C6E3390C88",
+      "CLAIM:CED86B98A0C386D16CBDF3AC",
+      "CLAIM:D2A1FB913507C32E168BCA19",
+      "CLAIM:D7903F0E63532C9CF3D9CF9E",
+      "CLAIM:E42B499CB99E65FD9617FAC2",
+      "CLAIM:E5C5C74628E8E6DBB5A258ED",
+      "CLAIM:EA30B417C782F82B2642B467",
+      "CLAIM:EBCCF21160576494A2ACD619",
+      "CLAIM:ECBCC256062C60FB2791119C",
+      "CLAIM:EFF67905B8A3F77BA2D44AA4",
+      "CLAIM:F5FA8A09A5002F440703398F"
+    ],
+    "condition_refs": [
+      "CONDITION:C3154CD214965C7265CDB8F4"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker ngừng nhận kết nối mới và xử lý kết nối hiện có; DoS được công bố.",
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-118899",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá implementation và theo dõi worker progress; timeout chỉ hữu ích nếu event loop còn xử lý timer."
+    ],
+    "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE",
+      "PACKAGE:6F855D1A5B15624C4E54871B"
+    ],
+    "distribution_status": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE",
+      "PACKAGE:6F855D1A5B15624C4E54871B"
+    ],
+    "documented_configuration_context": "HTTP listener bật ssl và TLS 1.3 theo CNA; không gán lỗi cho mọi stream TLS hoặc mọi phiên bản giao thức.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Vòng lặp không kết thúc khi đọc HTTP request body qua TLS 1.3 có thể làm worker ngừng xử lý kết nối.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-118899",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-18T16:50:46.713000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.",
+      "Trả lời có evidence: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-118899",
+    "normal_component_behavior": "Read handler tiến triển khi có byte/trạng thái mới hoặc trả về chờ sự kiện; không được chiếm event loop khi không có tiến độ.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không có xác nhận memory corruption, tiết lộ dữ liệu hoặc thực thi mã.",
+    "publication_date": "2026-11-18T15:23:27.916000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6D644D83AE620C3FB010C884"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-835"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nVòng lặp không kết thúc khi đọc HTTP request body qua TLS 1.3 có thể làm worker ngừng xử lý kết nối.\n\n## 2. CVE identity và product scope\n\nCVE-2026-118899; published 2026-11-18T15:23:27.916000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-7DB094961A40EF2E10296628|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP body reader qua TLS trong event loop của worker. [[CLAIM-2A9BBAC05A678D9EB8496D1E|Claim / locator]].\n\n## 5. Normal component behavior\n\nRead handler tiến triển khi có byte/trạng thái mới hoặc trả về chờ sự kiện; không được chiếm event loop khi không có tiến độ. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp. [[CLAIM-CED86B98A0C386D16CBDF3AC|Claim / locator]].\n\n## 7. Relevant security principles\n\nMỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP listener bật ssl và TLS 1.3 theo CNA; không gán lỗi cho mọi stream TLS hoặc mọi phiên bản giao thức. [[CLAIM-2A9BBAC05A678D9EB8496D1E|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.13.0-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-2ED97C820519F03752219FCB|Claim / locator]].\n\nFix 1.30.7/1.31.9; không gộp với lỗi early-data send loop 132779. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker ngừng nhận kết nối mới và xử lý kết nối hiện có; DoS được công bố. [[CLAIM-8EE279A848391956E704BA18|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông có xác nhận memory corruption, tiết lộ dữ liệu hoặc thực thi mã. [[CLAIM-6C64759F8495ABC35FF1B4FE|Claim / locator]].\n\n## 12. Remediation principles\n\nVá implementation và theo dõi worker progress; timeout chỉ hữu ích nếu event loop còn xử lý timer. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-2ED97C820519F03752219FCB|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.7/1.31.9; không gộp với lỗi early-data send loop 132779.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-835|CWE-835 — Infinite Loop]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.\n- Trả lời có evidence: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?\n\n## 17. Discussion questions\n\nVì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?\n\nGợi ý đáp án: Callback timer cũng cần cơ hội chạy; vòng lặp không yield có thể ngăn xử lý timer.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-7DB094961A40EF2E10296628|CLAIM:7DB094961A40EF2E10296628]]\n- applicability: [[CLAIM-2A9BBAC05A678D9EB8496D1E|CLAIM:2A9BBAC05A678D9EB8496D1E]]\n- impact: [[CLAIM-8EE279A848391956E704BA18|CLAIM:8EE279A848391956E704BA18]]\n- potential: [[CLAIM-6C64759F8495ABC35FF1B4FE|CLAIM:6C64759F8495ABC35FF1B4FE]]\n- mechanism: [[CLAIM-CED86B98A0C386D16CBDF3AC|CLAIM:CED86B98A0C386D16CBDF3AC]]\n- versions: [[CLAIM-2ED97C820519F03752219FCB|CLAIM:2ED97C820519F03752219FCB]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nĐiều kiện loop và hiệu lực timeout trong implementation bị lỗi chưa được xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:7DB094961A40EF2E10296628",
+      "CLAIM:2A9BBAC05A678D9EB8496D1E",
+      "CLAIM:8EE279A848391956E704BA18",
+      "CLAIM:6C64759F8495ABC35FF1B4FE",
+      "CLAIM:CED86B98A0C386D16CBDF3AC",
+      "CLAIM:2ED97C820519F03752219FCB"
+    ],
+    "research_group": "tls",
+    "root_cause_summary": "CNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1BF51A4ACC0A1F5EC2C23749",
+      "SEVERITY:24FBD5317DA752F996C8E078",
+      "SEVERITY:590E1BA1E4B2B4E68DCDFC26",
+      "SEVERITY:6B2C9910FBBE623BD191F915",
+      "SEVERITY:A2B5CBCCBB13B53F7E32036E"
+    ],
+    "source_refs": [
+      "EVIDENCE:34F3711874B251EBA21C9F2C",
+      "EVIDENCE:3A257C452F78A5723E7844BB",
+      "EVIDENCE:5EEBD6A84599D0F299441354",
+      "EVIDENCE:77FD57EAEDF8E5D26DB3E0AC",
+      "EVIDENCE:A385E425C764FAC0A0EFE831",
+      "EVIDENCE:D03A9707FBFCA977C0D0404B",
+      "EVIDENCE:D7C987F4E116133786DC9C36",
+      "EVIDENCE:DE52FE1407841B766BE78251",
+      "EVIDENCE:E9FFCF9998096FFA361D67A7",
+      "EVIDENCE:EF6E0723EBD781894867EE69"
+    ],
+    "title": "Infinite loop while reading client request body over TLS 1.3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Điều kiện loop và hiệu lực timeout trong implementation bị lỗi chưa được xác minh.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:48:50+00:00",
+    "upstream_affected_expression": "1.13.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Infinite loop while reading client request body over TLS 1.3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2CADEBC451569F4C497EACB7"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:03E6621C29A5BD646EEDBFFB",
+      "CLAIM:0E353EA0F7314D4E7573195D",
+      "CLAIM:0E4C2162604B0AA59FF539C6",
+      "CLAIM:26D10F4D5FF89AD6580411AF",
+      "CLAIM:2A9BBAC05A678D9EB8496D1E",
+      "CLAIM:2ED19F76C674FBF66684C6A4",
+      "CLAIM:2ED97C820519F03752219FCB",
+      "CLAIM:300DFA4DD61A64312618AB02",
+      "CLAIM:3681A7F5410799D5693DA937",
+      "CLAIM:3BA2D82371BF5BE34A7854A4",
+      "CLAIM:42DB2745BF24504563D81AEF",
+      "CLAIM:455FBD849E33E455392084C0",
+      "CLAIM:57C336E73CF6D25B2CE5898D",
+      "CLAIM:610FE73C7F17BECF8B7FCE62",
+      "CLAIM:63256B6C45D0BED9DE4BCE8B",
+      "CLAIM:6C64759F8495ABC35FF1B4FE",
+      "CLAIM:78850C17B23C5B7996CD2D25",
+      "CLAIM:7DB094961A40EF2E10296628",
+      "CLAIM:8540AED7F8B2613EF691BC13",
+      "CLAIM:8BB8B9AA56EC6BA616E0D354",
+      "CLAIM:8EE279A848391956E704BA18",
+      "CLAIM:97FD9FE3EC1EEB2BBC8674A1",
+      "CLAIM:A61666A0AFD9F9C6E3390C88",
+      "CLAIM:CED86B98A0C386D16CBDF3AC",
+      "CLAIM:D2A1FB913507C32E168BCA19",
+      "CLAIM:D7903F0E63532C9CF3D9CF9E",
+      "CLAIM:E42B499CB99E65FD9617FAC2",
+      "CLAIM:E5C5C74628E8E6DBB5A258ED",
+      "CLAIM:EA30B417C782F82B2642B467",
+      "CLAIM:EBCCF21160576494A2ACD619",
+      "CLAIM:ECBCC256062C60FB2791119C",
+      "CLAIM:EFF67905B8A3F77BA2D44AA4",
+      "CLAIM:F5FA8A09A5002F440703398F"
+    ],
+    "condition_refs": [
+      "CONDITION:C3154CD214965C7265CDB8F4"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker ngừng nhận kết nối mới và xử lý kết nối hiện có; DoS được công bố.",
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-118899",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá implementation và theo dõi worker progress; timeout chỉ hữu ích nếu event loop còn xử lý timer."
+    ],
+    "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE",
+      "PACKAGE:6F855D1A5B15624C4E54871B"
+    ],
+    "distribution_status": [
+      "PACKAGE:0BC0B73A6FEF59758E3F9BCF",
+      "PACKAGE:2CEF3475EA9A0E85B1B913CE",
+      "PACKAGE:6F855D1A5B15624C4E54871B"
+    ],
+    "documented_configuration_context": "HTTP listener bật ssl và TLS 1.3 theo CNA; không gán lỗi cho mọi stream TLS hoặc mọi phiên bản giao thức.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Vòng lặp không kết thúc khi đọc HTTP request body qua TLS 1.3 có thể làm worker ngừng xử lý kết nối.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-118899",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-18T16:50:46.713000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.",
+      "Trả lời có evidence: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-118899",
+    "normal_component_behavior": "Read handler tiến triển khi có byte/trạng thái mới hoặc trả về chờ sự kiện; không được chiếm event loop khi không có tiến độ.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không có xác nhận memory corruption, tiết lộ dữ liệu hoặc thực thi mã.",
+    "publication_date": "2026-11-18T15:23:27.916000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6D644D83AE620C3FB010C884"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-835"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nVòng lặp không kết thúc khi đọc HTTP request body qua TLS 1.3 có thể làm worker ngừng xử lý kết nối.\n\n## 2. CVE identity và product scope\n\nCVE-2026-118899; published 2026-11-18T15:23:27.916000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-7DB094961A40EF2E10296628|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP body reader qua TLS trong event loop của worker. [[CLAIM-2A9BBAC05A678D9EB8496D1E|Claim / locator]].\n\n## 5. Normal component behavior\n\nRead handler tiến triển khi có byte/trạng thái mới hoặc trả về chờ sự kiện; không được chiếm event loop khi không có tiến độ. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp. [[CLAIM-CED86B98A0C386D16CBDF3AC|Claim / locator]].\n\n## 7. Relevant security principles\n\nMỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP listener bật ssl và TLS 1.3 theo CNA; không gán lỗi cho mọi stream TLS hoặc mọi phiên bản giao thức. [[CLAIM-2A9BBAC05A678D9EB8496D1E|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.13.0-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-2ED97C820519F03752219FCB|Claim / locator]].\n\nFix 1.30.7/1.31.9; không gộp với lỗi early-data send loop 132779. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker ngừng nhận kết nối mới và xử lý kết nối hiện có; DoS được công bố. [[CLAIM-8EE279A848391956E704BA18|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông có xác nhận memory corruption, tiết lộ dữ liệu hoặc thực thi mã. [[CLAIM-6C64759F8495ABC35FF1B4FE|Claim / locator]].\n\n## 12. Remediation principles\n\nVá implementation và theo dõi worker progress; timeout chỉ hữu ích nếu event loop còn xử lý timer. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-2ED97C820519F03752219FCB|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.7/1.31.9; không gộp với lỗi early-data send loop 132779.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-835|CWE-835 — Infinite Loop]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.\n- Trả lời có evidence: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?\n\n## 17. Discussion questions\n\nVì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?\n\nGợi ý đáp án: Callback timer cũng cần cơ hội chạy; vòng lặp không yield có thể ngăn xử lý timer.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-7DB094961A40EF2E10296628|CLAIM:7DB094961A40EF2E10296628]]\n- applicability: [[CLAIM-2A9BBAC05A678D9EB8496D1E|CLAIM:2A9BBAC05A678D9EB8496D1E]]\n- impact: [[CLAIM-8EE279A848391956E704BA18|CLAIM:8EE279A848391956E704BA18]]\n- potential: [[CLAIM-6C64759F8495ABC35FF1B4FE|CLAIM:6C64759F8495ABC35FF1B4FE]]\n- mechanism: [[CLAIM-CED86B98A0C386D16CBDF3AC|CLAIM:CED86B98A0C386D16CBDF3AC]]\n- versions: [[CLAIM-2ED97C820519F03752219FCB|CLAIM:2ED97C820519F03752219FCB]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nĐiều kiện loop và hiệu lực timeout trong implementation bị lỗi chưa được xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:7DB094961A40EF2E10296628",
+      "CLAIM:2A9BBAC05A678D9EB8496D1E",
+      "CLAIM:8EE279A848391956E704BA18",
+      "CLAIM:6C64759F8495ABC35FF1B4FE",
+      "CLAIM:CED86B98A0C386D16CBDF3AC",
+      "CLAIM:2ED97C820519F03752219FCB"
+    ],
+    "research_group": "tls",
+    "root_cause_summary": "CNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1BF51A4ACC0A1F5EC2C23749",
+      "SEVERITY:24FBD5317DA752F996C8E078",
+      "SEVERITY:590E1BA1E4B2B4E68DCDFC26",
+      "SEVERITY:6B2C9910FBBE623BD191F915",
+      "SEVERITY:A2B5CBCCBB13B53F7E32036E"
+    ],
+    "source_refs": [
+      "EVIDENCE:34F3711874B251EBA21C9F2C",
+      "EVIDENCE:3A257C452F78A5723E7844BB",
+      "EVIDENCE:5EEBD6A84599D0F299441354",
+      "EVIDENCE:77FD57EAEDF8E5D26DB3E0AC",
+      "EVIDENCE:A385E425C764FAC0A0EFE831",
+      "EVIDENCE:D03A9707FBFCA977C0D0404B",
+      "EVIDENCE:D7C987F4E116133786DC9C36",
+      "EVIDENCE:DE52FE1407841B766BE78251",
+      "EVIDENCE:E9FFCF9998096FFA361D67A7",
+      "EVIDENCE:EF6E0723EBD781894867EE69"
+    ],
+    "title": "Infinite loop while reading client request body over TLS 1.3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Điều kiện loop và hiệu lực timeout trong implementation bị lỗi chưa được xác minh.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:33:54+00:00",
+    "upstream_affected_expression": "1.13.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:48:50+00:00",
+  "entity_id": "CVE:CVE-2026-118899",
+  "id": "HISTORY:1E6B569B84C49BA072E08D2A"
+}

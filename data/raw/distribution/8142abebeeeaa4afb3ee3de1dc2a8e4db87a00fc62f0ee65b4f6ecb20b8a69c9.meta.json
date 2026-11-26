@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:42+00:00",
+  "content_hash": "481f04caca2f4df450dfa3b23be8b8f893104dd936ef62bddb548f23cc3273da",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/481f04caca2f4df450dfa3b23be8b8f893104dd936ef62bddb548f23cc3273da.html",
+  "retrieved_at": "2026-11-25T02:26:42+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-118899"
+}

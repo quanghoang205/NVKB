@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "a15460e8ba9a11ac49773f9858d9066ebac4cc1c983cf2ec659d44ca33fd6098",
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2025-53859",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DA3DD605D5072152D133FF26",
+    "id": "EVIDENCE:DA3DD605D5072152D133FF26",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/a15460e8ba9a11ac49773f9858d9066ebac4cc1c983cf2ec659d44ca33fd6098.json",
+    "name": "CVE-2025-53859",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:26:34+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:34+00:00",
+  "entity_id": "EVIDENCE:DA3DD605D5072152D133FF26",
+  "id": "HISTORY:8B6698BFA4B0C0F656F0CDFD"
+}

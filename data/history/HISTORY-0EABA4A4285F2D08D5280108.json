@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95",
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "description": "Phân loại CWE được CNA gán.",
+    "document_title": "CVE-2024-32760",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+    "id": "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+    "local_snapshot_path": "data/raw/cve/snapshots/d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95.json",
+    "name": "CVE-2024-32760",
+    "paraphrase": "Phân loại CWE được CNA gán.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:26:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/problemTypes",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/32xxx/CVE-2024-32760.json",
+    "updated_at": "2026-11-25T02:26:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:19+00:00",
+  "entity_id": "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+  "id": "HISTORY:0EABA4A4285F2D08D5280108"
+}

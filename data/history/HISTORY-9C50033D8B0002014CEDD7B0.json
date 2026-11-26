@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:037D6727EAB6184020C8F238",
+    "claim_value": "\"Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:49:01+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "id": "CLAIM:037D6727EAB6184020C8F238",
+    "name": "WEAKNESS:CWE-835: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-835",
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:01+00:00",
+  "entity_id": "CLAIM:037D6727EAB6184020C8F238",
+  "id": "HISTORY:9C50033D8B0002014CEDD7B0"
+}

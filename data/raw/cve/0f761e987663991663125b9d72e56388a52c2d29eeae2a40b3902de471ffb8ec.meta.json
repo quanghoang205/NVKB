@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:53+00:00",
+  "content_hash": "1a74e9cb1b4112560a58579955436562c489a262547b57a5be7eb79d9de74ccd",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"42985871e1ebb0807f6aa5fef49ce2881552af894103b4d59c3c53e80a753667\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/1a74e9cb1b4112560a58579955436562c489a262547b57a5be7eb79d9de74ccd.json",
+  "retrieved_at": "2026-11-25T02:25:53+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2016/0xxx/CVE-2016-0747.json"
+}

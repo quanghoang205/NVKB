@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:90519E64723F105B5CFB765F"
+    ],
+    "created_at": "2026-11-25T02:28:07+00:00",
+    "description": "CVE:CVE-2026-42533 distribution_fix PACKAGE:E6D05AFDB535BBE5F25F1B9E",
+    "entity_type": "Relationship",
+    "id": "REL:91B168C56A75548B61D42A35",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:E6D05AFDB535BBE5F25F1B9E",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:377BD8828632A80459D0E4F0"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42533",
+    "updated_at": "2026-11-25T02:28:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:07+00:00",
+  "entity_id": "REL:91B168C56A75548B61D42A35",
+  "id": "HISTORY:B71000A8D552DE81C68DD379"
+}

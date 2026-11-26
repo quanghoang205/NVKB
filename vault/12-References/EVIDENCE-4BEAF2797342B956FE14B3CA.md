@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:4BEAF2797342B956FE14B3CA
+title: nginx security advisories
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- nginx security advisories
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# nginx security advisories
+
+Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.
+
+- Nguồn: [NGINX / F5](https://nginx.org/en/security_advisories.html)
+- Authority gốc: NGINX / F5
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Overview / documented record; topic=CONCEPT:ADVISORY`
+
+- Truy xuất: 2026-11-25T02:33:06+00:00
+- SHA-256: `2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184`
+- Snapshot từ project root: `data/raw/documentation/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

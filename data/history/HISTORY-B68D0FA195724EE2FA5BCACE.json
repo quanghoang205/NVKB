@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:6161E52695D8475ECADCE557",
+    "claim_value": "\"Dùng encoder theo giao thức và kiểm tra giá trị không được chứa dấu phân cách.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "id": "CLAIM:6161E52695D8475ECADCE557",
+    "name": "WEAKNESS:CWE-93: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-93",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:6161E52695D8475ECADCE557",
+  "id": "HISTORY:B68D0FA195724EE2FA5BCACE"
+}

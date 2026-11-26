@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:87266A6512B6AF6C3B04BECB",
+  "authority": "MITRE CWE",
+  "authority_scope": "MITRE CWE",
+  "claim_id": "CLAIM:AB3C1108D21EDBEF2CCCD051",
+  "claim_value": "\"Các tham chiếu được giữ trong thời gian đối tượng còn sống; cleanup xảy ra sau khi callback cuối cùng không còn sử dụng.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:34+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:A0ADB173EC54D8F7EE765F51: Description / Potential Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:A0ADB173EC54D8F7EE765F51"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:AB3C1108D21EDBEF2CCCD051",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "WEAKNESS:CWE-416: normal_behavior",
+  "observation_key": "OBSERVATION:73F3F10A74A07ADBFCC98CAA",
+  "observed_at": "2026-11-25T02:32:34+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "WEAKNESS:CWE-416",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:34+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:A0ADB173EC54D8F7EE765F51"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "WEAKNESS:CWE-416",
+  "updated_at": "2026-11-25T04:12:46+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

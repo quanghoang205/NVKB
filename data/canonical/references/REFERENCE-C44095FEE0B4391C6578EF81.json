@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-25T02:28:19+00:00",
+  "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+  "document_title": "K000161019",
+  "entity_type": "Reference",
+  "id": "REFERENCE:C44095FEE0B4391C6578EF81",
+  "name": "K000161019",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:32FA0944FAC2777E62ABDC55"
+  ],
+  "source_url": "https://my.f5.com/manage/s/article/K000161019",
+  "updated_at": "2026-11-25T04:13:05+00:00",
+  "verification_status": "VERIFIED"
+}

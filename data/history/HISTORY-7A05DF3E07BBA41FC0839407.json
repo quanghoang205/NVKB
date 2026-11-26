@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "e25dc6295dc6fd052926836be651c5ea18420ac442bfe8d16886f6d6a0a3b3ad",
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "description": "Debian unstable: fixed_version=1.30.0-4, status=fixed.",
+    "document_title": "CVE-2026-42934",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:04C3489661EB23B713FF6426",
+    "id": "EVIDENCE:04C3489661EB23B713FF6426",
+    "local_snapshot_path": "data/raw/distribution/snapshots/e25dc6295dc6fd052926836be651c5ea18420ac442bfe8d16886f6d6a0a3b3ad.html",
+    "name": "CVE-2026-42934",
+    "paraphrase": "Debian unstable: fixed_version=1.30.0-4, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:14+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42934",
+    "updated_at": "2026-11-25T02:28:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:14+00:00",
+  "entity_id": "EVIDENCE:04C3489661EB23B713FF6426",
+  "id": "HISTORY:7A05DF3E07BBA41FC0839407"
+}

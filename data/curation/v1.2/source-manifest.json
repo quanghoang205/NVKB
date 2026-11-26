@@ -1,0 +1,132 @@
+{
+  "advisories": {
+    "bytes": 28721,
+    "checked_at": "2026-11-25T04:12:10+00:00",
+    "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+    "final_url": "https://nginx.org/en/security_advisories.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+    "retrieved_at": "2026-11-25T04:12:10+00:00",
+    "source_url": "https://nginx.org/en/security_advisories.html"
+  },
+  "case": {
+    "bytes": 10570,
+    "checked_at": "2026-11-25T04:13:42+00:00",
+    "content_hash": "eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066",
+    "final_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066.json",
+    "retrieved_at": "2026-11-25T04:13:42+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json"
+  },
+  "control": {
+    "bytes": 11466,
+    "checked_at": "2026-11-25T04:10:39+00:00",
+    "content_hash": "327a6c437c3be3f5d639f101d2249e5bd5158a8decd9f359bba6ecd5bdc79038",
+    "final_url": "https://nginx.org/en/docs/control.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/327a6c437c3be3f5d639f101d2249e5bd5158a8decd9f359bba6ecd5bdc79038.html",
+    "retrieved_at": "2026-11-25T04:10:39+00:00",
+    "source_url": "https://nginx.org/en/docs/control.html"
+  },
+  "cve_schema": {
+    "bytes": 72841,
+    "checked_at": "2026-11-25T04:16:41+00:00",
+    "content_hash": "33f7517424facfc712c7b808be1b6503fc74b2e6b85979bbaacb9b623ddfde67",
+    "final_url": "https://raw.githubusercontent.com/CVEProject/cve-schema/main/schema/CVE_Record_Format.json",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/33f7517424facfc712c7b808be1b6503fc74b2e6b85979bbaacb9b623ddfde67.json",
+    "retrieved_at": "2026-11-25T04:16:41+00:00",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cve-schema/main/schema/CVE_Record_Format.json"
+  },
+  "cwe287": {
+    "bytes": 272766,
+    "checked_at": "2026-11-25T04:10:41+00:00",
+    "content_hash": "e5460d4cda6fdb0b8b2cc9c5c1d6da079217e6d1ef04b493e9f89498ce5493c1",
+    "final_url": "https://cwe.mitre.org/data/definitions/287.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/e5460d4cda6fdb0b8b2cc9c5c1d6da079217e6d1ef04b493e9f89498ce5493c1.html",
+    "retrieved_at": "2026-11-25T04:10:41+00:00",
+    "source_url": "https://cwe.mitre.org/data/definitions/287.html"
+  },
+  "cwe863": {
+    "bytes": 210535,
+    "checked_at": "2026-11-25T04:10:42+00:00",
+    "content_hash": "23c8a6c3f3812d748e74271efb8d6717b66fb841fa2ed2fd233990f62a1955f2",
+    "final_url": "https://cwe.mitre.org/data/definitions/863.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/23c8a6c3f3812d748e74271efb8d6717b66fb841fa2ed2fd233990f62a1955f2.html",
+    "retrieved_at": "2026-11-25T04:10:42+00:00",
+    "source_url": "https://cwe.mitre.org/data/definitions/863.html"
+  },
+  "debian": {
+    "bytes": 5102,
+    "checked_at": "2026-11-25T04:12:54+00:00",
+    "content_hash": "c6e4999e78e5674b759623fc0c511a7a7b806a26e46b8837c69e9ea8a90b925f",
+    "final_url": "https://security-tracker.debian.org/tracker/CVE-2025-23419",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/c6e4999e78e5674b759623fc0c511a7a7b806a26e46b8837c69e9ea8a90b925f.html",
+    "retrieved_at": "2026-11-25T04:12:54+00:00",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2025-23419"
+  },
+  "development": {
+    "bytes": 216608,
+    "checked_at": "2026-11-25T04:10:38+00:00",
+    "content_hash": "c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4",
+    "final_url": "https://nginx.org/en/docs/dev/development_guide.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4.html",
+    "retrieved_at": "2026-11-25T04:10:38+00:00",
+    "source_url": "https://nginx.org/en/docs/dev/development_guide.html"
+  },
+  "kev": {
+    "checked_at": "2026-11-25T04:13:40+00:00",
+    "error": "403 Client Error: Forbidden for url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+  },
+  "lifecycle": {
+    "bytes": 183138,
+    "checked_at": "2026-11-25T04:15:11+00:00",
+    "content_hash": "36bfcee838acb335374d89af35c4779a26eedbdf8d4264c5f8cff382fbf9bd72",
+    "final_url": "https://ubuntu.com/about/release-cycle",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/36bfcee838acb335374d89af35c4779a26eedbdf8d4264c5f8cff382fbf9bd72.html",
+    "retrieved_at": "2026-11-25T04:15:11+00:00",
+    "source_url": "https://ubuntu.com/about/release-cycle"
+  },
+  "request": {
+    "bytes": 11243,
+    "checked_at": "2026-11-25T04:10:38+00:00",
+    "content_hash": "68c0842933bda49c66aa1e15a8e93b7c23a99ebb7a4498f859977d329a5da328",
+    "final_url": "https://nginx.org/en/docs/http/request_processing.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/68c0842933bda49c66aa1e15a8e93b7c23a99ebb7a4498f859977d329a5da328.html",
+    "retrieved_at": "2026-11-25T04:10:38+00:00",
+    "source_url": "https://nginx.org/en/docs/http/request_processing.html"
+  },
+  "ssl": {
+    "bytes": 65216,
+    "checked_at": "2026-11-25T04:10:38+00:00",
+    "content_hash": "3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c",
+    "final_url": "https://nginx.org/en/docs/http/ngx_http_ssl_module.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c.html",
+    "retrieved_at": "2026-11-25T04:10:38+00:00",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_ssl_module.html"
+  },
+  "tls13": {
+    "bytes": 419115,
+    "checked_at": "2026-11-25T04:12:09+00:00",
+    "content_hash": "370ed8c0e6da22c8b8f4ad0230b6c12e6ec8ae807eca034220070828f25684fb",
+    "final_url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+    "http_status": 200,
+    "local_snapshot_path": "data/raw/research/snapshots/370ed8c0e6da22c8b8f4ad0230b6c12e6ec8ae807eca034220070828f25684fb.html",
+    "retrieved_at": "2026-11-25T04:12:09+00:00",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc8446.html"
+  },
+  "ubuntu": {
+    "checked_at": "2026-11-25T04:13:57+00:00",
+    "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "source_url": "https://ubuntu.com/security/CVE-2025-23419"
+  }
+}

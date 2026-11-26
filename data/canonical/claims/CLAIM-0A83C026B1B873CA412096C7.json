@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:24A182C58259C0EFF8663CFD",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:0A83C026B1B873CA412096C7",
+  "claim_value": "\"Buffer overflow in the ngx_http_rewrite_module\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:41+00:00",
+  "description": "title",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:15444CBCEDABE7F2E128DB96: li containing CVE-2026-9256",
+  "evidence_refs": [
+    "EVIDENCE:15444CBCEDABE7F2E128DB96"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:0A83C026B1B873CA412096C7",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-9256: title",
+  "observation_key": "OBSERVATION:6DBF4912D7F8D0E11B82A5AE",
+  "observed_at": "2026-11-25T02:28:41+00:00",
+  "predicate": "title",
+  "product_scope": "CVE:CVE-2026-9256",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:10+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:15444CBCEDABE7F2E128DB96"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-9256",
+  "updated_at": "2026-11-25T04:12:28+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "eb998ca44b1c68d23baf915b040bd4b803bd238c67188c4f9b3bd7e49cf94079",
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Ghi dữ liệu vượt dung lượng buffer đích.",
+    "document_title": "CWE -\r\n\n    CWE-120: Buffer Copy without Checking Size of Input (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:BF818BD2C0248E0A0E1C69B0",
+    "id": "EVIDENCE:BF818BD2C0248E0A0E1C69B0",
+    "local_snapshot_path": "data/raw/documentation/snapshots/eb998ca44b1c68d23baf915b040bd4b803bd238c67188c4f9b3bd7e49cf94079.html",
+    "name": "CWE -\r\n\n    CWE-120: Buffer Copy without Checking Size of Input (5.0)",
+    "paraphrase": "Ghi dữ liệu vượt dung lượng buffer đích.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:32+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-120",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/120.html",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "EVIDENCE:BF818BD2C0248E0A0E1C69B0",
+  "id": "HISTORY:11909C4C1638CF4FE7DAD274"
+}

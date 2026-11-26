@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:5BD8C0BDDCF3EC939DF2467D"
+    ],
+    "created_at": "2026-11-25T02:33:57+00:00",
+    "description": "CVE:CVE-2026-97205 related_components COMPONENT:WORKER-PROCESS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:973E6F6B424125C8BFF047C7",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "rationale": "Legacy association: Context only; not fault location. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Context only; not fault location",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T04:13:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:5BD8C0BDDCF3EC939DF2467D"
+    ],
+    "created_at": "2026-11-25T02:33:57+00:00",
+    "description": "CVE:CVE-2026-97205 related_components COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:973E6F6B424125C8BFF047C7",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T02:33:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:08+00:00",
+  "entity_id": "REL:973E6F6B424125C8BFF047C7",
+  "id": "HISTORY:EF126189FF3F154750297520"
+}

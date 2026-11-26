@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:4EABEB15BBB2D0E9379C20F0"
+    ],
+    "created_at": "2026-11-25T02:28:27+00:00",
+    "cve_ref": "CVE:CVE-2026-48142",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.18.0-6.1+deb11u8",
+    "id": "PACKAGE:7129C703E676358A3A6EC072",
+    "name": "nginx / Debian bullseye / CVE-2026-48142",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "bullseye",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:5BE76150E8C1F502F5B361E2"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:4EABEB15BBB2D0E9379C20F0"
+    ],
+    "created_at": "2026-11-25T02:28:27+00:00",
+    "cve_ref": "CVE:CVE-2026-48142",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.18.0-6.1+deb11u8",
+    "id": "PACKAGE:7129C703E676358A3A6EC072",
+    "name": "nginx / Debian bullseye / CVE-2026-48142",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "bullseye",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5BE76150E8C1F502F5B361E2"
+    ],
+    "updated_at": "2026-11-25T02:28:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PACKAGE:7129C703E676358A3A6EC072",
+  "id": "HISTORY:AF1E48F7C5BE11934FC8CDA6"
+}

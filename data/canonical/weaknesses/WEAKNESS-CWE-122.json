@@ -1,0 +1,46 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:222160EFDF0AF59AB1DCDE1F",
+    "CLAIM:3E77A277EF6492A446EBE106",
+    "CLAIM:94D96CF87D4C0B49E309AFC4",
+    "CLAIM:61D09701582D517EFF26DFF0",
+    "CLAIM:387331078C0E74A1BA190A64",
+    "CLAIM:3AB4936596797A0592AB26F0",
+    "CLAIM:D31D0455F648097AD9EB67C5",
+    "CLAIM:5877AD2A3A0788CBEDF5EAFF"
+  ],
+  "created_at": "2026-11-25T02:27:21+00:00",
+  "cwe_id": "CWE-122",
+  "defensive_principles": "Dùng kiểm tra capacity/length và sanitizer khi phát triển.",
+  "definition": "Ghi vượt buffer được cấp phát trên heap.",
+  "description": "Ghi vượt buffer được cấp phát trên heap.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+  "id": "WEAKNESS:CWE-122",
+  "learning_objectives": [
+    "Giải thích CWE-122 — Heap-based Buffer Overflow bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-122 — Heap-based Buffer Overflow",
+  "normal_behavior": "Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở hữu.",
+  "related_failure_classes": "Heap-based Buffer Overflow",
+  "related_knowledge": [],
+  "safety_assumptions": "Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở hữu.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:0CCC16DDE68A1713FAED2329",
+    "EVIDENCE:1F6DBE760A34B37CAD1CF4A7",
+    "EVIDENCE:4DFBBE4B964C3500C9AAFD36",
+    "EVIDENCE:8A5EFD9F2F8B58978470483B",
+    "EVIDENCE:8F5015B6CA57FA297E6319B8",
+    "EVIDENCE:AC77FAA5BCFF7678FAEA0D75",
+    "EVIDENCE:DC1432949B4CBBFA7575048F",
+    "EVIDENCE:F7F3915BEDFBC5BA090B7D90",
+    "EVIDENCE:F8A106D1BC0974617FFB0815"
+  ],
+  "updated_at": "2026-11-25T04:13:14+00:00",
+  "verification_status": "INFERRED"
+}

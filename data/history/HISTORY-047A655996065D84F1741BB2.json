@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7CE191F926FA0FB481B5CAE6",
+    "claim_value": "\"Mọi request trong worker chia sẻ ngân sách thời gian xử lý.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "id": "CLAIM:7CE191F926FA0FB481B5CAE6",
+    "name": "COMPONENT:EVENT-LOOP: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:04+00:00",
+  "entity_id": "CLAIM:7CE191F926FA0FB481B5CAE6",
+  "id": "HISTORY:047A655996065D84F1741BB2"
+}

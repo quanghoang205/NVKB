@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:E54A7ADCB218ADA3E7360644",
+    "claim_value": "\"Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:755F421436BF042EB7BD0F3F"
+    ],
+    "id": "CLAIM:E54A7ADCB218ADA3E7360644",
+    "name": "COMPONENT:CONNECTION-LIFECYCLE: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:755F421436BF042EB7BD0F3F"
+    ],
+    "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:05+00:00",
+  "entity_id": "CLAIM:E54A7ADCB218ADA3E7360644",
+  "id": "HISTORY:5F942527A58398CFD3F9D543"
+}

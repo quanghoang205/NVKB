@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:D77544A1B95B48D400E388C8",
+    "claim_value": "\"Địa chỉ ghi phải thuộc buffer đích và được cấp phát đủ dung lượng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "id": "CLAIM:D77544A1B95B48D400E388C8",
+    "name": "WEAKNESS:CWE-787: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "CLAIM:D77544A1B95B48D400E388C8",
+  "id": "HISTORY:884B7728147FB091FCBEF386"
+}

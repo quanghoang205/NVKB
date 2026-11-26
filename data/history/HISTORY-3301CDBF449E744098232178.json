@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3A223781A5DE8E9804606CAE",
+    "claim_value": "\"Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1500C9EE039C423FD775669A"
+    ],
+    "id": "CLAIM:3A223781A5DE8E9804606CAE",
+    "name": "MODULE:NGX-HTTP-V3-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1500C9EE039C423FD775669A"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-V3-MODULE",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:3A223781A5DE8E9804606CAE",
+  "id": "HISTORY:3301CDBF449E744098232178"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D044A8170E3522CB163030F8",
+    "claim_value": "\"Insufficient validation in stream ssl_preread module\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:87D9A7069F362A007391E943"
+    ],
+    "id": "CLAIM:D044A8170E3522CB163030F8",
+    "name": "CVE:CVE-2026-123640: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:87D9A7069F362A007391E943"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "CLAIM:D044A8170E3522CB163030F8",
+  "id": "HISTORY:29C741B32C50FBDB8218C635"
+}

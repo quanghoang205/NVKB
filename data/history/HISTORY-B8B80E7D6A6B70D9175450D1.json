@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:8B7C84C4339617FC13CB31AA",
+    "claim_value": "\"Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "id": "CLAIM:8B7C84C4339617FC13CB31AA",
+    "name": "WEAKNESS:CWE-787: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "CLAIM:8B7C84C4339617FC13CB31AA",
+  "id": "HISTORY:B8B80E7D6A6B70D9175450D1"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:07922866FD64AC70F9DDEA90",
+    "claim_value": "\"Tiến trình điều phối cấu hình và vòng đời các worker.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:07922866FD64AC70F9DDEA90",
+    "name": "COMPONENT:MASTER-PROCESS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:10+00:00",
+  "entity_id": "CLAIM:07922866FD64AC70F9DDEA90",
+  "id": "HISTORY:F9FBF12E6931E5EBDB62856C"
+}

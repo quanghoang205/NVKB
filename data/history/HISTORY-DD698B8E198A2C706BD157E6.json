@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "633267ef08883ae8239f89cc50e5f6b721c492931ed38640257e3e56b039717c",
+    "created_at": "2026-11-25T02:26:39+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "document_title": "CVE-2026-113425",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:28117FAC57CC0873040A7585",
+    "id": "EVIDENCE:28117FAC57CC0873040A7585",
+    "local_snapshot_path": "data/raw/distribution/snapshots/633267ef08883ae8239f89cc50e5f6b721c492931ed38640257e3e56b039717c.html",
+    "name": "CVE-2026-113425",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:39+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-113425",
+    "updated_at": "2026-11-25T02:26:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:39+00:00",
+  "entity_id": "EVIDENCE:28117FAC57CC0873040A7585",
+  "id": "HISTORY:DD698B8E198A2C706BD157E6"
+}

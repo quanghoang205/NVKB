@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:C71830ABF78E56C7B06790EB",
+    "claim_value": "\"Kênh mail proxy ↔ mail backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "id": "CLAIM:C71830ABF78E56C7B06790EB",
+    "name": "PROTOCOL:SMTP: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:C71830ABF78E56C7B06790EB",
+  "id": "HISTORY:EFDAF1B8F0F62C65C9866C11"
+}

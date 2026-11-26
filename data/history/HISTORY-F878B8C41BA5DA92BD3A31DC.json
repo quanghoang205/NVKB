@@ -1,0 +1,33 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:781F34A3A90DE6E31DD8E579"
+    ],
+    "created_at": "2026-11-25T02:33:44+00:00",
+    "description": "CVE:CVE-2026-123634 related_components COMPONENT:CONNECTION-LIFECYCLE",
+    "entity_type": "Relationship",
+    "id": "REL:080FDF461606B4AE87FA3D38",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:16EEBFE222025099F86ED71D",
+      "EVIDENCE:196409B38DB084C21B2DD2CA",
+      "EVIDENCE:22772223BB8A0147236E2BFA",
+      "EVIDENCE:444FF55078AF24942375E242",
+      "EVIDENCE:A2163880C26D9E0DFAE927BB",
+      "EVIDENCE:A731232A8B68F56783F395BE",
+      "EVIDENCE:C919CF336285099B098B2AF3",
+      "EVIDENCE:D04CF7C5DCC9F5BC50EB4594"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:33:44+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:44+00:00",
+  "entity_id": "REL:080FDF461606B4AE87FA3D38",
+  "id": "HISTORY:F878B8C41BA5DA92BD3A31DC"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:AE78B862AE7B51C497EAA658",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:EE430783452E96549E55B38A",
+  "claim_value": "\"NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\\n\\nImpact:\\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:54+00:00",
+  "description": "vendor_documented_conditions",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:DA58A8C9C64BBC27B381CA6F: /containers/cna/descriptions",
+  "evidence_refs": [
+    "EVIDENCE:DA58A8C9C64BBC27B381CA6F"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:EE430783452E96549E55B38A",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-97205: vendor_documented_conditions",
+  "observation_key": "OBSERVATION:D1FF862C359BE0AE778D0330",
+  "observed_at": "2026-11-25T02:28:54+00:00",
+  "predicate": "vendor_documented_conditions",
+  "product_scope": "CVE:CVE-2026-97205",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:50+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:DA58A8C9C64BBC27B381CA6F"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-97205",
+  "updated_at": "2026-11-25T04:12:55+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

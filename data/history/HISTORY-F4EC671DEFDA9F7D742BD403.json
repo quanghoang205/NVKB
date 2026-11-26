@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:7AE29B4DBA798C918E8D9EB6",
+      "CLAIM:10B3D20052748769232A797D",
+      "CLAIM:3A0D76CB42521B236F8141E4",
+      "CLAIM:E4313E65124AC20CAE8C77C4",
+      "CLAIM:1DAF60A59525FA9A3FA297B2"
+    ],
+    "created_at": "2026-11-25T05:08:39+00:00",
+    "description": "CVE:CVE-2024-24990 learns_from COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2024-24990",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:45798210A340ED9E8BAC99B3",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Worker tự khởi động lại có đóng được lỗi use-after-free không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Worker tự khởi động lại có đóng được lỗi use-after-free không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:39+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9EAFCBFFFE5ABAC3C4E129F3",
+      "EVIDENCE:C0D2D1B16D256C4AC838DB33"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2024-24990",
+    "updated_at": "2026-11-25T05:08:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:39+00:00",
+  "entity_id": "REL:45798210A340ED9E8BAC99B3",
+  "id": "HISTORY:F4EC671DEFDA9F7D742BD403"
+}

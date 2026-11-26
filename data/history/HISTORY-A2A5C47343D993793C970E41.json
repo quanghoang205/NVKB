@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:67F76A193707B3DAF0F7D8DB",
+    "claim_value": "\"Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "id": "CLAIM:67F76A193707B3DAF0F7D8DB",
+    "name": "PROTOCOL:TLS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:67F76A193707B3DAF0F7D8DB",
+  "id": "HISTORY:A2A5C47343D993793C970E41"
+}

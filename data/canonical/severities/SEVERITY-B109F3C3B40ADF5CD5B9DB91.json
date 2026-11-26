@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:EC07FCB4200AF932613A7F98",
+  "claim_refs": [
+    "CLAIM:0B6741E1E4108EAE524D003B"
+  ],
+  "created_at": "2026-11-25T02:27:54+00:00",
+  "cvss_score": 6.3,
+  "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "cvss_version": "4.0",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CIRCL mirror",
+  "entity_type": "Severity",
+  "id": "SEVERITY:B109F3C3B40ADF5CD5B9DB91",
+  "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 6.3, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"LOW\", \"vulnConfidentialityImpact\": \"LOW\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+  "name": "CVE-2026-40701 CVSS 4.0 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CIRCL mirror",
+  "severity_label": "MEDIUM",
+  "source_refs": [
+    "EVIDENCE:84CF755B2579F9D84607D8E2"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-40701",
+  "updated_at": "2026-11-25T04:13:18+00:00",
+  "verification_status": "VERIFIED"
+}

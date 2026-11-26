@@ -1,0 +1,115 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Biên I/O không bảo đảm trùng biên ký tự; phần ký tự chưa hoàn tất cần được xử lý trong một context hợp lệ.",
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-175C13CEA5EFE70345477741|phạm vi tài liệu]].\n\n## Cơ chế và ownership\n\nHeader Content-Type công bố cách hiểu byte; filter chuyển mã có thể tạo tập byte khác. Tài liệu giới hạn các loại charset được hỗ trợ và hướng chuyển đổi. Khi dữ liệu đi qua nhiều buffer, biên callback không nhất thiết là biên một ký tự. Mô hình implementation cần giữ phần chưa hoàn thành trong context còn sống, rồi tạo output tương thích với charset đích.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-5817E8E0654EA757A7B452A2|Claim của section]].\n\n## Invariant và lifecycle\n\nDiễn giải: bộ đọc chỉ được lấy byte trong input hợp lệ; bộ ghi phải có dung lượng cho biểu diễn đích. State chuyển đổi phải hoàn tất hoặc bị hủy đúng cùng response. Input buffer không được tái dùng khi filter còn tham chiếu; output đã gửi không được âm thầm thay đổi. Buffering off làm thay đổi nhịp chuyển dữ liệu, không bỏ các nghĩa vụ đó.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-C0550D6C4040E7C0597890EB|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nChuyển mã tại proxy giúp tương thích client nhưng tốn CPU, buffer và tăng state filter. Chuẩn hóa encoding ở upstream có thể đơn giản vận hành, song không chứng minh parser cũ đã an toàn. Review từ source response đến output sau chuyển đổi; chỉ gán applicability từng CVE khi CNA nêu đúng cấu hình. Không suy từ buffer over-read rằng byte đã đọc nhất thiết đến client.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-7F538B18B1504867F91EABE8|Claim của section]].",
+    "assessment": "Tại sao một response được chia buffer khác nhau có thể cần giữ state chuyển mã?",
+    "claim_refs": [
+      "CLAIM:175C13CEA5EFE70345477741",
+      "CLAIM:5817E8E0654EA757A7B452A2",
+      "CLAIM:C0550D6C4040E7C0597890EB",
+      "CLAIM:7F538B18B1504867F91EABE8"
+    ],
+    "created_at": "2026-11-25T02:32:46+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Charset module có thể chuyển mã response từ server tới client theo source_charset, charset và mapping; không chỉ thêm nhãn Content-Type.",
+    "description": "Charset module có thể chuyển mã response từ server tới client theo source_charset, charset và mapping; không chỉ thêm nhãn Content-Type.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "learning_objectives": [
+      "Phân biệt đổi nhãn charset với chuyển byte.",
+      "Giải thích sự cần thiết giữ state khi ký tự nằm qua biên buffer."
+    ],
+    "name": "Charset filter — chuyển mã trên các buffer",
+    "normal_behavior": "Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "prerequisites": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "research_claim_refs": [
+      "CLAIM:175C13CEA5EFE70345477741",
+      "CLAIM:5817E8E0654EA757A7B452A2",
+      "CLAIM:C0550D6C4040E7C0597890EB",
+      "CLAIM:7F538B18B1504867F91EABE8"
+    ],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:8741FFD230F3AEBA64F94EA8",
+      "CLAIM:FD1324525BB49ABE86182085",
+      "CLAIM:0E124968F317F8A494B823F9",
+      "CLAIM:D0B31909F80530F7486E9EF1",
+      "CLAIM:BFC9084DCC66FB2E9F645EB1",
+      "CLAIM:3732FFC0CC92B9E836833F00",
+      "CLAIM:888ADB431AC7B030333AFCCD",
+      "CLAIM:1836114254CB5FF6C4D12362"
+    ],
+    "created_at": "2026-11-25T02:32:46+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển đổi charset cho response theo cấu hình.",
+    "description": "Chuyển đổi charset cho response theo cấu hình.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_charset_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_charset_module",
+    "normal_behavior": "Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:D32367C77A9F742D86D1CF52"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:24:17+00:00",
+  "entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+  "id": "HISTORY:1D6342D9290061B8AEB8A6FB"
+}

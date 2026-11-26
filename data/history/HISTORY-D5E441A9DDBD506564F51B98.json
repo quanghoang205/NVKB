@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "f5",
+    "claim_id": "CLAIM:920A7971FC95F0867B9F2F2D",
+    "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"HIGH\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 9.2, \"baseSeverity\": \"CRITICAL\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"HIGH\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "severity:CVE Program:f5:4.0",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C919CF336285099B098B2AF3"
+    ],
+    "id": "CLAIM:920A7971FC95F0867B9F2F2D",
+    "name": "CVE:CVE-2026-123634: severity:CVE Program:f5:4.0",
+    "predicate": "severity:CVE Program:f5:4.0",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C919CF336285099B098B2AF3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "CLAIM:920A7971FC95F0867B9F2F2D",
+  "id": "HISTORY:D5E441A9DDBD506564F51B98"
+}

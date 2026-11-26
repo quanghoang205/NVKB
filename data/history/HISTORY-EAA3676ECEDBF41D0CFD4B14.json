@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:7961CD11FD84BC0F55A13B79",
+      "CLAIM:ADBE3263D7F9863FB2DD030D",
+      "CLAIM:2069E1803AF14C42C9502F5E",
+      "CLAIM:819A85C67CCA9E42F10D2005",
+      "CLAIM:15EE0E3BF729768B69DEDFB6",
+      "CLAIM:16B3B29816BA4EFE496CA58F",
+      "CLAIM:1ABECCFE55688AC5C5754A89",
+      "CLAIM:489D42F3A75BC6C3AD56AB35"
+    ],
+    "created_at": "2026-11-25T02:32:50+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Ánh xạ giá trị biến bằng bảng khai báo.",
+    "description": "Ánh xạ giá trị biến bằng bảng khai báo.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-MAP-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_map_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_map_module",
+    "normal_behavior": "Ánh xạ giá trị biến bằng bảng khai báo. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:ADCA72541DF285C0FF9DCB7B"
+    ],
+    "updated_at": "2026-11-25T02:32:50+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:50+00:00",
+  "entity_id": "MODULE:NGX-HTTP-MAP-MODULE",
+  "id": "HISTORY:EAA3676ECEDBF41D0CFD4B14"
+}

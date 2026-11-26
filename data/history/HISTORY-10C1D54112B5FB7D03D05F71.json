@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:BF7AA2F1661BE88FE2286275",
+    "claim_value": "\"Authentication policy violation / Incorrect Authorization\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "id": "CLAIM:BF7AA2F1661BE88FE2286275",
+    "name": "WEAKNESS:CWE-863: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "CLAIM:BF7AA2F1661BE88FE2286275",
+  "id": "HISTORY:10C1D54112B5FB7D03D05F71"
+}

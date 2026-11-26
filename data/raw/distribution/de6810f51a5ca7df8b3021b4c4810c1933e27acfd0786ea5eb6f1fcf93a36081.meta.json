@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:27+00:00",
+  "content_hash": "778c62fdd8e8fe775ced86de8206f6490624515f21ef937446b53e0a7cd7dd7d",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/778c62fdd8e8fe775ced86de8206f6490624515f21ef937446b53e0a7cd7dd7d.html",
+  "retrieved_at": "2026-11-25T02:26:27+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-35200"
+}

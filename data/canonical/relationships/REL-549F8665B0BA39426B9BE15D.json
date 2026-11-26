@@ -1,0 +1,37 @@
+{
+  "claim_refs": [
+    "CLAIM:1F1AD10346013DFE5FC4AF7B"
+  ],
+  "created_at": "2026-11-25T05:38:28+00:00",
+  "description": "IMPACT:LIMITED-MEMORY-DISCLOSURE CONTEXTUAL_ASSOCIATION CONTROL:LEAST-PRIVILEGE",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:549F8665B0BA39426B9BE15D",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "name": "CONTEXTUAL_ASSOCIATION",
+  "object_entity_id": "CONTROL:LEAST-PRIVILEGE",
+  "predicate": "CONTEXTUAL_ASSOCIATION",
+  "rationale": "Nguồn 48142 nêu limited disclosure; chưa xác định loại dữ liệu. Quyền thấp giảm phạm vi tiếp cận, không sửa over-read. Control phục vụ quản trị hoặc giới hạn hậu quả; không chứng minh đã remediate runtime.",
+  "reference_availability": "UNKNOWN",
+  "review_rationale": "Nguồn 48142 nêu limited disclosure; chưa xác định loại dữ liệu. Quyền thấp giảm phạm vi tiếp cận, không sửa over-read. Control phục vụ quản trị hoặc giới hạn hậu quả; không chứng minh đã remediate runtime.",
+  "review_required": true,
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:38:28+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Related context, not causation",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:664AF4C9941A1A284D028AE8"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "IMPACT:LIMITED-MEMORY-DISCLOSURE",
+  "updated_at": "2026-11-25T05:38:28+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "CVE-2026-48142; see per-CVE advisory versions"
+}

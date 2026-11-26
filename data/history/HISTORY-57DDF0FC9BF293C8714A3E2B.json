@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9D1CE1DFC3B99B2CD5816759",
+    "claim_value": "\"Xử lý Server Side Includes trong response.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:25D294C72DC04B09747CE615"
+    ],
+    "id": "CLAIM:9D1CE1DFC3B99B2CD5816759",
+    "name": "MODULE:NGX-HTTP-SSI-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:25D294C72DC04B09747CE615"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:9D1CE1DFC3B99B2CD5816759",
+  "id": "HISTORY:57DDF0FC9BF293C8714A3E2B"
+}

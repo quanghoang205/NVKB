@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3930DF0B0BCD896D4FA18994",
+    "claim_value": "\"Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:34+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4BEAF2797342B956FE14B3CA"
+    ],
+    "id": "CLAIM:3930DF0B0BCD896D4FA18994",
+    "name": "CONCEPT:ADVISORY: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4BEAF2797342B956FE14B3CA"
+    ],
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CLAIM:3930DF0B0BCD896D4FA18994",
+  "id": "HISTORY:A16AC2E96CA793434B77F5C6"
+}

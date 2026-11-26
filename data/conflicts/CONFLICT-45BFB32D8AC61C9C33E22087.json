@@ -1,0 +1,13 @@
+{
+  "claim_refs": [
+    "CLAIM:65B8322486B57304034AD337",
+    "CLAIM:7CDAD61A218D9AD0BBBC543A"
+  ],
+  "id": "CONFLICT:45BFB32D8AC61C9C33E22087",
+  "predicate": "upstream_fixed_releases",
+  "resolution": "Partial branch lists are compatible; absence of a branch is not an assertion that it is unfixed.",
+  "resolved_at": "2026-11-25T02:37:19+00:00",
+  "reviewer_notes": "Cần đối chiếu phạm vi, nhánh và thời điểm của từng nguồn.",
+  "status": "RESOLVED",
+  "subject_entity_id": "CVE:CVE-2026-1642"
+}

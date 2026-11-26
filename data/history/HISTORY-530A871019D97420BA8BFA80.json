@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:C99938BD6805CE57E6F79F1C",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:549A8CCA7A1983E9C6E759BB",
+    "claim_value": "\"NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server; default server thuộc socket listen. TLS có bước chọn theo SNI.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:2CE4745C499013FC6F0E7F51: Name-based virtual servers",
+    "evidence_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:549A8CCA7A1983E9C6E759BB",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:VIRTUAL-HOSTS: normal_behavior",
+    "observation_key": "OBSERVATION:0B3DF9EA5A57E83B8B39AF97",
+    "observed_at": "2026-11-25T02:32:06+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "COMPONENT:VIRTUAL-HOSTS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:28:09+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "updated_at": "2026-11-25T04:12:36+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:549A8CCA7A1983E9C6E759BB",
+    "claim_value": "\"NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server; default server thuộc socket listen. TLS có bước chọn theo SNI.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "id": "CLAIM:549A8CCA7A1983E9C6E759BB",
+    "name": "COMPONENT:VIRTUAL-HOSTS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:36+00:00",
+  "entity_id": "CLAIM:549A8CCA7A1983E9C6E759BB",
+  "id": "HISTORY:530A871019D97420BA8BFA80"
+}

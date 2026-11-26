@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:83D5B1199F196CED21BE5791",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:7078653912747AD75E7C88D0",
+    "claim_value": "\"Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:10D1CE64C7D374A3FFA0935A: Description / Potential Mitigations; topic=WEAKNESS:CWE-789",
+    "evidence_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7078653912747AD75E7C88D0",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-789: normal_behavior",
+    "observation_key": "OBSERVATION:E7F553ED2653B0B8D4455703",
+    "observed_at": "2026-11-25T02:48:59+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "WEAKNESS:CWE-789",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:48:59+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-789",
+    "updated_at": "2026-11-25T04:12:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:7078653912747AD75E7C88D0",
+    "claim_value": "\"Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "id": "CLAIM:7078653912747AD75E7C88D0",
+    "name": "WEAKNESS:CWE-789: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-789",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:40+00:00",
+  "entity_id": "CLAIM:7078653912747AD75E7C88D0",
+  "id": "HISTORY:31F583BF0794290848E0524F"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:40118AF10C4BBDD73848C4B6",
+    "claim_value": "\"Transport byte stream tin cậy, có thứ tự.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+    ],
+    "id": "CLAIM:40118AF10C4BBDD73848C4B6",
+    "name": "PROTOCOL:TCP: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:32:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:16+00:00",
+  "entity_id": "CLAIM:40118AF10C4BBDD73848C4B6",
+  "id": "HISTORY:36BA81CC9C9EA810A752649E"
+}

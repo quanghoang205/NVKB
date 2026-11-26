@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080",
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "description": "Phân loại CWE được CNA gán.",
+    "document_title": "CVE-2026-90439",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:8A5EFD9F2F8B58978470483B",
+    "id": "EVIDENCE:8A5EFD9F2F8B58978470483B",
+    "local_snapshot_path": "data/raw/cve/snapshots/ba297d587b9c70ba3b1e9b15ead0ab70df5251603efa68cdc485220d50166080.json",
+    "name": "CVE-2026-90439",
+    "paraphrase": "Phân loại CWE được CNA gán.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:28:35+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/problemTypes",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/90xxx/CVE-2026-90439.json",
+    "updated_at": "2026-11-25T02:28:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:37+00:00",
+  "entity_id": "EVIDENCE:8A5EFD9F2F8B58978470483B",
+  "id": "HISTORY:EED111DB7BBE0BD5C033B12B"
+}

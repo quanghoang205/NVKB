@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ffa649c57ac9685db1b883d038781746602c4e259851f1fe92cdd69e0ed86817",
+    "created_at": "2026-11-25T02:27:33+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u5, status=fixed.",
+    "document_title": "CVE-2026-27654",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:FF3D89EB86854608D1CBE800",
+    "id": "EVIDENCE:FF3D89EB86854608D1CBE800",
+    "local_snapshot_path": "data/raw/distribution/snapshots/ffa649c57ac9685db1b883d038781746602c4e259851f1fe92cdd69e0ed86817.html",
+    "name": "CVE-2026-27654",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u5, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:33+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27654",
+    "updated_at": "2026-11-25T02:27:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:33+00:00",
+  "entity_id": "EVIDENCE:FF3D89EB86854608D1CBE800",
+  "id": "HISTORY:96F4CB92D77C9EDFF5DE0E18"
+}

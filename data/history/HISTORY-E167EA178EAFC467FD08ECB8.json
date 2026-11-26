@@ -1,0 +1,92 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "claim_refs": [
+      "CLAIM:49E713CAE550CFC0DFB7A531",
+      "CLAIM:A04448FECCE59A4F4871CA7B",
+      "CLAIM:1F71F517A7E2D1E125E86F12",
+      "CLAIM:1567133D86679FD7429B6DD0",
+      "CLAIM:5821A669AD9DEC58C25E24BB",
+      "CLAIM:168596B2882DB2A6D87ACECA",
+      "CLAIM:D46C4C0A83ADCF6B546E00CC",
+      "CLAIM:75C18E6DD275449C1C35FF09"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-01",
+    "learning_objectives": [
+      "Giải thích Learning Path 01 — NGINX Fundamentals bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Learning Path 01 — NGINX Fundamentals",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "COMPONENT:WORKER-PROCESS",
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:REVERSE-PROXY",
+      "COMPONENT:LOCATION-MATCHING"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "claim_refs": [
+      "CLAIM:49E713CAE550CFC0DFB7A531",
+      "CLAIM:A04448FECCE59A4F4871CA7B",
+      "CLAIM:1F71F517A7E2D1E125E86F12",
+      "CLAIM:1567133D86679FD7429B6DD0",
+      "CLAIM:5821A669AD9DEC58C25E24BB",
+      "CLAIM:168596B2882DB2A6D87ACECA",
+      "CLAIM:D46C4C0A83ADCF6B546E00CC",
+      "CLAIM:75C18E6DD275449C1C35FF09"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-01",
+    "learning_objectives": [
+      "Giải thích Learning Path 01 — NGINX Fundamentals bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Learning Path 01 — NGINX Fundamentals",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "COMPONENT:WORKER-PROCESS",
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:REVERSE-PROXY",
+      "COMPONENT:LOCATION-MATCHING"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "LEARNING:PATH-01",
+  "id": "HISTORY:E167EA178EAFC467FD08ECB8"
+}

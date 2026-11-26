@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:B63D07134555FD998B419030",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:B0057DC05E722B67A94B1C77",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:0D8FBF067DC0496EB9345796: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B0057DC05E722B67A94B1C77",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:POP3: failure_impact",
+    "observation_key": "OBSERVATION:E33684EBCFF22031AFB69EB5",
+    "observed_at": "2026-11-25T02:32:26+00:00",
+    "predicate": "failure_impact",
+    "product_scope": "PROTOCOL:POP3",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:26+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:POP3",
+    "updated_at": "2026-11-25T04:12:47+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:B0057DC05E722B67A94B1C77",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "id": "CLAIM:B0057DC05E722B67A94B1C77",
+    "name": "PROTOCOL:POP3: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "subject_entity_id": "PROTOCOL:POP3",
+    "updated_at": "2026-11-25T02:32:26+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:47+00:00",
+  "entity_id": "CLAIM:B0057DC05E722B67A94B1C77",
+  "id": "HISTORY:4DD817FA5FC6EDF95DC17B19"
+}

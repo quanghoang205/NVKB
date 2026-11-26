@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:8F02F2D043228C7ACC20F8F0",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:BDEEF0ADE0B8E3C72608B61F",
+    "claim_value": "\"Một core bị sử dụng 100% và hiệu suất giảm cho đến khi worker được restart, theo mô tả nguồn.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BDEEF0ADE0B8E3C72608B61F",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:impact",
+    "observed_at": "2026-11-25T05:15:13+00:00",
+    "predicate": "v1.3:impact",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:13+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:27:15+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:8F02F2D043228C7ACC20F8F0",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:BDEEF0ADE0B8E3C72608B61F",
+    "claim_value": "\"Một core bị sử dụng 100% và hiệu suất giảm cho đến khi worker được restart, theo mô tả nguồn.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BDEEF0ADE0B8E3C72608B61F",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:impact",
+    "observed_at": "2026-11-25T05:15:13+00:00",
+    "predicate": "v1.3:impact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T05:15:13+00:00",
+  "entity_id": "CLAIM:BDEEF0ADE0B8E3C72608B61F",
+  "id": "HISTORY:55A3A683728EAE3B8000E4FA"
+}

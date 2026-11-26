@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:D4E2991124A0FDA04B636A26",
+      "CLAIM:4761F0A268C36DEAEB4F8AA2",
+      "CLAIM:0B55E777F3CA840DB7D2F3A4",
+      "CLAIM:ADB0B192B31FAF4A688D210B",
+      "CLAIM:CF5D654E7BB1CA565AC70664",
+      "CLAIM:A7C6E6720671D5718235041F",
+      "CLAIM:7FADA9056A5691DA0177D4E2",
+      "CLAIM:F8A9886907376D3F249974E7"
+    ],
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "defensive_principles": "Theo dõi tài nguyên và đặt timeout/limit dựa trên workload.",
+    "definition": "Nguyên tắc phòng vệ vận hành NGINX: Resource bounds",
+    "description": "Nguyên tắc phòng vệ vận hành NGINX: Resource bounds",
+    "diagram": "",
+    "entity_type": "SecurityControl",
+    "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+    "id": "CONTROL:RESOURCE-BOUNDS",
+    "learning_objectives": [
+      "Giải thích Resource bounds bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Resource bounds",
+    "normal_behavior": "Các connection, request và buffer vận hành trong giới hạn cấu hình.",
+    "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+    "related_knowledge": [],
+    "safety_assumptions": "Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:E87A726DEC866AA27FA5B159"
+    ],
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CONTROL:RESOURCE-BOUNDS",
+  "id": "HISTORY:12C4167F76F145A561CCF0D3"
+}

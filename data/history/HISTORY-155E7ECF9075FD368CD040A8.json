@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:02E95C616529AFBA01A889ED",
+    "claim_value": "\"Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F7BAFA25BE402FB66F4E396E"
+    ],
+    "id": "CLAIM:02E95C616529AFBA01A889ED",
+    "name": "MODULE:NGX-HTTP-DAV-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F7BAFA25BE402FB66F4E396E"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-DAV-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:02E95C616529AFBA01A889ED",
+  "id": "HISTORY:155E7ECF9075FD368CD040A8"
+}

@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-03 learns_from PROTOCOL:DNS",
+    "entity_type": "Relationship",
+    "id": "REL:A638ED0B71EDC779729ED8FD",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:DNS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:35+00:00",
+  "entity_id": "REL:A638ED0B71EDC779729ED8FD",
+  "id": "HISTORY:A156303F55038CBC1BF68550"
+}

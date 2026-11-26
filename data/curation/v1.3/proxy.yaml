@@ -1,0 +1,110 @@
+group: proxy
+name: Proxy và filesystem — trust boundary, framing và quyền
+shared_knowledge: [COMPONENT:UPSTREAM-COMMUNICATION, COMPONENT:CONNECTION-LIFECYCLE, CONTROL:LEAST-PRIVILEGE]
+knowledge:
+  - id: COMPONENT:UPSTREAM-COMMUNICATION
+    name: Upstream communication — hai hop và ownership của response
+    source: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+    locator: '#proxy_buffering; #proxy_request_buffering; #proxy_http_version; #proxy_ssl_verify; #proxy_ssl_name'
+    excerpt: Enables or disables buffering of responses
+    source_fact: Proxy module quản lý request/response tới upstream, chế độ buffering và TLS verification riêng; connection tới client và upstream là hai context khác nhau.
+    prerequisites: [COMPONENT:CONNECTION-LIFECYCLE, PROTOCOL:TLS]
+    objectives: [Vẽ hai trust boundary client/proxy và proxy/upstream., Phân biệt response buffering với request buffering.]
+    body: |
+      ## Cơ chế bình thường
+
+      Reverse proxy nhận message ở một hop và tạo trao đổi khác với upstream. Transport, TLS identity và protocol version của hai hop có thể khác nhau. Được xác thực trên hop client không tự chứng minh upstream đã được xác thực; có TLS ở upstream cũng cần policy verification đúng tên và trust source. Tài liệu có directive riêng cho TLS name/verification và phiên bản HTTP upstream.
+
+      ## Buffering và lifecycle
+
+      Response buffering cho phép đọc upstream và lưu dữ liệu trước khi client nhận hết; phần vượt bộ nhớ có thể tới temporary file. Khi tắt buffering, nhịp chuyển dữ liệu gắn chặt hơn với bên nhận, nhưng buffer vẫn tồn tại. Request buffering lại thuộc chiều client tới upstream. Hai công tắc không đồng nghĩa và không thay cho kiểm framing.
+
+      ## Invariant ranh giới
+
+      Diễn giải: mỗi byte được chuyển phải thuộc đúng message và được đọc từ một nguồn hợp lệ trong state hiện hành. Response upstream là dữ liệu cần parse, không là chỉ thị tự do cho state của worker. Việc chuyển giữa HTTP/2 và representation nội bộ vẫn phải giữ ranh giới headers/body, độ dài và capacity. Khi upstream đóng sớm hoặc timeout, request không được coi là thành công chỉ vì trước đó đã có kết nối.
+
+      ## Tradeoff và phòng vệ
+
+      Buffering tách tốc độ hai bên nhưng tiêu thụ tài nguyên; streaming giảm chờ nhưng kéo dài sự phụ thuộc lifecycle. TLS bảo vệ đường truyền trong phạm vi identity và state được triển khai đúng; nó không loại bỏ lỗi xử lý dữ liệu đã giải mã. Quản trị nguồn upstream, chứng thư, timeout và package update là các lớp riêng. Không áp dụng cùng cấu hình mitigation cho HTTP proxy, gRPC, SCGI và uwsgi chỉ vì tất cả đều có upstream.
+    assessment: Một deployment dùng HTTPS tới upstream có bảo đảm mọi byte đưa vào response đều thuộc phiên được xác thực không?
+    answer: Cần implementation đúng state và verification policy; nhãn HTTPS không thay chứng cứ contract và bản sửa cho lỗi implementation.
+articles:
+  - cve: CVE-2026-1642
+    summary: SSL upstream processing có thể chấp nhận dữ liệu không thuộc phản hồi bảo vệ dự định trong điều kiện CNA mô tả.
+    architecture: Ranh giới TLS phía upstream của proxy, không phải client TLS listener.
+    normal: Byte response chỉ được chấp nhận theo trạng thái TLS và identity của peer upstream đã xác minh.
+    mechanism: CNA mô tả plaintext injection vào response upstream. Đây là lỗi ở contract chuyển dữ liệu/state; chưa xác định code path hoặc cryptographic primitive bị lỗi.
+    applicability: Proxy tới upstream TLS; CNA yêu cầu vị trí MITM phía upstream và điều kiện ngoài kiểm soát tác nhân.
+    impact: Có khả năng chèn plaintext vào response từ upstream theo CNA.
+    potential: Hậu quả tại ứng dụng hoặc client phụ thuộc nội dung xử lý; không suy memory corruption hay RCE.
+    principle: Trạng thái kết nối phải quyết định nguồn byte được chấp nhận, không chỉ việc đã từng có TLS handshake.
+    defense: Cập nhật bản sửa, quản trị trust/identity upstream và bảo vệ đường truyền như kiểm soát bổ sung.
+    patch_note: Fix 1.28.2/1.29.5; không coi chỉ thay chứng thư là chứng cứ remediation lỗi implementation.
+    question: Tại sao cần giữ điều kiện MITM trong executive assessment?
+    answer: Nó là khả năng và trust boundary được nguồn yêu cầu, không thể bỏ mà vẫn giữ đúng phạm vi tác động.
+    unknown: Transition TLS và điều kiện ngoài kiểm soát chưa được source-code review.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-27654
+    knowledge: [COMPONENT:REWRITE-ENGINE, MODULE:NGX-HTTP-DAV-MODULE, CONTROL:LEAST-PRIVILEGE]
+    summary: WebDAV path processing có thể gây overflow hoặc đổi tên nguồn/đích ngoài document root trong giới hạn quyền worker.
+    architecture: DAV filesystem operations với alias và prefix location.
+    normal: URI phải ánh xạ đến path hợp lệ trong scope mong đợi; quyền filesystem giới hạn thao tác cuối của worker.
+    mechanism: CNA nêu buffer overflow và path modification. Kiểm path scope và kiểm capacity là hai nghĩa vụ riêng, không suy quyền ghi toàn hệ thống.
+    applicability: DAV MOVE/COPY, prefix location và alias theo CNA.
+    impact: Worker termination hoặc thay đổi source/destination filenames ngoài document root được công bố; CNA nêu giới hạn do quyền worker thấp.
+    potential: Những file thực tế có thể bị tác động phụ thuộc quyền deployment; không xác nhận root compromise.
+    principle: Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.
+    defense: Vá module, quản trị quyền worker và phạm vi thao tác DAV; hardening filesystem không sửa arithmetic.
+    patch_note: Fix 1.28.3/1.29.7; giữ riêng scope DAV với các lỗi alias/rewrite.
+    question: Vượt document root có tự động cho quyền toàn filesystem không?
+    answer: Không; OS permissions của worker vẫn chi phối phạm vi truy cập, và cần evidence deployment để xác định nó.
+    unknown: Path calculation, file bị ảnh hưởng và privilege context thực tế chưa xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-42055
+    knowledge: [COMPONENT:UPSTREAM-COMMUNICATION, PROTOCOL:HTTP-2, COMPONENT:MEMORY-POOL]
+    summary: Heap overflow khi tạo upstream HTTP/2 request có thể restart worker theo các điều kiện header/configuration của CNA.
+    architecture: Nguồn gọi ngx_http_proxy_v2_module và ngx_http_grpc_module; không tự đổi tên thành client HTTP/2 fault location.
+    normal: Chuyển header sang biểu diễn upstream phải kiểm độ dài và dung lượng đích, kể cả khi bộ nhận cho phép header lớn.
+    mechanism: CNA mô tả overflow khi tạo upstream request. Giới hạn input cấu hình và giới hạn biểu diễn đích cần tương thích; chưa review phép tính cụ thể.
+    applicability: Proxy HTTP/2 hoặc gRPC, ignore_invalid_headers off và large_client_header_buffers lớn hơn 2 MB theo CNA; còn điều kiện ngoài kiểm soát tác nhân.
+    impact: Heap overflow có thể restart worker.
+    potential: CNA nêu code execution với điều kiện ASLR; không xác nhận quyền root hoặc control-plane compromise.
+    principle: Dung lượng nhận input không thay giới hạn biểu diễn và buffer của request mới ở hop kế tiếp.
+    defense: Vá NGINX; review giới hạn header và contract serializer. Không gọi chỉnh buffer là mitigation chính thức nếu chưa có nguồn hỗ trợ.
+    patch_note: Fix 1.30.3/1.31.2; giữ nguyên tên module được CNA nêu và đưa mapping module chưa có trong catalog vào review queue.
+    question: Chấp nhận header ở đầu vào có bảo đảm serialize sang upstream an toàn không?
+    answer: Không; encoding và cấu trúc đích có dung lượng, framing và kiểm tra riêng.
+    unknown: Function lỗi và mapping ngx_http_proxy_v2_module với catalog hiện có cần chuyên gia xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-42926
+    knowledge: [COMPONENT:UPSTREAM-COMMUNICATION, PROTOCOL:HTTP-2]
+    summary: Tạo body tùy biến khi proxy HTTP/2 có thể làm sai ranh giới dữ liệu gửi upstream.
+    architecture: ngx_http_proxy_module tạo upstream HTTP/2 request; khác client-side HTTP/2 flow control.
+    normal: Custom body vẫn phải được serialize thành nội dung đúng request với framing phù hợp ở hop upstream.
+    mechanism: CNA nêu khả năng đưa frame headers và payload bytes vào upstream peer; bài giữ ở mức framing integrity, không mô tả byte hoặc cách tái hiện.
+    applicability: NGINX Open Source proxy_http_version 2 và proxy_set_body theo CNA.
+    impact: Request injection tới upstream peer được nguồn công bố.
+    potential: Tác động trên ứng dụng upstream chưa biết; không suy RCE hoặc chuỗi tác động tiếp theo.
+    principle: Nội dung body không được có quyền thay cấu trúc điều khiển của message vận chuyển.
+    defense: Cập nhật serializer, review phân lớp body/framing trên hop upstream; không trộn với cấu hình HTTP/2 cho client.
+    patch_note: Fix 1.30.1/1.31.0; CNA chỉ mô tả OSS và bảng này không gán phiên bản Plus.
+    question: Cùng HTTP/2 ở hai hop có cho phép tái dùng nguyên trạng mọi state không?
+    answer: Không; proxy tạo trao đổi riêng với peer, framing và lifecycle riêng.
+    unknown: Serializer function, state và hậu quả downstream chưa được review độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-42946
+    knowledge: [COMPONENT:UPSTREAM-COMMUNICATION, COMPONENT:MEMORY-POOL, CONTROL:RESOURCE-BOUNDS]
+    summary: SCGI/uwsgi response handling có thể cấp phát quá mức hoặc đọc vượt vùng khi response upstream bị kiểm soát.
+    architecture: ngx_http_scgi_module và ngx_http_uwsgi_module ở đường nhận response upstream.
+    normal: Độ dài do upstream cung cấp phải được kiểm trước allocation và đọc; resource budget không được do peer quyết định vô hạn.
+    mechanism: CNA mô tả excessive allocation hoặc over-read. Cần tách resource exhaustion khỏi spatial memory safety dù cùng response parser.
+    applicability: scgi_pass hoặc uwsgi_pass, với khả năng MITM kiểm soát upstream responses theo CNA.
+    impact: Có thể đọc bộ nhớ worker hoặc làm worker restart theo mô tả nguồn.
+    potential: Loại dữ liệu và độ dài rò chưa biết; không xác nhận code execution hay mọi client đều có cùng khả năng.
+    principle: Peer-provided length vừa phải hợp lệ về kiểu, vừa nằm trong input thực và ngân sách tài nguyên.
+    defense: Vá module, bảo vệ kênh upstream và quản trị resource budgets; các lớp này không thay nhau.
+    patch_note: Fix 1.30.1/1.31.0; không áp HTTP proxy version conditions của 42926 cho SCGI/uwsgi.
+    question: Allocation thành công có chứng minh số byte được đọc tồn tại trong input không?
+    answer: Không; capacity đích, chiều dài input và chỉ số đọc là các nghĩa vụ kiểm độc lập.
+    unknown: Field length, phép allocation và đường lộ dữ liệu chưa được review patch.
+    maturity: TECHNICAL_DRAFT

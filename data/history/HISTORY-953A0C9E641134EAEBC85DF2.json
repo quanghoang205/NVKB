@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:A7E74D3787C72852B343470C",
+    "claim_value": "\"Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần tự hóa.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "id": "CLAIM:A7E74D3787C72852B343470C",
+    "name": "WEAKNESS:CWE-93: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-93",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:A7E74D3787C72852B343470C",
+  "id": "HISTORY:953A0C9E641134EAEBC85DF2"
+}

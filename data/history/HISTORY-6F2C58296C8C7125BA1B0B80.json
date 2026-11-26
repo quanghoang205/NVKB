@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:E25B476228B501EF176B04A1",
+      "CLAIM:54808E4E85C8FF14544D6124",
+      "CLAIM:883500600DEA3E3270210D43",
+      "CLAIM:BE15A7588FE6F1E97F0EB099",
+      "CLAIM:F19645FDD60FB3E20A84EF30",
+      "CLAIM:F790C8D094D029CB7A09A451",
+      "CLAIM:E21DBA11FBADC2EB0407F8EA",
+      "CLAIM:6B31DD0EC1E8C74B646C5A2C"
+    ],
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "defensive_principles": "Giới hạn quyền worker, quyền tệp và quyền sửa cấu hình.",
+    "definition": "Nguyên tắc phòng vệ vận hành NGINX: Least privilege",
+    "description": "Nguyên tắc phòng vệ vận hành NGINX: Least privilege",
+    "diagram": "",
+    "entity_type": "SecurityControl",
+    "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+    "id": "CONTROL:LEAST-PRIVILEGE",
+    "learning_objectives": [
+      "Giải thích Least privilege bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Least privilege",
+    "normal_behavior": "Worker dùng user/group phù hợp cấu hình và cách khởi chạy dịch vụ.",
+    "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+    "related_knowledge": [],
+    "safety_assumptions": "Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CONTROL:LEAST-PRIVILEGE",
+  "id": "HISTORY:6F2C58296C8C7125BA1B0B80"
+}

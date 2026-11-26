@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:46+00:00",
+  "content_hash": "bbde47349ba5aa49531170b8f62c1fd647a4a3c76ae9923fa54c32b85cd8a749",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"f6ecdc10a4879bcf921d5f45765cdd33421182d58d1749b9c7dcac36206e4418\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/bbde47349ba5aa49531170b8f62c1fd647a4a3c76ae9923fa54c32b85cd8a749.json",
+  "retrieved_at": "2026-11-25T02:25:46+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2013/2xxx/CVE-2013-2028.json"
+}

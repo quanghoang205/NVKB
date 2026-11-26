@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:E0A87B24B732B52CF705CB10",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:65641EC20C0CE4BF048B3899",
+  "claim_value": "\"Thao tác I/O trả về ngay khi chưa thể hoàn tất.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:44:13+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:826B3248E579FD9221DF4A43: I/O events; topic=COMPONENT:NONBLOCKING-IO",
+  "evidence_refs": [
+    "EVIDENCE:826B3248E579FD9221DF4A43"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:65641EC20C0CE4BF048B3899",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:NONBLOCKING-IO: definition",
+  "observation_key": "OBSERVATION:60253DA2850A1D4AAC31B663",
+  "observed_at": "2026-11-25T02:44:13+00:00",
+  "predicate": "definition",
+  "product_scope": "COMPONENT:NONBLOCKING-IO",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:16+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:826B3248E579FD9221DF4A43"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+  "updated_at": "2026-11-25T04:12:39+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

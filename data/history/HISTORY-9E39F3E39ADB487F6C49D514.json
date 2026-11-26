@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:68FA209A20E9BB94230741D2",
+    "claim_value": "\"Use-after-free during response processing in resolver\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A731232A8B68F56783F395BE"
+    ],
+    "id": "CLAIM:68FA209A20E9BB94230741D2",
+    "name": "CVE:CVE-2026-123634: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A731232A8B68F56783F395BE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "CLAIM:68FA209A20E9BB94230741D2",
+  "id": "HISTORY:9E39F3E39ADB487F6C49D514"
+}

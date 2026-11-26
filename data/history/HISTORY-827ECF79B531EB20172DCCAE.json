@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:225BCBE910004AFD11660B20",
+    "claim_refs": [
+      "CLAIM:BD6BED9850A1F66BEA018E65"
+    ],
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-95101 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T04:13:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:1E7B48BFD17BB2F748749B89",
+    "claim_refs": [
+      "CLAIM:BD6BED9850A1F66BEA018E65"
+    ],
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-95101 CVSS 3.1 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T04:13:12+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:17+00:00",
+  "entity_id": "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+  "id": "HISTORY:827ECF79B531EB20172DCCAE"
+}

@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "claim_refs": [
+      "CLAIM:1350D20631B3AD7C1CA11A59",
+      "CLAIM:5CC63B3145DFA6C0817D06F8",
+      "CLAIM:7A3A1A2B8E6C08ECA87DCE7C",
+      "CLAIM:C1D6AD380FDC0680BCAE9413",
+      "CLAIM:F104A943799A92E4A02B5297",
+      "CLAIM:663DAA73603376BD97D73F44",
+      "CLAIM:BA89E4105200F644C0076AED",
+      "CLAIM:79E199376ED1F1B0B02FFA07"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "defensive_principles": "Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.",
+    "definition": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "description": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.",
+    "id": "COMPONENT:EVENT-DRIVEN",
+    "learning_objectives": [
+      "Giải thích Event-driven architecture bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Event-driven architecture",
+    "normal_behavior": "Readiness của socket, timer và posted event kích hoạt callback; callback cập nhật trạng thái rồi trả điều khiển.",
+    "related_failure_classes": "Use-after-free; state-machine inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Callback phải xử lý trường hợp dữ liệu chưa hoàn chỉnh và không giữ tham chiếu quá vòng đời.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "source_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "claim_refs": [
+      "CLAIM:5FFDD69D5D771BD6C21F402B",
+      "CLAIM:877543CBAE03F68859AD9FBA",
+      "CLAIM:86B295E65D38E86A2C2B4584",
+      "CLAIM:CCDBB28218D0C7626C4FEA28",
+      "CLAIM:0A3802C4207F9B871E251A88",
+      "CLAIM:7AA661DA7FED8DDB3DB8028C",
+      "CLAIM:4B64A4ED9D313971A83411B1",
+      "CLAIM:E789FEB3B6964490F07B0760"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "defensive_principles": "Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.",
+    "definition": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "description": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.",
+    "id": "COMPONENT:EVENT-DRIVEN",
+    "learning_objectives": [
+      "Giải thích Event-driven architecture bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Event-driven architecture",
+    "normal_behavior": "Readiness của socket, timer và posted event kích hoạt callback; callback cập nhật trạng thái rồi trả điều khiển.",
+    "related_failure_classes": "Use-after-free; state-machine inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Callback phải xử lý trường hợp dữ liệu chưa hoàn chỉnh và không giữ tham chiếu quá vòng đời.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "COMPONENT:EVENT-DRIVEN",
+  "id": "HISTORY:76776502DC9C8AF2650F49F4"
+}

@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:52F4BD59740128D7ACE4226B",
+    "claim_refs": [
+      "CLAIM:6F43945D809EAA024E8D26BB"
+    ],
+    "created_at": "2026-11-25T02:28:18+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:BCD6A6EF95403A246C010EE7",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42945 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:3736739F84F851A4D69EDC0D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T04:13:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:6462F58A814DB8E9C2C69220",
+    "claim_refs": [
+      "CLAIM:6F43945D809EAA024E8D26BB"
+    ],
+    "created_at": "2026-11-25T02:28:18+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:BCD6A6EF95403A246C010EE7",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42945 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:3736739F84F851A4D69EDC0D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T04:13:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:16+00:00",
+  "entity_id": "SEVERITY:BCD6A6EF95403A246C010EE7",
+  "id": "HISTORY:9A0299FA0E83BC2B016A9E07"
+}

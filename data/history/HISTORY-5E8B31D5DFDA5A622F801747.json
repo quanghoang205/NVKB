@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:98B28BF148DC7687EAE1CAC6"
+    ],
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "description": "CVE:CVE-2026-90439 classified_as WEAKNESS:CWE-122",
+    "entity_type": "Relationship",
+    "id": "REL:396939D8369145CB5FA91C10",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-122",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8A5EFD9F2F8B58978470483B"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-90439",
+    "updated_at": "2026-11-25T02:28:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:37+00:00",
+  "entity_id": "REL:396939D8369145CB5FA91C10",
+  "id": "HISTORY:5E8B31D5DFDA5A622F801747"
+}

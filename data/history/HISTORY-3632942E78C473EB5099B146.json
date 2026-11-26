@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F8D263712440110657E3150F",
+    "claim_value": "\"Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+    ],
+    "id": "CLAIM:F8D263712440110657E3150F",
+    "name": "MODULE:NGX-MAIL-POP3-MODULE: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:F8D263712440110657E3150F",
+  "id": "HISTORY:3632942E78C473EB5099B146"
+}

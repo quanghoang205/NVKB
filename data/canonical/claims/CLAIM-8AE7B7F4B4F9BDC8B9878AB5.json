@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:CF546D03A23C95A73776E50B",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:8AE7B7F4B4F9BDC8B9878AB5",
+  "claim_value": "\"Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:06+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:2CE4745C499013FC6F0E7F51: Name-based virtual servers",
+  "evidence_refs": [
+    "EVIDENCE:2CE4745C499013FC6F0E7F51"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:8AE7B7F4B4F9BDC8B9878AB5",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "COMPONENT:VIRTUAL-HOSTS: definition",
+  "observation_key": "OBSERVATION:31B1E97FC27669204EF94122",
+  "observed_at": "2026-11-25T02:32:06+00:00",
+  "predicate": "definition",
+  "product_scope": "COMPONENT:VIRTUAL-HOSTS",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:09+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:2CE4745C499013FC6F0E7F51"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+  "updated_at": "2026-11-25T04:12:43+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

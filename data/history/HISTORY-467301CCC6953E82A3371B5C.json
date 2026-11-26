@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:6B20C0E5F8B837AEFFF5EECD",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:13A60031462672C973BF7156",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nNhiều stream tăng khả năng ghép kênh nhưng cũng tăng số context, timer và buffer cần quản lý. Giới hạn stream và flow-control budget phải được xem cùng ngân sách worker. Tăng hiệu suất không loại bỏ nghĩa vụ kiểm state transition và cleanup. RFC mô tả giao thức; bài CVE mới xác định giới hạn của từng implementation. Không suy từ một lỗi HTTP/3 rằng UDP hay QUIC nói chung không an toàn.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:34+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:13A60031462672C973BF7156",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:QUIC: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:08:34+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T05:08:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:34+00:00",
+  "entity_id": "CLAIM:13A60031462672C973BF7156",
+  "id": "HISTORY:467301CCC6953E82A3371B5C"
+}

@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3BA2D82371BF5BE34A7854A4"
+    ],
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:C3154CD214965C7265CDB8F4",
+    "name": "Điều kiện được công bố — CVE-2026-118899",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:3BA2D82371BF5BE34A7854A4"
+    ],
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:C3154CD214965C7265CDB8F4",
+    "name": "Điều kiện được công bố — CVE-2026-118899",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D7C987F4E116133786DC9C36"
+    ],
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:C3154CD214965C7265CDB8F4",
+  "id": "HISTORY:42C708C3FD9B7A4D8B1C1A38"
+}

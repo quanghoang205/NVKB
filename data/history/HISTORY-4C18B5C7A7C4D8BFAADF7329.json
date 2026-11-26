@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:B3E6BFDFF7C0D98FB8EFBFD8",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:D4C9401769A48FC68FC468C0",
+    "claim_value": "{\"cve_id\": \"CVE-2024-32760\", \"problem_types\": [{\"descriptions\": [{\"cweId\": \"CWE-787\", \"description\": \"CWE-787 Out-of-bounds Write\", \"lang\": \"en\", \"type\": \"CWE\"}]}], \"products\": [\"NGINX Open Source\", \"NGINX Plus\"], \"publication_date\": \"2024-05-29T16:02:04.985Z\", \"research_product\": \"NGINX Open Source\", \"state\": \"PUBLISHED\"}",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:31:55+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A628653FA20B49A278AF4724"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D4C9401769A48FC68FC468C0",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-32760: v1.3:identity",
+    "observed_at": "2026-11-25T05:31:55+00:00",
+    "predicate": "v1.3:identity",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:A628653FA20B49A278AF4724"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-32760",
+    "updated_at": "2026-11-25T05:31:55+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:31:55+00:00",
+  "entity_id": "CLAIM:D4C9401769A48FC68FC468C0",
+  "id": "HISTORY:4C18B5C7A7C4D8BFAADF7329"
+}

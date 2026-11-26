@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:71BD82A8D39DCD433E6D2AC9",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:146C6074687D2D5030F73870",
+  "claim_value": "\"Không đồng nhất segment TCP với thông điệp ứng dụng.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:16+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:44E3AEFF9AF7E600C824D6E1: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:146C6074687D2D5030F73870",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:TCP: safety_assumptions",
+  "observation_key": "OBSERVATION:9A651537F871F56BD94032B7",
+  "observed_at": "2026-11-25T02:32:16+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "PROTOCOL:TCP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:15+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:TCP",
+  "updated_at": "2026-11-25T04:12:29+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:662C7E7EF279A8418B10DAAC
+title: CVE-2026-42934
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE-2026-42934
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CVE-2026-42934
+
+Phân loại CWE được CNA gán.
+
+- Nguồn: [CVE Program / CNA](https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42934.json)
+- Authority gốc: CVE Program / original CNA (see record)
+- Vai trò kênh: DISTRIBUTION_CHANNEL
+- Locator: `/containers/cna/problemTypes`
+
+- Truy xuất: 2026-11-25T02:28:11+00:00
+- SHA-256: `a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314`
+- Snapshot từ project root: `data/raw/cve/snapshots/a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314.json`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

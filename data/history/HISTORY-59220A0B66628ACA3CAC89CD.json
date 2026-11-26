@@ -1,0 +1,308 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Injection in auth_http and XCLIENT",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:404F587F3B1D24B5C874D6FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:057901456526F28C1EF4ABB3",
+      "CLAIM:06075405329191C16184B77A",
+      "CLAIM:0D363DEA6776134861272B48",
+      "CLAIM:118280E1DC01D0A277AFE3F9",
+      "CLAIM:1903E56D4D93233500246807",
+      "CLAIM:29B2B7DA8061FBBB9C369BD3",
+      "CLAIM:347BF9A9783E9F75142E8F4A",
+      "CLAIM:41544B7DB12304BA35580210",
+      "CLAIM:438BFE6272786973D2542EBD",
+      "CLAIM:47C4991D138DC683D194FE88",
+      "CLAIM:500DC4CDEBBB63D6553C3FE3",
+      "CLAIM:538EE79C9962686751B1C035",
+      "CLAIM:565A0913614B4C33995A1F3E",
+      "CLAIM:5B9C8CA44EBF7D6CDCE26610",
+      "CLAIM:5BC079C5F16CC0503642A3A6",
+      "CLAIM:6E9C09DFC7BF99BCA44FC968",
+      "CLAIM:73432314D1B1EE7550417704",
+      "CLAIM:8823005F0267A715DF5767C3",
+      "CLAIM:903F1DA95DC4096CF3B81F15",
+      "CLAIM:92A61F1E53D55D8ECB2E1F31",
+      "CLAIM:9A27DFCA87A1AE2F2F61C7BE",
+      "CLAIM:9BB6CE5255541155D2AC58E7",
+      "CLAIM:A0DE4FCE6DD9B3CAD87F145D",
+      "CLAIM:BE6D2B6ABE8BEF099B94257B",
+      "CLAIM:E11C8037E0F857BC8B4DDF9B",
+      "CLAIM:E302CC72E77C45C833C2862D",
+      "CLAIM:F154473EACC2CB1369764B7D"
+    ],
+    "condition_refs": [
+      "CONDITION:23F8B5C103A4330189BD94A6"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "cve_id": "CVE-2026-28753",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:4E7F1AC565922E53C8392356",
+      "PACKAGE:66C9C471D0465D75B82B072B",
+      "PACKAGE:A531C6FB62DFA43235A74C23",
+      "PACKAGE:C7FF089C30A362927C6F563B"
+    ],
+    "distribution_status": [
+      "PACKAGE:4E7F1AC565922E53C8392356",
+      "PACKAGE:66C9C471D0465D75B82B072B",
+      "PACKAGE:A531C6FB62DFA43235A74C23",
+      "PACKAGE:C7FF089C30A362927C6F563B"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-28753 ghi nhận: Injection in auth_http and XCLIENT. Phạm vi upstream: 0.6.27-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-28753",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-03-24T15:24:34.995000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-28753",
+    "normal_component_behavior": "Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:26.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:AA8BDA5343C0601BE7ACB32C"
+    ],
+    "related_components": [],
+    "related_modules": [
+      "MODULE:NGX-MAIL-SMTP-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:DNS",
+      "PROTOCOL:SMTP"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-93"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Injection in auth_http and XCLIENT.\n\nCWE-93 — CRLF Injection: Không xử lý đúng ký tự phân cách CR/LF khi tạo dữ liệu có cấu trúc dòng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần tự hóa.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1822117E6B66FB6FF94B21A3",
+      "SEVERITY:22EDE581DA3E1F67152C8C58",
+      "SEVERITY:A0CE594349D68F655B30A394",
+      "SEVERITY:C612E1B11FD51CAC2E1FD3D3",
+      "SEVERITY:CF03745BDE258FEA8F262535"
+    ],
+    "source_refs": [
+      "EVIDENCE:19F8147C60F6BF74BA023F44",
+      "EVIDENCE:1AFB3C299E364CB222680BE6",
+      "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+      "EVIDENCE:4EB14B422FD37FC4AE185DD3",
+      "EVIDENCE:B08BA542EDDE73461AFF4370",
+      "EVIDENCE:C5A225F86EA1A78912011287",
+      "EVIDENCE:CF77599A9366449D824011BC",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "title": "Injection in auth_http and XCLIENT",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "upstream_affected_expression": "0.6.27-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Injection in auth_http and XCLIENT",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:404F587F3B1D24B5C874D6FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:057901456526F28C1EF4ABB3",
+      "CLAIM:06075405329191C16184B77A",
+      "CLAIM:0D363DEA6776134861272B48",
+      "CLAIM:118280E1DC01D0A277AFE3F9",
+      "CLAIM:1903E56D4D93233500246807",
+      "CLAIM:29B2B7DA8061FBBB9C369BD3",
+      "CLAIM:347BF9A9783E9F75142E8F4A",
+      "CLAIM:41544B7DB12304BA35580210",
+      "CLAIM:438BFE6272786973D2542EBD",
+      "CLAIM:47C4991D138DC683D194FE88",
+      "CLAIM:500DC4CDEBBB63D6553C3FE3",
+      "CLAIM:538EE79C9962686751B1C035",
+      "CLAIM:565A0913614B4C33995A1F3E",
+      "CLAIM:5B9C8CA44EBF7D6CDCE26610",
+      "CLAIM:5BC079C5F16CC0503642A3A6",
+      "CLAIM:6E9C09DFC7BF99BCA44FC968",
+      "CLAIM:73432314D1B1EE7550417704",
+      "CLAIM:8823005F0267A715DF5767C3",
+      "CLAIM:903F1DA95DC4096CF3B81F15",
+      "CLAIM:92A61F1E53D55D8ECB2E1F31",
+      "CLAIM:9A27DFCA87A1AE2F2F61C7BE",
+      "CLAIM:9BB6CE5255541155D2AC58E7",
+      "CLAIM:A0DE4FCE6DD9B3CAD87F145D",
+      "CLAIM:BE6D2B6ABE8BEF099B94257B",
+      "CLAIM:E11C8037E0F857BC8B4DDF9B",
+      "CLAIM:E302CC72E77C45C833C2862D",
+      "CLAIM:F154473EACC2CB1369764B7D"
+    ],
+    "condition_refs": [
+      "CONDITION:23F8B5C103A4330189BD94A6"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "cve_id": "CVE-2026-28753",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:4E7F1AC565922E53C8392356",
+      "PACKAGE:66C9C471D0465D75B82B072B",
+      "PACKAGE:A531C6FB62DFA43235A74C23",
+      "PACKAGE:C7FF089C30A362927C6F563B"
+    ],
+    "distribution_status": [
+      "PACKAGE:4E7F1AC565922E53C8392356",
+      "PACKAGE:66C9C471D0465D75B82B072B",
+      "PACKAGE:A531C6FB62DFA43235A74C23",
+      "PACKAGE:C7FF089C30A362927C6F563B"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-28753 ghi nhận: Injection in auth_http and XCLIENT. Phạm vi upstream: 0.6.27-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-28753",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-03-24T15:24:34.995000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-28753",
+    "normal_component_behavior": "Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:26.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:AA8BDA5343C0601BE7ACB32C"
+    ],
+    "related_components": [],
+    "related_modules": [
+      "MODULE:NGX-MAIL-SMTP-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:DNS",
+      "PROTOCOL:SMTP"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-93"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Injection in auth_http and XCLIENT.\n\nCWE-93 — CRLF Injection: Không xử lý đúng ký tự phân cách CR/LF khi tạo dữ liệu có cấu trúc dòng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần tự hóa.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1822117E6B66FB6FF94B21A3",
+      "SEVERITY:22EDE581DA3E1F67152C8C58",
+      "SEVERITY:A0CE594349D68F655B30A394",
+      "SEVERITY:C612E1B11FD51CAC2E1FD3D3",
+      "SEVERITY:CF03745BDE258FEA8F262535"
+    ],
+    "source_refs": [
+      "EVIDENCE:19F8147C60F6BF74BA023F44",
+      "EVIDENCE:1AFB3C299E364CB222680BE6",
+      "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+      "EVIDENCE:4EB14B422FD37FC4AE185DD3",
+      "EVIDENCE:B08BA542EDDE73461AFF4370",
+      "EVIDENCE:C5A225F86EA1A78912011287",
+      "EVIDENCE:CF77599A9366449D824011BC",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "title": "Injection in auth_http and XCLIENT",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:13+00:00",
+    "upstream_affected_expression": "0.6.27-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CVE:CVE-2026-28753",
+  "id": "HISTORY:59220A0B66628ACA3CAC89CD"
+}

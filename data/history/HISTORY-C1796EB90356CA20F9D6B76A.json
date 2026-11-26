@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:210D1D9C4E26851A87B3550C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:3AACD36DD5D6FF55A2579CB8",
+    "claim_value": "\"## Tradeoff và hiểu lầm\\n\\nNon-blocking socket hạn chế thời gian chờ I/O trong callback, nhưng không làm mọi đoạn tính toán hoặc thư viện ngoài trở nên bất đồng bộ. Một tác vụ CPU dài hay lời gọi blocking có thể giữ worker bận, làm chậm các kết nối khác. Thread pool/offload chỉ áp dụng cho các đường được triển khai hỗ trợ, không tự động bao mọi module. Cấu trúc event-driven giảm nhu cầu thread-per-connection nhưng khiến state machine và cleanup cần được thiết kế rõ.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:43+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#event_loop; #i_o_events; #timer_events; #posted_events",
+    "evidence_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3AACD36DD5D6FF55A2579CB8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:EVENT-DRIVEN: pilot_section:Tradeoff và hiểu lầm",
+    "observed_at": "2026-11-25T04:20:44+00:00",
+    "predicate": "pilot_section:Tradeoff và hiểu lầm",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read development at #event_loop; #i_o_events; #timer_events; #posted_events; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:45+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:20:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:210D1D9C4E26851A87B3550C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:3AACD36DD5D6FF55A2579CB8",
+    "claim_value": "\"## Tradeoff và hiểu lầm\\n\\nNon-blocking socket hạn chế thời gian chờ I/O trong callback, nhưng không làm mọi đoạn tính toán hoặc thư viện ngoài trở nên bất đồng bộ. Một tác vụ CPU dài hay lời gọi blocking có thể giữ worker bận, làm chậm các kết nối khác. Thread pool/offload chỉ áp dụng cho các đường được triển khai hỗ trợ, không tự động bao mọi module. Cấu trúc event-driven giảm nhu cầu thread-per-connection nhưng khiến state machine và cleanup cần được thiết kế rõ.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:43+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3AACD36DD5D6FF55A2579CB8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:EVENT-DRIVEN: pilot_section:Tradeoff và hiểu lầm",
+    "observed_at": "2026-11-25T04:20:44+00:00",
+    "predicate": "pilot_section:Tradeoff và hiểu lầm",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:20:44+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:45+00:00",
+  "entity_id": "CLAIM:3AACD36DD5D6FF55A2579CB8",
+  "id": "HISTORY:C1796EB90356CA20F9D6B76A"
+}

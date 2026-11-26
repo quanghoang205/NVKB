@@ -1,0 +1,55 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:17DAB7C9B88EF48A432E5D38",
+    "claim_refs": [
+      "CLAIM:B6E552FE4051C7A8B0BC64CB"
+    ],
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "cvss_score": 8.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:2089F6AB7CEFA6D8955D5117",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-56434 CVSS 4.0 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:B6E552FE4051C7A8B0BC64CB"
+    ],
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "cvss_score": 8.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:2089F6AB7CEFA6D8955D5117",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-56434 CVSS 4.0 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T02:28:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:11+00:00",
+  "entity_id": "SEVERITY:2089F6AB7CEFA6D8955D5117",
+  "id": "HISTORY:EB9135678E4EF10D59364A9A"
+}

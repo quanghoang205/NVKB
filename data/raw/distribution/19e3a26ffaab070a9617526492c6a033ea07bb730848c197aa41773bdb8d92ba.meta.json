@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:04+00:00",
+  "content_hash": "f08c87481cc718d5bf02d1c8cbd2d379e96034b898f0d662ad46f6ba7a1bb6ac",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/f08c87481cc718d5bf02d1c8cbd2d379e96034b898f0d662ad46f6ba7a1bb6ac.html",
+  "retrieved_at": "2026-11-25T02:28:04+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42530"
+}

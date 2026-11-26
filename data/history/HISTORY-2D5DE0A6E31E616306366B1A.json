@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:98356EBD5A77647480DF82B4",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:42D630EE390948F2586404C9",
+    "claim_value": "\"Buffer overflow; excessive rewrite iterations.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:6B5BC482779060E2A4DEF4A0: ngx_http_rewrite_module; topic=COMPONENT:REWRITE-ENGINE",
+    "evidence_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:42D630EE390948F2586404C9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:REWRITE-ENGINE: related_failure_classes",
+    "observation_key": "OBSERVATION:C0A9715DAA0CB4A7EAD7C188",
+    "observed_at": "2026-11-25T02:44:16+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "COMPONENT:REWRITE-ENGINE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:42D630EE390948F2586404C9",
+    "claim_value": "\"Buffer overflow; excessive rewrite iterations.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "id": "CLAIM:42D630EE390948F2586404C9",
+    "name": "COMPONENT:REWRITE-ENGINE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:42D630EE390948F2586404C9",
+  "id": "HISTORY:2D5DE0A6E31E616306366B1A"
+}

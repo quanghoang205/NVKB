@@ -1,0 +1,48 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:261DC8262086EE651275827B",
+    "claim_value": "\"Nguồn phân loại vấn đề: Buffer overflow when using alias with try_files.\\n\\nCWE-191 — Integer Underflow: Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.\\n\\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:11+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:065AF50E1D00607FE9A69385",
+      "EVIDENCE:44DDDAA722857F4B90BBAA0F",
+      "EVIDENCE:49BF08A476CD657BA7A48B80",
+      "EVIDENCE:67F0330559BC7FD512D1BCD6",
+      "EVIDENCE:8245586D43209CA1D6064B51",
+      "EVIDENCE:D10842D66DC8C1765103B901",
+      "EVIDENCE:E5D6A097B43D7EB31179D3D5",
+      "EVIDENCE:EBC00C4C250179C07BC479C5",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "id": "CLAIM:261DC8262086EE651275827B",
+    "name": "CVE:CVE-2026-125283: root_cause_summary",
+    "predicate": "root_cause_summary",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:065AF50E1D00607FE9A69385",
+      "EVIDENCE:44DDDAA722857F4B90BBAA0F",
+      "EVIDENCE:49BF08A476CD657BA7A48B80",
+      "EVIDENCE:67F0330559BC7FD512D1BCD6",
+      "EVIDENCE:8245586D43209CA1D6064B51",
+      "EVIDENCE:D10842D66DC8C1765103B901",
+      "EVIDENCE:E5D6A097B43D7EB31179D3D5",
+      "EVIDENCE:EBC00C4C250179C07BC479C5",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T02:49:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:11+00:00",
+  "entity_id": "CLAIM:261DC8262086EE651275827B",
+  "id": "HISTORY:8F77DFFAE88F1EEED15EE667"
+}

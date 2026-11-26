@@ -1,0 +1,35 @@
+---
+entity_type: evidence
+id: EVIDENCE:A0ADB173EC54D8F7EE765F51
+title: "CWE -\r\n\n    CWE-416: Use After Free (5.0)"
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- "CWE -\r\n\n    CWE-416: Use After Free (5.0)"
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CWE -
+
+    CWE-416: Use After Free (5.0)
+
+Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.
+
+- Nguồn: [MITRE CWE](https://cwe.mitre.org/data/definitions/416.html)
+- Authority gốc: MITRE CWE
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Description / Potential Mitigations`
+
+- Truy xuất: 2026-11-25T02:32:34+00:00
+- SHA-256: `d2ad6c6bf0c10c1aa1a4f90669b3ca7894b6f77a75e03d7876b89759862fdccb`
+- Snapshot từ project root: `data/raw/documentation/snapshots/d2ad6c6bf0c10c1aa1a4f90669b3ca7894b6f77a75e03d7876b89759862fdccb.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

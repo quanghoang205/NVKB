@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:B81A5AE901224E63EC14CA5F",
+    "claim_value": "\"Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "id": "CLAIM:B81A5AE901224E63EC14CA5F",
+    "name": "COMPONENT:REWRITE-ENGINE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:B81A5AE901224E63EC14CA5F",
+  "id": "HISTORY:A404F5EF708A2448C0D8AA3B"
+}

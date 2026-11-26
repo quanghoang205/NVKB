@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:9874D294FBE434CA7CA035AF",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:96815521D6064C716E1EAE91",
+    "claim_value": "\"## Tradeoff và ví dụ an toàn\\n\\nGiảm quyền có thể yêu cầu thiết kế đường truy cập tài nguyên rõ hơn và làm việc vận hành phức tạp hơn. Policy cache cải thiện hiệu suất nhưng cần quy tắc invalidation khi quyền đổi. Bài tập giấy: ghi invariant 'quyền đã thu hồi không tiếp tục được dùng sau thời điểm hiệu lực quy định', rồi chỉ ra yêu cầu về timestamp, invalidation và policy owner. Chưa có cấu hình nên không khẳng định hệ thống thật giữ được điều kiện đó.\\n\\nNgộ nhận: thêm một lớp kiểm soát đồng nghĩa đã kiểm chứng invariant; hoặc process boundary chính là tenant boundary. Câu hỏi mở: thời điểm nào policy mới có hiệu lực với phiên đang tồn tại?\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:08+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:96815521D6064C716E1EAE91",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Tradeoff và ví dụ an toàn",
+    "observed_at": "2026-11-25T04:21:08+00:00",
+    "predicate": "pilot_section:Tradeoff và ví dụ an toàn",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:21:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:08+00:00",
+  "entity_id": "CLAIM:96815521D6064C716E1EAE91",
+  "id": "HISTORY:04EA17D6A53C9648CD4368C5"
+}

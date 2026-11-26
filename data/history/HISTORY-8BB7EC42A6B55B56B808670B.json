@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0101642F0421EC9238DBE756"
+    ],
+    "created_at": "2026-11-25T02:26:33+00:00",
+    "description": "CVE:CVE-2025-23419 distribution_fix PACKAGE:3084B31EE7709624493AA4F2",
+    "entity_type": "Relationship",
+    "id": "REL:29B989F2C3AA9B879659ED4C",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:3084B31EE7709624493AA4F2",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:34E2C65CB07BE4AAB8EFE18B"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:26:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:33+00:00",
+  "entity_id": "REL:29B989F2C3AA9B879659ED4C",
+  "id": "HISTORY:8BB7EC42A6B55B56B808670B"
+}

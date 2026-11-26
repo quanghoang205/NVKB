@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:66B07FB6ECF500C7259A1D8F",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:E735F01C07161C9EF6F304D6",
+  "claim_value": "\"Địa chỉ nguồn và datagram chưa mặc nhiên được xác thực.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:16+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:E735F01C07161C9EF6F304D6",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:UDP: safety_assumptions",
+  "observation_key": "OBSERVATION:65B2FF98EE600F87B1359493",
+  "observed_at": "2026-11-25T02:32:16+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "PROTOCOL:UDP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:16+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:UDP",
+  "updated_at": "2026-11-25T04:12:54+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

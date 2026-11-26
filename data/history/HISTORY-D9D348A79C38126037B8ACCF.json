@@ -1,0 +1,57 @@
+{
+  "action": "modified",
+  "after": {
+    "applicable_context": "CVE-2025-23419",
+    "claim_refs": [
+      "CLAIM:845029643C22D44B870203EC",
+      "CLAIM:8D23AFE0D3FDEADF28990AAA"
+    ],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "definition": "Policy context ở 23419 là ví dụ học về identity/authorization, không gộp hai thuật ngữ.",
+    "description": "Tác động được CNA mô tả cho CVE-2025-23419; không tự suy process crash hay code execution.",
+    "entity_type": "Impact",
+    "id": "IMPACT:CLIENT-AUTHENTICATION-POLICY",
+    "limitations": "Not an asset-level observation; source scope only.",
+    "name": "Vi phạm yêu cầu xác thực client certificate",
+    "related_knowledge": [
+      "COMPONENT:TLS-SESSION-LIFECYCLE",
+      "WEAKNESS:CWE-863",
+      "CONTROL:LEAST-PRIVILEGE"
+    ],
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:0B8DF862203E286BC8CA69B0",
+      "EVIDENCE:1982F926ED09EC13B93A0EAB"
+    ],
+    "updated_at": "2026-11-25T05:38:28+00:00",
+    "verification_limitations": "Source-confirmed impact description; AI interpretation of category, human review pending.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "applicable_context": "Chỉ điều kiện CNA của CVE-2025-23419.",
+    "claim_refs": [
+      "CLAIM:845029643C22D44B870203EC"
+    ],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "definition": "Yêu cầu xác thực client certificate không được duy trì trong context mà CNA nêu.",
+    "description": "Tác động được CNA mô tả cho CVE-2025-23419; không tự suy process crash hay code execution.",
+    "entity_type": "Impact",
+    "id": "IMPACT:CLIENT-AUTHENTICATION-POLICY",
+    "limitations": "Không xác minh deployment hoặc tác động thực tế; xem scope CNA.",
+    "name": "Vi phạm yêu cầu xác thực client certificate",
+    "related_knowledge": [
+      "WEAKNESS:CWE-863",
+      "COMPONENT:TLS-SESSION-LIFECYCLE"
+    ],
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:0B8DF862203E286BC8CA69B0"
+    ],
+    "updated_at": "2026-11-25T04:21:17+00:00",
+    "verification_limitations": "Source-confirmed impact description; AI interpretation of category, human review pending.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:38:28+00:00",
+  "entity_id": "IMPACT:CLIENT-AUTHENTICATION-POLICY",
+  "id": "HISTORY:D9D348A79C38126037B8ACCF"
+}

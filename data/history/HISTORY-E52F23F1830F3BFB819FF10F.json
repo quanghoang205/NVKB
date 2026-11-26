@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-03 learns_from PROTOCOL:MTLS",
+    "entity_type": "Relationship",
+    "id": "REL:971A3CEB348F84A2EC3C7B36",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:MTLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-03 learns_from PROTOCOL:MTLS",
+    "entity_type": "Relationship",
+    "id": "REL:971A3CEB348F84A2EC3C7B36",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:MTLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:971A3CEB348F84A2EC3C7B36",
+  "id": "HISTORY:E52F23F1830F3BFB819FF10F"
+}

@@ -1,0 +1,55 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:CBCE523137C083FBCBA21C07",
+    "claim_refs": [
+      "CLAIM:04322C69C599CE0C9F4CA84C"
+    ],
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "redhat-SADP via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:351936ABE2F2E3EA1E30C36D",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42945 CVSS 3.1 redhat-SADP",
+    "original_authority": "redhat-SADP via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "redhat-SADP via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:8BD094C55AE576DA927DC8CE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:04322C69C599CE0C9F4CA84C"
+    ],
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:351936ABE2F2E3EA1E30C36D",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42945 CVSS 3.1 redhat-SADP",
+    "schema_version": "1.0.0",
+    "scoring_authority": "redhat-SADP via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:8BD094C55AE576DA927DC8CE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T02:28:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:11+00:00",
+  "entity_id": "SEVERITY:351936ABE2F2E3EA1E30C36D",
+  "id": "HISTORY:AC8BFFE30D628BF47020BE5B"
+}

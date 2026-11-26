@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "8ddd23974463280b9cc4330cc5692925799839c2b64277f413a5b04300149bb4",
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-125283",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:D10842D66DC8C1765103B901",
+    "id": "EVIDENCE:D10842D66DC8C1765103B901",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/8ddd23974463280b9cc4330cc5692925799839c2b64277f413a5b04300149bb4.json",
+    "name": "CVE-2026-125283",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:13+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-125283",
+    "updated_at": "2026-11-25T02:27:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:13+00:00",
+  "entity_id": "EVIDENCE:D10842D66DC8C1765103B901",
+  "id": "HISTORY:61AB4925DF8B683FA6FC3112"
+}

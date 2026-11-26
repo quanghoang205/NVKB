@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C240CD8C3EC10AC6B1ECFB97",
+    "claim_value": "\"Các trường bắt buộc được khởi tạo trước khi đối tượng được công bố cho callback.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "id": "CLAIM:C240CD8C3EC10AC6B1ECFB97",
+    "name": "WEAKNESS:CWE-908: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-908",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:C240CD8C3EC10AC6B1ECFB97",
+  "id": "HISTORY:71D30B747619D49B135C668D"
+}

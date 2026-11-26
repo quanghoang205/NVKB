@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:08DF54B2C8E4047B62EB09D4",
+  "authority": "CVE Program",
+  "authority_scope": "CVE Program",
+  "claim_id": "CLAIM:F154473EACC2CB1369764B7D",
+  "claim_value": "\"CVE-2026-28753\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:27:40+00:00",
+  "description": "cve_id",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:4EB14B422FD37FC4AE185DD3: /cveMetadata",
+  "evidence_refs": [
+    "EVIDENCE:4EB14B422FD37FC4AE185DD3"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:F154473EACC2CB1369764B7D",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-28753: cve_id",
+  "observation_key": "OBSERVATION:C679EF24773E3C7CFF0E0A1A",
+  "observed_at": "2026-11-25T02:27:40+00:00",
+  "predicate": "cve_id",
+  "product_scope": "CVE:CVE-2026-28753",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:27:37+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:4EB14B422FD37FC4AE185DD3"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-28753",
+  "updated_at": "2026-11-25T04:12:55+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

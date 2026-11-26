@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:606C256C3B5A88670CAD5B70",
+    "claim_value": "\"Handshake HTTP thiết lập kênh, sau đó trao đổi frame với trạng thái close và message fragmentation.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:24+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "id": "CLAIM:606C256C3B5A88670CAD5B70",
+    "name": "PROTOCOL:WEBSOCKET: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T02:32:24+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:24+00:00",
+  "entity_id": "CLAIM:606C256C3B5A88670CAD5B70",
+  "id": "HISTORY:A07B1D6A38E3C3A8AC9F4808"
+}

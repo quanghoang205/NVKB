@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:B103E83703977D719903D3D0",
+    "claim_value": "\"Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:42+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "id": "CLAIM:B103E83703977D719903D3D0",
+    "name": "CVE:CVE-2026-42945: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T02:40:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:42+00:00",
+  "entity_id": "CLAIM:B103E83703977D719903D3D0",
+  "id": "HISTORY:902AF96C9518335EF2AE0698"
+}

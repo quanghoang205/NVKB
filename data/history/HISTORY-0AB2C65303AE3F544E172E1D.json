@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Chuyển từ dữ liệu chưa tin cậy sang cấu hình, handler và response.",
+    "claim_refs": [
+      "CLAIM:4010E9EE922F96BE856C2027",
+      "CLAIM:30FCA932EDA1BA7F5B7DEA67",
+      "CLAIM:84673CDAA4EDF641021FBA43",
+      "CLAIM:D116EED576305449CD7B4C1F",
+      "CLAIM:505146CD7868BB8E21172CC3",
+      "CLAIM:9DD0CCF8DBD9BB3FA0C1F76C",
+      "CLAIM:DC4EF6F80C1C371A24DF8855",
+      "CLAIM:C932E813E3F2872A47084C6B"
+    ],
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "defensive_principles": "Review thứ tự phase, giới hạn request và bảo đảm cleanup đúng vòng đời.",
+    "definition": "Vòng đời parse, chọn cấu hình, xử lý phase và hoàn tất response.",
+    "description": "Vòng đời parse, chọn cấu hình, xử lý phase và hoàn tất response.",
+    "diagram": "flowchart LR\nA[Connection] --> B[Parse request]\nB --> C[Select server and location]\nC --> D[Rewrite and access phases]\nD --> E[Content handler]\nE --> F[Output filters]\nF --> G[Finalize request]",
+    "entity_type": "Component",
+    "failure_impact": "Định tuyến hoặc xử lý response sai.",
+    "id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "learning_objectives": [
+      "Giải thích HTTP request lifecycle bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP request lifecycle",
+    "normal_behavior": "Request đi qua các phase như rewrite/access/content; output filter xử lý header/body trước khi gửi. Finalization điều phối tài nguyên và subrequest.",
+    "related_failure_classes": "Parsing inconsistency; use-after-free.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái request và số tham chiếu phải nhất quán qua redirect/subrequest.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Chuyển từ dữ liệu chưa tin cậy sang cấu hình, handler và response.",
+    "source_refs": [
+      "EVIDENCE:825B88FA70EA2766B62C5351"
+    ],
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:06+00:00",
+  "entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+  "id": "HISTORY:0AB2C65303AE3F544E172E1D"
+}

@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:B332C79BE639ED7B90A9039A
+title: NGINX security advisories
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- NGINX security advisories
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# NGINX security advisories
+
+CVE-2026-42530: Use-after-free in HTTP/3
+
+- Nguồn: [NGINX / F5](https://nginx.org/en/security_advisories.html)
+- Authority gốc: NGINX / F5
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `li containing CVE-2026-42530`
+
+- Truy xuất: 2026-11-25T02:18:10+00:00
+- SHA-256: `2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184`
+- Snapshot từ project root: `data/raw/nginx/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

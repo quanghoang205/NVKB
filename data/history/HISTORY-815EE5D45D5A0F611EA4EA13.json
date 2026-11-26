@@ -1,0 +1,399 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B6C006D12AF0B8FBCA95AC90"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0202F0A901783E3BE7EAD6F2",
+      "CLAIM:06AB6C2171C071DD840E74A7",
+      "CLAIM:08B722C2C68F17727BEC9A89",
+      "CLAIM:0BBA1539AB3B86C071F01C87",
+      "CLAIM:1A76A2A57D255C438041C905",
+      "CLAIM:34044D1A7F2AB71FDA5C528B",
+      "CLAIM:3A2124D6BD3AC57477ABB87D",
+      "CLAIM:3DF8A0790450240C96987685",
+      "CLAIM:49E5AE8000C32D31A1AD1414",
+      "CLAIM:4E0CC07A953FE4404FF238E7",
+      "CLAIM:528B70D8ABC4FE345B1F49D4",
+      "CLAIM:5B9A65D27B473C8062D77D35",
+      "CLAIM:5C6AC785DC986F17592A7232",
+      "CLAIM:64C76D9A08F95A7C466A35C2",
+      "CLAIM:68D6260EB1C318FB301DBD0A",
+      "CLAIM:71E8944118E1AE42B56D952A",
+      "CLAIM:7288B9D514B854855522B49D",
+      "CLAIM:7CAEE0B0046F9AEF7418C784",
+      "CLAIM:82DC26A155C288FBEED411F5",
+      "CLAIM:85A0FF55A889904AD1F48CB9",
+      "CLAIM:907466C7DCEB515AE4359ED1",
+      "CLAIM:9AAB92789092D21348FFB4EC",
+      "CLAIM:A5E4D9810249A8F2C302F920",
+      "CLAIM:BC333E07674131236F8FD49A",
+      "CLAIM:BFE6583CD399E80C515399C3",
+      "CLAIM:C89CDB658C74FE75BD7BF49F",
+      "CLAIM:DC802F726BF139E3D9C15326",
+      "CLAIM:E631E842455E2F01C3A36A94",
+      "CLAIM:E751D3455AE0176836061695",
+      "CLAIM:E83E533A07AEC287CE9677F9",
+      "CLAIM:E9C2436CE9068075D7C6175B",
+      "CLAIM:EE2FB480238D8C40E798E2A8",
+      "CLAIM:F492822FB71BA26C4A713EE8",
+      "CLAIM:FCBB6EC579DB4C61DF3852C4"
+    ],
+    "condition_refs": [
+      "CONDITION:DCE3E4D5C96ED73E20E8CC7D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Restart worker/DoS và memory lifetime violation được CNA công bố.",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-121810",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Dùng release sửa và kiểm bằng chứng worker chạy binary mới; hardening không thay thế sửa lifetime."
+    ],
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "distribution_status": [
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "documented_configuration_context": "Cấu hình sử dụng HTTP/3; CNA nêu OSS và Plus và các điều kiện ngoài kiểm soát tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free HTTP/3 có thể restart worker; nguồn giữ code execution ở mức khả năng có điều kiện.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-121810",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-20T11:19:22.935000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.",
+      "Trả lời có evidence: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-121810",
+    "normal_component_behavior": "Các tham chiếu tới context HTTP/3 chỉ được dùng khi owner còn sống, kể cả qua nhiều callback.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Code execution được CNA nêu có điều kiện liên quan ASLR; chưa được xác minh runtime, không đồng nghĩa root compromise.",
+    "publication_date": "2026-11-18T15:23:29.375000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:51858D491CB03622B399394A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free HTTP/3 có thể restart worker; nguồn giữ code execution ở mức khả năng có điều kiện.\n\n## 2. CVE identity và product scope\n\nCVE-2026-121810; published 2026-11-18T15:23:29.375000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-E9C2436CE9068075D7C6175B|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 state tại worker; không có bằng chứng đủ để gộp với encoder-stream CVE-2026-42530. [[CLAIM-0BBA1539AB3B86C071F01C87|Claim / locator]].\n\n## 5. Normal component behavior\n\nCác tham chiếu tới context HTTP/3 chỉ được dùng khi owner còn sống, kể cả qua nhiều callback. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận lớp use-after-free nhưng không mô tả object hay đường cleanup. Điều kiện ngoài kiểm soát tác nhân vẫn là giới hạn cần giữ. [[CLAIM-528B70D8ABC4FE345B1F49D4|Claim / locator]].\n\n## 7. Relevant security principles\n\nQuy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nCấu hình sử dụng HTTP/3; CNA nêu OSS và Plus và các điều kiện ngoài kiểm soát tác nhân. [[CLAIM-0BBA1539AB3B86C071F01C87|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-FCBB6EC579DB4C61DF3852C4|Claim / locator]].\n\nFix 1.30.7/1.31.9, khoảng affected bắt đầu 1.25.0; không dùng khoảng hẹp của 42530. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nRestart worker/DoS và memory lifetime violation được CNA công bố. [[CLAIM-4E0CC07A953FE4404FF238E7|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCode execution được CNA nêu có điều kiện liên quan ASLR; chưa được xác minh runtime, không đồng nghĩa root compromise. [[CLAIM-3A2124D6BD3AC57477ABB87D|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng release sửa và kiểm bằng chứng worker chạy binary mới; hardening không thay thế sửa lifetime. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-FCBB6EC579DB4C61DF3852C4|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.7/1.31.9, khoảng affected bắt đầu 1.25.0; không dùng khoảng hẹp của 42530.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.\n- Trả lời có evidence: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?\n\n## 17. Discussion questions\n\nCùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?\n\nGợi ý đáp án: Không; cần đối chiếu đối tượng, commit và lịch sử release riêng trước khi kết luận trùng nguyên nhân.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-E9C2436CE9068075D7C6175B|CLAIM:E9C2436CE9068075D7C6175B]]\n- applicability: [[CLAIM-0BBA1539AB3B86C071F01C87|CLAIM:0BBA1539AB3B86C071F01C87]]\n- impact: [[CLAIM-4E0CC07A953FE4404FF238E7|CLAIM:4E0CC07A953FE4404FF238E7]]\n- potential: [[CLAIM-3A2124D6BD3AC57477ABB87D|CLAIM:3A2124D6BD3AC57477ABB87D]]\n- mechanism: [[CLAIM-528B70D8ABC4FE345B1F49D4|CLAIM:528B70D8ABC4FE345B1F49D4]]\n- versions: [[CLAIM-FCBB6EC579DB4C61DF3852C4|CLAIM:FCBB6EC579DB4C61DF3852C4]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject, callback, patch correctness và tác động runtime còn chờ chuyên gia.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:E9C2436CE9068075D7C6175B",
+      "CLAIM:0BBA1539AB3B86C071F01C87",
+      "CLAIM:4E0CC07A953FE4404FF238E7",
+      "CLAIM:3A2124D6BD3AC57477ABB87D",
+      "CLAIM:528B70D8ABC4FE345B1F49D4",
+      "CLAIM:FCBB6EC579DB4C61DF3852C4"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA xác nhận lớp use-after-free nhưng không mô tả object hay đường cleanup. Điều kiện ngoài kiểm soát tác nhân vẫn là giới hạn cần giữ.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:5E451688021C5E16C03924BC",
+      "SEVERITY:C2CB2E9395F49D59417FE0E6",
+      "SEVERITY:CEA6286D2BB32293A24EAE89",
+      "SEVERITY:F0F888AF0A4EE6ED85BDDB47",
+      "SEVERITY:FF1DB95919D55DF573B0EA17"
+    ],
+    "source_refs": [
+      "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445",
+      "EVIDENCE:3C394C690A35530F2AB31721",
+      "EVIDENCE:5B1854AD17ECCD3F5E941C47",
+      "EVIDENCE:65256ECFFD16E574A729002D",
+      "EVIDENCE:6CCDF61BBB4FA184472E795D",
+      "EVIDENCE:84906714DEB3580C84775572",
+      "EVIDENCE:86D07EF18A1A6ECD49B306FF",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F",
+      "EVIDENCE:FA542FB5096F8695BC0FAF57"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Object, callback, patch correctness và tác động runtime còn chờ chuyên gia.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:32:13+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B6C006D12AF0B8FBCA95AC90"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0202F0A901783E3BE7EAD6F2",
+      "CLAIM:06AB6C2171C071DD840E74A7",
+      "CLAIM:08B722C2C68F17727BEC9A89",
+      "CLAIM:0BBA1539AB3B86C071F01C87",
+      "CLAIM:1A76A2A57D255C438041C905",
+      "CLAIM:34044D1A7F2AB71FDA5C528B",
+      "CLAIM:3A2124D6BD3AC57477ABB87D",
+      "CLAIM:3DF8A0790450240C96987685",
+      "CLAIM:49E5AE8000C32D31A1AD1414",
+      "CLAIM:4E0CC07A953FE4404FF238E7",
+      "CLAIM:528B70D8ABC4FE345B1F49D4",
+      "CLAIM:5B9A65D27B473C8062D77D35",
+      "CLAIM:5C6AC785DC986F17592A7232",
+      "CLAIM:64C76D9A08F95A7C466A35C2",
+      "CLAIM:68D6260EB1C318FB301DBD0A",
+      "CLAIM:71E8944118E1AE42B56D952A",
+      "CLAIM:7288B9D514B854855522B49D",
+      "CLAIM:7CAEE0B0046F9AEF7418C784",
+      "CLAIM:82DC26A155C288FBEED411F5",
+      "CLAIM:85A0FF55A889904AD1F48CB9",
+      "CLAIM:907466C7DCEB515AE4359ED1",
+      "CLAIM:9AAB92789092D21348FFB4EC",
+      "CLAIM:A5E4D9810249A8F2C302F920",
+      "CLAIM:BC333E07674131236F8FD49A",
+      "CLAIM:BFE6583CD399E80C515399C3",
+      "CLAIM:C89CDB658C74FE75BD7BF49F",
+      "CLAIM:DC802F726BF139E3D9C15326",
+      "CLAIM:E631E842455E2F01C3A36A94",
+      "CLAIM:E751D3455AE0176836061695",
+      "CLAIM:E83E533A07AEC287CE9677F9",
+      "CLAIM:EE2FB480238D8C40E798E2A8",
+      "CLAIM:F492822FB71BA26C4A713EE8",
+      "CLAIM:FCBB6EC579DB4C61DF3852C4"
+    ],
+    "condition_refs": [
+      "CONDITION:DCE3E4D5C96ED73E20E8CC7D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Restart worker/DoS và memory lifetime violation được CNA công bố.",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-121810",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Dùng release sửa và kiểm bằng chứng worker chạy binary mới; hardening không thay thế sửa lifetime."
+    ],
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "distribution_status": [
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "documented_configuration_context": "Cấu hình sử dụng HTTP/3; CNA nêu OSS và Plus và các điều kiện ngoài kiểm soát tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free HTTP/3 có thể restart worker; nguồn giữ code execution ở mức khả năng có điều kiện.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-121810",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-20T11:19:22.935000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.",
+      "Trả lời có evidence: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-121810",
+    "normal_component_behavior": "Các tham chiếu tới context HTTP/3 chỉ được dùng khi owner còn sống, kể cả qua nhiều callback.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Code execution được CNA nêu có điều kiện liên quan ASLR; chưa được xác minh runtime, không đồng nghĩa root compromise.",
+    "publication_date": "2026-11-18T15:23:29.375000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:51858D491CB03622B399394A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free HTTP/3 có thể restart worker; nguồn giữ code execution ở mức khả năng có điều kiện.\n\n## 2. CVE identity và product scope\n\nCVE-2026-121810; published 2026-11-18T15:23:29.375000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-0BBA1539AB3B86C071F01C87|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 state tại worker; không có bằng chứng đủ để gộp với encoder-stream CVE-2026-42530. [[CLAIM-0BBA1539AB3B86C071F01C87|Claim / locator]].\n\n## 5. Normal component behavior\n\nCác tham chiếu tới context HTTP/3 chỉ được dùng khi owner còn sống, kể cả qua nhiều callback. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận lớp use-after-free nhưng không mô tả object hay đường cleanup. Điều kiện ngoài kiểm soát tác nhân vẫn là giới hạn cần giữ. [[CLAIM-528B70D8ABC4FE345B1F49D4|Claim / locator]].\n\n## 7. Relevant security principles\n\nQuy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nCấu hình sử dụng HTTP/3; CNA nêu OSS và Plus và các điều kiện ngoài kiểm soát tác nhân. [[CLAIM-0BBA1539AB3B86C071F01C87|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-FCBB6EC579DB4C61DF3852C4|Claim / locator]].\n\nFix 1.30.7/1.31.9, khoảng affected bắt đầu 1.25.0; không dùng khoảng hẹp của 42530. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nRestart worker/DoS và memory lifetime violation được CNA công bố. [[CLAIM-4E0CC07A953FE4404FF238E7|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCode execution được CNA nêu có điều kiện liên quan ASLR; chưa được xác minh runtime, không đồng nghĩa root compromise. [[CLAIM-3A2124D6BD3AC57477ABB87D|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng release sửa và kiểm bằng chứng worker chạy binary mới; hardening không thay thế sửa lifetime. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-FCBB6EC579DB4C61DF3852C4|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.7/1.31.9, khoảng affected bắt đầu 1.25.0; không dùng khoảng hẹp của 42530.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.\n- Trả lời có evidence: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?\n\n## 17. Discussion questions\n\nCùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?\n\nGợi ý đáp án: Không; cần đối chiếu đối tượng, commit và lịch sử release riêng trước khi kết luận trùng nguyên nhân.\n\n## 18. Claim-level evidence\n\n- applicability: [[CLAIM-0BBA1539AB3B86C071F01C87|CLAIM:0BBA1539AB3B86C071F01C87]]\n- impact: [[CLAIM-4E0CC07A953FE4404FF238E7|CLAIM:4E0CC07A953FE4404FF238E7]]\n- potential: [[CLAIM-3A2124D6BD3AC57477ABB87D|CLAIM:3A2124D6BD3AC57477ABB87D]]\n- mechanism: [[CLAIM-528B70D8ABC4FE345B1F49D4|CLAIM:528B70D8ABC4FE345B1F49D4]]\n- versions: [[CLAIM-FCBB6EC579DB4C61DF3852C4|CLAIM:FCBB6EC579DB4C61DF3852C4]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject, callback, patch correctness và tác động runtime còn chờ chuyên gia.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:0BBA1539AB3B86C071F01C87",
+      "CLAIM:4E0CC07A953FE4404FF238E7",
+      "CLAIM:3A2124D6BD3AC57477ABB87D",
+      "CLAIM:528B70D8ABC4FE345B1F49D4",
+      "CLAIM:FCBB6EC579DB4C61DF3852C4"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA xác nhận lớp use-after-free nhưng không mô tả object hay đường cleanup. Điều kiện ngoài kiểm soát tác nhân vẫn là giới hạn cần giữ.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:5E451688021C5E16C03924BC",
+      "SEVERITY:C2CB2E9395F49D59417FE0E6",
+      "SEVERITY:CEA6286D2BB32293A24EAE89",
+      "SEVERITY:F0F888AF0A4EE6ED85BDDB47",
+      "SEVERITY:FF1DB95919D55DF573B0EA17"
+    ],
+    "source_refs": [
+      "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445",
+      "EVIDENCE:3C394C690A35530F2AB31721",
+      "EVIDENCE:5B1854AD17ECCD3F5E941C47",
+      "EVIDENCE:65256ECFFD16E574A729002D",
+      "EVIDENCE:6CCDF61BBB4FA184472E795D",
+      "EVIDENCE:84906714DEB3580C84775572",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F",
+      "EVIDENCE:FA542FB5096F8695BC0FAF57"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:08:49+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:32:13+00:00",
+  "entity_id": "CVE:CVE-2026-121810",
+  "id": "HISTORY:815EE5D45D5A0F611EA4EA13"
+}

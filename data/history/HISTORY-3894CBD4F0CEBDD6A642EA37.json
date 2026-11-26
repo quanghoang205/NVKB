@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:632D9D6EAEF8DE7B8F281D70",
+    "claim_value": "\"Chia request nội dung thành các slice theo cấu hình.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:31+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1BDC13D789F2476808511ACB"
+    ],
+    "id": "CLAIM:632D9D6EAEF8DE7B8F281D70",
+    "name": "MODULE:NGX-HTTP-SLICE-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1BDC13D789F2476808511ACB"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SLICE-MODULE",
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:31+00:00",
+  "entity_id": "CLAIM:632D9D6EAEF8DE7B8F281D70",
+  "id": "HISTORY:3894CBD4F0CEBDD6A642EA37"
+}

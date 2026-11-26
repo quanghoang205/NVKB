@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:C988AC504D580493F03221DF",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:034D00750146B2091214ABB4",
+    "claim_value": "\"TLS và HTTP policy có thể kết thúc tại NGINX; upstream có kết nối và trust context riêng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:3CA4441F1D905E29DF89DFEB: proxy_pass",
+    "evidence_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:034D00750146B2091214ABB4",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "DEPLOYMENT:REVERSE-PROXY: normal_behavior",
+    "observation_key": "OBSERVATION:FC8DCF3E5C9397C859533FCF",
+    "observed_at": "2026-11-25T02:32:57+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "DEPLOYMENT:REVERSE-PROXY",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:12:27+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:034D00750146B2091214ABB4",
+    "claim_value": "\"TLS và HTTP policy có thể kết thúc tại NGINX; upstream có kết nối và trust context riêng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "id": "CLAIM:034D00750146B2091214ABB4",
+    "name": "DEPLOYMENT:REVERSE-PROXY: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:27+00:00",
+  "entity_id": "CLAIM:034D00750146B2091214ABB4",
+  "id": "HISTORY:65B90F5A68BA8CDBFF9E615D"
+}

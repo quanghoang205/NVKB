@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:0E7010E264B65B6C0E5F67F3",
+    "claim_value": "\"Frame được gắn stream ID; flow control và trạng thái stream điều phối nhiều request/response trên kết nối.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:20+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DED9E38342759D8072604063"
+    ],
+    "id": "CLAIM:0E7010E264B65B6C0E5F67F3",
+    "name": "PROTOCOL:HTTP-2: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DED9E38342759D8072604063"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:44:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:20+00:00",
+  "entity_id": "CLAIM:0E7010E264B65B6C0E5F67F3",
+  "id": "HISTORY:8F00ECE1FF698485622CD37E"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:E11C8037E0F857BC8B4DDF9B"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-28753 related_protocols PROTOCOL:SMTP",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:2DAABF5F6EA3DD9ED4CE8A5D",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:SMTP",
+    "predicate": "related_protocols",
+    "rationale": "Legacy association: Protocol context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Protocol context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:19F8147C60F6BF74BA023F44",
+      "EVIDENCE:1AFB3C299E364CB222680BE6",
+      "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+      "EVIDENCE:4EB14B422FD37FC4AE185DD3",
+      "EVIDENCE:B08BA542EDDE73461AFF4370",
+      "EVIDENCE:C5A225F86EA1A78912011287",
+      "EVIDENCE:CF77599A9366449D824011BC",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T04:13:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:E11C8037E0F857BC8B4DDF9B"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-28753 related_protocols PROTOCOL:SMTP",
+    "entity_type": "Relationship",
+    "id": "REL:2DAABF5F6EA3DD9ED4CE8A5D",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:SMTP",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:19F8147C60F6BF74BA023F44",
+      "EVIDENCE:1AFB3C299E364CB222680BE6",
+      "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+      "EVIDENCE:4EB14B422FD37FC4AE185DD3",
+      "EVIDENCE:B08BA542EDDE73461AFF4370",
+      "EVIDENCE:C5A225F86EA1A78912011287",
+      "EVIDENCE:CF77599A9366449D824011BC",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T02:33:48+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:06+00:00",
+  "entity_id": "REL:2DAABF5F6EA3DD9ED4CE8A5D",
+  "id": "HISTORY:95A16F686AF1CD5C81B9BEB5"
+}

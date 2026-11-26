@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:22+00:00",
+  "content_hash": "370ed8c0e6da22c8b8f4ad0230b6c12e6ec8ae807eca034220070828f25684fb",
+  "content_type": "text/html",
+  "etag": "\"39999bdb906922b9620e511317fa6870\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/documentation/snapshots/370ed8c0e6da22c8b8f4ad0230b6c12e6ec8ae807eca034220070828f25684fb.html",
+  "retrieved_at": "2026-11-25T02:32:22+00:00",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc8446.html"
+}

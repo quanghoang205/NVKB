@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CC15628688F7E687EC5CBC7D",
+    "claim_value": "\"Cache có thể là built-in hoặc shared theo cấu hình; resumption cần giữ đúng ngữ cảnh xác thực.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "id": "CLAIM:CC15628688F7E687EC5CBC7D",
+    "name": "DIRECTIVE:SSL-SESSION-CACHE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "CLAIM:CC15628688F7E687EC5CBC7D",
+  "id": "HISTORY:A5F1B739D82CF02E1809F724"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "fa48e56e7ae4be98b411cdda6788a30561fc6a6eaa210387929d273f597c2c0b",
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "Debian unstable: fixed_version=1.30.0-4, status=fixed.",
+    "document_title": "CVE-2026-40460",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E5D822B78EA98EB5AC26D1DA",
+    "id": "EVIDENCE:E5D822B78EA98EB5AC26D1DA",
+    "local_snapshot_path": "data/raw/distribution/snapshots/fa48e56e7ae4be98b411cdda6788a30561fc6a6eaa210387929d273f597c2c0b.html",
+    "name": "CVE-2026-40460",
+    "paraphrase": "Debian unstable: fixed_version=1.30.0-4, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:51+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-40460",
+    "updated_at": "2026-11-25T02:27:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:51+00:00",
+  "entity_id": "EVIDENCE:E5D822B78EA98EB5AC26D1DA",
+  "id": "HISTORY:AA10AA57D6BFB566BBFC3D85"
+}

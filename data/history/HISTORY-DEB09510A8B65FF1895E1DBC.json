@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:174C488D132B37C8DF1E208A",
+    "claim_value": "\"When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311"
+    ],
+    "id": "CLAIM:174C488D132B37C8DF1E208A",
+    "name": "CVE:CVE-2024-31079: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "CLAIM:174C488D132B37C8DF1E208A",
+  "id": "HISTORY:DEB09510A8B65FF1895E1DBC"
+}

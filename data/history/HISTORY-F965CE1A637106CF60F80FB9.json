@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D39A2BC0EB48A6AD84234601",
+    "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AFED1E0F5D3FB3E985B8EB38"
+    ],
+    "id": "CLAIM:D39A2BC0EB48A6AD84234601",
+    "name": "MODULE:NGX-MAIL-POP3-MODULE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AFED1E0F5D3FB3E985B8EB38"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:51+00:00",
+  "entity_id": "CLAIM:D39A2BC0EB48A6AD84234601",
+  "id": "HISTORY:F965CE1A637106CF60F80FB9"
+}

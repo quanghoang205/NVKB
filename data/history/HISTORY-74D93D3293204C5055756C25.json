@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:EC7DA6D9CE36FD4FB0951592",
+    "claim_value": "\"Module không được làm hỏng bộ nhớ hoặc chặn event loop quá lâu.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "id": "CLAIM:EC7DA6D9CE36FD4FB0951592",
+    "name": "COMPONENT:WORKER-PROCESS: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:11+00:00",
+  "entity_id": "CLAIM:EC7DA6D9CE36FD4FB0951592",
+  "id": "HISTORY:74D93D3293204C5055756C25"
+}

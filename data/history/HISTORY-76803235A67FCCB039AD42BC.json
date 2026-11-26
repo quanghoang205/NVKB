@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:69E2D072E22F276DFE21F732",
+    "claim_value": "\"Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "id": "CLAIM:69E2D072E22F276DFE21F732",
+    "name": "LEARNING:PATH-04: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:35+00:00",
+  "entity_id": "CLAIM:69E2D072E22F276DFE21F732",
+  "id": "HISTORY:76803235A67FCCB039AD42BC"
+}

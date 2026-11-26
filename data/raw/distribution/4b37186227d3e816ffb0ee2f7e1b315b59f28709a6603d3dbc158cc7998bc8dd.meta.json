@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:15+00:00",
+  "content_hash": "59b0ccdafbffedd806a8468028873f4822ad93ba32174359789c4a75bb807f49",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/59b0ccdafbffedd806a8468028873f4822ad93ba32174359789c4a75bb807f49.html",
+  "retrieved_at": "2026-11-25T02:26:15+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-31079"
+}

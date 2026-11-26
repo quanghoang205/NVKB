@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:07+00:00",
+  "content_hash": "97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d.html",
+  "retrieved_at": "2026-11-25T02:28:07+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42533"
+}

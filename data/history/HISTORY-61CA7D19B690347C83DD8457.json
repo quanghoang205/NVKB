@@ -1,0 +1,52 @@
+{
+  "action": "modified",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:D59671517D032578C31B6C21",
+    "claim_value": "\"Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "id": "CLAIM:D59671517D032578C31B6C21",
+    "name": "CONCEPT:CVE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn. NVKB v1.1 EV-01: snapshot chỉ có thông báo yêu cầu JavaScript, không chứa nội dung hỗ trợ nhận định; cần nguồn trực tiếp và curator review.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T03:32:32+00:00",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:D59671517D032578C31B6C21",
+    "claim_value": "\"Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "id": "CLAIM:D59671517D032578C31B6C21",
+    "name": "CONCEPT:CVE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T03:32:32+00:00",
+  "entity_id": "CLAIM:D59671517D032578C31B6C21",
+  "id": "HISTORY:61CA7D19B690347C83DD8457"
+}

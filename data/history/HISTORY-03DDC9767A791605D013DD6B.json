@@ -1,0 +1,312 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow when using ngx_http_v3_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:79A5B9E9C81749970DB7E129"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:050F10AF63BA758CAC3D110E",
+      "CLAIM:13D1C8B3547720EF6A361B95",
+      "CLAIM:1BA208C9F2F8D003D7B18784",
+      "CLAIM:1F33FBBE0C55B3BFB19E7828",
+      "CLAIM:2135C2168BF6E659F675D037",
+      "CLAIM:289726F6C70FA81F15F5EBAC",
+      "CLAIM:28BE6D7459BCF95D119CBD7A",
+      "CLAIM:3C6268390490D3D31CB2D96B",
+      "CLAIM:3EC846730DB901D493DB5EC0",
+      "CLAIM:48C1A9E38726C4612D838F73",
+      "CLAIM:4BA7A91E8022275D823916E0",
+      "CLAIM:536790387ABB9AF2158AFFDF",
+      "CLAIM:53A9D8ADBF5178778CF087AF",
+      "CLAIM:6795801A5E888A69E7AD5EF4",
+      "CLAIM:69B089CCDE3D4B61B6C00DA2",
+      "CLAIM:6E1BF6C0C713876822F731C7",
+      "CLAIM:7B483D88A880C8510495275E",
+      "CLAIM:82CB8DC00DC7591AC83B034B",
+      "CLAIM:981C11AF6B6457453D654639",
+      "CLAIM:98B28BF148DC7687EAE1CAC6",
+      "CLAIM:9ACCF876754104726BFB9F8B",
+      "CLAIM:A097CB8571D53B2299087299",
+      "CLAIM:C500D751A078E848F0885003",
+      "CLAIM:E190383CB1E9177EF1AFCD47",
+      "CLAIM:E568339635FF59F746C6A31C",
+      "CLAIM:F4FFFFF00E0418043F0CA550",
+      "CLAIM:FDC47E921CB761C1A83D65AF"
+    ],
+    "condition_refs": [
+      "CONDITION:A5678AC816B8CD260B06524E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "cve_id": "CVE-2026-90439",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:0D6287489090BE5A7C13C206",
+      "PACKAGE:A09C332C1B42560049784CEE",
+      "PACKAGE:1AB390C0E7F0F578A1AA9955"
+    ],
+    "distribution_status": [
+      "PACKAGE:0D6287489090BE5A7C13C206",
+      "PACKAGE:A09C332C1B42560049784CEE",
+      "PACKAGE:1AB390C0E7F0F578A1AA9955"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-90439 ghi nhận: Buffer overflow when using ngx_http_v3_module. Phạm vi upstream: 1.29.2-1.31.5. Bản sửa được công bố: 1.31.6+, 1.30.5+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.5",
+      "VERSION:NGINX-1.31.6"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.5",
+      "VERSION:NGINX-1.31.6"
+    ],
+    "id": "CVE:CVE-2026-90439",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-09-16T15:09:43.403000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-90439",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-09-15T14:27:26.047000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D03173059B8A52EB8D5847E5"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow when using ngx_http_v3_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:2970146DE2FABA4C13944577",
+      "SEVERITY:451A928A4F4D6F470718BF59",
+      "SEVERITY:51FC03B45EAF8D4517D568DF",
+      "SEVERITY:84233FB375E7867EF70DE276",
+      "SEVERITY:F4FB5EECC257760C157FBF51"
+    ],
+    "source_refs": [
+      "EVIDENCE:2C3479DA69C20FDBA07AC92B",
+      "EVIDENCE:54EAAC75D1E52B666B8C855A",
+      "EVIDENCE:55674A60244B91435EFF0035",
+      "EVIDENCE:8A5EFD9F2F8B58978470483B",
+      "EVIDENCE:9CACCA6E8BBE80A22AD98B06",
+      "EVIDENCE:A71EC4E15514D61BE101A79A",
+      "EVIDENCE:C94AB35CB1BA18616960E146",
+      "EVIDENCE:E22B6DDECF64286781AE8961"
+    ],
+    "title": "Buffer overflow when using ngx_http_v3_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:47+00:00",
+    "upstream_affected_expression": "1.29.2-1.31.5",
+    "upstream_unaffected_expression": "1.31.6+, 1.30.5+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow when using ngx_http_v3_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:79A5B9E9C81749970DB7E129"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:050F10AF63BA758CAC3D110E",
+      "CLAIM:13D1C8B3547720EF6A361B95",
+      "CLAIM:1BA208C9F2F8D003D7B18784",
+      "CLAIM:1F33FBBE0C55B3BFB19E7828",
+      "CLAIM:2135C2168BF6E659F675D037",
+      "CLAIM:289726F6C70FA81F15F5EBAC",
+      "CLAIM:28BE6D7459BCF95D119CBD7A",
+      "CLAIM:3C6268390490D3D31CB2D96B",
+      "CLAIM:3EC846730DB901D493DB5EC0",
+      "CLAIM:48C1A9E38726C4612D838F73",
+      "CLAIM:4BA7A91E8022275D823916E0",
+      "CLAIM:536790387ABB9AF2158AFFDF",
+      "CLAIM:53A9D8ADBF5178778CF087AF",
+      "CLAIM:6795801A5E888A69E7AD5EF4",
+      "CLAIM:69B089CCDE3D4B61B6C00DA2",
+      "CLAIM:6E1BF6C0C713876822F731C7",
+      "CLAIM:7B483D88A880C8510495275E",
+      "CLAIM:82CB8DC00DC7591AC83B034B",
+      "CLAIM:98B28BF148DC7687EAE1CAC6",
+      "CLAIM:9ACCF876754104726BFB9F8B",
+      "CLAIM:A097CB8571D53B2299087299",
+      "CLAIM:C500D751A078E848F0885003",
+      "CLAIM:E190383CB1E9177EF1AFCD47",
+      "CLAIM:E568339635FF59F746C6A31C",
+      "CLAIM:F4FFFFF00E0418043F0CA550"
+    ],
+    "condition_refs": [
+      "CONDITION:A5678AC816B8CD260B06524E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "cve_id": "CVE-2026-90439",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:0D6287489090BE5A7C13C206",
+      "PACKAGE:A09C332C1B42560049784CEE",
+      "PACKAGE:1AB390C0E7F0F578A1AA9955"
+    ],
+    "distribution_status": [
+      "PACKAGE:0D6287489090BE5A7C13C206",
+      "PACKAGE:A09C332C1B42560049784CEE",
+      "PACKAGE:1AB390C0E7F0F578A1AA9955"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-90439 ghi nhận: Buffer overflow when using ngx_http_v3_module. Phạm vi upstream: 1.29.2-1.31.5. Bản sửa được công bố: 1.31.6+, 1.30.5+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.5",
+      "VERSION:NGINX-1.31.6"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.5",
+      "VERSION:NGINX-1.31.6"
+    ],
+    "id": "CVE:CVE-2026-90439",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-09-16T15:09:43.403000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-90439",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-09-15T14:27:26.047000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D03173059B8A52EB8D5847E5"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow when using ngx_http_v3_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:2970146DE2FABA4C13944577",
+      "SEVERITY:451A928A4F4D6F470718BF59",
+      "SEVERITY:51FC03B45EAF8D4517D568DF",
+      "SEVERITY:84233FB375E7867EF70DE276",
+      "SEVERITY:F4FB5EECC257760C157FBF51"
+    ],
+    "source_refs": [
+      "EVIDENCE:2C3479DA69C20FDBA07AC92B",
+      "EVIDENCE:54EAAC75D1E52B666B8C855A",
+      "EVIDENCE:55674A60244B91435EFF0035",
+      "EVIDENCE:8A5EFD9F2F8B58978470483B",
+      "EVIDENCE:9CACCA6E8BBE80A22AD98B06",
+      "EVIDENCE:A71EC4E15514D61BE101A79A",
+      "EVIDENCE:C94AB35CB1BA18616960E146",
+      "EVIDENCE:E22B6DDECF64286781AE8961"
+    ],
+    "title": "Buffer overflow when using ngx_http_v3_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:55+00:00",
+    "upstream_affected_expression": "1.29.2-1.31.5",
+    "upstream_unaffected_expression": "1.31.6+, 1.30.5+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:40:47+00:00",
+  "entity_id": "CVE:CVE-2026-90439",
+  "id": "HISTORY:03DDC9767A791605D013DD6B"
+}

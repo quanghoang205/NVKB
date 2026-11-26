@@ -1,0 +1,24 @@
+{
+  "claim_refs": [
+    "CLAIM:ECD0C101E57066AD329CC9C2"
+  ],
+  "created_at": "2026-11-25T02:28:11+00:00",
+  "cve_ref": "CVE:CVE-2026-42926",
+  "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+  "distribution": "debian",
+  "ecosystem": "debian",
+  "entity_type": "DistributionPackage",
+  "fixed_version": "1.30.0-4",
+  "id": "PACKAGE:721C0A10801106A518865CBB",
+  "name": "nginx / Debian unstable / CVE-2026-42926",
+  "package_name": "nginx",
+  "patch_status": "fixed",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "release": "unstable",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:9FC90995D333EA93BBB26230"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "VERIFIED"
+}

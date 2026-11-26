@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:5EC9173DBFAD5EE66AEC9240"
+    ],
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "description": "CVE:CVE-2025-53859 classified_as WEAKNESS:CWE-125",
+    "entity_type": "Relationship",
+    "id": "REL:1E66EF65B7291FE1F4BC327B",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-125",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:34+00:00",
+  "entity_id": "REL:1E66EF65B7291FE1F4BC327B",
+  "id": "HISTORY:86C2355A12554896829B39FF"
+}

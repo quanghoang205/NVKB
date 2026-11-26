@@ -1,0 +1,52 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:316024E12C874943C69F4DA9",
+    "claim_value": "\"Đường lỗi không tiếp tục như đường thành công.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:40:24+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:8B4D10F312B6AD83E27780ED",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:E080BE810C888D9012E21ECF",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "id": "CLAIM:316024E12C874943C69F4DA9",
+    "name": "CVE:CVE-2026-120993: security_assumption_violated",
+    "predicate": "security_assumption_violated",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:8B4D10F312B6AD83E27780ED",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:E080BE810C888D9012E21ECF",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T02:40:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:25+00:00",
+  "entity_id": "CLAIM:316024E12C874943C69F4DA9",
+  "id": "HISTORY:44703F510344D468ACD528AA"
+}

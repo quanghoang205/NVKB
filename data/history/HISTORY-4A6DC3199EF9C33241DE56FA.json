@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:DDC5997F8CB420E79FF606FB",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:E8A2065F039778F6967F868F",
+    "claim_value": "\"## Cơ chế và ownership\\n\\nPreread quan sát phần đầu connection để lấy metadata phục vụ quyết định định tuyến. Proxy chưa kết thúc TLS nên không có cùng chứng cứ với endpoint hoàn tất handshake. Buffer đầu vào, vị trí đã đọc và biến kết quả cần được giữ trong context connection; đọc thiếu dữ liệu phải dẫn đến chờ hoặc lỗi có kiểm soát, không để biến chưa xác định thành quyết định routing.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:04+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4BA76FA5ED0E407DE3B76040"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E8A2065F039778F6967F868F",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE: v1.3:knowledge:Cơ chế và ownership",
+    "observed_at": "2026-11-25T05:15:04+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế và ownership",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4BA76FA5ED0E407DE3B76040"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "updated_at": "2026-11-25T05:15:04+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:04+00:00",
+  "entity_id": "CLAIM:E8A2065F039778F6967F868F",
+  "id": "HISTORY:4A6DC3199EF9C33241DE56FA"
+}

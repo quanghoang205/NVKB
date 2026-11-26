@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:CC8E3533F4450848F1C0323B",
+    "authority": "CVE Program",
+    "authority_scope": "CVE Program",
+    "claim_id": "CLAIM:87BA29E136E2AB0C1590356A",
+    "claim_value": "\"CVE-2026-42926\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "description": "cve_id",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:30B41517CE817A5E5C7EA810: /cveMetadata",
+    "evidence_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:87BA29E136E2AB0C1590356A",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42926: cve_id",
+    "observation_key": "OBSERVATION:B53DF3994E5F81B066E3C00F",
+    "observed_at": "2026-11-25T02:28:10+00:00",
+    "predicate": "cve_id",
+    "product_scope": "CVE:CVE-2026-42926",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T04:12:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:87BA29E136E2AB0C1590356A",
+    "claim_value": "\"CVE-2026-42926\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "id": "CLAIM:87BA29E136E2AB0C1590356A",
+    "name": "CVE:CVE-2026-42926: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T02:28:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:42+00:00",
+  "entity_id": "CLAIM:87BA29E136E2AB0C1590356A",
+  "id": "HISTORY:BF7D87AE478352DB3F7A7DFD"
+}

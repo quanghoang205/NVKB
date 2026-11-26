@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:E3562F503A538B62C46B2D1F",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:72A1AAFA8CAA2289360AB838",
+    "claim_value": "\"## Luồng quyết định phòng vệ\\n\\nBắt đầu từ inventory do quản trị viên cung cấp: product chính xác, version, distribution/release/package nếu có, origin và thời điểm quan sát. Thiếu product hoặc dữ liệu release phù hợp thì NEEDS_REVIEW. Chọn source đúng scope; so sánh version đúng ecosystem; ghi kết quả so sánh cùng locator. Sau đó tách kết luận runtime khỏi kết quả số học.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:14+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:72A1AAFA8CAA2289360AB838",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:PATCH-VERIFICATION: pilot_section:Luồng quyết định phòng vệ",
+    "observed_at": "2026-11-25T04:21:15+00:00",
+    "predicate": "pilot_section:Luồng quyết định phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+    "updated_at": "2026-11-25T04:21:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:15+00:00",
+  "entity_id": "CLAIM:72A1AAFA8CAA2289360AB838",
+  "id": "HISTORY:15D4CF687B343139D5148062"
+}

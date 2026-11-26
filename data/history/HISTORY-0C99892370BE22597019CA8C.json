@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:68D335FE37976578DD9DEA88"
+    ],
+    "created_at": "2026-11-25T02:26:35+00:00",
+    "description": "CVE:CVE-2025-53859 distribution_fix PACKAGE:0A1BF6C24E71076E452D607C",
+    "entity_type": "Relationship",
+    "id": "REL:7799A06E2E52C6B668A7AB37",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:0A1BF6C24E71076E452D607C",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C5A54FB0FA1539D69278D03"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:35+00:00",
+  "entity_id": "REL:7799A06E2E52C6B668A7AB37",
+  "id": "HISTORY:0C99892370BE22597019CA8C"
+}

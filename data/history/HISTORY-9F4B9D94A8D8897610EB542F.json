@@ -1,0 +1,35 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "cwe_id": "CWE-172",
+    "description": "CWE-172 Encoding Error",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-172",
+    "name": "CWE-172",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7285356524F3AD0BF37D5F1B",
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E"
+    ],
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "cwe_id": "CWE-172",
+    "description": "CWE-172 Encoding Error",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-172",
+    "name": "CWE-172",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7285356524F3AD0BF37D5F1B"
+    ],
+    "updated_at": "2026-11-25T02:28:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "WEAKNESS:CWE-172",
+  "id": "HISTORY:9F4B9D94A8D8897610EB542F"
+}

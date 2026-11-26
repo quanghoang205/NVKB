@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c815570139fa31596c940fb52a5c0b04fc6d057fa8a76fe620c439afe544726d",
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-123007",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:FB40C5879DD41E0FB053EFA8",
+    "id": "EVIDENCE:FB40C5879DD41E0FB053EFA8",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/c815570139fa31596c940fb52a5c0b04fc6d057fa8a76fe620c439afe544726d.json",
+    "name": "CVE-2026-123007",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:26:59+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "EVIDENCE:FB40C5879DD41E0FB053EFA8",
+  "id": "HISTORY:73DD6F9701FC572DF8AFE8F8"
+}

@@ -1,0 +1,36 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "entity_type": "Reference",
+    "id": "REFERENCE:A9E3102A45211550FAFF6A2F",
+    "name": "NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:EF03D902D12B9BD739833F79"
+    ],
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2025/NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "entity_type": "Reference",
+    "id": "REFERENCE:A9E3102A45211550FAFF6A2F",
+    "name": "NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EF03D902D12B9BD739833F79"
+    ],
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2025/NYEUJX7NCBCGJGXDFVXNMAAMJDFSE45G.html",
+    "updated_at": "2026-11-25T02:26:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REFERENCE:A9E3102A45211550FAFF6A2F",
+  "id": "HISTORY:DCBEE6C6206F9A6F3B478ABE"
+}

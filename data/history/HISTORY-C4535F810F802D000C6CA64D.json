@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:5349004361D1BFAA9571A4AF",
+    "claim_value": "{\"distribution\": \"debian\", \"fixed_version\": \"1.18.0-6.1+deb11u6\", \"patch_status\": \"fixed\", \"release\": \"bullseye\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "description": "distribution_patch_status",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D873C288BE979B27529DFB34"
+    ],
+    "id": "CLAIM:5349004361D1BFAA9571A4AF",
+    "name": "PACKAGE:C4E0E0BBC995CB3E5D4A1090: distribution_patch_status",
+    "predicate": "distribution_patch_status",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D873C288BE979B27529DFB34"
+    ],
+    "subject_entity_id": "PACKAGE:C4E0E0BBC995CB3E5D4A1090",
+    "updated_at": "2026-11-25T02:28:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:23+00:00",
+  "entity_id": "CLAIM:5349004361D1BFAA9571A4AF",
+  "id": "HISTORY:C4535F810F802D000C6CA64D"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:200B1DB8883DE6B34EA21D4F",
+    "claim_value": "\"NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\\n\\nImpact:\\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:54+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F"
+    ],
+    "id": "CLAIM:200B1DB8883DE6B34EA21D4F",
+    "name": "CVE:CVE-2026-97205: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T02:28:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:54+00:00",
+  "entity_id": "CLAIM:200B1DB8883DE6B34EA21D4F",
+  "id": "HISTORY:1B789BFF3265ED075CB36C37"
+}

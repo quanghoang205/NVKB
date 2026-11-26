@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D83A08422C83183F80B453BE",
+    "claim_value": "\"Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "id": "CLAIM:D83A08422C83183F80B453BE",
+    "name": "MODULE:NGX-HTTP-V2-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+    "updated_at": "2026-11-25T02:32:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:41+00:00",
+  "entity_id": "CLAIM:D83A08422C83183F80B453BE",
+  "id": "HISTORY:256AF5973832471DBA86AE03"
+}

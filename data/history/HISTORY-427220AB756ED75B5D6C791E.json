@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:5F6DEFBB7DCA9E996355E517",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:B4661F8BE2B935AF748D532C",
+    "claim_value": "\"## Invariant và tradeoff\\n\\nChính sách của server được chọn phải chi phối client-auth decision, kể cả server không phải mặc định và handshake rút gọn. Cache làm giảm độ trễ nhưng kéo dài thời gian state tồn tại; cần scope, timeout và quy tắc đổi khóa rõ ràng. OCSP bổ sung trạng thái thu hồi nhưng tạo phụ thuộc vào resolver, responder và timeout; chính sách lỗi phải được thiết kế rõ thay vì suy từ việc đã bật TLS.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B4661F8BE2B935AF748D532C",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: v1.3:knowledge:Invariant và tradeoff",
+    "observed_at": "2026-11-25T05:15:03+00:00",
+    "predicate": "v1.3:knowledge:Invariant và tradeoff",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T05:15:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:03+00:00",
+  "entity_id": "CLAIM:B4661F8BE2B935AF748D532C",
+  "id": "HISTORY:427220AB756ED75B5D6C791E"
+}

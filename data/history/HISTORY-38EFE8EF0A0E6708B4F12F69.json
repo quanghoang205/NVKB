@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:569E2B97899B4238CD2C5C5A",
+    "claim_value": "\"Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "id": "CLAIM:569E2B97899B4238CD2C5C5A",
+    "name": "COMPONENT:WORKER-PROCESS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:11+00:00",
+  "entity_id": "CLAIM:569E2B97899B4238CD2C5C5A",
+  "id": "HISTORY:38EFE8EF0A0E6708B4F12F69"
+}

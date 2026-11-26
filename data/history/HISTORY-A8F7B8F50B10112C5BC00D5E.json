@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:992FCF3E4E9209B5DC0A1519",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "id": "CLAIM:992FCF3E4E9209B5DC0A1519",
+    "name": "CONCEPT:BACKPORT: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T02:33:08+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:08+00:00",
+  "entity_id": "CLAIM:992FCF3E4E9209B5DC0A1519",
+  "id": "HISTORY:A8F7B8F50B10112C5BC00D5E"
+}

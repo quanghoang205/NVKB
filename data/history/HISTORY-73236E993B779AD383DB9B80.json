@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:8859A7219A49F7CDDAFA9ABD",
+    "claim_refs": [
+      "CLAIM:BDA9F815AEADD74C139FF530"
+    ],
+    "created_at": "2026-11-25T02:28:06+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:9F47E8D0216114CCEA653910",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42533 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:64F12AA04A1FC09E390CD768"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42533",
+    "updated_at": "2026-11-25T04:13:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:B1241065459D6F97B98B2DC1",
+    "claim_refs": [
+      "CLAIM:BDA9F815AEADD74C139FF530"
+    ],
+    "created_at": "2026-11-25T02:28:06+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:9F47E8D0216114CCEA653910",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-42533 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:64F12AA04A1FC09E390CD768"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42533",
+    "updated_at": "2026-11-25T04:13:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:17+00:00",
+  "entity_id": "SEVERITY:9F47E8D0216114CCEA653910",
+  "id": "HISTORY:73236E993B779AD383DB9B80"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "3f8666423bdc17b16d6d4889b9e17ea8b07e3823d154728a15fb5ee194b349e0",
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "description": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "document_title": "POP3",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0D8FBF067DC0496EB9345796",
+    "id": "EVIDENCE:0D8FBF067DC0496EB9345796",
+    "local_snapshot_path": "data/raw/documentation/snapshots/3f8666423bdc17b16d6d4889b9e17ea8b07e3823d154728a15fb5ee194b349e0.html",
+    "name": "POP3",
+    "paraphrase": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:26+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc1939.html",
+    "updated_at": "2026-11-25T02:32:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:26+00:00",
+  "entity_id": "EVIDENCE:0D8FBF067DC0496EB9345796",
+  "id": "HISTORY:B9E64578BF9369DABC233474"
+}

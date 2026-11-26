@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0E0D0D78FC242CF1E2D2B6A9"
+    ],
+    "created_at": "2026-11-25T02:28:26+00:00",
+    "description": "CVE:CVE-2026-48142 affects PRODUCT:NGINX-OSS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:E41258A56B4158B3CA9A7A38",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "rationale": "Legacy association: Advisory product applicability. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Advisory product applicability",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:C0617F819EAADD029A16979F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-48142",
+    "updated_at": "2026-11-25T04:13:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:0E0D0D78FC242CF1E2D2B6A9"
+    ],
+    "created_at": "2026-11-25T02:28:26+00:00",
+    "description": "CVE:CVE-2026-48142 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:E41258A56B4158B3CA9A7A38",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C0617F819EAADD029A16979F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-48142",
+    "updated_at": "2026-11-25T02:28:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:09+00:00",
+  "entity_id": "REL:E41258A56B4158B3CA9A7A38",
+  "id": "HISTORY:B12FA9B2890C19E0420C50E8"
+}

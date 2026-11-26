@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d",
+    "created_at": "2026-11-25T02:28:07+00:00",
+    "description": "Debian trixie: fixed_version=1.26.3-3+deb13u8, status=fixed.",
+    "document_title": "CVE-2026-42533",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0D9F5CDDE46B4453F639B796",
+    "id": "EVIDENCE:0D9F5CDDE46B4453F639B796",
+    "local_snapshot_path": "data/raw/distribution/snapshots/97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d.html",
+    "name": "CVE-2026-42533",
+    "paraphrase": "Debian trixie: fixed_version=1.26.3-3+deb13u8, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:07+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=trixie",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42533",
+    "updated_at": "2026-11-25T02:28:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:07+00:00",
+  "entity_id": "EVIDENCE:0D9F5CDDE46B4453F639B796",
+  "id": "HISTORY:14B3DE4B5768F04409A4FB4D"
+}

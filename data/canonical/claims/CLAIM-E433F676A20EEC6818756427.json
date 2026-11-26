@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:580002A0CBC5BBE2D43A71AA",
+  "authority": "CNA F5 / CVE Program",
+  "claim_id": "CLAIM:E433F676A20EEC6818756427",
+  "claim_value": "\"NGINX cấu hình làm mail proxy; nguồn không cho thêm điều kiện đủ để thu hẹp theo SMTP/IMAP/POP3 riêng.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:16:34+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "evidence_refs": [
+    "EVIDENCE:18D010DA645C4BDD8EB5428B"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:E433F676A20EEC6818756427",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "UNVERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-113425: v1.3:applicability",
+  "observed_at": "2026-11-25T05:16:34+00:00",
+  "predicate": "v1.3:applicability",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:16:34+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "CNA F5 / CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:18D010DA645C4BDD8EB5428B"
+  ],
+  "source_support_status": "SUPPORTED",
+  "subject_entity_id": "CVE:CVE-2026-113425",
+  "updated_at": "2026-11-25T05:16:34+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "UNVERIFIED",
+  "version_scope": "Document snapshot 2026-11-25T02:26:35+00:00; CVE versions are scoped separately."
+}

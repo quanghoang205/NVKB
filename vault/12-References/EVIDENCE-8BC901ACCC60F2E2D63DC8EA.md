@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:8BC901ACCC60F2E2D63DC8EA
+title: CVE-2026-9256
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE-2026-9256
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# CVE-2026-9256
+
+Định danh, trạng thái và ngày công bố từ CVE Program.
+
+- Nguồn: [CVE Program](https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/9xxx/CVE-2026-9256.json)
+- Authority gốc: CVE Program / original CNA (see record)
+- Vai trò kênh: DISTRIBUTION_CHANNEL
+- Locator: `/cveMetadata`
+
+- Truy xuất: 2026-11-25T02:28:39+00:00
+- SHA-256: `6bd79b7fb44bc4c4e2e08d53052ef32d526ef4ed0fc1485e3a99da02f7d747f8`
+- Snapshot từ project root: `data/raw/cve/snapshots/6bd79b7fb44bc4c4e2e08d53052ef32d526ef4ed0fc1485e3a99da02f7d747f8.json`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

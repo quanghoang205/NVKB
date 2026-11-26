@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:77EF49AAF7DF74D147E73924",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:4FC947656768E2341FF2DFA4",
+    "claim_value": "\"Vòng lặp gọi backend sự kiện của hệ điều hành, xử lý các callback sẵn sàng và chạy timer đến hạn.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:A96D5C39CC7296B3FBC37822: Event loop",
+    "evidence_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:4FC947656768E2341FF2DFA4",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:EVENT-LOOP: normal_behavior",
+    "observation_key": "OBSERVATION:B6A08BD01087872DBC719DCE",
+    "observed_at": "2026-11-25T02:32:04+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "COMPONENT:EVENT-LOOP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T04:12:36+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4FC947656768E2341FF2DFA4",
+    "claim_value": "\"Vòng lặp gọi backend sự kiện của hệ điều hành, xử lý các callback sẵn sàng và chạy timer đến hạn.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "id": "CLAIM:4FC947656768E2341FF2DFA4",
+    "name": "COMPONENT:EVENT-LOOP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A96D5C39CC7296B3FBC37822"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:36+00:00",
+  "entity_id": "CLAIM:4FC947656768E2341FF2DFA4",
+  "id": "HISTORY:56117FC9D23E2FCFB904BFBB"
+}

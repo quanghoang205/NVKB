@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "3c6eaefc37b94d7f69da2f3b16a42e96a04dabeb358eaedd5bbc36f31f1d0532",
+    "created_at": "2026-11-25T02:26:35+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u3, status=fixed.",
+    "document_title": "CVE-2025-53859",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C4CC970ABD7C2BB47AB5A90B",
+    "id": "EVIDENCE:C4CC970ABD7C2BB47AB5A90B",
+    "local_snapshot_path": "data/raw/distribution/snapshots/3c6eaefc37b94d7f69da2f3b16a42e96a04dabeb358eaedd5bbc36f31f1d0532.html",
+    "name": "CVE-2025-53859",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u3, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:35+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:35+00:00",
+  "entity_id": "EVIDENCE:C4CC970ABD7C2BB47AB5A90B",
+  "id": "HISTORY:A077CC403EA55DD46C4EBBA2"
+}

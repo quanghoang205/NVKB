@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "23c8a6c3f3812d748e74271efb8d6717b66fb841fa2ed2fd233990f62a1955f2",
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "document_title": "CWE -\r\n\n    CWE-863: Incorrect Authorization (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:BCF67241230218EB4C26F27C",
+    "id": "EVIDENCE:BCF67241230218EB4C26F27C",
+    "local_snapshot_path": "data/raw/documentation/snapshots/23c8a6c3f3812d748e74271efb8d6717b66fb841fa2ed2fd233990f62a1955f2.html",
+    "name": "CWE -\r\n\n    CWE-863: Incorrect Authorization (5.0)",
+    "paraphrase": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:38+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/863.html",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "EVIDENCE:BCF67241230218EB4C26F27C",
+  "id": "HISTORY:6CD97015363EDFDB9049A322"
+}

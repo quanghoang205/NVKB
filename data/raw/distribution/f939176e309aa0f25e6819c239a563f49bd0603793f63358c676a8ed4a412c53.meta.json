@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:11+00:00",
+  "content_hash": "e36457c54a5173b24b531c70ee9b0a4c77cd7747196c84815ba85afa7c8ce8bd",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/e36457c54a5173b24b531c70ee9b0a4c77cd7747196c84815ba85afa7c8ce8bd.html",
+  "retrieved_at": "2026-11-25T02:28:11+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42926"
+}

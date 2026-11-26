@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "claim_value": "\"HTTP/3 sử dụng các QUIC stream và control stream; metadata có QPACK, trạng thái request phải được tách theo stream.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:20+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "name": "PROTOCOL:HTTP-3: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T02:32:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:20+00:00",
+  "entity_id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+  "id": "HISTORY:9B58677C88B368439ABF4C4C"
+}

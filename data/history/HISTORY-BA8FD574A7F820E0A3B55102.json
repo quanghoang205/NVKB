@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng dụng.",
+    "claim_refs": [
+      "CLAIM:65641EC20C0CE4BF048B3899",
+      "CLAIM:98292DD94933215C94AF810D",
+      "CLAIM:67C7B34E4C3FFCF99204776C",
+      "CLAIM:752F8B484DF973C56B722CD3",
+      "CLAIM:26F581F60778AA192FC8CD01",
+      "CLAIM:FA6255AB8AE14B456031FABB",
+      "CLAIM:3222B0D04F88424F34670B1C",
+      "CLAIM:01A0290FB941DE9616CF9EDB"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "defensive_principles": "Theo dõi số byte đã xử lý, kiểm tra kết quả hệ thống và giữ parser theo trạng thái.",
+    "definition": "Thao tác I/O trả về ngay khi chưa thể hoàn tất.",
+    "description": "Thao tác I/O trả về ngay khi chưa thể hoàn tất.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Xử lý sai thông điệp hoặc truy cập ngoài vùng nhớ.",
+    "id": "COMPONENT:NONBLOCKING-IO",
+    "learning_objectives": [
+      "Giải thích Non-blocking I/O bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Non-blocking I/O",
+    "normal_behavior": "Handler đọc/ghi một phần dữ liệu, lưu offset và đăng ký chờ sự kiện tiếp theo khi socket chưa sẵn sàng.",
+    "related_failure_classes": "Truncated parsing; buffer-boundary errors.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không được coi một lần đọc là một thông điệp hoàn chỉnh.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng dụng.",
+    "claim_refs": [
+      "CLAIM:65641EC20C0CE4BF048B3899",
+      "CLAIM:98292DD94933215C94AF810D",
+      "CLAIM:67C7B34E4C3FFCF99204776C",
+      "CLAIM:752F8B484DF973C56B722CD3",
+      "CLAIM:26F581F60778AA192FC8CD01",
+      "CLAIM:FA6255AB8AE14B456031FABB",
+      "CLAIM:3222B0D04F88424F34670B1C",
+      "CLAIM:01A0290FB941DE9616CF9EDB"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "defensive_principles": "Theo dõi số byte đã xử lý, kiểm tra kết quả hệ thống và giữ parser theo trạng thái.",
+    "definition": "Thao tác I/O trả về ngay khi chưa thể hoàn tất.",
+    "description": "Thao tác I/O trả về ngay khi chưa thể hoàn tất.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Xử lý sai thông điệp hoặc truy cập ngoài vùng nhớ.",
+    "id": "COMPONENT:NONBLOCKING-IO",
+    "learning_objectives": [
+      "Giải thích Non-blocking I/O bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Non-blocking I/O",
+    "normal_behavior": "Handler đọc/ghi một phần dữ liệu, lưu offset và đăng ký chờ sự kiện tiếp theo khi socket chưa sẵn sàng.",
+    "related_failure_classes": "Truncated parsing; buffer-boundary errors.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không được coi một lần đọc là một thông điệp hoàn chỉnh.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "updated_at": "2026-11-25T02:44:13+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:NONBLOCKING-IO",
+  "id": "HISTORY:BA8FD574A7F820E0A3B55102"
+}

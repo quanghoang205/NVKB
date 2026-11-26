@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:09+00:00",
+  "content_hash": "7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac71-664a\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:37 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e.html",
+  "retrieved_at": "2026-11-25T02:32:09+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_core_module.html"
+}

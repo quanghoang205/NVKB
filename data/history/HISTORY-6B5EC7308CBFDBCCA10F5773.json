@@ -1,0 +1,32 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:F859AF459A12572ABB2E8237"
+    ],
+    "created_at": "2026-11-25T04:22:00+00:00",
+    "cve_ref": "CVE:CVE-2025-23419",
+    "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+    "distribution": "ubuntu",
+    "ecosystem": "ubuntu",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "",
+    "id": "PACKAGE:9D67237552EC0418B94E1F45",
+    "name": "nginx / Ubuntu plucky / CVE-2025-23419",
+    "package_name": "nginx",
+    "patch_status": "not-affected",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "plucky",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:3A62BA07BA6CB8645B2EC1AF"
+    ],
+    "updated_at": "2026-11-25T04:22:00+00:00",
+    "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:22:00+00:00",
+  "entity_id": "PACKAGE:9D67237552EC0418B94E1F45",
+  "id": "HISTORY:6B5EC7308CBFDBCCA10F5773"
+}

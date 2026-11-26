@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "f5",
+    "claim_id": "CLAIM:480077631A8BA8C564D78936",
+    "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"HIGH\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 9.2, \"baseSeverity\": \"CRITICAL\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"HIGH\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:06+00:00",
+    "description": "severity:CVE Program:f5:4.0",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:64F12AA04A1FC09E390CD768"
+    ],
+    "id": "CLAIM:480077631A8BA8C564D78936",
+    "name": "CVE:CVE-2026-42533: severity:CVE Program:f5:4.0",
+    "predicate": "severity:CVE Program:f5:4.0",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:64F12AA04A1FC09E390CD768"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42533",
+    "updated_at": "2026-11-25T02:28:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:06+00:00",
+  "entity_id": "CLAIM:480077631A8BA8C564D78936",
+  "id": "HISTORY:A5F8CE1F128E2293869FD521"
+}

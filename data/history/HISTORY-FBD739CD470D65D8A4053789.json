@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:696E4ADECBB23EBDE194EB39",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:D2BD8A958B3A4B5B5436B91B",
+    "claim_value": "\"http subsystem của NGINX; giữa input protocol và handler cấu hình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:D341E487F7315AF675499151: ngx_http_slice_module",
+    "evidence_refs": [
+      "EVIDENCE:D341E487F7315AF675499151"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D2BD8A958B3A4B5B5436B91B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-HTTP-SLICE-MODULE: architecture_position",
+    "observation_key": "OBSERVATION:85DD2F45D65CAFD0E104FC16",
+    "observed_at": "2026-11-25T02:32:48+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "MODULE:NGX-HTTP-SLICE-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:48+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D341E487F7315AF675499151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-SLICE-MODULE",
+    "updated_at": "2026-11-25T04:12:51+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D2BD8A958B3A4B5B5436B91B",
+    "claim_value": "\"http subsystem của NGINX; giữa input protocol và handler cấu hình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D341E487F7315AF675499151"
+    ],
+    "id": "CLAIM:D2BD8A958B3A4B5B5436B91B",
+    "name": "MODULE:NGX-HTTP-SLICE-MODULE: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D341E487F7315AF675499151"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SLICE-MODULE",
+    "updated_at": "2026-11-25T02:32:48+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:51+00:00",
+  "entity_id": "CLAIM:D2BD8A958B3A4B5B5436B91B",
+  "id": "HISTORY:FBD739CD470D65D8A4053789"
+}

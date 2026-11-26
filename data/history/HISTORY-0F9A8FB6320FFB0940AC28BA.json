@@ -1,0 +1,55 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:0B85386E758187DC215D7836",
+    "claim_refs": [
+      "CLAIM:D4B9CBCDDEE604FA3DBC9070"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cvss_score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:176CD57713EBBDBCCF9D2EDD",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 4.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"LOW\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2025-23419 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:7089B40AEA556F47764AE55C"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T04:13:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:D4B9CBCDDEE604FA3DBC9070"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cvss_score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:176CD57713EBBDBCCF9D2EDD",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 4.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"LOW\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2025-23419 CVSS 3.1 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:7089B40AEA556F47764AE55C"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:10+00:00",
+  "entity_id": "SEVERITY:176CD57713EBBDBCCF9D2EDD",
+  "id": "HISTORY:0F9A8FB6320FFB0940AC28BA"
+}

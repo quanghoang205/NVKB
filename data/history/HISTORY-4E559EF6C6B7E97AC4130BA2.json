@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:06900A5B69F3353B6E27DD41",
+    "claim_value": "\"WEAKNESS:CWE-191\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "id": "CLAIM:06900A5B69F3353B6E27DD41",
+    "name": "CVE:CVE-2026-123007: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "CLAIM:06900A5B69F3353B6E27DD41",
+  "id": "HISTORY:4E559EF6C6B7E97AC4130BA2"
+}

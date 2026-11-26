@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:19+00:00",
+  "content_hash": "e40cd580adbdd2729819f3fbf0418332b609a17880cef8675f86b94ac3613d49",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/e40cd580adbdd2729819f3fbf0418332b609a17880cef8675f86b94ac3613d49.html",
+  "retrieved_at": "2026-11-25T02:28:19+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42945"
+}

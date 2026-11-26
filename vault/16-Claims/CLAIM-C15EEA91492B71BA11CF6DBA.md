@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:C15EEA91492B71BA11CF6DBA
+title: 'CVE:CVE-2026-48142: root_cause_summary'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-48142: root_cause_summary'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-48142: root_cause_summary
+
+`CLAIM:C15EEA91492B71BA11CF6DBA` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-48142|CVE-2026-48142]]. Predicate: `root_cause_summary`.
+
+```json
+"Nguồn phân loại vấn đề: Buffer overread in the ngx_http_charset_module.\n\nCWE-125 — Out-of-bounds read: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-1B4FA667CF12F29E3F6BC387|CVE-2026-48142]], [[EVIDENCE-5AECC01C3709004A88742E13|CVE-2026-48142]], [[EVIDENCE-62B123761CD0DB1EC99F0000|CVE-2026-48142]], [[EVIDENCE-662C7E7EF279A8418B10DAAC|CVE-2026-42934]], [[EVIDENCE-7BB1B2DFE97D5E0D0A8019E0|CVE-2025-53859]], [[EVIDENCE-929475C90EED3AAB36A56764|CVE-2026-48142]], [[EVIDENCE-C0617F819EAADD029A16979F|NGINX security advisories]], [[EVIDENCE-C64041668867A3477B753896|CVE-2026-48142]], [[EVIDENCE-CEA79C61B0BD293CD87C74F5|CVE-2026-48142]], [[EVIDENCE-E1B94AB94D4734768482E5D6|CVE-2026-48142]], [[EVIDENCE-F43E09B91F0D0A09B4E42149|CWE - CWE-125: Out-of-bounds Read (5.0)]], [[EVIDENCE-FB2A7E51F617D62E623BB202|CVE-2026-32647]]
+
+Locator: EVIDENCE:1B4FA667CF12F29E3F6BC387: /containers/cna/metrics; EVIDENCE:5AECC01C3709004A88742E13: /containers/cna/affected; EVIDENCE:62B123761CD0DB1EC99F0000: /containers/cna/metrics; EVIDENCE:662C7E7EF279A8418B10DAAC: /containers/cna/problemTypes; EVIDENCE:7BB1B2DFE97D5E0D0A8019E0: /containers/cna/problemTypes; EVIDENCE:929475C90EED3AAB36A56764: /containers/cna/affected; EVIDENCE:C0617F819EAADD029A16979F: li containing CVE-2026-48142; EVIDENCE:C64041668867A3477B753896: /containers/cna/problemTypes; EVIDENCE:CEA79C61B0BD293CD87C74F5: /containers/cna/descriptions; EVIDENCE:E1B94AB94D4734768482E5D6: /cveMetadata; EVIDENCE:F43E09B91F0D0A09B4E42149: Description / Potential Mitigations; EVIDENCE:FB2A7E51F617D62E623BB202: /containers/cna/problemTypes
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.
+
+Quan sát: 2026-11-25T02:40:43+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:26+00:00",
+  "content_hash": "ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e.html",
+  "retrieved_at": "2026-11-25T02:27:26+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-1642"
+}

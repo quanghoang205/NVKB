@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:1E1F7D5931464596D583F810",
+    "claim_value": "\"Khung mô tả đặc tính severity bằng vector; score không phải xác suất khai thác hay thứ tự ưu tiên duy nhất.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "id": "CLAIM:1E1F7D5931464596D583F810",
+    "name": "CONCEPT:CVSS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:33:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:04+00:00",
+  "entity_id": "CLAIM:1E1F7D5931464596D583F810",
+  "id": "HISTORY:F51EC500C99D5409273D53C8"
+}

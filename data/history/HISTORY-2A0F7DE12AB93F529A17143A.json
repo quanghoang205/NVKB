@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb",
+    "created_at": "2026-11-25T02:28:29+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-56434",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:596E210E185279F943621E04",
+    "id": "EVIDENCE:596E210E185279F943621E04",
+    "local_snapshot_path": "data/raw/cve/snapshots/9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb.json",
+    "name": "CVE-2026-56434",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:28:27+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/56xxx/CVE-2026-56434.json",
+    "updated_at": "2026-11-25T02:28:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:29+00:00",
+  "entity_id": "EVIDENCE:596E210E185279F943621E04",
+  "id": "HISTORY:2A0F7DE12AB93F529A17143A"
+}

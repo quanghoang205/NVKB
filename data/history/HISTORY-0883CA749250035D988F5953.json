@@ -1,0 +1,48 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "TLS session ↔ HTTP virtual server.",
+    "claim_refs": [
+      "CLAIM:5DCD385687EE88948DB4522F",
+      "CLAIM:CC15628688F7E687EC5CBC7D",
+      "CLAIM:BF5CE5E71BC9FA642BFE53DD",
+      "CLAIM:7A8C41EF39EFB71010C94E37",
+      "CLAIM:5A984FE62F8BE79E2107E02B",
+      "CLAIM:423D811A994DA91EF42C0159",
+      "CLAIM:2D7DBA3625A50F010401978A",
+      "CLAIM:EB825569C8B92A684C2525CA"
+    ],
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "defensive_principles": "Rà soát directive cùng default server và phiên bản đã sửa.",
+    "definition": "Directive lưu cache thông tin phiên TLS.",
+    "description": "Directive lưu cache thông tin phiên TLS.",
+    "diagram": "",
+    "entity_type": "ConfigurationDirective",
+    "failure_impact": "Sai chính sách xác thực theo điều kiện advisory.",
+    "id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "learning_objectives": [
+      "Giải thích ssl_session_cache bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ssl_session_cache",
+    "normal_behavior": "Cache có thể là built-in hoặc shared theo cấu hình; resumption cần giữ đúng ngữ cảnh xác thực.",
+    "related_failure_classes": "Incorrect authorization; session-context confusion.",
+    "related_knowledge": [
+      "MODULE:NGX-HTTP-SSL-MODULE",
+      "PROTOCOL:TLS",
+      "PROTOCOL:MTLS"
+    ],
+    "safety_assumptions": "Policy context của session phải gắn đúng server.",
+    "schema_version": "1.0.0",
+    "security_boundary": "TLS session ↔ HTTP virtual server.",
+    "source_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+  "id": "HISTORY:0883CA749250035D988F5953"
+}

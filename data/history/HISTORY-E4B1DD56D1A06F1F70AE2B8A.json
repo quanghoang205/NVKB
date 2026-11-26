@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:BAC5D8CF6A3A5F5D29ACFEF6"
+    ],
+    "created_at": "2026-11-25T02:27:44+00:00",
+    "description": "CVE:CVE-2026-28755 classified_as WEAKNESS:CWE-863",
+    "entity_type": "Relationship",
+    "id": "REL:1B2B2AB14B116EF714BC000D",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-863",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BA3B0AEE884498D2B3876382"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28755",
+    "updated_at": "2026-11-25T02:27:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:44+00:00",
+  "entity_id": "REL:1B2B2AB14B116EF714BC000D",
+  "id": "HISTORY:E4B1DD56D1A06F1F70AE2B8A"
+}

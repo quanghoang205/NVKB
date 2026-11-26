@@ -1,0 +1,317 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "NULL pointer dereference in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:851C9B19A1E3CC73C132CD30",
+      "RANGE:B4FEA2FA5B9380E0C78893E2"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:06265B58B2114467F5AFEA92",
+      "CLAIM:0C088AC9B688D23F33062FB8",
+      "CLAIM:1ED4F05BF4DDEE96B414F3C5",
+      "CLAIM:22338FAE56256721A0DF623F",
+      "CLAIM:279B707270D36273101A90C0",
+      "CLAIM:370CC564CD22ECB4F09F30DE",
+      "CLAIM:51C2B42DA0BAF857AA204789",
+      "CLAIM:53BBB17075F8501651813CD4",
+      "CLAIM:5778CED291F03A59383DB298",
+      "CLAIM:672B8A8E821EC29D84319DDA",
+      "CLAIM:687609E5402B1CEFFADF8015",
+      "CLAIM:693643D4DF9A96859BF05777",
+      "CLAIM:76DD6BDDBCB4BD9F058378F4",
+      "CLAIM:7A9D3D45D65F2C50F0BBCA1C",
+      "CLAIM:7C0694D92140FB742EC4D3B4",
+      "CLAIM:865DE00BAD93D19F2FC38AC2",
+      "CLAIM:881FF4C87673F6116BE9CF22",
+      "CLAIM:8D5F7DC1F17C48E4FFCB7782",
+      "CLAIM:9D20B15B7F4E94E1D6723F1D",
+      "CLAIM:A1C9771932EAB4075E23934C",
+      "CLAIM:BAF5BEB81852273AAF97EA3A",
+      "CLAIM:CAC7B1F4335E50DEEEAAF794",
+      "CLAIM:CEBAF1A9B2F7DD6D46D021D6",
+      "CLAIM:DAF64FA8FB72DDD2D06CF48D",
+      "CLAIM:E4B2D44957747BDE70980756",
+      "CLAIM:E7B554680EC3882980D29EB7",
+      "CLAIM:EAB260880EB2CEF4E49CA121",
+      "CLAIM:F382A90B7702E8CCCBD3228F"
+    ],
+    "condition_refs": [
+      "CONDITION:1A9A92810E9BA0DD8B7F0CB0"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:27+00:00",
+    "cve_id": "CVE-2024-35200",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+    "distribution_backports": [
+      "PACKAGE:33C84B8E05FAF2D37ABBC242",
+      "PACKAGE:75013C28B6E5F78F0088A3CD",
+      "PACKAGE:9C24429AD74498743F494B56",
+      "PACKAGE:159421DA7ED8259898EDEFF6"
+    ],
+    "distribution_status": [
+      "PACKAGE:33C84B8E05FAF2D37ABBC242",
+      "PACKAGE:75013C28B6E5F78F0088A3CD",
+      "PACKAGE:9C24429AD74498743F494B56",
+      "PACKAGE:159421DA7ED8259898EDEFF6"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.\n\nThông báo upstream bổ sung:\nHello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-35200 ghi nhận: NULL pointer dereference in HTTP/3. Phạm vi upstream: 1.25.0-1.25.5, 1.26.0. Bản sửa được công bố: 1.27.0+, 1.26.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-35200",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-02-13T17:52:32.647000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-35200",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-05-29T16:02:05.342000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:E94B45A01553695BA289B11B"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: NULL pointer dereference in HTTP/3.\n\nCWE-476 — NULL pointer dereference: Truy cập qua con trỏ NULL.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Đường lỗi không tiếp tục như đường thành công.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1E7F1AB6566E9F595049AF4F",
+      "SEVERITY:396A037E81259F5547CCB850",
+      "SEVERITY:A6B664718629FD8D325D2D02"
+    ],
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "title": "NULL pointer dereference in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:20+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+      "Hello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov"
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "NULL pointer dereference in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:851C9B19A1E3CC73C132CD30",
+      "RANGE:B4FEA2FA5B9380E0C78893E2"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:06265B58B2114467F5AFEA92",
+      "CLAIM:0C088AC9B688D23F33062FB8",
+      "CLAIM:22338FAE56256721A0DF623F",
+      "CLAIM:279B707270D36273101A90C0",
+      "CLAIM:370CC564CD22ECB4F09F30DE",
+      "CLAIM:51C2B42DA0BAF857AA204789",
+      "CLAIM:53BBB17075F8501651813CD4",
+      "CLAIM:5778CED291F03A59383DB298",
+      "CLAIM:672B8A8E821EC29D84319DDA",
+      "CLAIM:687609E5402B1CEFFADF8015",
+      "CLAIM:693643D4DF9A96859BF05777",
+      "CLAIM:76DD6BDDBCB4BD9F058378F4",
+      "CLAIM:7C0694D92140FB742EC4D3B4",
+      "CLAIM:881FF4C87673F6116BE9CF22",
+      "CLAIM:8D5F7DC1F17C48E4FFCB7782",
+      "CLAIM:9D20B15B7F4E94E1D6723F1D",
+      "CLAIM:A1C9771932EAB4075E23934C",
+      "CLAIM:CAC7B1F4335E50DEEEAAF794",
+      "CLAIM:DAF64FA8FB72DDD2D06CF48D",
+      "CLAIM:E4B2D44957747BDE70980756",
+      "CLAIM:EAB260880EB2CEF4E49CA121",
+      "CLAIM:F382A90B7702E8CCCBD3228F"
+    ],
+    "condition_refs": [
+      "CONDITION:1A9A92810E9BA0DD8B7F0CB0"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:27+00:00",
+    "cve_id": "CVE-2024-35200",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+    "distribution_backports": [
+      "PACKAGE:33C84B8E05FAF2D37ABBC242",
+      "PACKAGE:75013C28B6E5F78F0088A3CD",
+      "PACKAGE:9C24429AD74498743F494B56",
+      "PACKAGE:159421DA7ED8259898EDEFF6"
+    ],
+    "distribution_status": [
+      "PACKAGE:33C84B8E05FAF2D37ABBC242",
+      "PACKAGE:75013C28B6E5F78F0088A3CD",
+      "PACKAGE:9C24429AD74498743F494B56",
+      "PACKAGE:159421DA7ED8259898EDEFF6"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-35200 ghi nhận: NULL pointer dereference in HTTP/3. Phạm vi upstream: 1.25.0-1.25.5, 1.26.0. Bản sửa được công bố: 1.27.0+, 1.26.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-35200",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-02-13T17:52:32.647000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-35200",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-05-29T16:02:05.342000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:E94B45A01553695BA289B11B"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: NULL pointer dereference in HTTP/3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:1E7F1AB6566E9F595049AF4F",
+      "SEVERITY:396A037E81259F5547CCB850",
+      "SEVERITY:A6B664718629FD8D325D2D02"
+    ],
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "title": "NULL pointer dereference in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:39+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:40:20+00:00",
+  "entity_id": "CVE:CVE-2024-35200",
+  "id": "HISTORY:EB0873B18E289003DFC8D621"
+}

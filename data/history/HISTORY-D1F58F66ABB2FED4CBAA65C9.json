@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:24E26B366EE3AF56BFFFB3FD",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:45CAD23C18AFE5DAE3670F4A",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:55A0718B812C050459CF0881: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:45CAD23C18AFE5DAE3670F4A",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:CWE: related_failure_classes",
+    "observation_key": "OBSERVATION:7C89CE4A54D2DCCA512F7CCF",
+    "observed_at": "2026-11-25T02:33:02+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "CONCEPT:CWE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:33:02+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CWE",
+    "updated_at": "2026-11-25T04:12:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:45CAD23C18AFE5DAE3670F4A",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "id": "CLAIM:45CAD23C18AFE5DAE3670F4A",
+    "name": "CONCEPT:CWE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:55A0718B812C050459CF0881"
+    ],
+    "subject_entity_id": "CONCEPT:CWE",
+    "updated_at": "2026-11-25T02:33:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:35+00:00",
+  "entity_id": "CLAIM:45CAD23C18AFE5DAE3670F4A",
+  "id": "HISTORY:D1F58F66ABB2FED4CBAA65C9"
+}

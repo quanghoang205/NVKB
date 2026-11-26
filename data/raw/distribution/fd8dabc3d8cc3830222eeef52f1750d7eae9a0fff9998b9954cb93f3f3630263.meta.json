@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:11+00:00",
+  "content_hash": "9bf9cb4e545442f9f164d409cdec89c83e0a824ece3a4af32e0c7ea11d985339",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/9bf9cb4e545442f9f164d409cdec89c83e0a824ece3a4af32e0c7ea11d985339.html",
+  "retrieved_at": "2026-11-25T02:26:11+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-24990"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ba26388298dc3acfc1a525122f3ecbbf354686e9c41cb1f2b8b8444bacfb5b12",
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-27784",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:81B3967C5EC538FED72F0479",
+    "id": "EVIDENCE:81B3967C5EC538FED72F0479",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/ba26388298dc3acfc1a525122f3ecbbf354686e9c41cb1f2b8b8444bacfb5b12.json",
+    "name": "CVE-2026-27784",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:36+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-27784",
+    "updated_at": "2026-11-25T02:27:36+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:36+00:00",
+  "entity_id": "EVIDENCE:81B3967C5EC538FED72F0479",
+  "id": "HISTORY:5BB422780E00D0A890E09C9B"
+}

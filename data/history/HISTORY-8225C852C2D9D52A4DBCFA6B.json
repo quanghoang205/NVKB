@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "7f680b4c92bb5e8d7b05036b228d51d3cdaf0daae9e0a7c64cda9a9b4e5bdb7f",
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-40460",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:72398A0A8779EB883B559C72",
+    "id": "EVIDENCE:72398A0A8779EB883B559C72",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/7f680b4c92bb5e8d7b05036b228d51d3cdaf0daae9e0a7c64cda9a9b4e5bdb7f.json",
+    "name": "CVE-2026-40460",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:51+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-40460",
+    "updated_at": "2026-11-25T02:27:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:51+00:00",
+  "entity_id": "EVIDENCE:72398A0A8779EB883B559C72",
+  "id": "HISTORY:8225C852C2D9D52A4DBCFA6B"
+}

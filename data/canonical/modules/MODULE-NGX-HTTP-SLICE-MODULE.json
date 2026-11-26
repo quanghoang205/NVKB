@@ -1,0 +1,37 @@
+{
+  "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "claim_refs": [
+    "CLAIM:632D9D6EAEF8DE7B8F281D70",
+    "CLAIM:44A504ECC5CFE22D0B37DA72",
+    "CLAIM:158B8F27643BF7B9DFC06E95",
+    "CLAIM:A9732021BE24FADE00430774",
+    "CLAIM:B9F9B9EF4F70751012F9C932",
+    "CLAIM:685DC9F2F7A9685D27C22094",
+    "CLAIM:F3DF40AE16837801BF729625",
+    "CLAIM:D6BA8636BBF638E897591570"
+  ],
+  "created_at": "2026-11-25T02:32:48+00:00",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "Chia request nội dung thành các slice theo cấu hình.",
+  "description": "Chia request nội dung thành các slice theo cấu hình.",
+  "diagram": "",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-HTTP-SLICE-MODULE",
+  "learning_objectives": [
+    "Giải thích ngx_http_slice_module bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "ngx_http_slice_module",
+  "normal_behavior": "Chia request nội dung thành các slice theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:1BDC13D789F2476808511ACB"
+  ],
+  "updated_at": "2026-11-25T04:13:03+00:00",
+  "verification_status": "INFERRED"
+}

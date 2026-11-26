@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:06F2FEDE03706BBBF3920B06",
+    "claim_value": "\"Độ dài đầu vào phải được kiểm tra so với vùng đích trước thao tác sao chép.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "id": "CLAIM:06F2FEDE03706BBBF3920B06",
+    "name": "WEAKNESS:CWE-120: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:06F2FEDE03706BBBF3920B06",
+  "id": "HISTORY:C033BA9996989BE1ECA14BD4"
+}

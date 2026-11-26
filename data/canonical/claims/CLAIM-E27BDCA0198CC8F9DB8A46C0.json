@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:113C79D0554705D74AC46999",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:E27BDCA0198CC8F9DB8A46C0",
+  "claim_value": "\"Rò rỉ thông tin hoặc routing sai tùy ứng dụng.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:33+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:C0AF17916571BA346E7E83DD: proxy_pass; topic=DEPLOYMENT:REVERSE-PROXY",
+  "evidence_refs": [
+    "EVIDENCE:C0AF17916571BA346E7E83DD"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:E27BDCA0198CC8F9DB8A46C0",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "DEPLOYMENT:REVERSE-PROXY: failure_impact",
+  "observation_key": "OBSERVATION:6459058F759404EF1B838D97",
+  "observed_at": "2026-11-25T02:44:33+00:00",
+  "predicate": "failure_impact",
+  "product_scope": "DEPLOYMENT:REVERSE-PROXY",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:11+00:00",
+  "review_reason": "Preserved earlier knowledge edition; current lesson has independently scoped section claims.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:C0AF17916571BA346E7E83DD"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+  "updated_at": "2026-11-25T04:20:37+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

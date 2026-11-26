@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:DA4D75450A48F51642247892",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:CCDBB28218D0C7626C4FEA28",
+    "claim_value": "\"Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:7CACEF491477F7E109DDAC32: Events",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:CCDBB28218D0C7626C4FEA28",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:EVENT-DRIVEN: security_boundary",
+    "observation_key": "OBSERVATION:C4414C8E0ADF34E1D687DF5B",
+    "observed_at": "2026-11-25T02:32:04+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "COMPONENT:EVENT-DRIVEN",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:12:50+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CCDBB28218D0C7626C4FEA28",
+    "claim_value": "\"Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "id": "CLAIM:CCDBB28218D0C7626C4FEA28",
+    "name": "COMPONENT:EVENT-DRIVEN: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:50+00:00",
+  "entity_id": "CLAIM:CCDBB28218D0C7626C4FEA28",
+  "id": "HISTORY:83E36ED98AD9C3FC8051F915"
+}

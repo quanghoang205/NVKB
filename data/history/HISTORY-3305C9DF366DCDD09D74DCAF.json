@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:BE7F2AB0E65F857BDA295C27",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:CED86B98A0C386D16CBDF3AC",
+    "claim_value": "\"CNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:12+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:77FD57EAEDF8E5D26DB3E0AC"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:CED86B98A0C386D16CBDF3AC",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-118899: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:15:12+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:77FD57EAEDF8E5D26DB3E0AC"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T05:15:12+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:12+00:00",
+  "entity_id": "CLAIM:CED86B98A0C386D16CBDF3AC",
+  "id": "HISTORY:3305C9DF366DCDD09D74DCAF"
+}

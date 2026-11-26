@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:976BEC637A236D0BFD1EDE29",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:95EBE24E92FDFA0B1F321693",
+  "claim_value": "\"Không giả định thứ tự dòng trong tệp luôn là thứ tự ưu tiên match.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:09+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:E42B729D9B934D293D76DB8C: location",
+  "evidence_refs": [
+    "EVIDENCE:E42B729D9B934D293D76DB8C"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:95EBE24E92FDFA0B1F321693",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "COMPONENT:LOCATION-MATCHING: safety_assumptions",
+  "observation_key": "OBSERVATION:E5B1F6F4A8D55F903474508D",
+  "observed_at": "2026-11-25T02:32:09+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "COMPONENT:LOCATION-MATCHING",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:09+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E42B729D9B934D293D76DB8C"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:LOCATION-MATCHING",
+  "updated_at": "2026-11-25T04:12:44+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

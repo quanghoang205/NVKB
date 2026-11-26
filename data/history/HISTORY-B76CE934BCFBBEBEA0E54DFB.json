@@ -1,0 +1,152 @@
+{
+  "action": "created",
+  "after": {
+    "affected_feature_description": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:1701175D1DB53BD5C92CE16B"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:046C0B27BCA43CE3E3D872C1",
+      "CLAIM:234C3556D3EE3655407BBF37",
+      "CLAIM:2CEB390B539791A7B5652E63",
+      "CLAIM:419DB5283FAB13DDBD571D4F",
+      "CLAIM:4D69340D9CC3D6C8525F8837",
+      "CLAIM:64F4C22FE40456699426DD22",
+      "CLAIM:773D0463C069A4CBBDBA9A94",
+      "CLAIM:787F3E613533FB786E6D1D80",
+      "CLAIM:7EF8554D8D4CCEE38D1D93C9",
+      "CLAIM:996F8F71131A305758256C2D",
+      "CLAIM:A12C994FD088E78A7EFA3F11",
+      "CLAIM:AF785684E48879D04B46D521",
+      "CLAIM:C15C1D905F44AE1EA72E383C",
+      "CLAIM:C2CCEDBE02CC7BD3C84108C9",
+      "CLAIM:C6B29FDC2735D5E5A674D6A0",
+      "CLAIM:CF7FD907DFB73B7BB9656D98",
+      "CLAIM:D33384191B9448285017F029",
+      "CLAIM:D70ECEC6A3A194ED0196424F",
+      "CLAIM:E9B4EE32790A0555A67246E4",
+      "CLAIM:EEEB33792A7A28EE95671F5F",
+      "CLAIM:F0FBF9D0FFC7F987D068A18F",
+      "CLAIM:F1ACDAB98400E9BD4C7C06C0"
+    ],
+    "condition_refs": [
+      "CONDITION:407584D6BB87E87391C72E44"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "cve_id": "CVE-2026-27651",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:EBEAF9AFB3CC71DF25828562",
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:BED520082D67A39CF4335A94"
+    ],
+    "distribution_status": [
+      "PACKAGE:EBEAF9AFB3CC71DF25828562",
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:BED520082D67A39CF4335A94"
+    ],
+    "documented_configuration_context": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-27651 ghi nhận: NULL pointer dereference while using CRAM-MD5 or APOP. Phạm vi upstream: 0.5.15-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27651",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-07-15T01:13:39.490000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-27651",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:27.295000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:39CD16CA99287CB8A0E398DE"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: NULL pointer dereference while using CRAM-MD5 or APOP. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:0C537C308E7AB887930120DB",
+      "SEVERITY:4EF00A297E633523A29A3A3D",
+      "SEVERITY:ADDAC0213911E5B1FB94A210",
+      "SEVERITY:B053EA9255AED6CF261D8FF4",
+      "SEVERITY:CDB16971A920D874F1B7C2DB",
+      "SEVERITY:D27687B0D673CA5C1211886B",
+      "SEVERITY:E9F39A74FB81B3CE39A42BDC"
+    ],
+    "source_refs": [
+      "EVIDENCE:06A3ED36BB04D8872758749D",
+      "EVIDENCE:11E5B7EC9460D81E92616E1F",
+      "EVIDENCE:33F0AADEF3D4F5B6E71E4AE7",
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91",
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D",
+      "EVIDENCE:6D5EE1924CE80867E38D4C5C",
+      "EVIDENCE:8306189DC142C4B552E2BDF0",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:EA030512DDB20C2CCA1C76C0",
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "title": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:27:29+00:00",
+    "upstream_affected_expression": "0.5.15-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:29+00:00",
+  "entity_id": "CVE:CVE-2026-27651",
+  "id": "HISTORY:B76CE934BCFBBEBEA0E54DFB"
+}

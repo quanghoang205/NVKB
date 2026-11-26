@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6875094d3b7e41419e58aaa64eda79c2dda1d02c902b05eb60bf72ce61516ec0",
+    "created_at": "2026-11-25T02:26:23+00:00",
+    "description": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-34161",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2DF2FDDEC8D5589D2C654FA2",
+    "id": "EVIDENCE:2DF2FDDEC8D5589D2C654FA2",
+    "local_snapshot_path": "data/raw/distribution/snapshots/6875094d3b7e41419e58aaa64eda79c2dda1d02c902b05eb60bf72ce61516ec0.html",
+    "name": "CVE-2024-34161",
+    "paraphrase": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:23+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-34161",
+    "updated_at": "2026-11-25T02:26:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:23+00:00",
+  "entity_id": "EVIDENCE:2DF2FDDEC8D5589D2C654FA2",
+  "id": "HISTORY:39063596F727FBFB53A66B89"
+}

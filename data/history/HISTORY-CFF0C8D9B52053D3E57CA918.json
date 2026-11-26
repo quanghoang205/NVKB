@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4",
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Vòng đời parse, chọn cấu hình, xử lý phase và hoàn tất response.",
+    "document_title": "Development guide",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DFBB5BD88F7FC640669D3012",
+    "id": "EVIDENCE:DFBB5BD88F7FC640669D3012",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4.html",
+    "name": "Development guide",
+    "paraphrase": "Vòng đời parse, chọn cấu hình, xử lý phase và hoàn tất response.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "HTTP; topic=COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/dev/development_guide.html",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "EVIDENCE:DFBB5BD88F7FC640669D3012",
+  "id": "HISTORY:CFF0C8D9B52053D3E57CA918"
+}

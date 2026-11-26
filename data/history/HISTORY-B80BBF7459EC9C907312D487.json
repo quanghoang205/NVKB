@@ -1,0 +1,47 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "cwe_id": "CWE-122",
+    "description": "CWE-122 Heap-based Buffer Overflow",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-122",
+    "name": "CWE-122",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CCC16DDE68A1713FAED2329",
+      "EVIDENCE:1F6DBE760A34B37CAD1CF4A7",
+      "EVIDENCE:4DFBBE4B964C3500C9AAFD36",
+      "EVIDENCE:8A5EFD9F2F8B58978470483B",
+      "EVIDENCE:8F5015B6CA57FA297E6319B8",
+      "EVIDENCE:DC1432949B4CBBFA7575048F",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "updated_at": "2026-11-25T02:28:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "cwe_id": "CWE-122",
+    "description": "CWE-122 Heap-based Buffer Overflow",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-122",
+    "name": "CWE-122",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CCC16DDE68A1713FAED2329",
+      "EVIDENCE:1F6DBE760A34B37CAD1CF4A7",
+      "EVIDENCE:4DFBBE4B964C3500C9AAFD36",
+      "EVIDENCE:8A5EFD9F2F8B58978470483B",
+      "EVIDENCE:DC1432949B4CBBFA7575048F",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:28:46+00:00",
+  "entity_id": "WEAKNESS:CWE-122",
+  "id": "HISTORY:B80BBF7459EC9C907312D487"
+}

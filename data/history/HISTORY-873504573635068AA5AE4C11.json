@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:C15E6BA1BB8406BF6FD92DEA",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+    "claim_value": "\"Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:14+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:4814A83F9C52805610E42D7B: Connection; topic=COMPONENT:CONNECTION-LIFECYCLE",
+    "evidence_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:CONNECTION-LIFECYCLE: architecture_position",
+    "observation_key": "OBSERVATION:8C9A741A638D15C59536A594",
+    "observed_at": "2026-11-25T02:44:14+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "COMPONENT:CONNECTION-LIFECYCLE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "updated_at": "2026-11-25T04:12:56+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+    "claim_value": "\"Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:14+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "id": "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+    "name": "COMPONENT:CONNECTION-LIFECYCLE: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "updated_at": "2026-11-25T02:44:14+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:56+00:00",
+  "entity_id": "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+  "id": "HISTORY:873504573635068AA5AE4C11"
+}

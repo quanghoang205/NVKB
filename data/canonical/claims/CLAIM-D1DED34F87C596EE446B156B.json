@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:2DC8E71E21D8CBD5112C0612",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:D1DED34F87C596EE446B156B",
+  "claim_value": "\"Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:45+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:79BFD9CD66F30BFD55CEF032: ngx_http_dav_module",
+  "evidence_refs": [
+    "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:D1DED34F87C596EE446B156B",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-DAV-MODULE: definition",
+  "observation_key": "OBSERVATION:D9F7AFD1D477C62CFFE48321",
+  "observed_at": "2026-11-25T02:32:45+00:00",
+  "predicate": "definition",
+  "product_scope": "MODULE:NGX-HTTP-DAV-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:44+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-DAV-MODULE",
+  "updated_at": "2026-11-25T04:12:51+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

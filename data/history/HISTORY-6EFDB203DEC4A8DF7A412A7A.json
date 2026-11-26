@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-SESSION-CACHE learns_from MODULE:NGX-HTTP-SSL-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:FEAF491D7E24DF5B1C27BAEA",
+    "name": "learns_from",
+    "object_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:33:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:32+00:00",
+  "entity_id": "REL:FEAF491D7E24DF5B1C27BAEA",
+  "id": "HISTORY:6EFDB203DEC4A8DF7A412A7A"
+}

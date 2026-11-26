@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:08+00:00",
+  "content_hash": "3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac72-2808\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:38 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c.html",
+  "retrieved_at": "2026-11-25T02:28:08+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_ssl_module.html"
+}

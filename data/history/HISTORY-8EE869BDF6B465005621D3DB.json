@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from COMPONENT:MEMORY-POOL",
+    "entity_type": "Relationship",
+    "id": "REL:57473AB5FCBF534C3F39291C",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8E30599D1D514858A998A326"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from COMPONENT:MEMORY-POOL",
+    "entity_type": "Relationship",
+    "id": "REL:57473AB5FCBF534C3F39291C",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:57473AB5FCBF534C3F39291C",
+  "id": "HISTORY:8EE869BDF6B465005621D3DB"
+}

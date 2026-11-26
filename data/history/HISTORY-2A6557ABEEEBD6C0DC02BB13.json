@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6F115B8FE2A13A651C26F767",
+    "claim_value": "\"Server yêu cầu certificate client, kiểm tra chuỗi tin cậy và chữ ký; ứng dụng ánh xạ danh tính đã xác thực thành quyền.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "id": "CLAIM:6F115B8FE2A13A651C26F767",
+    "name": "PROTOCOL:MTLS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:23+00:00",
+  "entity_id": "CLAIM:6F115B8FE2A13A651C26F767",
+  "id": "HISTORY:2A6557ABEEEBD6C0DC02BB13"
+}

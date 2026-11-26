@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:22+00:00",
+  "content_hash": "095358d468da00b1e4ca751cf03d128612d0bb553bb95219724c3e0b2afcffbe",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/095358d468da00b1e4ca751cf03d128612d0bb553bb95219724c3e0b2afcffbe.html",
+  "retrieved_at": "2026-11-25T02:27:22+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-15176"
+}

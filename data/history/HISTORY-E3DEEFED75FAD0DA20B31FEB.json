@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.",
+    "claim_refs": [
+      "CLAIM:5CE8D893DB1E84C747754322",
+      "CLAIM:B34098A5507BB6CF14DAEA73",
+      "CLAIM:67F76A193707B3DAF0F7D8DB",
+      "CLAIM:156BECEB69A18111783F72DD",
+      "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+      "CLAIM:89ECA4AD275FA9FA33B809F2",
+      "CLAIM:A79DD34EAF97F4B8852A3AC0",
+      "CLAIM:4E291E5DFA090390A09935AD"
+    ],
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.",
+    "description": "Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:TLS",
+    "learning_objectives": [
+      "Giải thích TLS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "TLS",
+    "normal_behavior": "Handshake thỏa thuận tham số mật mã và xác thực; khóa phiên bảo vệ record. Session resumption dùng lại ngữ cảnh theo điều kiện giao thức.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Certificate verification và policy context phải giữ đúng cả khi resume phiên.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.",
+    "claim_refs": [
+      "CLAIM:5CE8D893DB1E84C747754322",
+      "CLAIM:B34098A5507BB6CF14DAEA73",
+      "CLAIM:67F76A193707B3DAF0F7D8DB",
+      "CLAIM:156BECEB69A18111783F72DD",
+      "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+      "CLAIM:89ECA4AD275FA9FA33B809F2",
+      "CLAIM:A79DD34EAF97F4B8852A3AC0",
+      "CLAIM:4E291E5DFA090390A09935AD"
+    ],
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.",
+    "description": "Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:TLS",
+    "learning_objectives": [
+      "Giải thích TLS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "TLS",
+    "normal_behavior": "Handshake thỏa thuận tham số mật mã và xác thực; khóa phiên bảo vệ record. Session resumption dùng lại ngữ cảnh theo điều kiện giao thức.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Certificate verification và policy context phải giữ đúng cả khi resume phiên.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PROTOCOL:TLS",
+  "id": "HISTORY:E3DEEFED75FAD0DA20B31FEB"
+}

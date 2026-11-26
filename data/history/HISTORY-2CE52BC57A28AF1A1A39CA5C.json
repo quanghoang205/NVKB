@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:80C2F25D2C5476AF53E0F949",
+    "claim_value": "\"TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:44+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:71BAF5F02DE4748241A21610"
+    ],
+    "id": "CLAIM:80C2F25D2C5476AF53E0F949",
+    "name": "CVE:CVE-2026-40701: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:71BAF5F02DE4748241A21610"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:44:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:44+00:00",
+  "entity_id": "CLAIM:80C2F25D2C5476AF53E0F949",
+  "id": "HISTORY:2CE52BC57A28AF1A1A39CA5C"
+}

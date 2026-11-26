@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:18:12+00:00",
+  "content_hash": "ce26e26a2205edeead9639802c7fed004b8fb81371cea2b520f824ea1e75305f",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": "Wed, 25 Nov 2026 01:55:19 GMT",
+  "local_snapshot_path": "data/raw/research/snapshots/ce26e26a2205edeead9639802c7fed004b8fb81371cea2b520f824ea1e75305f.html",
+  "retrieved_at": "2026-11-25T02:18:12+00:00",
+  "source_url": "https://vulnerability.circl.lu/.well-known/api-policy.json"
+}

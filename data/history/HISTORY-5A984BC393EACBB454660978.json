@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:FDBCE0F6D70012A299EA813F",
+    "claim_value": "\"Parser lệnh ↔ trạng thái mailbox và danh tính.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "id": "CLAIM:FDBCE0F6D70012A299EA813F",
+    "name": "PROTOCOL:IMAP: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:FDBCE0F6D70012A299EA813F",
+  "id": "HISTORY:5A984BC393EACBB454660978"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+    "claim_value": "\"When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\\n\\nImpact:\\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EBC00C4C250179C07BC479C5"
+    ],
+    "id": "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+    "name": "CVE:CVE-2026-125283: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EBC00C4C250179C07BC479C5"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T02:27:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:13+00:00",
+  "entity_id": "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+  "id": "HISTORY:A74527508923DCEDE09720F8"
+}

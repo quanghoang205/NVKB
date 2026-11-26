@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "f5db81c48ffa8f21ec3359f43e8a4c366e3f44a8e9c3a9e8ae433d390c8672ae",
+    "created_at": "2026-11-25T02:27:48+00:00",
+    "description": "Debian bullseye: fixed_version=1.18.0-6.1+deb11u6, status=fixed.",
+    "document_title": "CVE-2026-32647",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:1EAAB36CF953F6ACDA9990B1",
+    "id": "EVIDENCE:1EAAB36CF953F6ACDA9990B1",
+    "local_snapshot_path": "data/raw/distribution/snapshots/f5db81c48ffa8f21ec3359f43e8a4c366e3f44a8e9c3a9e8ae433d390c8672ae.html",
+    "name": "CVE-2026-32647",
+    "paraphrase": "Debian bullseye: fixed_version=1.18.0-6.1+deb11u6, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:48+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-32647",
+    "updated_at": "2026-11-25T02:27:48+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:48+00:00",
+  "entity_id": "EVIDENCE:1EAAB36CF953F6ACDA9990B1",
+  "id": "HISTORY:2F2822AE010DDED6F207F5CD"
+}

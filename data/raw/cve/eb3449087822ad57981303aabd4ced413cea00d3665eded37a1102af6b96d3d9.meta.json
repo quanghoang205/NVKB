@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:48+00:00",
+  "content_hash": "1e5a5cbf71cc44d188726874e7e8fc1d603fa6fcf998e21d81d5aa222d87c5e3",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"b648ed30d695dde47d8ce335a9454e0dabfdefee0b718efc0e5024f272714622\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/1e5a5cbf71cc44d188726874e7e8fc1d603fa6fcf998e21d81d5aa222d87c5e3.json",
+  "retrieved_at": "2026-11-25T02:25:48+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2013/4xxx/CVE-2013-4547.json"
+}

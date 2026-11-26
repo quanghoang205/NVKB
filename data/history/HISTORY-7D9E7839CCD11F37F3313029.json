@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4179B14F912732A8B2AFA235",
+    "authority": "CVE Program / CNA",
+    "authority_scope": "CVE Program / CNA",
+    "claim_id": "CLAIM:D70ECEC6A3A194ED0196424F",
+    "claim_value": "\"When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:28+00:00",
+    "description": "description",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:62FBFBCCE074909D2E2ABE91: /containers/cna/descriptions",
+    "evidence_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D70ECEC6A3A194ED0196424F",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-27651: description",
+    "observation_key": "OBSERVATION:DB388723B3834E3E74DA914A",
+    "observed_at": "2026-11-25T02:27:28+00:00",
+    "predicate": "description",
+    "product_scope": "CVE:CVE-2026-27651",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:27+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program / CNA",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T04:12:51+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:D70ECEC6A3A194ED0196424F",
+    "claim_value": "\"When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:28+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "id": "CLAIM:D70ECEC6A3A194ED0196424F",
+    "name": "CVE:CVE-2026-27651: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T02:27:28+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:51+00:00",
+  "entity_id": "CLAIM:D70ECEC6A3A194ED0196424F",
+  "id": "HISTORY:7D9E7839CCD11F37F3313029"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:3B2B59A49EB775E9511EA68B",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:BC3410121C90BD66DAED1491",
+    "claim_value": "\"## Cơ chế và phân lớp\\n\\nHTTP/3 sử dụng QUIC stream để mang HTTP message. HEADERS biểu diễn phần trường, DATA mang nội dung; trailer nếu có đánh dấu một phần khác của message. Parser cần giữ trạng thái để chấp nhận đúng thứ tự và xử lý việc dữ liệu đến từng phần. Ranh giới một gói UDP, một lần callback và một HTTP message không trùng nhau.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:35+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8D04B81E8C20010F84D4889B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BC3410121C90BD66DAED1491",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:HTTP-3: v1.3:knowledge:Cơ chế và phân lớp",
+    "observed_at": "2026-11-25T05:08:35+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế và phân lớp",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:8D04B81E8C20010F84D4889B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T05:08:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:35+00:00",
+  "entity_id": "CLAIM:BC3410121C90BD66DAED1491",
+  "id": "HISTORY:105DD0B62DD507647225F72B"
+}

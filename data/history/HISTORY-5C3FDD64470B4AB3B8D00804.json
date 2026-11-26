@@ -1,0 +1,316 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_rewrite_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B8E6CC0147A41DA9761D06CF"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0A83C026B1B873CA412096C7",
+      "CLAIM:16980F2384AF574C4E72746F",
+      "CLAIM:171C872032C3C9E1112398F8",
+      "CLAIM:2B695A869D6A686993178730",
+      "CLAIM:31E37D93426D4D8A7649F3BC",
+      "CLAIM:399192968702B4EAFBB49BA9",
+      "CLAIM:40DF1F66D5ABBA194113FBA6",
+      "CLAIM:44201ABA8DE3306374372CB0",
+      "CLAIM:503F8CD15FB0519428DBE223",
+      "CLAIM:51023BA7121E57319AB1CF98",
+      "CLAIM:5C6263E390BA83EECDA3ECBD",
+      "CLAIM:6774338F8DA8E8A78C9C1A72",
+      "CLAIM:700F08BEE6489F9F968B55C7",
+      "CLAIM:8086FB78362310BDED499D89",
+      "CLAIM:86756ECC9F2CC627EC126A43",
+      "CLAIM:8E4FCE92F5803E9543038364",
+      "CLAIM:9252E23EDBC990FFC8F37FA5",
+      "CLAIM:96D74E5F7621F0368880E235",
+      "CLAIM:9F73048D2BEF2DD1B9467AAF",
+      "CLAIM:AF2CA8C7810BBF51874723B7",
+      "CLAIM:B11AD9312D0FEED2B5135AFE",
+      "CLAIM:B379D7B6995C22B84D4E4B9E",
+      "CLAIM:B8E3531B1046470A44D8F2BF",
+      "CLAIM:C4A4EAD59E270716FA3E0249",
+      "CLAIM:EA7F06C54388493883EEEE66",
+      "CLAIM:ECC902A7F6DB342AE1A30AE9",
+      "CLAIM:F582FA274320884333C9E694"
+    ],
+    "condition_refs": [
+      "CONDITION:D63F215C6BF442813823B61A"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "cve_id": "CVE-2026-9256",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:095C28FC088D20049D226D6B",
+      "PACKAGE:9A2BF2079EA630040BFF3F84",
+      "PACKAGE:060A184AF1AB8F42AB9A3D42",
+      "PACKAGE:2C3BE7FEB8821C258085FA27"
+    ],
+    "distribution_status": [
+      "PACKAGE:095C28FC088D20049D226D6B",
+      "PACKAGE:9A2BF2079EA630040BFF3F84",
+      "PACKAGE:060A184AF1AB8F42AB9A3D42",
+      "PACKAGE:2C3BE7FEB8821C258085FA27"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-9256 ghi nhận: Buffer overflow in the ngx_http_rewrite_module. Phạm vi upstream: 0.1.17-1.31.0. Bản sửa được công bố: 1.31.1+, 1.30.2+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.2",
+      "VERSION:NGINX-1.31.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.2",
+      "VERSION:NGINX-1.31.1"
+    ],
+    "id": "CVE:CVE-2026-9256",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-08-25T12:05:55.163000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-9256",
+    "normal_component_behavior": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-22T14:11:41.877000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:F8A3E0B3F28FCEB933E90370"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-REWRITE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in the ngx_http_rewrite_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:5B0CB4A41386528F53C6B76B",
+      "SEVERITY:62F3DB7634F3FDE3D205828C",
+      "SEVERITY:750B526858532BE9B4C18B02",
+      "SEVERITY:88D0941B4F4B39F303ED5AE6",
+      "SEVERITY:9F3C7EDB794AA7EEE8B6FB79",
+      "SEVERITY:BABF48E6E341B5FC6E6D139B",
+      "SEVERITY:F4D116B8FCAC4EC4A227F0A1"
+    ],
+    "source_refs": [
+      "EVIDENCE:0DB7D89C22289F0BB0865C01",
+      "EVIDENCE:15444CBCEDABE7F2E128DB96",
+      "EVIDENCE:16399AB3CA15BF12C1924E2A",
+      "EVIDENCE:596999094160707D14EB2950",
+      "EVIDENCE:69F354F141DDAC181796D0B7",
+      "EVIDENCE:8BC901ACCC60F2E2D63DC8EA",
+      "EVIDENCE:C53955D4100EAC53CAFC43D6",
+      "EVIDENCE:DF3A9A2E644E58D5180F0854",
+      "EVIDENCE:ED2E022FF0F107AD8C211963",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "title": "Buffer overflow in the ngx_http_rewrite_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "tags",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:48+00:00",
+    "upstream_affected_expression": "0.1.17-1.31.0",
+    "upstream_unaffected_expression": "1.31.1+, 1.30.2+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_rewrite_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B8E6CC0147A41DA9761D06CF"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0A83C026B1B873CA412096C7",
+      "CLAIM:16980F2384AF574C4E72746F",
+      "CLAIM:171C872032C3C9E1112398F8",
+      "CLAIM:2B695A869D6A686993178730",
+      "CLAIM:31E37D93426D4D8A7649F3BC",
+      "CLAIM:40DF1F66D5ABBA194113FBA6",
+      "CLAIM:44201ABA8DE3306374372CB0",
+      "CLAIM:503F8CD15FB0519428DBE223",
+      "CLAIM:51023BA7121E57319AB1CF98",
+      "CLAIM:5C6263E390BA83EECDA3ECBD",
+      "CLAIM:6774338F8DA8E8A78C9C1A72",
+      "CLAIM:700F08BEE6489F9F968B55C7",
+      "CLAIM:8086FB78362310BDED499D89",
+      "CLAIM:86756ECC9F2CC627EC126A43",
+      "CLAIM:8E4FCE92F5803E9543038364",
+      "CLAIM:9252E23EDBC990FFC8F37FA5",
+      "CLAIM:96D74E5F7621F0368880E235",
+      "CLAIM:9F73048D2BEF2DD1B9467AAF",
+      "CLAIM:AF2CA8C7810BBF51874723B7",
+      "CLAIM:B11AD9312D0FEED2B5135AFE",
+      "CLAIM:B379D7B6995C22B84D4E4B9E",
+      "CLAIM:B8E3531B1046470A44D8F2BF",
+      "CLAIM:C4A4EAD59E270716FA3E0249",
+      "CLAIM:EA7F06C54388493883EEEE66",
+      "CLAIM:ECC902A7F6DB342AE1A30AE9"
+    ],
+    "condition_refs": [
+      "CONDITION:D63F215C6BF442813823B61A"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "cve_id": "CVE-2026-9256",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:095C28FC088D20049D226D6B",
+      "PACKAGE:9A2BF2079EA630040BFF3F84",
+      "PACKAGE:060A184AF1AB8F42AB9A3D42",
+      "PACKAGE:2C3BE7FEB8821C258085FA27"
+    ],
+    "distribution_status": [
+      "PACKAGE:095C28FC088D20049D226D6B",
+      "PACKAGE:9A2BF2079EA630040BFF3F84",
+      "PACKAGE:060A184AF1AB8F42AB9A3D42",
+      "PACKAGE:2C3BE7FEB8821C258085FA27"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-9256 ghi nhận: Buffer overflow in the ngx_http_rewrite_module. Phạm vi upstream: 0.1.17-1.31.0. Bản sửa được công bố: 1.31.1+, 1.30.2+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.2",
+      "VERSION:NGINX-1.31.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.2",
+      "VERSION:NGINX-1.31.1"
+    ],
+    "id": "CVE:CVE-2026-9256",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-08-25T12:05:55.163000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-9256",
+    "normal_component_behavior": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-22T14:11:41.877000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:F8A3E0B3F28FCEB933E90370"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-REWRITE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in the ngx_http_rewrite_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:5B0CB4A41386528F53C6B76B",
+      "SEVERITY:62F3DB7634F3FDE3D205828C",
+      "SEVERITY:750B526858532BE9B4C18B02",
+      "SEVERITY:88D0941B4F4B39F303ED5AE6",
+      "SEVERITY:9F3C7EDB794AA7EEE8B6FB79",
+      "SEVERITY:BABF48E6E341B5FC6E6D139B",
+      "SEVERITY:F4D116B8FCAC4EC4A227F0A1"
+    ],
+    "source_refs": [
+      "EVIDENCE:0DB7D89C22289F0BB0865C01",
+      "EVIDENCE:15444CBCEDABE7F2E128DB96",
+      "EVIDENCE:16399AB3CA15BF12C1924E2A",
+      "EVIDENCE:596999094160707D14EB2950",
+      "EVIDENCE:69F354F141DDAC181796D0B7",
+      "EVIDENCE:8BC901ACCC60F2E2D63DC8EA",
+      "EVIDENCE:C53955D4100EAC53CAFC43D6",
+      "EVIDENCE:DF3A9A2E644E58D5180F0854",
+      "EVIDENCE:ED2E022FF0F107AD8C211963",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "title": "Buffer overflow in the ngx_http_rewrite_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "tags",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:56+00:00",
+    "upstream_affected_expression": "0.1.17-1.31.0",
+    "upstream_unaffected_expression": "1.31.1+, 1.30.2+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:40:48+00:00",
+  "entity_id": "CVE:CVE-2026-9256",
+  "id": "HISTORY:5C3FDD64470B4AB3B8D00804"
+}

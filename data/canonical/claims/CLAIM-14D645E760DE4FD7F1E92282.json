@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:C37C5615B15D83189BEC4DBA",
+  "authority": "CNA F5 / CVE Program",
+  "claim_id": "CLAIM:14D645E760DE4FD7F1E92282",
+  "claim_value": "\"Arbitrary header injection vào SMTP upstream request và khả năng request manipulation được nguồn công bố.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:16:33+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "evidence_refs": [
+    "EVIDENCE:7D52DA84713F311C08E1FB9A"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:14D645E760DE4FD7F1E92282",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "UNVERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-28753: v1.3:impact",
+  "observed_at": "2026-11-25T05:16:33+00:00",
+  "predicate": "v1.3:impact",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:16:33+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "CNA F5 / CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:7D52DA84713F311C08E1FB9A"
+  ],
+  "source_support_status": "SUPPORTED",
+  "subject_entity_id": "CVE:CVE-2026-28753",
+  "updated_at": "2026-11-25T05:16:33+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "UNVERIFIED",
+  "version_scope": "Document snapshot 2026-11-25T02:27:37+00:00; CVE versions are scoped separately."
+}

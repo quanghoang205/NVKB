@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2aacb071c2921b278c7df13f9b8960828636b6197bf935c1d86b6cab69621b3e",
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-27654",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C94E0F9365304B3C6C4642D2",
+    "id": "EVIDENCE:C94E0F9365304B3C6C4642D2",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/2aacb071c2921b278c7df13f9b8960828636b6197bf935c1d86b6cab69621b3e.json",
+    "name": "CVE-2026-27654",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:32+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/adp/1/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-27654",
+    "updated_at": "2026-11-25T02:27:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:32+00:00",
+  "entity_id": "EVIDENCE:C94E0F9365304B3C6C4642D2",
+  "id": "HISTORY:D7430FC03880BD4287D82B7D"
+}

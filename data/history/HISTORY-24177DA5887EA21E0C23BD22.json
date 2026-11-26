@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:544D7A52F555C46B7F68BDC3",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:F8522D7AF8DA8B2F3213572B",
+    "claim_value": "\"SNI bypass when using client certificate validation in stream\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "description": "title",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:3192E1E77E6179EFCF3D92BD: li containing CVE-2026-120967",
+    "evidence_refs": [
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F8522D7AF8DA8B2F3213572B",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-120967: title",
+    "observation_key": "OBSERVATION:F167B530F2AFBCF3A104CA52",
+    "observed_at": "2026-11-25T02:26:46+00:00",
+    "predicate": "title",
+    "product_scope": "CVE:CVE-2026-120967",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T04:12:56+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F8522D7AF8DA8B2F3213572B",
+    "claim_value": "\"SNI bypass when using client certificate validation in stream\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD"
+    ],
+    "id": "CLAIM:F8522D7AF8DA8B2F3213572B",
+    "name": "CVE:CVE-2026-120967: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T02:26:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:56+00:00",
+  "entity_id": "CLAIM:F8522D7AF8DA8B2F3213572B",
+  "id": "HISTORY:24177DA5887EA21E0C23BD22"
+}

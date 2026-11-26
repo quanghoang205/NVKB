@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:E78B6FA60615A1A82E6E1190"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:84780BD7090F6FAFCE8839AF",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-123640 CVSS 3.1 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:2F9CCE813050871069A738D5"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "SEVERITY:84780BD7090F6FAFCE8839AF",
+  "id": "HISTORY:A16B8453B1BF3C9FF8A28F64"
+}

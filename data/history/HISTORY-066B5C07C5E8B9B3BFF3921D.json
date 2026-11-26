@@ -1,0 +1,419 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_rewrite_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:7EAC3233EAF1893E42C9F6F9"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:04322C69C599CE0C9F4CA84C",
+      "CLAIM:06F661D772C24ACA1DB03283",
+      "CLAIM:08E416A6C9777F1CE2661459",
+      "CLAIM:0CFAE341F0500CF31252FCC5",
+      "CLAIM:15C1DD719C43AE4086D517EC",
+      "CLAIM:19BC9AE540D04C71C2C50708",
+      "CLAIM:1AA4359DF734429BA88CB275",
+      "CLAIM:2C04FC6952C5370953FD04DB",
+      "CLAIM:2D637E6B9C614A82CAF688F9",
+      "CLAIM:2FB20991422DCF67142ED122",
+      "CLAIM:38E75D5594F42D654831F696",
+      "CLAIM:429B297124383E55C7F0E1E7",
+      "CLAIM:47045AB89C3DB0F3793A17A8",
+      "CLAIM:486241743F2AFFDA943AD3E9",
+      "CLAIM:4F554A3B2F84E162F84CCFCF",
+      "CLAIM:56DCE108019554AD39F415DF",
+      "CLAIM:6E996380526F65A7FC61EE79",
+      "CLAIM:6F43945D809EAA024E8D26BB",
+      "CLAIM:71485A243A4D0BB104D68BC2",
+      "CLAIM:74CA085F3F9DA4DB0C883EFF",
+      "CLAIM:79405751F42DC00708FE178C",
+      "CLAIM:8220C245BD636352883E14DA",
+      "CLAIM:8420D3AD6B2B9DDFE275BF7C",
+      "CLAIM:87B46880ADB19ADEB83B9986",
+      "CLAIM:9169CEA62160E4EF50C1E6E2",
+      "CLAIM:9C9DBED425BC25FF306F3B4C",
+      "CLAIM:A319ECDA25F82C8E888DD7FD",
+      "CLAIM:A94CCF7DAD68A768AD05BB36",
+      "CLAIM:ADAD23826C68CA17569EF1A8",
+      "CLAIM:C28E0055F4A6168AC9DC0B20",
+      "CLAIM:D4689C9FADDC37298DC12823",
+      "CLAIM:D5897C9AB513AC2496004CAF",
+      "CLAIM:DF10C09B4BA3592A17B0FF6A",
+      "CLAIM:E48FA130A537C12659FC535F",
+      "CLAIM:E5E6649910325679183B8166",
+      "CLAIM:F9D71EAF9055F16227101877"
+    ],
+    "condition_refs": [
+      "CONDITION:0A19AA2882AB0193FB1C736B"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Heap overflow có thể restart worker.",
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-42945",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá bản đang chạy, review các transition của biến và buffer qua nhiều directive."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:007F059A2E41892C39628187",
+      "PACKAGE:34009B50DBAF2580AA14DA82",
+      "PACKAGE:47A4EE63059106441CFE0BBF",
+      "PACKAGE:F7DD9621BB1C8564F7778299"
+    ],
+    "distribution_status": [
+      "PACKAGE:007F059A2E41892C39628187",
+      "PACKAGE:34009B50DBAF2580AA14DA82",
+      "PACKAGE:47A4EE63059106441CFE0BBF",
+      "PACKAGE:F7DD9621BB1C8564F7778299"
+    ],
+    "documented_configuration_context": "Các tổ hợp rewrite, if hoặc set và capture/replacement được CNA mô tả; không coi mọi rewrite là đủ điều kiện.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Tương tác các bước rewrite và capture có thể dẫn đến heap overflow trong tạo chuỗi.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42945",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-09-10T12:04:53.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.",
+      "Trả lời có evidence: Hai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-42945",
+    "normal_component_behavior": "Mỗi bước dùng capture của đúng lần đánh giá và dung lượng theo output hiện tại.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "CNA nêu code execution có điều kiện ASLR; không xác nhận thực thi hoặc quyền root.",
+    "publication_date": "2026-05-13T14:12:43.971000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C44095FEE0B4391C6578EF81"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-REWRITE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nTương tác các bước rewrite và capture có thể dẫn đến heap overflow trong tạo chuỗi.\n\n## 2. CVE identity và product scope\n\nCVE-2026-42945; published 2026-05-13T14:12:43.971000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-D5897C9AB513AC2496004CAF|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nChuỗi directive rewrite và state capture của request. [[CLAIM-A94CCF7DAD68A768AD05BB36|Claim / locator]].\n\n## 5. Normal component behavior\n\nMỗi bước dùng capture của đúng lần đánh giá và dung lượng theo output hiện tại. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu thứ tự directive và replacement context liên quan. Diễn giải là sizing và state capture phải nhất quán; chưa xác định dòng mã lỗi. [[CLAIM-2FB20991422DCF67142ED122|Claim / locator]].\n\n## 7. Relevant security principles\n\nĐánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nCác tổ hợp rewrite, if hoặc set và capture/replacement được CNA mô tả; không coi mọi rewrite là đủ điều kiện. [[CLAIM-A94CCF7DAD68A768AD05BB36|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.6.27-1.30.0; not vulnerable/fixed branches 1.31.0+, 1.30.1+. [[CLAIM-6E996380526F65A7FC61EE79|Claim / locator]].\n\nFix 1.30.1/1.31.0; khác lỗi 9256 có ngưỡng sửa sau đó. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nHeap overflow có thể restart worker. [[CLAIM-08E416A6C9777F1CE2661459|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCNA nêu code execution có điều kiện ASLR; không xác nhận thực thi hoặc quyền root. [[CLAIM-79405751F42DC00708FE178C|Claim / locator]].\n\n## 12. Remediation principles\n\nVá bản đang chạy, review các transition của biến và buffer qua nhiều directive. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-6E996380526F65A7FC61EE79|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.1/1.31.0; khác lỗi 9256 có ngưỡng sửa sau đó.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.\n- Trả lời có evidence: Hai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?\n\n## 17. Discussion questions\n\nHai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?\n\nGợi ý đáp án: Không; phải so entry từng CVE và các nhánh phát hành.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-D5897C9AB513AC2496004CAF|CLAIM:D5897C9AB513AC2496004CAF]]\n- applicability: [[CLAIM-A94CCF7DAD68A768AD05BB36|CLAIM:A94CCF7DAD68A768AD05BB36]]\n- impact: [[CLAIM-08E416A6C9777F1CE2661459|CLAIM:08E416A6C9777F1CE2661459]]\n- potential: [[CLAIM-79405751F42DC00708FE178C|CLAIM:79405751F42DC00708FE178C]]\n- mechanism: [[CLAIM-2FB20991422DCF67142ED122|CLAIM:2FB20991422DCF67142ED122]]\n- versions: [[CLAIM-6E996380526F65A7FC61EE79|CLAIM:6E996380526F65A7FC61EE79]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nCapture state và phép tính gây sai dung lượng chưa được review độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:D5897C9AB513AC2496004CAF",
+      "CLAIM:A94CCF7DAD68A768AD05BB36",
+      "CLAIM:08E416A6C9777F1CE2661459",
+      "CLAIM:79405751F42DC00708FE178C",
+      "CLAIM:2FB20991422DCF67142ED122",
+      "CLAIM:6E996380526F65A7FC61EE79"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu thứ tự directive và replacement context liên quan. Diễn giải là sizing và state capture phải nhất quán; chưa xác định dòng mã lỗi.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:133E818F510308FE4549A351",
+      "SEVERITY:351936ABE2F2E3EA1E30C36D",
+      "SEVERITY:37D21A48E4C9983EBED83010",
+      "SEVERITY:41BC85F2B29F478C58E6188A",
+      "SEVERITY:60B2388F55A1A1B3BB1C2681",
+      "SEVERITY:BCD6A6EF95403A246C010EE7",
+      "SEVERITY:E6D215F821FC984974A2D702"
+    ],
+    "source_refs": [
+      "EVIDENCE:32FA0944FAC2777E62ABDC55",
+      "EVIDENCE:3736739F84F851A4D69EDC0D",
+      "EVIDENCE:3A64681628B462A9B4A1EB19",
+      "EVIDENCE:61095247ADD33838495794D2",
+      "EVIDENCE:69059E284D5B37C91A417C2C",
+      "EVIDENCE:83C382F9031A721F86C84AE8",
+      "EVIDENCE:8BD094C55AE576DA927DC8CE",
+      "EVIDENCE:94BAD2DEB5AC33DA6B9AF3E0",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:9E32087168F6A187D0C0545D",
+      "EVIDENCE:D7499FAAD66ACA4A6C462E03",
+      "EVIDENCE:DC1432949B4CBBFA7575048F"
+    ],
+    "title": "Buffer overflow in the ngx_http_rewrite_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Capture state và phép tính gây sai dung lượng chưa được review độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:49:50+00:00",
+    "upstream_affected_expression": "0.6.27-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_rewrite_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:7EAC3233EAF1893E42C9F6F9"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:04322C69C599CE0C9F4CA84C",
+      "CLAIM:06F661D772C24ACA1DB03283",
+      "CLAIM:08E416A6C9777F1CE2661459",
+      "CLAIM:0CFAE341F0500CF31252FCC5",
+      "CLAIM:15C1DD719C43AE4086D517EC",
+      "CLAIM:19BC9AE540D04C71C2C50708",
+      "CLAIM:1AA4359DF734429BA88CB275",
+      "CLAIM:2C04FC6952C5370953FD04DB",
+      "CLAIM:2D637E6B9C614A82CAF688F9",
+      "CLAIM:2FB20991422DCF67142ED122",
+      "CLAIM:38E75D5594F42D654831F696",
+      "CLAIM:429B297124383E55C7F0E1E7",
+      "CLAIM:47045AB89C3DB0F3793A17A8",
+      "CLAIM:486241743F2AFFDA943AD3E9",
+      "CLAIM:4F554A3B2F84E162F84CCFCF",
+      "CLAIM:56DCE108019554AD39F415DF",
+      "CLAIM:6E996380526F65A7FC61EE79",
+      "CLAIM:6F43945D809EAA024E8D26BB",
+      "CLAIM:71485A243A4D0BB104D68BC2",
+      "CLAIM:74CA085F3F9DA4DB0C883EFF",
+      "CLAIM:79405751F42DC00708FE178C",
+      "CLAIM:8220C245BD636352883E14DA",
+      "CLAIM:8420D3AD6B2B9DDFE275BF7C",
+      "CLAIM:87B46880ADB19ADEB83B9986",
+      "CLAIM:9169CEA62160E4EF50C1E6E2",
+      "CLAIM:9C9DBED425BC25FF306F3B4C",
+      "CLAIM:A319ECDA25F82C8E888DD7FD",
+      "CLAIM:A94CCF7DAD68A768AD05BB36",
+      "CLAIM:ADAD23826C68CA17569EF1A8",
+      "CLAIM:C28E0055F4A6168AC9DC0B20",
+      "CLAIM:D4689C9FADDC37298DC12823",
+      "CLAIM:D5897C9AB513AC2496004CAF",
+      "CLAIM:DF10C09B4BA3592A17B0FF6A",
+      "CLAIM:E48FA130A537C12659FC535F",
+      "CLAIM:E5E6649910325679183B8166",
+      "CLAIM:F9D71EAF9055F16227101877"
+    ],
+    "condition_refs": [
+      "CONDITION:0A19AA2882AB0193FB1C736B"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Heap overflow có thể restart worker.",
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-42945",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá bản đang chạy, review các transition của biến và buffer qua nhiều directive."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:007F059A2E41892C39628187",
+      "PACKAGE:34009B50DBAF2580AA14DA82",
+      "PACKAGE:47A4EE63059106441CFE0BBF",
+      "PACKAGE:F7DD9621BB1C8564F7778299"
+    ],
+    "distribution_status": [
+      "PACKAGE:007F059A2E41892C39628187",
+      "PACKAGE:34009B50DBAF2580AA14DA82",
+      "PACKAGE:47A4EE63059106441CFE0BBF",
+      "PACKAGE:F7DD9621BB1C8564F7778299"
+    ],
+    "documented_configuration_context": "Các tổ hợp rewrite, if hoặc set và capture/replacement được CNA mô tả; không coi mọi rewrite là đủ điều kiện.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Tương tác các bước rewrite và capture có thể dẫn đến heap overflow trong tạo chuỗi.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42945",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-09-10T12:04:53.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.",
+      "Trả lời có evidence: Hai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-42945",
+    "normal_component_behavior": "Mỗi bước dùng capture của đúng lần đánh giá và dung lượng theo output hiện tại.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "CNA nêu code execution có điều kiện ASLR; không xác nhận thực thi hoặc quyền root.",
+    "publication_date": "2026-05-13T14:12:43.971000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C44095FEE0B4391C6578EF81"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-REWRITE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nTương tác các bước rewrite và capture có thể dẫn đến heap overflow trong tạo chuỗi.\n\n## 2. CVE identity và product scope\n\nCVE-2026-42945; published 2026-05-13T14:12:43.971000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-D5897C9AB513AC2496004CAF|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nChuỗi directive rewrite và state capture của request. [[CLAIM-A94CCF7DAD68A768AD05BB36|Claim / locator]].\n\n## 5. Normal component behavior\n\nMỗi bước dùng capture của đúng lần đánh giá và dung lượng theo output hiện tại. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu thứ tự directive và replacement context liên quan. Diễn giải là sizing và state capture phải nhất quán; chưa xác định dòng mã lỗi. [[CLAIM-2FB20991422DCF67142ED122|Claim / locator]].\n\n## 7. Relevant security principles\n\nĐánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nCác tổ hợp rewrite, if hoặc set và capture/replacement được CNA mô tả; không coi mọi rewrite là đủ điều kiện. [[CLAIM-A94CCF7DAD68A768AD05BB36|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.6.27-1.30.0; not vulnerable/fixed branches 1.31.0+, 1.30.1+. [[CLAIM-6E996380526F65A7FC61EE79|Claim / locator]].\n\nFix 1.30.1/1.31.0; khác lỗi 9256 có ngưỡng sửa sau đó. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nHeap overflow có thể restart worker. [[CLAIM-08E416A6C9777F1CE2661459|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCNA nêu code execution có điều kiện ASLR; không xác nhận thực thi hoặc quyền root. [[CLAIM-79405751F42DC00708FE178C|Claim / locator]].\n\n## 12. Remediation principles\n\nVá bản đang chạy, review các transition của biến và buffer qua nhiều directive. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-6E996380526F65A7FC61EE79|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.1/1.31.0; khác lỗi 9256 có ngưỡng sửa sau đó.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.\n- Trả lời có evidence: Hai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?\n\n## 17. Discussion questions\n\nHai lỗi rewrite cùng heap overflow có dùng chung bản sửa nhỏ nhất không?\n\nGợi ý đáp án: Không; phải so entry từng CVE và các nhánh phát hành.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-D5897C9AB513AC2496004CAF|CLAIM:D5897C9AB513AC2496004CAF]]\n- applicability: [[CLAIM-A94CCF7DAD68A768AD05BB36|CLAIM:A94CCF7DAD68A768AD05BB36]]\n- impact: [[CLAIM-08E416A6C9777F1CE2661459|CLAIM:08E416A6C9777F1CE2661459]]\n- potential: [[CLAIM-79405751F42DC00708FE178C|CLAIM:79405751F42DC00708FE178C]]\n- mechanism: [[CLAIM-2FB20991422DCF67142ED122|CLAIM:2FB20991422DCF67142ED122]]\n- versions: [[CLAIM-6E996380526F65A7FC61EE79|CLAIM:6E996380526F65A7FC61EE79]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nCapture state và phép tính gây sai dung lượng chưa được review độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:D5897C9AB513AC2496004CAF",
+      "CLAIM:A94CCF7DAD68A768AD05BB36",
+      "CLAIM:08E416A6C9777F1CE2661459",
+      "CLAIM:79405751F42DC00708FE178C",
+      "CLAIM:2FB20991422DCF67142ED122",
+      "CLAIM:6E996380526F65A7FC61EE79"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu thứ tự directive và replacement context liên quan. Diễn giải là sizing và state capture phải nhất quán; chưa xác định dòng mã lỗi.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Đánh giá lại biểu thức không được âm thầm thay dữ liệu sau khi đã tính capacity.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:133E818F510308FE4549A351",
+      "SEVERITY:351936ABE2F2E3EA1E30C36D",
+      "SEVERITY:37D21A48E4C9983EBED83010",
+      "SEVERITY:41BC85F2B29F478C58E6188A",
+      "SEVERITY:60B2388F55A1A1B3BB1C2681",
+      "SEVERITY:BCD6A6EF95403A246C010EE7",
+      "SEVERITY:E6D215F821FC984974A2D702"
+    ],
+    "source_refs": [
+      "EVIDENCE:32FA0944FAC2777E62ABDC55",
+      "EVIDENCE:3736739F84F851A4D69EDC0D",
+      "EVIDENCE:3A64681628B462A9B4A1EB19",
+      "EVIDENCE:61095247ADD33838495794D2",
+      "EVIDENCE:69059E284D5B37C91A417C2C",
+      "EVIDENCE:83C382F9031A721F86C84AE8",
+      "EVIDENCE:8BD094C55AE576DA927DC8CE",
+      "EVIDENCE:94BAD2DEB5AC33DA6B9AF3E0",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:9E32087168F6A187D0C0545D",
+      "EVIDENCE:D7499FAAD66ACA4A6C462E03",
+      "EVIDENCE:DC1432949B4CBBFA7575048F"
+    ],
+    "title": "Buffer overflow in the ngx_http_rewrite_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Capture state và phép tính gây sai dung lượng chưa được review độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:48+00:00",
+    "upstream_affected_expression": "0.6.27-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:49:50+00:00",
+  "entity_id": "CVE:CVE-2026-42945",
+  "id": "HISTORY:066B5C07C5E8B9B3BFF3921D"
+}

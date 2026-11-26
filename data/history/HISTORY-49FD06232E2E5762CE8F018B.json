@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:2B00EA4786FD5D0CB03EBE8D",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F790CCB081A7D31E7B52367D",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nSchema cho phép nhập tự động dữ liệu có cấu trúc, giảm lỗi chép version và authority. Tuy nhiên, pass schema không quyết định mô tả có chính xác hay đủ sâu. Giữ UNKNOWN giúp tránh kết luận vượt nguồn nhưng cũng tạo công việc review cần ưu tiên rõ. Với nghiên cứu, đọc mô tả và applicability trước khi suy taxonomy; với vận hành, bổ sung provenance package và chứng cứ binary thực chạy. Không lấy số Claim hay số mirror làm thước đo độ tin cậy.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F790CCB081A7D31E7B52367D",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:15:16+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:16+00:00",
+  "entity_id": "CLAIM:F790CCB081A7D31E7B52367D",
+  "id": "HISTORY:49FD06232E2E5762CE8F018B"
+}

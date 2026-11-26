@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "b836375d9ce5b9d3565c8f4c55066764d8572bcad65d7a1af53d3662c94fd59e",
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Hệ thống phân giải tên phân cấp.",
+    "document_title": "DNS",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99",
+    "id": "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99",
+    "local_snapshot_path": "data/raw/documentation/snapshots/b836375d9ce5b9d3565c8f4c55066764d8572bcad65d7a1af53d3662c94fd59e.html",
+    "name": "DNS",
+    "paraphrase": "Hệ thống phân giải tên phân cấp.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:23+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine; topic=PROTOCOL:DNS",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99",
+  "id": "HISTORY:037F22126754A48AA043CB1A"
+}

@@ -1,0 +1,59 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:CF4F61C3B6DD32688EB91E57",
+      "CLAIM:7078653912747AD75E7C88D0",
+      "CLAIM:AF35BD6FA6555EA77A6187BB",
+      "CLAIM:24758A84B57E6462FF16036A",
+      "CLAIM:EDD45578614494D98D51972B",
+      "CLAIM:99D57B2B61C409A4E7118C81",
+      "CLAIM:9473A915B2CEC1A7A96BF589",
+      "CLAIM:7D30B296B7A7F29953AE3048"
+    ],
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "cwe_id": "CWE-789",
+    "defensive_principles": "Đặt trần tài nguyên, xử lý lỗi cấp phát và giới hạn các giá trị dẫn xuất.",
+    "definition": "Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.",
+    "description": "Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-789",
+    "learning_objectives": [
+      "Giải thích CWE-789 — Excessive Memory Allocation bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-789 — Excessive Memory Allocation",
+    "normal_behavior": "Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.",
+    "related_failure_classes": "Excessive Memory Allocation",
+    "related_knowledge": [],
+    "safety_assumptions": "Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A",
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "updated_at": "2026-11-25T02:49:00+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "cwe_id": "CWE-789",
+    "description": "CWE-789: Memory Allocation with Excessive Size Value",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-789",
+    "name": "CWE-789",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "updated_at": "2026-11-25T02:28:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:00+00:00",
+  "entity_id": "WEAKNESS:CWE-789",
+  "id": "HISTORY:22CAA62055368B71CAEAE52A"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:8C8F6CF9D3E01C4768CCA7DE",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:01B0DB700F752B2F80B91141",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:50A866E441A4800F7F11E38E: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:01B0DB700F752B2F80B91141",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:SMTP: related_failure_classes",
+    "observation_key": "OBSERVATION:5EA1AD208EF23353498C9B3D",
+    "observed_at": "2026-11-25T02:32:25+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "PROTOCOL:SMTP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:25+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T04:12:27+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:01B0DB700F752B2F80B91141",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "id": "CLAIM:01B0DB700F752B2F80B91141",
+    "name": "PROTOCOL:SMTP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:32:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:27+00:00",
+  "entity_id": "CLAIM:01B0DB700F752B2F80B91141",
+  "id": "HISTORY:1F1A21BF105E0EAE8CA9DE84"
+}

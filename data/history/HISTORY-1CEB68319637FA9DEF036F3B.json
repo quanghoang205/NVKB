@@ -1,0 +1,33 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:2C04F08A6901F2579F713D88"
+    ],
+    "created_at": "2026-11-25T02:33:42+00:00",
+    "description": "CVE:CVE-2026-120993 related_components COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:52F06B06E245F7569CFAF3AE",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T02:33:42+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:42+00:00",
+  "entity_id": "REL:52F06B06E245F7569CFAF3AE",
+  "id": "HISTORY:1CEB68319637FA9DEF036F3B"
+}

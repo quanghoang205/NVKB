@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:922C477ADD9858863758ACDC",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:B660A7FCCC621BB9AFBA7475",
+    "claim_value": "\"## Ownership và lifecycle\\n\\nAllocation tạo capacity; owner xác định ai chịu trách nhiệm kết thúc lifetime; consumer chỉ được dùng trong contract đó. Pool giải phóng tài nguyên theo nhóm giúp quản lý hiệu quả nhưng không tự theo dõi mọi con trỏ mà module khác giữ. Một callback còn chờ hoặc subrequest còn chạy làm việc xác định lifetime khó hơn. Spatial safety không sửa temporal safety và ngược lại.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:58+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B660A7FCCC621BB9AFBA7475",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-787: v1.3:knowledge:Ownership và lifecycle",
+    "observed_at": "2026-11-25T05:28:59+00:00",
+    "predicate": "v1.3:knowledge:Ownership và lifecycle",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T05:28:59+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:59+00:00",
+  "entity_id": "CLAIM:B660A7FCCC621BB9AFBA7475",
+  "id": "HISTORY:C4B41464BC320957C4D687BC"
+}

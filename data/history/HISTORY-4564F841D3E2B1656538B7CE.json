@@ -1,0 +1,50 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:32AA46D6486A99AA473832D5",
+    "claim_value": "\"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:40:21+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "id": "CLAIM:32AA46D6486A99AA473832D5",
+    "name": "CVE:CVE-2025-23419: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:40:21+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:21+00:00",
+  "entity_id": "CLAIM:32AA46D6486A99AA473832D5",
+  "id": "HISTORY:4564F841D3E2B1656538B7CE"
+}

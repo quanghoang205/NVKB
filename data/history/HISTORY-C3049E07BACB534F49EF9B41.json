@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:3F4152A5C32254DF38545160",
+    "claim_value": "\"Không đồng nhất segment TCP với thông điệp ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "id": "CLAIM:3F4152A5C32254DF38545160",
+    "name": "PROTOCOL:TCP: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:3F4152A5C32254DF38545160",
+  "id": "HISTORY:C3049E07BACB534F49EF9B41"
+}

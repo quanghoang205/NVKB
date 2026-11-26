@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:BAC64DA4A11A4D266BEA1A04",
+    "authority": "Debian Security Team",
+    "authority_scope": "Debian Security Team",
+    "claim_id": "CLAIM:3D5C45EEF7E0BF385247F140",
+    "claim_value": "{\"distribution\": \"debian\", \"fixed_version\": \"1.22.1-9+deb12u9\", \"patch_status\": \"fixed\", \"release\": \"bookworm\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "distribution_patch_status",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:615C82DFAD5E4E560F7E1F42: table Fixed Version; package=nginx; release=bookworm",
+    "evidence_refs": [
+      "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3D5C45EEF7E0BF385247F140",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PACKAGE:B81B35F53CE1CB991EE32CB9: distribution_patch_status",
+    "observation_key": "OBSERVATION:DF2028821A0F6A7F61516A72",
+    "observed_at": "2026-11-25T02:27:59+00:00",
+    "predicate": "distribution_patch_status",
+    "product_scope": "PACKAGE:B81B35F53CE1CB991EE32CB9",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:59+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "Debian Security Team",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PACKAGE:B81B35F53CE1CB991EE32CB9",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:3D5C45EEF7E0BF385247F140",
+    "claim_value": "{\"distribution\": \"debian\", \"fixed_version\": \"1.22.1-9+deb12u9\", \"patch_status\": \"fixed\", \"release\": \"bookworm\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "distribution_patch_status",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+    ],
+    "id": "CLAIM:3D5C45EEF7E0BF385247F140",
+    "name": "PACKAGE:B81B35F53CE1CB991EE32CB9: distribution_patch_status",
+    "predicate": "distribution_patch_status",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+    ],
+    "subject_entity_id": "PACKAGE:B81B35F53CE1CB991EE32CB9",
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:3D5C45EEF7E0BF385247F140",
+  "id": "HISTORY:2D98D32DEC8A0644A52AB3EE"
+}

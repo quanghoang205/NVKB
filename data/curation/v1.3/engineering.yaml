@@ -1,0 +1,52 @@
+group: engineering
+name: Memory safety và defensive engineering
+articles: []
+knowledge:
+  - id: WEAKNESS:CWE-787
+    name: Out-of-bounds Write — biên bộ nhớ và giới hạn tác động
+    source: https://cwe.mitre.org/data/definitions/787.html
+    locator: Description; Common Consequences; Potential Mitigations
+    excerpt: intended buffer
+    source_fact: CWE-787 mô tả ghi ngoài biên buffer dự định; các hậu quả và biện pháp giảm thiểu được taxonomy nêu không chứng minh tất cả cùng xảy ra ở một CVE cụ thể.
+    prerequisites: [COMPONENT:MEMORY-POOL, COMPONENT:CONNECTION-LIFECYCLE]
+    objectives: [Phân biệt spatial safety, temporal safety và initialization., Tách lớp lỗi memory khỏi hậu quả cụ thể được chứng minh.]
+    body: |
+      ## Ba câu hỏi về bộ nhớ
+
+      Một lần truy cập cần trả lời ba câu riêng: địa chỉ có nằm trong vùng hợp lệ không, allocation có còn sống không, và dữ liệu đã được khởi tạo cho mục đích hiện tại chưa? CWE-787 tập trung ghi ngoài biên buffer. Dùng taxonomy chi tiết ở bài CVE để phân biệt over-read, overwrite, use-after-free hay uninitialized access; không gộp tất cả thành một root cause. Các phần lifetime và initialization dưới đây là so sánh sư phạm, không mở rộng định nghĩa CWE-787.
+
+      ## Ownership và lifecycle
+
+      Allocation tạo capacity; owner xác định ai chịu trách nhiệm kết thúc lifetime; consumer chỉ được dùng trong contract đó. Pool giải phóng tài nguyên theo nhóm giúp quản lý hiệu quả nhưng không tự theo dõi mọi con trỏ mà module khác giữ. Một callback còn chờ hoặc subrequest còn chạy làm việc xác định lifetime khó hơn. Spatial safety không sửa temporal safety và ngược lại.
+
+      ## Invariant và tradeoff
+
+      Diễn giải: kiểm kích thước trước chuyển kiểu/cấp phát, giữ con trỏ/độ dài đồng bộ, và bảo đảm mọi đường cleanup thống nhất. Ownership rõ có thể làm thiết kế dài hơn nhưng giảm phụ thuộc ngầm; sao chép dữ liệu giảm chia sẻ lifetime nhưng tốn memory và CPU. Chia sẻ buffer giúp throughput nhưng cần protocol trả ownership hoặc reference management rõ ràng.
+
+      ## Hậu quả và kiểm soát
+
+      Over-read không tự chứng minh dữ liệu đã được gửi ra ngoài; overwrite không tự chứng minh code execution; worker crash không tự chứng minh toàn host ngừng hoạt động. Đọc source impact của từng CVE trước khi kết luận. Hardening có thể giảm khả năng hoặc hậu quả của một số lớp lỗi nhưng không làm phép truy cập sai trở thành đúng. Giữ quyền worker thấp, kiểm chứng bản vá và review các đường lỗi là các lớp bổ sung, không phải phép đo miễn nhiễm.
+    assessment: Một lỗi thuộc CWE memory có đủ để gắn confirmed RCE không?
+    answer: Không. CWE phân loại weakness; cần evidence riêng cho hậu quả và điều kiện được nguồn công bố.
+  - id: CONTROL:RESOURCE-BOUNDS
+    name: Giới hạn tài nguyên và tiến độ event loop
+    source: https://nginx.org/en/docs/ngx_core_module.html
+    locator: '#worker_connections; #worker_rlimit_nofile; #worker_shutdown_timeout'
+    excerpt: worker_connections
+    source_fact: worker_connections giới hạn số connection của một worker, bao gồm kết nối tới upstream; khả năng mở file descriptor và giới hạn hệ điều hành còn ràng buộc capacity thực tế.
+    prerequisites: [COMPONENT:EVENT-DRIVEN, COMPONENT:CONNECTION-LIFECYCLE]
+    objectives: [Tính ngân sách connection theo cả client và upstream., Phân biệt giới hạn tài nguyên với tính đúng của đường xử lý lỗi.]
+    body: |
+      ## Cơ chế bình thường
+
+      Worker quản lý nhiều connection trong event loop. Một request proxy có thể cần tài nguyên phía client lẫn upstream, cùng buffer, timer và file. Giới hạn connection không phải số request tối đa vì keepalive và multiplexing thay đổi ánh xạ. Giới hạn file descriptor của tiến trình/hệ điều hành có thể khiến capacity thực tế thấp hơn cấu hình dự định.
+
+      ## Ownership và liveness
+
+      Khi cạn tài nguyên, đường cấp phát thất bại vẫn phải giữ state nhất quán và trả quyền điều khiển. Một vòng lặp liên tục retry mà không tạo tiến độ có thể tiêu thụ CPU dù memory còn đủ. Timer không bảo đảm hiệu lực nếu event loop không được chạy timer callback. Liveness vì vậy bao gồm tiến độ công việc, không chỉ process còn tồn tại.
+
+      ## Tradeoff và phòng vệ
+
+      Tăng giới hạn giúp throughput trong một số workload nhưng giữ nhiều state và làm tăng ngân sách memory/file. Giới hạn quá thấp có thể gây từ chối công việc hợp lệ. Cần capacity model theo workload và metric quản trị; đây không là công cụ dò hệ thống bên ngoài. Kiểm đường resource exhaustion, timeout và cancellation ở code review, rồi dùng evidence deployment để kiểm bản sửa đang chạy. Điều chỉnh một knob không thay remediation lỗi UAF hoặc arithmetic.
+    assessment: Tăng worker_connections có sửa được UAF trên nhánh cấp connection thất bại không?
+    answer: Không; nó có thể thay thời điểm gặp nhánh lỗi nhưng không sửa contract lifetime của implementation.

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:03+00:00",
+  "content_hash": "4843aff89ad015fc9446c8e5064512b1d822cf68c1fa2dbac1d97e6e03cdd368",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/4843aff89ad015fc9446c8e5064512b1d822cf68c1fa2dbac1d97e6e03cdd368.html",
+  "retrieved_at": "2026-11-25T02:27:03+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-123633"
+}

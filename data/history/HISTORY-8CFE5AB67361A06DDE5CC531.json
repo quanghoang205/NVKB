@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:ECCA9EB7729EB49207D5A123",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:3052794618927FB78F062146",
+    "claim_value": "\"Xử lý SMTP trong vai trò mail proxy.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:4401B2B17FF062D7BE796E33: ngx_mail_smtp_module",
+    "evidence_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3052794618927FB78F062146",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-MAIL-SMTP-MODULE: definition",
+    "observation_key": "OBSERVATION:D545A733D3D47CB07248D9DF",
+    "observed_at": "2026-11-25T02:32:51+00:00",
+    "predicate": "definition",
+    "product_scope": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:51+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "updated_at": "2026-11-25T04:12:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3052794618927FB78F062146",
+    "claim_value": "\"Xử lý SMTP trong vai trò mail proxy.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "id": "CLAIM:3052794618927FB78F062146",
+    "name": "MODULE:NGX-MAIL-SMTP-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:32+00:00",
+  "entity_id": "CLAIM:3052794618927FB78F062146",
+  "id": "HISTORY:8CFE5AB67361A06DDE5CC531"
+}

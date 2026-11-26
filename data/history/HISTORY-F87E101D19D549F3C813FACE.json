@@ -1,0 +1,117 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Hai phần mềm có parser, phép tính và lifecycle riêng. Điều kiện kiến trúc là dữ kiện của từng advisory; chỉ nguồn của đúng CVE mới hỗ trợ việc thu hẹp phạm vi đó.",
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-51861748B86419308252ADB7|phạm vi tài liệu]].\n\n## Cơ chế bình thường và ownership\n\nModule không phải bộ giải mã video tổng quát. Nó đọc cấu trúc mô tả media để tạo một đoạn có thời gian bắt đầu/kết thúc phù hợp với trình phát. Metadata moov chứa thông tin index. Khi metadata nằm cuối file, server phải chuẩn bị thứ tự đầu ra thích hợp trước khi phát dữ liệu; việc chuẩn bị file ngay ở bước xuất bản có thể giảm công việc lặp tại worker. Request không có yêu cầu xử lý đoạn có thể đi theo đường gửi tài nguyên tĩnh được tài liệu mô tả.\n\nTách ba loại tài nguyên khi thiết kế: file nguồn do hệ thống lưu trữ quản lý, buffer metadata phục vụ xử lý, và các buffer đầu ra có thể chưa gửi hết. Việc đã đọc xong metadata không có nghĩa output đã hoàn thành. Đây là mô hình ownership để review, không xác nhận chính xác cấu trúc C của từng bản NGINX. Khi request kết thúc hoặc bị hủy, không được còn callback dùng bộ nhớ thuộc request đã giải phóng.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-9C74AC1FAF0F8E17A8524E3B|Claim của section]].\n\n## Invariant về cấu trúc và kích thước\n\nDiễn giải phòng vệ: offset phải nằm trong vùng file tương ứng, số phần tử phải phù hợp độ dài bảng, và phép nhân/cộng để tính kích thước phải biểu diễn được trong kiểu đích trước cấp phát. Kiểm giới hạn một buffer không thay thế kiểm quan hệ giữa các bảng. Máy 32-bit có miền biểu diễn khác 64-bit; điều này giúp hiểu vì sao applicability có thể giới hạn kiến trúc, nhưng không tự chứng minh CVE nào là integer overflow.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-E7B7C6539590D6C0BDC27746|Claim của section]].\n\n## Tradeoff và kiểm soát\n\nGiới hạn metadata tránh một request chiếm bộ nhớ không giới hạn; tăng giới hạn để nhận file lớn cũng tăng ngân sách tài nguyên cần dự phòng. Tài liệu cho biết vượt mp4_max_buffer_size dẫn đến lỗi xử lý; đó không phải bằng chứng rằng mọi lỗi parser đều được chặn. Chuẩn hóa media trong quy trình xuất bản và hạn chế ai được đưa file vào vùng phục vụ giúp quản trị đầu vào, còn bản vá vẫn cần thiết cho lỗi implementation.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-527D9D77AD2987253AAB97A2|Claim của section]].\n\n## Liên hệ nghiên cứu\n\nCVE-2024-7347 mô tả over-read và kết thúc worker; CVE-2026-27784 giới hạn 32-bit; CVE-2026-32647 có khả năng thực thi mã được CNA nêu như tác động có thể xảy ra. Đọc từng note để lấy evidence và giới hạn; cùng module không có nghĩa cùng lỗi hay cùng hậu quả. Không sử dụng tên CWE để suy vị trí atom hoặc hàm lỗi.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-8C2EAF607EF92AA4FEA3A49E|Claim của section]].",
+    "assessment": "Tại sao một file phát được bằng trình phát không đủ chứng minh đường xử lý metadata trên server an toàn? Vì sao không chuyển điều kiện 32-bit của 27784 sang 32647?",
+    "claim_refs": [
+      "CLAIM:51861748B86419308252ADB7",
+      "CLAIM:9C74AC1FAF0F8E17A8524E3B",
+      "CLAIM:E7B7C6539590D6C0BDC27746",
+      "CLAIM:527D9D77AD2987253AAB97A2",
+      "CLAIM:8C2EAF607EF92AA4FEA3A49E"
+    ],
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Module MP4 thực hiện pseudo-streaming; việc xử lý metadata có chi phí CPU, bộ nhớ và I/O. Tài liệu phân biệt xử lý media với gửi file tĩnh và quy định giới hạn buffer metadata.",
+    "description": "Module MP4 thực hiện pseudo-streaming; việc xử lý metadata có chi phí CPU, bộ nhớ và I/O. Tài liệu phân biệt xử lý media với gửi file tĩnh và quy định giới hạn buffer metadata.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "learning_objectives": [
+      "Phân biệt gửi file MP4 tĩnh với việc phân tích và tái sắp metadata.",
+      "Giải thích vì sao kích thước buffer và tính hợp lệ của index là hai nghĩa vụ riêng."
+    ],
+    "name": "MP4 pseudo-streaming và ranh giới metadata",
+    "normal_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "prerequisites": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "research_claim_refs": [
+      "CLAIM:51861748B86419308252ADB7",
+      "CLAIM:9C74AC1FAF0F8E17A8524E3B",
+      "CLAIM:E7B7C6539590D6C0BDC27746",
+      "CLAIM:527D9D77AD2987253AAB97A2",
+      "CLAIM:8C2EAF607EF92AA4FEA3A49E"
+    ],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "updated_at": "2026-11-25T04:57:04+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:D77B9EC5D31F51AC3FF67AF2",
+      "CLAIM:8A26ADDD09E13F66B5387F75",
+      "CLAIM:50F47FAC4C415B3496C8B4A8",
+      "CLAIM:94E5B508DAA586B7B2744E24",
+      "CLAIM:13B21F3B73CE2444E036029A",
+      "CLAIM:813551191218C951EA132637",
+      "CLAIM:825C634DB69C4C91E8957B4D",
+      "CLAIM:87CA01326310E9414F8BB799"
+    ],
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "description": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_mp4_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_mp4_module",
+    "normal_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:57:04+00:00",
+  "entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+  "id": "HISTORY:F87E101D19D549F3C813FACE"
+}

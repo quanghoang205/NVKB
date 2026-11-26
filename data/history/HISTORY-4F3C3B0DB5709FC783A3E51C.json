@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:51CB66772074A24425BE994F",
+    "claim_value": "\"A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BBCDF7FEBA69B07CE7B151BE"
+    ],
+    "id": "CLAIM:51CB66772074A24425BE994F",
+    "name": "CVE:CVE-2026-1642: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BBCDF7FEBA69B07CE7B151BE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:25+00:00",
+  "entity_id": "CLAIM:51CB66772074A24425BE994F",
+  "id": "HISTORY:4F3C3B0DB5709FC783A3E51C"
+}

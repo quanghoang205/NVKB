@@ -1,0 +1,46 @@
+# Local environments, credentials and caches
+.venv/
+.tools/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.private.json
+*.pem
+*.key
+
+# Labs and development material must never enter the product repository
+lab/
+labs/
+report/
+reports/
+docs/
+plans/
+scripts/
+tests/
+AGENTS.md
+CHANGELOG.md
+ontology/generated/docs/
+
+# Rebuildable outputs and local runtime state
+logs/
+database/
+dist/
+build/
+data/exports/
+data/staging/
+data/quarantine/
+data/pipeline-last.json
+*.tmp
+*.tar.gz
+*.zip
+vault/.obsidian/
+vault/.claudian/

@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Sản phẩm chính trong phạm vi.",
+    "entity_type": "Product",
+    "id": "PRODUCT:NGINX-OSS",
+    "in_primary_scope": true,
+    "name": "NGINX Open Source",
+    "product_family": "NGINX-OSS",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "vendor": "NGINX / F5",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Sản phẩm chính trong phạm vi.",
+    "entity_type": "Product",
+    "id": "PRODUCT:NGINX-OSS",
+    "in_primary_scope": true,
+    "name": "NGINX Open Source",
+    "product_family": "NGINX-OSS",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "vendor": "NGINX / F5",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PRODUCT:NGINX-OSS",
+  "id": "HISTORY:7AB395D8EC30A27FC0B540C2"
+}

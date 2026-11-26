@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:894E9852A3A9496947B8DEBD"
+    ],
+    "created_at": "2026-11-25T02:27:00+00:00",
+    "description": "CVE:CVE-2026-123007 distribution_fix PACKAGE:A8271D7CC0A7096095196016",
+    "entity_type": "Relationship",
+    "id": "REL:E05A8F80DE3536544CAB9530",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:A8271D7CC0A7096095196016",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0452C47844E35BC3CBDBC2C4"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:27:00+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:00+00:00",
+  "entity_id": "REL:E05A8F80DE3536544CAB9530",
+  "id": "HISTORY:69F5E972FBF4FF9DDCEA8124"
+}

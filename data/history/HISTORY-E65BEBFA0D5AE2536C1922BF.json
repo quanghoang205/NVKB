@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Catalog phân tách sản phẩm; CVE không tự động nhập vào NGINX OSS.",
+    "entity_type": "Product",
+    "id": "PRODUCT:COMMUNITY-INGRESS-NGINX",
+    "in_primary_scope": false,
+    "name": "Kubernetes community ingress-nginx",
+    "product_family": "COMMUNITY-INGRESS-NGINX",
+    "schema_version": "1.0.0",
+    "source_refs": [],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "vendor": "Kubernetes",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "PRODUCT:COMMUNITY-INGRESS-NGINX",
+  "id": "HISTORY:E65BEBFA0D5AE2536C1922BF"
+}

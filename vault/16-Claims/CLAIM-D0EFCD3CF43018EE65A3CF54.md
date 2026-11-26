@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:D0EFCD3CF43018EE65A3CF54
+title: 'CVE:CVE-2025-23419: root_cause_summary'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2025-23419: root_cause_summary'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2025-23419: root_cause_summary
+
+`CLAIM:D0EFCD3CF43018EE65A3CF54` · **PENDING_REVIEW**
+
+## Nhận định
+
+Chủ thể: [[CVE-2025-23419|CVE-2025-23419]]. Predicate: `root_cause_summary`.
+
+```json
+"Nguồn phân loại vấn đề: SSL session reuse vulnerability.\n\nCWE-863 — Authentication policy violation / Incorrect Authorization: Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-271344F0E2F0185FFAC444C4|[nginx-announce] nginx security advisory (CVE-2025-23419)]], [[EVIDENCE-2BE634B44A5BFFF65B2BE48B|CVE-2025-23419]], [[EVIDENCE-3F61D027CE4D9052EE9C8318|CVE-2025-23419]], [[EVIDENCE-50210F852D6BA196DDD0E202|CWE - CWE-863: Incorrect Authorization (5.0)]], [[EVIDENCE-7089B40AEA556F47764AE55C|CVE-2025-23419]], [[EVIDENCE-A38A031F685C602F9C82686E|CVE-2025-23419]], [[EVIDENCE-AF1B942825307CEF770EBBF0|CVE-2025-23419]], [[EVIDENCE-BA3B0AEE884498D2B3876382|CVE-2026-28755]], [[EVIDENCE-BCF67241230218EB4C26F27C|CWE - CWE-863: Incorrect Authorization (5.0)]], [[EVIDENCE-E19E68B2E196A0C50233787A|NGINX security advisories]], [[EVIDENCE-EF03D902D12B9BD739833F79|CVE-2025-23419]], [[EVIDENCE-F3900FE1A45C906CF105D39E|CVE-2025-23419]]
+
+Locator: EVIDENCE:271344F0E2F0185FFAC444C4: advisory body; EVIDENCE:2BE634B44A5BFFF65B2BE48B: /containers/cna/problemTypes; EVIDENCE:3F61D027CE4D9052EE9C8318: /containers/cna/affected; EVIDENCE:50210F852D6BA196DDD0E202: Description / Potential Mitigations; topic=WEAKNESS:CWE-863; EVIDENCE:7089B40AEA556F47764AE55C: /containers/cna/metrics; EVIDENCE:A38A031F685C602F9C82686E: /containers/cna/metrics; EVIDENCE:AF1B942825307CEF770EBBF0: /containers/cna/descriptions; EVIDENCE:BA3B0AEE884498D2B3876382: /containers/cna/problemTypes; EVIDENCE:BCF67241230218EB4C26F27C: Description / Potential Mitigations; EVIDENCE:E19E68B2E196A0C50233787A: li containing CVE-2025-23419; EVIDENCE:EF03D902D12B9BD739833F79: /cveMetadata; EVIDENCE:F3900FE1A45C906CF105D39E: /containers/cna/affected
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced claim differs from current field; review rather than silently treating both as current.
+
+Quan sát: 2026-11-25T02:44:40+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

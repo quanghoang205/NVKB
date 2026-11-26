@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:DB4AAA7A1BB0521D31B32D18",
+    "claim_value": "\"CRLF Injection\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "id": "CLAIM:DB4AAA7A1BB0521D31B32D18",
+    "name": "WEAKNESS:CWE-93: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-93",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:DB4AAA7A1BB0521D31B32D18",
+  "id": "HISTORY:2B0E444C936CDD10D18BAAA6"
+}

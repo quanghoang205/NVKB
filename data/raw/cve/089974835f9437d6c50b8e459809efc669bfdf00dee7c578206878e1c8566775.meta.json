@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:39+00:00",
+  "content_hash": "2b0f8e57f5de0db89ce5216c8cb0d6a9abde28d4c6848f9fb0b5dfddefd6ecb8",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"4509901cf337786b603d5798cac1971fd9a944e0dd09b67e32cb721d4adb7901\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/2b0f8e57f5de0db89ce5216c8cb0d6a9abde28d4c6848f9fb0b5dfddefd6ecb8.json",
+  "retrieved_at": "2026-11-25T02:25:39+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2009/3xxx/CVE-2009-3555.json"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:EAAFF7115CF604B5F01753C8",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:453CA02184B1AD656EF6FE8C",
+    "claim_value": "\"NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:DA8FA63AD841F188DF0128A2: Pool",
+    "evidence_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:453CA02184B1AD656EF6FE8C",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:MEMORY-POOL: normal_behavior",
+    "observation_key": "OBSERVATION:3A8AC8FE91A9155436FFBB65",
+    "observed_at": "2026-11-25T02:32:05+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "COMPONENT:MEMORY-POOL",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:12:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:453CA02184B1AD656EF6FE8C",
+    "claim_value": "\"NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "id": "CLAIM:453CA02184B1AD656EF6FE8C",
+    "name": "COMPONENT:MEMORY-POOL: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:35+00:00",
+  "entity_id": "CLAIM:453CA02184B1AD656EF6FE8C",
+  "id": "HISTORY:3699C617A189327A75F74190"
+}

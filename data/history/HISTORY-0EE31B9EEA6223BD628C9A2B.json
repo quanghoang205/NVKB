@@ -1,0 +1,35 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "cwe_id": "CWE-476",
+    "description": "CWE-476 NULL Pointer Dereference",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-476",
+    "name": "CWE-476",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:8B4D10F312B6AD83E27780ED"
+    ],
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "cwe_id": "CWE-476",
+    "description": "CWE-476 NULL Pointer Dereference",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-476",
+    "name": "CWE-476",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8B4D10F312B6AD83E27780ED"
+    ],
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:26:27+00:00",
+  "entity_id": "WEAKNESS:CWE-476",
+  "id": "HISTORY:0EE31B9EEA6223BD628C9A2B"
+}

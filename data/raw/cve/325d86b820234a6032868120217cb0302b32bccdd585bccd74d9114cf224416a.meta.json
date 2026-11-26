@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:45+00:00",
+  "content_hash": "0e558cd9ca523dbcfbf215dac9ad81fe083a03f19761bdae888188d994dd09cc",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"233da06dd43c16436a0ecba55dedb27678b4a6039a0a6d94b4dbc9c591122894\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/0e558cd9ca523dbcfbf215dac9ad81fe083a03f19761bdae888188d994dd09cc.json",
+  "retrieved_at": "2026-11-25T02:25:45+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2012/1xxx/CVE-2012-1180.json"
+}

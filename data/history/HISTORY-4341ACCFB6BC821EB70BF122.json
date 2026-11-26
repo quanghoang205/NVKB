@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:D649B8448BF022A9E27571CD",
+    "claim_refs": [
+      "CLAIM:FFB0F9575BCAD3859C6A7732"
+    ],
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cvss_score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:C7EC4D78442DF2CF2AB495B8",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 3.7, \"baseSeverity\": \"LOW\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2025-53859 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "LOW",
+    "source_refs": [
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T04:13:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:EB69886794F1C4665A6631E2",
+    "claim_refs": [
+      "CLAIM:FFB0F9575BCAD3859C6A7732"
+    ],
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cvss_score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:C7EC4D78442DF2CF2AB495B8",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 3.7, \"baseSeverity\": \"LOW\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2025-53859 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "LOW",
+    "source_refs": [
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T04:13:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:16+00:00",
+  "entity_id": "SEVERITY:C7EC4D78442DF2CF2AB495B8",
+  "id": "HISTORY:4341ACCFB6BC821EB70BF122"
+}

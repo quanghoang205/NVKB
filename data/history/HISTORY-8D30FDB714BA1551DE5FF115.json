@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:09299B0B028EAA58475AD57A",
+    "claim_value": "\"MODULE:NGX-STREAM-SSL-MODULE\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:42+00:00",
+    "description": "Module được nêu tên trực tiếp trong nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "id": "CLAIM:09299B0B028EAA58475AD57A",
+    "name": "CVE:CVE-2026-120993: related_modules",
+    "predicate": "related_modules",
+    "reviewer_notes": "Module được nêu tên trực tiếp trong nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T02:33:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:42+00:00",
+  "entity_id": "CLAIM:09299B0B028EAA58475AD57A",
+  "id": "HISTORY:8D30FDB714BA1551DE5FF115"
+}

@@ -1,0 +1,35 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:A376C2D4C581FE3E0CE9A18D"
+    ],
+    "created_at": "2026-11-25T02:33:49+00:00",
+    "description": "CVE:CVE-2026-32647 related_components COMPONENT:MEMORY-POOL",
+    "entity_type": "Relationship",
+    "id": "REL:B7CBEA2DC7BF1D45E634E1D9",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1696EE213A5424E97075EA01",
+      "EVIDENCE:198C480BD0F040C0B875841A",
+      "EVIDENCE:280FFDADEB891CC9C19C62D0",
+      "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+      "EVIDENCE:50E46DFFEBA88B1049A4FD9B",
+      "EVIDENCE:5DFD44D1745EC65F51418FC1",
+      "EVIDENCE:99EFFF4C70D5B2FC77D9645D",
+      "EVIDENCE:C59266D723B685ACE2719D33",
+      "EVIDENCE:ED5DE28FAC8FF32E7DA3A310",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-32647",
+    "updated_at": "2026-11-25T02:33:49+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:49+00:00",
+  "entity_id": "REL:B7CBEA2DC7BF1D45E634E1D9",
+  "id": "HISTORY:5A725AFA4C09F059906694E2"
+}

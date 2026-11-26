@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:65641EC20C0CE4BF048B3899",
+    "claim_value": "\"Thao tác I/O trả về ngay khi chưa thể hoàn tất.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:13+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "id": "CLAIM:65641EC20C0CE4BF048B3899",
+    "name": "COMPONENT:NONBLOCKING-IO: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+    "updated_at": "2026-11-25T02:44:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:13+00:00",
+  "entity_id": "CLAIM:65641EC20C0CE4BF048B3899",
+  "id": "HISTORY:FF696248D08F4D0CA6B70CEC"
+}

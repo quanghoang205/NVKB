@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:5C6263E390BA83EECDA3ECBD"
+    ],
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:9F3C7EDB794AA7EEE8B6FB79",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-9256 CVSS 3.1 redhat-SADP",
+    "schema_version": "1.0.0",
+    "scoring_authority": "redhat-SADP via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:ED2E022FF0F107AD8C211963"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:41+00:00",
+  "entity_id": "SEVERITY:9F3C7EDB794AA7EEE8B6FB79",
+  "id": "HISTORY:FB74F9A0FAFC98CCDDA0E2C7"
+}

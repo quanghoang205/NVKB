@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:7B22B7DCA1B2991BD6695639",
+      "CLAIM:3A223781A5DE8E9804606CAE",
+      "CLAIM:C274BD1D1492413379231341",
+      "CLAIM:42D934C2DEEECFDB16F57FA8",
+      "CLAIM:9626575AE8D338E4C05BDDC1",
+      "CLAIM:810E32DED5A064AB1FF85157",
+      "CLAIM:5460C835553D3DDE9166C9C0",
+      "CLAIM:D205DC1E10B174496DE51FBB"
+    ],
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý HTTP/3 dựa trên QUIC.",
+    "description": "Xử lý HTTP/3 dựa trên QUIC.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-V3-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_v3_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_v3_module",
+    "normal_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:1500C9EE039C423FD775669A"
+    ],
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:FC627C7B2E28AAD79B1557A6",
+      "CLAIM:46C15F1938A9FFD07BBA1089",
+      "CLAIM:F61D1E1E2912A6579532A4E0",
+      "CLAIM:D2F19A3E3FDDA0EAD9B8D04F",
+      "CLAIM:103EAAEFCF86B50CC487095D",
+      "CLAIM:EE2463BE7622EC837BC3B165",
+      "CLAIM:A51F7C0BBB9CC417969AC9E2",
+      "CLAIM:E7F8A12E6DB2A25CD38C03BD"
+    ],
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý HTTP/3 dựa trên QUIC.",
+    "description": "Xử lý HTTP/3 dựa trên QUIC.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-V3-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_v3_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_v3_module",
+    "normal_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:62E808E84BB094E01AC2EC1B"
+    ],
+    "updated_at": "2026-11-25T02:32:41+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "MODULE:NGX-HTTP-V3-MODULE",
+  "id": "HISTORY:5BC219C174FED86B1297AFB6"
+}

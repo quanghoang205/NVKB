@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:74ACB3D6AA793538B2FB6C69",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:E94BEFD17EF78FE8CD62A9DA",
+    "claim_value": "\"## Cơ chế bình thường\\n\\nWorker quản lý nhiều connection trong event loop. Một request proxy có thể cần tài nguyên phía client lẫn upstream, cùng buffer, timer và file. Giới hạn connection không phải số request tối đa vì keepalive và multiplexing thay đổi ánh xạ. Giới hạn file descriptor của tiến trình/hệ điều hành có thể khiến capacity thực tế thấp hơn cấu hình dự định.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:29:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E94BEFD17EF78FE8CD62A9DA",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:RESOURCE-BOUNDS: v1.3:knowledge:Cơ chế bình thường",
+    "observed_at": "2026-11-25T05:29:01+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế bình thường",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T05:29:01+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:29:01+00:00",
+  "entity_id": "CLAIM:E94BEFD17EF78FE8CD62A9DA",
+  "id": "HISTORY:9457ECA0C9865BC084E59CFE"
+}

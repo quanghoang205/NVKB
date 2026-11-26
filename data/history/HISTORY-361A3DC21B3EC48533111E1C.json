@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "document_title": "CVE-2024-31079",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:F0A6006AC984A73AFF370C66",
+    "id": "EVIDENCE:F0A6006AC984A73AFF370C66",
+    "local_snapshot_path": "data/raw/cve/snapshots/807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0.json",
+    "modified_at": "2025-02-13T17:47:50.656000+00:00",
+    "name": "CVE-2024-31079",
+    "paraphrase": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "published_at": "2024-05-29T16:02:04.620000+00:00",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:26:12+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/cveMetadata",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/31xxx/CVE-2024-31079.json",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "EVIDENCE:F0A6006AC984A73AFF370C66",
+  "id": "HISTORY:361A3DC21B3EC48533111E1C"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:79BED93DFF7E8E03802A81C3",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:B5D99CAAB35AC0003676543C",
+    "claim_value": "\"CNA ghi HTTP/3 QUIC và hạ tầng MTU từ 4096 trở lên không fragmentation; announcement ghi MTU lớn hơn 4096. Chính xác tại 4096 cần chuyên gia đối chiếu.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:42+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:995F750FCCD7D735EAAF7D9F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B5D99CAAB35AC0003676543C",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-34161: v1.3:applicability",
+    "observed_at": "2026-11-25T05:08:42+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:995F750FCCD7D735EAAF7D9F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-34161",
+    "updated_at": "2026-11-25T05:08:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:42+00:00",
+  "entity_id": "CLAIM:B5D99CAAB35AC0003676543C",
+  "id": "HISTORY:B572D509D7348B27B394A227"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "a55a345ba690768c75cc94266acaf1b5166cc0863ec2ee76eb892553305bce75",
+    "created_at": "2026-11-25T02:28:58+00:00",
+    "description": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2026-97629",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E26DB27427253536913D016E",
+    "id": "EVIDENCE:E26DB27427253536913D016E",
+    "local_snapshot_path": "data/raw/distribution/snapshots/a55a345ba690768c75cc94266acaf1b5166cc0863ec2ee76eb892553305bce75.html",
+    "name": "CVE-2026-97629",
+    "paraphrase": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:58+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:58+00:00",
+  "entity_id": "EVIDENCE:E26DB27427253536913D016E",
+  "id": "HISTORY:B6D2C862C7A361A5CD970E21"
+}

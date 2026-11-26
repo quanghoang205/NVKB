@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:37+00:00",
+    "description": "LEARNING:PATH-05 learns_from CONCEPT:BACKPORT",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:01C73AE7296420C59EDE0738",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:BACKPORT",
+    "predicate": "learns_from",
+    "rationale": "Learning Path 05 — Vulnerability Management recommends Distribution backport as background. This legacy curriculum choice has no measured learner validation; not a technical causal edge.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:FB491B5B390E474876C2488A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-05",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:37+00:00",
+    "description": "LEARNING:PATH-05 learns_from CONCEPT:BACKPORT",
+    "entity_type": "Relationship",
+    "id": "REL:01C73AE7296420C59EDE0738",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:BACKPORT",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FB491B5B390E474876C2488A"
+    ],
+    "subject_entity_id": "LEARNING:PATH-05",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REL:01C73AE7296420C59EDE0738",
+  "id": "HISTORY:6BBC0DA7987ACE808782F59E"
+}

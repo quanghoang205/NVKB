@@ -1,0 +1,23 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:7081CCC672FD2FD96723ADF3"
+    ],
+    "created_at": "2026-11-25T02:28:07+00:00",
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and a string expression references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:DC6951AB622909375D779B57",
+    "name": "Điều kiện được công bố — CVE-2026-42533",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F4D1A2375C2275791D099F1F"
+    ],
+    "updated_at": "2026-11-25T02:28:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:07+00:00",
+  "entity_id": "CONDITION:DC6951AB622909375D779B57",
+  "id": "HISTORY:D3881905A8AF67DC8BF8BB7D"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "1a5730866c5a059866159b4a1ce30623b31c6598c7b9f99967fe11a59740c9e8",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2024-31079",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E28D8CD66261432B86752BDA",
+    "id": "EVIDENCE:E28D8CD66261432B86752BDA",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/1a5730866c5a059866159b4a1ce30623b31c6598c7b9f99967fe11a59740c9e8.json",
+    "name": "CVE-2024-31079",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:26:14+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2024-31079",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "EVIDENCE:E28D8CD66261432B86752BDA",
+  "id": "HISTORY:3DB4A7EE087FD1F4FB114E0C"
+}

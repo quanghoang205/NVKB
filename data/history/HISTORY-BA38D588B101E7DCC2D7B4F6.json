@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:0692339A14322ACDC4282797",
+    "claim_value": "\"Thiết kế ownership rõ ràng, cleanup có trạng thái và kiểm thử nhánh lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "id": "CLAIM:0692339A14322ACDC4282797",
+    "name": "WEAKNESS:CWE-415: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-415",
+    "updated_at": "2026-11-25T02:32:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:35+00:00",
+  "entity_id": "CLAIM:0692339A14322ACDC4282797",
+  "id": "HISTORY:BA38D588B101E7DCC2D7B4F6"
+}

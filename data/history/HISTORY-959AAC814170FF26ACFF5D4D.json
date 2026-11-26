@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:6DBC54DE46838C31FB9F2A83",
+    "claim_value": "\"Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:49:00+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "id": "CLAIM:6DBC54DE46838C31FB9F2A83",
+    "name": "WEAKNESS:CWE-823: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-823",
+    "updated_at": "2026-11-25T02:49:00+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:00+00:00",
+  "entity_id": "CLAIM:6DBC54DE46838C31FB9F2A83",
+  "id": "HISTORY:959AAC814170FF26ACFF5D4D"
+}

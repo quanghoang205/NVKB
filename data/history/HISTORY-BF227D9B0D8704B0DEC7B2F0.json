@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:667F19D7E587A4E52398ACCF",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "id": "CLAIM:667F19D7E587A4E52398ACCF",
+    "name": "PROTOCOL:TLS: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:32:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:22+00:00",
+  "entity_id": "CLAIM:667F19D7E587A4E52398ACCF",
+  "id": "HISTORY:BF227D9B0D8704B0DEC7B2F0"
+}

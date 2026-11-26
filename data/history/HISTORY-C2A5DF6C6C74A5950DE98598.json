@@ -1,0 +1,117 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Không. Một bên là giới hạn tài nguyên worker, bên kia là state/counter giao thức; remediation phải dựa release chứa bản sửa.",
+    "architecture_position": "Connection state ↔ từng stream.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-BDEE33EA299A2D92E02FE9BB|phạm vi tài liệu]].\n\n## Hoạt động bình thường\n\nHTTP/2 ghép nhiều stream trên một TCP connection. Mỗi stream có trạng thái và message riêng, còn connection giữ các giới hạn dùng chung. Flow control theo RFC là credit do bên nhận cấp; bên gửi tuân giới hạn ở cả hai cấp. Credit này có hướng, và chỉ thuộc hop đang trao đổi. Proxy kết thúc hop client và khởi tạo hop upstream không thể sao chép mọi trạng thái vận chuyển như một message bất biến.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-8789F163D1C5F5F13D93B107|Claim của section]].\n\n## Ownership và lifecycle\n\nStream HTTP có thể hoàn tất trước connection. Một request proxy còn liên quan upstream connection và output đang chờ. Khi không cấp thêm được connection hoặc tài nguyên, nhánh lỗi phải giải phóng đúng những phần đã được tạo mà không để callback cũ dùng state đã hủy. Đây là mô hình review ownership; RFC không mô tả allocator nội bộ của NGINX.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-4C8B83FAE2534CDCC0DB1BA0|Claim của section]].\n\n## Invariant và tradeoff\n\nCửa sổ là số có giới hạn và phải cập nhật bằng phép toán giữ miền hợp lệ. Nới credit giúp throughput trên đường truyền có độ trễ nhưng tăng dữ liệu đang bay và ngân sách nhận. worker_connections là giới hạn đối tượng connection của worker, không phải credit HTTP/2 và không phải số request HTTP tối đa. Đổi một giá trị không sửa được phép toán hoặc lifetime bug ở giá trị kia.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-A77B6FBC0734E5721355F7E1|Claim của section]].\n\n## Nguyên tắc phòng vệ\n\nReview các đường cập nhật window, cấp tài nguyên thất bại và cleanup. Giới hạn tài nguyên phải làm request thất bại có kiểm soát, không phá invariant bộ nhớ. Các counter protocol, buffer capacity và lifecycle là ba nghĩa vụ riêng. Bài CVE-2026-123007 bàn về window; CVE-2026-123633 bàn về use-after-free khi tài nguyên connection hạn chế. Không dùng hai mô tả làm hướng dẫn tạo traffic.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-301E88CB6426F5D394CA62B5|Claim của section]].",
+    "assessment": "Có thể khẳng định tăng worker_connections sẽ vá lỗi flow control không?",
+    "claim_refs": [
+      "CLAIM:BDEE33EA299A2D92E02FE9BB",
+      "CLAIM:8789F163D1C5F5F13D93B107",
+      "CLAIM:4C8B83FAE2534CDCC0DB1BA0",
+      "CLAIM:A77B6FBC0734E5721355F7E1",
+      "CLAIM:301E88CB6426F5D394CA62B5"
+    ],
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "RFC 9113 quy định flow control ở cả stream và connection; cửa sổ thuộc từng hướng nhận trên một hop, không biểu diễn bộ nhớ tự do của toàn server.",
+    "description": "RFC 9113 quy định flow control ở cả stream và connection; cửa sổ thuộc từng hướng nhận trên một hop, không biểu diễn bộ nhớ tự do của toàn server.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-2",
+    "learning_objectives": [
+      "Phân biệt connection window với stream window.",
+      "Giải thích vì sao giới hạn stream và worker_connections là hai loại tài nguyên."
+    ],
+    "name": "HTTP/2 — multiplexing, cửa sổ và tài nguyên worker",
+    "normal_behavior": "Frame được gắn stream ID; flow control và trạng thái stream điều phối nhiều request/response trên kết nối.",
+    "prerequisites": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:EVENT-DRIVEN"
+    ],
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:EVENT-DRIVEN"
+    ],
+    "research_claim_refs": [
+      "CLAIM:BDEE33EA299A2D92E02FE9BB",
+      "CLAIM:8789F163D1C5F5F13D93B107",
+      "CLAIM:4C8B83FAE2534CDCC0DB1BA0",
+      "CLAIM:A77B6FBC0734E5721355F7E1",
+      "CLAIM:301E88CB6426F5D394CA62B5"
+    ],
+    "safety_assumptions": "Giới hạn tài nguyên và cập nhật trạng thái stream phải nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Connection state ↔ từng stream.",
+    "source_refs": [
+      "EVIDENCE:2CF57B908B8E8450F39E5F7F"
+    ],
+    "updated_at": "2026-11-25T05:09:59+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Connection state ↔ từng stream.",
+    "claim_refs": [
+      "CLAIM:2B92D78A61BC0CA4A2A3E4E8",
+      "CLAIM:0E7010E264B65B6C0E5F67F3",
+      "CLAIM:41E9B438D9CEA4D64393F208",
+      "CLAIM:6B569C22D34ABFA76A49829F",
+      "CLAIM:8D5E8425B2646D53453AF0E3",
+      "CLAIM:BB68949852BBCB5BD74C6445",
+      "CLAIM:1A8921104D00DC33CE90546B",
+      "CLAIM:26FC93CFE23D497F0AAD611E"
+    ],
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "description": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-2",
+    "learning_objectives": [
+      "Giải thích HTTP/2 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP/2",
+    "normal_behavior": "Frame được gắn stream ID; flow control và trạng thái stream điều phối nhiều request/response trên kết nối.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Giới hạn tài nguyên và cập nhật trạng thái stream phải nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Connection state ↔ từng stream.",
+    "source_refs": [
+      "EVIDENCE:DED9E38342759D8072604063"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:09:59+00:00",
+  "entity_id": "PROTOCOL:HTTP-2",
+  "id": "HISTORY:C2A5DF6C6C74A5950DE98598"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:64D93046220EC97D6093B60E",
+    "claim_value": "\"Kích thước được tính không tràn và bao gồm mọi byte phụ trợ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "id": "CLAIM:64D93046220EC97D6093B60E",
+    "name": "WEAKNESS:CWE-120: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:64D93046220EC97D6093B60E",
+  "id": "HISTORY:0E4CB9CBA297D2C9CD3161C5"
+}

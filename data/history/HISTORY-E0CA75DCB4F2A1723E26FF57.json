@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4555BE707661F9B39D4B322E",
+    "authority": "CIRCL mirror",
+    "authority_scope": "CIRCL mirror",
+    "claim_id": "CLAIM:98E086889CA3F9A6FFED7871",
+    "claim_value": "[{\"lessThan\": \"1.29.7\", \"status\": \"affected\", \"version\": \"1.29.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.28.3\", \"status\": \"affected\", \"version\": \"1.27.2\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:44+00:00",
+    "description": "cna_version_data:CIRCL mirror",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:3F455ADBF29B0EAD02962B87: /containers/cna/affected",
+    "evidence_refs": [
+      "EVIDENCE:3F455ADBF29B0EAD02962B87"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:98E086889CA3F9A6FFED7871",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-28755: cna_version_data:CIRCL mirror",
+    "observation_key": "OBSERVATION:54321C11F0A0FEB46B38537C",
+    "observed_at": "2026-11-25T02:27:44+00:00",
+    "predicate": "cna_version_data:CIRCL mirror",
+    "product_scope": "CVE:CVE-2026-28755",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:43+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CIRCL mirror",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3F455ADBF29B0EAD02962B87"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-28755",
+    "updated_at": "2026-11-25T04:12:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CIRCL mirror",
+    "claim_id": "CLAIM:98E086889CA3F9A6FFED7871",
+    "claim_value": "[{\"lessThan\": \"1.29.7\", \"status\": \"affected\", \"version\": \"1.29.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.28.3\", \"status\": \"affected\", \"version\": \"1.27.2\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:44+00:00",
+    "description": "cna_version_data:CIRCL mirror",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3F455ADBF29B0EAD02962B87"
+    ],
+    "id": "CLAIM:98E086889CA3F9A6FFED7871",
+    "name": "CVE:CVE-2026-28755: cna_version_data:CIRCL mirror",
+    "predicate": "cna_version_data:CIRCL mirror",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3F455ADBF29B0EAD02962B87"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28755",
+    "updated_at": "2026-11-25T02:27:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:45+00:00",
+  "entity_id": "CLAIM:98E086889CA3F9A6FFED7871",
+  "id": "HISTORY:E0CA75DCB4F2A1723E26FF57"
+}

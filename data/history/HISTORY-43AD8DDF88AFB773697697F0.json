@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:DC9299A59F46680D0A0D0215",
+    "claim_value": "\"Theo dõi worker restart, áp dụng bản vá và giới hạn nguồn lực theo workload.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "id": "CLAIM:DC9299A59F46680D0A0D0215",
+    "name": "COMPONENT:WORKER-PROCESS: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:32:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:03+00:00",
+  "entity_id": "CLAIM:DC9299A59F46680D0A0D0215",
+  "id": "HISTORY:43AD8DDF88AFB773697697F0"
+}

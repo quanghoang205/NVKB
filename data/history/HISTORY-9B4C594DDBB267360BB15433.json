@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+    "claim_value": "\"Certificate verification và policy context phải giữ đúng cả khi resume phiên.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "id": "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+    "name": "PROTOCOL:TLS: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+  "id": "HISTORY:9B4C594DDBB267360BB15433"
+}

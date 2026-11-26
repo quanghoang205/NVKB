@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:419CB7A926C8613283AC4885",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+  "claim_value": "\"Certificate verification và policy context phải giữ đúng cả khi resume phiên.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:22+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:066B773A5331E2B1080FE1E3: Protocol overview and state machine; topic=PROTOCOL:TLS",
+  "evidence_refs": [
+    "EVIDENCE:066B773A5331E2B1080FE1E3"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:DC165E5C0FDB7A0DD397ABB4",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:TLS: safety_assumptions",
+  "observation_key": "OBSERVATION:5A2C7314DD5F8E76D69700FA",
+  "observed_at": "2026-11-25T02:44:22+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "PROTOCOL:TLS",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:22+00:00",
+  "review_reason": "Preserved earlier knowledge edition; current lesson has independently scoped section claims.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:066B773A5331E2B1080FE1E3"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:TLS",
+  "updated_at": "2026-11-25T04:20:59+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

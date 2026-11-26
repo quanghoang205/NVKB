@@ -1,0 +1,412 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:0E56AFAEB1B076E7643411C1"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:045A734BC5B81ABBC9C4B371",
+      "CLAIM:070101C6D9225A32620E5C33",
+      "CLAIM:0A026862EC15C9285755FCCB",
+      "CLAIM:0E73B35F1F4737967DDE430A",
+      "CLAIM:1BBE319F8CE81BDDD9BD3A95",
+      "CLAIM:1CCD65E70BB591A305A9009D",
+      "CLAIM:1CEABE2962F9B51C03288D3F",
+      "CLAIM:1D554CA5F095260E3C6AB761",
+      "CLAIM:24291C644516B1F867BF01CD",
+      "CLAIM:2830DC7124EECD9825543564",
+      "CLAIM:3C1251F26F2A3EB79910B442",
+      "CLAIM:4237C00787CA7CB06983D00B",
+      "CLAIM:57138948EFE284593203AAF5",
+      "CLAIM:597B17430AFE050518678F97",
+      "CLAIM:639604CCF15A78C49AB23987",
+      "CLAIM:68F19961D7233ACDFD66B3D3",
+      "CLAIM:698F4C30247C2157784047F4",
+      "CLAIM:70BD828FD0E22955C255E83F",
+      "CLAIM:7C9D2484D7192E3E543DDCC8",
+      "CLAIM:84FAF0CB8A87F9E0B353476A",
+      "CLAIM:892FA6D9E9BE0685BAAFB0AC",
+      "CLAIM:94B32847FD8FA566CEDCC55B",
+      "CLAIM:98615622A54CDC11FB0C3FFA",
+      "CLAIM:9FCA2EC8D7C246C5632370F1",
+      "CLAIM:ACBFAE824F1740680D4B26F5",
+      "CLAIM:B79FCA2945E919243A939FB0",
+      "CLAIM:BB49642425717534C2799CA5",
+      "CLAIM:C0A6BE3E49266AFC23D8B4BD",
+      "CLAIM:D5026819A80813F6E2711AB2",
+      "CLAIM:DB5BC8120A7E50B53426488E",
+      "CLAIM:DC04F350075DAB3FC6189B38",
+      "CLAIM:DC7122523DA218B9027E6828",
+      "CLAIM:E51CA204D8ADE77BE5DF7F8C",
+      "CLAIM:EA552ACCEBF90A8EA0746BA4",
+      "CLAIM:F47650F83E0A436A0BAA0E73",
+      "CLAIM:F668A4D46D6D8B1FC36A4913",
+      "CLAIM:F8FC776DE6650F9D669F78A3",
+      "CLAIM:F9E12678AC5FCF5D6E93DE93"
+    ],
+    "condition_refs": [
+      "CONDITION:BC7EAFB3FF7F92C629F7A46C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker có thể restart do use-after-free theo CNA.",
+    "created_at": "2026-11-25T02:28:03+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-42530",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Cập nhật release sửa, kiểm lifetime các stream điều khiển; ASLR là lớp giảm thiểu, không thay patch."
+    ],
+    "description": "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:E54AE3E30E1BB84AB3E1E1F9"
+    ],
+    "distribution_status": [
+      "PACKAGE:E54AE3E30E1BB84AB3E1E1F9"
+    ],
+    "documented_configuration_context": "NGINX Open Source sử dụng HTTP/3 QUIC; CNA còn nêu điều kiện ngoài kiểm soát của tác nhân. Không suy bản Plus nào bị ảnh hưởng từ tên NGINX chung.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free ở HTTP/3 liên quan lifecycle QPACK encoder stream trong một khoảng release OSS hẹp.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.31.2"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.31.2"
+    ],
+    "id": "CVE:CVE-2026-42530",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-16T12:04:40.146000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.",
+      "Trả lời có evidence: Vì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-42530",
+    "normal_component_behavior": "Control/nén trường có state connection; cleanup và xử lý chuyển trạng thái phải không để tham chiếu tới allocation đã hết lifetime.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "CNA nêu code execution có điều kiện liên quan hiệu lực ASLR. Không có xác nhận thực thi thành công hoặc quyền root.",
+    "publication_date": "2026-06-17T14:04:32.173000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:923F69B45B64E6CA5A0F215C"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free ở HTTP/3 liên quan lifecycle QPACK encoder stream trong một khoảng release OSS hẹp.\n\n## 2. CVE identity và product scope\n\nCVE-2026-42530; published 2026-06-17T14:04:32.173000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-98615622A54CDC11FB0C3FFA|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nState encoder stream dùng chung trong HTTP/3; không đồng nhất với bộ nhớ một request độc lập. [[CLAIM-1BBE319F8CE81BDDD9BD3A95|Claim / locator]].\n\n## 5. Normal component behavior\n\nControl/nén trường có state connection; cleanup và xử lý chuyển trạng thái phải không để tham chiếu tới allocation đã hết lifetime. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu use-after-free liên quan encoder stream. Mô hình phòng vệ là kiểm state transition và ownership, chưa phải phân tích mã thực thi. [[CLAIM-70BD828FD0E22955C255E83F|Claim / locator]].\n\n## 7. Relevant security principles\n\nState connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nNGINX Open Source sử dụng HTTP/3 QUIC; CNA còn nêu điều kiện ngoài kiểm soát của tác nhân. Không suy bản Plus nào bị ảnh hưởng từ tên NGINX chung. [[CLAIM-1BBE319F8CE81BDDD9BD3A95|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.31.0-1.31.1; not vulnerable/fixed branches 1.31.2+. [[CLAIM-597B17430AFE050518678F97|Claim / locator]].\n\nChỉ 1.31.0–1.31.1 trong entry upstream; fix 1.31.2+. Không mở rộng sang mọi HTTP/3 release. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker có thể restart do use-after-free theo CNA. [[CLAIM-BB49642425717534C2799CA5|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCNA nêu code execution có điều kiện liên quan hiệu lực ASLR. Không có xác nhận thực thi thành công hoặc quyền root. [[CLAIM-84FAF0CB8A87F9E0B353476A|Claim / locator]].\n\n## 12. Remediation principles\n\nCập nhật release sửa, kiểm lifetime các stream điều khiển; ASLR là lớp giảm thiểu, không thay patch. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-597B17430AFE050518678F97|Claim / locator]].\n\n## 14. Patch management considerations\n\nChỉ 1.31.0–1.31.1 trong entry upstream; fix 1.31.2+. Không mở rộng sang mọi HTTP/3 release.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.\n- Trả lời có evidence: Vì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?\n\n## 17. Discussion questions\n\nVì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?\n\nGợi ý đáp án: Chúng có owner và phạm vi chia sẻ khác nhau; dọn state sai cấp có thể ảnh hưởng công việc còn dùng state.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-98615622A54CDC11FB0C3FFA|CLAIM:98615622A54CDC11FB0C3FFA]]\n- applicability: [[CLAIM-1BBE319F8CE81BDDD9BD3A95|CLAIM:1BBE319F8CE81BDDD9BD3A95]]\n- impact: [[CLAIM-BB49642425717534C2799CA5|CLAIM:BB49642425717534C2799CA5]]\n- potential: [[CLAIM-84FAF0CB8A87F9E0B353476A|CLAIM:84FAF0CB8A87F9E0B353476A]]\n- mechanism: [[CLAIM-70BD828FD0E22955C255E83F|CLAIM:70BD828FD0E22955C255E83F]]\n- versions: [[CLAIM-597B17430AFE050518678F97|CLAIM:597B17430AFE050518678F97]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nHàm và object bị giải phóng, hiệu lực mitigation thực tế chưa được kiểm chứng.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:98615622A54CDC11FB0C3FFA",
+      "CLAIM:1BBE319F8CE81BDDD9BD3A95",
+      "CLAIM:BB49642425717534C2799CA5",
+      "CLAIM:84FAF0CB8A87F9E0B353476A",
+      "CLAIM:70BD828FD0E22955C255E83F",
+      "CLAIM:597B17430AFE050518678F97"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA nêu use-after-free liên quan encoder stream. Mô hình phòng vệ là kiểm state transition và ownership, chưa phải phân tích mã thực thi.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:00AB7C51473055F7294FB433",
+      "SEVERITY:27524C91F16102EB15CD53C5",
+      "SEVERITY:2C1315F397E67372A00780D5",
+      "SEVERITY:56A3C0547FD2FA1608DC4407",
+      "SEVERITY:62CF2A48C407AD0AE794C0CB",
+      "SEVERITY:839730933DF4D1EAFDDE7B15",
+      "SEVERITY:886D261CA685761093201531"
+    ],
+    "source_refs": [
+      "EVIDENCE:08EAB411B152417B31D79CF8",
+      "EVIDENCE:355A617E498B1D61A8649E0A",
+      "EVIDENCE:371162213E030C3183D1F76B",
+      "EVIDENCE:898F2A102B93CD30807B88FB",
+      "EVIDENCE:A80BD9E05C9EB0EFB2F47B69",
+      "EVIDENCE:AB30DBAB0DC9AEC95E41B1A5",
+      "EVIDENCE:ACCE8F5936C07A910FAFABA1",
+      "EVIDENCE:AD837EEACB34FEDB49508BAA",
+      "EVIDENCE:B2E34FFAE84122119372BED0",
+      "EVIDENCE:B332C79BE639ED7B90A9039A",
+      "EVIDENCE:D12F4E9039435019D45D8A7F",
+      "EVIDENCE:ED2D3F3385DEAB5550841C6D"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Hàm và object bị giải phóng, hiệu lực mitigation thực tế chưa được kiểm chứng.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "tags",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:48+00:00",
+    "upstream_affected_expression": "1.31.0-1.31.1",
+    "upstream_unaffected_expression": "1.31.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:0E56AFAEB1B076E7643411C1"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:045A734BC5B81ABBC9C4B371",
+      "CLAIM:070101C6D9225A32620E5C33",
+      "CLAIM:0A026862EC15C9285755FCCB",
+      "CLAIM:0E73B35F1F4737967DDE430A",
+      "CLAIM:1BBE319F8CE81BDDD9BD3A95",
+      "CLAIM:1CCD65E70BB591A305A9009D",
+      "CLAIM:1CEABE2962F9B51C03288D3F",
+      "CLAIM:1D554CA5F095260E3C6AB761",
+      "CLAIM:24291C644516B1F867BF01CD",
+      "CLAIM:2830DC7124EECD9825543564",
+      "CLAIM:3C1251F26F2A3EB79910B442",
+      "CLAIM:4237C00787CA7CB06983D00B",
+      "CLAIM:57138948EFE284593203AAF5",
+      "CLAIM:597B17430AFE050518678F97",
+      "CLAIM:639604CCF15A78C49AB23987",
+      "CLAIM:68F19961D7233ACDFD66B3D3",
+      "CLAIM:698F4C30247C2157784047F4",
+      "CLAIM:70BD828FD0E22955C255E83F",
+      "CLAIM:7C9D2484D7192E3E543DDCC8",
+      "CLAIM:84FAF0CB8A87F9E0B353476A",
+      "CLAIM:892FA6D9E9BE0685BAAFB0AC",
+      "CLAIM:94B32847FD8FA566CEDCC55B",
+      "CLAIM:98615622A54CDC11FB0C3FFA",
+      "CLAIM:9FCA2EC8D7C246C5632370F1",
+      "CLAIM:ACBFAE824F1740680D4B26F5",
+      "CLAIM:B79FCA2945E919243A939FB0",
+      "CLAIM:BB49642425717534C2799CA5",
+      "CLAIM:C0A6BE3E49266AFC23D8B4BD",
+      "CLAIM:D5026819A80813F6E2711AB2",
+      "CLAIM:DB5BC8120A7E50B53426488E",
+      "CLAIM:DC04F350075DAB3FC6189B38",
+      "CLAIM:DC7122523DA218B9027E6828",
+      "CLAIM:E51CA204D8ADE77BE5DF7F8C",
+      "CLAIM:EA552ACCEBF90A8EA0746BA4",
+      "CLAIM:F47650F83E0A436A0BAA0E73",
+      "CLAIM:F668A4D46D6D8B1FC36A4913",
+      "CLAIM:F8FC776DE6650F9D669F78A3",
+      "CLAIM:F9E12678AC5FCF5D6E93DE93"
+    ],
+    "condition_refs": [
+      "CONDITION:BC7EAFB3FF7F92C629F7A46C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker có thể restart do use-after-free theo CNA.",
+    "created_at": "2026-11-25T02:28:03+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-42530",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Cập nhật release sửa, kiểm lifetime các stream điều khiển; ASLR là lớp giảm thiểu, không thay patch."
+    ],
+    "description": "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:E54AE3E30E1BB84AB3E1E1F9"
+    ],
+    "distribution_status": [
+      "PACKAGE:E54AE3E30E1BB84AB3E1E1F9"
+    ],
+    "documented_configuration_context": "NGINX Open Source sử dụng HTTP/3 QUIC; CNA còn nêu điều kiện ngoài kiểm soát của tác nhân. Không suy bản Plus nào bị ảnh hưởng từ tên NGINX chung.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free ở HTTP/3 liên quan lifecycle QPACK encoder stream trong một khoảng release OSS hẹp.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.31.2"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.31.2"
+    ],
+    "id": "CVE:CVE-2026-42530",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-16T12:04:40.146000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.",
+      "Trả lời có evidence: Vì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-42530",
+    "normal_component_behavior": "Control/nén trường có state connection; cleanup và xử lý chuyển trạng thái phải không để tham chiếu tới allocation đã hết lifetime.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "CNA nêu code execution có điều kiện liên quan hiệu lực ASLR. Không có xác nhận thực thi thành công hoặc quyền root.",
+    "publication_date": "2026-06-17T14:04:32.173000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:923F69B45B64E6CA5A0F215C"
+    ],
+    "related_components": [
+      "COMPONENT:VIRTUAL-HOSTS",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free ở HTTP/3 liên quan lifecycle QPACK encoder stream trong một khoảng release OSS hẹp.\n\n## 2. CVE identity và product scope\n\nCVE-2026-42530; published 2026-06-17T14:04:32.173000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-98615622A54CDC11FB0C3FFA|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nState encoder stream dùng chung trong HTTP/3; không đồng nhất với bộ nhớ một request độc lập. [[CLAIM-1BBE319F8CE81BDDD9BD3A95|Claim / locator]].\n\n## 5. Normal component behavior\n\nControl/nén trường có state connection; cleanup và xử lý chuyển trạng thái phải không để tham chiếu tới allocation đã hết lifetime. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu use-after-free liên quan encoder stream. Mô hình phòng vệ là kiểm state transition và ownership, chưa phải phân tích mã thực thi. [[CLAIM-70BD828FD0E22955C255E83F|Claim / locator]].\n\n## 7. Relevant security principles\n\nState connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nNGINX Open Source sử dụng HTTP/3 QUIC; CNA còn nêu điều kiện ngoài kiểm soát của tác nhân. Không suy bản Plus nào bị ảnh hưởng từ tên NGINX chung. [[CLAIM-1BBE319F8CE81BDDD9BD3A95|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.31.0-1.31.1; not vulnerable/fixed branches 1.31.2+. [[CLAIM-597B17430AFE050518678F97|Claim / locator]].\n\nChỉ 1.31.0–1.31.1 trong entry upstream; fix 1.31.2+. Không mở rộng sang mọi HTTP/3 release. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker có thể restart do use-after-free theo CNA. [[CLAIM-BB49642425717534C2799CA5|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCNA nêu code execution có điều kiện liên quan hiệu lực ASLR. Không có xác nhận thực thi thành công hoặc quyền root. [[CLAIM-84FAF0CB8A87F9E0B353476A|Claim / locator]].\n\n## 12. Remediation principles\n\nCập nhật release sửa, kiểm lifetime các stream điều khiển; ASLR là lớp giảm thiểu, không thay patch. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-597B17430AFE050518678F97|Claim / locator]].\n\n## 14. Patch management considerations\n\nChỉ 1.31.0–1.31.1 trong entry upstream; fix 1.31.2+. Không mở rộng sang mọi HTTP/3 release.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.\n- Trả lời có evidence: Vì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?\n\n## 17. Discussion questions\n\nVì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?\n\nGợi ý đáp án: Chúng có owner và phạm vi chia sẻ khác nhau; dọn state sai cấp có thể ảnh hưởng công việc còn dùng state.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-98615622A54CDC11FB0C3FFA|CLAIM:98615622A54CDC11FB0C3FFA]]\n- applicability: [[CLAIM-1BBE319F8CE81BDDD9BD3A95|CLAIM:1BBE319F8CE81BDDD9BD3A95]]\n- impact: [[CLAIM-BB49642425717534C2799CA5|CLAIM:BB49642425717534C2799CA5]]\n- potential: [[CLAIM-84FAF0CB8A87F9E0B353476A|CLAIM:84FAF0CB8A87F9E0B353476A]]\n- mechanism: [[CLAIM-70BD828FD0E22955C255E83F|CLAIM:70BD828FD0E22955C255E83F]]\n- versions: [[CLAIM-597B17430AFE050518678F97|CLAIM:597B17430AFE050518678F97]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nHàm và object bị giải phóng, hiệu lực mitigation thực tế chưa được kiểm chứng.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:98615622A54CDC11FB0C3FFA",
+      "CLAIM:1BBE319F8CE81BDDD9BD3A95",
+      "CLAIM:BB49642425717534C2799CA5",
+      "CLAIM:84FAF0CB8A87F9E0B353476A",
+      "CLAIM:70BD828FD0E22955C255E83F",
+      "CLAIM:597B17430AFE050518678F97"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA nêu use-after-free liên quan encoder stream. Mô hình phòng vệ là kiểm state transition và ownership, chưa phải phân tích mã thực thi.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:00AB7C51473055F7294FB433",
+      "SEVERITY:27524C91F16102EB15CD53C5",
+      "SEVERITY:2C1315F397E67372A00780D5",
+      "SEVERITY:56A3C0547FD2FA1608DC4407",
+      "SEVERITY:62CF2A48C407AD0AE794C0CB",
+      "SEVERITY:839730933DF4D1EAFDDE7B15",
+      "SEVERITY:886D261CA685761093201531"
+    ],
+    "source_refs": [
+      "EVIDENCE:08EAB411B152417B31D79CF8",
+      "EVIDENCE:355A617E498B1D61A8649E0A",
+      "EVIDENCE:371162213E030C3183D1F76B",
+      "EVIDENCE:898F2A102B93CD30807B88FB",
+      "EVIDENCE:A80BD9E05C9EB0EFB2F47B69",
+      "EVIDENCE:AB30DBAB0DC9AEC95E41B1A5",
+      "EVIDENCE:ACCE8F5936C07A910FAFABA1",
+      "EVIDENCE:AD837EEACB34FEDB49508BAA",
+      "EVIDENCE:B2E34FFAE84122119372BED0",
+      "EVIDENCE:B332C79BE639ED7B90A9039A",
+      "EVIDENCE:D12F4E9039435019D45D8A7F",
+      "EVIDENCE:ED2D3F3385DEAB5550841C6D"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Hàm và object bị giải phóng, hiệu lực mitigation thực tế chưa được kiểm chứng.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "tags",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:32:06+00:00",
+    "upstream_affected_expression": "1.31.0-1.31.1",
+    "upstream_unaffected_expression": "1.31.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source has a vulnerability in the ngx_http_v3_module module. When NGINX Open Source is configured to use the HTTP/3 QUIC module, a remote unauthenticated attacker along with conditions beyond their control can use a specially crafted HTTP/3 session to reopen a QPACK encoder stream. This may cause a Use-after-Free in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:46:48+00:00",
+  "entity_id": "CVE:CVE-2026-42530",
+  "id": "HISTORY:237301351CEEDF26F816A6CB"
+}

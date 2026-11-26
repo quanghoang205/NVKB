@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:5FFDD69D5D771BD6C21F402B",
+    "claim_value": "\"Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "id": "CLAIM:5FFDD69D5D771BD6C21F402B",
+    "name": "COMPONENT:EVENT-DRIVEN: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:04+00:00",
+  "entity_id": "CLAIM:5FFDD69D5D771BD6C21F402B",
+  "id": "HISTORY:5DE2ECE157A4718DD86F69E8"
+}

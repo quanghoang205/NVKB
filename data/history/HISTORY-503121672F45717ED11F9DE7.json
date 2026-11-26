@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C2F5EBF7914F57046D893E56",
+    "claim_value": "\"Proxy module tạo request upstream, xử lý kết nối, header và buffering theo cấu hình; upstream là một trust boundary riêng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "id": "CLAIM:C2F5EBF7914F57046D893E56",
+    "name": "COMPONENT:REVERSE-PROXY: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "subject_entity_id": "COMPONENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:C2F5EBF7914F57046D893E56",
+  "id": "HISTORY:503121672F45717ED11F9DE7"
+}

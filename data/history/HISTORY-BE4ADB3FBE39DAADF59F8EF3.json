@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:AC5C82D3A81C8CD1D078A683",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:4EF405B456D6E62DFB1E9FFB",
+    "claim_value": "\"NGINX có cấu hình HTTP/3 QUIC; CNA bao gồm OSS và Plus, version table tại đây chỉ OSS.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:44+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:4EF405B456D6E62DFB1E9FFB",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40460: v1.3:applicability",
+    "observed_at": "2026-11-25T05:08:44+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T05:08:44+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:44+00:00",
+  "entity_id": "CLAIM:4EF405B456D6E62DFB1E9FFB",
+  "id": "HISTORY:BE4ADB3FBE39DAADF59F8EF3"
+}

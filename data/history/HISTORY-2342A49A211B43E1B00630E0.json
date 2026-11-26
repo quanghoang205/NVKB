@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "1083388da75d0bb64f46dce00b3ea9d45ba7b0fe537f013cabf55a0393c11f79",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2026-121810",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2F8AF923A203B8B30960D868",
+    "id": "EVIDENCE:2F8AF923A203B8B30960D868",
+    "local_snapshot_path": "data/raw/distribution/snapshots/1083388da75d0bb64f46dce00b3ea9d45ba7b0fe537f013cabf55a0393c11f79.html",
+    "name": "CVE-2026-121810",
+    "paraphrase": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:55+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-121810",
+    "updated_at": "2026-11-25T02:26:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:55+00:00",
+  "entity_id": "EVIDENCE:2F8AF923A203B8B30960D868",
+  "id": "HISTORY:2342A49A211B43E1B00630E0"
+}

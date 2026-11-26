@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:B950AACF952691E549258419",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D4BF028B5E46E158B345BE41",
+    "claim_value": "\"Directive resolver chỉ định name servers để phân giải tên upstream; tài liệu mô tả TTL/cache, phạm vi truy vấn và timeout. Resolver context không phải identity đã được TLS xác thực.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:18:36+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D4BF028B5E46E158B345BE41",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:DNS: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T05:18:36+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T05:18:36+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:18:36+00:00",
+  "entity_id": "CLAIM:D4BF028B5E46E158B345BE41",
+  "id": "HISTORY:0F13DD3141BDCA42A692C835"
+}

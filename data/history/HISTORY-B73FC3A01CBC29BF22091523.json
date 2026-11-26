@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CF5D654E7BB1CA565AC70664",
+    "claim_value": "\"Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E87A726DEC866AA27FA5B159"
+    ],
+    "id": "CLAIM:CF5D654E7BB1CA565AC70664",
+    "name": "CONTROL:RESOURCE-BOUNDS: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E87A726DEC866AA27FA5B159"
+    ],
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CLAIM:CF5D654E7BB1CA565AC70664",
+  "id": "HISTORY:B73FC3A01CBC29BF22091523"
+}

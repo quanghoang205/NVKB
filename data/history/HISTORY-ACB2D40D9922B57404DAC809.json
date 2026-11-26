@@ -1,0 +1,408 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Request body injection in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EB955B3E4995A75AEADC2BF0"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:022B6768DBA1F2CE4A740561",
+      "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+      "CLAIM:05E887C764FEB1C0DF242197",
+      "CLAIM:09644567344D9AD14184539D",
+      "CLAIM:1491AED55424632165585287",
+      "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+      "CLAIM:274D92808052887B2174A2F8",
+      "CLAIM:28F6A19E31126E9C52F8A44B",
+      "CLAIM:39109BD434AF9A8859C38B75",
+      "CLAIM:3A53B7C93B7D3A67EC8605F2",
+      "CLAIM:40912890DF89072740680ED5",
+      "CLAIM:47352377A558B60B54680A95",
+      "CLAIM:57DC5126394D1D17CFA98AAF",
+      "CLAIM:59AF14C32C3255096470AA78",
+      "CLAIM:5B02B2602E4B3E562C29D8C0",
+      "CLAIM:63EE7D7B57469D8005B8A327",
+      "CLAIM:6CA0165FB104FB31A9E31B32",
+      "CLAIM:6E9976142EE859751D3870C3",
+      "CLAIM:750F76A8708E0FCABD5D0033",
+      "CLAIM:A4EFABAFA326A4B67F469AA3",
+      "CLAIM:AE874900DDD67C36EBC3BEEC",
+      "CLAIM:B26D671ABFBC721F2EC2B725",
+      "CLAIM:B82FE2E9C33706793DA8301C",
+      "CLAIM:BBA2002C152FDD50D91A68D2",
+      "CLAIM:BCED52667E26CEC2DEAAD504",
+      "CLAIM:BD6BED9850A1F66BEA018E65",
+      "CLAIM:C5E8E437D8F623A30E3EE425",
+      "CLAIM:C782B14546A5E01E2F6E1ADC",
+      "CLAIM:C9DA58FC92231617FCB95A5B",
+      "CLAIM:CCD487D5863A0304426EC4AC",
+      "CLAIM:D3C35BAF9D6D5BA772B2919F",
+      "CLAIM:E4D7DB96114C7592E3827033",
+      "CLAIM:E98D324C67D0A6FE81CB9A9C",
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "condition_refs": [
+      "CONDITION:0E931C064854F6CED00E806D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Dữ liệu có thể bị đưa vào proxied request; CNA xác định data-plane issue.",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-95101",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Cập nhật bản sửa, kiểm contract parsing và forwarding. Không coi tắt buffering là mitigation chính thức khi chưa có nguồn xác nhận."
+    ],
+    "description": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "distribution_status": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "documented_configuration_context": "HTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "HTTP/3 có thể gán dữ liệu sai vào request được proxy khi request buffering bật.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-95101",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-10-15T16:43:46.630000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.",
+      "Trả lời có evidence: Vì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-95101",
+    "normal_component_behavior": "Buffer body được gắn với đúng request và giới hạn message trước khi chuyển sang upstream.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Hành vi ứng dụng upstream và dữ liệu bị thay đổi cụ thể là UNKNOWN; không xây dựng chuỗi tác động suy diễn.",
+    "publication_date": "2026-10-14T14:40:28.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C4BACC1F66494C7E52B12C56"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-172"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nHTTP/3 có thể gán dữ liệu sai vào request được proxy khi request buffering bật.\n\n## 2. CVE identity và product scope\n\nCVE-2026-95101; published 2026-10-14T14:40:28.955000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-6E9976142EE859751D3870C3|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 request body và đường proxy request trong data plane. [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|Claim / locator]].\n\n## 5. Normal component behavior\n\nBuffer body được gắn với đúng request và giới hạn message trước khi chuyển sang upstream. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận data injection vào proxied request; mô hình giải thích là ranh giới framing/ownership của body cần được duy trì xuyên buffering. [[CLAIM-AE874900DDD67C36EBC3BEEC|Claim / locator]].\n\n## 7. Relevant security principles\n\nBuffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus. [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.31.6; not vulnerable/fixed branches 1.31.7+, 1.30.6+. [[CLAIM-6CA0165FB104FB31A9E31B32|Claim / locator]].\n\nFix 1.30.6/1.31.7; khoảng affected bắt đầu ở 1.25.0. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nDữ liệu có thể bị đưa vào proxied request; CNA xác định data-plane issue. [[CLAIM-750F76A8708E0FCABD5D0033|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nHành vi ứng dụng upstream và dữ liệu bị thay đổi cụ thể là UNKNOWN; không xây dựng chuỗi tác động suy diễn. [[CLAIM-B26D671ABFBC721F2EC2B725|Claim / locator]].\n\n## 12. Remediation principles\n\nCập nhật bản sửa, kiểm contract parsing và forwarding. Không coi tắt buffering là mitigation chính thức khi chưa có nguồn xác nhận. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-6CA0165FB104FB31A9E31B32|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.6/1.31.7; khoảng affected bắt đầu ở 1.25.0.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-172|CWE-172 — Encoding Error]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.\n- Trả lời có evidence: Vì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?\n\n## 17. Discussion questions\n\nVì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?\n\nGợi ý đáp án: Transport bảo vệ trao đổi, còn HTTP implementation phải giữ đúng framing và ownership khi tạo request mới.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-6E9976142EE859751D3870C3|CLAIM:6E9976142EE859751D3870C3]]\n- applicability: [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|CLAIM:05B0C5A0C6E6DDFA7CB8CDCC]]\n- impact: [[CLAIM-750F76A8708E0FCABD5D0033|CLAIM:750F76A8708E0FCABD5D0033]]\n- potential: [[CLAIM-B26D671ABFBC721F2EC2B725|CLAIM:B26D671ABFBC721F2EC2B725]]\n- mechanism: [[CLAIM-AE874900DDD67C36EBC3BEEC|CLAIM:AE874900DDD67C36EBC3BEEC]]\n- versions: [[CLAIM-6CA0165FB104FB31A9E31B32|CLAIM:6CA0165FB104FB31A9E31B32]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nCấu trúc buffer, đường tạo body và hậu quả ứng dụng chưa xác minh độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:6E9976142EE859751D3870C3",
+      "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+      "CLAIM:750F76A8708E0FCABD5D0033",
+      "CLAIM:B26D671ABFBC721F2EC2B725",
+      "CLAIM:AE874900DDD67C36EBC3BEEC",
+      "CLAIM:6CA0165FB104FB31A9E31B32"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA xác nhận data injection vào proxied request; mô hình giải thích là ranh giới framing/ownership của body cần được duy trì xuyên buffering.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+      "SEVERITY:6C30A1CF7141753DFA256598",
+      "SEVERITY:7908602630E2AB22543D6B4F",
+      "SEVERITY:D167990BFB76179813E6269D",
+      "SEVERITY:D9F4EE0529065FD88DBD495E"
+    ],
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1",
+      "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3",
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D",
+      "EVIDENCE:7EC7AFAB177164F5C7B6934B",
+      "EVIDENCE:8CF50ADB53DA7699EF6F5D8B",
+      "EVIDENCE:A59E329248E28B36814C7E0F",
+      "EVIDENCE:BD47C0E84D9A7DC7243AB1CE",
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E",
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "title": "Request body injection in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Cấu trúc buffer, đường tạo body và hậu quả ứng dụng chưa xác minh độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:48+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Request body injection in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EB955B3E4995A75AEADC2BF0"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:022B6768DBA1F2CE4A740561",
+      "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+      "CLAIM:05E887C764FEB1C0DF242197",
+      "CLAIM:09644567344D9AD14184539D",
+      "CLAIM:1491AED55424632165585287",
+      "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+      "CLAIM:274D92808052887B2174A2F8",
+      "CLAIM:28F6A19E31126E9C52F8A44B",
+      "CLAIM:39109BD434AF9A8859C38B75",
+      "CLAIM:3A53B7C93B7D3A67EC8605F2",
+      "CLAIM:40912890DF89072740680ED5",
+      "CLAIM:47352377A558B60B54680A95",
+      "CLAIM:57DC5126394D1D17CFA98AAF",
+      "CLAIM:59AF14C32C3255096470AA78",
+      "CLAIM:5B02B2602E4B3E562C29D8C0",
+      "CLAIM:63EE7D7B57469D8005B8A327",
+      "CLAIM:6CA0165FB104FB31A9E31B32",
+      "CLAIM:6E9976142EE859751D3870C3",
+      "CLAIM:750F76A8708E0FCABD5D0033",
+      "CLAIM:A4EFABAFA326A4B67F469AA3",
+      "CLAIM:AE874900DDD67C36EBC3BEEC",
+      "CLAIM:B26D671ABFBC721F2EC2B725",
+      "CLAIM:B82FE2E9C33706793DA8301C",
+      "CLAIM:BBA2002C152FDD50D91A68D2",
+      "CLAIM:BCED52667E26CEC2DEAAD504",
+      "CLAIM:BD6BED9850A1F66BEA018E65",
+      "CLAIM:C5E8E437D8F623A30E3EE425",
+      "CLAIM:C782B14546A5E01E2F6E1ADC",
+      "CLAIM:C9DA58FC92231617FCB95A5B",
+      "CLAIM:CCD487D5863A0304426EC4AC",
+      "CLAIM:D3C35BAF9D6D5BA772B2919F",
+      "CLAIM:E4D7DB96114C7592E3827033",
+      "CLAIM:E98D324C67D0A6FE81CB9A9C",
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "condition_refs": [
+      "CONDITION:0E931C064854F6CED00E806D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Dữ liệu có thể bị đưa vào proxied request; CNA xác định data-plane issue.",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-95101",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Cập nhật bản sửa, kiểm contract parsing và forwarding. Không coi tắt buffering là mitigation chính thức khi chưa có nguồn xác nhận."
+    ],
+    "description": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "distribution_status": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "documented_configuration_context": "HTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "HTTP/3 có thể gán dữ liệu sai vào request được proxy khi request buffering bật.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-95101",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-10-15T16:43:46.630000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.",
+      "Trả lời có evidence: Vì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-95101",
+    "normal_component_behavior": "Buffer body được gắn với đúng request và giới hạn message trước khi chuyển sang upstream.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Hành vi ứng dụng upstream và dữ liệu bị thay đổi cụ thể là UNKNOWN; không xây dựng chuỗi tác động suy diễn.",
+    "publication_date": "2026-10-14T14:40:28.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C4BACC1F66494C7E52B12C56"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-172"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nHTTP/3 có thể gán dữ liệu sai vào request được proxy khi request buffering bật.\n\n## 2. CVE identity và product scope\n\nCVE-2026-95101; published 2026-10-14T14:40:28.955000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-6E9976142EE859751D3870C3|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 request body và đường proxy request trong data plane. [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|Claim / locator]].\n\n## 5. Normal component behavior\n\nBuffer body được gắn với đúng request và giới hạn message trước khi chuyển sang upstream. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận data injection vào proxied request; mô hình giải thích là ranh giới framing/ownership của body cần được duy trì xuyên buffering. [[CLAIM-AE874900DDD67C36EBC3BEEC|Claim / locator]].\n\n## 7. Relevant security principles\n\nBuffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus. [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.31.6; not vulnerable/fixed branches 1.31.7+, 1.30.6+. [[CLAIM-6CA0165FB104FB31A9E31B32|Claim / locator]].\n\nFix 1.30.6/1.31.7; khoảng affected bắt đầu ở 1.25.0. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nDữ liệu có thể bị đưa vào proxied request; CNA xác định data-plane issue. [[CLAIM-750F76A8708E0FCABD5D0033|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nHành vi ứng dụng upstream và dữ liệu bị thay đổi cụ thể là UNKNOWN; không xây dựng chuỗi tác động suy diễn. [[CLAIM-B26D671ABFBC721F2EC2B725|Claim / locator]].\n\n## 12. Remediation principles\n\nCập nhật bản sửa, kiểm contract parsing và forwarding. Không coi tắt buffering là mitigation chính thức khi chưa có nguồn xác nhận. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-6CA0165FB104FB31A9E31B32|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.6/1.31.7; khoảng affected bắt đầu ở 1.25.0.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-172|CWE-172 — Encoding Error]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.\n- Trả lời có evidence: Vì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?\n\n## 17. Discussion questions\n\nVì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?\n\nGợi ý đáp án: Transport bảo vệ trao đổi, còn HTTP implementation phải giữ đúng framing và ownership khi tạo request mới.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-6E9976142EE859751D3870C3|CLAIM:6E9976142EE859751D3870C3]]\n- applicability: [[CLAIM-05B0C5A0C6E6DDFA7CB8CDCC|CLAIM:05B0C5A0C6E6DDFA7CB8CDCC]]\n- impact: [[CLAIM-750F76A8708E0FCABD5D0033|CLAIM:750F76A8708E0FCABD5D0033]]\n- potential: [[CLAIM-B26D671ABFBC721F2EC2B725|CLAIM:B26D671ABFBC721F2EC2B725]]\n- mechanism: [[CLAIM-AE874900DDD67C36EBC3BEEC|CLAIM:AE874900DDD67C36EBC3BEEC]]\n- versions: [[CLAIM-6CA0165FB104FB31A9E31B32|CLAIM:6CA0165FB104FB31A9E31B32]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nCấu trúc buffer, đường tạo body và hậu quả ứng dụng chưa xác minh độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:6E9976142EE859751D3870C3",
+      "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+      "CLAIM:750F76A8708E0FCABD5D0033",
+      "CLAIM:B26D671ABFBC721F2EC2B725",
+      "CLAIM:AE874900DDD67C36EBC3BEEC",
+      "CLAIM:6CA0165FB104FB31A9E31B32"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "CNA xác nhận data injection vào proxied request; mô hình giải thích là ranh giới framing/ownership của body cần được duy trì xuyên buffering.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+      "SEVERITY:6C30A1CF7141753DFA256598",
+      "SEVERITY:7908602630E2AB22543D6B4F",
+      "SEVERITY:D167990BFB76179813E6269D",
+      "SEVERITY:D9F4EE0529065FD88DBD495E"
+    ],
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1",
+      "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3",
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D",
+      "EVIDENCE:7EC7AFAB177164F5C7B6934B",
+      "EVIDENCE:8CF50ADB53DA7699EF6F5D8B",
+      "EVIDENCE:A59E329248E28B36814C7E0F",
+      "EVIDENCE:BD47C0E84D9A7DC7243AB1CE",
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E",
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "title": "Request body injection in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Cấu trúc buffer, đường tạo body và hậu quả ứng dụng chưa xác minh độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:32:11+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:46:48+00:00",
+  "entity_id": "CVE:CVE-2026-95101",
+  "id": "HISTORY:ACB2D40D9922B57404DAC809"
+}

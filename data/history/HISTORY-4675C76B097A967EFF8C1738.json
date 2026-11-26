@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C9A029FD834C8670B45EA8A7",
+    "claim_value": "\"Thông tin được cung cấp cho chủ thể không được phép.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:39+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:298DD279D3CE2B051D376EFD"
+    ],
+    "id": "CLAIM:C9A029FD834C8670B45EA8A7",
+    "name": "WEAKNESS:CWE-200: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:298DD279D3CE2B051D376EFD"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-200",
+    "updated_at": "2026-11-25T02:32:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:39+00:00",
+  "entity_id": "CLAIM:C9A029FD834C8670B45EA8A7",
+  "id": "HISTORY:4675C76B097A967EFF8C1738"
+}

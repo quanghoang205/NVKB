@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:E26DE1EA5C7E714C01F39B4F",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:527D9D77AD2987253AAB97A2",
+    "claim_value": "\"## Tradeoff và kiểm soát\\n\\nGiới hạn metadata tránh một request chiếm bộ nhớ không giới hạn; tăng giới hạn để nhận file lớn cũng tăng ngân sách tài nguyên cần dự phòng. Tài liệu cho biết vượt mp4_max_buffer_size dẫn đến lỗi xử lý; đó không phải bằng chứng rằng mọi lỗi parser đều được chặn. Chuẩn hóa media trong quy trình xuất bản và hạn chế ai được đưa file vào vùng phục vụ giúp quản trị đầu vào, còn bản vá vẫn cần thiết cho lỗi implementation.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:04+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:527D9D77AD2987253AAB97A2",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-MP4-MODULE: v1.3:knowledge:Tradeoff và kiểm soát",
+    "observed_at": "2026-11-25T04:57:04+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và kiểm soát",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T04:57:04+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:57:04+00:00",
+  "entity_id": "CLAIM:527D9D77AD2987253AAB97A2",
+  "id": "HISTORY:03888D91CD84ED529724320E"
+}

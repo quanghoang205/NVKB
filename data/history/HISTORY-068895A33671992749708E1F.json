@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:4C9FAC013398535FDC4EE925",
+    "claim_value": "\"Đọc metadata ClientHello mà không kết thúc TLS trong preread phase. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:42+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "id": "CLAIM:4C9FAC013398535FDC4EE925",
+    "name": "CVE:CVE-2026-123640: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:44:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:42+00:00",
+  "entity_id": "CLAIM:4C9FAC013398535FDC4EE925",
+  "id": "HISTORY:068895A33671992749708E1F"
+}

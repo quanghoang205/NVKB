@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2024-31079",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:B4D32A47B3A297FDD04BD433",
+    "id": "EVIDENCE:B4D32A47B3A297FDD04BD433",
+    "local_snapshot_path": "data/raw/cve/snapshots/807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0.json",
+    "name": "CVE-2024-31079",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:26:12+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/31xxx/CVE-2024-31079.json",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "EVIDENCE:B4D32A47B3A297FDD04BD433",
+  "id": "HISTORY:683DC42110836A35C70BDF72"
+}

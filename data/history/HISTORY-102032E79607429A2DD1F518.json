@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:1AC27CC991678EAE8CF6C8E5",
+    "claim_value": "[{\"lessThan\": \"1.26.1\", \"status\": \"affected\", \"version\": \"1.25.0\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "description": "cna_version_data:CVE Program",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B6C4BA5372337C8B5F05014D"
+    ],
+    "id": "CLAIM:1AC27CC991678EAE8CF6C8E5",
+    "name": "CVE:CVE-2024-32760: cna_version_data:CVE Program",
+    "predicate": "cna_version_data:CVE Program",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B6C4BA5372337C8B5F05014D"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-32760",
+    "updated_at": "2026-11-25T02:26:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:19+00:00",
+  "entity_id": "CLAIM:1AC27CC991678EAE8CF6C8E5",
+  "id": "HISTORY:102032E79607429A2DD1F518"
+}

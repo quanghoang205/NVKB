@@ -1,0 +1,40 @@
+{
+  "claim_refs": [
+    "CLAIM:36A3385E4674B6277F471169"
+  ],
+  "created_at": "2026-11-25T02:33:50+00:00",
+  "description": "CVE:CVE-2026-40701 related_modules MODULE:NGX-HTTP-SSL-MODULE",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:586A22976306510237456D1A",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "related_modules",
+  "object_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+  "predicate": "related_modules",
+  "rationale": "Legacy association: Document context; not causal proof. Source references alone do not establish causation.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Document context; not causal proof",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:4AA885ADF0AAD59294FEEFE5",
+    "EVIDENCE:6CC40301E1F75C3E24EE61AF",
+    "EVIDENCE:7E2D52DB67E361A71B740E9E",
+    "EVIDENCE:84CF755B2579F9D84607D8E2",
+    "EVIDENCE:91376BB607136AEE7D9CF0A9",
+    "EVIDENCE:A236E8E52A0F6D1220BF705B",
+    "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+    "EVIDENCE:DD998218BBEB14FC1E34A55D"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-40701",
+  "updated_at": "2026-11-25T04:13:07+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy evidence scope; no all-version generalization"
+}

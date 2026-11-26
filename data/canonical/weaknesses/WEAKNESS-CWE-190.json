@@ -1,0 +1,40 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:61F797BB5E464D25D23CD985",
+    "CLAIM:6A8C1E22ECFADE9F7322B72B",
+    "CLAIM:825D86D5E886CC6772B01F71",
+    "CLAIM:5E7E40BF2E23714BE9F6815D",
+    "CLAIM:C526558AF533B6EBBA0E10CF",
+    "CLAIM:64778EEF761B9F5549DF273C",
+    "CLAIM:2ABA11241A42D02E39C56771",
+    "CLAIM:CAE42BEC9EC8366886A00377"
+  ],
+  "created_at": "2026-11-25T02:27:36+00:00",
+  "cwe_id": "CWE-190",
+  "defensive_principles": "Dùng checked arithmetic và giới hạn đầu vào theo miền biểu diễn.",
+  "definition": "Kết quả số học vượt miền biểu diễn của kiểu số.",
+  "description": "Kết quả số học vượt miền biểu diễn của kiểu số.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Cấp phát thiếu, truy cập ngoài biên hoặc quyết định kiểm tra sai.",
+  "id": "WEAKNESS:CWE-190",
+  "learning_objectives": [
+    "Giải thích CWE-190 — Integer overflow bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-190 — Integer overflow",
+  "normal_behavior": "Phép cộng/nhân kích thước được kiểm tra trước khi cấp phát hoặc tính offset.",
+  "related_failure_classes": "Integer overflow",
+  "related_knowledge": [],
+  "safety_assumptions": "Giá trị trung gian và chuyển đổi signed/unsigned không làm thay đổi ý nghĩa.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:1B9FC54844FF757989EB9A57",
+    "EVIDENCE:F9A1F1B9A78981951B3C0E64",
+    "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+  ],
+  "updated_at": "2026-11-25T04:13:14+00:00",
+  "verification_status": "INFERRED"
+}

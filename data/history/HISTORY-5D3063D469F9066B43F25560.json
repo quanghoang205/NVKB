@@ -1,0 +1,153 @@
+{
+  "action": "created",
+  "after": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_proxy_v2_module and ngx_http_grpc_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:890D60C9497C8BC449996EA6"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0238C7ED4EE8DC7C159478C5",
+      "CLAIM:1812FFA62B412745641D5435",
+      "CLAIM:260431395E19B5E2310C51CF",
+      "CLAIM:2D30653E55FE9FCF2A5B50E4",
+      "CLAIM:30A17084AC5B67F602D2398C",
+      "CLAIM:3C201F99F70F311C46084955",
+      "CLAIM:4467B26DB2C5AC1DCD1C8E8C",
+      "CLAIM:479C7383DD7976E25C792A5F",
+      "CLAIM:56735FEA5ECABAB9D64A3F91",
+      "CLAIM:5AC813EB6AABF5776362D3F2",
+      "CLAIM:7675002845D75B73B6E092FB",
+      "CLAIM:7E60F247578D4708F0FCF3CE",
+      "CLAIM:7ED286A9C7223436BDC8072D",
+      "CLAIM:80767CD71CB7F9E0147AE94F",
+      "CLAIM:91ADBA277AC2E566BBD9069B",
+      "CLAIM:92358B9B67E46C3BC4A93D47",
+      "CLAIM:9BFF36B62813732198B7BB01",
+      "CLAIM:A4153614B067980D65C6B234",
+      "CLAIM:A6BF63C3DEED832BF89B2DF1",
+      "CLAIM:C797A23802EA624A73F69B04",
+      "CLAIM:DD35BDC6D0611FA603D71058",
+      "CLAIM:ECAB595444C551C178A97E60"
+    ],
+    "condition_refs": [
+      "CONDITION:EDE1CA8428825449CF47A3F5"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "cve_id": "CVE-2026-42055",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:FCDA44F641EB5CBECDF6A09D",
+      "PACKAGE:B81B35F53CE1CB991EE32CB9",
+      "PACKAGE:527ED3199AD01266387B5B7A",
+      "PACKAGE:8CA69ED16F3BD9AFFB07FB9E"
+    ],
+    "distribution_status": [
+      "PACKAGE:FCDA44F641EB5CBECDF6A09D",
+      "PACKAGE:B81B35F53CE1CB991EE32CB9",
+      "PACKAGE:527ED3199AD01266387B5B7A",
+      "PACKAGE:8CA69ED16F3BD9AFFB07FB9E"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-42055 ghi nhận: Buffer overflow in the ngx_http_proxy_v2_module and ngx_http_grpc_module. Phạm vi upstream: 1.13.10-1.31.1. Bản sửa được công bố: 1.31.2+, 1.30.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.3",
+      "VERSION:NGINX-1.31.2"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.3",
+      "VERSION:NGINX-1.31.2"
+    ],
+    "id": "CVE:CVE-2026-42055",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-09-14T12:04:28.530000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-42055",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-06-17T14:04:32.520000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:83D8A0FF6922D785CC2BC800"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in the ngx_http_proxy_v2_module and ngx_http_grpc_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:54DA6223DFD45F7C788EA4D2",
+      "SEVERITY:5DEB652FAD964C04258009F8",
+      "SEVERITY:68468FD5E82A070594AD8CF0",
+      "SEVERITY:802CCA0FCB39299ECE3050C9",
+      "SEVERITY:98363A0EF29A085EB8C9E3E3",
+      "SEVERITY:AC1E8158313CC2EB788CC2A4",
+      "SEVERITY:C21AC5A81155ABF92CF20CB5"
+    ],
+    "source_refs": [
+      "EVIDENCE:0366AD8E4DE0ADBD84F034DB",
+      "EVIDENCE:1F6DBE760A34B37CAD1CF4A7",
+      "EVIDENCE:2338DDDA3ED8307209847AE2",
+      "EVIDENCE:37F199B99DBEA79229B4C468",
+      "EVIDENCE:3F81316F094BCE6B826FC65C",
+      "EVIDENCE:45867639B41FF94D1F19BC0B",
+      "EVIDENCE:942E4C4B271860134AC6C8E7",
+      "EVIDENCE:AFAA6A12EA44778C8BB2C34D",
+      "EVIDENCE:B3C9BC053AB467A97D065FFA",
+      "EVIDENCE:CC4820C04CABDFB933A471CC"
+    ],
+    "title": "Buffer overflow in the ngx_http_proxy_v2_module and ngx_http_grpc_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "tags",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "upstream_affected_expression": "1.13.10-1.31.1",
+    "upstream_unaffected_expression": "1.31.2+, 1.30.3+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:59+00:00",
+  "entity_id": "CVE:CVE-2026-42055",
+  "id": "HISTORY:5D3063D469F9066B43F25560"
+}

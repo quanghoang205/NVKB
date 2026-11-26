@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4A863DDBD0FE473EEE98CEE8",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:EC71DCFD2EF298B644DC8631",
+    "claim_value": "\"Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:64D90A0163303F39A538DD0C: Educational synthesis from linked knowledge notes; topic=LEARNING:PATH-03",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:EC71DCFD2EF298B644DC8631",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "LEARNING:PATH-03: related_failure_classes",
+    "observation_key": "OBSERVATION:CA5CAF5A31226ECA81BD78A1",
+    "observed_at": "2026-11-25T02:44:35+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "LEARNING:PATH-03",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T04:12:54+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:EC71DCFD2EF298B644DC8631",
+    "claim_value": "\"Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "id": "CLAIM:EC71DCFD2EF298B644DC8631",
+    "name": "LEARNING:PATH-03: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:54+00:00",
+  "entity_id": "CLAIM:EC71DCFD2EF298B644DC8631",
+  "id": "HISTORY:05C65D069C26E6EB3CE34372"
+}

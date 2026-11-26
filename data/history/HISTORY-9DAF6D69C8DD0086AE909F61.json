@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E3DA1CDA76B6378E6CD9C7A4",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:57C336E73CF6D25B2CE5898D",
+    "claim_value": "\"major\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "vendor_severity_label",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:3A257C452F78A5723E7844BB: li containing CVE-2026-118899",
+    "evidence_refs": [
+      "EVIDENCE:3A257C452F78A5723E7844BB"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:57C336E73CF6D25B2CE5898D",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-118899: vendor_severity_label",
+    "observation_key": "OBSERVATION:4AF5BCE19B4346D63FA484F7",
+    "observed_at": "2026-11-25T02:26:42+00:00",
+    "predicate": "vendor_severity_label",
+    "product_scope": "CVE:CVE-2026-118899",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3A257C452F78A5723E7844BB"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T04:12:37+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:57C336E73CF6D25B2CE5898D",
+    "claim_value": "\"major\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "vendor_severity_label",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3A257C452F78A5723E7844BB"
+    ],
+    "id": "CLAIM:57C336E73CF6D25B2CE5898D",
+    "name": "CVE:CVE-2026-118899: vendor_severity_label",
+    "predicate": "vendor_severity_label",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3A257C452F78A5723E7844BB"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:37+00:00",
+  "entity_id": "CLAIM:57C336E73CF6D25B2CE5898D",
+  "id": "HISTORY:9DAF6D69C8DD0086AE909F61"
+}

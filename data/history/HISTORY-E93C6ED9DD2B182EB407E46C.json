@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:2A9BBAC05A678D9EB8496D1E",
+      "CLAIM:8EE279A848391956E704BA18",
+      "CLAIM:6C64759F8495ABC35FF1B4FE",
+      "CLAIM:CED86B98A0C386D16CBDF3AC",
+      "CLAIM:2ED97C820519F03752219FCB"
+    ],
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "CVE:CVE-2026-118899 learns_from COMPONENT:TLS-SESSION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-118899",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:D6D4402BCBC678C458EB79D7",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "predicate": "learns_from",
+    "rationale": "Đọc TLS resumption: state, ticket và policy hiện hành để thảo luận: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc TLS resumption: state, ticket và policy hiện hành để thảo luận: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:13+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3A257C452F78A5723E7844BB",
+      "EVIDENCE:77FD57EAEDF8E5D26DB3E0AC"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-118899",
+    "updated_at": "2026-11-25T05:15:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:13+00:00",
+  "entity_id": "REL:D6D4402BCBC678C458EB79D7",
+  "id": "HISTORY:E93C6ED9DD2B182EB407E46C"
+}

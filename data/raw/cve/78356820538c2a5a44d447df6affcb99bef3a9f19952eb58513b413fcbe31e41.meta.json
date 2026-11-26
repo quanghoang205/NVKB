@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:43+00:00",
+  "content_hash": "d974669f4f32b9fabd8fa860830005a82f13db2389b5dfafb14584371ebf51c5",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"50d671548a8ee49ce6dc8d69b609cc4bf2b8cb7c3e514dd10ee4843b73902c37\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/d974669f4f32b9fabd8fa860830005a82f13db2389b5dfafb14584371ebf51c5.json",
+  "retrieved_at": "2026-11-25T02:25:43+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2010/2xxx/CVE-2010-2266.json"
+}

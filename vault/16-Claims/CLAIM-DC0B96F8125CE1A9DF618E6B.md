@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:DC0B96F8125CE1A9DF618E6B
+title: 'CVE:CVE-2026-97205: affected_process'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-97205: affected_process'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-97205: affected_process
+
+`CLAIM:DC0B96F8125CE1A9DF618E6B` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-97205|CVE-2026-97205]]. Predicate: `affected_process`.
+
+```json
+"NGINX worker process (được nêu trực tiếp trong mô tả nguồn)."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-11D661193742367787FAE30B|CVE-2026-97205]], [[EVIDENCE-49E983F13A5FF0D581C3675B|CVE-2026-97205]], [[EVIDENCE-AE7BD39E2B4F91A6144A6DA5|CVE-2026-97205]], [[EVIDENCE-BB3F86930A1E39AD58131B03|NGINX security advisories]], [[EVIDENCE-D9E46882376ECEC8C775B4C8|CVE-2026-97205]], [[EVIDENCE-DA58A8C9C64BBC27B381CA6F|CVE-2026-97205]], [[EVIDENCE-F3098454B4751E961D149C8B|CVE-2026-97205]], [[EVIDENCE-FE5014320D014371AB9F838E|CVE-2026-97205]]
+
+Locator: EVIDENCE:11D661193742367787FAE30B: /containers/cna/affected; EVIDENCE:49E983F13A5FF0D581C3675B: /containers/cna/affected; EVIDENCE:AE7BD39E2B4F91A6144A6DA5: /cveMetadata; EVIDENCE:BB3F86930A1E39AD58131B03: li containing CVE-2026-97205; EVIDENCE:D9E46882376ECEC8C775B4C8: /containers/cna/problemTypes; EVIDENCE:DA58A8C9C64BBC27B381CA6F: /containers/cna/descriptions; EVIDENCE:F3098454B4751E961D149C8B: /containers/cna/metrics; EVIDENCE:FE5014320D014371AB9F838E: /containers/cna/metrics
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:40:49+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

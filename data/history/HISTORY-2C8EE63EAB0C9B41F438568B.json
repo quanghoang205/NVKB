@@ -1,0 +1,76 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:16980F2384AF574C4E72746F"
+    ],
+    "created_at": "2026-11-25T02:33:56+00:00",
+    "description": "CVE:CVE-2026-9256 related_components COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:8EBF28A43EA52CFAABCEE6CE",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "related_components",
+    "rationale": "Legacy association: Context only; not fault location. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Context only; not fault location",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:0DB7D89C22289F0BB0865C01",
+      "EVIDENCE:15444CBCEDABE7F2E128DB96",
+      "EVIDENCE:16399AB3CA15BF12C1924E2A",
+      "EVIDENCE:596999094160707D14EB2950",
+      "EVIDENCE:69F354F141DDAC181796D0B7",
+      "EVIDENCE:8BC901ACCC60F2E2D63DC8EA",
+      "EVIDENCE:C53955D4100EAC53CAFC43D6",
+      "EVIDENCE:DF3A9A2E644E58D5180F0854",
+      "EVIDENCE:ED2E022FF0F107AD8C211963",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T04:13:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:16980F2384AF574C4E72746F"
+    ],
+    "created_at": "2026-11-25T02:33:56+00:00",
+    "description": "CVE:CVE-2026-9256 related_components COMPONENT:MEMORY-POOL",
+    "entity_type": "Relationship",
+    "id": "REL:8EBF28A43EA52CFAABCEE6CE",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0DB7D89C22289F0BB0865C01",
+      "EVIDENCE:15444CBCEDABE7F2E128DB96",
+      "EVIDENCE:16399AB3CA15BF12C1924E2A",
+      "EVIDENCE:596999094160707D14EB2950",
+      "EVIDENCE:69F354F141DDAC181796D0B7",
+      "EVIDENCE:8BC901ACCC60F2E2D63DC8EA",
+      "EVIDENCE:C53955D4100EAC53CAFC43D6",
+      "EVIDENCE:DF3A9A2E644E58D5180F0854",
+      "EVIDENCE:ED2E022FF0F107AD8C211963",
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T02:33:56+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:08+00:00",
+  "entity_id": "REL:8EBF28A43EA52CFAABCEE6CE",
+  "id": "HISTORY:2C8EE63EAB0C9B41F438568B"
+}

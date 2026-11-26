@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:DE387C0597226D18CB7D2B01",
+      "CLAIM:29C9F1BDF54448DB4247A1D6",
+      "CLAIM:B98554B9DBD704932FFDDE0C",
+      "CLAIM:6A730327C0C323A6A5B7BE6A",
+      "CLAIM:F1FFFD2D19E220F9537F0A7C",
+      "CLAIM:1E8CBD69DF6D4A0AEC0E0D98",
+      "CLAIM:99ED0DB3FEFF3BAB9F6B3ED4",
+      "CLAIM:D7433499C917DFC6D9CA484C"
+    ],
+    "created_at": "2026-11-25T02:32:43+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp request đến gRPC upstream.",
+    "description": "Chuyển tiếp request đến gRPC upstream.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-GRPC-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_grpc_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_grpc_module",
+    "normal_behavior": "Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:DE387C0597226D18CB7D2B01",
+      "CLAIM:29C9F1BDF54448DB4247A1D6",
+      "CLAIM:B98554B9DBD704932FFDDE0C",
+      "CLAIM:6A730327C0C323A6A5B7BE6A",
+      "CLAIM:F1FFFD2D19E220F9537F0A7C",
+      "CLAIM:1E8CBD69DF6D4A0AEC0E0D98",
+      "CLAIM:99ED0DB3FEFF3BAB9F6B3ED4",
+      "CLAIM:D7433499C917DFC6D9CA484C"
+    ],
+    "created_at": "2026-11-25T02:32:43+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp request đến gRPC upstream.",
+    "description": "Chuyển tiếp request đến gRPC upstream.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-GRPC-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_grpc_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_grpc_module",
+    "normal_behavior": "Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-HTTP-GRPC-MODULE",
+  "id": "HISTORY:3077A56B9CEAFBB9080DE188"
+}

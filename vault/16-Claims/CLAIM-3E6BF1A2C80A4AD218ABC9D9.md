@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:3E6BF1A2C80A4AD218ABC9D9
+title: 'CVE:CVE-2026-27784: description'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-27784: description'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-27784: description
+
+`CLAIM:3E6BF1A2C80A4AD218ABC9D9` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-27784|CVE-2026-27784]]. Predicate: `description`.
+
+```json
+"The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-E3A0312E8EBA339353ECC94F|CVE-2026-27784]]
+
+Locator: EVIDENCE:E3A0312E8EBA339353ECC94F: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:27:36+00:00. Truy xuất: 2026-11-25T02:27:34+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

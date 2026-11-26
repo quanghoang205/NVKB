@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:1046AD0C733C0B9522107497",
+    "claim_refs": [
+      "CLAIM:68B07F162EDEED6A62E4529F"
+    ],
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "cvss_score": 5.7,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4658A7708394EBCF3B4DC152",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"HIGH\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"LOCAL\", \"baseScore\": 5.7, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"LOW\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2024-7347 CVSS 4.0 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:F247C10B88E2879A1FFE9187"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T04:13:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:7D2FEFEA586B2E09BAD1BFE2",
+    "claim_refs": [
+      "CLAIM:68B07F162EDEED6A62E4529F"
+    ],
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "cvss_score": 5.7,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4658A7708394EBCF3B4DC152",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"HIGH\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"LOCAL\", \"baseScore\": 5.7, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"LOW\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2024-7347 CVSS 4.0 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:F247C10B88E2879A1FFE9187"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:16+00:00",
+  "entity_id": "SEVERITY:4658A7708394EBCF3B4DC152",
+  "id": "HISTORY:9424FAD8B4DFA62A9AD77F11"
+}

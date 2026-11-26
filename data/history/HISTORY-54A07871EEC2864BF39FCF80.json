@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "f76c54c2d9c80ac662a7dfeb55077b0e401b60593782b692487cccff0d08b9b0",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-95101",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+    "id": "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/f76c54c2d9c80ac662a7dfeb55077b0e401b60593782b692487cccff0d08b9b0.json",
+    "name": "CVE-2026-95101",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:49+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+  "id": "HISTORY:54A07871EEC2864BF39FCF80"
+}

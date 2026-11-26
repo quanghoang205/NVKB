@@ -1,0 +1,32 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3760D26AC62F81B66BFB75E7"
+    ],
+    "created_at": "2026-11-25T04:22:02+00:00",
+    "cve_ref": "CVE:CVE-2025-23419",
+    "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+    "distribution": "ubuntu",
+    "ecosystem": "ubuntu",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.24.0-2ubuntu7.3",
+    "id": "PACKAGE:6A465A814A0BFCF7C58059E2",
+    "name": "nginx / Ubuntu noble / CVE-2025-23419",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "noble",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:ACA88D9EC0C91EE5C9C12358"
+    ],
+    "updated_at": "2026-11-25T04:22:02+00:00",
+    "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:22:02+00:00",
+  "entity_id": "PACKAGE:6A465A814A0BFCF7C58059E2",
+  "id": "HISTORY:B5ED24F3B9E58C6B9DF62BB5"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:1A32DDAD3F4E2603D64EC7EA",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:416993EDB0E8A85C41B698B4",
+    "claim_value": "\"Parsing inconsistency; use-after-free.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:DFBB5BD88F7FC640669D3012: HTTP; topic=COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "evidence_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:416993EDB0E8A85C41B698B4",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: related_failure_classes",
+    "observation_key": "OBSERVATION:A542767F39B15B9AF9A31D24",
+    "observed_at": "2026-11-25T02:44:15+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:416993EDB0E8A85C41B698B4",
+    "claim_value": "\"Parsing inconsistency; use-after-free.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "id": "CLAIM:416993EDB0E8A85C41B698B4",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:416993EDB0E8A85C41B698B4",
+  "id": "HISTORY:4D0A159E2250643B3DEE5F40"
+}

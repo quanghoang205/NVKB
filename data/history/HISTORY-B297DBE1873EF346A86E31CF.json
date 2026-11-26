@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:D22914D24D7E6C0B2EF5206D",
+    "claim_value": "\"Kiểm tra encoding hợp lệ, kích thước đầu ra và các trường hợp ký tự nhiều byte.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:56+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "id": "CLAIM:D22914D24D7E6C0B2EF5206D",
+    "name": "WEAKNESS:CWE-172: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-172",
+    "updated_at": "2026-11-25T02:48:56+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:56+00:00",
+  "entity_id": "CLAIM:D22914D24D7E6C0B2EF5206D",
+  "id": "HISTORY:B297DBE1873EF346A86E31CF"
+}

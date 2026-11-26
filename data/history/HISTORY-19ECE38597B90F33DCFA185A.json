@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:B12667573E979E72BBEED45E",
+    "claim_value": "\"Buffer overflow; excessive rewrite iterations.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "id": "CLAIM:B12667573E979E72BBEED45E",
+    "name": "COMPONENT:REWRITE-ENGINE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:32:10+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:10+00:00",
+  "entity_id": "CLAIM:B12667573E979E72BBEED45E",
+  "id": "HISTORY:19ECE38597B90F33DCFA185A"
+}

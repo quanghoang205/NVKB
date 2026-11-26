@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:093D6E631D8ADD90652C59E0",
+    "claim_value": "\"Ưu tiên hoặc kết luận trạng thái bản vá sai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:34+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AD97F945283CADAECB352952"
+    ],
+    "id": "CLAIM:093D6E631D8ADD90652C59E0",
+    "name": "CONCEPT:CVSS: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AD97F945283CADAECB352952"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CLAIM:093D6E631D8ADD90652C59E0",
+  "id": "HISTORY:0C89B870954D21A548085923"
+}

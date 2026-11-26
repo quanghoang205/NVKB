@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:B112405910656AA4758807A8",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:3CE7902880C967C01A7603A9",
+    "claim_value": "\"Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:BBB9F585CBA6A76D66F40DA5: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3CE7902880C967C01A7603A9",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:HTTP-2: definition",
+    "observation_key": "OBSERVATION:5A0D2FA041EA3C5AD9C07D4D",
+    "observed_at": "2026-11-25T02:32:19+00:00",
+    "predicate": "definition",
+    "product_scope": "PROTOCOL:HTTP-2",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:18+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:3CE7902880C967C01A7603A9",
+    "claim_value": "\"Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "id": "CLAIM:3CE7902880C967C01A7603A9",
+    "name": "PROTOCOL:HTTP-2: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:3CE7902880C967C01A7603A9",
+  "id": "HISTORY:700E9EDB770DE6B7ABECDD06"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:6BFB6CB62F9545532D841401",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:C80DFAFA37D7D77C24D7A369",
+    "claim_value": "\"## Invariant là điều gì\\n\\nTrong bài này, invariant bảo mật là điều kiện phải được giữ qua các chuyển trạng thái thuộc phạm vi đã nêu. Nó không chỉ là khẩu hiệu 'an toàn' hoặc một tên công nghệ. Ví dụ do tác giả suy luận: trước khi đọc tài nguyên T, decision phải dựa trên principal/context đúng và policy áp dụng cho T. [[CLAIM-E4BAA66AB83A2CA0FDAA9902|nhận định nguồn: CLAIM:E4BAA66AB83A2CA0FDAA9902]] cung cấp nền về kiểm soát theo vai trò và giới hạn của nó, không tự chứng minh invariant cho mọi ứng dụng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:06+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C80DFAFA37D7D77C24D7A369",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Invariant là điều gì",
+    "observed_at": "2026-11-25T04:21:06+00:00",
+    "predicate": "pilot_section:Invariant là điều gì",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:21:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:06+00:00",
+  "entity_id": "CLAIM:C80DFAFA37D7D77C24D7A369",
+  "id": "HISTORY:2B6E8AA1F999DB94FA8B1610"
+}

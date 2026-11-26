@@ -1,0 +1,22 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html",
+    "entity_type": "Reference",
+    "id": "REFERENCE:74EFF10EE9E45BB6C8DD0806",
+    "name": "NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D7162E9393BB9F1C64EA1C0D"
+    ],
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html",
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:07+00:00",
+  "entity_id": "REFERENCE:74EFF10EE9E45BB6C8DD0806",
+  "id": "HISTORY:B4ED2D185B75B51B4E51424E"
+}

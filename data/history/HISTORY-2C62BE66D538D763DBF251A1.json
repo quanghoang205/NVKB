@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "4bfe1b8bdc2a5e7b2e7cd2b0334331c6214879996f1077f322c5433fb49de75e",
+    "created_at": "2026-11-25T02:26:47+00:00",
+    "description": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2026-120967",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:A12A418FEDBC0C4D376897CC",
+    "id": "EVIDENCE:A12A418FEDBC0C4D376897CC",
+    "local_snapshot_path": "data/raw/distribution/snapshots/4bfe1b8bdc2a5e7b2e7cd2b0334331c6214879996f1077f322c5433fb49de75e.html",
+    "name": "CVE-2026-120967",
+    "paraphrase": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:47+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-120967",
+    "updated_at": "2026-11-25T02:26:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:47+00:00",
+  "entity_id": "EVIDENCE:A12A418FEDBC0C4D376897CC",
+  "id": "HISTORY:2C62BE66D538D763DBF251A1"
+}

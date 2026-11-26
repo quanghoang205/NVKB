@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:77348BD78504C875B7C3F639",
+    "claim_value": "\"Phiên chuyển qua authorization, transaction và update; command được chấp nhận theo trạng thái hiện tại.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:52133EFF4255B050D755A95C"
+    ],
+    "id": "CLAIM:77348BD78504C875B7C3F639",
+    "name": "PROTOCOL:POP3: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:52133EFF4255B050D755A95C"
+    ],
+    "subject_entity_id": "PROTOCOL:POP3",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:77348BD78504C875B7C3F639",
+  "id": "HISTORY:40B5AD2C31911C29C845CD88"
+}

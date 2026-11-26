@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:DCE0651311FF968177D97750",
+    "claim_value": "\"Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:26+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "id": "CLAIM:DCE0651311FF968177D97750",
+    "name": "CVE:CVE-2026-123007: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:40:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:27+00:00",
+  "entity_id": "CLAIM:DCE0651311FF968177D97750",
+  "id": "HISTORY:C38356C49878A98C0C5D3756"
+}

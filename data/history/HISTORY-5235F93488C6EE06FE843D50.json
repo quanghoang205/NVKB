@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb",
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Xử lý Server Side Includes trong response.",
+    "document_title": "Module ngx_http_ssi_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:25D294C72DC04B09747CE615",
+    "id": "EVIDENCE:25D294C72DC04B09747CE615",
+    "local_snapshot_path": "data/raw/documentation/snapshots/be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb.html",
+    "name": "Module ngx_http_ssi_module",
+    "paraphrase": "Xử lý Server Side Includes trong response.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:49+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_ssi_module; topic=MODULE:NGX-HTTP-SSI-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_ssi_module.html",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "EVIDENCE:25D294C72DC04B09747CE615",
+  "id": "HISTORY:5235F93488C6EE06FE843D50"
+}

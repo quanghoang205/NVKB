@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:E21DBA11FBADC2EB0407F8EA",
+    "claim_value": "\"Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "id": "CLAIM:E21DBA11FBADC2EB0407F8EA",
+    "name": "CONTROL:LEAST-PRIVILEGE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CLAIM:E21DBA11FBADC2EB0407F8EA",
+  "id": "HISTORY:40076CF0F2B752CC194BEDBF"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:1F5A45E24450B01BBF90EF41",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:5EEEFFBAF64BD40C10C06CD0",
+  "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:32+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:25D294C72DC04B09747CE615: ngx_http_ssi_module; topic=MODULE:NGX-HTTP-SSI-MODULE",
+  "evidence_refs": [
+    "EVIDENCE:25D294C72DC04B09747CE615"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:5EEEFFBAF64BD40C10C06CD0",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SSI-MODULE: defensive_principles",
+  "observation_key": "OBSERVATION:5793A1EB623D0C293BAA4C2B",
+  "observed_at": "2026-11-25T02:44:32+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "MODULE:NGX-HTTP-SSI-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:49+00:00",
+  "review_reason": "Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:25D294C72DC04B09747CE615"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+  "updated_at": "2026-11-25T05:24:18+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

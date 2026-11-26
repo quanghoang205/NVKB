@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "f5",
+    "claim_id": "CLAIM:B6E552FE4051C7A8B0BC64CB",
+    "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "description": "severity:CIRCL mirror:f5:4.0",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD"
+    ],
+    "id": "CLAIM:B6E552FE4051C7A8B0BC64CB",
+    "name": "CVE:CVE-2026-56434: severity:CIRCL mirror:f5:4.0",
+    "predicate": "severity:CIRCL mirror:f5:4.0",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T02:28:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:30+00:00",
+  "entity_id": "CLAIM:B6E552FE4051C7A8B0BC64CB",
+  "id": "HISTORY:DAF6CCA9C59BD0EAA24C5162"
+}

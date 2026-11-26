@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:4B17FAA8AD42A931D931D0DC",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:8A26ADDD09E13F66B5387F75",
+  "claim_value": "\"Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:44:29+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:75862F23DA8A4FFDD6B7CFA1: ngx_http_mp4_module; topic=MODULE:NGX-HTTP-MP4-MODULE",
+  "evidence_refs": [
+    "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:8A26ADDD09E13F66B5387F75",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-MP4-MODULE: normal_behavior",
+  "observation_key": "OBSERVATION:8AE26EE12B7CDCD17D4490FC",
+  "observed_at": "2026-11-25T02:44:29+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "MODULE:NGX-HTTP-MP4-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:42+00:00",
+  "review_reason": "Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+  "updated_at": "2026-11-25T04:57:04+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

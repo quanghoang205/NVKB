@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:995CD3D3819EEB22E91728EE",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:5AEE005C51582322B25FA667",
+    "claim_value": "\"Buffer overread in the ngx_http_mp4_module\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "description": "title",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:2695A7B7DBF16C16C1D16529: li containing CVE-2024-7347",
+    "evidence_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5AEE005C51582322B25FA667",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-7347: title",
+    "observation_key": "OBSERVATION:A2E276AF37D43F3290194C9A",
+    "observed_at": "2026-11-25T02:26:31+00:00",
+    "predicate": "title",
+    "product_scope": "CVE:CVE-2024-7347",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T04:12:37+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:5AEE005C51582322B25FA667",
+    "claim_value": "\"Buffer overread in the ngx_http_mp4_module\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529"
+    ],
+    "id": "CLAIM:5AEE005C51582322B25FA667",
+    "name": "CVE:CVE-2024-7347: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-7347",
+    "updated_at": "2026-11-25T02:26:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:37+00:00",
+  "entity_id": "CLAIM:5AEE005C51582322B25FA667",
+  "id": "HISTORY:F8EE5AAD0E06F36000FEF982"
+}

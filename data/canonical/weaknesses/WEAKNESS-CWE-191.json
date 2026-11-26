@@ -1,0 +1,40 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:D1FB696433A1B43AE36D5D47",
+    "CLAIM:43D6852485BAC6D8869692A5",
+    "CLAIM:37323B7127285DC1E7D72357",
+    "CLAIM:011584F01E1533C057F89C5C",
+    "CLAIM:5E7E98B7E5AEE1B1407ED617",
+    "CLAIM:616EE3AAE352CCCA47DC7FC1",
+    "CLAIM:392CD039E3408056E325E810",
+    "CLAIM:80E0817E2B439302CAF96AD1"
+  ],
+  "created_at": "2026-11-25T02:26:59+00:00",
+  "cwe_id": "CWE-191",
+  "defensive_principles": "Dùng checked arithmetic và kiểm thử giá trị 0/biên nhỏ.",
+  "definition": "Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.",
+  "description": "Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+  "id": "WEAKNESS:CWE-191",
+  "learning_objectives": [
+    "Giải thích CWE-191 — Integer Underflow bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-191 — Integer Underflow",
+  "normal_behavior": "Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp lệ.",
+  "related_failure_classes": "Integer Underflow",
+  "related_knowledge": [],
+  "safety_assumptions": "Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp lệ.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:E5D6A097B43D7EB31179D3D5",
+    "EVIDENCE:F03600C558EF2F690E6E4A14",
+    "EVIDENCE:F92CFDA044BB160372AF06A6"
+  ],
+  "updated_at": "2026-11-25T04:13:15+00:00",
+  "verification_status": "INFERRED"
+}

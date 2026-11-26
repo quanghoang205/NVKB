@@ -1,0 +1,1890 @@
+- entity_type: Component
+  id: COMPONENT:MASTER-PROCESS
+  name: Master process
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Processes
+  definition: Tiến trình điều phối cấu hình và vòng đời các worker.
+  normal_behavior: Master đọc cấu hình, quản lý worker và phản ứng với tín hiệu; graceful
+    reload tạo worker mới rồi cho worker cũ kết thúc các request đang xử lý.
+  architecture_position: Ranh giới giữa quyền quản trị cấu hình và xử lý lưu lượng
+    trong worker.
+  security_boundary: Ranh giới giữa quyền quản trị cấu hình và xử lý lưu lượng trong
+    worker.
+  safety_assumptions: Cấu hình và tệp thực thi phải do chủ thể tin cậy quản lý.
+  related_failure_classes: Sai phân quyền; cấu hình không nhất quán.
+  failure_impact: Dịch vụ không khởi động hoặc thực thi cấu hình ngoài dự kiến.
+  defensive_principles: Kiểm tra cấu hình trước reload, giới hạn quyền sửa cấu hình
+    và theo dõi lỗi reload.
+  related_knowledge: []
+  diagram: 'flowchart TD
+
+    C[Trusted configuration] --> M[Master process]
+
+    M --> W1[Worker 1]
+
+    M --> W2[Worker 2]
+
+    W1 --> E1[Event loop]
+
+    W2 --> E2[Event loop]'
+- entity_type: Component
+  id: COMPONENT:WORKER-PROCESS
+  name: Worker process
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Processes
+  definition: Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.
+  normal_behavior: Worker nhận sự kiện mạng, chạy handler và duy trì trạng thái của
+    nhiều kết nối; các worker là các process riêng.
+  architecture_position: Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.
+  security_boundary: Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.
+  safety_assumptions: Module không được làm hỏng bộ nhớ hoặc chặn event loop quá lâu.
+  related_failure_classes: Memory safety; resource exhaustion.
+  failure_impact: Worker kết thúc bất thường hoặc giảm khả năng phục vụ các kết nối
+    cùng worker.
+  defensive_principles: Theo dõi worker restart, áp dụng bản vá và giới hạn nguồn
+    lực theo workload.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:EVENT-DRIVEN
+  name: Event-driven architecture
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Events
+  definition: Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi
+    kết nối.
+  normal_behavior: Readiness của socket, timer và posted event kích hoạt callback;
+    callback cập nhật trạng thái rồi trả điều khiển.
+  architecture_position: Event handler và trạng thái kết nối thuộc cùng vòng đời xử
+    lý.
+  security_boundary: Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.
+  safety_assumptions: Callback phải xử lý trường hợp dữ liệu chưa hoàn chỉnh và không
+    giữ tham chiếu quá vòng đời.
+  related_failure_classes: Use-after-free; state-machine inconsistency.
+  failure_impact: Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.
+  defensive_principles: Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback
+    có thời gian thực thi hữu hạn.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:EVENT-LOOP
+  name: Event loop
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Event loop
+  definition: Vòng lặp điều phối I/O event, timer và posted event.
+  normal_behavior: Vòng lặp gọi backend sự kiện của hệ điều hành, xử lý các callback
+    sẵn sàng và chạy timer đến hạn.
+  architecture_position: Mọi request trong worker chia sẻ ngân sách thời gian xử lý.
+  security_boundary: Mọi request trong worker chia sẻ ngân sách thời gian xử lý.
+  safety_assumptions: Handler không được chạy vòng lặp vô hạn hoặc gọi thư viện blocking
+    không kiểm soát.
+  related_failure_classes: Infinite loop; excessive CPU usage.
+  failure_impact: Suy giảm availability của worker.
+  defensive_principles: Tách công việc blocking qua cơ chế được hỗ trợ và kiểm soát
+    timeout/giới hạn công việc.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:NONBLOCKING-IO
+  name: Non-blocking I/O
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: I/O events
+  definition: Thao tác I/O trả về ngay khi chưa thể hoàn tất.
+  normal_behavior: Handler đọc/ghi một phần dữ liệu, lưu offset và đăng ký chờ sự
+    kiện tiếp theo khi socket chưa sẵn sàng.
+  architecture_position: Ranh giới giữa byte stream từ hệ điều hành và trạng thái
+    ứng dụng.
+  security_boundary: Ranh giới giữa byte stream từ hệ điều hành và trạng thái ứng
+    dụng.
+  safety_assumptions: Không được coi một lần đọc là một thông điệp hoàn chỉnh.
+  related_failure_classes: Truncated parsing; buffer-boundary errors.
+  failure_impact: Xử lý sai thông điệp hoặc truy cập ngoài vùng nhớ.
+  defensive_principles: Theo dõi số byte đã xử lý, kiểm tra kết quả hệ thống và giữ
+    parser theo trạng thái.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:MEMORY-POOL
+  name: Memory pool
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Pool
+  definition: Bộ cấp phát nhóm các allocation có vòng đời gần nhau.
+  normal_behavior: NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng
+    theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.
+  architecture_position: Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã
+    bị hủy.
+  security_boundary: Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.
+  safety_assumptions: Vòng đời request, connection và callback phải tương thích với
+    vòng đời pool.
+  related_failure_classes: Use-after-free; double free; memory leak.
+  failure_impact: Worker crash hoặc hỏng bộ nhớ tùy lỗi cụ thể.
+  defensive_principles: Ghi rõ ownership, kiểm tra callback trễ và dùng công cụ phát
+    hiện lỗi bộ nhớ trong kiểm thử phát triển.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:CONNECTION-LIFECYCLE
+  name: Connection lifecycle
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Connection
+  definition: Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.
+  normal_behavior: Cấu trúc connection lưu socket và event đọc/ghi; close phải phối
+    hợp giải phóng socket, pool và các tham chiếu còn tồn tại.
+  architecture_position: Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng
+    thái.
+  security_boundary: Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.
+  safety_assumptions: Mỗi tài nguyên có một chủ sở hữu và thao tác hoàn tất nhất quán.
+  related_failure_classes: Use-after-free; NULL dereference; leak.
+  failure_impact: Mất kết nối hoặc lỗi worker.
+  defensive_principles: Hủy timer/posted event đúng lúc và kiểm tra trạng thái trước
+    khi xử lý callback.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:PROCESS-PRIVILEGES
+  name: Process privileges
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Processes
+  definition: Tách quyền của tiến trình điều phối và tiến trình xử lý request.
+  normal_behavior: Master có thể cần quyền tạo tài nguyên; worker sử dụng user/group
+    cấu hình. Quyền thực tế phụ thuộc cách vận hành dịch vụ.
+  architecture_position: Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống
+    và dữ liệu request.
+  security_boundary: Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ
+    liệu request.
+  safety_assumptions: Không suy ra worker chạy root chỉ từ việc master có quyền cao.
+  related_failure_classes: Privilege misconfiguration.
+  failure_impact: Phạm vi tác động có thể lớn hơn khi quyền worker vượt nhu cầu.
+  defensive_principles: Áp dụng least privilege và đối chiếu service unit, user directive
+    cùng quyền tệp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:HTTP-REQUEST-LIFECYCLE
+  name: HTTP request lifecycle
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: HTTP
+  definition: Vòng đời parse, chọn cấu hình, xử lý phase và hoàn tất response.
+  normal_behavior: Request đi qua các phase như rewrite/access/content; output filter
+    xử lý header/body trước khi gửi. Finalization điều phối tài nguyên và subrequest.
+  architecture_position: Chuyển từ dữ liệu chưa tin cậy sang cấu hình, handler và
+    response.
+  security_boundary: Chuyển từ dữ liệu chưa tin cậy sang cấu hình, handler và response.
+  safety_assumptions: Trạng thái request và số tham chiếu phải nhất quán qua redirect/subrequest.
+  related_failure_classes: Parsing inconsistency; use-after-free.
+  failure_impact: Định tuyến hoặc xử lý response sai.
+  defensive_principles: Review thứ tự phase, giới hạn request và bảo đảm cleanup đúng
+    vòng đời.
+  related_knowledge: []
+  diagram: 'flowchart LR
+
+    A[Connection] --> B[Parse request]
+
+    B --> C[Select server and location]
+
+    C --> D[Rewrite and access phases]
+
+    D --> E[Content handler]
+
+    E --> F[Output filters]
+
+    F --> G[Finalize request]'
+- entity_type: Component
+  id: COMPONENT:REQUEST-PARSING
+  name: Request parsing
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: HTTP
+  definition: Biến byte trên kết nối thành cấu trúc request có ý nghĩa.
+  normal_behavior: Parser phân biệt request line, header và body framing theo giao
+    thức, tiếp tục khi dữ liệu đến thành nhiều phần.
+  architecture_position: Ranh giới byte stream và thông điệp HTTP.
+  security_boundary: Ranh giới byte stream và thông điệp HTTP.
+  safety_assumptions: Các thành phần proxy phải hiểu thống nhất chiều dài và ranh
+    giới thông điệp.
+  related_failure_classes: Request parsing inconsistencies; integer overflow.
+  failure_impact: Routing hoặc phân tách request sai giữa các thành phần.
+  defensive_principles: Dùng parser tiêu chuẩn, loại thông điệp mơ hồ và cập nhật
+    toàn bộ chuỗi proxy.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:VIRTUAL-HOSTS
+  name: Virtual hosts
+  url: https://nginx.org/en/docs/http/request_processing.html
+  locator: Name-based virtual servers
+  definition: Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.
+  normal_behavior: NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server;
+    default server thuộc socket listen. TLS có bước chọn theo SNI.
+  architecture_position: Ranh giới chính sách giữa các tên miền dùng chung listener.
+  security_boundary: Ranh giới chính sách giữa các tên miền dùng chung listener.
+  safety_assumptions: Các quyết định xác thực và cấu hình phải gắn đúng server được
+    chọn.
+  related_failure_classes: Authentication policy violation.
+  failure_impact: Áp dụng nhầm chính sách truy cập giữa virtual hosts.
+  defensive_principles: Rà soát default server, server_name và chính sách TLS/mTLS
+    nhất quán.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:LOCATION-MATCHING
+  name: Location matching
+  url: https://nginx.org/en/docs/http/ngx_http_core_module.html
+  locator: location
+  definition: Chọn cấu hình xử lý theo URI.
+  normal_behavior: NGINX xử lý location có exact match, prefix và regular expression
+    theo quy tắc của core module; internal redirect có thể chọn lại location.
+  architecture_position: Ranh giới URI, đường dẫn tài nguyên và cấu hình kiểm soát
+    truy cập.
+  security_boundary: Ranh giới URI, đường dẫn tài nguyên và cấu hình kiểm soát truy
+    cập.
+  safety_assumptions: Không giả định thứ tự dòng trong tệp luôn là thứ tự ưu tiên
+    match.
+  related_failure_classes: Configuration policy bypass; path mapping error.
+  failure_impact: Request đi vào handler hoặc tài nguyên ngoài dự kiến.
+  defensive_principles: Kiểm thử các trường hợp URI đại diện và kiểm tra sự tương
+    tác giữa location, alias và rewrite.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:REWRITE-ENGINE
+  name: Rewrite engine
+  url: https://nginx.org/en/docs/http/ngx_http_rewrite_module.html
+  locator: ngx_http_rewrite_module
+  definition: Bộ xử lý directive sửa URI hoặc trả response dựa trên cấu hình.
+  normal_behavior: Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp
+    cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.
+  architecture_position: Ranh giới giữa giá trị động của request và cấu hình điều
+    khiển.
+  security_boundary: Ranh giới giữa giá trị động của request và cấu hình điều khiển.
+  safety_assumptions: Độ dài chuỗi, biến và trạng thái redirect phải được quản lý
+    nhất quán.
+  related_failure_classes: Buffer overflow; excessive rewrite iterations.
+  failure_impact: Hỏng bộ nhớ hoặc xử lý URI sai.
+  defensive_principles: Giữ cấu hình dễ kiểm tra, tránh chu kỳ và dùng bản đã sửa
+    theo advisory liên quan.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:REVERSE-PROXY
+  name: Reverse proxy
+  url: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+  locator: proxy_pass
+  definition: Thành phần nhận request client và chuyển tới upstream rồi trả response.
+  normal_behavior: Proxy module tạo request upstream, xử lý kết nối, header và buffering
+    theo cấu hình; upstream là một trust boundary riêng.
+  architecture_position: Ranh giới client ↔ NGINX ↔ backend.
+  security_boundary: Ranh giới client ↔ NGINX ↔ backend.
+  safety_assumptions: Không tin header định danh hay thông tin tuyến do client cung
+    cấp nếu chưa kiểm soát.
+  related_failure_classes: Parsing inconsistencies; information disclosure.
+  failure_impact: Sai định tuyến hoặc lộ dữ liệu theo cách ứng dụng dùng proxy.
+  defensive_principles: Xác định rõ header tin cậy, timeout, TLS upstream và kích
+    thước buffer.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:UPSTREAM-COMMUNICATION
+  name: Upstream communication
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Load balancing
+  definition: Quản lý peer, kết nối và trao đổi với dịch vụ backend.
+  normal_behavior: Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read
+    phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.
+  architecture_position: Ranh giới mạng giữa proxy và backend.
+  security_boundary: Ranh giới mạng giữa proxy và backend.
+  safety_assumptions: Không coi mọi request có thể retry an toàn.
+  related_failure_classes: State confusion; improper certificate validation.
+  failure_impact: Kết quả request trùng lặp hoặc truyền dữ liệu sai backend.
+  defensive_principles: Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream
+    theo yêu cầu triển khai.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:RESPONSE-BUFFERING
+  name: Response buffering
+  url: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+  locator: proxy_buffering
+  definition: Lưu tạm response upstream trong memory buffer hoặc tệp tạm.
+  normal_behavior: Khi bật buffering, NGINX đọc response upstream vào buffer cấu hình;
+    dữ liệu vượt ngưỡng có thể được ghi ra tệp tạm.
+  architecture_position: Ranh giới buffer, bộ nhớ worker và filesystem tạm.
+  security_boundary: Ranh giới buffer, bộ nhớ worker và filesystem tạm.
+  safety_assumptions: Kích thước và vòng đời buffer phải đúng, quyền thư mục tạm phải
+    phù hợp.
+  related_failure_classes: Out-of-bounds access; resource exhaustion.
+  failure_impact: Tăng RAM/disk hoặc lỗi worker tùy nguyên nhân.
+  defensive_principles: Giới hạn buffer/tệp tạm, theo dõi dung lượng và cập nhật module
+    liên quan.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: COMPONENT:HTTP-CACHING
+  name: HTTP caching
+  url: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+  locator: proxy_cache
+  definition: Tái sử dụng response upstream theo cache key và chính sách cache.
+  normal_behavior: NGINX tra cache theo key, thời gian hiệu lực và chỉ thị cache;
+    các điều kiện bypass/no-cache quyết định việc đọc hoặc lưu response.
+  architecture_position: Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người
+    dùng/tenant.
+  security_boundary: Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người
+    dùng/tenant.
+  safety_assumptions: Cache key phải phân biệt các context trả về nội dung khác nhau.
+  related_failure_classes: Information disclosure; cache key inconsistency.
+  failure_impact: Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.
+  defensive_principles: Rà soát cache key, Authorization/Cookie, Vary và điều kiện
+    bypass cho dữ liệu riêng tư.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:TCP
+  name: TCP
+  url: https://www.rfc-editor.org/rfc/rfc9293.html
+  locator: Protocol overview and state machine
+  definition: Transport byte stream tin cậy, có thứ tự.
+  normal_behavior: Sequence number, acknowledgement và cơ chế truyền lại duy trì byte
+    stream; ứng dụng vẫn phải tự phân định thông điệp.
+  architecture_position: Stream bytes ↔ parser ứng dụng.
+  security_boundary: Stream bytes ↔ parser ứng dụng.
+  safety_assumptions: Không đồng nhất segment TCP với thông điệp ứng dụng.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:UDP
+  name: UDP
+  url: https://www.rfc-editor.org/rfc/rfc768.html
+  locator: Protocol overview and state machine
+  definition: Transport datagram không bảo đảm giao hàng hay thứ tự.
+  normal_behavior: Mỗi datagram có chiều dài riêng; ứng dụng xử lý mất gói, trùng
+    lặp và thứ tự khi cần.
+  architecture_position: Datagram mạng ↔ trạng thái ứng dụng.
+  security_boundary: Datagram mạng ↔ trạng thái ứng dụng.
+  safety_assumptions: Địa chỉ nguồn và datagram chưa mặc nhiên được xác thực.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:HTTP-1.1
+  name: HTTP/1.1
+  url: https://www.rfc-editor.org/rfc/rfc9112.html
+  locator: Protocol overview and state machine
+  definition: Cú pháp và framing thông điệp HTTP/1.1.
+  normal_behavior: Start-line, header và cơ chế độ dài body xác định ranh giới message
+    trên kết nối; parser phải xử lý dữ liệu theo từng phần.
+  architecture_position: Client ↔ proxy ↔ upstream.
+  security_boundary: Client ↔ proxy ↔ upstream.
+  safety_assumptions: Các hop phải thống nhất cách xử lý framing và thông điệp không
+    hợp lệ.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:HTTP-2
+  name: HTTP/2
+  url: https://www.rfc-editor.org/rfc/rfc9113.html
+  locator: Protocol overview and state machine
+  definition: Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.
+  normal_behavior: Frame được gắn stream ID; flow control và trạng thái stream điều
+    phối nhiều request/response trên kết nối.
+  architecture_position: Connection state ↔ từng stream.
+  security_boundary: Connection state ↔ từng stream.
+  safety_assumptions: Giới hạn tài nguyên và cập nhật trạng thái stream phải nhất
+    quán.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:HTTP-3
+  name: HTTP/3
+  url: https://www.rfc-editor.org/rfc/rfc9114.html
+  locator: Protocol overview and state machine
+  definition: Ánh xạ HTTP lên QUIC.
+  normal_behavior: HTTP/3 sử dụng các QUIC stream và control stream; metadata có QPACK,
+    trạng thái request phải được tách theo stream.
+  architecture_position: HTTP stream ↔ QUIC transport.
+  security_boundary: HTTP stream ↔ QUIC transport.
+  safety_assumptions: Trạng thái và vòng đời đối tượng phải đồng bộ giữa hai lớp.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:QUIC
+  name: QUIC
+  url: https://www.rfc-editor.org/rfc/rfc9000.html
+  locator: Protocol overview and state machine
+  definition: Transport bảo mật dựa trên UDP với nhiều stream độc lập.
+  normal_behavior: QUIC quản lý connection ID, stream, flow control, loss recovery
+    và xác nhận địa chỉ trong quá trình thiết lập/di chuyển đường truyền.
+  architecture_position: Datagram UDP ↔ connection/stream được xác thực.
+  security_boundary: Datagram UDP ↔ connection/stream được xác thực.
+  safety_assumptions: Không lấy metadata datagram chưa kiểm chứng làm danh tính ổn
+    định.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:TLS
+  name: TLS
+  url: https://www.rfc-editor.org/rfc/rfc8446.html
+  locator: Protocol overview and state machine
+  definition: Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.
+  normal_behavior: Handshake thỏa thuận tham số mật mã và xác thực; khóa phiên bảo
+    vệ record. Session resumption dùng lại ngữ cảnh theo điều kiện giao thức.
+  architecture_position: Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.
+  security_boundary: Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.
+  safety_assumptions: Certificate verification và policy context phải giữ đúng cả
+    khi resume phiên.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:MTLS
+  name: MTLS
+  url: https://www.rfc-editor.org/rfc/rfc8446.html
+  locator: Protocol overview and state machine
+  definition: TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.
+  normal_behavior: Server yêu cầu certificate client, kiểm tra chuỗi tin cậy và chữ
+    ký; ứng dụng ánh xạ danh tính đã xác thực thành quyền.
+  architecture_position: Danh tính certificate ↔ quyết định authorization ứng dụng.
+  security_boundary: Danh tính certificate ↔ quyết định authorization ứng dụng.
+  safety_assumptions: Authentication không tự thay thế authorization; context phiên
+    phải gắn đúng policy.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:DNS
+  name: DNS
+  url: https://www.rfc-editor.org/rfc/rfc1034.html
+  locator: Protocol overview and state machine
+  definition: Hệ thống phân giải tên phân cấp.
+  normal_behavior: Resolver gửi truy vấn, kiểm tra response và theo dõi các bản ghi
+    cùng thời gian sống; việc dùng kết quả còn phụ thuộc chính sách ứng dụng.
+  architecture_position: Tên dịch vụ ↔ địa chỉ kết nối.
+  security_boundary: Tên dịch vụ ↔ địa chỉ kết nối.
+  safety_assumptions: Phản hồi phải tương ứng truy vấn và trạng thái callback còn
+    hiệu lực.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:WEBSOCKET
+  name: WEBSOCKET
+  url: https://www.rfc-editor.org/rfc/rfc6455.html
+  locator: Protocol overview and state machine
+  definition: Giao thức thông điệp hai chiều sau handshake.
+  normal_behavior: Handshake HTTP thiết lập kênh, sau đó trao đổi frame với trạng
+    thái close và message fragmentation.
+  architecture_position: HTTP upgrade ↔ kênh dài hạn.
+  security_boundary: HTTP upgrade ↔ kênh dài hạn.
+  safety_assumptions: Proxy phải xử lý header hop-by-hop và timeout phù hợp với kênh
+    nâng cấp.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:SMTP
+  name: SMTP
+  url: https://www.rfc-editor.org/rfc/rfc5321.html
+  locator: Protocol overview and state machine
+  definition: Giao thức chuyển tiếp thư theo command/reply.
+  normal_behavior: Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư;
+    parser phân biệt rõ chế độ command với dữ liệu.
+  architecture_position: Kênh mail proxy ↔ mail backend.
+  security_boundary: Kênh mail proxy ↔ mail backend.
+  safety_assumptions: Framing, authentication và thông tin chuyển tiếp phải nhất quán.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:POP3
+  name: POP3
+  url: https://www.rfc-editor.org/rfc/rfc1939.html
+  locator: Protocol overview and state machine
+  definition: Giao thức truy xuất hộp thư theo các trạng thái phiên.
+  normal_behavior: Phiên chuyển qua authorization, transaction và update; command
+    được chấp nhận theo trạng thái hiện tại.
+  architecture_position: Chứng thực tài khoản ↔ dữ liệu hộp thư.
+  security_boundary: Chứng thực tài khoản ↔ dữ liệu hộp thư.
+  safety_assumptions: Không cho phép command ngoài trạng thái hoặc nhầm context xác
+    thực.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Protocol
+  id: PROTOCOL:IMAP
+  name: IMAP
+  url: https://www.rfc-editor.org/rfc/rfc9051.html
+  locator: Protocol overview and state machine
+  definition: Giao thức thao tác hộp thư đồng bộ với server.
+  normal_behavior: Client gửi command có tag; server phản hồi và quản lý trạng thái
+    authenticated/selected cùng dữ liệu mailbox.
+  architecture_position: Parser lệnh ↔ trạng thái mailbox và danh tính.
+  security_boundary: Parser lệnh ↔ trạng thái mailbox và danh tính.
+  safety_assumptions: Độ dài literal và trạng thái phiên phải được kiểm tra.
+  related_failure_classes: Parsing inconsistencies; state confusion; resource exhaustion.
+  failure_impact: Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể
+    cần advisory tương ứng.
+  defensive_principles: Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm
+    tra cấu hình giao thức theo tài liệu nhà cung cấp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-120
+  name: CWE-120 — Buffer overflow
+  url: https://cwe.mitre.org/data/definitions/120.html
+  locator: Description / Potential Mitigations
+  definition: Ghi dữ liệu vượt dung lượng buffer đích.
+  normal_behavior: Độ dài đầu vào phải được kiểm tra so với vùng đích trước thao tác
+    sao chép.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Kích thước được tính không tràn và bao gồm mọi byte phụ trợ.
+  related_failure_classes: Buffer overflow
+  failure_impact: Hỏng bộ nhớ hoặc crash tùy vị trí và điều kiện.
+  defensive_principles: Kiểm tra capacity/length, dùng API có giới hạn và công cụ
+    phát hiện lỗi bộ nhớ.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-125
+  name: CWE-125 — Out-of-bounds read
+  url: https://cwe.mitre.org/data/definitions/125.html
+  locator: Description / Potential Mitigations
+  definition: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.
+  normal_behavior: Index và offset được kiểm tra trong phạm vi đối tượng trước khi
+    đọc.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.
+  related_failure_classes: Out-of-bounds read
+  failure_impact: Đọc nhầm dữ liệu, crash hoặc lộ bộ nhớ theo advisory.
+  defensive_principles: Kiểm tra biên ở mọi đường đọc và bảo đảm parser xử lý dữ liệu
+    bị cắt ngắn.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-787
+  name: CWE-787 — Out-of-bounds write
+  url: https://cwe.mitre.org/data/definitions/787.html
+  locator: Description / Potential Mitigations
+  definition: Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.
+  normal_behavior: Địa chỉ ghi phải thuộc buffer đích và được cấp phát đủ dung lượng.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Tính toán offset và kích thước không overflow/underflow.
+  related_failure_classes: Out-of-bounds write
+  failure_impact: Hỏng đối tượng lân cận hoặc dừng tiến trình.
+  defensive_principles: Theo dõi capacity riêng với length; kiểm thử các giá trị biên.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-416
+  name: CWE-416 — Use-after-free
+  url: https://cwe.mitre.org/data/definitions/416.html
+  locator: Description / Potential Mitigations
+  definition: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.
+  normal_behavior: Các tham chiếu được giữ trong thời gian đối tượng còn sống; cleanup
+    xảy ra sau khi callback cuối cùng không còn sử dụng.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Ownership và refcount phản ánh mọi callback và timer.
+  related_failure_classes: Use-after-free
+  failure_impact: Crash hoặc hỏng bộ nhớ; không suy ra code execution nếu nguồn chưa
+    xác nhận.
+  defensive_principles: Quản lý vòng đời, hủy callback và dùng sanitizer trong phát
+    triển.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-415
+  name: CWE-415 — Double free
+  url: https://cwe.mitre.org/data/definitions/415.html
+  locator: Description / Potential Mitigations
+  definition: Giải phóng cùng tài nguyên bộ nhớ nhiều lần.
+  normal_behavior: Mỗi allocation có một đường ownership quyết định giải phóng; các
+    đường lỗi không lặp cleanup.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Các nhánh cleanup và finalization phối hợp nhất quán.
+  related_failure_classes: Double free
+  failure_impact: Hỏng allocator state hoặc crash.
+  defensive_principles: Thiết kế ownership rõ ràng, cleanup có trạng thái và kiểm
+    thử nhánh lỗi.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-476
+  name: CWE-476 — NULL pointer dereference
+  url: https://cwe.mitre.org/data/definitions/476.html
+  locator: Description / Potential Mitigations
+  definition: Truy cập qua con trỏ NULL.
+  normal_behavior: Kết quả allocation/lookup được kiểm tra trước khi dùng trường dữ
+    liệu.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Đường lỗi không tiếp tục như đường thành công.
+  related_failure_classes: NULL pointer dereference
+  failure_impact: Worker có thể kết thúc bất thường.
+  defensive_principles: Kiểm tra trả về, lan truyền lỗi và bao phủ trạng thái đối
+    tượng chưa khởi tạo.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-190
+  name: CWE-190 — Integer overflow
+  url: https://cwe.mitre.org/data/definitions/190.html
+  locator: Description / Potential Mitigations
+  definition: Kết quả số học vượt miền biểu diễn của kiểu số.
+  normal_behavior: Phép cộng/nhân kích thước được kiểm tra trước khi cấp phát hoặc
+    tính offset.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Giá trị trung gian và chuyển đổi signed/unsigned không làm thay
+    đổi ý nghĩa.
+  related_failure_classes: Integer overflow
+  failure_impact: Cấp phát thiếu, truy cập ngoài biên hoặc quyết định kiểm tra sai.
+  defensive_principles: Dùng checked arithmetic và giới hạn đầu vào theo miền biểu
+    diễn.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-400
+  name: CWE-400 — Resource exhaustion
+  url: https://cwe.mitre.org/data/definitions/400.html
+  locator: Description / Potential Mitigations
+  definition: Tiêu thụ tài nguyên mà không có giới hạn phù hợp.
+  normal_behavior: Hệ thống giữ hạn mức CPU, RAM, kết nối và thời gian cho từng đơn
+    vị công việc.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Chi phí xử lý không tăng ngoài ngân sách khi trạng thái thay
+    đổi.
+  related_failure_classes: Resource exhaustion
+  failure_impact: Suy giảm availability.
+  defensive_principles: Đo nguồn lực, đặt hạn mức và timeout dựa trên workload.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-863
+  name: CWE-863 — Incorrect Authorization
+  url: https://cwe.mitre.org/data/definitions/863.html
+  locator: Description / Potential Mitigations
+  definition: Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.
+  normal_behavior: Danh tính đã xác thực được đối chiếu chính sách của đúng server/tài
+    nguyên trước khi cấp truy cập.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Danh tính, session và policy context không bị dùng nhầm.
+  related_failure_classes: Incorrect Authorization
+  failure_impact: Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.
+  defensive_principles: Tách authentication/authorization và kiểm thử chính sách ở
+    mọi đường xử lý phiên.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-200
+  name: CWE-200 — Information disclosure
+  url: https://cwe.mitre.org/data/definitions/200.html
+  locator: Description / Potential Mitigations
+  definition: Thông tin được cung cấp cho chủ thể không được phép.
+  normal_behavior: Chỉ dữ liệu nằm trong phạm vi quyền của request mới được trả về
+    hoặc ghi vào kênh có thể đọc.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Buffer, cache key, log và response không lẫn dữ liệu khác context.
+  related_failure_classes: Information disclosure
+  failure_impact: Lộ dữ liệu theo loại và mức độ được nguồn xác nhận.
+  defensive_principles: Giảm dữ liệu nhạy cảm, kiểm soát cache/log và kiểm tra ranh
+    giới response.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-444
+  name: CWE-444 — Request parsing inconsistencies
+  url: https://cwe.mitre.org/data/definitions/444.html
+  locator: Description / Potential Mitigations
+  definition: Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.
+  normal_behavior: Mỗi hop diễn giải thống nhất framing và loại bỏ trường hợp mơ hồ.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Không có bất đồng parser giữa frontend và backend.
+  related_failure_classes: Request parsing inconsistencies
+  failure_impact: Định tuyến hoặc ghép thông điệp sai theo context triển khai.
+  defensive_principles: Cập nhật proxy/backend và chuẩn hóa chính sách xử lý thông
+    điệp không hợp lệ.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-SSL-MODULE
+  name: ngx_http_ssl_module
+  url: https://nginx.org/en/docs/http/ngx_http_ssl_module.html
+  locator: ngx_http_ssl_module
+  definition: TLS handshake, certificate, session cache và session ticket cho HTTP.
+  normal_behavior: TLS handshake, certificate, session cache và session ticket cho
+    HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong
+    mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-V2-MODULE
+  name: ngx_http_v2_module
+  url: https://nginx.org/en/docs/http/ngx_http_v2_module.html
+  locator: ngx_http_v2_module
+  definition: Xử lý HTTP/2 frame, stream và flow control.
+  normal_behavior: Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt
+    theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-V3-MODULE
+  name: ngx_http_v3_module
+  url: https://nginx.org/en/docs/http/ngx_http_v3_module.html
+  locator: ngx_http_v3_module
+  definition: Xử lý HTTP/3 dựa trên QUIC.
+  normal_behavior: Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và
+    directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-MP4-MODULE
+  name: ngx_http_mp4_module
+  url: https://nginx.org/en/docs/http/ngx_http_mp4_module.html
+  locator: ngx_http_mp4_module
+  definition: Hỗ trợ streaming nội dung MP4 với xử lý metadata của media.
+  normal_behavior: Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module
+    được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-PROXY-MODULE
+  name: ngx_http_proxy_module
+  url: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+  locator: ngx_http_proxy_module
+  definition: Chuyển tiếp HTTP request/response đến upstream.
+  normal_behavior: Chuyển tiếp HTTP request/response đến upstream. Module được kích
+    hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-GRPC-MODULE
+  name: ngx_http_grpc_module
+  url: https://nginx.org/en/docs/http/ngx_http_grpc_module.html
+  locator: ngx_http_grpc_module
+  definition: Chuyển tiếp request đến gRPC upstream.
+  normal_behavior: Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-REWRITE-MODULE
+  name: ngx_http_rewrite_module
+  url: https://nginx.org/en/docs/http/ngx_http_rewrite_module.html
+  locator: ngx_http_rewrite_module
+  definition: Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.
+  normal_behavior: Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.
+    Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi
+    deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-CORE-MODULE
+  name: ngx_http_core_module
+  url: https://nginx.org/en/docs/http/ngx_http_core_module.html
+  locator: ngx_http_core_module
+  definition: Cấu hình server, location, connection và xử lý HTTP nền tảng.
+  normal_behavior: Cấu hình server, location, connection và xử lý HTTP nền tảng. Module
+    được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-DAV-MODULE
+  name: ngx_http_dav_module
+  url: https://nginx.org/en/docs/http/ngx_http_dav_module.html
+  locator: ngx_http_dav_module
+  definition: Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.
+  normal_behavior: Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên.
+    Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi
+    deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-CHARSET-MODULE
+  name: ngx_http_charset_module
+  url: https://nginx.org/en/docs/http/ngx_http_charset_module.html
+  locator: ngx_http_charset_module
+  definition: Chuyển đổi charset cho response theo cấu hình.
+  normal_behavior: Chuyển đổi charset cho response theo cấu hình. Module được kích
+    hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-SCGI-MODULE
+  name: ngx_http_scgi_module
+  url: https://nginx.org/en/docs/http/ngx_http_scgi_module.html
+  locator: ngx_http_scgi_module
+  definition: Chuyển tiếp request đến SCGI server.
+  normal_behavior: Chuyển tiếp request đến SCGI server. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-UWSGI-MODULE
+  name: ngx_http_uwsgi_module
+  url: https://nginx.org/en/docs/http/ngx_http_uwsgi_module.html
+  locator: ngx_http_uwsgi_module
+  definition: Chuyển tiếp request đến uwsgi server.
+  normal_behavior: Chuyển tiếp request đến uwsgi server. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-SLICE-MODULE
+  name: ngx_http_slice_module
+  url: https://nginx.org/en/docs/http/ngx_http_slice_module.html
+  locator: ngx_http_slice_module
+  definition: Chia request nội dung thành các slice theo cấu hình.
+  normal_behavior: Chia request nội dung thành các slice theo cấu hình. Module được
+    kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-SSI-MODULE
+  name: ngx_http_ssi_module
+  url: https://nginx.org/en/docs/http/ngx_http_ssi_module.html
+  locator: ngx_http_ssi_module
+  definition: Xử lý Server Side Includes trong response.
+  normal_behavior: Xử lý Server Side Includes trong response. Module được kích hoạt
+    theo build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-HTTP-MAP-MODULE
+  name: ngx_http_map_module
+  url: https://nginx.org/en/docs/http/ngx_http_map_module.html
+  locator: ngx_http_map_module
+  definition: Ánh xạ giá trị biến bằng bảng khai báo.
+  normal_behavior: Ánh xạ giá trị biến bằng bảng khai báo. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: http subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: http subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-MAIL-SMTP-MODULE
+  name: ngx_mail_smtp_module
+  url: https://nginx.org/en/docs/mail/ngx_mail_smtp_module.html
+  locator: ngx_mail_smtp_module
+  definition: Xử lý SMTP trong vai trò mail proxy.
+  normal_behavior: Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: mail subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: mail subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-MAIL-POP3-MODULE
+  name: ngx_mail_pop3_module
+  url: https://nginx.org/en/docs/mail/ngx_mail_pop3_module.html
+  locator: ngx_mail_pop3_module
+  definition: Xử lý POP3 trong vai trò mail proxy.
+  normal_behavior: Xử lý POP3 trong vai trò mail proxy. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: mail subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: mail subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-MAIL-IMAP-MODULE
+  name: ngx_mail_imap_module
+  url: https://nginx.org/en/docs/mail/ngx_mail_imap_module.html
+  locator: ngx_mail_imap_module
+  definition: Xử lý IMAP trong vai trò mail proxy.
+  normal_behavior: Xử lý IMAP trong vai trò mail proxy. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: mail subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: mail subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-MAIL-PROXY-MODULE
+  name: ngx_mail_proxy_module
+  url: https://nginx.org/en/docs/mail/ngx_mail_proxy_module.html
+  locator: ngx_mail_proxy_module
+  definition: Chuyển tiếp phiên mail đến backend.
+  normal_behavior: Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo
+    build và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: mail subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: mail subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-MAIL-AUTH-HTTP-MODULE
+  name: ngx_mail_auth_http_module
+  url: https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html
+  locator: ngx_mail_auth_http_module
+  definition: Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.
+  normal_behavior: Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.
+    Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi
+    deployment.
+  architecture_position: mail subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: mail subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-STREAM-SSL-MODULE
+  name: ngx_stream_ssl_module
+  url: https://nginx.org/en/docs/stream/ngx_stream_ssl_module.html
+  locator: ngx_stream_ssl_module
+  definition: Cấu hình TLS cho stream proxy.
+  normal_behavior: Cấu hình TLS cho stream proxy. Module được kích hoạt theo build
+    và directive, không mặc nhiên tồn tại trong mọi deployment.
+  architecture_position: stream subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: stream subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Module
+  id: MODULE:NGX-STREAM-SSL-PREREAD-MODULE
+  name: ngx_stream_ssl_preread_module
+  url: https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html
+  locator: ngx_stream_ssl_preread_module
+  definition: Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.
+  normal_behavior: Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.
+    Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi
+    deployment.
+  architecture_position: stream subsystem của NGINX; giữa input protocol và handler
+    cấu hình.
+  security_boundary: stream subsystem của NGINX; giữa input protocol và handler cấu
+    hình.
+  safety_assumptions: Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù
+    hợp tài liệu module.
+  related_failure_classes: Memory safety hoặc policy/state inconsistency tùy code
+    path.
+  failure_impact: Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng
+    minh có lỗi.
+  defensive_principles: Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed
+    release đúng nhánh.
+  related_knowledge: []
+  diagram: ''
+- entity_type: ConfigurationDirective
+  id: DIRECTIVE:SSL-VERIFY-CLIENT
+  name: ssl_verify_client
+  url: https://nginx.org/en/docs/http/ngx_http_ssl_module.html
+  locator: ssl_verify_client
+  definition: Directive điều khiển xác minh chứng chỉ client.
+  normal_behavior: Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy
+    ứng dụng cần xét đúng server context.
+  architecture_position: TLS session ↔ HTTP virtual server.
+  security_boundary: TLS session ↔ HTTP virtual server.
+  safety_assumptions: Policy context của session phải gắn đúng server.
+  related_failure_classes: Incorrect authorization; session-context confusion.
+  failure_impact: Sai chính sách xác thực theo điều kiện advisory.
+  defensive_principles: Rà soát directive cùng default server và phiên bản đã sửa.
+  related_knowledge:
+  - MODULE:NGX-HTTP-SSL-MODULE
+  - PROTOCOL:TLS
+  - PROTOCOL:MTLS
+  diagram: ''
+- entity_type: ConfigurationDirective
+  id: DIRECTIVE:SSL-SESSION-CACHE
+  name: ssl_session_cache
+  url: https://nginx.org/en/docs/http/ngx_http_ssl_module.html
+  locator: ssl_session_cache
+  definition: Directive lưu cache thông tin phiên TLS.
+  normal_behavior: Cache có thể là built-in hoặc shared theo cấu hình; resumption
+    cần giữ đúng ngữ cảnh xác thực.
+  architecture_position: TLS session ↔ HTTP virtual server.
+  security_boundary: TLS session ↔ HTTP virtual server.
+  safety_assumptions: Policy context của session phải gắn đúng server.
+  related_failure_classes: Incorrect authorization; session-context confusion.
+  failure_impact: Sai chính sách xác thực theo điều kiện advisory.
+  defensive_principles: Rà soát directive cùng default server và phiên bản đã sửa.
+  related_knowledge:
+  - MODULE:NGX-HTTP-SSL-MODULE
+  - PROTOCOL:TLS
+  - PROTOCOL:MTLS
+  diagram: ''
+- entity_type: DeploymentArchitecture
+  id: DEPLOYMENT:REVERSE-PROXY
+  name: Reverse proxy deployment
+  url: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
+  locator: proxy_pass
+  definition: NGINX đứng giữa client và dịch vụ upstream.
+  normal_behavior: TLS và HTTP policy có thể kết thúc tại NGINX; upstream có kết nối
+    và trust context riêng.
+  architecture_position: Client → NGINX → backend.
+  security_boundary: Client → NGINX → backend.
+  safety_assumptions: Không chuyển tiếp danh tính giả định mà không kiểm tra.
+  related_failure_classes: Header trust errors; parsing differences.
+  failure_impact: Rò rỉ thông tin hoặc routing sai tùy ứng dụng.
+  defensive_principles: Lập sơ đồ trust boundary, kiểm tra TLS từng chặng và giới
+    hạn header tin cậy.
+  related_knowledge:
+  - COMPONENT:REVERSE-PROXY
+  - COMPONENT:UPSTREAM-COMMUNICATION
+  - PROTOCOL:TLS
+  diagram: 'flowchart LR
+
+    C[Client] --> N[NGINX policy boundary]
+
+    N --> U[Upstream service]
+
+    N --> L[Restricted logs]'
+- entity_type: Component
+  id: CONCEPT:CVE
+  name: CVE
+  url: https://www.cve.org/ResourcesSupport/AllResources/CNARules
+  locator: Overview / documented record
+  definition: Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng
+    chứng mọi deployment bị ảnh hưởng.
+  normal_behavior: Định danh và record công bố lỗ hổng, không phải điểm severity hay
+    bằng chứng mọi deployment bị ảnh hưởng.
+  architecture_position: Ranh giới giữa định danh, phân loại, đánh giá và quyết định
+    vận hành.
+  security_boundary: Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận
+    hành.
+  safety_assumptions: Không thay một loại bằng chứng bằng loại khác.
+  related_failure_classes: Incorrect inference; stale metadata.
+  failure_impact: Ưu tiên hoặc kết luận trạng thái bản vá sai.
+  defensive_principles: Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho
+    từng nhận định.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: CONCEPT:CWE
+  name: CWE
+  url: https://cwe.mitre.org/about/index.html
+  locator: Overview / documented record
+  definition: Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ
+    thể.
+  normal_behavior: Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện
+    CVE cụ thể.
+  architecture_position: Ranh giới giữa định danh, phân loại, đánh giá và quyết định
+    vận hành.
+  security_boundary: Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận
+    hành.
+  safety_assumptions: Không thay một loại bằng chứng bằng loại khác.
+  related_failure_classes: Incorrect inference; stale metadata.
+  failure_impact: Ưu tiên hoặc kết luận trạng thái bản vá sai.
+  defensive_principles: Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho
+    từng nhận định.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: CONCEPT:CVSS
+  name: CVSS
+  url: https://www.first.org/cvss/v4.0/specification-document
+  locator: Overview / documented record
+  definition: Khung mô tả đặc tính severity bằng vector; score không phải xác suất
+    khai thác hay thứ tự ưu tiên duy nhất.
+  normal_behavior: Khung mô tả đặc tính severity bằng vector; score không phải xác
+    suất khai thác hay thứ tự ưu tiên duy nhất.
+  architecture_position: Ranh giới giữa định danh, phân loại, đánh giá và quyết định
+    vận hành.
+  security_boundary: Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận
+    hành.
+  safety_assumptions: Không thay một loại bằng chứng bằng loại khác.
+  related_failure_classes: Incorrect inference; stale metadata.
+  failure_impact: Ưu tiên hoặc kết luận trạng thái bản vá sai.
+  defensive_principles: Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho
+    từng nhận định.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: CONCEPT:ADVISORY
+  name: Security advisory
+  url: https://nginx.org/en/security_advisories.html
+  locator: Overview / documented record
+  definition: Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.
+  normal_behavior: Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.
+  architecture_position: Ranh giới giữa định danh, phân loại, đánh giá và quyết định
+    vận hành.
+  security_boundary: Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận
+    hành.
+  safety_assumptions: Không thay một loại bằng chứng bằng loại khác.
+  related_failure_classes: Incorrect inference; stale metadata.
+  failure_impact: Ưu tiên hoặc kết luận trạng thái bản vá sai.
+  defensive_principles: Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho
+    từng nhận định.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Component
+  id: CONCEPT:BACKPORT
+  name: Distribution backport
+  url: https://security-tracker.debian.org/tracker/CVE-2025-23419
+  locator: Overview / documented record
+  definition: Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream
+    version lên nhánh mới.
+  normal_behavior: Bản sửa được đưa vào package distribution mà không nhất thiết nâng
+    upstream version lên nhánh mới.
+  architecture_position: Ranh giới giữa định danh, phân loại, đánh giá và quyết định
+    vận hành.
+  security_boundary: Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận
+    hành.
+  safety_assumptions: Không thay một loại bằng chứng bằng loại khác.
+  related_failure_classes: Incorrect inference; stale metadata.
+  failure_impact: Ưu tiên hoặc kết luận trạng thái bản vá sai.
+  defensive_principles: Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho
+    từng nhận định.
+  related_knowledge: []
+  diagram: ''
+- entity_type: LearningObjective
+  id: LEARNING:PATH-01
+  name: Learning Path 01 — NGINX Fundamentals
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Educational synthesis from linked knowledge notes
+  definition: Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.
+  normal_behavior: Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory
+    có nguồn và ghi lại nhận định/giới hạn.
+  architecture_position: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  security_boundary: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  safety_assumptions: Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu
+    nguồn.
+  related_failure_classes: Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.
+  failure_impact: Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.
+  defensive_principles: 'Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và
+    checklist xác minh bản vá từ inventory được cung cấp.'
+  related_knowledge:
+  - COMPONENT:MASTER-PROCESS
+  - COMPONENT:WORKER-PROCESS
+  - COMPONENT:HTTP-REQUEST-LIFECYCLE
+  - COMPONENT:REVERSE-PROXY
+  - COMPONENT:LOCATION-MATCHING
+  diagram: ''
+- entity_type: LearningObjective
+  id: LEARNING:PATH-02
+  name: Learning Path 02 — Memory Safety
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Educational synthesis from linked knowledge notes
+  definition: Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.
+  normal_behavior: Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory
+    có nguồn và ghi lại nhận định/giới hạn.
+  architecture_position: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  security_boundary: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  safety_assumptions: Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu
+    nguồn.
+  related_failure_classes: Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.
+  failure_impact: Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.
+  defensive_principles: 'Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và
+    checklist xác minh bản vá từ inventory được cung cấp.'
+  related_knowledge:
+  - COMPONENT:MEMORY-POOL
+  - COMPONENT:CONNECTION-LIFECYCLE
+  - WEAKNESS:CWE-125
+  - WEAKNESS:CWE-787
+  - WEAKNESS:CWE-416
+  - WEAKNESS:CWE-415
+  - WEAKNESS:CWE-190
+  diagram: ''
+- entity_type: LearningObjective
+  id: LEARNING:PATH-03
+  name: Learning Path 03 — Protocol Security
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Educational synthesis from linked knowledge notes
+  definition: Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.
+  normal_behavior: Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory
+    có nguồn và ghi lại nhận định/giới hạn.
+  architecture_position: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  security_boundary: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  safety_assumptions: Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu
+    nguồn.
+  related_failure_classes: Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.
+  failure_impact: Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.
+  defensive_principles: 'Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và
+    checklist xác minh bản vá từ inventory được cung cấp.'
+  related_knowledge:
+  - PROTOCOL:HTTP-2
+  - PROTOCOL:HTTP-3
+  - PROTOCOL:QUIC
+  - PROTOCOL:TLS
+  - PROTOCOL:MTLS
+  - PROTOCOL:DNS
+  diagram: ''
+- entity_type: LearningObjective
+  id: LEARNING:PATH-04
+  name: Learning Path 04 — Vulnerability Research
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Educational synthesis from linked knowledge notes
+  definition: Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.
+  normal_behavior: Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory
+    có nguồn và ghi lại nhận định/giới hạn.
+  architecture_position: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  security_boundary: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  safety_assumptions: Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu
+    nguồn.
+  related_failure_classes: Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.
+  failure_impact: Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.
+  defensive_principles: 'Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và
+    checklist xác minh bản vá từ inventory được cung cấp.'
+  related_knowledge:
+  - CONCEPT:CVE
+  - CONCEPT:CWE
+  - CONCEPT:CVSS
+  - CONCEPT:ADVISORY
+  - COMPONENT:REQUEST-PARSING
+  diagram: ''
+- entity_type: LearningObjective
+  id: LEARNING:PATH-05
+  name: Learning Path 05 — Vulnerability Management
+  url: https://nginx.org/en/docs/dev/development_guide.html
+  locator: Educational synthesis from linked knowledge notes
+  definition: Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.
+  normal_behavior: Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory
+    có nguồn và ghi lại nhận định/giới hạn.
+  architecture_position: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  security_boundary: Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory
+    cụ thể.
+  safety_assumptions: Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu
+    nguồn.
+  related_failure_classes: Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.
+  failure_impact: Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.
+  defensive_principles: 'Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và
+    checklist xác minh bản vá từ inventory được cung cấp.'
+  related_knowledge:
+  - CONCEPT:BACKPORT
+  - CONCEPT:ADVISORY
+  - CONCEPT:CVSS
+  - COMPONENT:PROCESS-PRIVILEGES
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-121
+  name: CWE-121 — Stack-based Buffer Overflow
+  url: https://cwe.mitre.org/data/definitions/121.html
+  locator: Description / Potential Mitigations
+  definition: Ghi vượt dung lượng buffer đặt trên stack.
+  normal_behavior: Dung lượng biến cục bộ và chiều dài dữ liệu phải được kiểm tra
+    trước thao tác ghi.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Dung lượng biến cục bộ và chiều dài dữ liệu phải được kiểm tra
+    trước thao tác ghi.
+  related_failure_classes: Stack-based Buffer Overflow
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Kiểm tra biên, tránh cấp phát stack không giới hạn và dùng
+    compiler hardening.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-122
+  name: CWE-122 — Heap-based Buffer Overflow
+  url: https://cwe.mitre.org/data/definitions/122.html
+  locator: Description / Potential Mitigations
+  definition: Ghi vượt buffer được cấp phát trên heap.
+  normal_behavior: Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở
+    hữu.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng
+    sở hữu.
+  related_failure_classes: Heap-based Buffer Overflow
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Dùng kiểm tra capacity/length và sanitizer khi phát triển.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-126
+  name: CWE-126 — Buffer Over-read
+  url: https://cwe.mitre.org/data/definitions/126.html
+  locator: Description / Potential Mitigations
+  definition: Đọc tiếp qua cuối buffer chứa dữ liệu.
+  normal_behavior: Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng
+    hợp lệ.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng
+    hợp lệ.
+  related_failure_classes: Buffer Over-read
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Kiểm tra length trước đọc và xử lý input bị cắt ngắn.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-1289
+  name: CWE-1289 — Unsafe Equivalence in Input
+  url: https://cwe.mitre.org/data/definitions/1289.html
+  locator: Description / Potential Mitigations
+  definition: Xem hai biểu diễn input là tương đương khi phép tương đương không an
+    toàn.
+  normal_behavior: Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.
+  related_failure_classes: Unsafe Equivalence in Input
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Xác định canonical representation và kiểm tra cùng policy
+    ở các lớp.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-172
+  name: CWE-172 — Encoding Error
+  url: https://cwe.mitre.org/data/definitions/172.html
+  locator: Description / Potential Mitigations
+  definition: Sai xử lý biểu diễn hoặc chuyển đổi encoding.
+  normal_behavior: Encoder/decoder tuân thủ cùng quy tắc và duy trì chiều dài đầu
+    vào/đầu ra.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Encoder/decoder tuân thủ cùng quy tắc và duy trì chiều dài đầu
+    vào/đầu ra.
+  related_failure_classes: Encoding Error
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Kiểm tra encoding hợp lệ, kích thước đầu ra và các trường
+    hợp ký tự nhiều byte.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-191
+  name: CWE-191 — Integer Underflow
+  url: https://cwe.mitre.org/data/definitions/191.html
+  locator: Description / Potential Mitigations
+  definition: Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.
+  normal_behavior: Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp
+    lệ.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng
+    hợp lệ.
+  related_failure_classes: Integer Underflow
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Dùng checked arithmetic và kiểm thử giá trị 0/biên nhỏ.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-290
+  name: CWE-290 — Authentication Bypass by Spoofing
+  url: https://cwe.mitre.org/data/definitions/290.html
+  locator: Description / Potential Mitigations
+  definition: Tin vào thông tin định danh có thể bị giả mạo trong quá trình authentication.
+  normal_behavior: Định danh phải được chứng minh bằng cơ chế xác thực phù hợp, không
+    chỉ bằng metadata.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Định danh phải được chứng minh bằng cơ chế xác thực phù hợp,
+    không chỉ bằng metadata.
+  related_failure_classes: Authentication Bypass by Spoofing
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Liên kết identity với bằng chứng mật mã/chính sách và kiểm
+    tra trust boundary.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-349
+  name: CWE-349 — Untrusted Data with Trusted Data
+  url: https://cwe.mitre.org/data/definitions/349.html
+  locator: Description / Potential Mitigations
+  definition: Chấp nhận dữ liệu không tin cậy bổ sung cùng dữ liệu được xem là tin
+    cậy.
+  normal_behavior: Nguồn gốc và phạm vi của từng phần dữ liệu phải được giữ riêng
+    qua quá trình hợp nhất.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Nguồn gốc và phạm vi của từng phần dữ liệu phải được giữ riêng
+    qua quá trình hợp nhất.
+  related_failure_classes: Untrusted Data with Trusted Data
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Theo dõi provenance, framing và quyền của từng nguồn dữ liệu.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-789
+  name: CWE-789 — Excessive Memory Allocation
+  url: https://cwe.mitre.org/data/definitions/789.html
+  locator: Description / Potential Mitigations
+  definition: Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.
+  normal_behavior: Kích thước allocation phải được kiểm tra theo giới hạn và khả năng
+    xử lý.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Kích thước allocation phải được kiểm tra theo giới hạn và khả
+    năng xử lý.
+  related_failure_classes: Excessive Memory Allocation
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Đặt trần tài nguyên, xử lý lỗi cấp phát và giới hạn các giá
+    trị dẫn xuất.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-823
+  name: CWE-823 — Out-of-range Pointer Offset
+  url: https://cwe.mitre.org/data/definitions/823.html
+  locator: Description / Potential Mitigations
+  definition: Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.
+  normal_behavior: Phép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được
+    sở hữu.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Phép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được
+    sở hữu.
+  related_failure_classes: Out-of-range Pointer Offset
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Kiểm tra cả offset và số byte truy cập trước khi tạo/giải
+    tham chiếu con trỏ.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-835
+  name: CWE-835 — Infinite Loop
+  url: https://cwe.mitre.org/data/definitions/835.html
+  locator: Description / Potential Mitigations
+  definition: Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.
+  normal_behavior: Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có
+    giới hạn.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc
+    có giới hạn.
+  related_failure_classes: Infinite Loop
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Đặt giới hạn công việc, kiểm tra invariant tiến triển và xử
+    lý trạng thái không đổi.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-908
+  name: CWE-908 — Uninitialized Resource
+  url: https://cwe.mitre.org/data/definitions/908.html
+  locator: Description / Potential Mitigations
+  definition: Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.
+  normal_behavior: Các trường bắt buộc được khởi tạo trước khi đối tượng được công
+    bố cho callback.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Các trường bắt buộc được khởi tạo trước khi đối tượng được công
+    bố cho callback.
+  related_failure_classes: Uninitialized Resource
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Khởi tạo rõ ràng, kiểm tra state transition và bao phủ nhánh
+    lỗi.
+  related_knowledge: []
+  diagram: ''
+- entity_type: Weakness
+  id: WEAKNESS:CWE-93
+  name: CWE-93 — CRLF Injection
+  url: https://cwe.mitre.org/data/definitions/93.html
+  locator: Description / Potential Mitigations
+  definition: Không xử lý đúng ký tự phân cách CR/LF khi tạo dữ liệu có cấu trúc dòng.
+  normal_behavior: Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần
+    tự hóa.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Dữ liệu và ký tự điều khiển framing phải được phân biệt khi
+    tuần tự hóa.
+  related_failure_classes: CRLF Injection
+  failure_impact: Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định
+    tác động cụ thể khi advisory tương ứng công bố.
+  defensive_principles: Dùng encoder theo giao thức và kiểm tra giá trị không được
+    chứa dấu phân cách.
+  related_knowledge: []
+  diagram: ''
+- entity_type: SecurityControl
+  id: CONTROL:LEAST-PRIVILEGE
+  name: Least privilege
+  url: https://nginx.org/en/docs/ngx_core_module.html
+  locator: Core module directives
+  definition: 'Nguyên tắc phòng vệ vận hành NGINX: Least privilege'
+  normal_behavior: Worker dùng user/group phù hợp cấu hình và cách khởi chạy dịch
+    vụ.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.
+  related_failure_classes: Configuration errors; resource exhaustion; stale patch
+    evidence.
+  failure_impact: Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.
+  defensive_principles: Giới hạn quyền worker, quyền tệp và quyền sửa cấu hình.
+  related_knowledge: []
+  diagram: ''
+- entity_type: SecurityControl
+  id: CONTROL:RESOURCE-BOUNDS
+  name: Resource bounds
+  url: https://nginx.org/en/docs/ngx_core_module.html
+  locator: Core module directives
+  definition: 'Nguyên tắc phòng vệ vận hành NGINX: Resource bounds'
+  normal_behavior: Các connection, request và buffer vận hành trong giới hạn cấu hình.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.
+  related_failure_classes: Configuration errors; resource exhaustion; stale patch
+    evidence.
+  failure_impact: Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.
+  defensive_principles: Theo dõi tài nguyên và đặt timeout/limit dựa trên workload.
+  related_knowledge: []
+  diagram: ''
+- entity_type: SecurityControl
+  id: CONTROL:PATCH-VERIFICATION
+  name: Patch verification
+  url: https://nginx.org/en/docs/ngx_core_module.html
+  locator: Core module directives
+  definition: 'Nguyên tắc phòng vệ vận hành NGINX: Patch verification'
+  normal_behavior: Trạng thái sửa lỗi được đối chiếu đúng product, branch và distribution
+    release.
+  architecture_position: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý
+    dữ liệu không tin cậy.
+  security_boundary: Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ
+    liệu không tin cậy.
+  safety_assumptions: Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.
+  related_failure_classes: Configuration errors; resource exhaustion; stale patch
+    evidence.
+  failure_impact: Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.
+  defensive_principles: Lưu inventory/package evidence và kiểm tra lại sau cập nhật.
+  related_knowledge: []
+  diagram: ''

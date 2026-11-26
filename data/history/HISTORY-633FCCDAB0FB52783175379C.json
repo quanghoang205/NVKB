@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:469C7BE8A73F09765D639467",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:51861748B86419308252ADB7",
+    "claim_value": "\"Module MP4 thực hiện pseudo-streaming; việc xử lý metadata có chi phí CPU, bộ nhớ và I/O. Tài liệu phân biệt xử lý media với gửi file tĩnh và quy định giới hạn buffer metadata.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "Introduction;",
+    "evidence_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:51861748B86419308252ADB7",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-MP4-MODULE: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T04:57:03+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:57:03+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T04:57:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:32:42+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:469C7BE8A73F09765D639467",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:51861748B86419308252ADB7",
+    "claim_value": "\"Module MP4 thực hiện pseudo-streaming; việc xử lý metadata có chi phí CPU, bộ nhớ và I/O. Tài liệu phân biệt xử lý media với gửi file tĩnh và quy định giới hạn buffer metadata.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:51861748B86419308252ADB7",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-MP4-MODULE: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T04:57:03+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T04:57:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T04:57:03+00:00",
+  "entity_id": "CLAIM:51861748B86419308252ADB7",
+  "id": "HISTORY:633FCCDAB0FB52783175379C"
+}

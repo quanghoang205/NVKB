@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:F77FAAA189EA692426C99F6A",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:31A001479CEFE269DAFB5691",
+    "claim_value": "\"Cache key phải phân biệt các context trả về nội dung khác nhau.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:32DDC19F1D421BD128D06B8E: proxy_cache",
+    "evidence_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:31A001479CEFE269DAFB5691",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:HTTP-CACHING: safety_assumptions",
+    "observation_key": "OBSERVATION:BA3C0A86556AE1AD7AD8CF09",
+    "observed_at": "2026-11-25T02:32:12+00:00",
+    "predicate": "safety_assumptions",
+    "product_scope": "COMPONENT:HTTP-CACHING",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T04:12:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:31A001479CEFE269DAFB5691",
+    "claim_value": "\"Cache key phải phân biệt các context trả về nội dung khác nhau.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "id": "CLAIM:31A001479CEFE269DAFB5691",
+    "name": "COMPONENT:HTTP-CACHING: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:32+00:00",
+  "entity_id": "CLAIM:31A001479CEFE269DAFB5691",
+  "id": "HISTORY:C184CCA13712EF15BF0040E2"
+}

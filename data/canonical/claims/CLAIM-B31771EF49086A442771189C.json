@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:E55F598E2CBA8DF593533317",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:B31771EF49086A442771189C",
+  "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:51+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:4401B2B17FF062D7BE796E33: ngx_mail_smtp_module",
+  "evidence_refs": [
+    "EVIDENCE:4401B2B17FF062D7BE796E33"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:B31771EF49086A442771189C",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-MAIL-SMTP-MODULE: related_failure_classes",
+  "observation_key": "OBSERVATION:4AC5F5ACB501BA3926BD7589",
+  "observed_at": "2026-11-25T02:32:51+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "MODULE:NGX-MAIL-SMTP-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:51+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:4401B2B17FF062D7BE796E33"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+  "updated_at": "2026-11-25T04:12:47+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_refs": [
+    "CLAIM:4443E172C9A68ED64633BADF"
+  ],
+  "created_at": "2026-11-25T02:27:10+00:00",
+  "description": "CVE:CVE-2026-123640 fixed_in VERSION:NGINX-1.31.9",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:44E7C2DD21E8E79EC255247D",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "fixed_in",
+  "object_entity_id": "VERSION:NGINX-1.31.9",
+  "predicate": "fixed_in",
+  "rationale": "Legacy association: Documented fixed upstream release. Source references alone do not establish causation.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Documented fixed upstream release",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:87D9A7069F362A007391E943"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-123640",
+  "updated_at": "2026-11-25T04:13:07+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy evidence scope; no all-version generalization"
+}

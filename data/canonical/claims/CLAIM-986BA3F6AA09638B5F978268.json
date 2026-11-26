@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:1D3B2DBDD30AE50FACDC0DCD",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:986BA3F6AA09638B5F978268",
+  "claim_value": "\"## Hậu quả và kiểm soát\\n\\nOver-read không tự chứng minh dữ liệu đã được gửi ra ngoài; overwrite không tự chứng minh code execution; worker crash không tự chứng minh toàn host ngừng hoạt động. Đọc source impact của từng CVE trước khi kết luận. Hardening có thể giảm khả năng hoặc hậu quả của một số lớp lỗi nhưng không làm phép truy cập sai trở thành đúng. Giữ quyền worker thấp, kiểm chứng bản vá và review các đường lỗi là các lớp bổ sung, không phải phép đo miễn nhiễm.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:29:00+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "Description; Common Consequences; Potential Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:2EA269027FEA7940F910D54E"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:986BA3F6AA09638B5F978268",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "WEAKNESS:CWE-787: v1.3:knowledge:Hậu quả và kiểm soát",
+  "observed_at": "2026-11-25T05:29:00+00:00",
+  "predicate": "v1.3:knowledge:Hậu quả và kiểm soát",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:29:00+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:2EA269027FEA7940F910D54E"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "WEAKNESS:CWE-787",
+  "updated_at": "2026-11-25T05:29:00+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:33+00:00; CVE versions are scoped separately."
+}

@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:96F36F7688E59080F3C72536",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+    "claim_value": "\"## Chu trình và trách nhiệm\\n\\nKết nối đầu thiết lập state → server cấp ticket → client giữ trong giới hạn cho phép → kết nối sau đề xuất resumption → server quyết định chấp nhận hay từ chối theo context → key schedule của handshake mới. Ticket lifetime, rotation và policy server làm giới hạn sử dụng; một ticket tồn tại không buộc server phải tiếp tục chấp nhận nó. Resumption cũng không có nghĩa socket cũ sống mãi.\\n\\nTrong NGINX, tham chiếu bổ sung là các directive `ssl_session_cache`, `ssl_session_tickets`, `ssl_session_timeout` trong module SSL. Chúng mô tả lưu trữ và thời hạn, nhưng hiệu lực còn phụ thuộc phiên bản TLS và thư viện. Không đồng nhất cache truyền thống với mọi dạng resumption TLS 1.3.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:00+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#section-2.2; #section-4.6.1; #section-8",
+    "evidence_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:TLS-SESSION-LIFECYCLE: pilot_section:Chu trình và trách nhiệm",
+    "observed_at": "2026-11-25T04:21:00+00:00",
+    "predicate": "pilot_section:Chu trình và trách nhiệm",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read tls13 at #section-2.2; #section-4.6.1; #section-8; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:21:00+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "updated_at": "2026-11-25T04:21:00+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "RFC 8446 TLS 1.3 (2018)"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:96F36F7688E59080F3C72536",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+    "claim_value": "\"## Chu trình và trách nhiệm\\n\\nKết nối đầu thiết lập state → server cấp ticket → client giữ trong giới hạn cho phép → kết nối sau đề xuất resumption → server quyết định chấp nhận hay từ chối theo context → key schedule của handshake mới. Ticket lifetime, rotation và policy server làm giới hạn sử dụng; một ticket tồn tại không buộc server phải tiếp tục chấp nhận nó. Resumption cũng không có nghĩa socket cũ sống mãi.\\n\\nTrong NGINX, tham chiếu bổ sung là các directive `ssl_session_cache`, `ssl_session_tickets`, `ssl_session_timeout` trong module SSL. Chúng mô tả lưu trữ và thời hạn, nhưng hiệu lực còn phụ thuộc phiên bản TLS và thư viện. Không đồng nhất cache truyền thống với mọi dạng resumption TLS 1.3.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:00+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:TLS-SESSION-LIFECYCLE: pilot_section:Chu trình và trách nhiệm",
+    "observed_at": "2026-11-25T04:21:00+00:00",
+    "predicate": "pilot_section:Chu trình và trách nhiệm",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "updated_at": "2026-11-25T04:21:00+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:21:00+00:00",
+  "entity_id": "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+  "id": "HISTORY:F4F480E84B5664E9A04ECFBC"
+}

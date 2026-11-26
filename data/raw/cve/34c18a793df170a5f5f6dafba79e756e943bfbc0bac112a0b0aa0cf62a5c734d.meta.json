@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:42+00:00",
+  "content_hash": "43c2db90bf57a8fcf9ff90605c2f46396f26dca13b5d605085113af020fff00a",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"119fe1937b175789245030a54b6c7a3801d7ef81fbb6d2c528119d78454bff4f\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/43c2db90bf57a8fcf9ff90605c2f46396f26dca13b5d605085113af020fff00a.json",
+  "retrieved_at": "2026-11-25T02:25:42+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2009/4xxx/CVE-2009-4487.json"
+}

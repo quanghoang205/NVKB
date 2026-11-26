@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:A7F1495FBB8FB8039CEDAC83",
+    "claim_value": "\"Datagram UDP ↔ connection/stream được xác thực.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6801A47EFE6E65BE5BBD2F98"
+    ],
+    "id": "CLAIM:A7F1495FBB8FB8039CEDAC83",
+    "name": "PROTOCOL:QUIC: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6801A47EFE6E65BE5BBD2F98"
+    ],
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T02:32:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:22+00:00",
+  "entity_id": "CLAIM:A7F1495FBB8FB8039CEDAC83",
+  "id": "HISTORY:945C5264A7DC7FEF9D7B995F"
+}

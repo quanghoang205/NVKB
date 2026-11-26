@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:48:58+00:00",
+  "content_hash": "97a2d3dbafc0410a3d9bfd0d718c1246952c967433bcf46b8f0d3f3c1e0b887a",
+  "content_type": "text/html",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/documentation/snapshots/97a2d3dbafc0410a3d9bfd0d718c1246952c967433bcf46b8f0d3f3c1e0b887a.html",
+  "retrieved_at": "2026-11-25T02:48:58+00:00",
+  "source_url": "https://cwe.mitre.org/data/definitions/290.html"
+}

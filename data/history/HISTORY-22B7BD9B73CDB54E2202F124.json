@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4CED377C7BB690F606CFB947",
+    "claim_value": "\"Độ dài chuỗi, biến và trạng thái redirect phải được quản lý nhất quán.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "id": "CLAIM:4CED377C7BB690F606CFB947",
+    "name": "COMPONENT:REWRITE-ENGINE: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6B5BC482779060E2A4DEF4A0"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:4CED377C7BB690F606CFB947",
+  "id": "HISTORY:22B7BD9B73CDB54E2202F124"
+}

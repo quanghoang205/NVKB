@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:E1873C7756FC30FC51F113F2"
+    ],
+    "created_at": "2026-11-25T02:26:16+00:00",
+    "description": "CVE:CVE-2024-31079 distribution_fix PACKAGE:5DF98E687CBD9950679F038E",
+    "entity_type": "Relationship",
+    "id": "REL:7CC4BCA26DF7BBE0434EBA88",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:5DF98E687CBD9950679F038E",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FC5331713F2C199DADA7F56B"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T02:26:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:16+00:00",
+  "entity_id": "REL:7CC4BCA26DF7BBE0434EBA88",
+  "id": "HISTORY:2B773C9740B690480ED5E0CA"
+}

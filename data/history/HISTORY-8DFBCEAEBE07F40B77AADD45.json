@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:3734D7F8B852E07961172912",
+      "CLAIM:509546D4AC7394D922AFE3C0",
+      "CLAIM:D2BD8A958B3A4B5B5436B91B",
+      "CLAIM:9B7BC15CDD6B317912F2D947",
+      "CLAIM:379A593EC479B5DC2DE17CD7",
+      "CLAIM:A60A0FB41FEDC23F9422EB8D",
+      "CLAIM:5CB0297F2AA61AB907A7C3CF",
+      "CLAIM:78BB6AC0AC2B84CDE7444F63"
+    ],
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chia request nội dung thành các slice theo cấu hình.",
+    "description": "Chia request nội dung thành các slice theo cấu hình.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SLICE-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_slice_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_slice_module",
+    "normal_behavior": "Chia request nội dung thành các slice theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:D341E487F7315AF675499151"
+    ],
+    "updated_at": "2026-11-25T02:32:48+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:48+00:00",
+  "entity_id": "MODULE:NGX-HTTP-SLICE-MODULE",
+  "id": "HISTORY:8DFBCEAEBE07F40B77AADD45"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:959C00F96A836BBC14F0E619",
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:E4BAA66AB83A2CA0FDAA9902",
+    "claim_value": "\"MITRE khuyến nghị ánh xạ vai trò với dữ liệu/chức năng và thực thi tại ranh giới thích hợp; kiểm soát theo vai trò vẫn có giới hạn với quyền ngang giữa các chủ thể cùng vai trò.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:05+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E4BAA66AB83A2CA0FDAA9902",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: pilot_source_statement",
+    "observed_at": "2026-11-25T04:21:06+00:00",
+    "predicate": "pilot_source_statement",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:21:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:06+00:00",
+  "entity_id": "CLAIM:E4BAA66AB83A2CA0FDAA9902",
+  "id": "HISTORY:3651056CFCA40B89B1D1438D"
+}

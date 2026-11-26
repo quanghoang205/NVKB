@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:5E9BCB174EE803AAAD586D89
+title: 'PACKAGE:47C8C3DCADA530B8FA5764DA: distribution_patch_status'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'PACKAGE:47C8C3DCADA530B8FA5764DA: distribution_patch_status'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# PACKAGE:47C8C3DCADA530B8FA5764DA: distribution_patch_status
+
+`CLAIM:5E9BCB174EE803AAAD586D89` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[PACKAGE-47C8C3DCADA530B8FA5764DA|nginx / Ubuntu questing / CVE-2025-23419]]. Predicate: `distribution_patch_status`.
+
+```json
+{"fixed_version": "", "patch_status": "not-affected", "release": "questing", "source_status": "Not affected"}
+```
+
+## Nguồn và phạm vi
+
+Authority: Canonical / Ubuntu. 
+
+[[EVIDENCE-08E27B3802C16B89EC9A769A|CVE-2025-23419]]
+
+Locator: Ubuntu package nginx / questing
+
+Phạm vi phiên bản: UNKNOWN
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | UNKNOWN |
+| Hash nguồn | NOT_CHECKED |
+| Trích xuất | MATCHED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+New source observation; source support is separate.
+
+Quan sát: 2026-11-25T04:22:00+00:00. Truy xuất: 2026-11-25T03:24:30.132863+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

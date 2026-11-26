@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "1d4f317733995343ddc1a77538ca34da3deb44492ecc8d879a70d2605c689dcc",
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "document_title": "CWE -\r\n\n    CWE-1289: Improper Validation of Unsafe Equivalence in Input (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:89A71DECA0CDA7465848AA99",
+    "id": "EVIDENCE:89A71DECA0CDA7465848AA99",
+    "local_snapshot_path": "data/raw/documentation/snapshots/1d4f317733995343ddc1a77538ca34da3deb44492ecc8d879a70d2605c689dcc.html",
+    "name": "CWE -\r\n\n    CWE-1289: Improper Validation of Unsafe Equivalence in Input (5.0)",
+    "paraphrase": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:55+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-1289",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/1289.html",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "EVIDENCE:89A71DECA0CDA7465848AA99",
+  "id": "HISTORY:EF173E96CD4BB9DCDBD0EE89"
+}

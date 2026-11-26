@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:59+00:00",
+  "content_hash": "51c9fa1c2ffcb4a703727f344ce465f9371d3a3a8a67991c27d475bd82bfc60f",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/51c9fa1c2ffcb4a703727f344ce465f9371d3a3a8a67991c27d475bd82bfc60f.html",
+  "retrieved_at": "2026-11-25T02:27:59+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42055"
+}

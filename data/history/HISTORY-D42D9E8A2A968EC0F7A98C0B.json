@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:C9DA58FC92231617FCB95A5B",
+    "claim_value": "\"WEAKNESS:CWE-172\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E"
+    ],
+    "id": "CLAIM:C9DA58FC92231617FCB95A5B",
+    "name": "CVE:CVE-2026-95101: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "CLAIM:C9DA58FC92231617FCB95A5B",
+  "id": "HISTORY:D42D9E8A2A968EC0F7A98C0B"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7686C3840C39C27A9B217D66",
+    "claim_value": "\"Buffer overflow when using alias with rewrite\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1B0139E19B8B90DB359F998D"
+    ],
+    "id": "CLAIM:7686C3840C39C27A9B217D66",
+    "name": "CVE:CVE-2026-15176: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1B0139E19B8B90DB359F998D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-15176",
+    "updated_at": "2026-11-25T02:27:21+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:21+00:00",
+  "entity_id": "CLAIM:7686C3840C39C27A9B217D66",
+  "id": "HISTORY:E0DAF6CE754765DADA6C3A86"
+}

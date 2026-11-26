@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:54+00:00",
+  "content_hash": "6c2a106cf1774d1c6cd12fb5e8e625afaacb02e9d0fe074c5eecced32707852b",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/6c2a106cf1774d1c6cd12fb5e8e625afaacb02e9d0fe074c5eecced32707852b.html",
+  "retrieved_at": "2026-11-25T02:28:54+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-97205"
+}

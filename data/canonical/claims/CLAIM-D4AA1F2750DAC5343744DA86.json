@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:88885CE6BEB8791901397D16",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:D4AA1F2750DAC5343744DA86",
+  "claim_value": "\"CNA nêu RCE với điều kiện ASLR; chưa xác minh thực thi thực tế hay đặc quyền đạt được.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:18:40+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "evidence_refs": [
+    "EVIDENCE:EEDC64463B3745D357857E1B"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:D4AA1F2750DAC5343744DA86",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-123634: v1.3:potential",
+  "observed_at": "2026-11-25T05:18:40+00:00",
+  "predicate": "v1.3:potential",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:18:40+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "CNA F5 / CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:EEDC64463B3745D357857E1B"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CVE:CVE-2026-123634",
+  "updated_at": "2026-11-25T05:18:40+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:27:04+00:00; CVE versions are scoped separately."
+}

@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:44E3AEFF9AF7E600C824D6E1
+title: 'RFC 9293: Transmission Control Protocol (TCP)'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'RFC 9293: Transmission Control Protocol (TCP)'
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# RFC 9293: Transmission Control Protocol (TCP)
+
+Transport byte stream tin cậy, có thứ tự.
+
+- Nguồn: [IETF / RFC Editor](https://www.rfc-editor.org/rfc/rfc9293.html)
+- Authority gốc: IETF / RFC Editor
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Protocol overview and state machine`
+
+- Truy xuất: 2026-11-25T02:32:15+00:00
+- SHA-256: `0be501b21b790ae4fa1db0cfe3d3ee935a94f69dc8e0ef7e32a04250eaa30f13`
+- Snapshot từ project root: `data/raw/documentation/snapshots/0be501b21b790ae4fa1db0cfe3d3ee935a94f69dc8e0ef7e32a04250eaa30f13.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

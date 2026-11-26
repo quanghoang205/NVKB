@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:5C546A8884518A5F01718A0C"
+    ],
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "description": "CVE:CVE-2026-40701 distribution_fix PACKAGE:F8EE73A69851E2DB43213FFC",
+    "entity_type": "Relationship",
+    "id": "REL:A951D3BA142CD348E103D2E4",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:F8EE73A69851E2DB43213FFC",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E3F1B912350FA5481C0FD4F4"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:55+00:00",
+  "entity_id": "REL:A951D3BA142CD348E103D2E4",
+  "id": "HISTORY:163158BC018C068744977F6E"
+}

@@ -1,0 +1,305 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B6C006D12AF0B8FBCA95AC90"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0202F0A901783E3BE7EAD6F2",
+      "CLAIM:06AB6C2171C071DD840E74A7",
+      "CLAIM:08B722C2C68F17727BEC9A89",
+      "CLAIM:1A76A2A57D255C438041C905",
+      "CLAIM:2D9AE133E12C5DF48419D789",
+      "CLAIM:34044D1A7F2AB71FDA5C528B",
+      "CLAIM:3DF8A0790450240C96987685",
+      "CLAIM:49E5AE8000C32D31A1AD1414",
+      "CLAIM:5B9A65D27B473C8062D77D35",
+      "CLAIM:5F4E151EC4E773AB1FB232EC",
+      "CLAIM:64C76D9A08F95A7C466A35C2",
+      "CLAIM:68D6260EB1C318FB301DBD0A",
+      "CLAIM:6BD1401EAF22CED8932F401B",
+      "CLAIM:71E8944118E1AE42B56D952A",
+      "CLAIM:7288B9D514B854855522B49D",
+      "CLAIM:7CAEE0B0046F9AEF7418C784",
+      "CLAIM:85A0FF55A889904AD1F48CB9",
+      "CLAIM:907466C7DCEB515AE4359ED1",
+      "CLAIM:A5E4D9810249A8F2C302F920",
+      "CLAIM:BC333E07674131236F8FD49A",
+      "CLAIM:BFE6583CD399E80C515399C3",
+      "CLAIM:C89CDB658C74FE75BD7BF49F",
+      "CLAIM:DC802F726BF139E3D9C15326",
+      "CLAIM:E751D3455AE0176836061695",
+      "CLAIM:E83E533A07AEC287CE9677F9",
+      "CLAIM:EE2FB480238D8C40E798E2A8",
+      "CLAIM:F492822FB71BA26C4A713EE8",
+      "CLAIM:FB2CF83E874F99A1BA8D0241"
+    ],
+    "condition_refs": [
+      "CONDITION:DCE3E4D5C96ED73E20E8CC7D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "cve_id": "CVE-2026-121810",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "distribution_status": [
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "documented_configuration_context": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-121810 ghi nhận: Use-after-free in HTTP/3. Phạm vi upstream: 1.25.0-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-121810",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:22.935000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-121810",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.375000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:51858D491CB03622B399394A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free in HTTP/3.\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:5E451688021C5E16C03924BC",
+      "SEVERITY:C2CB2E9395F49D59417FE0E6",
+      "SEVERITY:CEA6286D2BB32293A24EAE89",
+      "SEVERITY:F0F888AF0A4EE6ED85BDDB47",
+      "SEVERITY:FF1DB95919D55DF573B0EA17"
+    ],
+    "source_refs": [
+      "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445",
+      "EVIDENCE:3C394C690A35530F2AB31721",
+      "EVIDENCE:5B1854AD17ECCD3F5E941C47",
+      "EVIDENCE:65256ECFFD16E574A729002D",
+      "EVIDENCE:6CCDF61BBB4FA184472E795D",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F",
+      "EVIDENCE:FA542FB5096F8695BC0FAF57"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:26+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B6C006D12AF0B8FBCA95AC90"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0202F0A901783E3BE7EAD6F2",
+      "CLAIM:06AB6C2171C071DD840E74A7",
+      "CLAIM:08B722C2C68F17727BEC9A89",
+      "CLAIM:1A76A2A57D255C438041C905",
+      "CLAIM:3DF8A0790450240C96987685",
+      "CLAIM:49E5AE8000C32D31A1AD1414",
+      "CLAIM:5B9A65D27B473C8062D77D35",
+      "CLAIM:64C76D9A08F95A7C466A35C2",
+      "CLAIM:68D6260EB1C318FB301DBD0A",
+      "CLAIM:71E8944118E1AE42B56D952A",
+      "CLAIM:7288B9D514B854855522B49D",
+      "CLAIM:7CAEE0B0046F9AEF7418C784",
+      "CLAIM:85A0FF55A889904AD1F48CB9",
+      "CLAIM:907466C7DCEB515AE4359ED1",
+      "CLAIM:A5E4D9810249A8F2C302F920",
+      "CLAIM:BC333E07674131236F8FD49A",
+      "CLAIM:BFE6583CD399E80C515399C3",
+      "CLAIM:C89CDB658C74FE75BD7BF49F",
+      "CLAIM:DC802F726BF139E3D9C15326",
+      "CLAIM:E751D3455AE0176836061695",
+      "CLAIM:E83E533A07AEC287CE9677F9",
+      "CLAIM:EE2FB480238D8C40E798E2A8",
+      "CLAIM:F492822FB71BA26C4A713EE8"
+    ],
+    "condition_refs": [
+      "CONDITION:DCE3E4D5C96ED73E20E8CC7D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "cve_id": "CVE-2026-121810",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "distribution_status": [
+      "PACKAGE:D29A6DEB28CF917A865DDAAD",
+      "PACKAGE:3AB749AA4B0A40F016084BF4",
+      "PACKAGE:EA15D52AD79A74DDADECCD72"
+    ],
+    "documented_configuration_context": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-121810 ghi nhận: Use-after-free in HTTP/3. Phạm vi upstream: 1.25.0-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-121810",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:22.935000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-121810",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.375000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:51858D491CB03622B399394A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Use-after-free in HTTP/3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:5E451688021C5E16C03924BC",
+      "SEVERITY:C2CB2E9395F49D59417FE0E6",
+      "SEVERITY:CEA6286D2BB32293A24EAE89",
+      "SEVERITY:F0F888AF0A4EE6ED85BDDB47",
+      "SEVERITY:FF1DB95919D55DF573B0EA17"
+    ],
+    "source_refs": [
+      "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445",
+      "EVIDENCE:3C394C690A35530F2AB31721",
+      "EVIDENCE:5B1854AD17ECCD3F5E941C47",
+      "EVIDENCE:65256ECFFD16E574A729002D",
+      "EVIDENCE:6CCDF61BBB4FA184472E795D",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F",
+      "EVIDENCE:FA542FB5096F8695BC0FAF57"
+    ],
+    "title": "Use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:42+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:40:26+00:00",
+  "entity_id": "CVE:CVE-2026-121810",
+  "id": "HISTORY:55AFA5A4BB4D7C97E62F0696"
+}

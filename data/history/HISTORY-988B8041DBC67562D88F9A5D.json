@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e",
+    "created_at": "2026-11-25T02:32:44+00:00",
+    "description": "Cấu hình server, location, connection và xử lý HTTP nền tảng.",
+    "document_title": "Module ngx_http_core_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:8C4CEE1D3F9D8C6212E73662",
+    "id": "EVIDENCE:8C4CEE1D3F9D8C6212E73662",
+    "local_snapshot_path": "data/raw/documentation/snapshots/7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e.html",
+    "name": "Module ngx_http_core_module",
+    "paraphrase": "Cấu hình server, location, connection và xử lý HTTP nền tảng.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:09+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_core_module",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+    "updated_at": "2026-11-25T02:32:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:44+00:00",
+  "entity_id": "EVIDENCE:8C4CEE1D3F9D8C6212E73662",
+  "id": "HISTORY:988B8041DBC67562D88F9A5D"
+}

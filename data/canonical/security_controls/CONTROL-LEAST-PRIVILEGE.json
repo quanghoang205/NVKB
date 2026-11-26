@@ -1,0 +1,50 @@
+{
+  "answer_explanations": "1. Ví dụ: mỗi quyết định đọc T phải dùng principal và policy version áp dụng tại thời điểm quyết định; phải có owner và bằng chứng context/version. Nhiều đáp án hợp lệ nếu có bốn thành phần.\n2. Không; đó là hai phạm vi kiểm soát khác nhau. [[CLAIM-E4BAA66AB83A2CA0FDAA9902|nhận định nguồn: CLAIM:E4BAA66AB83A2CA0FDAA9902]] giải thích giới hạn kiểm quyền. Câu 1: 4 điểm, câu 2: 2 điểm.",
+  "architecture_position": "Kiểm soát quyền có thể áp dụng ở OS process, proxy hoặc ứng dụng với scope khác nhau.",
+  "article_body": "## Invariant là điều gì\n\nTrong bài này, invariant bảo mật là điều kiện phải được giữ qua các chuyển trạng thái thuộc phạm vi đã nêu. Nó không chỉ là khẩu hiệu 'an toàn' hoặc một tên công nghệ. Ví dụ do tác giả suy luận: trước khi đọc tài nguyên T, decision phải dựa trên principal/context đúng và policy áp dụng cho T. [[CLAIM-E4BAA66AB83A2CA0FDAA9902|nhận định nguồn: CLAIM:E4BAA66AB83A2CA0FDAA9902]] cung cấp nền về kiểm soát theo vai trò và giới hạn của nó, không tự chứng minh invariant cho mọi ứng dụng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-C80DFAFA37D7D77C24D7A369|Claim theo section]].\n\n## Từ ownership đến kiểm soát\n\nỞ memory pool, owner/lifetime giới hạn khi được dùng state. Ở TLS, endpoint quản lý secret và authentication context. Ở ứng dụng, policy xác định quyền trên resource. Ba trách nhiệm này có thể nằm trong cùng process nhưng không trở thành cùng một quyết định. Least privilege giới hạn quyền của một chủ thể theo nhu cầu; nó giảm phạm vi ảnh hưởng nếu có lỗi, không chứng minh mọi check quyền đã đúng.\n\nMột invariant dùng được cần bốn thông tin: đối tượng chịu ràng buộc; các trạng thái/chuyển tiếp có liên quan; thành phần chịu trách nhiệm giữ điều kiện; bằng chứng dùng để kiểm tra. Khi thiếu một phần, ghi câu hỏi review thay vì gắn VERIFIED.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-A40BF1C199A49EAF8EB6BA37|Claim theo section]].\n\n## Điều khiển và giới hạn\n\nPolicy ở server side tránh phụ thuộc đơn thuần vào trạng thái do client tự khai báo. Tách quyền của tiến trình và hạn chế tài nguyên có thể giảm hậu quả, nhưng không thay cập nhật bản vá hay sửa logic. Một worker chạy quyền hạn chế vẫn có thể truy cập dữ liệu mà ứng dụng đã cho phép nó đọc; ranh giới OS không giải quyết tự động quyền giữa khách hàng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-5E9CD39C1F0E5FFABEA1ADAC|Claim theo section]].\n\n## Tradeoff và ví dụ an toàn\n\nGiảm quyền có thể yêu cầu thiết kế đường truy cập tài nguyên rõ hơn và làm việc vận hành phức tạp hơn. Policy cache cải thiện hiệu suất nhưng cần quy tắc invalidation khi quyền đổi. Bài tập giấy: ghi invariant 'quyền đã thu hồi không tiếp tục được dùng sau thời điểm hiệu lực quy định', rồi chỉ ra yêu cầu về timestamp, invalidation và policy owner. Chưa có cấu hình nên không khẳng định hệ thống thật giữ được điều kiện đó.\n\nNgộ nhận: thêm một lớp kiểm soát đồng nghĩa đã kiểm chứng invariant; hoặc process boundary chính là tenant boundary. Câu hỏi mở: thời điểm nào policy mới có hiệu lực với phiên đang tồn tại?\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-96815521D6064C716E1EAE91|Claim theo section]].\n",
+  "assessment": "1. Chuyển câu “session phải an toàn” thành invariant đo được trong mô hình giấy.\n2. Worker ít quyền có chứng minh authorization theo object đúng không?",
+  "claim_refs": [
+    "CLAIM:E4BAA66AB83A2CA0FDAA9902",
+    "CLAIM:C80DFAFA37D7D77C24D7A369",
+    "CLAIM:A40BF1C199A49EAF8EB6BA37",
+    "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+    "CLAIM:96815521D6064C716E1EAE91"
+  ],
+  "created_at": "2026-11-25T02:49:05+00:00",
+  "curation_version": "1.2.0",
+  "defensive_principles": "Giới hạn quyền worker, quyền tệp và quyền sửa cấu hình.",
+  "definition": "MITRE khuyến nghị ánh xạ vai trò với dữ liệu/chức năng và thực thi tại ranh giới thích hợp; kiểm soát theo vai trò vẫn có giới hạn với quyền ngang giữa các chủ thể cùng vai trò.",
+  "description": "MITRE khuyến nghị ánh xạ vai trò với dữ liệu/chức năng và thực thi tại ranh giới thích hợp; kiểm soát theo vai trò vẫn có giới hạn với quyền ngang giữa các chủ thể cùng vai trò.",
+  "diagram": "",
+  "entity_type": "SecurityControl",
+  "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+  "id": "CONTROL:LEAST-PRIVILEGE",
+  "learning_objectives": [
+    "Viết một invariant có owner, scope và điều kiện hiệu lực.",
+    "Phân biệt vị trí kiến trúc với ranh giới quyền bằng ví dụ worker và ứng dụng."
+  ],
+  "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+  "name": "Security invariants và trách nhiệm kiểm soát",
+  "normal_behavior": "MITRE khuyến nghị ánh xạ vai trò với dữ liệu/chức năng và thực thi tại ranh giới thích hợp; kiểm soát theo vai trò vẫn có giới hạn với quyền ngang giữa các chủ thể cùng vai trò.",
+  "prerequisites": [
+    "WEAKNESS:CWE-863",
+    "COMPONENT:MEMORY-POOL"
+  ],
+  "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+  "related_knowledge": [
+    "WEAKNESS:CWE-863",
+    "COMPONENT:MEMORY-POOL",
+    "CONCEPT:ADVISORY",
+    "LEARNING:PATH-01"
+  ],
+  "safety_assumptions": "Invariant phải nêu owner, scope, chuyển trạng thái và bằng chứng kiểm tra; có control không tự chứng minh invariant.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới đặc quyền OS khác ranh giới quyền trên object của tenant.",
+  "source_refs": [
+    "EVIDENCE:7A43D63D03C50227DF951CF8"
+  ],
+  "updated_at": "2026-11-25T04:30:42+00:00",
+  "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+  "verification_status": "INFERRED",
+  "version_scope": "See per-claim source snapshot/version scope"
+}

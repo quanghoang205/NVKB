@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:A88B2276947E921B5CE97FF5",
+      "CLAIM:6C8FDF135A056404B413D373",
+      "CLAIM:F294F062DABA56E5C0DB20DD",
+      "CLAIM:75F1668EB5D1A1038E310693",
+      "CLAIM:BA9C33BADC8AC31641A45AE7"
+    ],
+    "created_at": "2026-11-25T05:28:21+00:00",
+    "description": "CVE:CVE-2026-42926 learns_from COMPONENT:UPSTREAM-COMMUNICATION",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-42926",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:A54CA465FA9D31C4C45ABC37",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "predicate": "learns_from",
+    "rationale": "Đọc Upstream communication — hai hop và ownership của response để thảo luận: Cùng HTTP/2 ở hai hop có cho phép tái dùng nguyên trạng mọi state không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Upstream communication — hai hop và ownership của response để thảo luận: Cùng HTTP/2 ở hai hop có cho phép tái dùng nguyên trạng mọi state không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:28:21+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3954E64C288301418D414EAF",
+      "EVIDENCE:C9A9A982F3F93845A04DEE06"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T05:28:21+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:21+00:00",
+  "entity_id": "REL:A54CA465FA9D31C4C45ABC37",
+  "id": "HISTORY:064DAF522C7A2856C6FE5D39"
+}

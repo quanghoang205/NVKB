@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:27CBF301334225F55E3112C5",
+      "CLAIM:E2799A7EC3BAE7F8870B5E66",
+      "CLAIM:F1496E172C55983EDBF41A44",
+      "CLAIM:61DE857C913B151028D3C1F4",
+      "CLAIM:281B8811F7AFDF3598215763",
+      "CLAIM:A35220C6861CF37D4B11D44C",
+      "CLAIM:96875E20EEC6327B1C0CA38D",
+      "CLAIM:53A73187187E598B52EA7781"
+    ],
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý HTTP/2 frame, stream và flow control.",
+    "description": "Xử lý HTTP/2 frame, stream và flow control.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-V2-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_v2_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_v2_module",
+    "normal_behavior": "Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:27CBF301334225F55E3112C5",
+      "CLAIM:E2799A7EC3BAE7F8870B5E66",
+      "CLAIM:F1496E172C55983EDBF41A44",
+      "CLAIM:61DE857C913B151028D3C1F4",
+      "CLAIM:281B8811F7AFDF3598215763",
+      "CLAIM:A35220C6861CF37D4B11D44C",
+      "CLAIM:96875E20EEC6327B1C0CA38D",
+      "CLAIM:53A73187187E598B52EA7781"
+    ],
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý HTTP/2 frame, stream và flow control.",
+    "description": "Xử lý HTTP/2 frame, stream và flow control.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-V2-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_v2_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_v2_module",
+    "normal_behavior": "Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA"
+    ],
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+  "id": "HISTORY:6A6566BC14634085AEA2DB4B"
+}

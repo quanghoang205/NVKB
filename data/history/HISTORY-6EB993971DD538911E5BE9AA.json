@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:A05B46CD39DCAC5A0812A4E6",
+    "claim_value": "\"WEAKNESS:CWE-416\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A236E8E52A0F6D1220BF705B"
+    ],
+    "id": "CLAIM:A05B46CD39DCAC5A0812A4E6",
+    "name": "CVE:CVE-2026-40701: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A236E8E52A0F6D1220BF705B"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:55+00:00",
+  "entity_id": "CLAIM:A05B46CD39DCAC5A0812A4E6",
+  "id": "HISTORY:6EB993971DD538911E5BE9AA"
+}

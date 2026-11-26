@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CIRCL mirror",
+    "claim_id": "CLAIM:BD629706C61BE0A8BE4328F5",
+    "claim_value": "[{\"lessThan\": \"1.31.7\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"custom\"}, {\"lessThan\": \"1.30.6\", \"status\": \"affected\", \"version\": \"1.30.0\", \"versionType\": \"custom\"}, {\"lessThan\": \"*\", \"status\": \"affected\", \"version\": \"1.23.3\", \"versionType\": \"custom\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:57+00:00",
+    "description": "cna_version_data:CIRCL mirror",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D6E1989BD982410CC0CF78D0"
+    ],
+    "id": "CLAIM:BD629706C61BE0A8BE4328F5",
+    "name": "CVE:CVE-2026-97629: cna_version_data:CIRCL mirror",
+    "predicate": "cna_version_data:CIRCL mirror",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D6E1989BD982410CC0CF78D0"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:57+00:00",
+  "entity_id": "CLAIM:BD629706C61BE0A8BE4328F5",
+  "id": "HISTORY:DDAA80566985A359A1163DF7"
+}

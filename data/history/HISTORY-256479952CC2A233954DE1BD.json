@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:519E45438FC36EBE885231E6",
+    "claim_value": "\"Xử lý Server Side Includes trong response. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:47+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:25D294C72DC04B09747CE615"
+    ],
+    "id": "CLAIM:519E45438FC36EBE885231E6",
+    "name": "CVE:CVE-2026-56434: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:25D294C72DC04B09747CE615"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T02:44:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:47+00:00",
+  "entity_id": "CLAIM:519E45438FC36EBE885231E6",
+  "id": "HISTORY:256479952CC2A233954DE1BD"
+}

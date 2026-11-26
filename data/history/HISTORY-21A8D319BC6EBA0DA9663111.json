@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:F11DAB1085009C1042F317B9",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "id": "CLAIM:F11DAB1085009C1042F317B9",
+    "name": "CONCEPT:CVE: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:F11DAB1085009C1042F317B9",
+  "id": "HISTORY:21A8D319BC6EBA0DA9663111"
+}

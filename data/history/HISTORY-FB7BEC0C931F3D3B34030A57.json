@@ -1,0 +1,92 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Pool thu hồi allocation, không tự truy tìm mọi con trỏ do module giữ; phải phối hợp lifecycle callback.\n2. Không; đó là bước suy luận thiếu nguồn về fault location. [[CLAIM-F2AFD88A14013931FC9455FE|nhận định nguồn: CLAIM:F2AFD88A14013931FC9455FE]] giải thích pool, không giải thích CVE bất kỳ. 0–2 điểm mỗi câu.",
+    "architecture_position": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "article_body": "## Đơn vị cấp phát và trách nhiệm\n\nPool là cơ chế quản lý bộ nhớ theo vòng đời đối tượng, thường gắn với request hoặc đối tượng NGINX khác. Allocation nhỏ lấy từ các block của pool; allocation lớn có thể dùng system allocator và được pool theo dõi để giải phóng. Cleanup callback giúp đóng tài nguyên ngoài heap như file descriptor. [[CLAIM-F2AFD88A14013931FC9455FE|nhận định nguồn: CLAIM:F2AFD88A14013931FC9455FE]]\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-98F32D69C3CD47905B5885A2|Claim theo section]].\n\n## Lifecycle có thể suy luận\n\nCreate owner → cấp phát state → dùng trong các callback hợp lệ → hoàn tất công việc → hủy pool và cleanup. Cleanup là thao tác cuối vòng đời đã định, không phải garbage collector theo dõi mọi tham chiếu bên ngoài. Pool không biết một module đã lưu địa chỉ ở đâu; việc phối hợp event/timer với lifetime vẫn thuộc trách nhiệm code sử dụng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1E0DCB10803E56ED48E6761E|Claim theo section]].\n\n## Invariant và ranh giới\n\nDiễn giải phòng vệ: mọi lần dùng một con trỏ phải xảy ra khi allocation và owner tương ứng còn sống. Một callback còn trong queue không tự kéo dài tuổi pool; nhà phát triển phải dùng cơ chế lifecycle thích hợp. Process heap và shared memory có phạm vi khác nhau. Hủy pool trong một worker không chứng minh state dùng chung giữa worker đã được xử lý đúng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1A26476243AB200244198FFA|Claim theo section]].\n\n## Tradeoff và điều không được suy diễn\n\nThu hồi theo nhóm làm đơn giản cleanup và giảm chi phí quản lý nhiều allocation nhỏ, nhưng một object sống lâu có thể giữ bộ nhớ không còn cần đến cho đến khi owner kết thúc. Pool không ngăn buffer overrun, số học kích thước sai hay sử dụng context sai. Ngược lại, tên CWE memory safety không chứng minh một CVE cụ thể bắt nguồn từ pool. Cần review mã hoặc thông báo kỹ thuật rõ ràng cho kết luận đó.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-AC031036DF7A6A7C1E064CAD|Claim theo section]].\n\n## Ví dụ an toàn\n\nLập bảng: request R sở hữu buffer B; connection C sống dài hơn R; callback K dự định đọc B. Hỏi điều kiện nào phải chứng minh trước khi K được gọi. Đáp án không cần viết mã lỗi: R/B phải còn sống, hoặc K dùng bản sao với owner phù hợp, hoặc K đã được hủy theo lifecycle. Cách nào đúng phụ thuộc API/module, nên không tự áp một cleanup order toàn cục.\n\nChưa có review độc lập implementation pool của từng phiên bản hay module bên thứ ba. Tài liệu cơ chế là nền cho reasoning; không là chứng nhận memory safety của một binary.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-559111D0D87379E5CEB0AC2B|Claim theo section]].\n",
+    "assessment": "1. Vì sao xóa một request không tự làm mọi tham chiếu bên ngoài trở nên an toàn?\n2. Từ một advisory nói buffer issue, có thể kết luận lỗi nằm ở pool không?",
+    "claim_refs": [
+      "CLAIM:F2AFD88A14013931FC9455FE",
+      "CLAIM:98F32D69C3CD47905B5885A2",
+      "CLAIM:1E0DCB10803E56ED48E6761E",
+      "CLAIM:1A26476243AB200244198FFA",
+      "CLAIM:AC031036DF7A6A7C1E064CAD",
+      "CLAIM:559111D0D87379E5CEB0AC2B"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Ghi rõ ownership, kiểm tra callback trễ và dùng công cụ phát hiện lỗi bộ nhớ trong kiểm thử phát triển.",
+    "definition": "Pool gom các allocation theo lifetime; khi pool bị hủy, bộ nhớ của pool được giải phóng và cleanup handlers đã đăng ký được gọi.",
+    "description": "Pool gom các allocation theo lifetime; khi pool bị hủy, bộ nhớ của pool được giải phóng và cleanup handlers đã đăng ký được gọi.",
+    "diagram": "flowchart LR\n  R[Owner request] --> P[Pool]\n  P --> B[Allocation nhỏ hoặc lớn]\n  P --> K[Cleanup handlers]\n  E[Kết thúc owner] --> D[Hủy pool]\n  D --> F[Giải phóng bộ nhớ và tài nguyên]\n  X[Callback ngoài lifetime] -. cần chứng minh an toàn .-> B",
+    "entity_type": "Component",
+    "failure_impact": "Worker crash hoặc hỏng bộ nhớ tùy lỗi cụ thể.",
+    "id": "COMPONENT:MEMORY-POOL",
+    "learning_objectives": [
+      "Gán owner/lifetime cho ba tài nguyên trong request.",
+      "Giải thích vì sao pool không tự bảo đảm mọi con trỏ còn hợp lệ."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Memory pool: ownership, lifetime và cleanup",
+    "normal_behavior": "NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.",
+    "prerequisites": [
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Use-after-free; double free; memory leak.",
+    "related_knowledge": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "PROTOCOL:TLS",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Vòng đời request, connection và callback phải tương thích với vòng đời pool.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "updated_at": "2026-11-25T04:20:55+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "architecture_position": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "claim_refs": [
+      "CLAIM:6051C0620A65B27506E12125",
+      "CLAIM:2669A2CB8C74743B154161F2",
+      "CLAIM:04317F87275EF91CDEFBC22B",
+      "CLAIM:81F75B49FB6687ECFE3CB449",
+      "CLAIM:CCDC2C27B8A3664BDF05CB36",
+      "CLAIM:B1FEBAAFBFBEF7274A54FFD2",
+      "CLAIM:F9D2F3CAC07D8A5B2CECFF26",
+      "CLAIM:14787464476A97BBD3D90025"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "defensive_principles": "Ghi rõ ownership, kiểm tra callback trễ và dùng công cụ phát hiện lỗi bộ nhớ trong kiểm thử phát triển.",
+    "definition": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "description": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Worker crash hoặc hỏng bộ nhớ tùy lỗi cụ thể.",
+    "id": "COMPONENT:MEMORY-POOL",
+    "learning_objectives": [
+      "Giải thích Memory pool bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Memory pool",
+    "normal_behavior": "NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.",
+    "related_failure_classes": "Use-after-free; double free; memory leak.",
+    "related_knowledge": [],
+    "safety_assumptions": "Vòng đời request, connection và callback phải tương thích với vòng đời pool.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "source_refs": [
+      "EVIDENCE:359C672EA09D6E77D808BEB0"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:55+00:00",
+  "entity_id": "COMPONENT:MEMORY-POOL",
+  "id": "HISTORY:FB7BEC0C931F3D3B34030A57"
+}

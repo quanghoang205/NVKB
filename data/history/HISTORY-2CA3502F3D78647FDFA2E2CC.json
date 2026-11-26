@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới chính sách giữa các tên miền dùng chung listener.",
+    "claim_refs": [
+      "CLAIM:F5C1AE804BFBEFE7DEBDE444",
+      "CLAIM:3CA083E16D8B951F2A41FEBE",
+      "CLAIM:674A213ECD087ACB9A9C4B06",
+      "CLAIM:8170B13890370AC7598F1654",
+      "CLAIM:75A873D0753332149298F64F",
+      "CLAIM:E47FF0583740A6A43ACCA512",
+      "CLAIM:8D79898B17BC949F399E1A9E",
+      "CLAIM:5CCEA1CFA7801DF687A9236E"
+    ],
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "defensive_principles": "Rà soát default server, server_name và chính sách TLS/mTLS nhất quán.",
+    "definition": "Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.",
+    "description": "Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Áp dụng nhầm chính sách truy cập giữa virtual hosts.",
+    "id": "COMPONENT:VIRTUAL-HOSTS",
+    "learning_objectives": [
+      "Giải thích Virtual hosts bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Virtual hosts",
+    "normal_behavior": "NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server; default server thuộc socket listen. TLS có bước chọn theo SNI.",
+    "related_failure_classes": "Authentication policy violation.",
+    "related_knowledge": [],
+    "safety_assumptions": "Các quyết định xác thực và cấu hình phải gắn đúng server được chọn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới chính sách giữa các tên miền dùng chung listener.",
+    "source_refs": [
+      "EVIDENCE:FDB9B691A2BFB99A8CC78B34"
+    ],
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới chính sách giữa các tên miền dùng chung listener.",
+    "claim_refs": [
+      "CLAIM:8AE7B7F4B4F9BDC8B9878AB5",
+      "CLAIM:549A8CCA7A1983E9C6E759BB",
+      "CLAIM:E976E0D2C83D3DF4A6B54360",
+      "CLAIM:4F54127AAE2732A18648DFE6",
+      "CLAIM:88A14C5BF65842D4E9E3F96E",
+      "CLAIM:9A3E3D7D979F8989CDFE682F",
+      "CLAIM:78A6CA24A08872CF78707AB1",
+      "CLAIM:F6926E31D9EFDB502BBA6736"
+    ],
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "defensive_principles": "Rà soát default server, server_name và chính sách TLS/mTLS nhất quán.",
+    "definition": "Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.",
+    "description": "Nhiều cấu hình server chia sẻ hạ tầng lắng nghe.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Áp dụng nhầm chính sách truy cập giữa virtual hosts.",
+    "id": "COMPONENT:VIRTUAL-HOSTS",
+    "learning_objectives": [
+      "Giải thích Virtual hosts bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Virtual hosts",
+    "normal_behavior": "NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server; default server thuộc socket listen. TLS có bước chọn theo SNI.",
+    "related_failure_classes": "Authentication policy violation.",
+    "related_knowledge": [],
+    "safety_assumptions": "Các quyết định xác thực và cấu hình phải gắn đúng server được chọn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới chính sách giữa các tên miền dùng chung listener.",
+    "source_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "COMPONENT:VIRTUAL-HOSTS",
+  "id": "HISTORY:2CA3502F3D78647FDFA2E2CC"
+}

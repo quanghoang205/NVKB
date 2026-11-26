@@ -1,0 +1,22 @@
+{
+  "branch": "stable",
+  "created_at": "2026-11-25T02:27:28+00:00",
+  "description": "Upstream release được advisory xác định đã sửa lỗi.",
+  "ecosystem": "upstream",
+  "entity_type": "Version",
+  "id": "VERSION:NGINX-1.28.3",
+  "name": "NGINX 1.28.3",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:0528880A025D3293DC737CA5",
+    "EVIDENCE:6AB3409720F80EA88A3B8A1D",
+    "EVIDENCE:80D33BBF70F07DB821F5232D",
+    "EVIDENCE:B86044C589898E6D9A035C45",
+    "EVIDENCE:C59266D723B685ACE2719D33",
+    "EVIDENCE:C5A225F86EA1A78912011287"
+  ],
+  "updated_at": "2026-11-25T04:13:14+00:00",
+  "verification_status": "VERIFIED",
+  "version": "1.28.3"
+}

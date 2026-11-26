@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:46+00:00",
+  "content_hash": "0c6b43318d45d3795bf1a916fef9d0703f923939d77ce35ce5fa7b432aefcb18",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac71-ba3\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:37 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/0c6b43318d45d3795bf1a916fef9d0703f923939d77ce35ce5fa7b432aefcb18.html",
+  "retrieved_at": "2026-11-25T02:32:46+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_charset_module.html"
+}

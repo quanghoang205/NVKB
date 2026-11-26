@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:DF1A7B37DDC53B9134720281",
+    "claim_refs": [
+      "CLAIM:2F5458B57AB2AE3B82B02ACC"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:84D25AAE47719C42B5F0EE31",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-123640 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T04:13:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:0C090A387B01C31DA86A2F8C",
+    "claim_refs": [
+      "CLAIM:2F5458B57AB2AE3B82B02ACC"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:84D25AAE47719C42B5F0EE31",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-123640 CVSS 3.1 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T04:13:12+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:17+00:00",
+  "entity_id": "SEVERITY:84D25AAE47719C42B5F0EE31",
+  "id": "HISTORY:BDD2E396614661AF35A4D6C4"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A0ADBB8736A94AE519C825DF",
+    "claim_value": "\"Chuyển tiếp request đến SCGI server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:31+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D7461F17784B49277FF0F288"
+    ],
+    "id": "CLAIM:A0ADBB8736A94AE519C825DF",
+    "name": "MODULE:NGX-HTTP-SCGI-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D7461F17784B49277FF0F288"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SCGI-MODULE",
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:31+00:00",
+  "entity_id": "CLAIM:A0ADBB8736A94AE519C825DF",
+  "id": "HISTORY:4E49234E7D94EF2CD5C38E61"
+}

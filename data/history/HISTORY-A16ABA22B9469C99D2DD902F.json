@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:8D32D10BAEE90799D13826FD",
+    "claim_value": "\"A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:22+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3EFC2338173D38F29F1B5E2F"
+    ],
+    "id": "CLAIM:8D32D10BAEE90799D13826FD",
+    "name": "CVE:CVE-2026-42946: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3EFC2338173D38F29F1B5E2F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T02:28:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:22+00:00",
+  "entity_id": "CLAIM:8D32D10BAEE90799D13826FD",
+  "id": "HISTORY:A16ABA22B9469C99D2DD902F"
+}

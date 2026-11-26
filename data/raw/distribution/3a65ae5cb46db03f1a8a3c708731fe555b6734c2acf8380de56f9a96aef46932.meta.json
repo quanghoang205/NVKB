@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:23+00:00",
+  "content_hash": "d721b2d732a35db167943579849beb997a4844c14e2510b4959b31943afff65e",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/d721b2d732a35db167943579849beb997a4844c14e2510b4959b31943afff65e.html",
+  "retrieved_at": "2026-11-25T02:28:23+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42946"
+}

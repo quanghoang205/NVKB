@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:3C15CAC3397A3F97DBF43D44",
+    "claim_refs": [
+      "CLAIM:38A59151F1AC01EE1A8DF0D0"
+    ],
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4FAB9A9A2511F3849B9DAE5B",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-123634 CVSS 3.1 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:C919CF336285099B098B2AF3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T04:13:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:723914EACAE5D6FC5CE0F6ED",
+    "claim_refs": [
+      "CLAIM:38A59151F1AC01EE1A8DF0D0"
+    ],
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4FAB9A9A2511F3849B9DAE5B",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-123634 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:C919CF336285099B098B2AF3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:16+00:00",
+  "entity_id": "SEVERITY:4FAB9A9A2511F3849B9DAE5B",
+  "id": "HISTORY:395749B4766304E01259DB15"
+}

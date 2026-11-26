@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:5B8916208067C6FD9736FD57",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:BEA78C16C7B22E916854FB74",
+    "claim_value": "\"Configuration policy bypass; path mapping error.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:09+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:E42B729D9B934D293D76DB8C: location",
+    "evidence_refs": [
+      "EVIDENCE:E42B729D9B934D293D76DB8C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BEA78C16C7B22E916854FB74",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:LOCATION-MATCHING: related_failure_classes",
+    "observation_key": "OBSERVATION:F3D788DB8A2962CE4BC456C4",
+    "observed_at": "2026-11-25T02:32:09+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "COMPONENT:LOCATION-MATCHING",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:09+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:E42B729D9B934D293D76DB8C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:LOCATION-MATCHING",
+    "updated_at": "2026-11-25T04:12:49+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:BEA78C16C7B22E916854FB74",
+    "claim_value": "\"Configuration policy bypass; path mapping error.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:09+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E42B729D9B934D293D76DB8C"
+    ],
+    "id": "CLAIM:BEA78C16C7B22E916854FB74",
+    "name": "COMPONENT:LOCATION-MATCHING: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E42B729D9B934D293D76DB8C"
+    ],
+    "subject_entity_id": "COMPONENT:LOCATION-MATCHING",
+    "updated_at": "2026-11-25T02:32:09+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:49+00:00",
+  "entity_id": "CLAIM:BEA78C16C7B22E916854FB74",
+  "id": "HISTORY:4BEF91AFA7C80332F9E63BFD"
+}

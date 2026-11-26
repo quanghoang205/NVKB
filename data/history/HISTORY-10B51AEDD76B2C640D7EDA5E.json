@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c96e739fbaed4317a3398de420f26b35ed5e3705ec958004b63b608cab64d19f",
+    "created_at": "2026-11-25T02:32:39+00:00",
+    "description": "Thông tin được cung cấp cho chủ thể không được phép.",
+    "document_title": "CWE -\r\n\n    CWE-200: Exposure of Sensitive Information to an Unauthorized Actor (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:298DD279D3CE2B051D376EFD",
+    "id": "EVIDENCE:298DD279D3CE2B051D376EFD",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c96e739fbaed4317a3398de420f26b35ed5e3705ec958004b63b608cab64d19f.html",
+    "name": "CWE -\r\n\n    CWE-200: Exposure of Sensitive Information to an Unauthorized Actor (5.0)",
+    "paraphrase": "Thông tin được cung cấp cho chủ thể không được phép.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:39+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/200.html",
+    "updated_at": "2026-11-25T02:32:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:39+00:00",
+  "entity_id": "EVIDENCE:298DD279D3CE2B051D376EFD",
+  "id": "HISTORY:10B51AEDD76B2C640D7EDA5E"
+}

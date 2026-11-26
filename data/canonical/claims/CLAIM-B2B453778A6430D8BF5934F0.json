@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:58C477CCB5CCC401B16DBC5C",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:B2B453778A6430D8BF5934F0",
+  "claim_value": "\"## Invariant ranh giới\\n\\nDiễn giải: mỗi byte được chuyển phải thuộc đúng message và được đọc từ một nguồn hợp lệ trong state hiện hành. Response upstream là dữ liệu cần parse, không là chỉ thị tự do cho state của worker. Việc chuyển giữa HTTP/2 và representation nội bộ vẫn phải giữ ranh giới headers/body, độ dài và capacity. Khi upstream đóng sớm hoặc timeout, request không được coi là thành công chỉ vì trước đó đã có kết nối.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:28:15+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "#proxy_buffering; #proxy_request_buffering; #proxy_http_version; #proxy_ssl_verify; #proxy_ssl_name",
+  "evidence_refs": [
+    "EVIDENCE:866DA2E2D0C2FB0A535A8A90"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:B2B453778A6430D8BF5934F0",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:UPSTREAM-COMMUNICATION: v1.3:knowledge:Invariant ranh giới",
+  "observed_at": "2026-11-25T05:28:16+00:00",
+  "predicate": "v1.3:knowledge:Invariant ranh giới",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:28:16+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:866DA2E2D0C2FB0A535A8A90"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+  "updated_at": "2026-11-25T05:28:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:11+00:00; CVE versions are scoped separately."
+}

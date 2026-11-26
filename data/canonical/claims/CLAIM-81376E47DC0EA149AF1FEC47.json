@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:046B6E281DA84AFC26D7074C",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:81376E47DC0EA149AF1FEC47",
+  "claim_value": "\"mail subsystem của NGINX; giữa input protocol và handler cấu hình.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:32+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:E17CA21CCE3EF8F73A1CA580: ngx_mail_pop3_module; topic=MODULE:NGX-MAIL-POP3-MODULE",
+  "evidence_refs": [
+    "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:81376E47DC0EA149AF1FEC47",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "MODULE:NGX-MAIL-POP3-MODULE: security_boundary",
+  "observation_key": "OBSERVATION:30A9E44FFBB45FB41997B7D7",
+  "observed_at": "2026-11-25T02:44:32+00:00",
+  "predicate": "security_boundary",
+  "product_scope": "MODULE:NGX-MAIL-POP3-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:51+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+  "updated_at": "2026-11-25T04:12:42+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

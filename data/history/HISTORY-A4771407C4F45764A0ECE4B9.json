@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:2122938B8CF18F4035BC28B6",
+    "claim_value": "\"Framing, authentication và thông tin chuyển tiếp phải nhất quán.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "id": "CLAIM:2122938B8CF18F4035BC28B6",
+    "name": "PROTOCOL:SMTP: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:2122938B8CF18F4035BC28B6",
+  "id": "HISTORY:A4771407C4F45764A0ECE4B9"
+}

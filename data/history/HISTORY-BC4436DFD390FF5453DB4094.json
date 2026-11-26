@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "37848b94f74c7dfa3261aadbcf9fbb415526dc89f6ce75ac78eee9038beb034c",
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-56434",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:3791CC5E20A071F2F7E13CFD",
+    "id": "EVIDENCE:3791CC5E20A071F2F7E13CFD",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/37848b94f74c7dfa3261aadbcf9fbb415526dc89f6ce75ac78eee9038beb034c.json",
+    "name": "CVE-2026-56434",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:29+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-56434",
+    "updated_at": "2026-11-25T02:28:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:30+00:00",
+  "entity_id": "EVIDENCE:3791CC5E20A071F2F7E13CFD",
+  "id": "HISTORY:BC4436DFD390FF5453DB4094"
+}

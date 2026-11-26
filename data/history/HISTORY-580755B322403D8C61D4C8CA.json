@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:0B1E2E3C99417540A300AF7D",
+    "claim_value": "\"TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+    ],
+    "id": "CLAIM:0B1E2E3C99417540A300AF7D",
+    "name": "MODULE:NGX-HTTP-SSL-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:40+00:00",
+  "entity_id": "CLAIM:0B1E2E3C99417540A300AF7D",
+  "id": "HISTORY:580755B322403D8C61D4C8CA"
+}

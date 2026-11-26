@@ -1,0 +1,46 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:4952EAF732431E53E3BD84AD",
+    "claim_value": "\"PROTOCOL:QUIC\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:38+00:00",
+    "description": "Liên kết ngữ cảnh học tập; không chứng minh thành phần là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "id": "CLAIM:4952EAF732431E53E3BD84AD",
+    "name": "CVE:CVE-2024-31079: related_protocols",
+    "predicate": "related_protocols",
+    "reviewer_notes": "Liên kết ngữ cảnh học tập; không chứng minh thành phần là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T02:33:38+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:38+00:00",
+  "entity_id": "CLAIM:4952EAF732431E53E3BD84AD",
+  "id": "HISTORY:FBC4F1A52B6D8B42F3A61708"
+}

@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "cwe_id": "CWE-125",
+    "description": "CWE-125 Out-of-bounds Read",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-125",
+    "name": "CWE-125",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0"
+    ],
+    "updated_at": "2026-11-25T02:26:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:34+00:00",
+  "entity_id": "WEAKNESS:CWE-125",
+  "id": "HISTORY:D383419A8D5E0BB39B7184AF"
+}

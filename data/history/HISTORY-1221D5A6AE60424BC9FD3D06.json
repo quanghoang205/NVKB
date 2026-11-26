@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:916BD5172FC11D856C94BF60",
+    "claim_value": "\"CVE-2026-93479\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:45+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8"
+    ],
+    "id": "CLAIM:916BD5172FC11D856C94BF60",
+    "name": "CVE:CVE-2026-93479: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-93479",
+    "updated_at": "2026-11-25T02:28:45+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:45+00:00",
+  "entity_id": "CLAIM:916BD5172FC11D856C94BF60",
+  "id": "HISTORY:1221D5A6AE60424BC9FD3D06"
+}

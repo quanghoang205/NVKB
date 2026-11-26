@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:8C336E6CED48F28E08CA33A2",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:DB636F4B06A5267617D47E9A",
+    "claim_value": "\"Ranh giới client ↔ NGINX ↔ backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:1884967DB1FB9643EED0FB13: proxy_pass; topic=COMPONENT:REVERSE-PROXY",
+    "evidence_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DB636F4B06A5267617D47E9A",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:REVERSE-PROXY: security_boundary",
+    "observation_key": "OBSERVATION:C111A0658CEB7D6FB5AC43A2",
+    "observed_at": "2026-11-25T02:44:16+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "COMPONENT:REVERSE-PROXY",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:12:52+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:DB636F4B06A5267617D47E9A",
+    "claim_value": "\"Ranh giới client ↔ NGINX ↔ backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "id": "CLAIM:DB636F4B06A5267617D47E9A",
+    "name": "COMPONENT:REVERSE-PROXY: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1884967DB1FB9643EED0FB13"
+    ],
+    "subject_entity_id": "COMPONENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:52+00:00",
+  "entity_id": "CLAIM:DB636F4B06A5267617D47E9A",
+  "id": "HISTORY:84CE3D4A2B80C978EB97429E"
+}

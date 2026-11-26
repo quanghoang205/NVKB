@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Datagram UDP ↔ connection/stream được xác thực.",
+    "claim_refs": [
+      "CLAIM:C3B882578FBF01E58335CA3D",
+      "CLAIM:EB9541BEAAFC66802454DB90",
+      "CLAIM:9E63A0CCE467A8E11EEA3623",
+      "CLAIM:A7F1495FBB8FB8039CEDAC83",
+      "CLAIM:C254BE9C2D645983D541B4A9",
+      "CLAIM:2F2A472320B04058A6AC4381",
+      "CLAIM:049021B350A01A1D6818DF86",
+      "CLAIM:23E67348591AB378E682B0AE"
+    ],
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Transport bảo mật dựa trên UDP với nhiều stream độc lập.",
+    "description": "Transport bảo mật dựa trên UDP với nhiều stream độc lập.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:QUIC",
+    "learning_objectives": [
+      "Giải thích QUIC bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "QUIC",
+    "normal_behavior": "QUIC quản lý connection ID, stream, flow control, loss recovery và xác nhận địa chỉ trong quá trình thiết lập/di chuyển đường truyền.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không lấy metadata datagram chưa kiểm chứng làm danh tính ổn định.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Datagram UDP ↔ connection/stream được xác thực.",
+    "source_refs": [
+      "EVIDENCE:6801A47EFE6E65BE5BBD2F98"
+    ],
+    "updated_at": "2026-11-25T02:32:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:22+00:00",
+  "entity_id": "PROTOCOL:QUIC",
+  "id": "HISTORY:523BECB5196722E6440E8DC9"
+}

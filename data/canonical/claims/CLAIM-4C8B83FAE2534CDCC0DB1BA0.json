@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:34A75CD2D10D57BD3799D2D3",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:4C8B83FAE2534CDCC0DB1BA0",
+  "claim_value": "\"## Ownership và lifecycle\\n\\nStream HTTP có thể hoàn tất trước connection. Một request proxy còn liên quan upstream connection và output đang chờ. Khi không cấp thêm được connection hoặc tài nguyên, nhánh lỗi phải giải phóng đúng những phần đã được tạo mà không để callback cũ dùng state đã hủy. Đây là mô hình review ownership; RFC không mô tả allocator nội bộ của NGINX.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:09:57+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "§5.1 Stream States; §5.2 Flow Control; §6.9 WINDOW_UPDATE",
+  "evidence_refs": [
+    "EVIDENCE:2CF57B908B8E8450F39E5F7F"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:4C8B83FAE2534CDCC0DB1BA0",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "PROTOCOL:HTTP-2: v1.3:knowledge:Ownership và lifecycle",
+  "observed_at": "2026-11-25T05:09:57+00:00",
+  "predicate": "v1.3:knowledge:Ownership và lifecycle",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:09:58+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:2CF57B908B8E8450F39E5F7F"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "PROTOCOL:HTTP-2",
+  "updated_at": "2026-11-25T05:09:58+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:18+00:00; CVE versions are scoped separately."
+}

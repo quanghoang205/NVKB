@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A2D61DC98B2592A8772BF37E",
+    "claim_value": "\"NULL pointer dereference in HTTP/3\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F626BB030EC41FAF42ABAA56"
+    ],
+    "id": "CLAIM:A2D61DC98B2592A8772BF37E",
+    "name": "CVE:CVE-2024-24989: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F626BB030EC41FAF42ABAA56"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:07+00:00",
+  "entity_id": "CLAIM:A2D61DC98B2592A8772BF37E",
+  "id": "HISTORY:A5B00DD261507C0F6318DC8E"
+}

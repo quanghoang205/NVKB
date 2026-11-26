@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:8A976D5881EE55B9ED085D02",
+    "claim_value": "\"Datagram mạng ↔ trạng thái ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+    ],
+    "id": "CLAIM:8A976D5881EE55B9ED085D02",
+    "name": "PROTOCOL:UDP: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+    ],
+    "subject_entity_id": "PROTOCOL:UDP",
+    "updated_at": "2026-11-25T02:32:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:16+00:00",
+  "entity_id": "CLAIM:8A976D5881EE55B9ED085D02",
+  "id": "HISTORY:F12BCFB10A66B7CE5105F8DA"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:2442CE572AD4C45E28D25C7E",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:003BFE984ACCCAE36D90753A",
+    "claim_value": "\"## Cơ chế quyết định quyền\\n\\nMô hình khái niệm: nhận subject/context → xác định resource và action → nạp policy áp dụng → kiểm tra điều kiện → cho phép hoặc từ chối. Một kiểm tra hiện diện nhưng bỏ qua một chiều cần thiết của policy có thể thuộc lớp Incorrect Authorization. Không có kiểm tra và kiểm tra sai là hai mô tả cần phân biệt; chỉ gán CWE cụ thể khi có bằng chứng thích hợp.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:03+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:003BFE984ACCCAE36D90753A",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-863: pilot_section:Cơ chế quyết định quyền",
+    "observed_at": "2026-11-25T04:21:03+00:00",
+    "predicate": "pilot_section:Cơ chế quyết định quyền",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T04:21:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:03+00:00",
+  "entity_id": "CLAIM:003BFE984ACCCAE36D90753A",
+  "id": "HISTORY:9D87D0946C6F6BA4013D2889"
+}

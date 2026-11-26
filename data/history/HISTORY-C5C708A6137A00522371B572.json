@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:77FAAD9D9AD947384774250F",
+      "CLAIM:D83A08422C83183F80B453BE",
+      "CLAIM:079A3BABE608E8B51F5B1974",
+      "CLAIM:070739C9A73D90B5160BC2CA",
+      "CLAIM:4ABC922B74D43584A39948C9",
+      "CLAIM:782BD81350CD3FCB53724E67",
+      "CLAIM:D63F4D1DA17945CD0A035898",
+      "CLAIM:1F65F2C7D357F72C8C1547D3"
+    ],
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý HTTP/2 frame, stream và flow control.",
+    "description": "Xử lý HTTP/2 frame, stream và flow control.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-V2-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_v2_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_v2_module",
+    "normal_behavior": "Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "updated_at": "2026-11-25T02:32:41+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:41+00:00",
+  "entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+  "id": "HISTORY:C5C708A6137A00522371B572"
+}

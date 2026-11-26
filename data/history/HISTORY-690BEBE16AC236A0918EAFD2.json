@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:584D292B17C7AD0F604DF79C",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "id": "CLAIM:584D292B17C7AD0F604DF79C",
+    "name": "PROTOCOL:DNS: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:584D292B17C7AD0F604DF79C",
+  "id": "HISTORY:690BEBE16AC236A0918EAFD2"
+}

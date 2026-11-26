@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:A2BA99870C43CE0216355665",
+      "CLAIM:68C821E31FC56DEDF8AA6FB4",
+      "CLAIM:23BAC6B4F97756313DA7A924",
+      "CLAIM:5A0546837DB1A8EE4C3F978B",
+      "CLAIM:7EC433345298B4E72809834F",
+      "CLAIM:38BB28D39FF0BC725D6DFFF6",
+      "CLAIM:465CD1B91129F8A1369844E4",
+      "CLAIM:29DDAB46999CE3D05A9BA7B2"
+    ],
+    "created_at": "2026-11-25T02:32:52+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý IMAP trong vai trò mail proxy.",
+    "description": "Xử lý IMAP trong vai trò mail proxy.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-IMAP-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_imap_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_imap_module",
+    "normal_behavior": "Xử lý IMAP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:A1F088B0C57F54B5A3B710A1"
+    ],
+    "updated_at": "2026-11-25T02:32:52+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:52+00:00",
+  "entity_id": "MODULE:NGX-MAIL-IMAP-MODULE",
+  "id": "HISTORY:BE41085265F1D6AE146579B9"
+}

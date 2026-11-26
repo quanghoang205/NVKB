@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:79E199376ED1F1B0B02FFA07",
+    "claim_value": "\"Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "id": "CLAIM:79E199376ED1F1B0B02FFA07",
+    "name": "COMPONENT:EVENT-DRIVEN: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:79E199376ED1F1B0B02FFA07",
+  "id": "HISTORY:7FF56C41E549DF46C5B11F31"
+}

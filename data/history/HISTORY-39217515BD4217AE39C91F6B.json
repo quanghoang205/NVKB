@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:0F43D4FF1B6EF45E0FC450B0",
+    "authority": "f5",
+    "authority_scope": "f5",
+    "claim_id": "CLAIM:6D512AD78D9B2A1A12D596C8",
+    "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 6.9, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"LOW\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "severity:CVE Program:f5:4.0",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:8245586D43209CA1D6064B51: /containers/cna/metrics",
+    "evidence_refs": [
+      "EVIDENCE:8245586D43209CA1D6064B51"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:6D512AD78D9B2A1A12D596C8",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-125283: severity:CVE Program:f5:4.0",
+    "observation_key": "OBSERVATION:1B60277DFFF3163B1E6A73C1",
+    "observed_at": "2026-11-25T02:27:13+00:00",
+    "predicate": "severity:CVE Program:f5:4.0",
+    "product_scope": "CVE:CVE-2026-125283",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:11+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "f5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:8245586D43209CA1D6064B51"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T04:12:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "f5",
+    "claim_id": "CLAIM:6D512AD78D9B2A1A12D596C8",
+    "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 6.9, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"LOW\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "severity:CVE Program:f5:4.0",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8245586D43209CA1D6064B51"
+    ],
+    "id": "CLAIM:6D512AD78D9B2A1A12D596C8",
+    "name": "CVE:CVE-2026-125283: severity:CVE Program:f5:4.0",
+    "predicate": "severity:CVE Program:f5:4.0",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8245586D43209CA1D6064B51"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T02:27:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:40+00:00",
+  "entity_id": "CLAIM:6D512AD78D9B2A1A12D596C8",
+  "id": "HISTORY:39217515BD4217AE39C91F6B"
+}

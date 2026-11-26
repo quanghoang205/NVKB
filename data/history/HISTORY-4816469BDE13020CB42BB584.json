@@ -1,0 +1,319 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overread in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2EC1AD7783FA5A7C58328E80"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07E23984E58B3F7630B7E709",
+      "CLAIM:1033839EC534A5BCB6893D72",
+      "CLAIM:13B204C7237DD100CF423231",
+      "CLAIM:15B17AFDB1504B80E3E43104",
+      "CLAIM:37A68E8BE13721BE765A09F8",
+      "CLAIM:48DFBBEF5A863E8CC07AD3CD",
+      "CLAIM:510F4418FA869ECC11484ADF",
+      "CLAIM:5AEE005C51582322B25FA667",
+      "CLAIM:5B5A8F78DB2B18FB91CB52F1",
+      "CLAIM:6090DB08645ED5EC42F10652",
+      "CLAIM:68B07F162EDEED6A62E4529F",
+      "CLAIM:68CD35D77F8F673DEC588E6D",
+      "CLAIM:7D2575CCE788F14AA0BE8D9B",
+      "CLAIM:87FD95E0AEA3A5457CC2CE3D",
+      "CLAIM:88D33CFA7ED4FF9304570400",
+      "CLAIM:AE9BB4404ACF8FB633D560AE",
+      "CLAIM:BC9B4C38C163FF15307D5BF6",
+      "CLAIM:BD3BFC01BF3998542A0F78C6",
+      "CLAIM:C31BBA49E90D0EB7B2C45F5B",
+      "CLAIM:C66372A3D8793D6EA903F86A",
+      "CLAIM:CDFDE23DD178252ABBC7254B",
+      "CLAIM:D4BB7B188598CBEB525C7C2D",
+      "CLAIM:D8E834CD3716C2A000207C62",
+      "CLAIM:E1853D33699961812D58628A",
+      "CLAIM:E3184E7893236E34206E0B8B",
+      "CLAIM:E4D2AA5F1F88C53BC0B6E2A7",
+      "CLAIM:E9375757BCE1ACBC54B11BAD",
+      "CLAIM:EA24392EEA3F276E9915B6C6",
+      "CLAIM:EDBB61CF08BCAC407204EED0",
+      "CLAIM:F10FA10C99E0D0AD218F15C8",
+      "CLAIM:F6E8151C7D00544ED9E5F94A"
+    ],
+    "condition_refs": [
+      "CONDITION:0C814AA8EB9F630866D48731"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "cve_id": "CVE-2024-7347",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C0038C63763B5F2AD80A4399",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:040760AF72242E3A682EAA21"
+    ],
+    "distribution_status": [
+      "PACKAGE:C0038C63763B5F2AD80A4399",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:040760AF72242E3A682EAA21"
+    ],
+    "documented_configuration_context": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nThông báo upstream bổ sung:\nA security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-7347 ghi nhận: Buffer overread in the ngx_http_mp4_module. Phạm vi upstream: 1.5.13-1.27.0. Bản sửa được công bố: 1.27.1+, 1.26.2+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "id": "CVE:CVE-2024-7347",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-11-03T20:56:24.679000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-7347",
+    "normal_component_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [
+      "PATCH:D9038A2C1536868D4EBE5200"
+    ],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-08-14T14:32:33.913000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:EBA1ABF6DF9C47419E7FC8B6",
+      "REFERENCE:10A563A19FC0A544073BA315"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-126"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overread in the ngx_http_mp4_module.\n\nCWE-126 — Buffer Over-read: Đọc tiếp qua cuối buffer chứa dữ liệu.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng hợp lệ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4658A7708394EBCF3B4DC152",
+      "SEVERITY:4DA6B9DD3975B817268E51F2",
+      "SEVERITY:95AC6580F67D5A18C3C2B722",
+      "SEVERITY:A76899BA848DDB57F6E93D5D",
+      "SEVERITY:EA469274456165937771F19C"
+    ],
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529",
+      "EVIDENCE:33F64381C1DFA0573EACDDA6",
+      "EVIDENCE:858892E47130845469DFB70F",
+      "EVIDENCE:96277BC472ED92F8657D0FC0",
+      "EVIDENCE:98AA650589527FE324CA3595",
+      "EVIDENCE:A090E44B4D6823649A1DA8FD",
+      "EVIDENCE:EAD35522BA8E5C36338FC518",
+      "EVIDENCE:F247C10B88E2879A1FFE9187",
+      "EVIDENCE:FDDF8361C7CDD452453122B7"
+    ],
+    "title": "Buffer overread in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:09+00:00",
+    "upstream_affected_expression": "1.5.13-1.27.0",
+    "upstream_unaffected_expression": "1.27.1+, 1.26.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overread in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2EC1AD7783FA5A7C58328E80"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07E23984E58B3F7630B7E709",
+      "CLAIM:1033839EC534A5BCB6893D72",
+      "CLAIM:13B204C7237DD100CF423231",
+      "CLAIM:15B17AFDB1504B80E3E43104",
+      "CLAIM:37A68E8BE13721BE765A09F8",
+      "CLAIM:48DFBBEF5A863E8CC07AD3CD",
+      "CLAIM:510F4418FA869ECC11484ADF",
+      "CLAIM:5AEE005C51582322B25FA667",
+      "CLAIM:5B5A8F78DB2B18FB91CB52F1",
+      "CLAIM:6090DB08645ED5EC42F10652",
+      "CLAIM:68B07F162EDEED6A62E4529F",
+      "CLAIM:7D2575CCE788F14AA0BE8D9B",
+      "CLAIM:87FD95E0AEA3A5457CC2CE3D",
+      "CLAIM:88D33CFA7ED4FF9304570400",
+      "CLAIM:AE9BB4404ACF8FB633D560AE",
+      "CLAIM:BD3BFC01BF3998542A0F78C6",
+      "CLAIM:C31BBA49E90D0EB7B2C45F5B",
+      "CLAIM:C66372A3D8793D6EA903F86A",
+      "CLAIM:D4BB7B188598CBEB525C7C2D",
+      "CLAIM:D8E834CD3716C2A000207C62",
+      "CLAIM:E1853D33699961812D58628A",
+      "CLAIM:E3184E7893236E34206E0B8B",
+      "CLAIM:E4D2AA5F1F88C53BC0B6E2A7",
+      "CLAIM:E9375757BCE1ACBC54B11BAD",
+      "CLAIM:EA24392EEA3F276E9915B6C6",
+      "CLAIM:EDBB61CF08BCAC407204EED0",
+      "CLAIM:F10FA10C99E0D0AD218F15C8",
+      "CLAIM:F6E8151C7D00544ED9E5F94A"
+    ],
+    "condition_refs": [
+      "CONDITION:0C814AA8EB9F630866D48731"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "cve_id": "CVE-2024-7347",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C0038C63763B5F2AD80A4399",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:040760AF72242E3A682EAA21"
+    ],
+    "distribution_status": [
+      "PACKAGE:C0038C63763B5F2AD80A4399",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:040760AF72242E3A682EAA21"
+    ],
+    "documented_configuration_context": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nThông báo upstream bổ sung:\nA security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-7347 ghi nhận: Buffer overread in the ngx_http_mp4_module. Phạm vi upstream: 1.5.13-1.27.0. Bản sửa được công bố: 1.27.1+, 1.26.2+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "id": "CVE:CVE-2024-7347",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-11-03T20:56:24.679000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-7347",
+    "normal_component_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [
+      "PATCH:D9038A2C1536868D4EBE5200"
+    ],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-08-14T14:32:33.913000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:EBA1ABF6DF9C47419E7FC8B6",
+      "REFERENCE:10A563A19FC0A544073BA315"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-126"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overread in the ngx_http_mp4_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:4658A7708394EBCF3B4DC152",
+      "SEVERITY:4DA6B9DD3975B817268E51F2",
+      "SEVERITY:95AC6580F67D5A18C3C2B722",
+      "SEVERITY:A76899BA848DDB57F6E93D5D",
+      "SEVERITY:EA469274456165937771F19C"
+    ],
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529",
+      "EVIDENCE:33F64381C1DFA0573EACDDA6",
+      "EVIDENCE:858892E47130845469DFB70F",
+      "EVIDENCE:96277BC472ED92F8657D0FC0",
+      "EVIDENCE:98AA650589527FE324CA3595",
+      "EVIDENCE:A090E44B4D6823649A1DA8FD",
+      "EVIDENCE:EAD35522BA8E5C36338FC518",
+      "EVIDENCE:F247C10B88E2879A1FFE9187",
+      "EVIDENCE:FDDF8361C7CDD452453122B7"
+    ],
+    "title": "Buffer overread in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:57+00:00",
+    "upstream_affected_expression": "1.5.13-1.27.0",
+    "upstream_unaffected_expression": "1.27.1+, 1.26.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:09+00:00",
+  "entity_id": "CVE:CVE-2024-7347",
+  "id": "HISTORY:4816469BDE13020CB42BB584"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4896F5475D34B46534BE9804",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "claim_value": "\"Danh tính certificate ↔ quyết định authorization ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:12CE03DF5B6F2AB898D02BFB: Protocol overview and state machine; topic=PROTOCOL:MTLS",
+    "evidence_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:MTLS: architecture_position",
+    "observation_key": "OBSERVATION:8759CB96EC8DA5D8705DF099",
+    "observed_at": "2026-11-25T02:44:22+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "PROTOCOL:MTLS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:22+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T04:12:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "claim_value": "\"Danh tính certificate ↔ quyết định authorization ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "name": "PROTOCOL:MTLS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:42+00:00",
+  "entity_id": "CLAIM:7F5DB59512C07F96D864DEFA",
+  "id": "HISTORY:E63C1FB620FBD95B7B50A652"
+}

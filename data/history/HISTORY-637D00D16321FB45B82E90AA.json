@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:4BDDF175B62E51953ED3CFD0",
+    "claim_value": "\"Hỏng allocator state hoặc crash.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "id": "CLAIM:4BDDF175B62E51953ED3CFD0",
+    "name": "WEAKNESS:CWE-415: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0F318B013600D8CC562EC9BA"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-415",
+    "updated_at": "2026-11-25T02:32:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:35+00:00",
+  "entity_id": "CLAIM:4BDDF175B62E51953ED3CFD0",
+  "id": "HISTORY:637D00D16321FB45B82E90AA"
+}

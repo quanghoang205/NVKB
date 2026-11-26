@@ -1,0 +1,837 @@
+id: https://w3id.org/nvkb
+name: nvkb
+title: NGINX Vulnerability Knowledge Base
+description: Evidence-first local ontology. JSON records are canonical; references
+  are stable entity IDs.
+version: 1.3.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  nvkb: https://w3id.org/nvkb/
+imports:
+- linkml:types
+default_prefix: nvkb
+default_range: string
+enums:
+  EditorialMaturity:
+    description: Article editorial maturity, independent of claim evidence support and lifecycle.
+    permissible_values:
+      METADATA_ONLY: {}
+      TECHNICAL_DRAFT: {}
+      AI_REVIEWED: {}
+      INDEPENDENT_AGENT_REVIEWED: {}
+      HUMAN_APPROVED: {}
+  RelationshipDisposition:
+    permissible_values:
+      RETAIN_DOCUMENTED: {}
+      RETAIN_CONTEXT: {}
+      RETAIN_PEDAGOGICAL: {}
+      WITHDRAWN_UNSUPPORTED: {}
+  VerificationStatus:
+    permissible_values:
+      VERIFIED: {}
+      CORROBORATED: {}
+      INFERRED: {}
+      UNVERIFIED: {}
+      CONFLICTED: {}
+      UNKNOWN: {}
+      REJECTED: {}
+  ReferenceAvailability:
+    permissible_values:
+      AVAILABLE: {}
+      MISSING: {}
+      UNKNOWN: {}
+  SourceIntegrity:
+    permissible_values:
+      HASH_MATCH: {}
+      MISMATCH: {}
+      NOT_CHECKED: {}
+  ExtractionStatus:
+    permissible_values:
+      NOT_CHECKED: {}
+      MATCHED: {}
+      MISMATCH: {}
+      NOT_APPLICABLE: {}
+  SourceSupportStatus:
+    permissible_values:
+      NOT_REVIEWED: {}
+      SUPPORTED: {}
+      PARTIAL: {}
+      UNSUPPORTED: {}
+      UNKNOWN: {}
+  ReviewStatus:
+    permissible_values:
+      NOT_REVIEWED: {}
+      AI_REVIEWED: {}
+      HUMAN_APPROVED: {}
+      CHANGES_REQUESTED: {}
+  InferenceType:
+    permissible_values:
+      SOURCE_STATEMENT: {}
+      INTERPRETATION: {}
+      PEDAGOGICAL: {}
+      KEYWORD_ASSOCIATION: {}
+      UNKNOWN: {}
+  LifecycleStatus:
+    permissible_values:
+      CURRENT: {}
+      SUPERSEDED: {}
+      HISTORICAL: {}
+      DISPUTED: {}
+      PENDING_REVIEW: {}
+      WITHDRAWN: {}
+  SourceRole:
+    permissible_values:
+      ORIGINAL_AUTHORITY: {}
+      DISTRIBUTION_CHANNEL: {}
+      MIRROR: {}
+      AGGREGATOR: {}
+      INDEPENDENT_TECHNICAL_SOURCE: {}
+      UNKNOWN: {}
+  GraphLayer:
+    permissible_values:
+      PROVENANCE: {}
+      TECHNICAL: {}
+      LEARNING: {}
+  RelationshipPredicate:
+    permissible_values:
+      affects:
+        description: Advisory product applicability
+        annotations:
+          domain_types: Vulnerability
+          range_types: Product
+          graph_layer: TECHNICAL
+      classified_as:
+        description: Published weakness classification
+        annotations:
+          domain_types: Vulnerability
+          range_types: Weakness
+          graph_layer: TECHNICAL
+      fixed_in:
+        description: Documented fixed upstream release
+        annotations:
+          domain_types: Vulnerability
+          range_types: Version
+          graph_layer: TECHNICAL
+      distribution_fix:
+        description: Distribution-specific package statement
+        annotations:
+          domain_types: Vulnerability
+          range_types: DistributionPackage
+          graph_layer: TECHNICAL
+      related_components:
+        description: Context only; not fault location
+        annotations:
+          domain_types: Vulnerability
+          range_types: Component
+          graph_layer: TECHNICAL
+      related_modules:
+        description: Document context; not causal proof
+        annotations:
+          domain_types: Vulnerability
+          range_types: Module
+          graph_layer: TECHNICAL
+      related_protocols:
+        description: Protocol context; not causal proof
+        annotations:
+          domain_types: Vulnerability
+          range_types: Protocol
+          graph_layer: TECHNICAL
+      learns_from:
+        description: Legacy pedagogical recommendation
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          graph_layer: LEARNING
+      PART_OF:
+        description: Subject is part of object in stated scope
+        annotations:
+          domain_types: Component,Module,DeploymentArchitecture
+          range_types: Product,Component,DeploymentArchitecture
+          graph_layer: TECHNICAL
+      IMPLEMENTS:
+        description: Subject implements object mechanism
+        annotations:
+          domain_types: Module,Component
+          range_types: Protocol,SecurityControl
+          graph_layer: TECHNICAL
+      PARTICIPATES_IN:
+        description: Subject participates in object lifecycle
+        annotations:
+          domain_types: Component,Module,Protocol
+          range_types: Component,Protocol,DeploymentArchitecture
+          graph_layer: TECHNICAL
+      DEPENDS_ON:
+        description: Subject requires object mechanism
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          graph_layer: TECHNICAL
+      CONTEXTUAL_ASSOCIATION:
+        description: Related context, not causation
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          graph_layer: TECHNICAL
+      VIOLATES_INVARIANT:
+        description: Documented violation of object invariant
+        annotations:
+          domain_types: Vulnerability,Weakness
+          range_types: SecurityControl
+          graph_layer: TECHNICAL
+      MITIGATED_BY:
+        description: Subject risk limited by object within scope
+        annotations:
+          domain_types: Vulnerability,Weakness,Impact
+          range_types: Mitigation,SecurityControl,Patch
+          graph_layer: TECHNICAL
+      PROTECTED_BY:
+        description: Object protects a subject boundary
+        annotations:
+          domain_types: Component,Module,Protocol,DeploymentArchitecture
+          range_types: SecurityControl
+          graph_layer: TECHNICAL
+      REQUIRES_KNOWLEDGE_OF:
+        description: Subject lesson requires object prerequisite
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          graph_layer: LEARNING
+      PRECEDES:
+        description: Subject taught before object
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          graph_layer: LEARNING
+      ASSESSED_BY:
+        description: Object contains assessment of subject
+        annotations:
+          domain_types: Product,Component,Module,Protocol,Weakness,SecurityControl,DeploymentArchitecture,ConfigurationDirective,Impact,Mitigation,LearningObjective,Vulnerability,Patch
+          range_types: LearningObjective
+          graph_layer: LEARNING
+      SUPPORTED_BY:
+        description: Observation points to support candidate
+        annotations:
+          domain_types: Claim,Relationship
+          range_types: Evidence
+          graph_layer: PROVENANCE
+  KevStatus:
+    permissible_values:
+      PRESENT: {}
+      ABSENT_AT_SNAPSHOT: {}
+      UNKNOWN: {}
+classes:
+  Entity:
+    description: Entity entity in the NVKB evidence graph.
+    attributes:
+      id:
+        range: string
+        required: true
+        identifier: true
+        pattern: ^[A-Z][A-Z0-9_-]*:[A-Za-z0-9._-]+$
+      name:
+        range: string
+        required: true
+      description:
+        range: string
+        required: true
+      entity_type:
+        range: string
+        required: true
+      schema_version:
+        range: string
+        required: true
+      created_at:
+        range: datetime
+        required: true
+      updated_at:
+        range: datetime
+        required: true
+      source_refs:
+        range: Evidence
+        multivalued: true
+        required: true
+      verification_status:
+        range: VerificationStatus
+        required: true
+      legacy_verification_status:
+        range: VerificationStatus
+      reference_availability:
+        range: ReferenceAvailability
+      source_integrity:
+        range: SourceIntegrity
+      extraction_status:
+        range: ExtractionStatus
+      source_support_status:
+        range: SourceSupportStatus
+      review_status:
+        range: ReviewStatus
+      inference_type:
+        range: InferenceType
+      source_role:
+        range: SourceRole
+      reviewer_id:
+        range: string
+      review_rationale:
+        range: string
+      evidence_locator:
+        range: string
+      source_authority:
+        range: string
+      authority_scope:
+        range: string
+      product_scope:
+        range: string
+      version_scope:
+        range: string
+      verification_limitations:
+        range: string
+      reviewed_at:
+        range: datetime
+      observed_at:
+        range: datetime
+      checked_at:
+        range: datetime
+      editorial_maturity:
+        range: EditorialMaturity
+      editorial_review_note:
+        range: string
+      research_group:
+        range: string
+      relationship_disposition:
+        range: RelationshipDisposition
+      curated_fields:
+        range: string
+        multivalued: true
+      research_claim_refs:
+        range: Claim
+        multivalued: true
+  KnowledgeEntity:
+    description: KnowledgeEntity entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      definition:
+        range: string
+      normal_behavior:
+        range: string
+      architecture_position:
+        range: string
+      security_boundary:
+        range: string
+      safety_assumptions:
+        range: string
+      related_failure_classes:
+        range: string
+      failure_impact:
+        range: string
+      defensive_principles:
+        range: string
+      diagram:
+        range: string
+      related_knowledge:
+        range: Entity
+        multivalued: true
+      learning_objectives:
+        range: string
+        multivalued: true
+      claim_refs:
+        range: Claim
+        multivalued: true
+      prerequisites:
+        range: Entity
+        multivalued: true
+      article_body:
+        range: string
+      assessment:
+        range: string
+      answer_explanations:
+        range: string
+      applicable_context:
+        range: string
+      limitations:
+        range: string
+      curation_version:
+        range: string
+  Product:
+    description: Product entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes:
+      in_primary_scope:
+        range: boolean
+      vendor:
+        range: string
+      product_family:
+        range: string
+  Module:
+    description: Module entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Component:
+    description: Component entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Protocol:
+    description: Protocol entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Weakness:
+    description: Weakness entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes:
+      cwe_id:
+        range: string
+  ConfigurationDirective:
+    description: ConfigurationDirective entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  DeploymentArchitecture:
+    description: DeploymentArchitecture entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  SecurityControl:
+    description: SecurityControl entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  LearningObjective:
+    description: LearningObjective entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  AffectedCondition:
+    description: AffectedCondition entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Impact:
+    description: Impact entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Mitigation:
+    description: Mitigation entity in the NVKB evidence graph.
+    is_a: KnowledgeEntity
+    attributes: {}
+  Version:
+    description: Version entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      product_id:
+        range: Product
+        required: true
+      version:
+        range: string
+        required: true
+      branch:
+        range: string
+      ecosystem:
+        range: string
+  VersionRange:
+    description: VersionRange entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      product_id:
+        range: Product
+        required: true
+      lower:
+        range: string
+      upper:
+        range: string
+      lower_inclusive:
+        range: boolean
+      upper_inclusive:
+        range: boolean
+      exclusions:
+        range: string
+        multivalued: true
+      fixed_versions:
+        range: string
+        multivalued: true
+      branch:
+        range: string
+      ecosystem:
+        range: string
+        required: true
+      raw_expression:
+        range: string
+      claim_refs:
+        range: Claim
+        multivalued: true
+  Severity:
+    description: Severity entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      subject_entity_id:
+        range: Entity
+        required: true
+      cvss_version:
+        range: string
+      cvss_vector:
+        range: string
+      cvss_score:
+        range: float
+        minimum_value: 0
+        maximum_value: 10
+      severity_label:
+        range: string
+      scoring_authority:
+        range: string
+        required: true
+      metric_json:
+        range: string
+      claim_refs:
+        range: Claim
+        multivalued: true
+      original_authority:
+        range: string
+      assessment_key:
+        range: string
+      distribution_channel:
+        range: string
+  Patch:
+    description: Patch entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      product_id:
+        range: Product
+      version_refs:
+        range: Version
+        multivalued: true
+      patch_url:
+        range: uri
+      claim_refs:
+        range: Claim
+        multivalued: true
+  DistributionPackage:
+    description: DistributionPackage entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      product_id:
+        range: Product
+      distribution:
+        range: string
+        required: true
+      release:
+        range: string
+        required: true
+      package_name:
+        range: string
+        required: true
+      package_version:
+        range: string
+      fixed_version:
+        range: string
+      patch_status:
+        range: string
+      cve_ref:
+        range: Vulnerability
+      ecosystem:
+        range: string
+      claim_refs:
+        range: Claim
+        multivalued: true
+      release_support_end_month:
+        range: string
+      release_support_status:
+        range: string
+      lifecycle_evidence_ref:
+        range: Evidence
+      lifecycle_rationale:
+        range: string
+  Evidence:
+    description: Evidence entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      evidence_id:
+        range: string
+        required: true
+      source_url:
+        range: uri
+        required: true
+      publisher:
+        range: string
+        required: true
+      document_title:
+        range: string
+        required: true
+      source_type:
+        range: string
+        required: true
+      published_at:
+        range: datetime
+      modified_at:
+        range: datetime
+      retrieved_at:
+        range: datetime
+        required: true
+      content_hash:
+        range: string
+        required: true
+        pattern: ^[a-f0-9]{64}$
+      local_snapshot_path:
+        range: string
+      source_locator:
+        range: string
+        required: true
+      paraphrase:
+        range: string
+      relevant_excerpt:
+        range: string
+  Reference:
+    description: Reference entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      source_url:
+        range: uri
+        required: true
+      publisher:
+        range: string
+      document_title:
+        range: string
+  Claim:
+    description: Claim entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      claim_id:
+        range: string
+        required: true
+      subject_entity_id:
+        range: Entity
+        required: true
+      predicate:
+        range: string
+        required: true
+      claim_value:
+        range: string
+        required: true
+      evidence_refs:
+        range: Evidence
+        multivalued: true
+        required: true
+      confidence:
+        range: float
+        required: true
+        minimum_value: 0
+        maximum_value: 1
+      reviewer_notes:
+        range: string
+      authority:
+        range: string
+        required: true
+      lifecycle_status:
+        range: LifecycleStatus
+      valid_from:
+        range: datetime
+      valid_until:
+        range: datetime
+      retrieved_at:
+        range: datetime
+      supersedes:
+        range: Claim
+        multivalued: true
+      superseded_by:
+        range: Claim
+        multivalued: true
+      review_reason:
+        range: string
+      disposition_reason:
+        range: string
+      assertion_key:
+        range: string
+      observation_key:
+        range: string
+  Relationship:
+    description: Relationship entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      subject_entity_id:
+        range: Entity
+        required: true
+      predicate:
+        range: RelationshipPredicate
+        required: true
+      object_entity_id:
+        range: Entity
+        required: true
+      claim_refs:
+        range: Claim
+        multivalued: true
+      rationale:
+        range: string
+      semantic_meaning:
+        range: string
+      direction:
+        range: string
+      graph_layer:
+        range: GraphLayer
+      review_required:
+        range: boolean
+  Vulnerability:
+    description: Vulnerability entity in the NVKB evidence graph.
+    is_a: Entity
+    attributes:
+      cve_id:
+        range: string
+        required: true
+        pattern: ^CVE-[0-9]{4}-[0-9]{4,}$
+      title:
+        range: string
+      record_status:
+        range: string
+      normal_component_behavior:
+        range: string
+      root_cause_summary:
+        range: string
+      security_assumption_violated:
+        range: string
+      security_boundary:
+        range: string
+      affected_feature_description:
+        range: string
+      documented_configuration_context:
+        range: string
+      applicability_limitations:
+        range: string
+      direct_impact:
+        range: string
+      confidentiality_impact:
+        range: string
+      integrity_impact:
+        range: string
+      availability_impact:
+        range: string
+      affected_process:
+        range: string
+      documented_privilege_context:
+        range: string
+      confirmed_impact:
+        range: string
+      potential_impact:
+        range: string
+      impact_limitations:
+        range: string
+      remediation_limitations:
+        range: string
+      upstream_affected_expression:
+        range: string
+      upstream_unaffected_expression:
+        range: string
+      educational_summary:
+        range: string
+      publication_date:
+        range: datetime
+      last_modified_date:
+        range: datetime
+      last_verified_at:
+        range: datetime
+      publication_year:
+        range: integer
+      cve_year:
+        range: integer
+      vendor_documented_conditions:
+        range: string
+        multivalued: true
+      documented_exclusions:
+        range: string
+        multivalued: true
+      unknown_conditions:
+        range: string
+        multivalued: true
+      defensive_recommendations:
+        range: string
+        multivalued: true
+      learning_objectives:
+        range: string
+        multivalued: true
+      unsupported_fields:
+        range: string
+        multivalued: true
+      unresolved_conflicts:
+        range: string
+        multivalued: true
+      affected_products:
+        range: Product
+        multivalued: true
+      affected_version_ranges:
+        range: VersionRange
+        multivalued: true
+      fixed_versions:
+        range: Version
+        multivalued: true
+      unaffected_versions:
+        range: Version
+        multivalued: true
+      distribution_status:
+        range: DistributionPackage
+        multivalued: true
+      related_components:
+        range: Component
+        multivalued: true
+      related_modules:
+        range: Module
+        multivalued: true
+      related_protocols:
+        range: Protocol
+        multivalued: true
+      related_weaknesses:
+        range: Weakness
+        multivalued: true
+      severity_refs:
+        range: Severity
+        multivalued: true
+      fixed_release_refs:
+        range: Version
+        multivalued: true
+      patch_refs:
+        range: Patch
+        multivalued: true
+      official_mitigation_refs:
+        range: Mitigation
+        multivalued: true
+      distribution_backports:
+        range: DistributionPackage
+        multivalued: true
+      claim_refs:
+        range: Claim
+        multivalued: true
+      condition_refs:
+        range: AffectedCondition
+        multivalued: true
+      impact_refs:
+        range: Impact
+        multivalued: true
+      reference_refs:
+        range: Reference
+        multivalued: true
+      research_body:
+        range: string
+      curation_version:
+        range: string
+      kev_status:
+        range: KevStatus
+      kev_catalogue_version:
+        range: string
+      kev_evidence_id:
+        range: Evidence
+      lifecycle_status:
+        range: string
+      lifecycle_rationale:
+        range: string
+      kev_checked_at:
+        range: datetime
+      kev_snapshot_status:
+        range: KevStatus
+  Advisory:
+    description: Vendor advisory without an assigned CVE identifier; supports future
+      and historical curation.
+    is_a: Entity
+    attributes:
+      vendor_advisory_id:
+        range: string
+        required: true
+      publication_date:
+        range: datetime
+      affected_products:
+        range: Product
+        multivalued: true
+      affected_version_ranges:
+        range: VersionRange
+        multivalued: true
+      claim_refs:
+        range: Claim
+        multivalued: true

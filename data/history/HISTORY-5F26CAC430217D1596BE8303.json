@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:675B9B1D9EAF0A576172506B",
+    "claim_value": "\"1.25.3\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "upstream_affected_expression",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F626BB030EC41FAF42ABAA56"
+    ],
+    "id": "CLAIM:675B9B1D9EAF0A576172506B",
+    "name": "CVE:CVE-2024-24989: upstream_affected_expression",
+    "predicate": "upstream_affected_expression",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F626BB030EC41FAF42ABAA56"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:07+00:00",
+  "entity_id": "CLAIM:675B9B1D9EAF0A576172506B",
+  "id": "HISTORY:5F26CAC430217D1596BE8303"
+}

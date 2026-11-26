@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:C797A23802EA624A73F69B04"
+  ],
+  "created_at": "2026-11-25T02:27:59+00:00",
+  "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:EDE1CA8428825449CF47A3F5",
+  "name": "Điều kiện được công bố — CVE-2026-42055",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:AFAA6A12EA44778C8BB2C34D"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

@@ -1,0 +1,50 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:ACF09F1B44864D023BEEAA9F",
+    "claim_value": "\"Giá trị trung gian và chuyển đổi signed/unsigned không làm thay đổi ý nghĩa.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:40:34+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64",
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "id": "CLAIM:ACF09F1B44864D023BEEAA9F",
+    "name": "CVE:CVE-2026-27784: security_assumption_violated",
+    "predicate": "security_assumption_violated",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64",
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:40:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:35+00:00",
+  "entity_id": "CLAIM:ACF09F1B44864D023BEEAA9F",
+  "id": "HISTORY:C44D35400F7B34D69A4AB20A"
+}

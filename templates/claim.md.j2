@@ -1,0 +1,54 @@
+{{ frontmatter }}
+# {{ item.name }}
+
+`{{ item.id }}` · **{{ item.get('lifecycle_status', 'PENDING_REVIEW') }}**
+
+## Nhận định
+
+Chủ thể: {{ links([item.subject_entity_id]) }}. Predicate: `{{ item.predicate }}`.
+
+```json
+{{ item.claim_value }}
+```
+
+## Nguồn và phạm vi
+
+Authority: {{ item.authority }}. {{ item.get('authority_scope', '') }}
+
+{{ links(item.evidence_refs) }}
+
+Locator: {{ item.get('evidence_locator', 'UNKNOWN') }}
+
+Phạm vi phiên bản: {{ item.get('version_scope', 'UNKNOWN') }}
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | {{ item.get('reference_availability', 'UNKNOWN') }} |
+| Hash nguồn | {{ item.get('source_integrity', 'NOT_CHECKED') }} |
+| Trích xuất | {{ item.get('extraction_status', 'NOT_CHECKED') }} |
+| Nguồn hỗ trợ | {{ item.get('source_support_status', 'NOT_REVIEWED') }} |
+| Review | {{ item.get('review_status', 'NOT_REVIEWED') }} |
+| Loại suy luận | {{ item.get('inference_type', 'UNKNOWN') }} |
+| Legacy | {{ item.get('legacy_verification_status', item.verification_status) }} — nhãn pipeline cũ |
+
+{% if item.get('reviewer_id') %}Reviewer: `{{ item.reviewer_id }}` · {{ item.reviewed_at }}
+
+{{ item.review_rationale }}
+{% endif %}
+{{ item.get('verification_limitations', '') }}
+
+## Vòng đời
+
+{{ item.get('review_reason', 'Chưa xác định hiệu lực.') }}
+
+Quan sát: {{ item.get('observed_at', 'UNKNOWN') }}. Truy xuất: {{ item.get('retrieved_at', 'UNKNOWN') }}.
+
+Hiệu lực từ: {{ item.get('valid_from', 'UNKNOWN') }}; đến: {{ item.get('valid_until', 'UNKNOWN') }}.
+
+Thay thế: {{ links(item.get('supersedes', [])) or 'Không ghi nhận.' }}
+
+Được thay bởi: {{ links(item.get('superseded_by', [])) or 'Không ghi nhận.' }}
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

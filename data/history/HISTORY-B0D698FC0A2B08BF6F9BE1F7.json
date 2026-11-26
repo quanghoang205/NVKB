@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:634214C8C3F3A4ED071195E9",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:490B95C09DF13BDDBFE423FD",
+    "claim_value": "\"Entry NGINX cho CVE-2025-23419 công bố bản không bị ảnh hưởng từ 1.26.3 trên nhánh ổn định tương ứng và từ 1.27.4 trên nhánh tương ứng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:08+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:490B95C09DF13BDDBFE423FD",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:ADVISORY: pilot_source_statement",
+    "observed_at": "2026-11-25T04:21:09+00:00",
+    "predicate": "pilot_source_statement",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T04:21:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:09+00:00",
+  "entity_id": "CLAIM:490B95C09DF13BDDBFE423FD",
+  "id": "HISTORY:B0D698FC0A2B08BF6F9BE1F7"
+}

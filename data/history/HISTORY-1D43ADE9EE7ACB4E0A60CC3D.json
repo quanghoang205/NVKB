@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:1EF701037BEB53AD17CFFED7"
+    ],
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:4273934B0FFE79F2ED4AC09C",
+    "name": "Điều kiện được công bố — CVE-2026-40701",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:1EF701037BEB53AD17CFFED7"
+    ],
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:4273934B0FFE79F2ED4AC09C",
+    "name": "Điều kiện được công bố — CVE-2026-40701",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5"
+    ],
+    "updated_at": "2026-11-25T02:27:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:4273934B0FFE79F2ED4AC09C",
+  "id": "HISTORY:1D43ADE9EE7ACB4E0A60CC3D"
+}

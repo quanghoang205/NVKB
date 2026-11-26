@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:EA7F06C54388493883EEEE66",
+    "claim_value": "\"NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C53955D4100EAC53CAFC43D6"
+    ],
+    "id": "CLAIM:EA7F06C54388493883EEEE66",
+    "name": "CVE:CVE-2026-9256: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C53955D4100EAC53CAFC43D6"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:41+00:00",
+  "entity_id": "CLAIM:EA7F06C54388493883EEEE66",
+  "id": "HISTORY:DF473BDE11BFA190427FD51D"
+}

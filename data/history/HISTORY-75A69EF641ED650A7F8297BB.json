@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:7020864F89AC33E25556E2FB",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:0A2F1147A27EB1E9060E16F4",
+    "claim_value": "\"Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:98E122F56AC9EFC999816DB9: ngx_http_rewrite_module",
+    "evidence_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:0A2F1147A27EB1E9060E16F4",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:REWRITE-ENGINE: normal_behavior",
+    "observation_key": "OBSERVATION:D5708AB43DF619C288C63ED2",
+    "observed_at": "2026-11-25T02:32:10+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "COMPONENT:REWRITE-ENGINE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:10+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T04:12:28+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:0A2F1147A27EB1E9060E16F4",
+    "claim_value": "\"Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:10+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "id": "CLAIM:0A2F1147A27EB1E9060E16F4",
+    "name": "COMPONENT:REWRITE-ENGINE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T02:32:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:28+00:00",
+  "entity_id": "CLAIM:0A2F1147A27EB1E9060E16F4",
+  "id": "HISTORY:75A69EF641ED650A7F8297BB"
+}

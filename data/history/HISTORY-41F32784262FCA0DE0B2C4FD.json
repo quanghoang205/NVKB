@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:88A14C5BF65842D4E9E3F96E",
+    "claim_value": "\"Các quyết định xác thực và cấu hình phải gắn đúng server được chọn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "id": "CLAIM:88A14C5BF65842D4E9E3F96E",
+    "name": "COMPONENT:VIRTUAL-HOSTS: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2CE4745C499013FC6F0E7F51"
+    ],
+    "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:06+00:00",
+  "entity_id": "CLAIM:88A14C5BF65842D4E9E3F96E",
+  "id": "HISTORY:41F32784262FCA0DE0B2C4FD"
+}

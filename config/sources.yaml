@@ -1,0 +1,16 @@
+nginx:
+  url: https://nginx.org/en/security_advisories.html
+  publisher: NGINX / F5
+  enabled: true
+cve:
+  root: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves
+  publisher: CVE Program
+  enabled: true
+vulnerability_lookup:
+  url: https://vulnerability.circl.lu
+  publisher: CIRCL
+  enabled: true
+debian:
+  url: https://security-tracker.debian.org/tracker/source-package/nginx
+  publisher: Debian Security Team
+  enabled: true

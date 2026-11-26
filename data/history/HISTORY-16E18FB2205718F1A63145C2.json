@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:94FB9F7F3B1CDBE1B05ECF40",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:CEDE3662DBF3C3EA321DA16E",
+    "claim_value": "\"## Lifecycle và responsibility\\n\\nPackage trên đĩa, executable của process và worker generation có thể khác nhau trong một lần cập nhật. Quản trị viên cung cấp bằng chứng restart/rollover và build provenance; thư viện chỉ ghi nhận và đối chiếu. Không quét từ xa hoặc gọi endpoint hệ thống để tự thu inventory. Bằng chứng do quản trị viên khai báo vẫn không là attestation độc lập.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:15+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:CEDE3662DBF3C3EA321DA16E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:PATCH-VERIFICATION: pilot_section:Lifecycle và responsibility",
+    "observed_at": "2026-11-25T04:21:15+00:00",
+    "predicate": "pilot_section:Lifecycle và responsibility",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+    "updated_at": "2026-11-25T04:21:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:15+00:00",
+  "entity_id": "CLAIM:CEDE3662DBF3C3EA321DA16E",
+  "id": "HISTORY:16E18FB2205718F1A63145C2"
+}

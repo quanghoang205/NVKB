@@ -1,0 +1,47 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:F1A75B1745EEDA7A6C0F05FB",
+    "claim_refs": [
+      "CLAIM:64A07138A451C55650906D00"
+    ],
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "description": "Nhãn severity từ upstream; không tự ánh xạ thành CVSS.",
+    "distribution_channel": "NGINX / F5",
+    "entity_type": "Severity",
+    "id": "SEVERITY:5E3DBD0F3CF286848B38A5F6",
+    "name": "NGINX severity: minor",
+    "original_authority": "F5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "NGINX / F5",
+    "severity_label": "minor",
+    "source_refs": [
+      "EVIDENCE:3CC0404EA39658FA0655CA46"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T04:13:12+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:64A07138A451C55650906D00"
+    ],
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "description": "Nhãn severity từ upstream; không tự ánh xạ thành CVSS.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:5E3DBD0F3CF286848B38A5F6",
+    "name": "NGINX severity: minor",
+    "schema_version": "1.0.0",
+    "scoring_authority": "NGINX / F5",
+    "severity_label": "minor",
+    "source_refs": [
+      "EVIDENCE:3CC0404EA39658FA0655CA46"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T02:26:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:12+00:00",
+  "entity_id": "SEVERITY:5E3DBD0F3CF286848B38A5F6",
+  "id": "HISTORY:A71551930862219B42CCA77A"
+}

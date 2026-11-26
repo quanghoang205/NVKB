@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:6EFA5D627AC4DC1998250119",
+  "authority": "MITRE CWE",
+  "claim_id": "CLAIM:240685A26BEC532BD8384C22",
+  "claim_value": "\"CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:02+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#Description; #Potential_Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:3F3B7A9F2EE582122C10045B"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:240685A26BEC532BD8384C22",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "UNVERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "WEAKNESS:CWE-863: pilot_source_statement",
+  "observed_at": "2026-11-25T04:21:02+00:00",
+  "predicate": "pilot_source_statement",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read cwe863 at #Description; #Potential_Mitigations; compared the statement with the documented mechanism. Supports the bounded source statement; no independent implementation or human verification.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:02+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:3F3B7A9F2EE582122C10045B"
+  ],
+  "source_support_status": "SUPPORTED",
+  "subject_entity_id": "WEAKNESS:CWE-863",
+  "updated_at": "2026-11-25T04:21:02+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "UNVERIFIED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:42+00:00; deployment version not established"
+}

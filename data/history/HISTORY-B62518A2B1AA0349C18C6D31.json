@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4E510C2DC0C18617884246A9",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "claim_value": "\"Client gửi command có tag; server phản hồi và quản lý trạng thái authenticated/selected cùng dữ liệu mailbox.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:878D849708474C43DE32D05B: Protocol overview and state machine; topic=PROTOCOL:IMAP",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:IMAP: normal_behavior",
+    "observation_key": "OBSERVATION:9C483C303A478A079C68F747",
+    "observed_at": "2026-11-25T02:44:25+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "PROTOCOL:IMAP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:27+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T04:12:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "claim_value": "\"Client gửi command có tag; server phản hồi và quản lý trạng thái authenticated/selected cùng dữ liệu mailbox.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "name": "PROTOCOL:IMAP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:40+00:00",
+  "entity_id": "CLAIM:6D7B04A76771FE4D351B3049",
+  "id": "HISTORY:B62518A2B1AA0349C18C6D31"
+}

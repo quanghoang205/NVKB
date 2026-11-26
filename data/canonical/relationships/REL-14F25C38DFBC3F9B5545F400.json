@@ -1,0 +1,37 @@
+{
+  "claim_refs": [
+    "CLAIM:C459FCC770E3F0CDA9B25D22"
+  ],
+  "created_at": "2026-11-25T05:24:18+00:00",
+  "description": "MODULE:NGX-HTTP-SSI-MODULE REQUIRES_KNOWLEDGE_OF COMPONENT:MEMORY-POOL",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "evidence_locator": "Introduction;",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "LEARNING",
+  "id": "REL:14F25C38DFBC3F9B5545F400",
+  "inference_type": "PEDAGOGICAL",
+  "legacy_verification_status": "INFERRED",
+  "name": "REQUIRES_KNOWLEDGE_OF",
+  "object_entity_id": "COMPONENT:MEMORY-POOL",
+  "predicate": "REQUIRES_KNOWLEDGE_OF",
+  "rationale": "Mục tiêu 'Phân biệt subrequest với client connection mới.' cần mô hình Memory pool: ownership, lifetime và cleanup. Quyết định sư phạm, không là fault location.",
+  "reference_availability": "UNKNOWN",
+  "review_rationale": "Mục tiêu 'Phân biệt subrequest với client connection mới.' cần mô hình Memory pool: ownership, lifetime và cleanup. Quyết định sư phạm, không là fault location.",
+  "review_required": true,
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:24:18+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Subject lesson requires object prerequisite",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:E407E38B58D01A696505E388"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+  "updated_at": "2026-11-25T05:24:18+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-SESSION-CACHE learns_from PROTOCOL:MTLS",
+    "entity_type": "Relationship",
+    "id": "REL:AADC1E961C6679EC1A81EEF0",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:MTLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:734374E097DD08CB87E09B80"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-SESSION-CACHE learns_from PROTOCOL:MTLS",
+    "entity_type": "Relationship",
+    "id": "REL:AADC1E961C6679EC1A81EEF0",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:MTLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:33:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:AADC1E961C6679EC1A81EEF0",
+  "id": "HISTORY:7058E5581C08078700C0982C"
+}

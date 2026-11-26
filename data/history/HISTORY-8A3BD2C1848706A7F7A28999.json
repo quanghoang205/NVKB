@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7CBCF29E944C4CDA5D5D9A2B",
+    "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "id": "CLAIM:7CBCF29E944C4CDA5D5D9A2B",
+    "name": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:7CBCF29E944C4CDA5D5D9A2B",
+  "id": "HISTORY:8A3BD2C1848706A7F7A28999"
+}

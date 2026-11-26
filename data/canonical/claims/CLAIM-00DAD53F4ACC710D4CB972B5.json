@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:3EA4D16E36A9FEFEA68BDE3E",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:00DAD53F4ACC710D4CB972B5",
+  "claim_value": "\"Ranh giới giữa giá trị động của request và cấu hình điều khiển.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:10+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:98E122F56AC9EFC999816DB9: ngx_http_rewrite_module",
+  "evidence_refs": [
+    "EVIDENCE:98E122F56AC9EFC999816DB9"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:00DAD53F4ACC710D4CB972B5",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "COMPONENT:REWRITE-ENGINE: architecture_position",
+  "observation_key": "OBSERVATION:A9FB5738200CA27E6F7FD53D",
+  "observed_at": "2026-11-25T02:32:10+00:00",
+  "predicate": "architecture_position",
+  "product_scope": "COMPONENT:REWRITE-ENGINE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:10+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:98E122F56AC9EFC999816DB9"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+  "updated_at": "2026-11-25T04:12:27+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

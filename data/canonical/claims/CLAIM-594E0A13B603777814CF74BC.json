@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:5953310484F77D7ECD671400",
+  "authority": "Debian Security Team",
+  "authority_scope": "Debian Security Team",
+  "claim_id": "CLAIM:594E0A13B603777814CF74BC",
+  "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:33:08+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:B182E33FA564AB250BC8D7F4: Overview / documented record",
+  "evidence_refs": [
+    "EVIDENCE:B182E33FA564AB250BC8D7F4"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:594E0A13B603777814CF74BC",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "CONCEPT:BACKPORT: defensive_principles",
+  "observation_key": "OBSERVATION:935B85D98F8717DF224CF6A8",
+  "observed_at": "2026-11-25T02:33:08+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "CONCEPT:BACKPORT",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:33:08+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "Debian Security Team",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:B182E33FA564AB250BC8D7F4"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CONCEPT:BACKPORT",
+  "updated_at": "2026-11-25T04:12:37+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

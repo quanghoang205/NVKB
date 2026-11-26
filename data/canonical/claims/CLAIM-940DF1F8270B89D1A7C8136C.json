@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:C316182BE1F56405EA51BDDD",
+  "authority": "NGINX / F5",
+  "claim_id": "CLAIM:940DF1F8270B89D1A7C8136C",
+  "claim_value": "\"Khi nhận HUP, master kiểm tra cấu hình mới và thử áp dụng; nếu thất bại nó quay về cấu hình cũ, nếu thành công nó khởi chạy worker mới và yêu cầu worker cũ kết thúc nhẹ nhàng.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:20:37+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#reconfiguration",
+  "evidence_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:940DF1F8270B89D1A7C8136C",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "UNVERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:MASTER-PROCESS: pilot_source_statement",
+  "observed_at": "2026-11-25T04:20:37+00:00",
+  "predicate": "pilot_source_statement",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read control at #reconfiguration; compared the statement with the documented mechanism. Supports the bounded source statement; no independent implementation or human verification.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:20:37+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "source_support_status": "SUPPORTED",
+  "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+  "updated_at": "2026-11-25T04:20:37+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "UNVERIFIED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:39+00:00; deployment version not established"
+}

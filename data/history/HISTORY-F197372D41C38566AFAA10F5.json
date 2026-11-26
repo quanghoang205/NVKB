@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:5CE8D893DB1E84C747754322",
+    "claim_value": "\"Giao thức bảo mật kênh truyền; note tập trung vào TLS 1.3.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "id": "CLAIM:5CE8D893DB1E84C747754322",
+    "name": "PROTOCOL:TLS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:5CE8D893DB1E84C747754322",
+  "id": "HISTORY:F197372D41C38566AFAA10F5"
+}

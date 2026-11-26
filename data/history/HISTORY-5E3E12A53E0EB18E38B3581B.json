@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-01 learns_from COMPONENT:LOCATION-MATCHING",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:D23FA73C4D82F2C02EDA395D",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:LOCATION-MATCHING",
+    "predicate": "learns_from",
+    "rationale": "Learning Path 01 — NGINX Fundamentals recommends Location matching as background. This legacy curriculum choice has no measured learner validation; not a technical causal edge.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T04:13:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-01 learns_from COMPONENT:LOCATION-MATCHING",
+    "entity_type": "Relationship",
+    "id": "REL:D23FA73C4D82F2C02EDA395D",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:LOCATION-MATCHING",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:09+00:00",
+  "entity_id": "REL:D23FA73C4D82F2C02EDA395D",
+  "id": "HISTORY:5E3E12A53E0EB18E38B3581B"
+}

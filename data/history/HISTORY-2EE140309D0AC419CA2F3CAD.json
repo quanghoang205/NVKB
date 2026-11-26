@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "cwe_id": "CWE-93",
+    "description": "CWE-93 Improper Neutralization of CRLF Sequences ('CRLF Injection')",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-93",
+    "name": "CWE-93",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "updated_at": "2026-11-25T02:27:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:40+00:00",
+  "entity_id": "WEAKNESS:CWE-93",
+  "id": "HISTORY:2EE140309D0AC419CA2F3CAD"
+}

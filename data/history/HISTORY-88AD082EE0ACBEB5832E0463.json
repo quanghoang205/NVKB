@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "e50ccebd8955486eb424d9fa8de8e98b9a4390ebb0b96b17d19268a6b74f76f7",
+    "created_at": "2026-11-25T02:32:43+00:00",
+    "description": "Chuyển tiếp request đến gRPC upstream.",
+    "document_title": "Module ngx_http_grpc_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:A4AD25701CA2C1EE7F32EFF4",
+    "id": "EVIDENCE:A4AD25701CA2C1EE7F32EFF4",
+    "local_snapshot_path": "data/raw/documentation/snapshots/e50ccebd8955486eb424d9fa8de8e98b9a4390ebb0b96b17d19268a6b74f76f7.html",
+    "name": "Module ngx_http_grpc_module",
+    "paraphrase": "Chuyển tiếp request đến gRPC upstream.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:43+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_grpc_module",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_grpc_module.html",
+    "updated_at": "2026-11-25T02:32:43+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:43+00:00",
+  "entity_id": "EVIDENCE:A4AD25701CA2C1EE7F32EFF4",
+  "id": "HISTORY:88AD082EE0ACBEB5832E0463"
+}

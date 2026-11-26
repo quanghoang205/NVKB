@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:8C6453D41A79F7A7B9978E71",
+  "authority": "NGINX official documentation",
+  "authority_scope": "NGINX official documentation",
+  "claim_id": "CLAIM:3631992096B3DC37B61824A8",
+  "claim_value": "\"Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:40:18+00:00",
+  "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:62E808E84BB094E01AC2EC1B: ngx_http_v3_module",
+  "evidence_refs": [
+    "EVIDENCE:62E808E84BB094E01AC2EC1B"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:3631992096B3DC37B61824A8",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "CVE:CVE-2024-32760: normal_component_behavior",
+  "observation_key": "OBSERVATION:86CF16A63C07C2C14F07981D",
+  "observed_at": "2026-11-25T02:40:18+00:00",
+  "predicate": "normal_component_behavior",
+  "product_scope": "CVE:CVE-2024-32760",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:41+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX official documentation",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:62E808E84BB094E01AC2EC1B"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-32760",
+  "updated_at": "2026-11-25T04:12:33+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:229B3CA1E954EE24F534903F",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:78090DCAD466A4A83F66205A",
+    "claim_value": "\"Có thể dẫn tới DoS do suy giảm dịch vụ; chưa có xác nhận memory corruption hoặc RCE.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:78090DCAD466A4A83F66205A",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:potential",
+    "observed_at": "2026-11-25T05:15:13+00:00",
+    "predicate": "v1.3:potential",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:13+00:00",
+  "entity_id": "CLAIM:78090DCAD466A4A83F66205A",
+  "id": "HISTORY:ACDF9FF3DF01FCBDAA455841"
+}

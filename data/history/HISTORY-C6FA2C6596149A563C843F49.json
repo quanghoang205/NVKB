@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c68909d68bc07b019ed85c6b92da2e535d63981f6bdae84b867a5738af5d6dfd",
+    "created_at": "2026-11-25T02:26:11+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2024-24990",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:4DA43556D459ED068CF95469",
+    "id": "EVIDENCE:4DA43556D459ED068CF95469",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/c68909d68bc07b019ed85c6b92da2e535d63981f6bdae84b867a5738af5d6dfd.json",
+    "name": "CVE-2024-24990",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:26:11+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2024-24990",
+    "updated_at": "2026-11-25T02:26:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:11+00:00",
+  "entity_id": "EVIDENCE:4DA43556D459ED068CF95469",
+  "id": "HISTORY:C6FA2C6596149A563C843F49"
+}

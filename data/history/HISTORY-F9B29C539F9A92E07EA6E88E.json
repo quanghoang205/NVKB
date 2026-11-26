@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:6500FD6BEDC4A6BAE021EEAD"
+    ],
+    "created_at": "2026-11-25T02:28:34+00:00",
+    "description": "CVE:CVE-2026-60005 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:00AB2412E27E97A6B4BF0344",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FD87EF5C4B310D3FFAC19E36"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-60005",
+    "updated_at": "2026-11-25T02:28:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:34+00:00",
+  "entity_id": "REL:00AB2412E27E97A6B4BF0344",
+  "id": "HISTORY:F9B29C539F9A92E07EA6E88E"
+}

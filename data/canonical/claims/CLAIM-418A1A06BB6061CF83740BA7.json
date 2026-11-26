@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:7A2EE96544ACC289E9DB4427",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:418A1A06BB6061CF83740BA7",
+  "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:43+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:98E122F56AC9EFC999816DB9: ngx_http_rewrite_module",
+  "evidence_refs": [
+    "EVIDENCE:98E122F56AC9EFC999816DB9"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:418A1A06BB6061CF83740BA7",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-REWRITE-MODULE: defensive_principles",
+  "observation_key": "OBSERVATION:C0540881E3D7ADB47AE69C70",
+  "observed_at": "2026-11-25T02:32:43+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "MODULE:NGX-HTTP-REWRITE-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:10+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:98E122F56AC9EFC999816DB9"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+  "updated_at": "2026-11-25T04:12:34+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

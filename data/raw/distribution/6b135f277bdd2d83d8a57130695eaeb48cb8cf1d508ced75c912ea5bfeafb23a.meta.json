@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:39+00:00",
+  "content_hash": "633267ef08883ae8239f89cc50e5f6b721c492931ed38640257e3e56b039717c",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/633267ef08883ae8239f89cc50e5f6b721c492931ed38640257e3e56b039717c.html",
+  "retrieved_at": "2026-11-25T02:26:39+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-113425"
+}

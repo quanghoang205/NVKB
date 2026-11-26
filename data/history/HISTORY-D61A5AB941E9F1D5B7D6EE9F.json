@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:9FA7F5119BD2449E3C3AFBCA",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:1BDAEAA9CC7170E29F062893",
+    "claim_value": "\"1.23.2-1.31.6\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:57+00:00",
+    "description": "upstream_affected_expression",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:A716EB10BF59F23E716FB566: li containing CVE-2026-97629",
+    "evidence_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1BDAEAA9CC7170E29F062893",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-97629: upstream_affected_expression",
+    "observation_key": "OBSERVATION:EEB784F3D5442952E64050D9",
+    "observed_at": "2026-11-25T02:28:57+00:00",
+    "predicate": "upstream_affected_expression",
+    "product_scope": "CVE:CVE-2026-97629",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T04:12:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1BDAEAA9CC7170E29F062893",
+    "claim_value": "\"1.23.2-1.31.6\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:57+00:00",
+    "description": "upstream_affected_expression",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "id": "CLAIM:1BDAEAA9CC7170E29F062893",
+    "name": "CVE:CVE-2026-97629: upstream_affected_expression",
+    "predicate": "upstream_affected_expression",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:30+00:00",
+  "entity_id": "CLAIM:1BDAEAA9CC7170E29F062893",
+  "id": "HISTORY:D61A5AB941E9F1D5B7D6EE9F"
+}

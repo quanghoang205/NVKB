@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3732FFC0CC92B9E836833F00",
+    "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:31+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D32367C77A9F742D86D1CF52"
+    ],
+    "id": "CLAIM:3732FFC0CC92B9E836833F00",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D32367C77A9F742D86D1CF52"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:31+00:00",
+  "entity_id": "CLAIM:3732FFC0CC92B9E836833F00",
+  "id": "HISTORY:89914EE8863B8F986E2F0C63"
+}

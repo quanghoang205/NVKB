@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:86279142E0FFAC3AB1B5AE53",
+    "claim_value": "\"Đường lỗi không tiếp tục như đường thành công.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:36+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E080BE810C888D9012E21ECF"
+    ],
+    "id": "CLAIM:86279142E0FFAC3AB1B5AE53",
+    "name": "WEAKNESS:CWE-476: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E080BE810C888D9012E21ECF"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-476",
+    "updated_at": "2026-11-25T02:32:36+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:36+00:00",
+  "entity_id": "CLAIM:86279142E0FFAC3AB1B5AE53",
+  "id": "HISTORY:F73373DC4DCAE8401D8015F9"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CIRCL mirror",
+    "claim_id": "CLAIM:30332CFFD97F8422B7232EB1",
+    "claim_value": "[{\"lessThan\": \"1.26.1\", \"status\": \"affected\", \"version\": \"1.25.0\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "cna_version_data:CIRCL mirror",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E28D8CD66261432B86752BDA"
+    ],
+    "id": "CLAIM:30332CFFD97F8422B7232EB1",
+    "name": "CVE:CVE-2024-31079: cna_version_data:CIRCL mirror",
+    "predicate": "cna_version_data:CIRCL mirror",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E28D8CD66261432B86752BDA"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "CLAIM:30332CFFD97F8422B7232EB1",
+  "id": "HISTORY:3B684D084F7BE23DAA5C0912"
+}

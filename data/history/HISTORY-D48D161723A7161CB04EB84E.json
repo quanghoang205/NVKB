@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:038B596AE267BBC41A915D79",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:9B62E19F3BF67A989593DBE5",
+    "claim_value": "\"## Bài tập và tradeoff\\n\\nTrên giấy so package bookworm đúng nguồn với ngưỡng [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]], sau đó liệt kê điều chưa biết về runtime. Backport giúp ổn định ABI và hệ sinh thái, nhưng người đọc phải theo dõi provenance thay vì chỉ nhìn upstream release. Bản custom dùng số tương tự cần NEEDS_REVIEW khi chưa có build evidence.\\n\\nNgộ nhận: thấp hơn upstream fix luôn bị ảnh hưởng; cao hơn fixed package chứng minh mọi process đã thay; Ubuntu/RPM tự có support vì có comparator. Câu hỏi mở là repository, package origin và bằng chứng chuyển binary do quản trị viên cung cấp.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:13+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "evidence_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9B62E19F3BF67A989593DBE5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:BACKPORT: pilot_section:Bài tập và tradeoff",
+    "observed_at": "2026-11-25T04:21:13+00:00",
+    "predicate": "pilot_section:Bài tập và tradeoff",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read debian at table Fixed Version; package=nginx; release=bookworm; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:21:13+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T04:21:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:12:54+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:038B596AE267BBC41A915D79",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:9B62E19F3BF67A989593DBE5",
+    "claim_value": "\"## Bài tập và tradeoff\\n\\nTrên giấy so package bookworm đúng nguồn với ngưỡng [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]], sau đó liệt kê điều chưa biết về runtime. Backport giúp ổn định ABI và hệ sinh thái, nhưng người đọc phải theo dõi provenance thay vì chỉ nhìn upstream release. Bản custom dùng số tương tự cần NEEDS_REVIEW khi chưa có build evidence.\\n\\nNgộ nhận: thấp hơn upstream fix luôn bị ảnh hưởng; cao hơn fixed package chứng minh mọi process đã thay; Ubuntu/RPM tự có support vì có comparator. Câu hỏi mở là repository, package origin và bằng chứng chuyển binary do quản trị viên cung cấp.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:13+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9B62E19F3BF67A989593DBE5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:BACKPORT: pilot_section:Bài tập và tradeoff",
+    "observed_at": "2026-11-25T04:21:13+00:00",
+    "predicate": "pilot_section:Bài tập và tradeoff",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T04:21:13+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:21:13+00:00",
+  "entity_id": "CLAIM:9B62E19F3BF67A989593DBE5",
+  "id": "HISTORY:D48D161723A7161CB04EB84E"
+}

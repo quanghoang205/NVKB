@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:FE5047DDBDAEFF6F1186399B",
+  "authority": "Debian Security Team",
+  "authority_scope": "Debian Security Team",
+  "claim_id": "CLAIM:BD451E0122C5D13FDC3C383A",
+  "claim_value": "{\"distribution\": \"debian\", \"fixed_version\": \"\", \"patch_status\": \"not-affected\", \"release\": \"unstable\"}",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:04+00:00",
+  "description": "distribution_patch_status",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:65E6A79A625A16EFB72B47C3: table Fixed Version; package=nginx; release=(unstable)",
+  "evidence_refs": [
+    "EVIDENCE:65E6A79A625A16EFB72B47C3"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:BD451E0122C5D13FDC3C383A",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "PACKAGE:E54AE3E30E1BB84AB3E1E1F9: distribution_patch_status",
+  "observation_key": "OBSERVATION:DF85B675BCC55EE5E68BE78C",
+  "observed_at": "2026-11-25T02:28:04+00:00",
+  "predicate": "distribution_patch_status",
+  "product_scope": "PACKAGE:E54AE3E30E1BB84AB3E1E1F9",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:04+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "Debian Security Team",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:65E6A79A625A16EFB72B47C3"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PACKAGE:E54AE3E30E1BB84AB3E1E1F9",
+  "updated_at": "2026-11-25T04:12:48+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

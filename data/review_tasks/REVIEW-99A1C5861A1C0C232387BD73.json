@@ -1,0 +1,10 @@
+{
+  "id": "REVIEW:99A1C5861A1C0C232387BD73",
+  "new_claim": "CLAIM:B4E813ECF37B977DB074D388",
+  "observed_at": "2026-11-25T04:28:17+00:00",
+  "prior_claims": [
+    "CLAIM:23934EA8BD65CAFF4966661A"
+  ],
+  "reason": "SOURCE_STATEMENT_CHANGED",
+  "status": "PENDING"
+}

@@ -1,0 +1,117 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Không thể kết luận vậy; có thể có các owner khác còn chờ hoặc cache còn hiệu lực. Cần contract chia sẻ và lifetime thực tế.",
+    "architecture_position": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-D4BF028B5E46E158B345BE41|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nKhi cần địa chỉ từ một tên upstream, resolver gửi truy vấn đến name server cấu hình và nhận kết quả để kết nối. Tài liệu NGINX mô tả cache theo TTL và khả năng cấu hình thời gian hiệu lực. Timeout chờ truy vấn không cùng ý nghĩa với thời hạn cache: hết thời gian chờ của một request không buộc mọi kết quả cache phải biến mất.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-8BE294EE9896545CFC3EC6C9|Claim của section]].\n\n## Ownership và lifecycle\n\nMô hình thiết kế gồm yêu cầu phân giải, state truy vấn và những công việc ứng dụng đang chờ. Nhiều request hoặc subrequest có thể cần cùng tên nhưng có thời gian kết thúc khác nhau. Chia sẻ kết quả tiết kiệm truy vấn; nó không có nghĩa mọi người chờ chung một lifetime. Khi client hủy request hoặc tác vụ OCSP kết thúc, callback chưa chạy phải không còn quyền dùng context đã giải phóng.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-78E124EF6650F5ED2AAFBA8D|Claim của section]].\n\n## Invariant và trust boundary\n\nDiễn giải: mỗi callback trả lời phải tìm được một owner còn hợp lệ, và chỉ tác động đúng tác vụ đang chờ. Trả lời DNS là dữ liệu, không phải chứng cứ peer được phép phục vụ ứng dụng. TLS identity verification và authorization vẫn là nghĩa vụ riêng sau khi đã có địa chỉ. Giới hạn phạm vi resolver có ích cho vận hành nhưng không sửa UAF trong quản lý callback.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-5207086B18714E0BBD06C4A3|Claim của section]].\n\n## Tradeoff và kiểm soát\n\nCache lâu giảm latency và lưu lượng truy vấn nhưng trì hoãn phản ánh thay đổi; nhiều truy vấn đồng thời tăng state chờ. Giới hạn timeout giảm thời gian giữ tài nguyên, đồng thời tạo thêm nhánh cleanup phải đúng. Đọc riêng CVE OCSP và CVE subrequest: chúng cùng dùng resolver nhưng không chứng minh cùng đường lỗi. Tài liệu directive không cho đủ cấu trúc dữ liệu nội bộ để xác định fault location bằng từ khóa.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-B94FC2AAA573561E1A8231A1|Claim của section]].",
+    "assessment": "Subrequest bị hủy có cho phép giải phóng mọi state DNS của tên mà nó dùng không?",
+    "claim_refs": [
+      "CLAIM:D4BF028B5E46E158B345BE41",
+      "CLAIM:8BE294EE9896545CFC3EC6C9",
+      "CLAIM:78E124EF6650F5ED2AAFBA8D",
+      "CLAIM:5207086B18714E0BBD06C4A3",
+      "CLAIM:B94FC2AAA573561E1A8231A1"
+    ],
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Directive resolver chỉ định name servers để phân giải tên upstream; tài liệu mô tả TTL/cache, phạm vi truy vấn và timeout. Resolver context không phải identity đã được TLS xác thực.",
+    "description": "Directive resolver chỉ định name servers để phân giải tên upstream; tài liệu mô tả TTL/cache, phạm vi truy vấn và timeout. Resolver context không phải identity đã được TLS xác thực.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:DNS",
+    "learning_objectives": [
+      "Phân biệt cached DNS result với context chờ của request.",
+      "Giải thích vì sao timeout và cancellation cần ownership riêng."
+    ],
+    "name": "DNS resolver — cache, công việc chờ và quyền sở hữu",
+    "normal_behavior": "Resolver gửi truy vấn, kiểm tra response và theo dõi các bản ghi cùng thời gian sống; việc dùng kết quả còn phụ thuộc chính sách ứng dụng.",
+    "prerequisites": [
+      "COMPONENT:EVENT-DRIVEN",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [
+      "COMPONENT:EVENT-DRIVEN",
+      "COMPONENT:CONNECTION-LIFECYCLE"
+    ],
+    "research_claim_refs": [
+      "CLAIM:D4BF028B5E46E158B345BE41",
+      "CLAIM:8BE294EE9896545CFC3EC6C9",
+      "CLAIM:78E124EF6650F5ED2AAFBA8D",
+      "CLAIM:5207086B18714E0BBD06C4A3",
+      "CLAIM:B94FC2AAA573561E1A8231A1"
+    ],
+    "safety_assumptions": "Phản hồi phải tương ứng truy vấn và trạng thái callback còn hiệu lực.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "updated_at": "2026-11-25T05:18:38+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "claim_refs": [
+      "CLAIM:D09795D44F8C5444AE8C8017",
+      "CLAIM:AA73B9B4262DA3C6F147624B",
+      "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+      "CLAIM:29F945FD7DE3CFCFE6AA7DA0",
+      "CLAIM:233D789E955C70D3E8887AB6",
+      "CLAIM:048A2BAEA50ACD2AB24FBE06",
+      "CLAIM:584D292B17C7AD0F604DF79C",
+      "CLAIM:8B422C3742B58ACA2C7BDB34"
+    ],
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Hệ thống phân giải tên phân cấp.",
+    "description": "Hệ thống phân giải tên phân cấp.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:DNS",
+    "learning_objectives": [
+      "Giải thích DNS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "DNS",
+    "normal_behavior": "Resolver gửi truy vấn, kiểm tra response và theo dõi các bản ghi cùng thời gian sống; việc dùng kết quả còn phụ thuộc chính sách ứng dụng.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Phản hồi phải tương ứng truy vấn và trạng thái callback còn hiệu lực.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:18:38+00:00",
+  "entity_id": "PROTOCOL:DNS",
+  "id": "HISTORY:111A576658BA4894EFECAFF4"
+}

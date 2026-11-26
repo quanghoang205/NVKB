@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "481f04caca2f4df450dfa3b23be8b8f893104dd936ef62bddb548f23cc3273da",
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "document_title": "CVE-2026-118899",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:09CABD0B8CF64AF21A22F038",
+    "id": "EVIDENCE:09CABD0B8CF64AF21A22F038",
+    "local_snapshot_path": "data/raw/distribution/snapshots/481f04caca2f4df450dfa3b23be8b8f893104dd936ef62bddb548f23cc3273da.html",
+    "name": "CVE-2026-118899",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:42+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-118899",
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:42+00:00",
+  "entity_id": "EVIDENCE:09CABD0B8CF64AF21A22F038",
+  "id": "HISTORY:83E96CF5B0BA85999EBF214B"
+}

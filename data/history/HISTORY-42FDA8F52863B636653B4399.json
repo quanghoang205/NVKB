@@ -1,0 +1,98 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Không trong mô hình đa tiến trình: worker xử lý kết nối; master điều phối lifecycle ([[CLAIM-707C7FEECCD5DA9B16C00F49|nhận định nguồn: CLAIM:707C7FEECCD5DA9B16C00F49]]).\n2. Chưa. Khóa phía client chỉ mô tả một đoạn. Cần cấu hình và bằng chứng TLS của kết nối upstream; đáp án UNKNOWN là đúng khi thiếu dữ liệu. Mỗi câu 0–2 điểm: kết luận và lý do tách biệt.",
+    "architecture_position": "Worker nằm giữa client connection và upstream connection; master ở đường điều khiển.",
+    "article_body": "## Mô hình hệ thống và phạm vi\n\nNGINX reverse proxy tiếp nhận HTTP từ client và tạo trao đổi riêng với upstream. Trong mô hình đa tiến trình thông thường, đường điều khiển của master khác đường xử lý lưu lượng của worker. [[CLAIM-707C7FEECCD5DA9B16C00F49|nhận định nguồn: CLAIM:707C7FEECCD5DA9B16C00F49]] Mô hình này không có nghĩa master chuyển từng request cho worker: worker có event loop và các connection riêng. Cache manager/loader có trách nhiệm phụ trợ nếu tính năng tương ứng được dùng; cấu hình single-process là ngoại lệ được development guide mô tả.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-09D1B7D1254633EA0912593B|Claim theo section]].\n\n## Cơ chế và ownership\n\nMột client connection và một upstream connection là hai đối tượng có thời hạn, timeout và lỗi riêng. Worker tiếp nhận dữ liệu, chọn cấu hình HTTP, thực hiện các phase, rồi gửi nội dung ra socket; khi proxy, upstream có thể được tái sử dụng theo cấu hình. Request không sở hữu toàn bộ thế giới bên ngoài nó. Những tài nguyên được chia sẻ giữa worker phải có cơ chế shared memory riêng; một biến trong heap worker không tự trở thành trạng thái chung.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-18D76E6F6595D97C49E03B06|Claim theo section]].\n\n## Security boundary không phải hộp trên sơ đồ\n\nPhần này là suy luận phòng vệ từ cấu trúc trên. Ranh giới client → proxy cần quyết định dữ liệu nào được tin; proxy → upstream cần xác định danh tính đích và chính sách truyền metadata. Master → worker là quan hệ quản lý tiến trình, chưa tự chứng minh mỗi virtual host bị cô lập như một container. TLS kết thúc tại proxy cũng không tự làm đoạn upstream được mã hóa. Những điều này phải được kiểm tra từ cấu hình triển khai, không suy ra từ vị trí trong sơ đồ.\n\nInvariant thiết kế: chỉ dùng một thuộc tính identity để quyết định quyền nếu nguồn sinh thuộc tính đó và nơi kiểm tra nó đã được xác định. Đổi tên header không tạo ra nguồn tin cậy. Một bản vẽ tốt ghi cả ai tạo state, ai dùng state và ai hủy state.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-55DD3F817F5A0AFD2BD32A94|Claim theo section]].\n\n## Tradeoff và ví dụ phòng vệ\n\nMô hình nhiều worker tận dụng nhiều CPU; shared cache cải thiện tái sử dụng nhưng thêm state có scope khác heap cục bộ. Buffering có thể giảm phụ thuộc tốc độ giữa hai đầu, đổi lại chi phí bộ nhớ/đĩa và latency. Đây là lựa chọn thiết kế, không bảo đảm throughput trong mọi workload.\n\nBài tập giấy: với sơ đồ client → proxy → ứng dụng, đánh dấu nơi TLS kết thúc và nơi ứng dụng kiểm tra quyền đọc tài liệu. Nếu chưa có cấu hình upstream, ghi UNKNOWN cho bảo vệ đoạn đó. Không tạo traffic hoặc dùng địa chỉ hệ thống thật.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-92CB6FA3C918C8A2BEC4A016|Claim theo section]].\n\n## Ngộ nhận và câu hỏi mở\n\nMột worker không phải một virtual host. Có TLS không đồng nghĩa đã cấp quyền đúng. Chưa có inventory, build flags hoặc cấu hình thật để xác nhận các ranh giới trong một deployment cụ thể. Nguồn: development guide theo snapshot, không cam kết mọi module bên thứ ba.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-BBD6C877F9D37C6D536B6600|Claim theo section]].\n",
+    "assessment": "1. Master có cần xử lý từng request để điều phối worker không? Giải thích đường điều khiển.\n2. Một sơ đồ có hai hộp proxy/app và biểu tượng khóa phía client đã chứng minh TLS phía upstream chưa?",
+    "claim_refs": [
+      "CLAIM:707C7FEECCD5DA9B16C00F49",
+      "CLAIM:09D1B7D1254633EA0912593B",
+      "CLAIM:18D76E6F6595D97C49E03B06",
+      "CLAIM:55DD3F817F5A0AFD2BD32A94",
+      "CLAIM:92CB6FA3C918C8A2BEC4A016",
+      "CLAIM:BBD6C877F9D37C6D536B6600"
+    ],
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Lập sơ đồ trust boundary, kiểm tra TLS từng chặng và giới hạn header tin cậy.",
+    "definition": "Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối client.",
+    "description": "Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối client.",
+    "diagram": "flowchart LR\n  C[Client] -->|HTTP hoặc TLS theo cấu hình| W[Worker: event loop]\n  M[Master: cấu hình và lifecycle] -. điều khiển .-> W\n  W -->|kết nối upstream riêng| U[Ứng dụng]\n  W --- S[Shared zone nếu có]\n  W --- H[Heap riêng của worker]",
+    "entity_type": "DeploymentArchitecture",
+    "failure_impact": "Rò rỉ thông tin hoặc routing sai tùy ứng dụng.",
+    "id": "DEPLOYMENT:REVERSE-PROXY",
+    "learning_objectives": [
+      "Vẽ đường đi request qua worker và upstream, phân biệt với đường điều khiển của master.",
+      "Chỉ ra ba nơi cần kiểm chứng identity hoặc policy trong một reverse proxy được quản trị."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Kiến trúc NGINX: tiến trình, kết nối và ranh giới tin cậy",
+    "normal_behavior": "Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối client.",
+    "prerequisites": [],
+    "related_failure_classes": "Header trust errors; parsing differences.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Identity được dùng cho policy phải có nguồn sinh và nơi xác minh được xác định.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Tin cậy client→proxy và proxy→ứng dụng phải xác định riêng; process topology không chứng minh tenant isolation.",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "updated_at": "2026-11-25T04:30:42+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "answer_explanations": "1. Không trong mô hình đa tiến trình: worker xử lý kết nối; master điều phối lifecycle ([[CLAIM-707C7FEECCD5DA9B16C00F49|nhận định nguồn: CLAIM:707C7FEECCD5DA9B16C00F49]]).\n2. Chưa. Khóa phía client chỉ mô tả một đoạn. Cần cấu hình và bằng chứng TLS của kết nối upstream; đáp án UNKNOWN là đúng khi thiếu dữ liệu. Mỗi câu 0–2 điểm: kết luận và lý do tách biệt.",
+    "architecture_position": "Client → NGINX → backend.",
+    "article_body": "## Mô hình hệ thống và phạm vi\n\nNGINX reverse proxy tiếp nhận HTTP từ client và tạo trao đổi riêng với upstream. Trong mô hình đa tiến trình thông thường, đường điều khiển của master khác đường xử lý lưu lượng của worker. [[CLAIM-707C7FEECCD5DA9B16C00F49|nhận định nguồn: CLAIM:707C7FEECCD5DA9B16C00F49]] Mô hình này không có nghĩa master chuyển từng request cho worker: worker có event loop và các connection riêng. Cache manager/loader có trách nhiệm phụ trợ nếu tính năng tương ứng được dùng; cấu hình single-process là ngoại lệ được development guide mô tả.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-09D1B7D1254633EA0912593B|Claim theo section]].\n\n## Cơ chế và ownership\n\nMột client connection và một upstream connection là hai đối tượng có thời hạn, timeout và lỗi riêng. Worker tiếp nhận dữ liệu, chọn cấu hình HTTP, thực hiện các phase, rồi gửi nội dung ra socket; khi proxy, upstream có thể được tái sử dụng theo cấu hình. Request không sở hữu toàn bộ thế giới bên ngoài nó. Những tài nguyên được chia sẻ giữa worker phải có cơ chế shared memory riêng; một biến trong heap worker không tự trở thành trạng thái chung.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-18D76E6F6595D97C49E03B06|Claim theo section]].\n\n## Security boundary không phải hộp trên sơ đồ\n\nPhần này là suy luận phòng vệ từ cấu trúc trên. Ranh giới client → proxy cần quyết định dữ liệu nào được tin; proxy → upstream cần xác định danh tính đích và chính sách truyền metadata. Master → worker là quan hệ quản lý tiến trình, chưa tự chứng minh mỗi virtual host bị cô lập như một container. TLS kết thúc tại proxy cũng không tự làm đoạn upstream được mã hóa. Những điều này phải được kiểm tra từ cấu hình triển khai, không suy ra từ vị trí trong sơ đồ.\n\nInvariant thiết kế: chỉ dùng một thuộc tính identity để quyết định quyền nếu nguồn sinh thuộc tính đó và nơi kiểm tra nó đã được xác định. Đổi tên header không tạo ra nguồn tin cậy. Một bản vẽ tốt ghi cả ai tạo state, ai dùng state và ai hủy state.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-55DD3F817F5A0AFD2BD32A94|Claim theo section]].\n\n## Tradeoff và ví dụ phòng vệ\n\nMô hình nhiều worker tận dụng nhiều CPU; shared cache cải thiện tái sử dụng nhưng thêm state có scope khác heap cục bộ. Buffering có thể giảm phụ thuộc tốc độ giữa hai đầu, đổi lại chi phí bộ nhớ/đĩa và latency. Đây là lựa chọn thiết kế, không bảo đảm throughput trong mọi workload.\n\nBài tập giấy: với sơ đồ client → proxy → ứng dụng, đánh dấu nơi TLS kết thúc và nơi ứng dụng kiểm tra quyền đọc tài liệu. Nếu chưa có cấu hình upstream, ghi UNKNOWN cho bảo vệ đoạn đó. Không tạo traffic hoặc dùng địa chỉ hệ thống thật.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-92CB6FA3C918C8A2BEC4A016|Claim theo section]].\n\n## Ngộ nhận và câu hỏi mở\n\nMột worker không phải một virtual host. Có TLS không đồng nghĩa đã cấp quyền đúng. Chưa có inventory, build flags hoặc cấu hình thật để xác nhận các ranh giới trong một deployment cụ thể. Nguồn: development guide theo snapshot, không cam kết mọi module bên thứ ba.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-BBD6C877F9D37C6D536B6600|Claim theo section]].\n",
+    "assessment": "1. Master có cần xử lý từng request để điều phối worker không? Giải thích đường điều khiển.\n2. Một sơ đồ có hai hộp proxy/app và biểu tượng khóa phía client đã chứng minh TLS phía upstream chưa?",
+    "claim_refs": [
+      "CLAIM:707C7FEECCD5DA9B16C00F49",
+      "CLAIM:09D1B7D1254633EA0912593B",
+      "CLAIM:18D76E6F6595D97C49E03B06",
+      "CLAIM:55DD3F817F5A0AFD2BD32A94",
+      "CLAIM:92CB6FA3C918C8A2BEC4A016",
+      "CLAIM:BBD6C877F9D37C6D536B6600"
+    ],
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Lập sơ đồ trust boundary, kiểm tra TLS từng chặng và giới hạn header tin cậy.",
+    "definition": "Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối client.",
+    "description": "Trong mô hình đa tiến trình, master điều phối cấu hình và các tiến trình con; worker xử lý kết nối client.",
+    "diagram": "flowchart LR\n  C[Client] -->|HTTP hoặc TLS theo cấu hình| W[Worker: event loop]\n  M[Master: cấu hình và lifecycle] -. điều khiển .-> W\n  W -->|kết nối upstream riêng| U[Ứng dụng]\n  W --- S[Shared zone nếu có]\n  W --- H[Heap riêng của worker]",
+    "entity_type": "DeploymentArchitecture",
+    "failure_impact": "Rò rỉ thông tin hoặc routing sai tùy ứng dụng.",
+    "id": "DEPLOYMENT:REVERSE-PROXY",
+    "learning_objectives": [
+      "Vẽ đường đi request qua worker và upstream, phân biệt với đường điều khiển của master.",
+      "Chỉ ra ba nơi cần kiểm chứng identity hoặc policy trong một reverse proxy được quản trị."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Kiến trúc NGINX: tiến trình, kết nối và ranh giới tin cậy",
+    "normal_behavior": "TLS và HTTP policy có thể kết thúc tại NGINX; upstream có kết nối và trust context riêng.",
+    "prerequisites": [],
+    "related_failure_classes": "Header trust errors; parsing differences.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Không chuyển tiếp danh tính giả định mà không kiểm tra.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Client → NGINX → backend.",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "updated_at": "2026-11-25T04:20:37+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "changed_at": "2026-11-25T04:30:42+00:00",
+  "entity_id": "DEPLOYMENT:REVERSE-PROXY",
+  "id": "HISTORY:42FDA8F52863B636653B4399"
+}

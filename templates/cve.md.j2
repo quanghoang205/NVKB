@@ -1,0 +1,112 @@
+{{ frontmatter }}
+# {{ item.cve_id }}
+
+{% if item.get('curation_version') == '1.3.0' %}
+{{ item.research_body }}
+
+<details>
+<summary>Provenance và các observation lịch sử</summary>
+
+{% include 'claim_trace.md.j2' %}
+
+</details>
+
+[[MOC-CVE-Encyclopedia|CVE Encyclopedia]] · [[Learning-Library|Learning Library]] · [[Research-Library|Provenance Library]]
+{% else %}
+## Executive Summary
+
+{{ item.educational_summary }}
+
+{% if item.get('research_body') %}{{ item.research_body }}
+{% endif %}
+
+## Technical Background
+
+{{ item.description }}
+
+## Normal Component Behavior
+
+{{ item.normal_component_behavior }}
+
+## Diễn giải nguyên nhân ở mức cao (chưa review mã nguồn)
+
+{{ item.root_cause_summary }}
+
+Giả định an toàn: {{ item.security_assumption_violated }}
+
+## Affected Product and Versions
+
+Sản phẩm: {{ links(item.affected_products) }}
+
+Phạm vi upstream: `{{ item.upstream_affected_expression }}`.
+
+Bản sửa theo advisory: {{ links(item.fixed_versions) }}.
+
+## Documented Applicability
+
+{{ item.documented_configuration_context }}
+
+{{ item.applicability_limitations }}
+
+## Confirmed and Potential Impact
+
+{{ item.confirmed_impact }}
+
+Tác động tiềm năng chưa xác minh: {{ item.potential_impact }}
+
+{{ item.impact_limitations }}
+
+Đánh giá severity theo authority gốc (kênh mirror được nhóm):
+
+{% for group in severity_groups %}- {{ group.authority }}: {{ group.score }} — {{ group.vector }}. {{ links(group.ids) }}
+{% endfor %}
+
+## Patch and Mitigation
+
+{{ links(item.fixed_release_refs) }} {{ links(item.patch_refs) }}
+
+Backport/package: {{ links(item.distribution_status) or 'Chưa có bằng chứng distribution.' }}
+
+{% for recommendation in item.defensive_recommendations %}- {{ recommendation }}
+{% endfor %}
+
+{{ item.remediation_limitations }}
+
+{% include 'relationships.md.j2' %}
+
+## Architecture Context
+
+{{ links(item.related_components) }} {{ links(item.related_modules) }} {{ links(item.related_protocols) }}
+
+Security boundary: {{ item.security_boundary }}
+
+## Learning Objectives
+
+{% for objective in item.learning_objectives %}- {{ objective }}
+{% endfor %}
+
+## Related Knowledge
+
+{{ links(item.related_weaknesses) }} {{ links(item.condition_refs) }}
+
+## Evidence and References
+
+{% include 'claim_trace.md.j2' %}
+
+{{ links(item.reference_refs) }}
+
+## Verification Status
+
+**Legacy {{ item.verification_status }}** — nhãn của pipeline nhập liệu. Đọc source support, lifecycle và reviewer status ở từng Claim; không là human approval hay phép đo factual accuracy.
+
+Ngày công bố: {{ item.get('publication_date', 'UNKNOWN') }}. Năm CVE ID: {{ item.cve_year }}.
+
+Đối chiếu nguồn lần cuối: {{ item.last_verified_at }}.
+
+## Unresolved Questions
+
+{% for question in item.unknown_conditions %}- {{ question }}
+{% endfor %}
+{% for conflict in item.unresolved_conflicts %}- Conflict: `{{ conflict }}` — xem [[Source-Conflicts]].
+{% endfor %}
+{% endif %}

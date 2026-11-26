@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Connection state ↔ từng stream.",
+    "claim_refs": [
+      "CLAIM:3CE7902880C967C01A7603A9",
+      "CLAIM:38538C39E54F29996CF6A5B6",
+      "CLAIM:C0974F86BBEAB58AD4F60BB0",
+      "CLAIM:71185AAC51F4C37A91B6EF2E",
+      "CLAIM:CB7CF9D5B2EA75C527F963BE",
+      "CLAIM:1DB6C1BBC213BEDBCF48ECFD",
+      "CLAIM:0C418A9F7156D57CA8E3F9FA",
+      "CLAIM:70886AC1167E4805ED16A652"
+    ],
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "description": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-2",
+    "learning_objectives": [
+      "Giải thích HTTP/2 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP/2",
+    "normal_behavior": "Frame được gắn stream ID; flow control và trạng thái stream điều phối nhiều request/response trên kết nối.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Giới hạn tài nguyên và cập nhật trạng thái stream phải nhất quán.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Connection state ↔ từng stream.",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:19+00:00",
+  "entity_id": "PROTOCOL:HTTP-2",
+  "id": "HISTORY:3ABFB28CAFB98E3D824153DE"
+}

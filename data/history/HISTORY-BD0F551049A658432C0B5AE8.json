@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078",
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "document_title": "Module ngx_stream_ssl_preread_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:15AE23603CC592238936C538",
+    "id": "EVIDENCE:15AE23603CC592238936C538",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078.html",
+    "name": "Module ngx_stream_ssl_preread_module",
+    "paraphrase": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:56+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_stream_ssl_preread_module; topic=MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "EVIDENCE:15AE23603CC592238936C538",
+  "id": "HISTORY:BD0F551049A658432C0B5AE8"
+}

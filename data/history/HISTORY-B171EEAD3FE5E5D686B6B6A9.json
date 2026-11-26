@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:E9B4EE32790A0555A67246E4",
+    "claim_value": "\"low\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "description": "vendor_severity_label",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D"
+    ],
+    "id": "CLAIM:E9B4EE32790A0555A67246E4",
+    "name": "CVE:CVE-2026-27651: vendor_severity_label",
+    "predicate": "vendor_severity_label",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T02:27:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:29+00:00",
+  "entity_id": "CLAIM:E9B4EE32790A0555A67246E4",
+  "id": "HISTORY:B171EEAD3FE5E5D686B6B6A9"
+}

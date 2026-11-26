@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:B4EDFAF670DD80F667CBD3E8"
+    ],
+    "created_at": "2026-11-25T02:26:20+00:00",
+    "description": "CVE:CVE-2024-32760 distribution_fix PACKAGE:32CF9B945A7F9D74EF161BF4",
+    "entity_type": "Relationship",
+    "id": "REL:642B4611E426B3FC0BE80F01",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:32CF9B945A7F9D74EF161BF4",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:612BCFB1AD79CF53BA24AB5F"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-32760",
+    "updated_at": "2026-11-25T02:26:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:20+00:00",
+  "entity_id": "REL:642B4611E426B3FC0BE80F01",
+  "id": "HISTORY:535703844A19362CAD4AEC1C"
+}

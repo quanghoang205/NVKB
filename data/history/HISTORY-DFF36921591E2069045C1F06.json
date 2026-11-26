@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C2E9518AB84BC6EDEE852353",
+    "claim_value": "\"mail subsystem của NGINX; giữa input protocol và handler cấu hình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:53+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "id": "CLAIM:C2E9518AB84BC6EDEE852353",
+    "name": "MODULE:NGX-MAIL-PROXY-MODULE: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-PROXY-MODULE",
+    "updated_at": "2026-11-25T02:32:53+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:53+00:00",
+  "entity_id": "CLAIM:C2E9518AB84BC6EDEE852353",
+  "id": "HISTORY:DFF36921591E2069045C1F06"
+}

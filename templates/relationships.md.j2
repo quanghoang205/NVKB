@@ -1,0 +1,5 @@
+{% if relationships %}## Quan hệ có định kiểu
+
+{% for rel in relationships %}- `{{ rel.predicate }}` → {{ links([rel.object_entity_id]) }} — {{ rel.rationale }} **{{ rel.get('inference_type', 'UNKNOWN') }} / {{ rel.get('source_support_status', 'NOT_REVIEWED') }}**.
+{% endfor %}
+{% endif %}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "cc519d75408b2f95c40ae7c77642ba2d9b749b9ef33bc9495f73f8174ec5c11a",
+    "created_at": "2026-11-25T02:28:33+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-60005",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:7F415CB9F63C40B261390124",
+    "id": "EVIDENCE:7F415CB9F63C40B261390124",
+    "local_snapshot_path": "data/raw/cve/snapshots/cc519d75408b2f95c40ae7c77642ba2d9b749b9ef33bc9495f73f8174ec5c11a.json",
+    "name": "CVE-2026-60005",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:28:31+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/60xxx/CVE-2026-60005.json",
+    "updated_at": "2026-11-25T02:28:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:33+00:00",
+  "entity_id": "EVIDENCE:7F415CB9F63C40B261390124",
+  "id": "HISTORY:44B168B8D9EFA341C0D1D8F3"
+}

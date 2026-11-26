@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "df5a65a455e7060a7e23a361f7bd7ce7bca2685d246b687623ce2c7068d80d42",
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "document_title": "RFC 9113: HTTP/2",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:BBB9F585CBA6A76D66F40DA5",
+    "id": "EVIDENCE:BBB9F585CBA6A76D66F40DA5",
+    "local_snapshot_path": "data/raw/documentation/snapshots/df5a65a455e7060a7e23a361f7bd7ce7bca2685d246b687623ce2c7068d80d42.html",
+    "name": "RFC 9113: HTTP/2",
+    "paraphrase": "Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:18+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc9113.html",
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:19+00:00",
+  "entity_id": "EVIDENCE:BBB9F585CBA6A76D66F40DA5",
+  "id": "HISTORY:98B4BC76CC8649EAA320C57E"
+}

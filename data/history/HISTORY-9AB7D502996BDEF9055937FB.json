@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:BA5192D608C70AA698AF7F7E"
+    ],
+    "created_at": "2026-11-25T02:26:11+00:00",
+    "description": "CVE:CVE-2024-24990 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:A1B544882A224B67A2FC0AC3",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9EAFCBFFFE5ABAC3C4E129F3"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24990",
+    "updated_at": "2026-11-25T02:26:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:11+00:00",
+  "entity_id": "REL:A1B544882A224B67A2FC0AC3",
+  "id": "HISTORY:9AB7D502996BDEF9055937FB"
+}

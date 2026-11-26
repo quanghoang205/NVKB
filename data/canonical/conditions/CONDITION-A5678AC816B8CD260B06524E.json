@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:289726F6C70FA81F15F5EBAC"
+  ],
+  "created_at": "2026-11-25T02:28:37+00:00",
+  "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:A5678AC816B8CD260B06524E",
+  "name": "Điều kiện được công bố — CVE-2026-90439",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:2C3479DA69C20FDBA07AC92B"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

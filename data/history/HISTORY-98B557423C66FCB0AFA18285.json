@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9CFE7FCE10E82F952B035D43",
+    "claim_value": "\"Cấu hình server, location, connection và xử lý HTTP nền tảng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:82C3A351DFCE1DEA54ECAF39"
+    ],
+    "id": "CLAIM:9CFE7FCE10E82F952B035D43",
+    "name": "MODULE:NGX-HTTP-CORE-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:82C3A351DFCE1DEA54ECAF39"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-CORE-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:9CFE7FCE10E82F952B035D43",
+  "id": "HISTORY:98B557423C66FCB0AFA18285"
+}

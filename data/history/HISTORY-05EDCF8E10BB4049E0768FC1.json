@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3B7C044F9BD3EA04A5DDE1DB"
+    ],
+    "created_at": "2026-11-25T05:15:16+00:00",
+    "description": "CONCEPT:CVE REQUIRES_KNOWLEDGE_OF CONCEPT:ADVISORY",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/description; /definitions/cveMetadataPublished; /definitions/cnaPublishedContainer; /definitions/affected",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:3EEC9AFE0AE430ED1F370850",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "CONCEPT:ADVISORY",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Mục tiêu 'Phân biệt CVE ID với severity và deployment assessment.' cần mô hình Đọc advisory: dữ kiện, điều kiện và điều chưa biết. Quyết định sư phạm, không là fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Mục tiêu 'Phân biệt CVE ID với severity và deployment assessment.' cần mô hình Đọc advisory: dữ kiện, điều kiện và điều chưa biết. Quyết định sư phạm, không là fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:16+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:16+00:00",
+  "entity_id": "REL:3EEC9AFE0AE430ED1F370850",
+  "id": "HISTORY:05EDCF8E10BB4049E0768FC1"
+}

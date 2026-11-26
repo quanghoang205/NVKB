@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:E3D74B64CA83FDE55DA3DA8C",
+    "claim_value": "\"2026-05-13T14:12:45.695000+00:00\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "description": "publication_date",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "id": "CLAIM:E3D74B64CA83FDE55DA3DA8C",
+    "name": "CVE:CVE-2026-42926: publication_date",
+    "predicate": "publication_date",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:30B41517CE817A5E5C7EA810"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T02:28:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:10+00:00",
+  "entity_id": "CLAIM:E3D74B64CA83FDE55DA3DA8C",
+  "id": "HISTORY:2B5072C00FD24C9F5316CF6A"
+}

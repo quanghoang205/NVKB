@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:43D6852485BAC6D8869692A5",
+    "claim_value": "\"Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp lệ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "id": "CLAIM:43D6852485BAC6D8869692A5",
+    "name": "WEAKNESS:CWE-191: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F92CFDA044BB160372AF06A6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-191",
+    "updated_at": "2026-11-25T02:48:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:57+00:00",
+  "entity_id": "CLAIM:43D6852485BAC6D8869692A5",
+  "id": "HISTORY:613ABCFC182D26E117B456E1"
+}

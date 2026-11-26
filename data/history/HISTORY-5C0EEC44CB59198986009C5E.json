@@ -1,0 +1,419 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in ngx_http_dav_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:365C0526B779FCE7F6EE58FC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:06D0A07FF3E44885D507298A",
+      "CLAIM:19F6C03BF5C54E3112E1BCC5",
+      "CLAIM:1AE8AD32B95F192099A2C508",
+      "CLAIM:1EB66FB51F287753F718C49C",
+      "CLAIM:2043ED0B1FE44BEE06A50BD8",
+      "CLAIM:228823E36F227A96BD73B968",
+      "CLAIM:263F12566FA471B2251A5E81",
+      "CLAIM:32B109EB61F9903E8542191F",
+      "CLAIM:33D33BEF19BFADE29346FC42",
+      "CLAIM:4C29BDF90B39A4159F60C664",
+      "CLAIM:57C9166A55208083FE4774D5",
+      "CLAIM:59005A7C176A40C26DADE686",
+      "CLAIM:5CAE016986DB54814486FF0D",
+      "CLAIM:5FB956C472134FB1681F9989",
+      "CLAIM:6E1F284451DD74658ED3553C",
+      "CLAIM:71289EB45A10EDA4AB7D11AB",
+      "CLAIM:72F54E5E7301A5C7D7295481",
+      "CLAIM:81E3CE81DB0182590A79545C",
+      "CLAIM:850C32DA7EE1CEA7AAD7C9B6",
+      "CLAIM:85F4D95A2A2357EEA6DA6D5C",
+      "CLAIM:90AD86BCD4C503363D4862DF",
+      "CLAIM:90FE123A15ACFDA75633AD4D",
+      "CLAIM:94E625924FEB9D5429835192",
+      "CLAIM:959293D546D02251A60BB915",
+      "CLAIM:9620455EED37194A86A14141",
+      "CLAIM:A565403186CD723CADD01486",
+      "CLAIM:A6C3FB02E22FAD99DD0BEDA3",
+      "CLAIM:AA0A1AAA813DA2760CA53600",
+      "CLAIM:AAB930CE31C4A887235CB661",
+      "CLAIM:AB40A7259A8D7547BB2CAC4F",
+      "CLAIM:ABEB54C7EE27159AE82F7961",
+      "CLAIM:AF5BC1FB8CE36D018408CCD5",
+      "CLAIM:BC1F7D42D8D837D83A407D66",
+      "CLAIM:D6D7AEEDCD262A232ED6DE80",
+      "CLAIM:F3B6CDDFAABE630D074AE44F",
+      "CLAIM:FB2707B6043930A50391C965"
+    ],
+    "condition_refs": [
+      "CONDITION:7D221B6EC6F7990DC6D51701"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker termination hoặc thay đổi source/destination filenames ngoài document root được công bố; CNA nêu giới hạn do quyền worker thấp.",
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-27654",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá module, quản trị quyền worker và phạm vi thao tác DAV; hardening filesystem không sửa arithmetic."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D"
+    ],
+    "distribution_status": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D"
+    ],
+    "documented_configuration_context": "DAV MOVE/COPY, prefix location và alias theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "WebDAV path processing có thể gây overflow hoặc đổi tên nguồn/đích ngoài document root trong giới hạn quyền worker.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27654",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T01:13:37.047000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.",
+      "Trả lời có evidence: Vượt document root có tự động cho quyền toàn filesystem không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-27654",
+    "normal_component_behavior": "URI phải ánh xạ đến path hợp lệ trong scope mong đợi; quyền filesystem giới hạn thao tác cuối của worker.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Những file thực tế có thể bị tác động phụ thuộc quyền deployment; không xác nhận root compromise.",
+    "publication_date": "2026-03-24T14:13:26.879000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:40B2D1E1376ECB5FF1094B2D"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-DAV-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nWebDAV path processing có thể gây overflow hoặc đổi tên nguồn/đích ngoài document root trong giới hạn quyền worker.\n\n## 2. CVE identity và product scope\n\nCVE-2026-27654; published 2026-03-24T14:13:26.879000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-AA0A1AAA813DA2760CA53600|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-DAV-MODULE|ngx_http_dav_module]] · [[CONTROL-LEAST-PRIVILEGE|Security invariants và trách nhiệm kiểm soát]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nDAV filesystem operations với alias và prefix location. [[CLAIM-ABEB54C7EE27159AE82F7961|Claim / locator]].\n\n## 5. Normal component behavior\n\nURI phải ánh xạ đến path hợp lệ trong scope mong đợi; quyền filesystem giới hạn thao tác cuối của worker. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu buffer overflow và path modification. Kiểm path scope và kiểm capacity là hai nghĩa vụ riêng, không suy quyền ghi toàn hệ thống. [[CLAIM-1AE8AD32B95F192099A2C508|Claim / locator]].\n\n## 7. Relevant security principles\n\nDocument root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nDAV MOVE/COPY, prefix location và alias theo CNA. [[CLAIM-ABEB54C7EE27159AE82F7961|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.5.13-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+. [[CLAIM-06D0A07FF3E44885D507298A|Claim / locator]].\n\nFix 1.28.3/1.29.7; giữ riêng scope DAV với các lỗi alias/rewrite. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker termination hoặc thay đổi source/destination filenames ngoài document root được công bố; CNA nêu giới hạn do quyền worker thấp. [[CLAIM-19F6C03BF5C54E3112E1BCC5|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nNhững file thực tế có thể bị tác động phụ thuộc quyền deployment; không xác nhận root compromise. [[CLAIM-81E3CE81DB0182590A79545C|Claim / locator]].\n\n## 12. Remediation principles\n\nVá module, quản trị quyền worker và phạm vi thao tác DAV; hardening filesystem không sửa arithmetic. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-06D0A07FF3E44885D507298A|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.28.3/1.29.7; giữ riêng scope DAV với các lỗi alias/rewrite.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-DAV-MODULE|ngx_http_dav_module]] · [[CONTROL-LEAST-PRIVILEGE|Security invariants và trách nhiệm kiểm soát]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.\n- Trả lời có evidence: Vượt document root có tự động cho quyền toàn filesystem không?\n\n## 17. Discussion questions\n\nVượt document root có tự động cho quyền toàn filesystem không?\n\nGợi ý đáp án: Không; OS permissions của worker vẫn chi phối phạm vi truy cập, và cần evidence deployment để xác định nó.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-AA0A1AAA813DA2760CA53600|CLAIM:AA0A1AAA813DA2760CA53600]]\n- applicability: [[CLAIM-ABEB54C7EE27159AE82F7961|CLAIM:ABEB54C7EE27159AE82F7961]]\n- impact: [[CLAIM-19F6C03BF5C54E3112E1BCC5|CLAIM:19F6C03BF5C54E3112E1BCC5]]\n- potential: [[CLAIM-81E3CE81DB0182590A79545C|CLAIM:81E3CE81DB0182590A79545C]]\n- mechanism: [[CLAIM-1AE8AD32B95F192099A2C508|CLAIM:1AE8AD32B95F192099A2C508]]\n- versions: [[CLAIM-06D0A07FF3E44885D507298A|CLAIM:06D0A07FF3E44885D507298A]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nPath calculation, file bị ảnh hưởng và privilege context thực tế chưa xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:AA0A1AAA813DA2760CA53600",
+      "CLAIM:ABEB54C7EE27159AE82F7961",
+      "CLAIM:19F6C03BF5C54E3112E1BCC5",
+      "CLAIM:81E3CE81DB0182590A79545C",
+      "CLAIM:1AE8AD32B95F192099A2C508",
+      "CLAIM:06D0A07FF3E44885D507298A"
+    ],
+    "research_group": "proxy",
+    "root_cause_summary": "CNA nêu buffer overflow và path modification. Kiểm path scope và kiểm capacity là hai nghĩa vụ riêng, không suy quyền ghi toàn hệ thống.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:068E14C0F542846AF33EEEF6",
+      "SEVERITY:1FA8F5633016AE095E274CFB",
+      "SEVERITY:3D63CDA60E7D77A3236BF573",
+      "SEVERITY:B0684F40C5C96019A43D1535",
+      "SEVERITY:BF67414C9CBBBC5C643EFBE9",
+      "SEVERITY:CC460EE40FC04370F3657F39",
+      "SEVERITY:F5C88ACFC6A5FF47059D2DE8"
+    ],
+    "source_refs": [
+      "EVIDENCE:0528880A025D3293DC737CA5",
+      "EVIDENCE:0A708F37C968E347E4556F1E",
+      "EVIDENCE:1B0D58BFAD0869C507B6F6B7",
+      "EVIDENCE:8260359881BD6D4BF0F436F1",
+      "EVIDENCE:9D87D5F6F94BB341F23851EC",
+      "EVIDENCE:9EC6E37A4F37696FA15990A7",
+      "EVIDENCE:A4A7113E3D797686B944D416",
+      "EVIDENCE:BF47C1BB683B9443A4E5CC40",
+      "EVIDENCE:C94E0F9365304B3C6C4642D2",
+      "EVIDENCE:F6DB849AE07E127F15F7B67D",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90",
+      "EVIDENCE:FF7756C30B08FCCD62573DA2"
+    ],
+    "title": "Buffer overflow in ngx_http_dav_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Path calculation, file bị ảnh hưởng và privilege context thực tế chưa xác minh.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:50:29+00:00",
+    "upstream_affected_expression": "0.5.13-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in ngx_http_dav_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:365C0526B779FCE7F6EE58FC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:06D0A07FF3E44885D507298A",
+      "CLAIM:19F6C03BF5C54E3112E1BCC5",
+      "CLAIM:1AE8AD32B95F192099A2C508",
+      "CLAIM:1EB66FB51F287753F718C49C",
+      "CLAIM:2043ED0B1FE44BEE06A50BD8",
+      "CLAIM:228823E36F227A96BD73B968",
+      "CLAIM:263F12566FA471B2251A5E81",
+      "CLAIM:32B109EB61F9903E8542191F",
+      "CLAIM:33D33BEF19BFADE29346FC42",
+      "CLAIM:4C29BDF90B39A4159F60C664",
+      "CLAIM:57C9166A55208083FE4774D5",
+      "CLAIM:59005A7C176A40C26DADE686",
+      "CLAIM:5CAE016986DB54814486FF0D",
+      "CLAIM:5FB956C472134FB1681F9989",
+      "CLAIM:6E1F284451DD74658ED3553C",
+      "CLAIM:71289EB45A10EDA4AB7D11AB",
+      "CLAIM:72F54E5E7301A5C7D7295481",
+      "CLAIM:81E3CE81DB0182590A79545C",
+      "CLAIM:850C32DA7EE1CEA7AAD7C9B6",
+      "CLAIM:85F4D95A2A2357EEA6DA6D5C",
+      "CLAIM:90AD86BCD4C503363D4862DF",
+      "CLAIM:90FE123A15ACFDA75633AD4D",
+      "CLAIM:94E625924FEB9D5429835192",
+      "CLAIM:959293D546D02251A60BB915",
+      "CLAIM:9620455EED37194A86A14141",
+      "CLAIM:A565403186CD723CADD01486",
+      "CLAIM:A6C3FB02E22FAD99DD0BEDA3",
+      "CLAIM:AA0A1AAA813DA2760CA53600",
+      "CLAIM:AAB930CE31C4A887235CB661",
+      "CLAIM:AB40A7259A8D7547BB2CAC4F",
+      "CLAIM:ABEB54C7EE27159AE82F7961",
+      "CLAIM:AF5BC1FB8CE36D018408CCD5",
+      "CLAIM:BC1F7D42D8D837D83A407D66",
+      "CLAIM:D6D7AEEDCD262A232ED6DE80",
+      "CLAIM:F3B6CDDFAABE630D074AE44F",
+      "CLAIM:FB2707B6043930A50391C965"
+    ],
+    "condition_refs": [
+      "CONDITION:7D221B6EC6F7990DC6D51701"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker termination hoặc thay đổi source/destination filenames ngoài document root được công bố; CNA nêu giới hạn do quyền worker thấp.",
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-27654",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá module, quản trị quyền worker và phạm vi thao tác DAV; hardening filesystem không sửa arithmetic."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D"
+    ],
+    "distribution_status": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D"
+    ],
+    "documented_configuration_context": "DAV MOVE/COPY, prefix location và alias theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "WebDAV path processing có thể gây overflow hoặc đổi tên nguồn/đích ngoài document root trong giới hạn quyền worker.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27654",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T01:13:37.047000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.",
+      "Trả lời có evidence: Vượt document root có tự động cho quyền toàn filesystem không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-27654",
+    "normal_component_behavior": "URI phải ánh xạ đến path hợp lệ trong scope mong đợi; quyền filesystem giới hạn thao tác cuối của worker.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Những file thực tế có thể bị tác động phụ thuộc quyền deployment; không xác nhận root compromise.",
+    "publication_date": "2026-03-24T14:13:26.879000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:40B2D1E1376ECB5FF1094B2D"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-DAV-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nWebDAV path processing có thể gây overflow hoặc đổi tên nguồn/đích ngoài document root trong giới hạn quyền worker.\n\n## 2. CVE identity và product scope\n\nCVE-2026-27654; published 2026-03-24T14:13:26.879000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-AA0A1AAA813DA2760CA53600|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-DAV-MODULE|ngx_http_dav_module]] · [[CONTROL-LEAST-PRIVILEGE|Security invariants và trách nhiệm kiểm soát]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nDAV filesystem operations với alias và prefix location. [[CLAIM-ABEB54C7EE27159AE82F7961|Claim / locator]].\n\n## 5. Normal component behavior\n\nURI phải ánh xạ đến path hợp lệ trong scope mong đợi; quyền filesystem giới hạn thao tác cuối của worker. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu buffer overflow và path modification. Kiểm path scope và kiểm capacity là hai nghĩa vụ riêng, không suy quyền ghi toàn hệ thống. [[CLAIM-1AE8AD32B95F192099A2C508|Claim / locator]].\n\n## 7. Relevant security principles\n\nDocument root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nDAV MOVE/COPY, prefix location và alias theo CNA. [[CLAIM-ABEB54C7EE27159AE82F7961|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.5.13-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+. [[CLAIM-06D0A07FF3E44885D507298A|Claim / locator]].\n\nFix 1.28.3/1.29.7; giữ riêng scope DAV với các lỗi alias/rewrite. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker termination hoặc thay đổi source/destination filenames ngoài document root được công bố; CNA nêu giới hạn do quyền worker thấp. [[CLAIM-19F6C03BF5C54E3112E1BCC5|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nNhững file thực tế có thể bị tác động phụ thuộc quyền deployment; không xác nhận root compromise. [[CLAIM-81E3CE81DB0182590A79545C|Claim / locator]].\n\n## 12. Remediation principles\n\nVá module, quản trị quyền worker và phạm vi thao tác DAV; hardening filesystem không sửa arithmetic. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-06D0A07FF3E44885D507298A|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.28.3/1.29.7; giữ riêng scope DAV với các lỗi alias/rewrite.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-DAV-MODULE|ngx_http_dav_module]] · [[CONTROL-LEAST-PRIVILEGE|Security invariants và trách nhiệm kiểm soát]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.\n- Trả lời có evidence: Vượt document root có tự động cho quyền toàn filesystem không?\n\n## 17. Discussion questions\n\nVượt document root có tự động cho quyền toàn filesystem không?\n\nGợi ý đáp án: Không; OS permissions của worker vẫn chi phối phạm vi truy cập, và cần evidence deployment để xác định nó.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-AA0A1AAA813DA2760CA53600|CLAIM:AA0A1AAA813DA2760CA53600]]\n- applicability: [[CLAIM-ABEB54C7EE27159AE82F7961|CLAIM:ABEB54C7EE27159AE82F7961]]\n- impact: [[CLAIM-19F6C03BF5C54E3112E1BCC5|CLAIM:19F6C03BF5C54E3112E1BCC5]]\n- potential: [[CLAIM-81E3CE81DB0182590A79545C|CLAIM:81E3CE81DB0182590A79545C]]\n- mechanism: [[CLAIM-1AE8AD32B95F192099A2C508|CLAIM:1AE8AD32B95F192099A2C508]]\n- versions: [[CLAIM-06D0A07FF3E44885D507298A|CLAIM:06D0A07FF3E44885D507298A]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nPath calculation, file bị ảnh hưởng và privilege context thực tế chưa xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:AA0A1AAA813DA2760CA53600",
+      "CLAIM:ABEB54C7EE27159AE82F7961",
+      "CLAIM:19F6C03BF5C54E3112E1BCC5",
+      "CLAIM:81E3CE81DB0182590A79545C",
+      "CLAIM:1AE8AD32B95F192099A2C508",
+      "CLAIM:06D0A07FF3E44885D507298A"
+    ],
+    "research_group": "proxy",
+    "root_cause_summary": "CNA nêu buffer overflow và path modification. Kiểm path scope và kiểm capacity là hai nghĩa vụ riêng, không suy quyền ghi toàn hệ thống.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Document root là policy ứng dụng, quyền hệ điều hành là ranh giới bổ sung; không được đồng nhất hai ranh giới.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:068E14C0F542846AF33EEEF6",
+      "SEVERITY:1FA8F5633016AE095E274CFB",
+      "SEVERITY:3D63CDA60E7D77A3236BF573",
+      "SEVERITY:B0684F40C5C96019A43D1535",
+      "SEVERITY:BF67414C9CBBBC5C643EFBE9",
+      "SEVERITY:CC460EE40FC04370F3657F39",
+      "SEVERITY:F5C88ACFC6A5FF47059D2DE8"
+    ],
+    "source_refs": [
+      "EVIDENCE:0528880A025D3293DC737CA5",
+      "EVIDENCE:0A708F37C968E347E4556F1E",
+      "EVIDENCE:1B0D58BFAD0869C507B6F6B7",
+      "EVIDENCE:8260359881BD6D4BF0F436F1",
+      "EVIDENCE:9D87D5F6F94BB341F23851EC",
+      "EVIDENCE:9EC6E37A4F37696FA15990A7",
+      "EVIDENCE:A4A7113E3D797686B944D416",
+      "EVIDENCE:BF47C1BB683B9443A4E5CC40",
+      "EVIDENCE:C94E0F9365304B3C6C4642D2",
+      "EVIDENCE:F6DB849AE07E127F15F7B67D",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90",
+      "EVIDENCE:FF7756C30B08FCCD62573DA2"
+    ],
+    "title": "Buffer overflow in ngx_http_dav_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Path calculation, file bị ảnh hưởng và privilege context thực tế chưa xác minh.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:49+00:00",
+    "upstream_affected_expression": "0.5.13-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:50:29+00:00",
+  "entity_id": "CVE:CVE-2026-27654",
+  "id": "HISTORY:5C0EEC44CB59198986009C5E"
+}

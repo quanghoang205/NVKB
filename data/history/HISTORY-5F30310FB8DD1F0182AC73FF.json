@@ -1,0 +1,55 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:11E8E31ECD839D8A32207BD7",
+    "claim_refs": [
+      "CLAIM:351117F7AE0E2F443B3061CC"
+    ],
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "cvss_score": 7.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CVE Program",
+    "entity_type": "Severity",
+    "id": "SEVERITY:3B0D1EA24B5FC1758A7489C0",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"LOCAL\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 7.8, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"LOW\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-27784 CVSS 3.1 f5",
+    "original_authority": "f5 via CVE Program",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:351117F7AE0E2F443B3061CC"
+    ],
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "cvss_score": 7.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:3B0D1EA24B5FC1758A7489C0",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"LOCAL\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 7.8, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"LOW\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-27784 CVSS 3.1 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:27:36+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:11+00:00",
+  "entity_id": "SEVERITY:3B0D1EA24B5FC1758A7489C0",
+  "id": "HISTORY:5F30310FB8DD1F0182AC73FF"
+}

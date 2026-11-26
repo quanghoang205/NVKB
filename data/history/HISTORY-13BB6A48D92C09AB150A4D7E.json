@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "7fce93e4e110f55ec9be459e3a69c4164b3f408e84e1f2f97f86e6cc944c921b",
+    "created_at": "2026-11-25T02:48:57+00:00",
+    "description": "Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.",
+    "document_title": "CWE -\r\n\n    CWE-191: Integer Underflow (Wrap or Wraparound) (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:F92CFDA044BB160372AF06A6",
+    "id": "EVIDENCE:F92CFDA044BB160372AF06A6",
+    "local_snapshot_path": "data/raw/documentation/snapshots/7fce93e4e110f55ec9be459e3a69c4164b3f408e84e1f2f97f86e6cc944c921b.html",
+    "name": "CWE -\r\n\n    CWE-191: Integer Underflow (Wrap or Wraparound) (5.0)",
+    "paraphrase": "Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:57+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-191",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/191.html",
+    "updated_at": "2026-11-25T02:48:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:57+00:00",
+  "entity_id": "EVIDENCE:F92CFDA044BB160372AF06A6",
+  "id": "HISTORY:13BB6A48D92C09AB150A4D7E"
+}

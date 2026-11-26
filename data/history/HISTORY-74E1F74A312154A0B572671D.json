@@ -1,0 +1,332 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "SSL session reuse vulnerability",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B35D031CAA620664829E91AE"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:046C27059565B3244A03E2F5",
+      "CLAIM:0503E7532A5A78FC803351E8",
+      "CLAIM:0C536DD27A705A734D48325B",
+      "CLAIM:1B7544E17211D9AC2646DD80",
+      "CLAIM:2385B83D8EBDF8206F697419",
+      "CLAIM:309BC8C21B2B2DF170FEDE28",
+      "CLAIM:32AA46D6486A99AA473832D5",
+      "CLAIM:502AD8CAAA162A2EDEBFAC8A",
+      "CLAIM:50EB695313F21E10A07B8C03",
+      "CLAIM:5E70C03701A68C2D20478436",
+      "CLAIM:629452940BDE58BD25A19DC7",
+      "CLAIM:6402AD0B7A51E5EE2B91AC1E",
+      "CLAIM:6A65022820826000E06926A5",
+      "CLAIM:7629C84DC53B47ECAB8474B2",
+      "CLAIM:7CAFA7D51ED47BD44A035139",
+      "CLAIM:80A832C1B423F1432C03012A",
+      "CLAIM:81DB314BF18C8691CCE9D8A4",
+      "CLAIM:8B1B5CE99E1FD6B951A14CA3",
+      "CLAIM:8D853C614E242AD42C64C1F8",
+      "CLAIM:925298B1835027A9E5CD9329",
+      "CLAIM:92E2285E3D027D4189B3238D",
+      "CLAIM:98DC4F5447FA6EF9A4CA7BC6",
+      "CLAIM:A5535A988B847DFA09A39074",
+      "CLAIM:A80013A9ABF92B0002ACB698",
+      "CLAIM:B2ED2B7758BA71B50B0B6732",
+      "CLAIM:BB66ECACBA9AA6AF822F6852",
+      "CLAIM:C5AAB9B8A484C5B607CAEFFD",
+      "CLAIM:CA2CEB9CE3E44C3A3D267E25",
+      "CLAIM:D0EFCD3CF43018EE65A3CF54",
+      "CLAIM:D2F8EAABE0E40F3EDEE3F67A",
+      "CLAIM:D394D611384ED2FB99EE258D",
+      "CLAIM:D4B9CBCDDEE604FA3DBC9070",
+      "CLAIM:DFD8131722D629142A064981",
+      "CLAIM:E5A209C6283E60E93CA683FF",
+      "CLAIM:E791999FD066B480C9C9DF2B",
+      "CLAIM:EAE7F46A8DEF176161478669",
+      "CLAIM:ED3AF40984E96D6EAE82D3CA",
+      "CLAIM:F0867782141DC9211AAA9FEF"
+    ],
+    "condition_refs": [
+      "CONDITION:1770D9D4BD8DA06265DDF330"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cve_id": "CVE-2025-23419",
+    "cve_year": 2025,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3084B31EE7709624493AA4F2",
+      "PACKAGE:6AE7F751A25C137FFDC3986D",
+      "PACKAGE:B64273DE2336EA502B68C2A8"
+    ],
+    "distribution_status": [
+      "PACKAGE:3084B31EE7709624493AA4F2",
+      "PACKAGE:6AE7F751A25C137FFDC3986D",
+      "PACKAGE:B64273DE2336EA502B68C2A8"
+    ],
+    "documented_configuration_context": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nThông báo upstream bổ sung:\nA problem with SSL session resumption in nginx was identified.\nIt was possible to reuse SSL sessions in named-based\nvirtual hosts in unrelated contexts, allowing to bypass client\ncertificate authentication in some configurations (CVE-2025-23419).\n\nThe problem affects nginx 1.11.4 and newer built with OpenSSL if the\nTLSv1.3 protocol and session resumption are enabled either with\nssl_session_cache or ssl_session_tickets.\n\nThe problem is fixed in 1.26.3 and 1.27.4.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Lỗi liên quan việc dùng lại phiên TLS giữa các server block cùng địa chỉ/cổng. Theo mô tả CNA, điều kiện bao gồm session ticket và/hoặc session cache tại default server có xác thực chứng chỉ client. Bài học là context xác thực của phiên phải phù hợp với chính sách server đang xử lý; đây là phân tích nguyên lý từ advisory, chưa phải phân tích mã nguồn độc lập. Upstream công bố bản sửa 1.26.3 và 1.27.4.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.3",
+      "VERSION:NGINX-1.27.4"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.3",
+      "VERSION:NGINX-1.27.4"
+    ],
+    "id": "CVE:CVE-2025-23419",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-01-23T20:09:28.384000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2025-23419",
+    "normal_component_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2025-02-05T17:31:07.316000+00:00",
+    "publication_year": 2025,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:A9E3102A45211550FAFF6A2F",
+      "REFERENCE:BA7FFA5174CD3F3C6714EE3B"
+    ],
+    "related_components": [
+      "COMPONENT:VIRTUAL-HOSTS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-863"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "CNA mô tả việc tái sử dụng session TLS có thể vượt chính sách xác thực chứng chỉ client giữa các server block chia sẻ listener. Ranh giới cần bảo toàn là liên kết giữa phiên đã xác thực và policy của virtual server. Nguyên nhân ở mức dòng mã chưa được duyệt trong corpus này.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Ngữ cảnh phiên được resume phải thỏa chính sách client-certificate authentication của server được chọn (diễn giải sư phạm).",
+    "security_boundary": "TLS session context ↔ chính sách client authentication của virtual server.",
+    "severity_refs": [
+      "SEVERITY:176CD57713EBBDBCCF9D2EDD",
+      "SEVERITY:559BB86B95A259A88AED027B",
+      "SEVERITY:5AA1ECFBBB2FDFA71758EB83",
+      "SEVERITY:6FEAE129CDFAFDDA0FD5F574",
+      "SEVERITY:B12120CBC2BD889F8FEB01F7"
+    ],
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "title": "SSL session reuse vulnerability",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Chưa kiểm tra cấu hình hoặc feature của bất kỳ tài sản thực tế nào.",
+      "Chưa phân tích độc lập bản vá ở mức dòng mã."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:40+00:00",
+    "upstream_affected_expression": "1.11.4-1.27.3",
+    "upstream_unaffected_expression": "1.27.4+, 1.26.3+",
+    "vendor_documented_conditions": [
+      "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A problem with SSL session resumption in nginx was identified.\nIt was possible to reuse SSL sessions in named-based\nvirtual hosts in unrelated contexts, allowing to bypass client\ncertificate authentication in some configurations (CVE-2025-23419).\n\nThe problem affects nginx 1.11.4 and newer built with OpenSSL if the\nTLSv1.3 protocol and session resumption are enabled either with\nssl_session_cache or ssl_session_tickets.\n\nThe problem is fixed in 1.26.3 and 1.27.4."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "SSL session reuse vulnerability",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B35D031CAA620664829E91AE"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:046C27059565B3244A03E2F5",
+      "CLAIM:0503E7532A5A78FC803351E8",
+      "CLAIM:0C536DD27A705A734D48325B",
+      "CLAIM:1B7544E17211D9AC2646DD80",
+      "CLAIM:2385B83D8EBDF8206F697419",
+      "CLAIM:309BC8C21B2B2DF170FEDE28",
+      "CLAIM:32AA46D6486A99AA473832D5",
+      "CLAIM:502AD8CAAA162A2EDEBFAC8A",
+      "CLAIM:50EB695313F21E10A07B8C03",
+      "CLAIM:5E70C03701A68C2D20478436",
+      "CLAIM:629452940BDE58BD25A19DC7",
+      "CLAIM:6402AD0B7A51E5EE2B91AC1E",
+      "CLAIM:6A65022820826000E06926A5",
+      "CLAIM:7629C84DC53B47ECAB8474B2",
+      "CLAIM:7CAFA7D51ED47BD44A035139",
+      "CLAIM:80A832C1B423F1432C03012A",
+      "CLAIM:81DB314BF18C8691CCE9D8A4",
+      "CLAIM:8B1B5CE99E1FD6B951A14CA3",
+      "CLAIM:8D853C614E242AD42C64C1F8",
+      "CLAIM:925298B1835027A9E5CD9329",
+      "CLAIM:92E2285E3D027D4189B3238D",
+      "CLAIM:98DC4F5447FA6EF9A4CA7BC6",
+      "CLAIM:A5535A988B847DFA09A39074",
+      "CLAIM:A80013A9ABF92B0002ACB698",
+      "CLAIM:B2ED2B7758BA71B50B0B6732",
+      "CLAIM:BB66ECACBA9AA6AF822F6852",
+      "CLAIM:C5AAB9B8A484C5B607CAEFFD",
+      "CLAIM:CA2CEB9CE3E44C3A3D267E25",
+      "CLAIM:D2F8EAABE0E40F3EDEE3F67A",
+      "CLAIM:D4B9CBCDDEE604FA3DBC9070",
+      "CLAIM:E791999FD066B480C9C9DF2B",
+      "CLAIM:EAE7F46A8DEF176161478669",
+      "CLAIM:ED3AF40984E96D6EAE82D3CA",
+      "CLAIM:F0867782141DC9211AAA9FEF"
+    ],
+    "condition_refs": [
+      "CONDITION:1770D9D4BD8DA06265DDF330"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cve_id": "CVE-2025-23419",
+    "cve_year": 2025,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3084B31EE7709624493AA4F2",
+      "PACKAGE:6AE7F751A25C137FFDC3986D",
+      "PACKAGE:B64273DE2336EA502B68C2A8"
+    ],
+    "distribution_status": [
+      "PACKAGE:3084B31EE7709624493AA4F2",
+      "PACKAGE:6AE7F751A25C137FFDC3986D",
+      "PACKAGE:B64273DE2336EA502B68C2A8"
+    ],
+    "documented_configuration_context": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nThông báo upstream bổ sung:\nA problem with SSL session resumption in nginx was identified.\nIt was possible to reuse SSL sessions in named-based\nvirtual hosts in unrelated contexts, allowing to bypass client\ncertificate authentication in some configurations (CVE-2025-23419).\n\nThe problem affects nginx 1.11.4 and newer built with OpenSSL if the\nTLSv1.3 protocol and session resumption are enabled either with\nssl_session_cache or ssl_session_tickets.\n\nThe problem is fixed in 1.26.3 and 1.27.4.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Lỗi liên quan việc dùng lại phiên TLS giữa các server block cùng địa chỉ/cổng. Theo mô tả CNA, điều kiện bao gồm session ticket và/hoặc session cache tại default server có xác thực chứng chỉ client. Bài học là context xác thực của phiên phải phù hợp với chính sách server đang xử lý; đây là phân tích nguyên lý từ advisory, chưa phải phân tích mã nguồn độc lập. Upstream công bố bản sửa 1.26.3 và 1.27.4.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.3",
+      "VERSION:NGINX-1.27.4"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.3",
+      "VERSION:NGINX-1.27.4"
+    ],
+    "id": "CVE:CVE-2025-23419",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-01-23T20:09:28.384000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2025-23419",
+    "normal_component_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2025-02-05T17:31:07.316000+00:00",
+    "publication_year": 2025,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:A9E3102A45211550FAFF6A2F",
+      "REFERENCE:BA7FFA5174CD3F3C6714EE3B"
+    ],
+    "related_components": [
+      "COMPONENT:VIRTUAL-HOSTS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-863"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "CNA mô tả việc tái sử dụng session TLS có thể vượt chính sách xác thực chứng chỉ client giữa các server block chia sẻ listener. Ranh giới cần bảo toàn là liên kết giữa phiên đã xác thực và policy của virtual server. Nguyên nhân ở mức dòng mã chưa được duyệt trong corpus này.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Ngữ cảnh phiên được resume phải thỏa chính sách client-certificate authentication của server được chọn (diễn giải sư phạm).",
+    "security_boundary": "TLS session context ↔ chính sách client authentication của virtual server.",
+    "severity_refs": [
+      "SEVERITY:176CD57713EBBDBCCF9D2EDD",
+      "SEVERITY:559BB86B95A259A88AED027B",
+      "SEVERITY:5AA1ECFBBB2FDFA71758EB83",
+      "SEVERITY:6FEAE129CDFAFDDA0FD5F574",
+      "SEVERITY:B12120CBC2BD889F8FEB01F7"
+    ],
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "title": "SSL session reuse vulnerability",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Chưa kiểm tra cấu hình hoặc feature của bất kỳ tài sản thực tế nào.",
+      "Chưa phân tích độc lập bản vá ở mức dòng mã."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:21+00:00",
+    "upstream_affected_expression": "1.11.4-1.27.3",
+    "upstream_unaffected_expression": "1.27.4+, 1.26.3+",
+    "vendor_documented_conditions": [
+      "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A problem with SSL session resumption in nginx was identified.\nIt was possible to reuse SSL sessions in named-based\nvirtual hosts in unrelated contexts, allowing to bypass client\ncertificate authentication in some configurations (CVE-2025-23419).\n\nThe problem affects nginx 1.11.4 and newer built with OpenSSL if the\nTLSv1.3 protocol and session resumption are enabled either with\nssl_session_cache or ssl_session_tickets.\n\nThe problem is fixed in 1.26.3 and 1.27.4."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:44:40+00:00",
+  "entity_id": "CVE:CVE-2025-23419",
+  "id": "HISTORY:74E1F74A312154A0B572671D"
+}

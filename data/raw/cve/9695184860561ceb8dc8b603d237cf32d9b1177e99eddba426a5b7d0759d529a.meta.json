@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:02+00:00",
+  "content_hash": "66523308f3274ae4c1a697f05bf1bf2b4c6a5b15f9ce28a90d9d13f8e27a7da0",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"d8caad09b9ace295925ddc4826ef6d9af9f4af71bc802eb44ac3cdf860d39033\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/66523308f3274ae4c1a697f05bf1bf2b4c6a5b15f9ce28a90d9d13f8e27a7da0.json",
+  "retrieved_at": "2026-11-25T02:26:02+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2022/41xxx/CVE-2022-41742.json"
+}

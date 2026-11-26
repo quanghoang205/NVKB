@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:21B6BE4730D195CB65EDBA55
+title: Module ngx_stream_ssl_preread_module
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- Module ngx_stream_ssl_preread_module
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# Module ngx_stream_ssl_preread_module
+
+Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.
+
+- Nguồn: [NGINX / F5](https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html)
+- Authority gốc: NGINX / F5
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `ngx_stream_ssl_preread_module`
+
+- Truy xuất: 2026-11-25T02:32:56+00:00
+- SHA-256: `c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078`
+- Snapshot từ project root: `data/raw/documentation/snapshots/c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

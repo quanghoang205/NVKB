@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:AD8FC3996A06E0EA0EACB0CC",
+    "claim_value": "\"Kiểm tra capacity/length, dùng API có giới hạn và công cụ phát hiện lỗi bộ nhớ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "id": "CLAIM:AD8FC3996A06E0EA0EACB0CC",
+    "name": "WEAKNESS:CWE-120: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:AD8FC3996A06E0EA0EACB0CC",
+  "id": "HISTORY:23C2936B6524AC09D25F4EA0"
+}

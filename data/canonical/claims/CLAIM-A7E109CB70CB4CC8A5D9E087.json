@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:82326B96675278AEC152EFC3",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:A7E109CB70CB4CC8A5D9E087",
+  "claim_value": "\"Sai phân quyền; cấu hình không nhất quán.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:03+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:59CE30AA3E107BC7084952CD: Processes",
+  "evidence_refs": [
+    "EVIDENCE:59CE30AA3E107BC7084952CD"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:A7E109CB70CB4CC8A5D9E087",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "COMPONENT:MASTER-PROCESS: related_failure_classes",
+  "observation_key": "OBSERVATION:55BA5D5939C12E0F6FF9614A",
+  "observed_at": "2026-11-25T02:32:03+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "COMPONENT:MASTER-PROCESS",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:16+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:59CE30AA3E107BC7084952CD"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+  "updated_at": "2026-11-25T04:12:46+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

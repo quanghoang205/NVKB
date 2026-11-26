@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:B7B30DAC096534045CD89E91",
+    "claim_value": "\"Mỗi hop diễn giải thống nhất framing và loại bỏ trường hợp mơ hồ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "id": "CLAIM:B7B30DAC096534045CD89E91",
+    "name": "WEAKNESS:CWE-444: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:B7B30DAC096534045CD89E91",
+  "id": "HISTORY:D629EF91D9DE94C77D849E67"
+}

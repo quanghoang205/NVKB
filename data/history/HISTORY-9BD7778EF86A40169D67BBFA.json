@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:37922FCA00223A5B62D5A878",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "claim_value": "\"HTTP/3 sử dụng các QUIC stream và control stream; metadata có QPACK, trạng thái request phải được tách theo stream.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:20+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:CA8A923060789AF5BE7AB688: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:HTTP-3: normal_behavior",
+    "observation_key": "OBSERVATION:D13E7CD1C6661E07763FF4B4",
+    "observed_at": "2026-11-25T02:32:20+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "PROTOCOL:HTTP-3",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:20+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "claim_value": "\"HTTP/3 sử dụng các QUIC stream và control stream; metadata có QPACK, trạng thái request phải được tách theo stream.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:20+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+    "name": "PROTOCOL:HTTP-3: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T02:32:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:41E34684E6C3E4EA7F3A1F86",
+  "id": "HISTORY:9BD7778EF86A40169D67BBFA"
+}

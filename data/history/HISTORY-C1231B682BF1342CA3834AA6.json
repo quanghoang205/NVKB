@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:DFED753D64D33B20029D61D6",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:A38111687117112E2D2BA9AD",
+    "claim_value": "\"## Cơ chế và trạng thái\\n\\nVới certificate authentication, chứng thư mang thông tin khóa/danh tính còn CertificateVerify chứng minh quyền dùng khóa ký trong context handshake. Finished ràng buộc transcript bằng key material đã dẫn xuất. Kiểm chứng không chỉ là nhìn thấy một certificate: peer phải thực hiện kiểm tra chain, tên đích và policy liên quan trong phạm vi vai trò của nó. Handshake hoàn tất và ứng dụng cấp quyền là hai quyết định khác nhau.\\n\\nMột connection có các giai đoạn key schedule và traffic secrets; không nên coi một khóa duy nhất được dùng bất biến cho mọi hướng và mọi giai đoạn. RFC xác định các message và chuyển tiếp hợp lệ; sơ đồ rút gọn của bài chỉ hỗ trợ phân biệt handshake với dữ liệu ứng dụng, không mô tả mọi nhánh optional.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:57+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:A38111687117112E2D2BA9AD",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:TLS: pilot_section:Cơ chế và trạng thái",
+    "observed_at": "2026-11-25T04:20:57+00:00",
+    "predicate": "pilot_section:Cơ chế và trạng thái",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:20:57+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:57+00:00",
+  "entity_id": "CLAIM:A38111687117112E2D2BA9AD",
+  "id": "HISTORY:C1231B682BF1342CA3834AA6"
+}

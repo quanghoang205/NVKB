@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:4EFED6AD8D8DD69B611D0A0D",
+    "claim_value": "\"Giao thức thông điệp hai chiều sau handshake.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "id": "CLAIM:4EFED6AD8D8DD69B611D0A0D",
+    "name": "PROTOCOL:WEBSOCKET: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:4EFED6AD8D8DD69B611D0A0D",
+  "id": "HISTORY:75ADEF38CFB48A054382E884"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:89D8E5AFCF8245630450ECF8",
+    "claim_value": "\"Đọc metadata ClientHello mà không kết thúc TLS trong preread phase. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "id": "CLAIM:89D8E5AFCF8245630450ECF8",
+    "name": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:89D8E5AFCF8245630450ECF8",
+  "id": "HISTORY:6AE0A8F2FDB637A4E1AE5667"
+}

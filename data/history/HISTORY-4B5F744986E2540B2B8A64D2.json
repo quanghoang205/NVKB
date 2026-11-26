@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:88B3D938FF2C7BC41C037C49",
+    "claim_value": "\"Incorrect authorization; session-context confusion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "id": "CLAIM:88B3D938FF2C7BC41C037C49",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:88B3D938FF2C7BC41C037C49",
+  "id": "HISTORY:4B5F744986E2540B2B8A64D2"
+}

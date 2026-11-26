@@ -1,0 +1,50 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:DF2C060860179EC19FA2BEAD",
+    "claim_value": "\"Tính toán offset và kích thước không overflow/underflow.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:40:18+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+      "EVIDENCE:2EF252B1528253160CE3AB6E",
+      "EVIDENCE:515D0AA20E1AF43D9C3E7AB7",
+      "EVIDENCE:7E458156B85BD305352AA055",
+      "EVIDENCE:925C2CA1E78FBC7E13007A5A",
+      "EVIDENCE:98AD7C6E41234A0541C37EF5",
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B6C4BA5372337C8B5F05014D",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "id": "CLAIM:DF2C060860179EC19FA2BEAD",
+    "name": "CVE:CVE-2024-32760: security_assumption_violated",
+    "predicate": "security_assumption_violated",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+      "EVIDENCE:2EF252B1528253160CE3AB6E",
+      "EVIDENCE:515D0AA20E1AF43D9C3E7AB7",
+      "EVIDENCE:7E458156B85BD305352AA055",
+      "EVIDENCE:925C2CA1E78FBC7E13007A5A",
+      "EVIDENCE:98AD7C6E41234A0541C37EF5",
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B6C4BA5372337C8B5F05014D",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-32760",
+    "updated_at": "2026-11-25T02:40:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:18+00:00",
+  "entity_id": "CLAIM:DF2C060860179EC19FA2BEAD",
+  "id": "HISTORY:6F71AFEA85AE502F06DB8444"
+}

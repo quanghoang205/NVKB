@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7",
+    "created_at": "2026-11-25T02:26:11+00:00",
+    "description": "Phân loại CWE được CNA gán.",
+    "document_title": "CVE-2024-24990",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0294CB89856E43B0006C7D35",
+    "id": "EVIDENCE:0294CB89856E43B0006C7D35",
+    "local_snapshot_path": "data/raw/cve/snapshots/4d8e191f5fd6d9c86d593d60bd9a37726864175ae7b6723eb2ff3fdbcb504de7.json",
+    "name": "CVE-2024-24990",
+    "paraphrase": "Phân loại CWE được CNA gán.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:26:10+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/problemTypes",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/24xxx/CVE-2024-24990.json",
+    "updated_at": "2026-11-25T02:26:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:11+00:00",
+  "entity_id": "EVIDENCE:0294CB89856E43B0006C7D35",
+  "id": "HISTORY:81AE65DFDC9A8B4A527D9177"
+}

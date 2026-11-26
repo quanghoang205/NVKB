@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:7A177DD9A8B53EFA476F5E1D",
+    "claim_refs": [
+      "CLAIM:36A7B25BC855199983AAAB72"
+    ],
+    "created_at": "2026-11-25T02:28:22+00:00",
+    "cvss_score": 8.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:44399BCF51B40F4A19210649",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"LOW\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-42946 CVSS 4.0 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:2532452C6D671C3F54F43C7D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T04:13:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:27DC6C86A6D687B3A830D1B6",
+    "claim_refs": [
+      "CLAIM:36A7B25BC855199983AAAB72"
+    ],
+    "created_at": "2026-11-25T02:28:22+00:00",
+    "cvss_score": 8.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:44399BCF51B40F4A19210649",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"LOW\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"NONE\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-42946 CVSS 4.0 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:2532452C6D671C3F54F43C7D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T04:13:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:16+00:00",
+  "entity_id": "SEVERITY:44399BCF51B40F4A19210649",
+  "id": "HISTORY:1532C8A4897F5C2BA6507D41"
+}

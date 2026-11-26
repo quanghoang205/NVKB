@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2c61d0c1d6afda50276bcbff1ecc117b54eaa753113c0aaf569c28eca4e585a8",
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "description": "Debian bullseye: fixed_version=1.18.0-6.1+deb11u6, status=fixed.",
+    "document_title": "CVE-2026-40701",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C9BBC36ED8F36491E15D66FA",
+    "id": "EVIDENCE:C9BBC36ED8F36491E15D66FA",
+    "local_snapshot_path": "data/raw/distribution/snapshots/2c61d0c1d6afda50276bcbff1ecc117b54eaa753113c0aaf569c28eca4e585a8.html",
+    "name": "CVE-2026-40701",
+    "paraphrase": "Debian bullseye: fixed_version=1.18.0-6.1+deb11u6, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:55+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:55+00:00",
+  "entity_id": "EVIDENCE:C9BBC36ED8F36491E15D66FA",
+  "id": "HISTORY:1D9A97AC0E1B11671B7862E3"
+}

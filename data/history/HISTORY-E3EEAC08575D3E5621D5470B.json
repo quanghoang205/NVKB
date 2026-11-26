@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "81b677c7d29ffc6f4190da4169fe906c2827476fd19dee5eb57903fa266618ce",
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-121810",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+    "id": "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/81b677c7d29ffc6f4190da4169fe906c2827476fd19dee5eb57903fa266618ce.json",
+    "name": "CVE-2026-121810",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:26:54+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-121810",
+    "updated_at": "2026-11-25T02:26:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:55+00:00",
+  "entity_id": "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+  "id": "HISTORY:E3EEAC08575D3E5621D5470B"
+}

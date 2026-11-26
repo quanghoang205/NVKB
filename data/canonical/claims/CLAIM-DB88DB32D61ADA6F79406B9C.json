@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:4EE192AA64E3C685346E0A55",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:DB88DB32D61ADA6F79406B9C",
+  "claim_value": "\"Parser lệnh ↔ trạng thái mailbox và danh tính.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:25+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:878D849708474C43DE32D05B: Protocol overview and state machine; topic=PROTOCOL:IMAP",
+  "evidence_refs": [
+    "EVIDENCE:878D849708474C43DE32D05B"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:DB88DB32D61ADA6F79406B9C",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "PROTOCOL:IMAP: security_boundary",
+  "observation_key": "OBSERVATION:D2C91CDFAC7B89B96E159108",
+  "observed_at": "2026-11-25T02:44:25+00:00",
+  "predicate": "security_boundary",
+  "product_scope": "PROTOCOL:IMAP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:27+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:878D849708474C43DE32D05B"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:IMAP",
+  "updated_at": "2026-11-25T04:12:52+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

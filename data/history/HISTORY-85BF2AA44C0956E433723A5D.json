@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:0CA85F4FDD6D09F44935F516",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+    ],
+    "id": "CLAIM:0CA85F4FDD6D09F44935F516",
+    "name": "PROTOCOL:TCP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:44E3AEFF9AF7E600C824D6E1"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:32:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:16+00:00",
+  "entity_id": "CLAIM:0CA85F4FDD6D09F44935F516",
+  "id": "HISTORY:85BF2AA44C0956E433723A5D"
+}

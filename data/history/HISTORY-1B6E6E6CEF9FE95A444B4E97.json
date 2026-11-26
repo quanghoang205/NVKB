@@ -1,0 +1,314 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overread in the ngx_http_charset_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:C8D1AA83F777754695C85960"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:12874BE3BDC91C95F04CC120",
+      "CLAIM:13AF79A4BB8101F7584438AB",
+      "CLAIM:212EEBAD2488A4DAE1AD0B87",
+      "CLAIM:284A2F57356E74CDDF7CB3B1",
+      "CLAIM:28CD80DB2D87C28D0692244A",
+      "CLAIM:41B5453A6399139519712702",
+      "CLAIM:43001C4A821D38BB198DEAEA",
+      "CLAIM:5AC336FD044FB4102858DF29",
+      "CLAIM:626B3952396C5629FC10DFE1",
+      "CLAIM:6366B4CD6CCC173E297B2D2D",
+      "CLAIM:67753C128FF02F6D18972B58",
+      "CLAIM:6D71363F89AD650238C5515C",
+      "CLAIM:82F1F60017E1E880D1980DAF",
+      "CLAIM:90C6291AC75677CAE8AE8919",
+      "CLAIM:9127BB53A885B109E058C009",
+      "CLAIM:943AC7121F1765BD1088135A",
+      "CLAIM:A644098C528288A8E8D82302",
+      "CLAIM:BC3A8626FF3A6C0A6E126CFD",
+      "CLAIM:C1978979DE6A4B200D79ACB5",
+      "CLAIM:C1E455A19D499A4E6F574C45",
+      "CLAIM:C4D0D7BCEAE1589FC949193D",
+      "CLAIM:C63BFC14A2EB5A849BB4248A",
+      "CLAIM:CBF8258DEE78721DE08680D3",
+      "CLAIM:D5BD97C64794E155382C3685",
+      "CLAIM:D8A2F7B561F960F0CBB9E5E5",
+      "CLAIM:DBDEFE41D355AFFC83500B10",
+      "CLAIM:EBFE521582D1C208960045C9",
+      "CLAIM:F9E4465779E8B59F2ACB4814"
+    ],
+    "condition_refs": [
+      "CONDITION:B604ECB77B97F1579795CA3F"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "cve_id": "CVE-2026-42934",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:BC3D3E6FE89343AE7E5181A1",
+      "PACKAGE:CCAC9DFA1DAA8C3228A28469",
+      "PACKAGE:0D9C2E84AA17767FBB39CEF9",
+      "PACKAGE:5BEE31D07636B478A24F64F8"
+    ],
+    "distribution_status": [
+      "PACKAGE:BC3D3E6FE89343AE7E5181A1",
+      "PACKAGE:CCAC9DFA1DAA8C3228A28469",
+      "PACKAGE:0D9C2E84AA17767FBB39CEF9",
+      "PACKAGE:5BEE31D07636B478A24F64F8"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-42934 ghi nhận: Buffer overread in the ngx_http_charset_module. Phạm vi upstream: 0.3.50-1.30.0. Bản sửa được công bố: 1.31.0+, 1.30.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42934",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-06-08T20:34:05.147000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-42934",
+    "normal_component_behavior": "Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-13T14:12:44.331000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D386D39F26AA4B0F0E390E29"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-CHARSET-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-125"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overread in the ngx_http_charset_module.\n\nCWE-125 — Out-of-bounds read: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:61EFADE4FDBB1F77EB453C12",
+      "SEVERITY:C25DBD463B1ECF0342F725CF",
+      "SEVERITY:E433256023060FD81FE01F98",
+      "SEVERITY:F31AABEC5ABCB36681B94868",
+      "SEVERITY:FCC3510144C0D9DD3D94A360"
+    ],
+    "source_refs": [
+      "EVIDENCE:0F3AAED1C80B201D753C0C7D",
+      "EVIDENCE:45386D7260F8A021FA642272",
+      "EVIDENCE:61274833A24B2819EF33D8A3",
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:7437F7F7F59D47F5642B61C4",
+      "EVIDENCE:8018563939CFD1B6D984B5B2",
+      "EVIDENCE:AB46026A75280CA89AFB224F",
+      "EVIDENCE:AB6E40B85C793808DE349809"
+    ],
+    "title": "Buffer overread in the ngx_http_charset_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:45:18+00:00",
+    "upstream_affected_expression": "0.3.50-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overread in the ngx_http_charset_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:C8D1AA83F777754695C85960"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:12874BE3BDC91C95F04CC120",
+      "CLAIM:13AF79A4BB8101F7584438AB",
+      "CLAIM:212EEBAD2488A4DAE1AD0B87",
+      "CLAIM:284A2F57356E74CDDF7CB3B1",
+      "CLAIM:28CD80DB2D87C28D0692244A",
+      "CLAIM:41B5453A6399139519712702",
+      "CLAIM:43001C4A821D38BB198DEAEA",
+      "CLAIM:5AC336FD044FB4102858DF29",
+      "CLAIM:5E5CDBBE9789734743708092",
+      "CLAIM:626B3952396C5629FC10DFE1",
+      "CLAIM:6366B4CD6CCC173E297B2D2D",
+      "CLAIM:67753C128FF02F6D18972B58",
+      "CLAIM:6D71363F89AD650238C5515C",
+      "CLAIM:82F1F60017E1E880D1980DAF",
+      "CLAIM:90C6291AC75677CAE8AE8919",
+      "CLAIM:9127BB53A885B109E058C009",
+      "CLAIM:943AC7121F1765BD1088135A",
+      "CLAIM:971ADB14FE1CE96C9F910DC6",
+      "CLAIM:A644098C528288A8E8D82302",
+      "CLAIM:BC3A8626FF3A6C0A6E126CFD",
+      "CLAIM:C1978979DE6A4B200D79ACB5",
+      "CLAIM:C1BA19DFFA26C21769079567",
+      "CLAIM:C1E455A19D499A4E6F574C45",
+      "CLAIM:C4D0D7BCEAE1589FC949193D",
+      "CLAIM:C63BFC14A2EB5A849BB4248A",
+      "CLAIM:C6A6DBB223F5F8159139806C",
+      "CLAIM:CBF8258DEE78721DE08680D3",
+      "CLAIM:D5BD97C64794E155382C3685",
+      "CLAIM:D8A2F7B561F960F0CBB9E5E5",
+      "CLAIM:DBDEFE41D355AFFC83500B10",
+      "CLAIM:EBFE521582D1C208960045C9",
+      "CLAIM:F9E4465779E8B59F2ACB4814"
+    ],
+    "condition_refs": [
+      "CONDITION:B604ECB77B97F1579795CA3F"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "cve_id": "CVE-2026-42934",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:BC3D3E6FE89343AE7E5181A1",
+      "PACKAGE:CCAC9DFA1DAA8C3228A28469",
+      "PACKAGE:0D9C2E84AA17767FBB39CEF9",
+      "PACKAGE:5BEE31D07636B478A24F64F8"
+    ],
+    "distribution_status": [
+      "PACKAGE:BC3D3E6FE89343AE7E5181A1",
+      "PACKAGE:CCAC9DFA1DAA8C3228A28469",
+      "PACKAGE:0D9C2E84AA17767FBB39CEF9",
+      "PACKAGE:5BEE31D07636B478A24F64F8"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-42934 ghi nhận: Buffer overread in the ngx_http_charset_module. Phạm vi upstream: 0.3.50-1.30.0. Bản sửa được công bố: 1.31.0+, 1.30.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42934",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-06-08T20:34:05.147000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-42934",
+    "normal_component_behavior": "Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-13T14:12:44.331000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D386D39F26AA4B0F0E390E29"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-CHARSET-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-125"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overread in the ngx_http_charset_module.\n\nCWE-125 — Out-of-bounds read: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:61EFADE4FDBB1F77EB453C12",
+      "SEVERITY:C25DBD463B1ECF0342F725CF",
+      "SEVERITY:E433256023060FD81FE01F98",
+      "SEVERITY:F31AABEC5ABCB36681B94868",
+      "SEVERITY:FCC3510144C0D9DD3D94A360"
+    ],
+    "source_refs": [
+      "EVIDENCE:0F3AAED1C80B201D753C0C7D",
+      "EVIDENCE:45386D7260F8A021FA642272",
+      "EVIDENCE:61274833A24B2819EF33D8A3",
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:7437F7F7F59D47F5642B61C4",
+      "EVIDENCE:8018563939CFD1B6D984B5B2",
+      "EVIDENCE:AB46026A75280CA89AFB224F",
+      "EVIDENCE:AB6E40B85C793808DE349809"
+    ],
+    "title": "Buffer overread in the ngx_http_charset_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:46+00:00",
+    "upstream_affected_expression": "0.3.50-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:45:18+00:00",
+  "entity_id": "CVE:CVE-2026-42934",
+  "id": "HISTORY:1B6E6E6CEF9FE95A444B4E97"
+}

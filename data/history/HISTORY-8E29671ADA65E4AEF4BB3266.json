@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:69B089CCDE3D4B61B6C00DA2"
+    ],
+    "created_at": "2026-11-25T02:28:37+00:00",
+    "description": "CVE:CVE-2026-90439 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:1EF4E45DD843C0FB94FE4043",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A71EC4E15514D61BE101A79A"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-90439",
+    "updated_at": "2026-11-25T02:28:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:37+00:00",
+  "entity_id": "REL:1EF4E45DD843C0FB94FE4043",
+  "id": "HISTORY:8E29671ADA65E4AEF4BB3266"
+}

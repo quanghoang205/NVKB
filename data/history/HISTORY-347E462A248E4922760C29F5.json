@@ -1,0 +1,35 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cwe_id": "CWE-863",
+    "description": "CWE-863 Incorrect Authorization",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-863",
+    "name": "CWE-863",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:BA3B0AEE884498D2B3876382"
+    ],
+    "updated_at": "2026-11-25T02:27:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cwe_id": "CWE-863",
+    "description": "CWE-863 Incorrect Authorization",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-863",
+    "name": "CWE-863",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B"
+    ],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:27:44+00:00",
+  "entity_id": "WEAKNESS:CWE-863",
+  "id": "HISTORY:347E462A248E4922760C29F5"
+}

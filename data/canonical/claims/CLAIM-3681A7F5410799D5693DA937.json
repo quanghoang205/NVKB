@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:3629B27FA2D1B9CD8EB7C6FC",
+  "authority": "CVE Program",
+  "authority_scope": "CVE Program",
+  "claim_id": "CLAIM:3681A7F5410799D5693DA937",
+  "claim_value": "[{\"lessThan\": \"1.31.9\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.30.7\", \"status\": \"affected\", \"version\": \"1.30.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"*\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}]",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:26:42+00:00",
+  "description": "cna_version_data:CVE Program",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:E9FFCF9998096FFA361D67A7: /containers/cna/affected",
+  "evidence_refs": [
+    "EVIDENCE:E9FFCF9998096FFA361D67A7"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:3681A7F5410799D5693DA937",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-118899: cna_version_data:CVE Program",
+  "observation_key": "OBSERVATION:E34DA1D212E9C82733B676AD",
+  "observed_at": "2026-11-25T02:26:42+00:00",
+  "predicate": "cna_version_data:CVE Program",
+  "product_scope": "CVE:CVE-2026-118899",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:26:39+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E9FFCF9998096FFA361D67A7"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-118899",
+  "updated_at": "2026-11-25T04:12:33+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:16+00:00",
+  "content_hash": "d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"7729f9d2ce3bb16b63a5b4748f52046cbe3c5e5fb6c97429ddf6ba4a606fac39\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95.json",
+  "retrieved_at": "2026-11-25T02:26:16+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/32xxx/CVE-2024-32760.json"
+}

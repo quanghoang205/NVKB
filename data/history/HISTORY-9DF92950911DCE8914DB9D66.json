@@ -1,0 +1,41 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "",
+    "entity_type": "Reference",
+    "id": "REFERENCE:5E5F1BA6028217ACC624645B",
+    "name": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:95EEB716E087A80F4E73BD13",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "source_url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MLAOKJWDALQZBIV3WKGPJ6T5Z56D3PRD/",
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "",
+    "entity_type": "Reference",
+    "id": "REFERENCE:5E5F1BA6028217ACC624645B",
+    "name": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:95EEB716E087A80F4E73BD13",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "source_url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MLAOKJWDALQZBIV3WKGPJ6T5Z56D3PRD/",
+    "updated_at": "2026-11-25T02:26:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:26:27+00:00",
+  "entity_id": "REFERENCE:5E5F1BA6028217ACC624645B",
+  "id": "HISTORY:9DF92950911DCE8914DB9D66"
+}

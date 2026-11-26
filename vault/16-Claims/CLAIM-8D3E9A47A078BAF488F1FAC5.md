@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:8D3E9A47A078BAF488F1FAC5
+title: 'CVE:CVE-2024-24990: security_assumption_violated'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2024-24990: security_assumption_violated'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2024-24990: security_assumption_violated
+
+`CLAIM:8D3E9A47A078BAF488F1FAC5` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[CVE-2024-24990|CVE-2024-24990]]. Predicate: `security_assumption_violated`.
+
+```json
+"Ownership và refcount phản ánh mọi callback và timer."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-0294CB89856E43B0006C7D35|CVE-2024-24990]], [[EVIDENCE-0A1449B66184C3759604429B|CVE-2024-24990]], [[EVIDENCE-0BF4E4CC924225F0C7F5F039|[nginx-announce] nginx security advisory (CVE-2024-24989, CVE-2024-24990)]], [[EVIDENCE-16EEBFE222025099F86ED71D|CVE-2026-123634]], [[EVIDENCE-47FEBAAE733A7F33E8DB1FCC|CVE-2024-34161]], [[EVIDENCE-4DA43556D459ED068CF95469|CVE-2024-24990]], [[EVIDENCE-5F38EA689F4892FB28385F6D|CVE-2026-56434]], [[EVIDENCE-65256ECFFD16E574A729002D|CVE-2026-121810]], [[EVIDENCE-746115FE114312FD34607DDB|CVE-2024-24990]], [[EVIDENCE-8DACEC54F6C2D927D39F6309|CVE-2024-24990]], [[EVIDENCE-9EAFCBFFFE5ABAC3C4E129F3|NGINX security advisories]], [[EVIDENCE-A0ADB173EC54D8F7EE765F51|CWE - CWE-416: Use After Free (5.0)]], [[EVIDENCE-A1E6A38EC59839D676065425|CVE-2024-24990]], [[EVIDENCE-A236E8E52A0F6D1220BF705B|CVE-2026-40701]], [[EVIDENCE-A90CAE836D63673C02491963|CVE-2026-113425]], [[EVIDENCE-B6EDDCCFDDF57DB60B5B21ED|CVE-2026-123633]], [[EVIDENCE-D6B91C2E5962D50D24049841|CVE-2024-24990]], [[EVIDENCE-D9E46882376ECEC8C775B4C8|CVE-2026-97205]], [[EVIDENCE-ED2D3F3385DEAB5550841C6D|CVE-2026-42530]]
+
+Locator: EVIDENCE:0294CB89856E43B0006C7D35: /containers/cna/problemTypes; EVIDENCE:0A1449B66184C3759604429B: /cveMetadata; EVIDENCE:0BF4E4CC924225F0C7F5F039: advisory body; EVIDENCE:16EEBFE222025099F86ED71D: /containers/cna/problemTypes; EVIDENCE:47FEBAAE733A7F33E8DB1FCC: /containers/cna/problemTypes; EVIDENCE:4DA43556D459ED068CF95469: /containers/cna/metrics; EVIDENCE:5F38EA689F4892FB28385F6D: /containers/cna/problemTypes; EVIDENCE:65256ECFFD16E574A729002D: /containers/cna/problemTypes; EVIDENCE:746115FE114312FD34607DDB: /containers/cna/metrics; EVIDENCE:8DACEC54F6C2D927D39F6309: /containers/cna/descriptions; EVIDENCE:9EAFCBFFFE5ABAC3C4E129F3: li containing CVE-2024-24990; EVIDENCE:A0ADB173EC54D8F7EE765F51: Description / Potential Mitigations; EVIDENCE:A1E6A38EC59839D676065425: /containers/cna/affected; EVIDENCE:A236E8E52A0F6D1220BF705B: /containers/cna/problemTypes; EVIDENCE:A90CAE836D63673C02491963: /containers/cna/problemTypes; EVIDENCE:B6EDDCCFDDF57DB60B5B21ED: /containers/cna/problemTypes; EVIDENCE:D6B91C2E5962D50D24049841: /containers/cna/affected; EVIDENCE:D9E46882376ECEC8C775B4C8: /containers/cna/problemTypes; EVIDENCE:ED2D3F3385DEAB5550841C6D: /containers/cna/problemTypes
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.
+
+Quan sát: 2026-11-25T02:40:16+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

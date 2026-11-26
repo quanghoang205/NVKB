@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4",
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "document_title": "Development guide",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0AD050A8240D90FF01EE69D1",
+    "id": "EVIDENCE:0AD050A8240D90FF01EE69D1",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4.html",
+    "name": "Development guide",
+    "paraphrase": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Processes; topic=COMPONENT:WORKER-PROCESS",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/dev/development_guide.html",
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:11+00:00",
+  "entity_id": "EVIDENCE:0AD050A8240D90FF01EE69D1",
+  "id": "HISTORY:74AF4589270073687B332462"
+}

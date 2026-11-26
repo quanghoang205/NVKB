@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:47BAB4EB63123D693CECF4FD",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:BA964F6D3A07E0E9C9ABFA96",
+    "claim_value": "\"## Ownership và lifecycle\\n\\nState handshake thuộc connection, trong khi cấu hình trust và policy thuộc virtual server/cấu hình đang sử dụng. Resolver hoặc OCSP có thể cần chờ ngoài một lần callback; request kiểm tra có owner và điểm hoàn tất riêng. Diễn giải phòng vệ là quyết định chấp nhận không được xảy ra trước kết quả bắt buộc, và callback muộn không được dùng context đã hủy. Session resumption lại mang state từ kết nối trước sang quyết định mới, nên không được coi socket mới đã thừa hưởng mọi quyền cũ.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "#ssl_verify_client; #ssl_ocsp; #ssl_certificate; #ssl_session_cache",
+    "evidence_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BA964F6D3A07E0E9C9ABFA96",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: v1.3:knowledge:Ownership và lifecycle",
+    "observed_at": "2026-11-25T05:15:03+00:00",
+    "predicate": "v1.3:knowledge:Ownership và lifecycle",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:03+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T05:15:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:32:56+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:47BAB4EB63123D693CECF4FD",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:BA964F6D3A07E0E9C9ABFA96",
+    "claim_value": "\"## Ownership và lifecycle\\n\\nState handshake thuộc connection, trong khi cấu hình trust và policy thuộc virtual server/cấu hình đang sử dụng. Resolver hoặc OCSP có thể cần chờ ngoài một lần callback; request kiểm tra có owner và điểm hoàn tất riêng. Diễn giải phòng vệ là quyết định chấp nhận không được xảy ra trước kết quả bắt buộc, và callback muộn không được dùng context đã hủy. Session resumption lại mang state từ kết nối trước sang quyết định mới, nên không được coi socket mới đã thừa hưởng mọi quyền cũ.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BA964F6D3A07E0E9C9ABFA96",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: v1.3:knowledge:Ownership và lifecycle",
+    "observed_at": "2026-11-25T05:15:03+00:00",
+    "predicate": "v1.3:knowledge:Ownership và lifecycle",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T05:15:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:15:03+00:00",
+  "entity_id": "CLAIM:BA964F6D3A07E0E9C9ABFA96",
+  "id": "HISTORY:5E7EC6AB5086FB00A0FED168"
+}

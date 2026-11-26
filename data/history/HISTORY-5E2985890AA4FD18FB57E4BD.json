@@ -1,0 +1,23 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:90F2B51CF2DEDEDE626A4DDB"
+    ],
+    "created_at": "2026-11-25T02:26:08+00:00",
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed requests can cause NGINX worker processes to terminate.\n\nNote: The HTTP/3 QUIC module is not enabled by default and is considered experimental. For more information, refer to  Support for QUIC and HTTP/3 https://nginx.org/en/docs/quic.html .\n\n\n\nNOTE: Software versions which have reached End of Technical Support (EoTS) are not evaluated",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:42DA9FE635A75F00D3E68AF3",
+    "name": "Điều kiện được công bố — CVE-2024-24989",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D7C1C7751911E167923A1A43"
+    ],
+    "updated_at": "2026-11-25T02:26:08+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:08+00:00",
+  "entity_id": "CONDITION:42DA9FE635A75F00D3E68AF3",
+  "id": "HISTORY:5E2985890AA4FD18FB57E4BD"
+}

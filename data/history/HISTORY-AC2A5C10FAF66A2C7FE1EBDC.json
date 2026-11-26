@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:67B9EC490C46CCA2495C828C",
+    "claim_value": "\"Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "id": "CLAIM:67B9EC490C46CCA2495C828C",
+    "name": "WEAKNESS:CWE-1289: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-1289",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "CLAIM:67B9EC490C46CCA2495C828C",
+  "id": "HISTORY:AC2A5C10FAF66A2C7FE1EBDC"
+}

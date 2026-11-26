@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:5E73D2C91F8C7FABAE92A273",
+    "claim_value": "\"Hệ thống phân giải tên phân cấp.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:562CA6466BB3C0694F53C8C9"
+    ],
+    "id": "CLAIM:5E73D2C91F8C7FABAE92A273",
+    "name": "PROTOCOL:DNS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:562CA6466BB3C0694F53C8C9"
+    ],
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:23+00:00",
+  "entity_id": "CLAIM:5E73D2C91F8C7FABAE92A273",
+  "id": "HISTORY:90F111DD071DB670222C20B1"
+}

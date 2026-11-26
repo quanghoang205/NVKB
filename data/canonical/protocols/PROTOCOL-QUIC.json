@@ -1,0 +1,74 @@
+{
+  "answer_explanations": "Không. Lifetime của connection bao chứa nhiều stream nhưng không kéo dài tự động allocation riêng của stream; cần chứng cứ owner và cleanup.",
+  "architecture_position": "Datagram UDP ↔ connection/stream được xác thực.",
+  "article_body": "Nguồn xác nhận: [[CLAIM-0AC20EBC0BAB98223B3F6567|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nQUIC vận chuyển dữ liệu qua UDP nhưng cung cấp cho ứng dụng các byte stream có thứ tự. Byte của một stream được sắp xếp trong stream đó; thứ tự byte giữa các stream không có cùng bảo đảm. Điều này cho phép nhiều công việc tiến triển độc lập hơn khi một stream còn chờ dữ liệu. Flow control giới hạn dữ liệu mà bên nhận sẵn sàng lưu; nó không đồng nghĩa congestion control quyết định tải lên đường truyền.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-704FA48792E4738C69796547|Claim của section]].\n\n## Ownership và lifecycle\n\nStream có trạng thái gửi và nhận; connection giữ state vận chuyển chung lâu hơn một request đơn lẻ. Đóng stream, hủy công việc ứng dụng và kết thúc connection là ba sự kiện cần phối hợp. Trong giai đoạn closing/draining, endpoint không còn hoạt động như kết nối đang trao đổi bình thường, nhưng một phần state vẫn cần tồn tại theo quy tắc giao thức. Diễn giải implementation: callback đã xếp hàng không được dùng một context stream sau khi owner giải phóng nó, kể cả khi connection vẫn sống.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-5BE3957ED357CBF96BF47B85|Claim của section]].\n\n## Identity và invariant\n\nAddress validation kiểm tra khả năng nhận gói tại địa chỉ mà peer sử dụng, hỗ trợ hạn chế amplification. Nó không chứng minh danh tính tài khoản và không cấp quyền ứng dụng. Connection ID phục vụ nhận diện connection, không nên bị dùng thay chứng cứ authorization. Khi deployment dựa vào địa chỉ nguồn cho policy, cần phân biệt địa chỉ quan sát, địa chỉ đã xác nhận và identity được ứng dụng xác thực.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-F709F5AC9579ACF8765010CE|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nNhiều stream tăng khả năng ghép kênh nhưng cũng tăng số context, timer và buffer cần quản lý. Giới hạn stream và flow-control budget phải được xem cùng ngân sách worker. Tăng hiệu suất không loại bỏ nghĩa vụ kiểm state transition và cleanup. RFC mô tả giao thức; bài CVE mới xác định giới hạn của từng implementation. Không suy từ một lỗi HTTP/3 rằng UDP hay QUIC nói chung không an toàn.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-13A60031462672C973BF7156|Claim của section]].",
+  "assessment": "Một connection vẫn mở có đủ để chứng minh con trỏ của request stream đã đóng còn hợp lệ không?",
+  "claim_refs": [
+    "CLAIM:0AC20EBC0BAB98223B3F6567",
+    "CLAIM:704FA48792E4738C69796547",
+    "CLAIM:5BE3957ED357CBF96BF47B85",
+    "CLAIM:F709F5AC9579ACF8765010CE",
+    "CLAIM:13A60031462672C973BF7156"
+  ],
+  "created_at": "2026-11-25T02:32:22+00:00",
+  "curated_fields": [
+    "answer_explanations",
+    "article_body",
+    "assessment",
+    "claim_refs",
+    "curation_version",
+    "definition",
+    "description",
+    "diagram",
+    "editorial_maturity",
+    "editorial_review_note",
+    "learning_objectives",
+    "name",
+    "prerequisites",
+    "related_knowledge",
+    "research_claim_refs",
+    "source_refs",
+    "verification_limitations"
+  ],
+  "curation_version": "1.3.0",
+  "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+  "definition": "RFC 9000 định nghĩa stream có thứ tự byte riêng, flow control và address validation; stream không đồng nhất connection, và ordering của hai stream không được bảo đảm bởi QUIC.",
+  "description": "RFC 9000 định nghĩa stream có thứ tự byte riêng, flow control và address validation; stream không đồng nhất connection, và ordering của hai stream không được bảo đảm bởi QUIC.",
+  "diagram": "",
+  "editorial_maturity": "AI_REVIEWED",
+  "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+  "entity_type": "Protocol",
+  "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+  "id": "PROTOCOL:QUIC",
+  "learning_objectives": [
+    "Phân biệt owner của stream với owner connection.",
+    "Giải thích address validation khác với identity của người dùng."
+  ],
+  "name": "QUIC — stream, connection và kiểm chứng địa chỉ",
+  "normal_behavior": "QUIC quản lý connection ID, stream, flow control, loss recovery và xác nhận địa chỉ trong quá trình thiết lập/di chuyển đường truyền.",
+  "prerequisites": [
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "PROTOCOL:TLS"
+  ],
+  "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+  "related_knowledge": [
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "PROTOCOL:TLS"
+  ],
+  "research_claim_refs": [
+    "CLAIM:0AC20EBC0BAB98223B3F6567",
+    "CLAIM:704FA48792E4738C69796547",
+    "CLAIM:5BE3957ED357CBF96BF47B85",
+    "CLAIM:F709F5AC9579ACF8765010CE",
+    "CLAIM:13A60031462672C973BF7156"
+  ],
+  "safety_assumptions": "Không lấy metadata datagram chưa kiểm chứng làm danh tính ổn định.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Datagram UDP ↔ connection/stream được xác thực.",
+  "source_refs": [
+    "EVIDENCE:E2199047E6281CFD9EC42B26"
+  ],
+  "updated_at": "2026-11-25T05:08:35+00:00",
+  "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+  "verification_status": "INFERRED"
+}

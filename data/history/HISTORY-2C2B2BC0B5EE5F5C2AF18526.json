@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:4634361AB4A2949DD24C87C6",
+    "claim_value": "\"Ghi dữ liệu vượt dung lượng buffer đích.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:28D21A886526208768AB863F"
+    ],
+    "id": "CLAIM:4634361AB4A2949DD24C87C6",
+    "name": "WEAKNESS:CWE-120: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:28D21A886526208768AB863F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:32:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:32+00:00",
+  "entity_id": "CLAIM:4634361AB4A2949DD24C87C6",
+  "id": "HISTORY:2C2B2BC0B5EE5F5C2AF18526"
+}

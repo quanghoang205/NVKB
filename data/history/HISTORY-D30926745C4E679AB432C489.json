@@ -1,0 +1,416 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:1701175D1DB53BD5C92CE16B"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:046C0B27BCA43CE3E3D872C1",
+      "CLAIM:234C3556D3EE3655407BBF37",
+      "CLAIM:2786B790C537DA609E2C2C63",
+      "CLAIM:296BEC0B957ED22BAB78D23D",
+      "CLAIM:2CEB390B539791A7B5652E63",
+      "CLAIM:2D83DFAFB13810BA0B644E68",
+      "CLAIM:331ED3CFCEC71EDBA28BBE78",
+      "CLAIM:3BB76C1BAF6F32372DEA04F9",
+      "CLAIM:3E1C7F20B2E3DD5A03272E90",
+      "CLAIM:419DB5283FAB13DDBD571D4F",
+      "CLAIM:4636BB0D7F4C9E087D379BA4",
+      "CLAIM:4D69340D9CC3D6C8525F8837",
+      "CLAIM:4EE22571433DA08474A259DF",
+      "CLAIM:64F4C22FE40456699426DD22",
+      "CLAIM:773D0463C069A4CBBDBA9A94",
+      "CLAIM:787F3E613533FB786E6D1D80",
+      "CLAIM:7EF8554D8D4CCEE38D1D93C9",
+      "CLAIM:996F8F71131A305758256C2D",
+      "CLAIM:A12C994FD088E78A7EFA3F11",
+      "CLAIM:AF785684E48879D04B46D521",
+      "CLAIM:B13A6A67EA6C5F196F1D0922",
+      "CLAIM:BF8AC214E98F660121877D4B",
+      "CLAIM:C15C1D905F44AE1EA72E383C",
+      "CLAIM:C2CCEDBE02CC7BD3C84108C9",
+      "CLAIM:C6B29FDC2735D5E5A674D6A0",
+      "CLAIM:C817AADF59210C54F82EB019",
+      "CLAIM:CF7FD907DFB73B7BB9656D98",
+      "CLAIM:D1CAE8911B0D8B3D6769CFA5",
+      "CLAIM:D33384191B9448285017F029",
+      "CLAIM:D70ECEC6A3A194ED0196424F",
+      "CLAIM:E9B4EE32790A0555A67246E4",
+      "CLAIM:EEEB33792A7A28EE95671F5F",
+      "CLAIM:F0FBF9D0FFC7F987D068A18F",
+      "CLAIM:F1ACDAB98400E9BD4C7C06C0",
+      "CLAIM:FDABA12CEBACB392A9987928"
+    ],
+    "condition_refs": [
+      "CONDITION:407584D6BB87E87391C72E44"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker processes có thể kết thúc theo nguồn.",
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-27651",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá implementation, review state initialization trên nhánh retry; giới hạn retry là kiểm soát tài nguyên bổ sung."
+    ],
+    "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:BED520082D67A39CF4335A94",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:EBEAF9AFB3CC71DF25828562"
+    ],
+    "distribution_status": [
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:BED520082D67A39CF4335A94",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:EBEAF9AFB3CC71DF25828562"
+    ],
+    "documented_configuration_context": "Mail auth HTTP module, CRAM-MD5 hoặc APOP và Auth-Wait cho retry theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "NULL pointer dereference trong mail authentication có liên hệ retry với CRAM-MD5/APOP.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27651",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T01:13:39.490000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.",
+      "Trả lời có evidence: Hai CVE đều nhắc Auth-Wait có cùng impact không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-27651",
+    "normal_component_behavior": "Lần authentication tiếp theo phải có context hợp lệ, kể cả khi auth server cho retry.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không có xác nhận lộ bí mật hoặc thực thi mã trong mô tả đã đọc.",
+    "publication_date": "2026-03-24T14:13:27.295000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:39CD16CA99287CB8A0E398DE"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-MAIL-AUTH-HTTP-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nNULL pointer dereference trong mail authentication có liên hệ retry với CRAM-MD5/APOP.\n\n## 2. CVE identity và product scope\n\nCVE-2026-27651; published 2026-03-24T14:13:27.295000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-2786B790C537DA609E2C2C63|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-MAIL-AUTH-HTTP-MODULE|Mail auth HTTP — trust boundary và vòng đời phiên]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nMail auth HTTP state và lifecycle phương thức xác thực ở worker. [[CLAIM-3BB76C1BAF6F32372DEA04F9|Claim / locator]].\n\n## 5. Normal component behavior\n\nLần authentication tiếp theo phải có context hợp lệ, kể cả khi auth server cho retry. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nAdvisory gọi NULL dereference; CNA nêu phương thức authentication và Auth-Wait, chưa xác định object NULL. [[CLAIM-331ED3CFCEC71EDBA28BBE78|Claim / locator]].\n\n## 7. Relevant security principles\n\nRetry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nMail auth HTTP module, CRAM-MD5 hoặc APOP và Auth-Wait cho retry theo CNA. [[CLAIM-3BB76C1BAF6F32372DEA04F9|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.5.15-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+. [[CLAIM-4EE22571433DA08474A259DF|Claim / locator]].\n\nFix 1.28.3/1.29.7; không dùng phạm vi của lỗi SMTP over-read 53859. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker processes có thể kết thúc theo nguồn. [[CLAIM-C817AADF59210C54F82EB019|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông có xác nhận lộ bí mật hoặc thực thi mã trong mô tả đã đọc. [[CLAIM-D1CAE8911B0D8B3D6769CFA5|Claim / locator]].\n\n## 12. Remediation principles\n\nVá implementation, review state initialization trên nhánh retry; giới hạn retry là kiểm soát tài nguyên bổ sung. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-4EE22571433DA08474A259DF|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.28.3/1.29.7; không dùng phạm vi của lỗi SMTP over-read 53859.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-MAIL-AUTH-HTTP-MODULE|Mail auth HTTP — trust boundary và vòng đời phiên]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-476|CWE-476 — NULL pointer dereference]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.\n- Trả lời có evidence: Hai CVE đều nhắc Auth-Wait có cùng impact không?\n\n## 17. Discussion questions\n\nHai CVE đều nhắc Auth-Wait có cùng impact không?\n\nGợi ý đáp án: Không; 27651 mô tả termination, còn 53859 mô tả byte đi tới auth server.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-2786B790C537DA609E2C2C63|CLAIM:2786B790C537DA609E2C2C63]]\n- applicability: [[CLAIM-3BB76C1BAF6F32372DEA04F9|CLAIM:3BB76C1BAF6F32372DEA04F9]]\n- impact: [[CLAIM-C817AADF59210C54F82EB019|CLAIM:C817AADF59210C54F82EB019]]\n- potential: [[CLAIM-D1CAE8911B0D8B3D6769CFA5|CLAIM:D1CAE8911B0D8B3D6769CFA5]]\n- mechanism: [[CLAIM-331ED3CFCEC71EDBA28BBE78|CLAIM:331ED3CFCEC71EDBA28BBE78]]\n- versions: [[CLAIM-4EE22571433DA08474A259DF|CLAIM:4EE22571433DA08474A259DF]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject và đường lỗi cụ thể sau retry chưa review mã nguồn.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:2786B790C537DA609E2C2C63",
+      "CLAIM:3BB76C1BAF6F32372DEA04F9",
+      "CLAIM:C817AADF59210C54F82EB019",
+      "CLAIM:D1CAE8911B0D8B3D6769CFA5",
+      "CLAIM:331ED3CFCEC71EDBA28BBE78",
+      "CLAIM:4EE22571433DA08474A259DF"
+    ],
+    "research_group": "mail",
+    "root_cause_summary": "Advisory gọi NULL dereference; CNA nêu phương thức authentication và Auth-Wait, chưa xác định object NULL.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:0C537C308E7AB887930120DB",
+      "SEVERITY:4EF00A297E633523A29A3A3D",
+      "SEVERITY:ADDAC0213911E5B1FB94A210",
+      "SEVERITY:B053EA9255AED6CF261D8FF4",
+      "SEVERITY:CDB16971A920D874F1B7C2DB",
+      "SEVERITY:D27687B0D673CA5C1211886B",
+      "SEVERITY:E9F39A74FB81B3CE39A42BDC"
+    ],
+    "source_refs": [
+      "EVIDENCE:06A3ED36BB04D8872758749D",
+      "EVIDENCE:11E5B7EC9460D81E92616E1F",
+      "EVIDENCE:33F0AADEF3D4F5B6E71E4AE7",
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91",
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D",
+      "EVIDENCE:6D5EE1924CE80867E38D4C5C",
+      "EVIDENCE:76524E2560C928EDE4663BA0",
+      "EVIDENCE:8306189DC142C4B552E2BDF0",
+      "EVIDENCE:915B951121D4B5B2FD44CE73",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:EA030512DDB20C2CCA1C76C0",
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "title": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Object và đường lỗi cụ thể sau retry chưa review mã nguồn.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:49:08+00:00",
+    "upstream_affected_expression": "0.5.15-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:1701175D1DB53BD5C92CE16B"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:046C0B27BCA43CE3E3D872C1",
+      "CLAIM:234C3556D3EE3655407BBF37",
+      "CLAIM:2786B790C537DA609E2C2C63",
+      "CLAIM:296BEC0B957ED22BAB78D23D",
+      "CLAIM:2CEB390B539791A7B5652E63",
+      "CLAIM:2D83DFAFB13810BA0B644E68",
+      "CLAIM:331ED3CFCEC71EDBA28BBE78",
+      "CLAIM:3BB76C1BAF6F32372DEA04F9",
+      "CLAIM:3E1C7F20B2E3DD5A03272E90",
+      "CLAIM:419DB5283FAB13DDBD571D4F",
+      "CLAIM:4636BB0D7F4C9E087D379BA4",
+      "CLAIM:4D69340D9CC3D6C8525F8837",
+      "CLAIM:4EE22571433DA08474A259DF",
+      "CLAIM:64F4C22FE40456699426DD22",
+      "CLAIM:773D0463C069A4CBBDBA9A94",
+      "CLAIM:787F3E613533FB786E6D1D80",
+      "CLAIM:7EF8554D8D4CCEE38D1D93C9",
+      "CLAIM:996F8F71131A305758256C2D",
+      "CLAIM:A12C994FD088E78A7EFA3F11",
+      "CLAIM:AF785684E48879D04B46D521",
+      "CLAIM:B13A6A67EA6C5F196F1D0922",
+      "CLAIM:BF8AC214E98F660121877D4B",
+      "CLAIM:C15C1D905F44AE1EA72E383C",
+      "CLAIM:C2CCEDBE02CC7BD3C84108C9",
+      "CLAIM:C6B29FDC2735D5E5A674D6A0",
+      "CLAIM:C817AADF59210C54F82EB019",
+      "CLAIM:CF7FD907DFB73B7BB9656D98",
+      "CLAIM:D1CAE8911B0D8B3D6769CFA5",
+      "CLAIM:D33384191B9448285017F029",
+      "CLAIM:D70ECEC6A3A194ED0196424F",
+      "CLAIM:E9B4EE32790A0555A67246E4",
+      "CLAIM:EEEB33792A7A28EE95671F5F",
+      "CLAIM:F0FBF9D0FFC7F987D068A18F",
+      "CLAIM:F1ACDAB98400E9BD4C7C06C0",
+      "CLAIM:FDABA12CEBACB392A9987928"
+    ],
+    "condition_refs": [
+      "CONDITION:407584D6BB87E87391C72E44"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker processes có thể kết thúc theo nguồn.",
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-27651",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá implementation, review state initialization trên nhánh retry; giới hạn retry là kiểm soát tài nguyên bổ sung."
+    ],
+    "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:BED520082D67A39CF4335A94",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:EBEAF9AFB3CC71DF25828562"
+    ],
+    "distribution_status": [
+      "PACKAGE:758AF406A0E118C023C3B285",
+      "PACKAGE:BED520082D67A39CF4335A94",
+      "PACKAGE:E1196418BEC461E3F13A8B73",
+      "PACKAGE:EBEAF9AFB3CC71DF25828562"
+    ],
+    "documented_configuration_context": "Mail auth HTTP module, CRAM-MD5 hoặc APOP và Auth-Wait cho retry theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "NULL pointer dereference trong mail authentication có liên hệ retry với CRAM-MD5/APOP.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27651",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T01:13:39.490000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.",
+      "Trả lời có evidence: Hai CVE đều nhắc Auth-Wait có cùng impact không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-27651",
+    "normal_component_behavior": "Lần authentication tiếp theo phải có context hợp lệ, kể cả khi auth server cho retry.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không có xác nhận lộ bí mật hoặc thực thi mã trong mô tả đã đọc.",
+    "publication_date": "2026-03-24T14:13:27.295000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:39CD16CA99287CB8A0E398DE"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-MAIL-AUTH-HTTP-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nNULL pointer dereference trong mail authentication có liên hệ retry với CRAM-MD5/APOP.\n\n## 2. CVE identity và product scope\n\nCVE-2026-27651; published 2026-03-24T14:13:27.295000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-2786B790C537DA609E2C2C63|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-MAIL-AUTH-HTTP-MODULE|Mail auth HTTP — trust boundary và vòng đời phiên]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nMail auth HTTP state và lifecycle phương thức xác thực ở worker. [[CLAIM-3BB76C1BAF6F32372DEA04F9|Claim / locator]].\n\n## 5. Normal component behavior\n\nLần authentication tiếp theo phải có context hợp lệ, kể cả khi auth server cho retry. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nAdvisory gọi NULL dereference; CNA nêu phương thức authentication và Auth-Wait, chưa xác định object NULL. [[CLAIM-331ED3CFCEC71EDBA28BBE78|Claim / locator]].\n\n## 7. Relevant security principles\n\nRetry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nMail auth HTTP module, CRAM-MD5 hoặc APOP và Auth-Wait cho retry theo CNA. [[CLAIM-3BB76C1BAF6F32372DEA04F9|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.5.15-1.29.6; not vulnerable/fixed branches 1.29.7+, 1.28.3+. [[CLAIM-4EE22571433DA08474A259DF|Claim / locator]].\n\nFix 1.28.3/1.29.7; không dùng phạm vi của lỗi SMTP over-read 53859. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker processes có thể kết thúc theo nguồn. [[CLAIM-C817AADF59210C54F82EB019|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông có xác nhận lộ bí mật hoặc thực thi mã trong mô tả đã đọc. [[CLAIM-D1CAE8911B0D8B3D6769CFA5|Claim / locator]].\n\n## 12. Remediation principles\n\nVá implementation, review state initialization trên nhánh retry; giới hạn retry là kiểm soát tài nguyên bổ sung. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-4EE22571433DA08474A259DF|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.28.3/1.29.7; không dùng phạm vi của lỗi SMTP over-read 53859.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-MAIL-AUTH-HTTP-MODULE|Mail auth HTTP — trust boundary và vòng đời phiên]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-476|CWE-476 — NULL pointer dereference]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.\n- Trả lời có evidence: Hai CVE đều nhắc Auth-Wait có cùng impact không?\n\n## 17. Discussion questions\n\nHai CVE đều nhắc Auth-Wait có cùng impact không?\n\nGợi ý đáp án: Không; 27651 mô tả termination, còn 53859 mô tả byte đi tới auth server.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-2786B790C537DA609E2C2C63|CLAIM:2786B790C537DA609E2C2C63]]\n- applicability: [[CLAIM-3BB76C1BAF6F32372DEA04F9|CLAIM:3BB76C1BAF6F32372DEA04F9]]\n- impact: [[CLAIM-C817AADF59210C54F82EB019|CLAIM:C817AADF59210C54F82EB019]]\n- potential: [[CLAIM-D1CAE8911B0D8B3D6769CFA5|CLAIM:D1CAE8911B0D8B3D6769CFA5]]\n- mechanism: [[CLAIM-331ED3CFCEC71EDBA28BBE78|CLAIM:331ED3CFCEC71EDBA28BBE78]]\n- versions: [[CLAIM-4EE22571433DA08474A259DF|CLAIM:4EE22571433DA08474A259DF]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject và đường lỗi cụ thể sau retry chưa review mã nguồn.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:2786B790C537DA609E2C2C63",
+      "CLAIM:3BB76C1BAF6F32372DEA04F9",
+      "CLAIM:C817AADF59210C54F82EB019",
+      "CLAIM:D1CAE8911B0D8B3D6769CFA5",
+      "CLAIM:331ED3CFCEC71EDBA28BBE78",
+      "CLAIM:4EE22571433DA08474A259DF"
+    ],
+    "research_group": "mail",
+    "root_cause_summary": "Advisory gọi NULL dereference; CNA nêu phương thức authentication và Auth-Wait, chưa xác định object NULL.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Retry là chuyển trạng thái đầy đủ, không chỉ lặp lại thao tác trên context cũ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:0C537C308E7AB887930120DB",
+      "SEVERITY:4EF00A297E633523A29A3A3D",
+      "SEVERITY:ADDAC0213911E5B1FB94A210",
+      "SEVERITY:B053EA9255AED6CF261D8FF4",
+      "SEVERITY:CDB16971A920D874F1B7C2DB",
+      "SEVERITY:D27687B0D673CA5C1211886B",
+      "SEVERITY:E9F39A74FB81B3CE39A42BDC"
+    ],
+    "source_refs": [
+      "EVIDENCE:06A3ED36BB04D8872758749D",
+      "EVIDENCE:11E5B7EC9460D81E92616E1F",
+      "EVIDENCE:33F0AADEF3D4F5B6E71E4AE7",
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91",
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D",
+      "EVIDENCE:6D5EE1924CE80867E38D4C5C",
+      "EVIDENCE:76524E2560C928EDE4663BA0",
+      "EVIDENCE:8306189DC142C4B552E2BDF0",
+      "EVIDENCE:915B951121D4B5B2FD44CE73",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:EA030512DDB20C2CCA1C76C0",
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "title": "NULL pointer dereference while using CRAM-MD5 or APOP",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Object và đường lỗi cụ thể sau retry chưa review mã nguồn.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:34:29+00:00",
+    "upstream_affected_expression": "0.5.15-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:49:08+00:00",
+  "entity_id": "CVE:CVE-2026-27651",
+  "id": "HISTORY:D30926745C4E679AB432C489"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:E4D7DB96114C7592E3827033",
+    "claim_value": "\"Description\\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \\n\\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\\n\\nImpact\\n\\n\\nThis vulnerability may allow remote attackers to \\n\\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "vendor_documented_conditions",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A59E329248E28B36814C7E0F"
+    ],
+    "id": "CLAIM:E4D7DB96114C7592E3827033",
+    "name": "CVE:CVE-2026-95101: vendor_documented_conditions",
+    "predicate": "vendor_documented_conditions",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A59E329248E28B36814C7E0F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "CLAIM:E4D7DB96114C7592E3827033",
+  "id": "HISTORY:A4440ED3ACEF37C91D443399"
+}

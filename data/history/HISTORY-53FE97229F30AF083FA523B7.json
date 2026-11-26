@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F6A758740EC902B1961D13D1",
+    "claim_value": "\"Không coi mọi request có thể retry an toàn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "id": "CLAIM:F6A758740EC902B1961D13D1",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:F6A758740EC902B1961D13D1",
+  "id": "HISTORY:53FE97229F30AF083FA523B7"
+}

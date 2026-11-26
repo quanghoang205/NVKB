@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:BF7F47ED1F1392980FF59EA8",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:C0974F86BBEAB58AD4F60BB0",
+    "claim_value": "\"Connection state ↔ từng stream.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:BBB9F585CBA6A76D66F40DA5: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C0974F86BBEAB58AD4F60BB0",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:HTTP-2: architecture_position",
+    "observation_key": "OBSERVATION:D83360004020D70A56A33DB0",
+    "observed_at": "2026-11-25T02:32:19+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "PROTOCOL:HTTP-2",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:18+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T04:12:49+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:C0974F86BBEAB58AD4F60BB0",
+    "claim_value": "\"Connection state ↔ từng stream.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "id": "CLAIM:C0974F86BBEAB58AD4F60BB0",
+    "name": "PROTOCOL:HTTP-2: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:49+00:00",
+  "entity_id": "CLAIM:C0974F86BBEAB58AD4F60BB0",
+  "id": "HISTORY:895E70031DE7CCFCB40024ED"
+}

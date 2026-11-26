@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:40E4E6333B663E8715FFC402",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:878D849708474C43DE32D05B: Protocol overview and state machine; topic=PROTOCOL:IMAP",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:IMAP: related_failure_classes",
+    "observation_key": "OBSERVATION:458C830F0A220594A563EB32",
+    "observed_at": "2026-11-25T02:44:25+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "PROTOCOL:IMAP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:27+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T04:12:48+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "name": "PROTOCOL:IMAP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:48+00:00",
+  "entity_id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+  "id": "HISTORY:E31D252D8F6987C89D34183A"
+}

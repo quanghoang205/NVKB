@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:B824813E6ACD32292FDEFB39",
+    "claim_value": "\"Tách authentication/authorization và kiểm thử chính sách ở mọi đường xử lý phiên.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "id": "CLAIM:B824813E6ACD32292FDEFB39",
+    "name": "WEAKNESS:CWE-863: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "CLAIM:B824813E6ACD32292FDEFB39",
+  "id": "HISTORY:7BB8436D17C617E6687648A1"
+}

@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "claim_refs": [
+      "CLAIM:D88643D7B9E62BB145440943",
+      "CLAIM:3F1C7CD058DCD18BB8F77BA2",
+      "CLAIM:27779A2F94251DF49AB5DCC0",
+      "CLAIM:1C1BADCFFFB9F93E7B4D26B4",
+      "CLAIM:EB316330BB3C2182E278B82A",
+      "CLAIM:40E315740A38DC39C7512E59",
+      "CLAIM:1B8B469AC7C40B3B30EA29F9",
+      "CLAIM:C5CC886B05343FEA8F6C2729"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát cache key, Authorization/Cookie, Vary và điều kiện bypass cho dữ liệu riêng tư.",
+    "definition": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "description": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.",
+    "id": "COMPONENT:HTTP-CACHING",
+    "learning_objectives": [
+      "Giải thích HTTP caching bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP caching",
+    "normal_behavior": "NGINX tra cache theo key, thời gian hiệu lực và chỉ thị cache; các điều kiện bypass/no-cache quyết định việc đọc hoặc lưu response.",
+    "related_failure_classes": "Information disclosure; cache key inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Cache key phải phân biệt các context trả về nội dung khác nhau.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "claim_refs": [
+      "CLAIM:D88643D7B9E62BB145440943",
+      "CLAIM:3F1C7CD058DCD18BB8F77BA2",
+      "CLAIM:27779A2F94251DF49AB5DCC0",
+      "CLAIM:1C1BADCFFFB9F93E7B4D26B4",
+      "CLAIM:EB316330BB3C2182E278B82A",
+      "CLAIM:40E315740A38DC39C7512E59",
+      "CLAIM:1B8B469AC7C40B3B30EA29F9",
+      "CLAIM:C5CC886B05343FEA8F6C2729"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát cache key, Authorization/Cookie, Vary và điều kiện bypass cho dữ liệu riêng tư.",
+    "definition": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "description": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.",
+    "id": "COMPONENT:HTTP-CACHING",
+    "learning_objectives": [
+      "Giải thích HTTP caching bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP caching",
+    "normal_behavior": "NGINX tra cache theo key, thời gian hiệu lực và chỉ thị cache; các điều kiện bypass/no-cache quyết định việc đọc hoặc lưu response.",
+    "related_failure_classes": "Information disclosure; cache key inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Cache key phải phân biệt các context trả về nội dung khác nhau.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:HTTP-CACHING",
+  "id": "HISTORY:96DA0FDAB504577D0AC16D5A"
+}

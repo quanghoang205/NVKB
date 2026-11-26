@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:FC971EEE162CC6DA5213D5A8",
+    "authority": "CVE Program / CNA",
+    "authority_scope": "CVE Program / CNA",
+    "claim_id": "CLAIM:D1066137D7460FCB9A0C413B",
+    "claim_value": "\"WEAKNESS:CWE-190\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "description": "related_weaknesses",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:F9A1F1B9A78981951B3C0E64: /containers/cna/problemTypes",
+    "evidence_refs": [
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D1066137D7460FCB9A0C413B",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-27784: related_weaknesses",
+    "observation_key": "OBSERVATION:707122B70AF93031457A9ED3",
+    "observed_at": "2026-11-25T02:27:36+00:00",
+    "predicate": "related_weaknesses",
+    "product_scope": "CVE:CVE-2026-27784",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:34+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program / CNA",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T04:12:51+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:D1066137D7460FCB9A0C413B",
+    "claim_value": "\"WEAKNESS:CWE-190\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "id": "CLAIM:D1066137D7460FCB9A0C413B",
+    "name": "CVE:CVE-2026-27784: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:27:36+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:51+00:00",
+  "entity_id": "CLAIM:D1066137D7460FCB9A0C413B",
+  "id": "HISTORY:8C5A33859FAB019C3E327D33"
+}

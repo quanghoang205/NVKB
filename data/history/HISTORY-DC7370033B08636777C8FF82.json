@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:96875E20EEC6327B1C0CA38D",
+    "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA"
+    ],
+    "id": "CLAIM:96875E20EEC6327B1C0CA38D",
+    "name": "MODULE:NGX-HTTP-V2-MODULE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:96875E20EEC6327B1C0CA38D",
+  "id": "HISTORY:DC7370033B08636777C8FF82"
+}

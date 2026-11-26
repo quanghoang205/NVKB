@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8D31F5CF6CCFCE4E54508B39",
+    "claim_value": "\"Tách quyền của tiến trình điều phối và tiến trình xử lý request.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "id": "CLAIM:8D31F5CF6CCFCE4E54508B39",
+    "name": "COMPONENT:PROCESS-PRIVILEGES: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "subject_entity_id": "COMPONENT:PROCESS-PRIVILEGES",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:8D31F5CF6CCFCE4E54508B39",
+  "id": "HISTORY:E4DB8A4466EE6A6B978549F7"
+}

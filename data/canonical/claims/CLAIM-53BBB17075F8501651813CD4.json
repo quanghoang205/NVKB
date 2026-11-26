@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:934C3977AEF13DB754FF31F0",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:53BBB17075F8501651813CD4",
+  "claim_value": "\"medium\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:26:27+00:00",
+  "description": "vendor_severity_label",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:B250179A33F97BECB42DB182: li containing CVE-2024-35200",
+  "evidence_refs": [
+    "EVIDENCE:B250179A33F97BECB42DB182"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:53BBB17075F8501651813CD4",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2024-35200: vendor_severity_label",
+  "observation_key": "OBSERVATION:6A933014B79DDD11FF6A6602",
+  "observed_at": "2026-11-25T02:26:27+00:00",
+  "predicate": "vendor_severity_label",
+  "product_scope": "CVE:CVE-2024-35200",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:10+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:B250179A33F97BECB42DB182"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-35200",
+  "updated_at": "2026-11-25T04:12:36+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

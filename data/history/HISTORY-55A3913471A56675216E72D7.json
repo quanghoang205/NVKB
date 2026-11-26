@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:F5AD422CB8614BDA8515C0D8",
+    "claim_value": "\"Theo dõi capacity riêng với length; kiểm thử các giá trị biên.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48"
+    ],
+    "id": "CLAIM:F5AD422CB8614BDA8515C0D8",
+    "name": "WEAKNESS:CWE-787: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T02:32:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:33+00:00",
+  "entity_id": "CLAIM:F5AD422CB8614BDA8515C0D8",
+  "id": "HISTORY:55A3913471A56675216E72D7"
+}

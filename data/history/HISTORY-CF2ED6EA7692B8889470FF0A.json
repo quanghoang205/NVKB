@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ae3aa2311e37c69daee3dad0d2f39db7f76b6e9162c215ce5372b84b151d2be5",
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-28753",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+    "id": "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+    "local_snapshot_path": "data/raw/cve/snapshots/ae3aa2311e37c69daee3dad0d2f39db7f76b6e9162c215ce5372b84b151d2be5.json",
+    "name": "CVE-2026-28753",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:27:37+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/28xxx/CVE-2026-28753.json",
+    "updated_at": "2026-11-25T02:27:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:40+00:00",
+  "entity_id": "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+  "id": "HISTORY:CF2ED6EA7692B8889470FF0A"
+}

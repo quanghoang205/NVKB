@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:12C6B776C10414BD1DF5921A",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:65130D9686D842DB95061829",
+    "claim_value": "{\"cve_id\": \"CVE-2026-40460\", \"problem_types\": [{\"descriptions\": [{\"cweId\": \"CWE-290\", \"description\": \"CWE-290 Authentication Bypass by Spoofing\", \"lang\": \"en\", \"type\": \"CWE\"}]}], \"products\": [\"NGINX Plus\", \"NGINX Open Source\"], \"publication_date\": \"2026-05-13T14:12:45.291Z\", \"research_product\": \"NGINX Open Source\", \"state\": \"PUBLISHED\"}",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:32:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/cveMetadata; /containers/cna/affected/*/product; /containers/cna/problemTypes",
+    "evidence_refs": [
+      "EVIDENCE:D7E36D13CE2C6199B21FED28"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:65130D9686D842DB95061829",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40460: v1.3:identity",
+    "observed_at": "2026-11-25T05:32:02+00:00",
+    "predicate": "v1.3:identity",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:32:02+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D7E36D13CE2C6199B21FED28"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T05:32:02+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:27:49+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:12C6B776C10414BD1DF5921A",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:65130D9686D842DB95061829",
+    "claim_value": "{\"cve_id\": \"CVE-2026-40460\", \"problem_types\": [{\"descriptions\": [{\"cweId\": \"CWE-290\", \"description\": \"CWE-290 Authentication Bypass by Spoofing\", \"lang\": \"en\", \"type\": \"CWE\"}]}], \"products\": [\"NGINX Plus\", \"NGINX Open Source\"], \"publication_date\": \"2026-05-13T14:12:45.291Z\", \"research_product\": \"NGINX Open Source\", \"state\": \"PUBLISHED\"}",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:32:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D7E36D13CE2C6199B21FED28"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:65130D9686D842DB95061829",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40460: v1.3:identity",
+    "observed_at": "2026-11-25T05:32:02+00:00",
+    "predicate": "v1.3:identity",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D7E36D13CE2C6199B21FED28"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T05:32:02+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T05:32:02+00:00",
+  "entity_id": "CLAIM:65130D9686D842DB95061829",
+  "id": "HISTORY:C1EA018F21B9ECD28A1E56CC"
+}

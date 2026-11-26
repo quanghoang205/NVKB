@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:5DB97E10096FADEAEB2FB360",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:3E6BF1A2C80A4AD218ABC9D9",
+  "claim_value": "\"The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:27:36+00:00",
+  "description": "description",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:E3A0312E8EBA339353ECC94F: /containers/cna/descriptions",
+  "evidence_refs": [
+    "EVIDENCE:E3A0312E8EBA339353ECC94F"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:3E6BF1A2C80A4AD218ABC9D9",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-27784: description",
+  "observation_key": "OBSERVATION:C159EA473C1B73A8A58E57C7",
+  "observed_at": "2026-11-25T02:27:36+00:00",
+  "predicate": "description",
+  "product_scope": "CVE:CVE-2026-27784",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:27:34+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E3A0312E8EBA339353ECC94F"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-27784",
+  "updated_at": "2026-11-25T04:12:34+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

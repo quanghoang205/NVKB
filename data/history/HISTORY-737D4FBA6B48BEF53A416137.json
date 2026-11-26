@@ -1,0 +1,272 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Excessive CPU usage in TLS 1.3 with ssl_early_data",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:7F8D057281D34605915A77F6"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07CA98F632B0B1817DAF3D57",
+      "CLAIM:22F72D87625BDA60ACAB646E",
+      "CLAIM:3A3888B346D8727C9DBC9B88",
+      "CLAIM:409EB7EEF03C9BA7ED3BD918",
+      "CLAIM:4B32B0DC377849C0137FA8A2",
+      "CLAIM:4FC76299BB3705F2DB62E293",
+      "CLAIM:65E0C951A37CEBD5037FF623",
+      "CLAIM:6D4957978E03F86BD93EE5C7",
+      "CLAIM:70AB0FF8F4715337C884EA92",
+      "CLAIM:7C67DC07AC9ACFF2EA0FF229",
+      "CLAIM:7CFD54617FCFA2F1457F3D21",
+      "CLAIM:81553E00897673DD1C1C97D9",
+      "CLAIM:8F9CAFBB58546D3F5763724D",
+      "CLAIM:B929CD0560C482B37AFEE9AA",
+      "CLAIM:C0D521070406D42C00E1B921",
+      "CLAIM:D808DFEC765BB1BDFD19285A",
+      "CLAIM:D8ACA8573C32B7DE47D117CA",
+      "CLAIM:DE189E2050C01F376B3F13CF",
+      "CLAIM:DFE70C80C40116DA7AA1B5FF",
+      "CLAIM:EB5F9FEFCE3911E3D8AF23E1",
+      "CLAIM:F2FE551D77D644BEE7186F87",
+      "CLAIM:FCF52A9BA803FBA0FC3A1614"
+    ],
+    "condition_refs": [
+      "CONDITION:5E87B17951438A48C3A40A9A"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:18+00:00",
+    "cve_id": "CVE-2026-132779",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [],
+    "distribution_status": [],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-132779 ghi nhận: Excessive CPU usage in TLS 1.3 with ssl_early_data. Phạm vi upstream: 1.21.4-1.31.9. Bản sửa được công bố: 1.31.10+, 1.30.8+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.8",
+      "VERSION:NGINX-1.31.10"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.8",
+      "VERSION:NGINX-1.31.10"
+    ],
+    "id": "CVE:CVE-2026-132779",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-24T17:04:11.297000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-132779",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-23T15:55:33.920000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D01235944413D5264F724A27"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-835"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Excessive CPU usage in TLS 1.3 with ssl_early_data. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:440261DBED0FFC209C31F053",
+      "SEVERITY:982BA8B0CBEF00F6FD7C5AB0",
+      "SEVERITY:AF601F7D9C42E109E51F9771",
+      "SEVERITY:D49073FEAC28A8CDA8EF8D16",
+      "SEVERITY:ECE9CFBEF0CF96C73755F767"
+    ],
+    "source_refs": [
+      "EVIDENCE:35D26D105DC2BCB52C34BD61",
+      "EVIDENCE:42A62528924C212581F08A4F",
+      "EVIDENCE:8382C23C0C2579692DB4EEDE",
+      "EVIDENCE:A0E312C3345B2591EBD6E89B",
+      "EVIDENCE:A17573095491115BED292829",
+      "EVIDENCE:C3C886D0021B2976BD862AA0",
+      "EVIDENCE:C7C49616B569C2BEA1C26610",
+      "EVIDENCE:DE1FB52B1B69CB12146227B8"
+    ],
+    "title": "Excessive CPU usage in TLS 1.3 with ssl_early_data",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:46+00:00",
+    "upstream_affected_expression": "1.21.4-1.31.9",
+    "upstream_unaffected_expression": "1.31.10+, 1.30.8+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Excessive CPU usage in TLS 1.3 with ssl_early_data",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:7F8D057281D34605915A77F6"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07CA98F632B0B1817DAF3D57",
+      "CLAIM:22F72D87625BDA60ACAB646E",
+      "CLAIM:3A3888B346D8727C9DBC9B88",
+      "CLAIM:4B32B0DC377849C0137FA8A2",
+      "CLAIM:4FC76299BB3705F2DB62E293",
+      "CLAIM:65E0C951A37CEBD5037FF623",
+      "CLAIM:6D4957978E03F86BD93EE5C7",
+      "CLAIM:70AB0FF8F4715337C884EA92",
+      "CLAIM:7C67DC07AC9ACFF2EA0FF229",
+      "CLAIM:7CFD54617FCFA2F1457F3D21",
+      "CLAIM:81553E00897673DD1C1C97D9",
+      "CLAIM:8F9CAFBB58546D3F5763724D",
+      "CLAIM:B929CD0560C482B37AFEE9AA",
+      "CLAIM:C0D521070406D42C00E1B921",
+      "CLAIM:D808DFEC765BB1BDFD19285A",
+      "CLAIM:D8ACA8573C32B7DE47D117CA",
+      "CLAIM:DE189E2050C01F376B3F13CF",
+      "CLAIM:DFE70C80C40116DA7AA1B5FF",
+      "CLAIM:EB5F9FEFCE3911E3D8AF23E1",
+      "CLAIM:F2FE551D77D644BEE7186F87"
+    ],
+    "condition_refs": [
+      "CONDITION:5E87B17951438A48C3A40A9A"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:18+00:00",
+    "cve_id": "CVE-2026-132779",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [],
+    "distribution_status": [],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-132779 ghi nhận: Excessive CPU usage in TLS 1.3 with ssl_early_data. Phạm vi upstream: 1.21.4-1.31.9. Bản sửa được công bố: 1.31.10+, 1.30.8+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.8",
+      "VERSION:NGINX-1.31.10"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.8",
+      "VERSION:NGINX-1.31.10"
+    ],
+    "id": "CVE:CVE-2026-132779",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-24T17:04:11.297000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-132779",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-23T15:55:33.920000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:D01235944413D5264F724A27"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-835"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Excessive CPU usage in TLS 1.3 with ssl_early_data. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:440261DBED0FFC209C31F053",
+      "SEVERITY:982BA8B0CBEF00F6FD7C5AB0",
+      "SEVERITY:AF601F7D9C42E109E51F9771",
+      "SEVERITY:D49073FEAC28A8CDA8EF8D16",
+      "SEVERITY:ECE9CFBEF0CF96C73755F767"
+    ],
+    "source_refs": [
+      "EVIDENCE:35D26D105DC2BCB52C34BD61",
+      "EVIDENCE:42A62528924C212581F08A4F",
+      "EVIDENCE:8382C23C0C2579692DB4EEDE",
+      "EVIDENCE:A0E312C3345B2591EBD6E89B",
+      "EVIDENCE:A17573095491115BED292829",
+      "EVIDENCE:C3C886D0021B2976BD862AA0",
+      "EVIDENCE:C7C49616B569C2BEA1C26610",
+      "EVIDENCE:DE1FB52B1B69CB12146227B8"
+    ],
+    "title": "Excessive CPU usage in TLS 1.3 with ssl_early_data",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:27:18+00:00",
+    "upstream_affected_expression": "1.21.4-1.31.9",
+    "upstream_unaffected_expression": "1.31.10+, 1.30.8+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:33:46+00:00",
+  "entity_id": "CVE:CVE-2026-132779",
+  "id": "HISTORY:737D4FBA6B48BEF53A416137"
+}

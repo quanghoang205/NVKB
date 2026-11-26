@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:25C2BA5BB75EA6D948FF9BE3",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:3881771B961142C9842A0C04",
+    "claim_value": "\"Loại bí mật thực sự có trong vùng nhớ và lượng lộ ra chưa biết; không suy thành toàn bộ credential hay quyền root.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:42+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:995F750FCCD7D735EAAF7D9F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3881771B961142C9842A0C04",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-34161: v1.3:potential",
+    "observed_at": "2026-11-25T05:08:42+00:00",
+    "predicate": "v1.3:potential",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:995F750FCCD7D735EAAF7D9F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-34161",
+    "updated_at": "2026-11-25T05:08:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:42+00:00",
+  "entity_id": "CLAIM:3881771B961142C9842A0C04",
+  "id": "HISTORY:21A07639FEBE63899748FDE1"
+}

@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-03 learns_from PROTOCOL:TLS",
+    "entity_type": "Relationship",
+    "id": "REL:07267D19F562D700FC54878F",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:TLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:35+00:00",
+  "entity_id": "REL:07267D19F562D700FC54878F",
+  "id": "HISTORY:B6403F6D57B07F62683F8FD2"
+}

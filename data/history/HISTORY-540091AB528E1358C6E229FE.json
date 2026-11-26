@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:FEF11B5F7295CFA061B9B028",
+    "claim_value": "\"Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "id": "CLAIM:FEF11B5F7295CFA061B9B028",
+    "name": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BA66ECC0CED650991BB6B024"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:FEF11B5F7295CFA061B9B028",
+  "id": "HISTORY:540091AB528E1358C6E229FE"
+}

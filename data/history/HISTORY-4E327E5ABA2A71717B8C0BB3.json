@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:F2AE3460E575E476448E6107",
+    "claim_value": "\"Mỗi vòng phải tạo tiến triển có thể chứng minh hoặc kết thúc có giới hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:01+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "id": "CLAIM:F2AE3460E575E476448E6107",
+    "name": "WEAKNESS:CWE-835: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-835",
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:01+00:00",
+  "entity_id": "CLAIM:F2AE3460E575E476448E6107",
+  "id": "HISTORY:4E327E5ABA2A71717B8C0BB3"
+}

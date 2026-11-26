@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "f5",
+    "claim_id": "CLAIM:745896BB29147AB88C6CD5FB",
+    "claim_value": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 4.8, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N\", \"version\": \"3.1\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "description": "severity:CVE Program:f5:3.1",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C6297E645A0B495F563B3FEB"
+    ],
+    "id": "CLAIM:745896BB29147AB88C6CD5FB",
+    "name": "CVE:CVE-2026-120967: severity:CVE Program:f5:3.1",
+    "predicate": "severity:CVE Program:f5:3.1",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C6297E645A0B495F563B3FEB"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T02:26:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:46+00:00",
+  "entity_id": "CLAIM:745896BB29147AB88C6CD5FB",
+  "id": "HISTORY:7B8968227FBF7BF157ACF0AA"
+}

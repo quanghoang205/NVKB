@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95",
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "description": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "document_title": "CVE-2024-32760",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:D324F8092A4034A036B4D3B7",
+    "id": "EVIDENCE:D324F8092A4034A036B4D3B7",
+    "local_snapshot_path": "data/raw/cve/snapshots/d6e66bd344fcc3c91f44d2fda5759e0d62e296409b9176da827f393d1c69dc95.json",
+    "modified_at": "2025-02-13T17:52:17.693000+00:00",
+    "name": "CVE-2024-32760",
+    "paraphrase": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "published_at": "2024-05-29T16:02:04.985000+00:00",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:26:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/cveMetadata",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/32xxx/CVE-2024-32760.json",
+    "updated_at": "2026-11-25T02:26:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:19+00:00",
+  "entity_id": "EVIDENCE:D324F8092A4034A036B4D3B7",
+  "id": "HISTORY:D3517773A212796BD7C332E2"
+}

@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "assessment_key": "ASSESSMENT:7FDA30ADA2F5DF7252FF8D45",
+    "claim_refs": [
+      "CLAIM:5E35649BBF7C6DA88C57E653"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:A6D1986438A903521E5E1184",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 6.9, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"NONE\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-123640 CVSS 4.0 f5",
+    "original_authority": "f5",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T04:13:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "assessment_key": "ASSESSMENT:D0C2A08EC14DAC6838F1617B",
+    "claim_refs": [
+      "CLAIM:5E35649BBF7C6DA88C57E653"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "distribution_channel": "f5 via CIRCL mirror",
+    "entity_type": "Severity",
+    "id": "SEVERITY:A6D1986438A903521E5E1184",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"NETWORK\", \"baseScore\": 6.9, \"baseSeverity\": \"MEDIUM\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"NONE\", \"vulnConfidentialityImpact\": \"NONE\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-123640 CVSS 4.0 f5",
+    "original_authority": "f5 via CIRCL mirror",
+    "schema_version": "1.2.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:9D55B2824E082B02253FBB65"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T04:13:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:17+00:00",
+  "entity_id": "SEVERITY:A6D1986438A903521E5E1184",
+  "id": "HISTORY:1E6C61A3CAEBC97C70D2144E"
+}

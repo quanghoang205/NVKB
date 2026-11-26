@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:6B9EDB2AE3B40F6F1337F6BD",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:DA099B0D55F71810979AC552",
+    "claim_value": "\"Kiểm tra length trước đọc và xử lý input bị cắt ngắn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:2739A81C1376F4477260234A: Description / Potential Mitigations; topic=WEAKNESS:CWE-126",
+    "evidence_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DA099B0D55F71810979AC552",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-126: defensive_principles",
+    "observation_key": "OBSERVATION:657939BA92D03DC64E6AA462",
+    "observed_at": "2026-11-25T02:48:55+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "WEAKNESS:CWE-126",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:48:54+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-126",
+    "updated_at": "2026-11-25T04:12:52+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:DA099B0D55F71810979AC552",
+    "claim_value": "\"Kiểm tra length trước đọc và xử lý input bị cắt ngắn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "id": "CLAIM:DA099B0D55F71810979AC552",
+    "name": "WEAKNESS:CWE-126: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-126",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:52+00:00",
+  "entity_id": "CLAIM:DA099B0D55F71810979AC552",
+  "id": "HISTORY:22B2D2126898BD45D13B60BB"
+}

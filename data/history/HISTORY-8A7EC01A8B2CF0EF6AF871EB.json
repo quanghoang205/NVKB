@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:0C536DD27A705A734D48325B",
+    "claim_value": "\"CVE-2025-23419\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EF03D902D12B9BD739833F79"
+    ],
+    "id": "CLAIM:0C536DD27A705A734D48325B",
+    "name": "CVE:CVE-2025-23419: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EF03D902D12B9BD739833F79"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "CLAIM:0C536DD27A705A734D48325B",
+  "id": "HISTORY:8A7EC01A8B2CF0EF6AF871EB"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:86B42AFA98D5809479F5900F",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "claim_value": "\"Memory safety; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:0AD050A8240D90FF01EE69D1: Processes; topic=COMPONENT:WORKER-PROCESS",
+    "evidence_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:WORKER-PROCESS: related_failure_classes",
+    "observation_key": "OBSERVATION:3373FB7DFD1A9846B867260D",
+    "observed_at": "2026-11-25T02:44:11+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "COMPONENT:WORKER-PROCESS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T04:12:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "claim_value": "\"Memory safety; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "name": "COMPONENT:WORKER-PROCESS: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:42+00:00",
+  "entity_id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+  "id": "HISTORY:0BD6F11742992A6CA9046A88"
+}

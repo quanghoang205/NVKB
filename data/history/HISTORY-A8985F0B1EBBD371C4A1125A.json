@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:FB8B1A3ED290B83F38BDE2FA",
+    "claim_value": "\"Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "id": "CLAIM:FB8B1A3ED290B83F38BDE2FA",
+    "name": "COMPONENT:WORKER-PROCESS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:32:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:03+00:00",
+  "entity_id": "CLAIM:FB8B1A3ED290B83F38BDE2FA",
+  "id": "HISTORY:A8985F0B1EBBD371C4A1125A"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:7F6CE9719D84A1ACA8EA7753",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:8CA12F8D3896EEC04FC0552C",
+    "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:46+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:E497B3129F2B3BD48F9D28B0: ngx_http_charset_module",
+    "evidence_refs": [
+      "EVIDENCE:E497B3129F2B3BD48F9D28B0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:8CA12F8D3896EEC04FC0552C",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: related_failure_classes",
+    "observation_key": "OBSERVATION:383DCC9FBA9E215695474744",
+    "observed_at": "2026-11-25T02:32:46+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:46+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:E497B3129F2B3BD48F9D28B0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T04:12:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8CA12F8D3896EEC04FC0552C",
+    "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:46+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E497B3129F2B3BD48F9D28B0"
+    ],
+    "id": "CLAIM:8CA12F8D3896EEC04FC0552C",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E497B3129F2B3BD48F9D28B0"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T02:32:46+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:43+00:00",
+  "entity_id": "CLAIM:8CA12F8D3896EEC04FC0552C",
+  "id": "HISTORY:43CE8F45E67422E0BBB69680"
+}

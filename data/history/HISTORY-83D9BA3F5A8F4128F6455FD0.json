@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:263F12566FA471B2251A5E81"
+    ],
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "description": "CVE:CVE-2026-27654 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:132319FCC287C78C71312B23",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0528880A025D3293DC737CA5"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27654",
+    "updated_at": "2026-11-25T02:27:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:32+00:00",
+  "entity_id": "REL:132319FCC287C78C71312B23",
+  "id": "HISTORY:83D9BA3F5A8F4128F6455FD0"
+}

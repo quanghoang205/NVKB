@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:5A6E292A87679BCCAB55E62F",
+    "claim_value": "\"Khởi tạo rõ ràng, kiểm tra state transition và bao phủ nhánh lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "id": "CLAIM:5A6E292A87679BCCAB55E62F",
+    "name": "WEAKNESS:CWE-908: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-908",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:5A6E292A87679BCCAB55E62F",
+  "id": "HISTORY:965115992BEBB6499A570706"
+}

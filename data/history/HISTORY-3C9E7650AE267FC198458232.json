@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "e40cd580adbdd2729819f3fbf0418332b609a17880cef8675f86b94ac3613d49",
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "description": "Debian unstable: fixed_version=1.30.0-3, status=fixed.",
+    "document_title": "CVE-2026-42945",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2F3057BFEF3720CC43FFF9CB",
+    "id": "EVIDENCE:2F3057BFEF3720CC43FFF9CB",
+    "local_snapshot_path": "data/raw/distribution/snapshots/e40cd580adbdd2729819f3fbf0418332b609a17880cef8675f86b94ac3613d49.html",
+    "name": "CVE-2026-42945",
+    "paraphrase": "Debian unstable: fixed_version=1.30.0-3, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:19+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42945",
+    "updated_at": "2026-11-25T02:28:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:19+00:00",
+  "entity_id": "EVIDENCE:2F3057BFEF3720CC43FFF9CB",
+  "id": "HISTORY:3C9E7650AE267FC198458232"
+}

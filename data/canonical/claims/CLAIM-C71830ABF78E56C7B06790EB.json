@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:AF31DE449AD0E6DEAC9862FF",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:C71830ABF78E56C7B06790EB",
+  "claim_value": "\"Kênh mail proxy ↔ mail backend.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:23+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:1C89351EAC105E9377F3948E: Protocol overview and state machine; topic=PROTOCOL:SMTP",
+  "evidence_refs": [
+    "EVIDENCE:1C89351EAC105E9377F3948E"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:C71830ABF78E56C7B06790EB",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "PROTOCOL:SMTP: architecture_position",
+  "observation_key": "OBSERVATION:A5B4BCD651F73D5072DC1BFC",
+  "observed_at": "2026-11-25T02:44:23+00:00",
+  "predicate": "architecture_position",
+  "product_scope": "PROTOCOL:SMTP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:25+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:1C89351EAC105E9377F3948E"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:SMTP",
+  "updated_at": "2026-11-25T04:12:50+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

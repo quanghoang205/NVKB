@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:F61BD346EEA68FA75E85763B",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:734EF382279B214AD459BDA9",
+  "claim_value": "\"## State, trách nhiệm và invariant\\n\\nTrước reload, thế hệ A nhận kết nối. Nếu cấu hình B không áp dụng được, A tiếp tục dùng cấu hình trước đó; không được coi việc gửi tín hiệu là chứng cứ B đã chạy. Nếu B thành công, worker mới nhận công việc và worker cũ đóng listening sockets, hoàn tất kết nối đang phục vụ rồi thoát. Do đó A và B có thể đồng thời tồn tại trong một khoảng chuyển tiếp.\\n\\nDiễn giải phòng vệ: trạng thái cấu hình cần gắn với thế hệ tiến trình, không chỉ với file trên đĩa. Quyền của worker phụ thuộc cấu hình và môi trường khởi chạy; master/worker không tự là hai tenant cô lập. Invariant vận hành của bài là không xác nhận thay đổi đã hoàn tất chỉ từ việc file cấu hình mới tồn tại.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:20:38+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#reconfiguration",
+  "evidence_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:734EF382279B214AD459BDA9",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:MASTER-PROCESS: pilot_section:State, trách nhiệm và invariant",
+  "observed_at": "2026-11-25T04:20:38+00:00",
+  "predicate": "pilot_section:State, trách nhiệm và invariant",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read control at #reconfiguration; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:20:38+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+  "updated_at": "2026-11-25T04:20:38+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:39+00:00; deployment version not established"
+}

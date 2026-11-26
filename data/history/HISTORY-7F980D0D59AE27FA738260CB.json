@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E1B27E9D2F7293FDF94A53D9",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:3A0A22391632482905903CEC",
+    "claim_value": "\"Định tuyến hoặc ghép thông điệp sai theo context triển khai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:C67CBD8D65FDA0EC66099A3F: Description / Potential Mitigations",
+    "evidence_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3A0A22391632482905903CEC",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "WEAKNESS:CWE-444: failure_impact",
+    "observation_key": "OBSERVATION:AEDEE202D6DAB3AF1C9CA321",
+    "observed_at": "2026-11-25T02:32:40+00:00",
+    "predicate": "failure_impact",
+    "product_scope": "WEAKNESS:CWE-444",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:40+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:3A0A22391632482905903CEC",
+    "claim_value": "\"Định tuyến hoặc ghép thông điệp sai theo context triển khai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "id": "CLAIM:3A0A22391632482905903CEC",
+    "name": "WEAKNESS:CWE-444: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:3A0A22391632482905903CEC",
+  "id": "HISTORY:7F980D0D59AE27FA738260CB"
+}

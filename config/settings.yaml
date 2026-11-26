@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+timezone: Asia/Singapore
+http:
+  timeout: 25
+  retries: 2
+  backoff_factor: 0.5
+  minimum_interval: 0.35
+  cache_ttl_hours: 24
+  host_intervals:
+    vulnerability.circl.lu: 3.2

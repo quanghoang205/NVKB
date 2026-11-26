@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:EA5978C14D8DD47CD7675C52",
+    "authority": "FIRST",
+    "authority_scope": "FIRST",
+    "claim_id": "CLAIM:37D5B63D51051E0AB20CAAD4",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:8670D43F5B9389833DFC54A0: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:37D5B63D51051E0AB20CAAD4",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:CVSS: related_failure_classes",
+    "observation_key": "OBSERVATION:079C3086EE3C453B6CE0C458",
+    "observed_at": "2026-11-25T02:33:04+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "CONCEPT:CVSS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:33:04+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "FIRST",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T04:12:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:37D5B63D51051E0AB20CAAD4",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "id": "CLAIM:37D5B63D51051E0AB20CAAD4",
+    "name": "CONCEPT:CVSS: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:33:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:33+00:00",
+  "entity_id": "CLAIM:37D5B63D51051E0AB20CAAD4",
+  "id": "HISTORY:43B9A97CC369533F8F137793"
+}

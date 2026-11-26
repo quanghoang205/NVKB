@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-01 learns_from COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:E908DEADE721524B5DC11B6A",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-01",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:35+00:00",
+  "entity_id": "REL:E908DEADE721524B5DC11B6A",
+  "id": "HISTORY:99E61E15F1B7060742FFB45F"
+}

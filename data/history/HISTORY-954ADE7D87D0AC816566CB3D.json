@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:C3736341CE81523105AC0ACA"
+    ],
+    "created_at": "2026-11-25T02:27:54+00:00",
+    "cvss_score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:4B3B8C8FA68C9864EA358311",
+    "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"LOW\", \"baseScore\": 4.8, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-40701 CVSS 3.1 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CVE Program",
+    "severity_label": "MEDIUM",
+    "source_refs": [
+      "EVIDENCE:DD998218BBEB14FC1E34A55D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:54+00:00",
+  "entity_id": "SEVERITY:4B3B8C8FA68C9864EA358311",
+  "id": "HISTORY:954ADE7D87D0AC816566CB3D"
+}

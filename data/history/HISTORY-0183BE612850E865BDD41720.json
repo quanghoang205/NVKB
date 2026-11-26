@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0511EBC3BDBFBE9E1A251596",
+      "CLAIM:F313FBBE46034C739C7DC3A2",
+      "CLAIM:492D2E049F1454AB11EDE589",
+      "CLAIM:5C8CA917F0CB451E03804693",
+      "CLAIM:C1CE37D26566910C469CEC0E"
+    ],
+    "created_at": "2026-11-25T05:28:18+00:00",
+    "description": "CVE:CVE-2026-1642 learns_from CONTROL:LEAST-PRIVILEGE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-1642",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:E5D1DC77EC191022513ADF55",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "predicate": "learns_from",
+    "rationale": "Đọc Security invariants và trách nhiệm kiểm soát để thảo luận: Tại sao cần giữ điều kiện MITM trong executive assessment? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Security invariants và trách nhiệm kiểm soát để thảo luận: Tại sao cần giữ điều kiện MITM trong executive assessment? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:28:18+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1C42DD8610CBF414D32C272F",
+      "EVIDENCE:A2BCF524D9999A4A889B1918"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T05:28:18+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:18+00:00",
+  "entity_id": "REL:E5D1DC77EC191022513ADF55",
+  "id": "HISTORY:0183BE612850E865BDD41720"
+}

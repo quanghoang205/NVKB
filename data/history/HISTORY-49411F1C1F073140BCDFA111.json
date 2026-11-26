@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:048A2BAEA50ACD2AB24FBE06",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "id": "CLAIM:048A2BAEA50ACD2AB24FBE06",
+    "name": "PROTOCOL:DNS: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:048A2BAEA50ACD2AB24FBE06",
+  "id": "HISTORY:49411F1C1F073140BCDFA111"
+}

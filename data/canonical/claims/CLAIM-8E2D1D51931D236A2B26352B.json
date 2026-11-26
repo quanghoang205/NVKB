@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:AF9619E0C7E931A9B2E9D219",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:8E2D1D51931D236A2B26352B",
+  "claim_value": "\"## Định nghĩa và điều khiển\\n\\nMaster quản lý thế hệ cấu hình và worker, còn worker phục vụ kết nối. Graceful reload là chuyển cấu hình cho công việc mới trong khi cho phép công việc cũ kết thúc. Nó khác shutdown ngay và khác thay binary. Tài liệu điều khiển mô tả nhánh HUP kiểm cú pháp, thử mở tài nguyên cần thiết rồi mới khởi tạo worker mới. [[CLAIM-940DF1F8270B89D1A7C8136C|nhận định nguồn: CLAIM:940DF1F8270B89D1A7C8136C]]\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:20:37+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#reconfiguration",
+  "evidence_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:8E2D1D51931D236A2B26352B",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:MASTER-PROCESS: pilot_section:Định nghĩa và điều khiển",
+  "observed_at": "2026-11-25T04:20:38+00:00",
+  "predicate": "pilot_section:Định nghĩa và điều khiển",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read control at #reconfiguration; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:20:38+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:81E73A1E91C1D45517423D7A"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+  "updated_at": "2026-11-25T04:20:38+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:39+00:00; deployment version not established"
+}

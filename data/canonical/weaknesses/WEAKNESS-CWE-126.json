@@ -1,0 +1,39 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:B6D2A95BD14C155B29EA8AC4",
+    "CLAIM:379DECE7F0A36B9D04E25797",
+    "CLAIM:287E5D285FE17D543870B900",
+    "CLAIM:1568B512E7C0922322C24D72",
+    "CLAIM:90D3A0B9ABE7725A0229144C",
+    "CLAIM:A985F686E280CBB94CBDD715",
+    "CLAIM:54DED47C4CCE0AD3D0F9DB2C",
+    "CLAIM:DA099B0D55F71810979AC552"
+  ],
+  "created_at": "2026-11-25T02:26:31+00:00",
+  "cwe_id": "CWE-126",
+  "defensive_principles": "Kiểm tra length trước đọc và xử lý input bị cắt ngắn.",
+  "definition": "Đọc tiếp qua cuối buffer chứa dữ liệu.",
+  "description": "Đọc tiếp qua cuối buffer chứa dữ liệu.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+  "id": "WEAKNESS:CWE-126",
+  "learning_objectives": [
+    "Giải thích CWE-126 — Buffer Over-read bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-126 — Buffer Over-read",
+  "normal_behavior": "Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng hợp lệ.",
+  "related_failure_classes": "Buffer Over-read",
+  "related_knowledge": [],
+  "safety_assumptions": "Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng hợp lệ.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:2739A81C1376F4477260234A",
+    "EVIDENCE:96277BC472ED92F8657D0FC0"
+  ],
+  "updated_at": "2026-11-25T04:13:14+00:00",
+  "verification_status": "INFERRED"
+}

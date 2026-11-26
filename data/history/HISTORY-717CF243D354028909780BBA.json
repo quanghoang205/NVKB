@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:AF6006CB645BBC1E6F8F3D9B",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:8FBD94D201B0313055CA5525",
+    "claim_value": "\"Parser phân biệt request line, header và body framing theo giao thức, tiếp tục khi dữ liệu đến thành nhiều phần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:4D44AF8511649D7946E70666: HTTP; topic=COMPONENT:REQUEST-PARSING",
+    "evidence_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:8FBD94D201B0313055CA5525",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:REQUEST-PARSING: normal_behavior",
+    "observation_key": "OBSERVATION:01CDB76668FB65ADB06033FC",
+    "observed_at": "2026-11-25T02:44:15+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "COMPONENT:REQUEST-PARSING",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:REQUEST-PARSING",
+    "updated_at": "2026-11-25T04:12:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8FBD94D201B0313055CA5525",
+    "claim_value": "\"Parser phân biệt request line, header và body framing theo giao thức, tiếp tục khi dữ liệu đến thành nhiều phần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "id": "CLAIM:8FBD94D201B0313055CA5525",
+    "name": "COMPONENT:REQUEST-PARSING: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "subject_entity_id": "COMPONENT:REQUEST-PARSING",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:43+00:00",
+  "entity_id": "CLAIM:8FBD94D201B0313055CA5525",
+  "id": "HISTORY:717CF243D354028909780BBA"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:6D4D9254FC0FA4854C1EA331",
+    "claim_value": "\"Dung lượng biến cục bộ và chiều dài dữ liệu phải được kiểm tra trước thao tác ghi.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:53+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E82D0A2225F7B3513B5228A7"
+    ],
+    "id": "CLAIM:6D4D9254FC0FA4854C1EA331",
+    "name": "WEAKNESS:CWE-121: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E82D0A2225F7B3513B5228A7"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-121",
+    "updated_at": "2026-11-25T02:48:53+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:53+00:00",
+  "entity_id": "CLAIM:6D4D9254FC0FA4854C1EA331",
+  "id": "HISTORY:4CEAA237A7C4AACD7730580B"
+}

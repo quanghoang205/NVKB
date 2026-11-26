@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:311F7759209ABF9E91AB8715"
+    ],
+    "created_at": "2026-11-25T02:28:50+00:00",
+    "description": "CVE:CVE-2026-95101 distribution_fix PACKAGE:BCCC63327055C4BC1106744C",
+    "entity_type": "Relationship",
+    "id": "REL:20E1058C019D55BD876E5D06",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:BCCC63327055C4BC1106744C",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:18949549F8CA61EA6580D763"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:50+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:50+00:00",
+  "entity_id": "REL:20E1058C019D55BD876E5D06",
+  "id": "HISTORY:5010074FDEC2FA94912A2A94"
+}

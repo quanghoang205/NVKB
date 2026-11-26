@@ -1,0 +1,23 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3F0C1EECE51E252B342ACC12"
+    ],
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "When NGINX Plus or NGINX Open Source are configured to use the HTTP/3 QUIC module, an attacker may be able to spoof their source IP address allowing for bypass of authorization or bypass of rate limiting.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:6EFA42F1AB06DD8C955F6572",
+    "name": "Điều kiện được công bố — CVE-2026-40460",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:13C52451423D32497F565D45"
+    ],
+    "updated_at": "2026-11-25T02:27:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:51+00:00",
+  "entity_id": "CONDITION:6EFA42F1AB06DD8C955F6572",
+  "id": "HISTORY:D30136BC461366040A469160"
+}

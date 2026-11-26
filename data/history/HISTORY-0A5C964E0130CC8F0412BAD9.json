@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "b130b9530c23f428981142386f8512b4099e4de171ecac67883a84658d01824d",
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-40460",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:04818F93E3CE578E7A00FCC5",
+    "id": "EVIDENCE:04818F93E3CE578E7A00FCC5",
+    "local_snapshot_path": "data/raw/cve/snapshots/b130b9530c23f428981142386f8512b4099e4de171ecac67883a84658d01824d.json",
+    "name": "CVE-2026-40460",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:27:49+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/40xxx/CVE-2026-40460.json",
+    "updated_at": "2026-11-25T02:27:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:51+00:00",
+  "entity_id": "EVIDENCE:04818F93E3CE578E7A00FCC5",
+  "id": "HISTORY:0A5C964E0130CC8F0412BAD9"
+}

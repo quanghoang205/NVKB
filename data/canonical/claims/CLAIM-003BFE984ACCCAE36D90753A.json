@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:2442CE572AD4C45E28D25C7E",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:003BFE984ACCCAE36D90753A",
+  "claim_value": "\"## Cơ chế quyết định quyền\\n\\nMô hình khái niệm: nhận subject/context → xác định resource và action → nạp policy áp dụng → kiểm tra điều kiện → cho phép hoặc từ chối. Một kiểm tra hiện diện nhưng bỏ qua một chiều cần thiết của policy có thể thuộc lớp Incorrect Authorization. Không có kiểm tra và kiểm tra sai là hai mô tả cần phân biệt; chỉ gán CWE cụ thể khi có bằng chứng thích hợp.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:03+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#Description; #Potential_Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:3F3B7A9F2EE582122C10045B"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:003BFE984ACCCAE36D90753A",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "WEAKNESS:CWE-863: pilot_section:Cơ chế quyết định quyền",
+  "observed_at": "2026-11-25T04:21:03+00:00",
+  "predicate": "pilot_section:Cơ chế quyết định quyền",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read cwe863 at #Description; #Potential_Mitigations; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:04+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:3F3B7A9F2EE582122C10045B"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "WEAKNESS:CWE-863",
+  "updated_at": "2026-11-25T04:21:04+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:42+00:00; deployment version not established"
+}

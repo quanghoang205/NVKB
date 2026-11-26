@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5",
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "document_title": "Module ngx_mail_auth_http_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:BA66ECC0CED650991BB6B024",
+    "id": "EVIDENCE:BA66ECC0CED650991BB6B024",
+    "local_snapshot_path": "data/raw/documentation/snapshots/b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5.html",
+    "name": "Module ngx_mail_auth_http_module",
+    "paraphrase": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:54+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_mail_auth_http_module; topic=MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "EVIDENCE:BA66ECC0CED650991BB6B024",
+  "id": "HISTORY:D053D74C4A2A217B7DC23849"
+}

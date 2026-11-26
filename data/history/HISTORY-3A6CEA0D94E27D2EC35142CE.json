@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:61FF44487132188D60570C92"
+    ],
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "description": "CVE:CVE-2026-28753 distribution_fix PACKAGE:C7FF089C30A362927C6F563B",
+    "entity_type": "Relationship",
+    "id": "REL:D4CB39658EC85A27233AB243",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:C7FF089C30A362927C6F563B",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B83E683B7B07237098456B98"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T02:27:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:40+00:00",
+  "entity_id": "REL:D4CB39658EC85A27233AB243",
+  "id": "HISTORY:3A6CEA0D94E27D2EC35142CE"
+}

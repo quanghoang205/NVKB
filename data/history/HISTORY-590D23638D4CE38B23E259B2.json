@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:BDDFE653B30E978C8980D251",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:400BD665D0DD9B68887CD6D5",
+    "claim_value": "\"## Ownership và liveness\\n\\nKhi cạn tài nguyên, đường cấp phát thất bại vẫn phải giữ state nhất quán và trả quyền điều khiển. Một vòng lặp liên tục retry mà không tạo tiến độ có thể tiêu thụ CPU dù memory còn đủ. Timer không bảo đảm hiệu lực nếu event loop không được chạy timer callback. Liveness vì vậy bao gồm tiến độ công việc, không chỉ process còn tồn tại.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:29:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:400BD665D0DD9B68887CD6D5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:RESOURCE-BOUNDS: v1.3:knowledge:Ownership và liveness",
+    "observed_at": "2026-11-25T05:29:01+00:00",
+    "predicate": "v1.3:knowledge:Ownership và liveness",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T05:29:01+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:29:01+00:00",
+  "entity_id": "CLAIM:400BD665D0DD9B68887CD6D5",
+  "id": "HISTORY:590D23638D4CE38B23E259B2"
+}

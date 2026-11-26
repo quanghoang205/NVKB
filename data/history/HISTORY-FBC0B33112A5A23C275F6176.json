@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:070BCA2A25F11DCA9C3963B5",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+    ],
+    "id": "CLAIM:070BCA2A25F11DCA9C3963B5",
+    "name": "PROTOCOL:UDP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5DDFF1CC6373DA1ACCC4BA6C"
+    ],
+    "subject_entity_id": "PROTOCOL:UDP",
+    "updated_at": "2026-11-25T02:32:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:16+00:00",
+  "entity_id": "CLAIM:070BCA2A25F11DCA9C3963B5",
+  "id": "HISTORY:FBC0B33112A5A23C275F6176"
+}

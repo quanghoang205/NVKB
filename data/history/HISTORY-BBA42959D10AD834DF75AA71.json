@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:F2A1A252D36E60E5A8D8AC82",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F92622B66EEF406D138601D5",
+    "claim_value": "\"CNA nêu address spoofing. Diễn giải là giá trị địa chỉ dùng cho quyết định policy không bảo toàn ý nghĩa peer; chưa xác định bước address validation sai.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:44+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F92622B66EEF406D138601D5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40460: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:08:45+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:45+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T05:08:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:27:49+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:F2A1A252D36E60E5A8D8AC82",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F92622B66EEF406D138601D5",
+    "claim_value": "\"CNA nêu address spoofing. Diễn giải là giá trị địa chỉ dùng cho quyết định policy không bảo toàn ý nghĩa peer; chưa xác định bước address validation sai.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:44+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F92622B66EEF406D138601D5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40460: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:08:45+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E21FEB90AE8F303804C13F9B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T05:08:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:08:45+00:00",
+  "entity_id": "CLAIM:F92622B66EEF406D138601D5",
+  "id": "HISTORY:BBA42959D10AD834DF75AA71"
+}

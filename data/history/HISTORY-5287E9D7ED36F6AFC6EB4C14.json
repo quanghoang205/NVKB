@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Catalog phân tách sản phẩm; CVE không tự động nhập vào NGINX OSS.",
+    "entity_type": "Product",
+    "id": "PRODUCT:NGINX-UNIT",
+    "in_primary_scope": false,
+    "name": "NGINX Unit",
+    "product_family": "NGINX-UNIT",
+    "schema_version": "1.0.0",
+    "source_refs": [],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "vendor": "NGINX / F5",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "PRODUCT:NGINX-UNIT",
+  "id": "HISTORY:5287E9D7ED36F6AFC6EB4C14"
+}

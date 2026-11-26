@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "880eb225c7c86cd9d877a78a449d923ad4515c29f295044fd9e245d51e5784c7",
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-42934",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:7437F7F7F59D47F5642B61C4",
+    "id": "EVIDENCE:7437F7F7F59D47F5642B61C4",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/880eb225c7c86cd9d877a78a449d923ad4515c29f295044fd9e245d51e5784c7.json",
+    "name": "CVE-2026-42934",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:14+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-42934",
+    "updated_at": "2026-11-25T02:28:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:14+00:00",
+  "entity_id": "EVIDENCE:7437F7F7F59D47F5642B61C4",
+  "id": "HISTORY:0C0ABF143B8C14BFDD4DAD67"
+}

@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:D51233298D6B31A0EE31DB40",
+      "CLAIM:79288A3BBD857C84389A2E61",
+      "CLAIM:5480650F63806BCB8954E56A",
+      "CLAIM:2D61EB1EC9285F6A9E959C5D",
+      "CLAIM:1669BC3672CA5953AC8BD363",
+      "CLAIM:013496337471BA1317DA5FBA",
+      "CLAIM:D39A2BC0EB48A6AD84234601",
+      "CLAIM:6DFC49E6BDC37B7277B30E8E"
+    ],
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý POP3 trong vai trò mail proxy.",
+    "description": "Xử lý POP3 trong vai trò mail proxy.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-POP3-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_pop3_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_pop3_module",
+    "normal_behavior": "Xử lý POP3 trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:AFED1E0F5D3FB3E985B8EB38"
+    ],
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:51+00:00",
+  "entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+  "id": "HISTORY:00C6383DA01A8E822B49DF66"
+}

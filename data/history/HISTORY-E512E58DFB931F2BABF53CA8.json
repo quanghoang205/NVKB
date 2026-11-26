@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:CDBC3CCB6D1C9D1DA4CBAD66",
+      "CLAIM:CCC510443962905D4371140A",
+      "CLAIM:21D8AD75EC946CD7C443F094",
+      "CLAIM:FE91767DF837DBA5C4B9E131",
+      "CLAIM:6057696D8DA94DEBF37DC83F"
+    ],
+    "created_at": "2026-11-25T05:24:21+00:00",
+    "description": "CVE:CVE-2026-9256 learns_from COMPONENT:REWRITE-ENGINE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-9256",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:F4CA29D18918742D874DE4D6",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "predicate": "learns_from",
+    "rationale": "Đọc HTTP rewrite — URI, biến và kích thước biểu diễn để thảo luận: Một pattern regex hợp lệ có chứng minh output buffer đủ không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc HTTP rewrite — URI, biến và kích thước biểu diễn để thảo luận: Một pattern regex hợp lệ có chứng minh output buffer đủ không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:21+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:15444CBCEDABE7F2E128DB96",
+      "EVIDENCE:3A1CD13D7C3634AB22C1F99F"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T05:24:21+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:21+00:00",
+  "entity_id": "REL:F4CA29D18918742D874DE4D6",
+  "id": "HISTORY:E512E58DFB931F2BABF53CA8"
+}

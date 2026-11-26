@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D88643D7B9E62BB145440943",
+    "claim_value": "\"Tái sử dụng response upstream theo cache key và chính sách cache.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "id": "CLAIM:D88643D7B9E62BB145440943",
+    "name": "COMPONENT:HTTP-CACHING: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:D88643D7B9E62BB145440943",
+  "id": "HISTORY:2732D91E8B13BA07226BAA58"
+}

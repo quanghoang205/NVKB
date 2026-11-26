@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:251A93FF2A286ABF4A496488",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:18D76E6F6595D97C49E03B06",
+    "claim_value": "\"## Cơ chế và ownership\\n\\nMột client connection và một upstream connection là hai đối tượng có thời hạn, timeout và lỗi riêng. Worker tiếp nhận dữ liệu, chọn cấu hình HTTP, thực hiện các phase, rồi gửi nội dung ra socket; khi proxy, upstream có thể được tái sử dụng theo cấu hình. Request không sở hữu toàn bộ thế giới bên ngoài nó. Những tài nguyên được chia sẻ giữa worker phải có cơ chế shared memory riêng; một biến trong heap worker không tự trở thành trạng thái chung.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:33+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#processes; #http; #connection",
+    "evidence_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:18D76E6F6595D97C49E03B06",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "DEPLOYMENT:REVERSE-PROXY: pilot_section:Cơ chế và ownership",
+    "observed_at": "2026-11-25T04:20:34+00:00",
+    "predicate": "pilot_section:Cơ chế và ownership",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read development at #processes; #http; #connection; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:34+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:20:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:251A93FF2A286ABF4A496488",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:18D76E6F6595D97C49E03B06",
+    "claim_value": "\"## Cơ chế và ownership\\n\\nMột client connection và một upstream connection là hai đối tượng có thời hạn, timeout và lỗi riêng. Worker tiếp nhận dữ liệu, chọn cấu hình HTTP, thực hiện các phase, rồi gửi nội dung ra socket; khi proxy, upstream có thể được tái sử dụng theo cấu hình. Request không sở hữu toàn bộ thế giới bên ngoài nó. Những tài nguyên được chia sẻ giữa worker phải có cơ chế shared memory riêng; một biến trong heap worker không tự trở thành trạng thái chung.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:33+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:18D76E6F6595D97C49E03B06",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "DEPLOYMENT:REVERSE-PROXY: pilot_section:Cơ chế và ownership",
+    "observed_at": "2026-11-25T04:20:34+00:00",
+    "predicate": "pilot_section:Cơ chế và ownership",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:20:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:34+00:00",
+  "entity_id": "CLAIM:18D76E6F6595D97C49E03B06",
+  "id": "HISTORY:A634AD32E4057EC2F85F6444"
+}

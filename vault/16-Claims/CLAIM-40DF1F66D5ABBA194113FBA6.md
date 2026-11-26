@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:40DF1F66D5ABBA194113FBA6
+title: 'CVE:CVE-2026-9256: description'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-9256: description'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-9256: description
+
+`CLAIM:40DF1F66D5ABBA194113FBA6` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-9256|CVE-2026-9256]]. Predicate: `description`.
+
+```json
+"NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-C53955D4100EAC53CAFC43D6|CVE-2026-9256]]
+
+Locator: EVIDENCE:C53955D4100EAC53CAFC43D6: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:28:41+00:00. Truy xuất: 2026-11-25T02:28:39+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

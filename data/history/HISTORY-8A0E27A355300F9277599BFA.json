@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:B1E59A1A346C14A782BF1F92"
+    ],
+    "created_at": "2026-11-25T02:27:14+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:D9CAF91EDC2F0813AE2E25C6",
+    "name": "Điều kiện được công bố — CVE-2026-125283",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:EBC00C4C250179C07BC479C5"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:B1E59A1A346C14A782BF1F92"
+    ],
+    "created_at": "2026-11-25T02:27:14+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:D9CAF91EDC2F0813AE2E25C6",
+    "name": "Điều kiện được công bố — CVE-2026-125283",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EBC00C4C250179C07BC479C5"
+    ],
+    "updated_at": "2026-11-25T02:27:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:D9CAF91EDC2F0813AE2E25C6",
+  "id": "HISTORY:8A0E27A355300F9277599BFA"
+}

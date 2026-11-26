@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4F71EE251C27C430C5494043",
+    "claim_value": "\"Lập sơ đồ trust boundary, kiểm tra TLS từng chặng và giới hạn header tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C0AF17916571BA346E7E83DD"
+    ],
+    "id": "CLAIM:4F71EE251C27C430C5494043",
+    "name": "DEPLOYMENT:REVERSE-PROXY: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C0AF17916571BA346E7E83DD"
+    ],
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:4F71EE251C27C430C5494043",
+  "id": "HISTORY:CE12F63ECE4849553C3A2BC7"
+}

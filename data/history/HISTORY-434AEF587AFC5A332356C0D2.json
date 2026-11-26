@@ -1,0 +1,83 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:C0FF0282B8BC5AE57410C9A2",
+      "CLAIM:B7B30DAC096534045CD89E91",
+      "CLAIM:28659600EFE92C9B8F04E7D0",
+      "CLAIM:15608430D2F2AD90B14B260F",
+      "CLAIM:0C495438D05CA158EA72C085",
+      "CLAIM:C00173795BF9FE9BDC50A2F9",
+      "CLAIM:A7E3E177300327096C87218C",
+      "CLAIM:430DD9583B749AF06C6B4BF4"
+    ],
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "cwe_id": "CWE-444",
+    "defensive_principles": "Cập nhật proxy/backend và chuẩn hóa chính sách xử lý thông điệp không hợp lệ.",
+    "definition": "Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.",
+    "description": "Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Định tuyến hoặc ghép thông điệp sai theo context triển khai.",
+    "id": "WEAKNESS:CWE-444",
+    "learning_objectives": [
+      "Giải thích CWE-444 — Request parsing inconsistencies bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-444 — Request parsing inconsistencies",
+    "normal_behavior": "Mỗi hop diễn giải thống nhất framing và loại bỏ trường hợp mơ hồ.",
+    "related_failure_classes": "Request parsing inconsistencies",
+    "related_knowledge": [],
+    "safety_assumptions": "Không có bất đồng parser giữa frontend và backend.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469",
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:69043B2AA151FD1486D5663D",
+      "CLAIM:D761743485F11C185088738A",
+      "CLAIM:3EE1993AA9A79451CDE384AF",
+      "CLAIM:EF5952A25E8326D72B4AAF59",
+      "CLAIM:CB2980E613F1917E61914F5E",
+      "CLAIM:5C320585BC3CE4C0C0A549F3",
+      "CLAIM:3A0A22391632482905903CEC",
+      "CLAIM:FEDB4CB3A98C3E0BE69754B5"
+    ],
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "cwe_id": "CWE-444",
+    "defensive_principles": "Cập nhật proxy/backend và chuẩn hóa chính sách xử lý thông điệp không hợp lệ.",
+    "definition": "Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.",
+    "description": "Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Định tuyến hoặc ghép thông điệp sai theo context triển khai.",
+    "id": "WEAKNESS:CWE-444",
+    "learning_objectives": [
+      "Giải thích CWE-444 — Request parsing inconsistencies bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-444 — Request parsing inconsistencies",
+    "normal_behavior": "Mỗi hop diễn giải thống nhất framing và loại bỏ trường hợp mơ hồ.",
+    "related_failure_classes": "Request parsing inconsistencies",
+    "related_knowledge": [],
+    "safety_assumptions": "Không có bất đồng parser giữa frontend và backend.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "WEAKNESS:CWE-444",
+  "id": "HISTORY:434AEF587AFC5A332356C0D2"
+}

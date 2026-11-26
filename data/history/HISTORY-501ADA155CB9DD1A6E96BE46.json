@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:ABDCB2CA4944886566C631E3",
+    "claim_value": "\"Xử lý IMAP trong vai trò mail proxy.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F69550F5596B2A5F41B07EBB"
+    ],
+    "id": "CLAIM:ABDCB2CA4944886566C631E3",
+    "name": "MODULE:NGX-MAIL-IMAP-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F69550F5596B2A5F41B07EBB"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-IMAP-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:ABDCB2CA4944886566C631E3",
+  "id": "HISTORY:501ADA155CB9DD1A6E96BE46"
+}

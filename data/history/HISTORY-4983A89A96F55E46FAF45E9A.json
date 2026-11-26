@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:7AC817DCF6656C4DD12218F3",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:2CF6401DB3A7E756F86936E7",
+    "claim_value": "\"## Vòng đời callback\\n\\nDevelopment guide phân biệt I/O events, timer và posted events. Timer biểu diễn hạn chờ; posted event trì hoãn xử lý trong luồng event loop, không tự tạo thread. Mã callback phải duy trì vị trí đã xử lý và trạng thái chờ của đối tượng. Một response có thể cần nhiều lần callback trước khi hoàn tất. Khi kết nối đóng, các tham chiếu sự kiện liên quan phải tương thích với lifetime đối tượng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:41+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2CF6401DB3A7E756F86936E7",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:EVENT-DRIVEN: pilot_section:Vòng đời callback",
+    "observed_at": "2026-11-25T04:20:42+00:00",
+    "predicate": "pilot_section:Vòng đời callback",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T04:20:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:42+00:00",
+  "entity_id": "CLAIM:2CF6401DB3A7E756F86936E7",
+  "id": "HISTORY:4983A89A96F55E46FAF45E9A"
+}

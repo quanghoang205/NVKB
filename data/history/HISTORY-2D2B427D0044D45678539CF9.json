@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:5B10FDE3230EC34A87D2A997",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:6354EB30C99ADA4A41C60C45",
+    "claim_value": "\"Lưu inventory/package evidence và kiểm tra lại sau cập nhật.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:EF48AF94A2577B9F810DED95: Core module directives; topic=CONTROL:PATCH-VERIFICATION",
+    "evidence_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:6354EB30C99ADA4A41C60C45",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:PATCH-VERIFICATION: defensive_principles",
+    "observation_key": "OBSERVATION:6777D6BEEC9AC0B1652D930F",
+    "observed_at": "2026-11-25T02:49:06+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "CONTROL:PATCH-VERIFICATION",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:49:05+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+    "updated_at": "2026-11-25T04:12:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:6354EB30C99ADA4A41C60C45",
+    "claim_value": "\"Lưu inventory/package evidence và kiểm tra lại sau cập nhật.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "id": "CLAIM:6354EB30C99ADA4A41C60C45",
+    "name": "CONTROL:PATCH-VERIFICATION: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+    "updated_at": "2026-11-25T02:49:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:38+00:00",
+  "entity_id": "CLAIM:6354EB30C99ADA4A41C60C45",
+  "id": "HISTORY:2D2B427D0044D45678539CF9"
+}

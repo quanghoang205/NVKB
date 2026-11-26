@@ -1,0 +1,414 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Stack overflow and use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B318EAFA58A18F25789C5103",
+      "RANGE:DDF8AB8005478AAE290682FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0E119E9DF970A65171A90D9D",
+      "CLAIM:1489129D217B7C57ABCF8B29",
+      "CLAIM:174C488D132B37C8DF1E208A",
+      "CLAIM:1C94B5E7929C8EEAF5F82E10",
+      "CLAIM:21258BBC6B4F0AF3D1E63618",
+      "CLAIM:273203D34F20E97D0B0E0E1A",
+      "CLAIM:2F3462F61715CEC2CB713B74",
+      "CLAIM:30332CFFD97F8422B7232EB1",
+      "CLAIM:3F6B1A7D264198A4104D0F87",
+      "CLAIM:44BED46A552970CDBC79C90B",
+      "CLAIM:4952EAF732431E53E3BD84AD",
+      "CLAIM:52D2667DD42CFFA525D1795C",
+      "CLAIM:537FCEC6B8ED2F4AD6EDD5A2",
+      "CLAIM:5622E167F3E54DC0F5EC8489",
+      "CLAIM:6CD26CD56BB6E15833ED7C6D",
+      "CLAIM:70EB586462B4AF12EC26789A",
+      "CLAIM:743E723BE060BF21B4B8B275",
+      "CLAIM:7D4986A840B8A330AAD74841",
+      "CLAIM:7DF65C8FCDB0F8FB720485A2",
+      "CLAIM:844B3C08DCE73AA30AAFA535",
+      "CLAIM:881B33FC939F7C20724AA3F7",
+      "CLAIM:9D2646BBFE3A1FD093CBBF1E",
+      "CLAIM:A2CEA96C760E11B6E8D827F9",
+      "CLAIM:A4C86C85DC669B240F4D55D6",
+      "CLAIM:A6FCB596CD6DAF01583F17B1",
+      "CLAIM:ADF86F3A3CD033D95FD6D382",
+      "CLAIM:B926F840EBA8990742271818",
+      "CLAIM:B951285F44C4C9C48496E1F0",
+      "CLAIM:C5716C83CB85D1B09B74E16F",
+      "CLAIM:D0626581FCFA8CECE91BE1C0",
+      "CLAIM:D2A1D3DC06AC65AC2A587DCC",
+      "CLAIM:DA9645F7B76C3A66A7607A86",
+      "CLAIM:DABBE0312E570B773E74B13F",
+      "CLAIM:EF0D562A59F60FA12140E39E",
+      "CLAIM:F6898F560233ACC56E0E1CBB"
+    ],
+    "condition_refs": [
+      "CONDITION:F6F93544F7DC84AC8A52182C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker có thể kết thúc theo CNA và announcement.",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2024-31079",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Dùng bản sửa; review graceful shutdown và lifetime của đối tượng riêng với giới hạn concurrency."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "distribution_backports": [
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "distribution_status": [
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "documented_configuration_context": "HTTP/3 QUIC module được sử dụng; CNA còn nêu điều kiện thời gian trong draining nằm ngoài khả năng quan sát và chịu ảnh hưởng hạn chế của tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Advisory nêu stack overflow và use-after-free trong HTTP/3; CNA liên hệ lỗi với connection draining. Tác động được công bố là worker termination và other potential impact chưa cụ thể.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-31079",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2025-02-13T17:47:50.656000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.",
+      "Trả lời có evidence: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2024-31079",
+    "normal_component_behavior": "Draining là giai đoạn kết thúc connection có state riêng; cleanup cần phối hợp các công việc còn giữ tham chiếu.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Other potential impact không được nguồn định lượng; không chuyển thành confirmed RCE.",
+    "publication_date": "2024-05-29T16:02:04.620000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:F683F61E851C02AD2F881707"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-121"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nAdvisory nêu stack overflow và use-after-free trong HTTP/3; CNA liên hệ lỗi với connection draining. Tác động được công bố là worker termination và other potential impact chưa cụ thể.\n\n## 2. CVE identity và product scope\n\nCVE-2024-31079; published 2024-05-29T16:02:04.620000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-1489129D217B7C57ABCF8B29|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 connection teardown trong worker; không suy root cause nằm ở memory pool chỉ từ từ khóa use-after-free. [[CLAIM-6CD26CD56BB6E15833ED7C6D|Claim / locator]].\n\n## 5. Normal component behavior\n\nDraining là giai đoạn kết thúc connection có state riêng; cleanup cần phối hợp các công việc còn giữ tham chiếu. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nAdvisory xác định hai lớp lỗi, còn CNA nêu context draining. Mô hình diễn giải là trách nhiệm dọn tài nguyên và tiếp tục callback không nhất quán; chưa có review call stack hoặc đường free cụ thể. [[CLAIM-F6898F560233ACC56E0E1CBB|Claim / locator]].\n\n## 7. Relevant security principles\n\nKết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP/3 QUIC module được sử dụng; CNA còn nêu điều kiện thời gian trong draining nằm ngoài khả năng quan sát và chịu ảnh hưởng hạn chế của tác nhân. [[CLAIM-6CD26CD56BB6E15833ED7C6D|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.25.5, 1.26.0; not vulnerable/fixed branches 1.27.0+, 1.26.1+. [[CLAIM-52D2667DD42CFFA525D1795C|Claim / locator]].\n\nFix 1.26.1/1.27.0; nguồn ghi 1.25.0–1.25.5 và 1.26.0 bị ảnh hưởng. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker có thể kết thúc theo CNA và announcement. [[CLAIM-1C94B5E7929C8EEAF5F82E10|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nOther potential impact không được nguồn định lượng; không chuyển thành confirmed RCE. [[CLAIM-0E119E9DF970A65171A90D9D|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng bản sửa; review graceful shutdown và lifetime của đối tượng riêng với giới hạn concurrency. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-52D2667DD42CFFA525D1795C|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.26.1/1.27.0; nguồn ghi 1.25.0–1.25.5 và 1.26.0 bị ảnh hưởng.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-121|CWE-121 — Stack-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.\n- Trả lời có evidence: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?\n\n## 17. Discussion questions\n\nVì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?\n\nGợi ý đáp án: Giao thức còn cần state cho giai đoạn kết thúc; phần nào còn sống phải tuân lifetime rõ ràng.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-1489129D217B7C57ABCF8B29|CLAIM:1489129D217B7C57ABCF8B29]]\n- applicability: [[CLAIM-6CD26CD56BB6E15833ED7C6D|CLAIM:6CD26CD56BB6E15833ED7C6D]]\n- impact: [[CLAIM-1C94B5E7929C8EEAF5F82E10|CLAIM:1C94B5E7929C8EEAF5F82E10]]\n- potential: [[CLAIM-0E119E9DF970A65171A90D9D|CLAIM:0E119E9DF970A65171A90D9D]]\n- mechanism: [[CLAIM-F6898F560233ACC56E0E1CBB|CLAIM:F6898F560233ACC56E0E1CBB]]\n- versions: [[CLAIM-52D2667DD42CFFA525D1795C|CLAIM:52D2667DD42CFFA525D1795C]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nChưa biết thứ tự callback, độ sâu stack hoặc hậu quả ngoài worker termination.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:1489129D217B7C57ABCF8B29",
+      "CLAIM:6CD26CD56BB6E15833ED7C6D",
+      "CLAIM:1C94B5E7929C8EEAF5F82E10",
+      "CLAIM:0E119E9DF970A65171A90D9D",
+      "CLAIM:F6898F560233ACC56E0E1CBB",
+      "CLAIM:52D2667DD42CFFA525D1795C"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "Advisory xác định hai lớp lỗi, còn CNA nêu context draining. Mô hình diễn giải là trách nhiệm dọn tài nguyên và tiếp tục callback không nhất quán; chưa có review call stack hoặc đường free cụ thể.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:502F9AB82894D46F1196D9FA",
+      "SEVERITY:54A4FF0AD7D6477C56E3983C",
+      "SEVERITY:62BC19537827D5C3FF60BC57"
+    ],
+    "source_refs": [
+      "EVIDENCE:23FEC271923D72AB95F66E42",
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:CDB7C506B4C6F2A478524E7F",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "title": "Stack overflow and use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Chưa biết thứ tự callback, độ sâu stack hoặc hậu quả ngoài worker termination.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:31:55+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+      "Hello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov"
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Stack overflow and use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B318EAFA58A18F25789C5103",
+      "RANGE:DDF8AB8005478AAE290682FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0E119E9DF970A65171A90D9D",
+      "CLAIM:174C488D132B37C8DF1E208A",
+      "CLAIM:1C94B5E7929C8EEAF5F82E10",
+      "CLAIM:21258BBC6B4F0AF3D1E63618",
+      "CLAIM:273203D34F20E97D0B0E0E1A",
+      "CLAIM:2F3462F61715CEC2CB713B74",
+      "CLAIM:30332CFFD97F8422B7232EB1",
+      "CLAIM:3F6B1A7D264198A4104D0F87",
+      "CLAIM:44BED46A552970CDBC79C90B",
+      "CLAIM:4952EAF732431E53E3BD84AD",
+      "CLAIM:52D2667DD42CFFA525D1795C",
+      "CLAIM:537FCEC6B8ED2F4AD6EDD5A2",
+      "CLAIM:5622E167F3E54DC0F5EC8489",
+      "CLAIM:70EB586462B4AF12EC26789A",
+      "CLAIM:743E723BE060BF21B4B8B275",
+      "CLAIM:7D4986A840B8A330AAD74841",
+      "CLAIM:7DF65C8FCDB0F8FB720485A2",
+      "CLAIM:844B3C08DCE73AA30AAFA535",
+      "CLAIM:881B33FC939F7C20724AA3F7",
+      "CLAIM:9D2646BBFE3A1FD093CBBF1E",
+      "CLAIM:A2CEA96C760E11B6E8D827F9",
+      "CLAIM:A4C86C85DC669B240F4D55D6",
+      "CLAIM:A6FCB596CD6DAF01583F17B1",
+      "CLAIM:ADF86F3A3CD033D95FD6D382",
+      "CLAIM:B926F840EBA8990742271818",
+      "CLAIM:B951285F44C4C9C48496E1F0",
+      "CLAIM:C5716C83CB85D1B09B74E16F",
+      "CLAIM:D0626581FCFA8CECE91BE1C0",
+      "CLAIM:D2A1D3DC06AC65AC2A587DCC",
+      "CLAIM:DA9645F7B76C3A66A7607A86",
+      "CLAIM:DABBE0312E570B773E74B13F",
+      "CLAIM:EF0D562A59F60FA12140E39E",
+      "CLAIM:F6898F560233ACC56E0E1CBB"
+    ],
+    "condition_refs": [
+      "CONDITION:F6F93544F7DC84AC8A52182C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Worker có thể kết thúc theo CNA và announcement.",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2024-31079",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Dùng bản sửa; review graceful shutdown và lifetime của đối tượng riêng với giới hạn concurrency."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "distribution_backports": [
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "distribution_status": [
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "documented_configuration_context": "HTTP/3 QUIC module được sử dụng; CNA còn nêu điều kiện thời gian trong draining nằm ngoài khả năng quan sát và chịu ảnh hưởng hạn chế của tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Advisory nêu stack overflow và use-after-free trong HTTP/3; CNA liên hệ lỗi với connection draining. Tác động được công bố là worker termination và other potential impact chưa cụ thể.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-31079",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2025-02-13T17:47:50.656000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.",
+      "Trả lời có evidence: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2024-31079",
+    "normal_component_behavior": "Draining là giai đoạn kết thúc connection có state riêng; cleanup cần phối hợp các công việc còn giữ tham chiếu.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Other potential impact không được nguồn định lượng; không chuyển thành confirmed RCE.",
+    "publication_date": "2024-05-29T16:02:04.620000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:F683F61E851C02AD2F881707"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-121"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nAdvisory nêu stack overflow và use-after-free trong HTTP/3; CNA liên hệ lỗi với connection draining. Tác động được công bố là worker termination và other potential impact chưa cụ thể.\n\n## 2. CVE identity và product scope\n\nCVE-2024-31079; published 2024-05-29T16:02:04.620000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-9D2646BBFE3A1FD093CBBF1E|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP/3 connection teardown trong worker; không suy root cause nằm ở memory pool chỉ từ từ khóa use-after-free. [[CLAIM-9D2646BBFE3A1FD093CBBF1E|Claim / locator]].\n\n## 5. Normal component behavior\n\nDraining là giai đoạn kết thúc connection có state riêng; cleanup cần phối hợp các công việc còn giữ tham chiếu. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nAdvisory xác định hai lớp lỗi, còn CNA nêu context draining. Mô hình diễn giải là trách nhiệm dọn tài nguyên và tiếp tục callback không nhất quán; chưa có review call stack hoặc đường free cụ thể. [[CLAIM-F6898F560233ACC56E0E1CBB|Claim / locator]].\n\n## 7. Relevant security principles\n\nKết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP/3 QUIC module được sử dụng; CNA còn nêu điều kiện thời gian trong draining nằm ngoài khả năng quan sát và chịu ảnh hưởng hạn chế của tác nhân. [[CLAIM-9D2646BBFE3A1FD093CBBF1E|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.0-1.25.5, 1.26.0; not vulnerable/fixed branches 1.27.0+, 1.26.1+. [[CLAIM-52D2667DD42CFFA525D1795C|Claim / locator]].\n\nFix 1.26.1/1.27.0; nguồn ghi 1.25.0–1.25.5 và 1.26.0 bị ảnh hưởng. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nWorker có thể kết thúc theo CNA và announcement. [[CLAIM-1C94B5E7929C8EEAF5F82E10|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nOther potential impact không được nguồn định lượng; không chuyển thành confirmed RCE. [[CLAIM-0E119E9DF970A65171A90D9D|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng bản sửa; review graceful shutdown và lifetime của đối tượng riêng với giới hạn concurrency. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-52D2667DD42CFFA525D1795C|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.26.1/1.27.0; nguồn ghi 1.25.0–1.25.5 và 1.26.0 bị ảnh hưởng.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-HTTP-3|HTTP/3 — message framing và stream chuyên biệt]] · [[PROTOCOL-QUIC|QUIC — stream, connection và kiểm chứng địa chỉ]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-121|CWE-121 — Stack-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.\n- Trả lời có evidence: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?\n\n## 17. Discussion questions\n\nVì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?\n\nGợi ý đáp án: Giao thức còn cần state cho giai đoạn kết thúc; phần nào còn sống phải tuân lifetime rõ ràng.\n\n## 18. Claim-level evidence\n\n- applicability: [[CLAIM-9D2646BBFE3A1FD093CBBF1E|CLAIM:9D2646BBFE3A1FD093CBBF1E]]\n- impact: [[CLAIM-1C94B5E7929C8EEAF5F82E10|CLAIM:1C94B5E7929C8EEAF5F82E10]]\n- potential: [[CLAIM-0E119E9DF970A65171A90D9D|CLAIM:0E119E9DF970A65171A90D9D]]\n- mechanism: [[CLAIM-F6898F560233ACC56E0E1CBB|CLAIM:F6898F560233ACC56E0E1CBB]]\n- versions: [[CLAIM-52D2667DD42CFFA525D1795C|CLAIM:52D2667DD42CFFA525D1795C]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nChưa biết thứ tự callback, độ sâu stack hoặc hậu quả ngoài worker termination.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:9D2646BBFE3A1FD093CBBF1E",
+      "CLAIM:1C94B5E7929C8EEAF5F82E10",
+      "CLAIM:0E119E9DF970A65171A90D9D",
+      "CLAIM:F6898F560233ACC56E0E1CBB",
+      "CLAIM:52D2667DD42CFFA525D1795C"
+    ],
+    "research_group": "quic",
+    "root_cause_summary": "Advisory xác định hai lớp lỗi, còn CNA nêu context draining. Mô hình diễn giải là trách nhiệm dọn tài nguyên và tiếp tục callback không nhất quán; chưa có review call stack hoặc đường free cụ thể.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:502F9AB82894D46F1196D9FA",
+      "SEVERITY:54A4FF0AD7D6477C56E3983C",
+      "SEVERITY:62BC19537827D5C3FF60BC57"
+    ],
+    "source_refs": [
+      "EVIDENCE:23FEC271923D72AB95F66E42",
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "title": "Stack overflow and use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:08:40+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+      "Hello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov"
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:31:55+00:00",
+  "entity_id": "CVE:CVE-2024-31079",
+  "id": "HISTORY:8DEDEDD626CEB37784850944"
+}

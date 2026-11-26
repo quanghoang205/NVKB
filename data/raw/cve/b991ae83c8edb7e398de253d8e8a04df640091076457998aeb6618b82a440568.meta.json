@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:21:55+00:00",
+  "content_hash": "eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"9ba63f8d71a436dabb55855d4cb228be13461399614953ff3c5c9d4fc5c8e40b\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/eb5cb6a8aa056f81fb534365aa4cfd88dac49ec681357a779ccd22e9cf332066.json",
+  "retrieved_at": "2026-11-25T02:21:55+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/23xxx/CVE-2025-23419.json"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:AEA017DACCCFCF524A5AB782",
+    "claim_value": "\"Mỗi datagram có chiều dài riêng; ứng dụng xử lý mất gói, trùng lặp và thứ tự khi cần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "id": "CLAIM:AEA017DACCCFCF524A5AB782",
+    "name": "PROTOCOL:UDP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "subject_entity_id": "PROTOCOL:UDP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:AEA017DACCCFCF524A5AB782",
+  "id": "HISTORY:C392D2C4DFAF2211BDB99A80"
+}

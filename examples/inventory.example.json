@@ -1,0 +1,24 @@
+[
+  {
+    "asset_id": "DEMO-UPSTREAM-ONLY",
+    "product": "PRODUCT:NGINX-OSS",
+    "installed_version": "1.26.3",
+    "package_version": "",
+    "distribution": "",
+    "patch_status": "UNKNOWN",
+    "evidence": "Synthetic example supplied with documentation; not a real host.",
+    "last_reviewed_at": "2026-11-25"
+  },
+  {
+    "asset_id": "DEMO-DEBIAN-ONLY",
+    "product": "PRODUCT:NGINX-OSS",
+    "installed_version": "1.22.1",
+    "package_version": "1.22.1-9+deb12u1",
+    "distribution": "debian",
+    "release": "bookworm",
+    "package_name": "nginx",
+    "patch_status": "UNKNOWN",
+    "evidence": "Synthetic example demonstrating a documented backport; not a real host.",
+    "last_reviewed_at": "2026-11-25"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:35+00:00",
+    "description": "LEARNING:PATH-02 learns_from COMPONENT:CONNECTION-LIFECYCLE",
+    "entity_type": "Relationship",
+    "id": "REL:8A20B74C4ED3E0D4142A7C12",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-02",
+    "updated_at": "2026-11-25T02:33:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:35+00:00",
+  "entity_id": "REL:8A20B74C4ED3E0D4142A7C12",
+  "id": "HISTORY:BB18F6CDAB636987A7940800"
+}

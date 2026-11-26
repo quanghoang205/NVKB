@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:EB316330BB3C2182E278B82A",
+    "claim_value": "\"Cache key phải phân biệt các context trả về nội dung khác nhau.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "id": "CLAIM:EB316330BB3C2182E278B82A",
+    "name": "COMPONENT:HTTP-CACHING: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:EB316330BB3C2182E278B82A",
+  "id": "HISTORY:D4DF36E1EE01ABBFED907457"
+}

@@ -1,0 +1,32 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:5E9BCB174EE803AAAD586D89"
+    ],
+    "created_at": "2026-11-25T04:22:00+00:00",
+    "cve_ref": "CVE:CVE-2025-23419",
+    "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+    "distribution": "ubuntu",
+    "ecosystem": "ubuntu",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "",
+    "id": "PACKAGE:47C8C3DCADA530B8FA5764DA",
+    "name": "nginx / Ubuntu questing / CVE-2025-23419",
+    "package_name": "nginx",
+    "patch_status": "not-affected",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "questing",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:08E27B3802C16B89EC9A769A"
+    ],
+    "updated_at": "2026-11-25T04:22:00+00:00",
+    "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:22:00+00:00",
+  "entity_id": "PACKAGE:47C8C3DCADA530B8FA5764DA",
+  "id": "HISTORY:BBD2F4C78645635C3D50EFB1"
+}

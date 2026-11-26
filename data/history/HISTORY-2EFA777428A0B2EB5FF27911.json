@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "cwe_id": "CWE-1289",
+    "description": "CWE-1289 Improper Validation of Unsafe Equivalence in Input",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-1289",
+    "name": "CWE-1289",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:423B8012C6D7EE5916766C00"
+    ],
+    "updated_at": "2026-11-25T02:26:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:46+00:00",
+  "entity_id": "WEAKNESS:CWE-1289",
+  "id": "HISTORY:2EFA777428A0B2EB5FF27911"
+}

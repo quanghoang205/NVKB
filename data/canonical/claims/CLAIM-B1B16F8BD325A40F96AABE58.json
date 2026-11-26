@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:9BAD6C587706569613E730FD",
+  "authority": "NGINX official documentation",
+  "authority_scope": "NGINX official documentation",
+  "claim_id": "CLAIM:B1B16F8BD325A40F96AABE58",
+  "claim_value": "\"Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:40:20+00:00",
+  "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:901A85C60DC32BEE5D2273B6: ngx_http_mp4_module",
+  "evidence_refs": [
+    "EVIDENCE:901A85C60DC32BEE5D2273B6"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:B1B16F8BD325A40F96AABE58",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "CVE:CVE-2024-7347: normal_component_behavior",
+  "observation_key": "OBSERVATION:A23775A7304EDE9D7F022F08",
+  "observed_at": "2026-11-25T02:40:20+00:00",
+  "predicate": "normal_component_behavior",
+  "product_scope": "CVE:CVE-2024-7347",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:42+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX official documentation",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:901A85C60DC32BEE5D2273B6"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-7347",
+  "updated_at": "2026-11-25T04:12:47+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

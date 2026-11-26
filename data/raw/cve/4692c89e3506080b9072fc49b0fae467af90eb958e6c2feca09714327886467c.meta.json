@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:33+00:00",
+  "content_hash": "16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"a172912739e5d9177c2567d85fd12680b8a4eee70052224b5e30e5e87460bfbe\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd.json",
+  "retrieved_at": "2026-11-25T02:26:33+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/53xxx/CVE-2025-53859.json"
+}

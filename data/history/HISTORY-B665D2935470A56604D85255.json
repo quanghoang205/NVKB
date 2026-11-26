@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:CA0519710E20BA2145C8585B",
+    "claim_value": "\"Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "id": "CLAIM:CA0519710E20BA2145C8585B",
+    "name": "CONCEPT:CVE: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:CA0519710E20BA2145C8585B",
+  "id": "HISTORY:B665D2935470A56604D85255"
+}

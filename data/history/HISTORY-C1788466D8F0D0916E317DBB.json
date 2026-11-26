@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:875877305BD54B68DB933F05",
+    "claim_value": "\"NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \\\"on\\\" or \\\"optional,\\\" and the ssl_ocsp directive is set to \\\"on\\\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\\n\\n\\n\\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:54+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5"
+    ],
+    "id": "CLAIM:875877305BD54B68DB933F05",
+    "name": "CVE:CVE-2026-40701: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:54+00:00",
+  "entity_id": "CLAIM:875877305BD54B68DB933F05",
+  "id": "HISTORY:C1788466D8F0D0916E317DBB"
+}

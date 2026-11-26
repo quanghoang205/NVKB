@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:05B5C5E28B0362B6BC7BAA6B",
+    "claim_value": "\"Kết quả số học vượt miền biểu diễn của kiểu số.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "id": "CLAIM:05B5C5E28B0362B6BC7BAA6B",
+    "name": "WEAKNESS:CWE-190: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T02:32:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:37+00:00",
+  "entity_id": "CLAIM:05B5C5E28B0362B6BC7BAA6B",
+  "id": "HISTORY:4EC9BA4AF34B29FF43813565"
+}

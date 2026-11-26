@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới client ↔ NGINX ↔ backend.",
+    "claim_refs": [
+      "CLAIM:123D69D736E0D088636BBEC6",
+      "CLAIM:D089BEF2AB3B1F7C8EDF79DC",
+      "CLAIM:6586B9DE7BCAE2AE5254D04A",
+      "CLAIM:25327650FC047C03996754BE",
+      "CLAIM:1B62F7E78339D1F9CE991E52",
+      "CLAIM:B5605A6CFF266EB1AFC2CA25",
+      "CLAIM:7731FAAC945D6E50B17DE857",
+      "CLAIM:2D93525AFEC926CDC6AB425F"
+    ],
+    "created_at": "2026-11-25T02:32:11+00:00",
+    "defensive_principles": "Xác định rõ header tin cậy, timeout, TLS upstream và kích thước buffer.",
+    "definition": "Thành phần nhận request client và chuyển tới upstream rồi trả response.",
+    "description": "Thành phần nhận request client và chuyển tới upstream rồi trả response.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Sai định tuyến hoặc lộ dữ liệu theo cách ứng dụng dùng proxy.",
+    "id": "COMPONENT:REVERSE-PROXY",
+    "learning_objectives": [
+      "Giải thích Reverse proxy bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Reverse proxy",
+    "normal_behavior": "Proxy module tạo request upstream, xử lý kết nối, header và buffering theo cấu hình; upstream là một trust boundary riêng.",
+    "related_failure_classes": "Parsing inconsistencies; information disclosure.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không tin header định danh hay thông tin tuyến do client cung cấp nếu chưa kiểm soát.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới client ↔ NGINX ↔ backend.",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "updated_at": "2026-11-25T02:32:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:11+00:00",
+  "entity_id": "COMPONENT:REVERSE-PROXY",
+  "id": "HISTORY:2F0B1F39349C905AC09E0CE5"
+}

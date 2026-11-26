@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:949D92B5CD2D7AFCEF41974C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:B4340C6F90A8479ABB252A80",
+    "claim_value": "\"CNA xác nhận heap over-read; ảnh hưởng của biên buffer lên state chuyển mã là giải thích kiến trúc, chưa định vị phép đọc sai.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:25+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C5FCC8D4BF4A615B0AA8C3BE"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B4340C6F90A8479ABB252A80",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42934: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:24:25+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:C5FCC8D4BF4A615B0AA8C3BE"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42934",
+    "updated_at": "2026-11-25T05:24:25+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:25+00:00",
+  "entity_id": "CLAIM:B4340C6F90A8479ABB252A80",
+  "id": "HISTORY:136FF7D5E9520A75BDE56F93"
+}

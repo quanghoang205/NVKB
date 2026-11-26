@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:DA099B0D55F71810979AC552",
+    "claim_value": "\"Kiểm tra length trước đọc và xử lý input bị cắt ngắn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "id": "CLAIM:DA099B0D55F71810979AC552",
+    "name": "WEAKNESS:CWE-126: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-126",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "CLAIM:DA099B0D55F71810979AC552",
+  "id": "HISTORY:507C7845C49F247DB88DEEDD"
+}

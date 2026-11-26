@@ -1,0 +1,73 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:1B2BEB4A1CC1FF9CDFCC5066",
+    "authority": "CVE Program",
+    "authority_scope": "CVE Program",
+    "claim_id": "CLAIM:261A4F522F7E678461F0DDA1",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:1107C2FF02EE37D4946300CE: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:1107C2FF02EE37D4946300CE"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:261A4F522F7E678461F0DDA1",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:CVE: related_failure_classes",
+    "observation_key": "OBSERVATION:B2283D3D376E28F5A8E7F9AA",
+    "observed_at": "2026-11-25T02:32:59+00:00",
+    "predicate": "related_failure_classes",
+    "product_scope": "CONCEPT:CVE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:59+00:00",
+    "review_rationale": "EV-01: preserved HTML shell does not support this claim; replacement source review required.",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:1107C2FF02EE37D4946300CE"
+    ],
+    "source_support_status": "UNSUPPORTED",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T04:12:31+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:261A4F522F7E678461F0DDA1",
+    "claim_value": "\"Incorrect inference; stale metadata.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1107C2FF02EE37D4946300CE"
+    ],
+    "id": "CLAIM:261A4F522F7E678461F0DDA1",
+    "name": "CONCEPT:CVE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1107C2FF02EE37D4946300CE"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T02:32:59+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:31+00:00",
+  "entity_id": "CLAIM:261A4F522F7E678461F0DDA1",
+  "id": "HISTORY:E24087B01396A20E23DF4837"
+}

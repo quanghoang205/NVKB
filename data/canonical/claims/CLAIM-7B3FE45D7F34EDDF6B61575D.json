@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:EFBFA204B796E2CF5B907F4F",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:7B3FE45D7F34EDDF6B61575D",
+  "claim_value": "\"Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:43+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:A4AD25701CA2C1EE7F32EFF4: ngx_http_grpc_module",
+  "evidence_refs": [
+    "EVIDENCE:A4AD25701CA2C1EE7F32EFF4"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:7B3FE45D7F34EDDF6B61575D",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-GRPC-MODULE: normal_behavior",
+  "observation_key": "OBSERVATION:8662128BA089D0086A65BFA0",
+  "observed_at": "2026-11-25T02:32:43+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "MODULE:NGX-HTTP-GRPC-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:43+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:A4AD25701CA2C1EE7F32EFF4"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-GRPC-MODULE",
+  "updated_at": "2026-11-25T04:12:41+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:F80C704AFEEFB86ACB86B061",
+    "authority": "NGINX official documentation",
+    "authority_scope": "NGINX official documentation",
+    "claim_id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "claim_value": "\"Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:22+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:35AF5EEAA1E3A125305D3059: ngx_mail_proxy_module",
+    "evidence_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CVE:CVE-2026-113425: normal_component_behavior",
+    "observation_key": "OBSERVATION:D3191AC01CE79E65AA28FC66",
+    "observed_at": "2026-11-25T02:40:22+00:00",
+    "predicate": "normal_component_behavior",
+    "product_scope": "CVE:CVE-2026-113425",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:53+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX official documentation",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-113425",
+    "updated_at": "2026-11-25T04:12:28+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "claim_value": "\"Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:22+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+    "name": "CVE:CVE-2026-113425: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-113425",
+    "updated_at": "2026-11-25T02:40:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:28+00:00",
+  "entity_id": "CLAIM:0E6F5BAB95DBA16D21D0C244",
+  "id": "HISTORY:6F43FC5094CFA3220AB51652"
+}

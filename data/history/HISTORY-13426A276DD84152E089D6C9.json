@@ -1,0 +1,104 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Backport cùng revision distribution, được tracker xác nhận tại [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]]; không suy từ upstream component.\n2. Không; cần row Ubuntu đúng release/package và comparator đúng hệ. Mỗi câu 0–2 điểm.",
+    "architecture_position": "Distribution source package nối upstream fix với release/revision riêng của distribution.",
+    "article_body": "## Hai không gian phiên bản\n\nUpstream phát hành source version; distribution có thể đưa bản sửa vào dòng package riêng mà không chuyển toàn bộ lên upstream version mới. Vì vậy package Debian 1.22.1-9+deb12u1 có thể mang bản sửa của case này trong bookworm dù phần upstream 1.22.1 nhỏ hơn 1.26.3. Đây là thông tin đúng row do tracker công bố, không phải suy từ số. [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]]\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-ECEBCC9E899BED4E2416561F|Claim theo section]].\n\n## Cơ chế provenance\n\nChuỗi cần đọc là advisory/CVE → distribution và release → source package → fixed version → package mà quản trị viên khai báo. Source package và binary package không luôn cùng vai trò; build repository và bản custom cần được xác định riêng. Đừng thay row bookworm bằng bullseye hoặc lấy Debian làm bằng chứng cho Ubuntu chỉ vì cú pháp version gần nhau.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-C983B846977F82C3455031A4|Claim theo section]].\n\n## So sánh đúng loại\n\nVersion Debian có thể chứa epoch, upstream phần chính và revision distribution; comparator hiểu quy tắc này, không cắt bỏ hậu tố để so SemVer. Ubuntu dùng họ so sánh Debian nhưng vẫn phải có dữ liệu package đúng Ubuntu release. RPM có quy tắc EVR riêng; comparator của NVKB từ chối caret ordering chưa hỗ trợ thay vì đoán.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-58B67A40031968C5E147348C|Claim theo section]].\n\n## State và giới hạn kết luận\n\nPackage row có thể fixed, not affected, affected hoặc chưa được đánh giá. Fixed version là ngưỡng theo nguồn; không tự xác nhận binary đã được cài hay đang chạy. Một tracker được kiểm tra ngày hôm nay cũng không biến một inventory cũ thành hiện tại. Owner của inventory là quản trị viên; owner của package advisory là distribution; chúng là hai provenance cần giữ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-822A75AD4B9FD4072BA0AFEF|Claim theo section]].\n\n## Bài tập và tradeoff\n\nTrên giấy so package bookworm đúng nguồn với ngưỡng [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]], sau đó liệt kê điều chưa biết về runtime. Backport giúp ổn định ABI và hệ sinh thái, nhưng người đọc phải theo dõi provenance thay vì chỉ nhìn upstream release. Bản custom dùng số tương tự cần NEEDS_REVIEW khi chưa có build evidence.\n\nNgộ nhận: thấp hơn upstream fix luôn bị ảnh hưởng; cao hơn fixed package chứng minh mọi process đã thay; Ubuntu/RPM tự có support vì có comparator. Câu hỏi mở là repository, package origin và bằng chứng chuyển binary do quản trị viên cung cấp.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-9B62E19F3BF67A989593DBE5|Claim theo section]].\n",
+    "assessment": "1. Vì sao package bookworm mang 1.22.1 vẫn có thể đạt ngưỡng sửa của CVE này?\n2. Có thể dùng row Debian bookworm để kết luận Ubuntu noble không?",
+    "claim_refs": [
+      "CLAIM:9D64FAF51C6BA6D5C18F6ED2",
+      "CLAIM:ECEBCC9E899BED4E2416561F",
+      "CLAIM:C983B846977F82C3455031A4",
+      "CLAIM:58B67A40031968C5E147348C",
+      "CLAIM:822A75AD4B9FD4072BA0AFEF",
+      "CLAIM:9B62E19F3BF67A989593DBE5"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với CVE-2025-23419.",
+    "description": "Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với CVE-2025-23419.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:BACKPORT",
+    "learning_objectives": [
+      "Đọc đúng release row và fixed package trong Debian tracker.",
+      "Giải thích vì sao upstream banner không quyết định trạng thái backport."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Upstream version và distribution backport",
+    "normal_behavior": "Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với CVE-2025-23419.",
+    "prerequisites": [
+      "CONCEPT:ADVISORY"
+    ],
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [
+      "CONCEPT:ADVISORY",
+      "CONTROL:PATCH-VERIFICATION",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Chỉ so version bằng đúng ecosystem sau khi chọn đúng package/release và giữ build provenance.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Authority package/release khác authority inventory và attestation runtime.",
+    "source_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "updated_at": "2026-11-25T04:30:42+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "answer_explanations": "1. Backport cùng revision distribution, được tracker xác nhận tại [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]]; không suy từ upstream component.\n2. Không; cần row Ubuntu đúng release/package và comparator đúng hệ. Mỗi câu 0–2 điểm.",
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "article_body": "## Hai không gian phiên bản\n\nUpstream phát hành source version; distribution có thể đưa bản sửa vào dòng package riêng mà không chuyển toàn bộ lên upstream version mới. Vì vậy package Debian 1.22.1-9+deb12u1 có thể mang bản sửa của case này trong bookworm dù phần upstream 1.22.1 nhỏ hơn 1.26.3. Đây là thông tin đúng row do tracker công bố, không phải suy từ số. [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]]\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-ECEBCC9E899BED4E2416561F|Claim theo section]].\n\n## Cơ chế provenance\n\nChuỗi cần đọc là advisory/CVE → distribution và release → source package → fixed version → package mà quản trị viên khai báo. Source package và binary package không luôn cùng vai trò; build repository và bản custom cần được xác định riêng. Đừng thay row bookworm bằng bullseye hoặc lấy Debian làm bằng chứng cho Ubuntu chỉ vì cú pháp version gần nhau.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-C983B846977F82C3455031A4|Claim theo section]].\n\n## So sánh đúng loại\n\nVersion Debian có thể chứa epoch, upstream phần chính và revision distribution; comparator hiểu quy tắc này, không cắt bỏ hậu tố để so SemVer. Ubuntu dùng họ so sánh Debian nhưng vẫn phải có dữ liệu package đúng Ubuntu release. RPM có quy tắc EVR riêng; comparator của NVKB từ chối caret ordering chưa hỗ trợ thay vì đoán.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-58B67A40031968C5E147348C|Claim theo section]].\n\n## State và giới hạn kết luận\n\nPackage row có thể fixed, not affected, affected hoặc chưa được đánh giá. Fixed version là ngưỡng theo nguồn; không tự xác nhận binary đã được cài hay đang chạy. Một tracker được kiểm tra ngày hôm nay cũng không biến một inventory cũ thành hiện tại. Owner của inventory là quản trị viên; owner của package advisory là distribution; chúng là hai provenance cần giữ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-822A75AD4B9FD4072BA0AFEF|Claim theo section]].\n\n## Bài tập và tradeoff\n\nTrên giấy so package bookworm đúng nguồn với ngưỡng [[CLAIM-9D64FAF51C6BA6D5C18F6ED2|nhận định nguồn: CLAIM:9D64FAF51C6BA6D5C18F6ED2]], sau đó liệt kê điều chưa biết về runtime. Backport giúp ổn định ABI và hệ sinh thái, nhưng người đọc phải theo dõi provenance thay vì chỉ nhìn upstream release. Bản custom dùng số tương tự cần NEEDS_REVIEW khi chưa có build evidence.\n\nNgộ nhận: thấp hơn upstream fix luôn bị ảnh hưởng; cao hơn fixed package chứng minh mọi process đã thay; Ubuntu/RPM tự có support vì có comparator. Câu hỏi mở là repository, package origin và bằng chứng chuyển binary do quản trị viên cung cấp.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-9B62E19F3BF67A989593DBE5|Claim theo section]].\n",
+    "assessment": "1. Vì sao package bookworm mang 1.22.1 vẫn có thể đạt ngưỡng sửa của CVE này?\n2. Có thể dùng row Debian bookworm để kết luận Ubuntu noble không?",
+    "claim_refs": [
+      "CLAIM:9D64FAF51C6BA6D5C18F6ED2",
+      "CLAIM:ECEBCC9E899BED4E2416561F",
+      "CLAIM:C983B846977F82C3455031A4",
+      "CLAIM:58B67A40031968C5E147348C",
+      "CLAIM:822A75AD4B9FD4072BA0AFEF",
+      "CLAIM:9B62E19F3BF67A989593DBE5"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với CVE-2025-23419.",
+    "description": "Debian tracker ghi fixed source-package version của nginx cho bookworm là 1.22.1-9+deb12u1 đối với CVE-2025-23419.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:BACKPORT",
+    "learning_objectives": [
+      "Đọc đúng release row và fixed package trong Debian tracker.",
+      "Giải thích vì sao upstream banner không quyết định trạng thái backport."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Upstream version và distribution backport",
+    "normal_behavior": "Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.",
+    "prerequisites": [
+      "CONCEPT:ADVISORY"
+    ],
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [
+      "CONCEPT:ADVISORY",
+      "CONTROL:PATCH-VERIFICATION",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E"
+    ],
+    "updated_at": "2026-11-25T04:21:14+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "changed_at": "2026-11-25T04:30:42+00:00",
+  "entity_id": "CONCEPT:BACKPORT",
+  "id": "HISTORY:13426A276DD84152E089D6C9"
+}

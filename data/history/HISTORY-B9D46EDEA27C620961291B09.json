@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:21BE64E5AF0ADFD776A85D5D"
+    ],
+    "created_at": "2026-11-25T02:33:50+00:00",
+    "description": "CVE:CVE-2026-40701 related_components COMPONENT:CONNECTION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:7445CF59B7241591A1FBAE10",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "related_components",
+    "rationale": "Legacy association: Context only; not fault location. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Context only; not fault location",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5",
+      "EVIDENCE:6CC40301E1F75C3E24EE61AF",
+      "EVIDENCE:7E2D52DB67E361A71B740E9E",
+      "EVIDENCE:84CF755B2579F9D84607D8E2",
+      "EVIDENCE:91376BB607136AEE7D9CF0A9",
+      "EVIDENCE:A236E8E52A0F6D1220BF705B",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:DD998218BBEB14FC1E34A55D"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T04:13:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:21BE64E5AF0ADFD776A85D5D"
+    ],
+    "created_at": "2026-11-25T02:33:50+00:00",
+    "description": "CVE:CVE-2026-40701 related_components COMPONENT:CONNECTION-LIFECYCLE",
+    "entity_type": "Relationship",
+    "id": "REL:7445CF59B7241591A1FBAE10",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5",
+      "EVIDENCE:6CC40301E1F75C3E24EE61AF",
+      "EVIDENCE:7E2D52DB67E361A71B740E9E",
+      "EVIDENCE:84CF755B2579F9D84607D8E2",
+      "EVIDENCE:91376BB607136AEE7D9CF0A9",
+      "EVIDENCE:A236E8E52A0F6D1220BF705B",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:DD998218BBEB14FC1E34A55D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:33:50+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:07+00:00",
+  "entity_id": "REL:7445CF59B7241591A1FBAE10",
+  "id": "HISTORY:B9D46EDEA27C620961291B09"
+}

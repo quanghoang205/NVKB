@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+    "claim_value": "\"2026-10-14T14:40:28.955000+00:00\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "publication_date",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3"
+    ],
+    "id": "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+    "name": "CVE:CVE-2026-95101: publication_date",
+    "predicate": "publication_date",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+  "id": "HISTORY:97FC5D50E3C7D8F5ACD51F4F"
+}

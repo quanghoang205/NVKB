@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:F18AF8ED8B2C15A10241172C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:92CB6FA3C918C8A2BEC4A016",
+    "claim_value": "\"## Tradeoff và ví dụ phòng vệ\\n\\nMô hình nhiều worker tận dụng nhiều CPU; shared cache cải thiện tái sử dụng nhưng thêm state có scope khác heap cục bộ. Buffering có thể giảm phụ thuộc tốc độ giữa hai đầu, đổi lại chi phí bộ nhớ/đĩa và latency. Đây là lựa chọn thiết kế, không bảo đảm throughput trong mọi workload.\\n\\nBài tập giấy: với sơ đồ client → proxy → ứng dụng, đánh dấu nơi TLS kết thúc và nơi ứng dụng kiểm tra quyền đọc tài liệu. Nếu chưa có cấu hình upstream, ghi UNKNOWN cho bảo vệ đoạn đó. Không tạo traffic hoặc dùng địa chỉ hệ thống thật.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:35+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:92CB6FA3C918C8A2BEC4A016",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "DEPLOYMENT:REVERSE-PROXY: pilot_section:Tradeoff và ví dụ phòng vệ",
+    "observed_at": "2026-11-25T04:20:35+00:00",
+    "predicate": "pilot_section:Tradeoff và ví dụ phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:20:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:35+00:00",
+  "entity_id": "CLAIM:92CB6FA3C918C8A2BEC4A016",
+  "id": "HISTORY:DE8FDE76504FD1CA7B3F206A"
+}

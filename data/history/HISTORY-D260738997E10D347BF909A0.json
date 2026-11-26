@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:462DA3A5246491321C8DF79B",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:981F95374C940B4125598B46",
+    "claim_value": "\"## Cơ chế bình thường\\n\\nCVE ID định danh một record trong hệ thống công bố. Record gồm metadata do CVE Services quản lý và container do CNA/ADP cung cấp. Schema thể hiện ngày reserved, published và updated với ý nghĩa riêng. Ngày reserved không phải thời điểm phát hiện hay công bố. Một trường không bắt buộc có thể vắng mặt; thiếu workaround không chứng minh không tồn tại workaround ở nơi khác.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:981F95374C940B4125598B46",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Cơ chế bình thường",
+    "observed_at": "2026-11-25T05:15:15+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế bình thường",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:15+00:00",
+  "entity_id": "CLAIM:981F95374C940B4125598B46",
+  "id": "HISTORY:D260738997E10D347BF909A0"
+}

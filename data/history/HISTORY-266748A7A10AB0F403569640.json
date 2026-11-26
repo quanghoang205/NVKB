@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:28E59CA3C2DB948A8DC495E0",
+    "claim_value": "\"State confusion; improper certificate validation.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "id": "CLAIM:28E59CA3C2DB948A8DC495E0",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:28E59CA3C2DB948A8DC495E0",
+  "id": "HISTORY:266748A7A10AB0F403569640"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:33+00:00",
+  "content_hash": "ffa649c57ac9685db1b883d038781746602c4e259851f1fe92cdd69e0ed86817",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/ffa649c57ac9685db1b883d038781746602c4e259851f1fe92cdd69e0ed86817.html",
+  "retrieved_at": "2026-11-25T02:27:33+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27654"
+}

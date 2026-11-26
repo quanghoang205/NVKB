@@ -1,0 +1,49 @@
+{
+  "answer_explanations": "1. Fixes theo nhánh: [[CLAIM-490B95C09DF13BDDBFE423FD|nhận định nguồn: CLAIM:490B95C09DF13BDDBFE423FD]] nêu 1.26.3 và 1.27.4; 1.27.3 phải đọc theo nhánh và scope.\n2. Không; đó là integrity/extraction, khác semantic review và human approval. Mỗi câu 0–2 điểm.",
+  "architecture_position": "Advisory là artifact tri thức nối authority với product, version scope và remediation.",
+  "article_body": "## Một entry không phải toàn bộ nghiên cứu\n\nAdvisory là thông báo có product/version/scope do authority công bố tại một thời điểm. Entry NGINX cho case này ghi affected expression và các bản sửa theo nhánh. [[CLAIM-490B95C09DF13BDDBFE423FD|nhận định nguồn: CLAIM:490B95C09DF13BDDBFE423FD]] Phải đọc toàn entry: khoảng 1.11.4–1.27.3 không được dùng tách khỏi ngoại lệ nhánh sửa 1.26.3. Một phép so số phiên bản tuyến tính đơn lẻ có thể bỏ mất ý nghĩa nhánh.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-45902A0ECFF470384F8744DB|Claim theo section]].\n\n## Quy trình đọc nguồn\n\nGhi identity CVE; xác định sản phẩm OSS/Plus; đọc publication và modified dates từ CVE record; tách lời mô tả điều kiện khỏi severity; đối chiếu fixes với release/distribution tương ứng. Lưu URL, locator, snapshot hash và thời điểm truy xuất. Không coi mirror CVE Program qua aggregator là đánh giá thứ hai độc lập.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-742BBEE246380AA6A3FF8208|Claim theo section]].\n\n## Cơ chế tri thức và invariant\n\nClaim là một nhận định; Evidence là observation nguồn có locator. Snapshot hash chứng minh bytes, extraction match chứng minh giá trị được lấy đúng, source support cần review ý nghĩa, còn human approval là gate khác. Diễn giải invariant cho học tập phải ghi là inference, kể cả khi có nguồn tham khảo đúng chủ đề.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-A5305F31F30BF8D09CA6215E|Claim theo section]].\n\n## Case CVE-2025-23419\n\nNguồn CNA nói về TLS session resumption và yêu cầu xác thực chứng chỉ client trong context server blocks; module/RFC giúp hiểu nền nhưng không thay source-code root cause review. Case study trong CVE note phân tách dữ kiện, background, tác động và remediation. Bài này không cung cấp cấu hình tái hiện hoặc quy trình bypass.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-CB3F443CB2D83785AC2C8DB2|Claim theo section]].\n\n## Ví dụ và đánh giá giới hạn\n\nTrên giấy, cho hai version 1.26.3 và 1.27.3: cần đọc branch fixes để đánh giá advisory status, thay vì suy từ việc 1.27.3 có số lớn hơn. Nếu inventory chỉ ghi 'nginx' mà không build/distribution, không kết luận runtime đã vá. Advisory có thể đổi; observed/retrieved/checked timestamps phải giữ ý nghĩa riêng.\n\nTradeoff curation: nguồn trực tiếp thường đáng ưu tiên nhưng có thể không công bố mọi chi tiết. Giữ UNKNOWN làm corpus trung thực hơn việc lấy title cộng CWE rồi gọi đó là root cause. Câu hỏi mở gồm điều kiện không được công bố, build context và thời điểm policy đã triển khai.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-6808F5DEB1E4AA2DD2F072D5|Claim theo section]].\n",
+  "assessment": "1. Vì sao không được kết luận 1.27.3 đã sửa chỉ vì lớn hơn 1.26.3?\n2. Hash đúng và field match có đủ để nói human-reviewed không?",
+  "claim_refs": [
+    "CLAIM:490B95C09DF13BDDBFE423FD",
+    "CLAIM:45902A0ECFF470384F8744DB",
+    "CLAIM:742BBEE246380AA6A3FF8208",
+    "CLAIM:A5305F31F30BF8D09CA6215E",
+    "CLAIM:CB3F443CB2D83785AC2C8DB2",
+    "CLAIM:6808F5DEB1E4AA2DD2F072D5"
+  ],
+  "created_at": "2026-11-25T02:33:07+00:00",
+  "curation_version": "1.2.0",
+  "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+  "definition": "Entry NGINX cho CVE-2025-23419 công bố bản không bị ảnh hưởng từ 1.26.3 trên nhánh ổn định tương ứng và từ 1.27.4 trên nhánh tương ứng.",
+  "description": "Entry NGINX cho CVE-2025-23419 công bố bản không bị ảnh hưởng từ 1.26.3 trên nhánh ổn định tương ứng và từ 1.27.4 trên nhánh tương ứng.",
+  "diagram": "",
+  "entity_type": "Component",
+  "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+  "id": "CONCEPT:ADVISORY",
+  "learning_objectives": [
+    "Trích đúng product, phạm vi phiên bản và bản sửa từ entry CVE.",
+    "Phân biệt background, invariant suy luận và root cause đã review."
+  ],
+  "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+  "name": "Đọc advisory: dữ kiện, điều kiện và điều chưa biết",
+  "normal_behavior": "Entry NGINX cho CVE-2025-23419 công bố bản không bị ảnh hưởng từ 1.26.3 trên nhánh ổn định tương ứng và từ 1.27.4 trên nhánh tương ứng.",
+  "prerequisites": [
+    "CONTROL:LEAST-PRIVILEGE"
+  ],
+  "related_failure_classes": "Incorrect inference; stale metadata.",
+  "related_knowledge": [
+    "CONTROL:LEAST-PRIVILEGE",
+    "CONCEPT:BACKPORT",
+    "LEARNING:PATH-01"
+  ],
+  "safety_assumptions": "Đọc branch fixes cùng affected expression và giữ UNKNOWN khi nguồn không nêu context.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Tách dữ kiện công bố khỏi suy luận curator; integrity của tài liệu khác semantic source support.",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "updated_at": "2026-11-25T04:30:42+00:00",
+  "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+  "verification_status": "INFERRED",
+  "version_scope": "See per-claim source snapshot/version scope"
+}

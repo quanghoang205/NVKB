@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d",
+    "created_at": "2026-11-25T02:28:07+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u10, status=fixed.",
+    "document_title": "CVE-2026-42533",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:377BD8828632A80459D0E4F0",
+    "id": "EVIDENCE:377BD8828632A80459D0E4F0",
+    "local_snapshot_path": "data/raw/distribution/snapshots/97201186d551dde2bebbcec617281f36331a2569f63e715f53ff2c324c9b1f6d.html",
+    "name": "CVE-2026-42533",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u10, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:07+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42533",
+    "updated_at": "2026-11-25T02:28:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:07+00:00",
+  "entity_id": "EVIDENCE:377BD8828632A80459D0E4F0",
+  "id": "HISTORY:9D607F25ADEFC3504F93F230"
+}

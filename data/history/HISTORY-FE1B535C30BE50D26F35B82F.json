@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2ce9c54682e175bef754d1e6974ade01b7ad255ed25c61641f6043827bd738db",
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.",
+    "document_title": "CWE -\r\n\n    CWE-789: Memory Allocation with Excessive Size Value (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:10D1CE64C7D374A3FFA0935A",
+    "id": "EVIDENCE:10D1CE64C7D374A3FFA0935A",
+    "local_snapshot_path": "data/raw/documentation/snapshots/2ce9c54682e175bef754d1e6974ade01b7ad255ed25c61641f6043827bd738db.html",
+    "name": "CWE -\r\n\n    CWE-789: Memory Allocation with Excessive Size Value (5.0)",
+    "paraphrase": "Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:59+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-789",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/789.html",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "EVIDENCE:10D1CE64C7D374A3FFA0935A",
+  "id": "HISTORY:FE1B535C30BE50D26F35B82F"
+}

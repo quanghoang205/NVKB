@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:E0A05EFCB8B8108EA56988C9",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:5207086B18714E0BBD06C4A3",
+    "claim_value": "\"## Invariant và trust boundary\\n\\nDiễn giải: mỗi callback trả lời phải tìm được một owner còn hợp lệ, và chỉ tác động đúng tác vụ đang chờ. Trả lời DNS là dữ liệu, không phải chứng cứ peer được phép phục vụ ứng dụng. TLS identity verification và authorization vẫn là nghĩa vụ riêng sau khi đã có địa chỉ. Giới hạn phạm vi resolver có ích cho vận hành nhưng không sửa UAF trong quản lý callback.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:18:37+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5207086B18714E0BBD06C4A3",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:DNS: v1.3:knowledge:Invariant và trust boundary",
+    "observed_at": "2026-11-25T05:18:37+00:00",
+    "predicate": "v1.3:knowledge:Invariant và trust boundary",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T05:18:37+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:18:37+00:00",
+  "entity_id": "CLAIM:5207086B18714E0BBD06C4A3",
+  "id": "HISTORY:6DE520DF679608080F866940"
+}

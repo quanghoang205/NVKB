@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "97a2d3dbafc0410a3d9bfd0d718c1246952c967433bcf46b8f0d3f3c1e0b887a",
+    "created_at": "2026-11-25T02:48:58+00:00",
+    "description": "Tin vào thông tin định danh có thể bị giả mạo trong quá trình authentication.",
+    "document_title": "CWE -\r\n\n    CWE-290: Authentication Bypass by Spoofing (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DE7D1D7AF92C028CF23ED19B",
+    "id": "EVIDENCE:DE7D1D7AF92C028CF23ED19B",
+    "local_snapshot_path": "data/raw/documentation/snapshots/97a2d3dbafc0410a3d9bfd0d718c1246952c967433bcf46b8f0d3f3c1e0b887a.html",
+    "name": "CWE -\r\n\n    CWE-290: Authentication Bypass by Spoofing (5.0)",
+    "paraphrase": "Tin vào thông tin định danh có thể bị giả mạo trong quá trình authentication.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:58+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-290",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/290.html",
+    "updated_at": "2026-11-25T02:48:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:58+00:00",
+  "entity_id": "EVIDENCE:DE7D1D7AF92C028CF23ED19B",
+  "id": "HISTORY:149ECCFC451DE60EE9D0B464"
+}

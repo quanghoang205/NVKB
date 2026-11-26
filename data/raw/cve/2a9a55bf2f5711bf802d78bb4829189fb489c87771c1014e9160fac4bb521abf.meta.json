@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:01+00:00",
+  "content_hash": "13c0f1dd18d7fd4cf8270b319fe3356741c48ae4111f6ebd2cad3c95722f789d",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"ec287330322d01afd75ec9c3041b0a446e7357029ffd1a04d9e8156730a63266\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/13c0f1dd18d7fd4cf8270b319fe3356741c48ae4111f6ebd2cad3c95722f789d.json",
+  "retrieved_at": "2026-11-25T02:26:01+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2022/41xxx/CVE-2022-41741.json"
+}

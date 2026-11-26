@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:A94F1C1C13E0CF15A93FE49F",
+  "claim_refs": [
+    "CLAIM:DE189E2050C01F376B3F13CF"
+  ],
+  "created_at": "2026-11-25T02:27:18+00:00",
+  "cvss_score": 5.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "cvss_version": "3.1",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CIRCL mirror",
+  "entity_type": "Severity",
+  "id": "SEVERITY:D49073FEAC28A8CDA8EF8D16",
+  "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"LOW\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L\", \"version\": \"3.1\"}",
+  "name": "CVE-2026-132779 CVSS 3.1 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CIRCL mirror",
+  "severity_label": "MEDIUM",
+  "source_refs": [
+    "EVIDENCE:DE1FB52B1B69CB12146227B8"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-132779",
+  "updated_at": "2026-11-25T04:13:17+00:00",
+  "verification_status": "VERIFIED"
+}

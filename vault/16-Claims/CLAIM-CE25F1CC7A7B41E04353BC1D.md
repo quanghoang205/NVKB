@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:CE25F1CC7A7B41E04353BC1D
+title: 'CVE:CVE-2025-53859: description'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2025-53859: description'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2025-53859: description
+
+`CLAIM:CE25F1CC7A7B41E04353BC1D` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2025-53859|CVE-2025-53859]]. Predicate: `description`.
+
+```json
+"NGINX Open Source and NGINX Plus have a vulnerability in the ngx_mail_smtp_module that might allow an unauthenticated attacker to over-read NGINX SMTP authentication process memory; as a result, the server side may leak arbitrary bytes sent in a request to the authentication server. This issue happens during the NGINX SMTP authentication process and requires the attacker to make preparations against the target system to extract the leaked data. The issue affects NGINX only if (1) it is built with the ngx_mail_smtp_module, (2) the smtp_auth directive is configured with method \"none,\" and (3) the authentication server returns the \"Auth-Wait\" response header.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-ED3FFFAC9D39C0D9C5057BC3|CVE-2025-53859]]
+
+Locator: EVIDENCE:ED3FFFAC9D39C0D9C5057BC3: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:26:34+00:00. Truy xuất: 2026-11-25T02:26:33+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

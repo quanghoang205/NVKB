@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:606F2522265E25AFC883955C",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:AAE7833E7432FF4F952DC0F4",
+  "claim_value": "\"## Ví dụ kiểm tra trên giấy\\n\\nAsset A khai báo nginx Debian bookworm đạt ngưỡng tracker nhưng thiếu repository và runtime evidence. Ghi package comparison đạt theo inventory; runtime UNKNOWN; manual review còn cần. Asset B có version upstream không tồn tại trong release catalogue hiện có: NEEDS_REVIEW, không tự nhận patched. Đây là workflow dựa trên dữ liệu được cung cấp, không là hướng dẫn kiểm thử khai thác.\\n\\nCâu hỏi mở: package có từ repository dự kiến không, lần quan sát inventory khi nào, worker cũ đã hết chưa và product có nguồn EOL tương ứng không? Chữ ký patch, source-code fix review và runtime attestation chưa được thực hiện trong pilot.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:16+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "li containing CVE-2025-23419",
+  "evidence_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:AAE7833E7432FF4F952DC0F4",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CONTROL:PATCH-VERIFICATION: pilot_section:Ví dụ kiểm tra trên giấy",
+  "observed_at": "2026-11-25T04:21:16+00:00",
+  "predicate": "pilot_section:Ví dụ kiểm tra trên giấy",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read advisories at li containing CVE-2025-23419; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:16+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+  "updated_at": "2026-11-25T04:21:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:12:10+00:00; deployment version not established"
+}

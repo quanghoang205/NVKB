@@ -1,0 +1,46 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "4",
+    "entity_type": "Reference",
+    "id": "REFERENCE:75ADEF763762E522E90F684B",
+    "name": "4",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:0A1449B66184C3759604429B",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:95EEB716E087A80F4E73BD13",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:D7162E9393BB9F1C64EA1C0D",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "source_url": "http://www.openwall.com/lists/oss-security/2024/05/30/4",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "4",
+    "entity_type": "Reference",
+    "id": "REFERENCE:75ADEF763762E522E90F684B",
+    "name": "4",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0A1449B66184C3759604429B",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:95EEB716E087A80F4E73BD13",
+      "EVIDENCE:D324F8092A4034A036B4D3B7",
+      "EVIDENCE:D7162E9393BB9F1C64EA1C0D",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "source_url": "http://www.openwall.com/lists/oss-security/2024/05/30/4",
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REFERENCE:75ADEF763762E522E90F684B",
+  "id": "HISTORY:22A539232686DFDA8869FAF0"
+}

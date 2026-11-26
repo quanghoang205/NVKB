@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:D3BCAE31B1479FB6FD3A9FE4",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "claim_value": "\"## Lựa chọn kỹ thuật\\n\\nDrain kết nối giúp giảm gián đoạn nhưng thời gian kết thúc phụ thuộc công việc còn sống và cấu hình shutdown. Reload cấu hình không thay binary của tiến trình đang chạy. Cập nhật package, chuyển cấu hình và chuyển binary là ba sự kiện cần kiểm chứng riêng. Worker cũ còn sống không tự chứng minh lỗi, nhưng có ý nghĩa khi một chính sách mới cần hiệu lực đồng nhất.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:38+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#reconfiguration",
+    "evidence_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: pilot_section:Lựa chọn kỹ thuật",
+    "observed_at": "2026-11-25T04:20:39+00:00",
+    "predicate": "pilot_section:Lựa chọn kỹ thuật",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read control at #reconfiguration; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:39+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:20:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:39+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:D3BCAE31B1479FB6FD3A9FE4",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "claim_value": "\"## Lựa chọn kỹ thuật\\n\\nDrain kết nối giúp giảm gián đoạn nhưng thời gian kết thúc phụ thuộc công việc còn sống và cấu hình shutdown. Reload cấu hình không thay binary của tiến trình đang chạy. Cập nhật package, chuyển cấu hình và chuyển binary là ba sự kiện cần kiểm chứng riêng. Worker cũ còn sống không tự chứng minh lỗi, nhưng có ý nghĩa khi một chính sách mới cần hiệu lực đồng nhất.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:38+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: pilot_section:Lựa chọn kỹ thuật",
+    "observed_at": "2026-11-25T04:20:39+00:00",
+    "predicate": "pilot_section:Lựa chọn kỹ thuật",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:20:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:39+00:00",
+  "entity_id": "CLAIM:64A2B524922D35EEBF31C76B",
+  "id": "HISTORY:CE3A570177D0E651353A5E69"
+}

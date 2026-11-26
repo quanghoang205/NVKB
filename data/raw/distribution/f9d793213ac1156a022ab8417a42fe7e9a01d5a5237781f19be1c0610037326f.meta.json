@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:55+00:00",
+  "content_hash": "2c61d0c1d6afda50276bcbff1ecc117b54eaa753113c0aaf569c28eca4e585a8",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/2c61d0c1d6afda50276bcbff1ecc117b54eaa753113c0aaf569c28eca4e585a8.html",
+  "retrieved_at": "2026-11-25T02:27:55+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-40701"
+}

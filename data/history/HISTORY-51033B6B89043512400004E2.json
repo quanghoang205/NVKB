@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:B80498D336C05C29A7F64423",
+      "CLAIM:C3832B2AFEFE1C6FB5DE6B3F",
+      "CLAIM:CE29E1404DE832302685CB3E",
+      "CLAIM:831109A7FDBF9BDCD5BDA87A",
+      "CLAIM:36516D5383F14745ACAC18B5",
+      "CLAIM:272622A5086D78F1F4D1C6E8",
+      "CLAIM:7DFDCF0945017D325C77A59C",
+      "CLAIM:0B8F3ED606E04DE2460E5448"
+    ],
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Cấu hình TLS cho stream proxy.",
+    "description": "Cấu hình TLS cho stream proxy.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_stream_ssl_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_stream_ssl_module",
+    "normal_behavior": "Cấu hình TLS cho stream proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:7B361B83E3A2E5B0DD180CDA"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:B80498D336C05C29A7F64423",
+      "CLAIM:C3832B2AFEFE1C6FB5DE6B3F",
+      "CLAIM:CE29E1404DE832302685CB3E",
+      "CLAIM:831109A7FDBF9BDCD5BDA87A",
+      "CLAIM:36516D5383F14745ACAC18B5",
+      "CLAIM:272622A5086D78F1F4D1C6E8",
+      "CLAIM:7DFDCF0945017D325C77A59C",
+      "CLAIM:0B8F3ED606E04DE2460E5448"
+    ],
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Cấu hình TLS cho stream proxy.",
+    "description": "Cấu hình TLS cho stream proxy.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_stream_ssl_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_stream_ssl_module",
+    "normal_behavior": "Cấu hình TLS cho stream proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:7B361B83E3A2E5B0DD180CDA"
+    ],
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+  "id": "HISTORY:51033B6B89043512400004E2"
+}

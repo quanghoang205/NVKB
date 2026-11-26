@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:4F93FCFAED1C79F24BB2CB62",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+    "claim_value": "\"## Điều khiển và giới hạn\\n\\nPolicy ở server side tránh phụ thuộc đơn thuần vào trạng thái do client tự khai báo. Tách quyền của tiến trình và hạn chế tài nguyên có thể giảm hậu quả, nhưng không thay cập nhật bản vá hay sửa logic. Một worker chạy quyền hạn chế vẫn có thể truy cập dữ liệu mà ứng dụng đã cho phép nó đọc; ranh giới OS không giải quyết tự động quyền giữa khách hàng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:07+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Điều khiển và giới hạn",
+    "observed_at": "2026-11-25T04:21:08+00:00",
+    "predicate": "pilot_section:Điều khiển và giới hạn",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:21:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:08+00:00",
+  "entity_id": "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+  "id": "HISTORY:69DD4EB51DDABAA6110ABF38"
+}

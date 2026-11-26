@@ -1,0 +1,291 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in script evaluation",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DD8D78512362475616659BBC",
+      "RANGE:08A22B536C6A58776E605182"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:15FBD21069E323DD3228AC4C",
+      "CLAIM:1D23A716C4FF73F258AA569B",
+      "CLAIM:296CC7548558347B38F426F2",
+      "CLAIM:2D1BD4E307CA008F2B6C7B06",
+      "CLAIM:33F17EB1F74A9BABE2D8EAC4",
+      "CLAIM:34C8049B5139DA766A262A1E",
+      "CLAIM:36D38C3C262938CB047E1F58",
+      "CLAIM:36FCC1BA55A902E6B3183F88",
+      "CLAIM:5E70648F152777CF32C30B5C",
+      "CLAIM:740F56853D980DFE6BC120D3",
+      "CLAIM:78D0C2E7686B4A274C3CF5B8",
+      "CLAIM:79057140FE2778ADA0D87E05",
+      "CLAIM:7D8AA08FB328697F22E0859E",
+      "CLAIM:86836340CCBDC066271FF463",
+      "CLAIM:916BD5172FC11D856C94BF60",
+      "CLAIM:AC60EEDF1DE39CDD4A6B3513",
+      "CLAIM:B825F5F97DACC81DA6108044",
+      "CLAIM:BC02D16857454F2B262F0BAB",
+      "CLAIM:C12464677FD4F1E68330547C",
+      "CLAIM:C7F16FD64C662FDB3E709572",
+      "CLAIM:E62654346F17FEEC255D219E",
+      "CLAIM:F39A882D2A6BB5857F49BD03"
+    ],
+    "condition_refs": [
+      "CONDITION:D3046655EF35C52D94E5367E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:46+00:00",
+    "cve_id": "CVE-2026-93479",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C75645B16DFDEF4773C1AAAD",
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7"
+    ],
+    "distribution_status": [
+      "PACKAGE:C75645B16DFDEF4773C1AAAD",
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7"
+    ],
+    "documented_configuration_context": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-93479 ghi nhận: Buffer overflow in script evaluation. Phạm vi upstream: 1.31.2-1.31.6, 1.30.0-1.30.5. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-93479",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-24T18:26:14.903000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-93479",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:27.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:DF9C9F5C48FFC75860110F6C"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in script evaluation. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:215F6042C29D546AC43439F6",
+      "SEVERITY:23905B3682B3D996A7FEF0FC",
+      "SEVERITY:67131486FBBF651F5413AF56",
+      "SEVERITY:AF9D7CD55ADF7D0D2E6B0063",
+      "SEVERITY:B9E27390F1735DAAA15DEE9B"
+    ],
+    "source_refs": [
+      "EVIDENCE:2CFF924ED599A33A433D939D",
+      "EVIDENCE:70BEDA9150444C679734E102",
+      "EVIDENCE:8F5015B6CA57FA297E6319B8",
+      "EVIDENCE:A311A0B415C8E4750AB331AD",
+      "EVIDENCE:A36D6146D2111A87FE77F3AF",
+      "EVIDENCE:AF107B717AAF59FE9827BD10",
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8",
+      "EVIDENCE:F0C5601D2D413B800D14F8B5"
+    ],
+    "title": "Buffer overflow in script evaluation",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:56+00:00",
+    "upstream_affected_expression": "1.31.2-1.31.6, 1.30.0-1.30.5",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in script evaluation",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DD8D78512362475616659BBC",
+      "RANGE:08A22B536C6A58776E605182"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:1D23A716C4FF73F258AA569B",
+      "CLAIM:2D1BD4E307CA008F2B6C7B06",
+      "CLAIM:33F17EB1F74A9BABE2D8EAC4",
+      "CLAIM:34C8049B5139DA766A262A1E",
+      "CLAIM:36D38C3C262938CB047E1F58",
+      "CLAIM:36FCC1BA55A902E6B3183F88",
+      "CLAIM:5E70648F152777CF32C30B5C",
+      "CLAIM:740F56853D980DFE6BC120D3",
+      "CLAIM:78D0C2E7686B4A274C3CF5B8",
+      "CLAIM:79057140FE2778ADA0D87E05",
+      "CLAIM:7D8AA08FB328697F22E0859E",
+      "CLAIM:86836340CCBDC066271FF463",
+      "CLAIM:916BD5172FC11D856C94BF60",
+      "CLAIM:AC60EEDF1DE39CDD4A6B3513",
+      "CLAIM:B825F5F97DACC81DA6108044",
+      "CLAIM:BC02D16857454F2B262F0BAB",
+      "CLAIM:C12464677FD4F1E68330547C",
+      "CLAIM:C7F16FD64C662FDB3E709572",
+      "CLAIM:E62654346F17FEEC255D219E",
+      "CLAIM:F39A882D2A6BB5857F49BD03"
+    ],
+    "condition_refs": [
+      "CONDITION:D3046655EF35C52D94E5367E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:46+00:00",
+    "cve_id": "CVE-2026-93479",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C75645B16DFDEF4773C1AAAD",
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7"
+    ],
+    "distribution_status": [
+      "PACKAGE:C75645B16DFDEF4773C1AAAD",
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7"
+    ],
+    "documented_configuration_context": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-93479 ghi nhận: Buffer overflow in script evaluation. Phạm vi upstream: 1.31.2-1.31.6, 1.30.0-1.30.5. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-93479",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-24T18:26:14.903000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-93479",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:27.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:DF9C9F5C48FFC75860110F6C"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in script evaluation. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:215F6042C29D546AC43439F6",
+      "SEVERITY:23905B3682B3D996A7FEF0FC",
+      "SEVERITY:67131486FBBF651F5413AF56",
+      "SEVERITY:AF9D7CD55ADF7D0D2E6B0063",
+      "SEVERITY:B9E27390F1735DAAA15DEE9B"
+    ],
+    "source_refs": [
+      "EVIDENCE:2CFF924ED599A33A433D939D",
+      "EVIDENCE:70BEDA9150444C679734E102",
+      "EVIDENCE:8F5015B6CA57FA297E6319B8",
+      "EVIDENCE:A311A0B415C8E4750AB331AD",
+      "EVIDENCE:A36D6146D2111A87FE77F3AF",
+      "EVIDENCE:AF107B717AAF59FE9827BD10",
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8",
+      "EVIDENCE:F0C5601D2D413B800D14F8B5"
+    ],
+    "title": "Buffer overflow in script evaluation",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:28:46+00:00",
+    "upstream_affected_expression": "1.31.2-1.31.6, 1.30.0-1.30.5",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:33:56+00:00",
+  "entity_id": "CVE:CVE-2026-93479",
+  "id": "HISTORY:2A6C51517E6591BAE32155A8"
+}

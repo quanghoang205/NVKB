@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:3E350BB8948EA9A4CA387FC1",
+    "claim_value": "\"Hệ thống giữ hạn mức CPU, RAM, kết nối và thời gian cho từng đơn vị công việc.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0838953B2BE98F7124CC4F87"
+    ],
+    "id": "CLAIM:3E350BB8948EA9A4CA387FC1",
+    "name": "WEAKNESS:CWE-400: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0838953B2BE98F7124CC4F87"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-400",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "CLAIM:3E350BB8948EA9A4CA387FC1",
+  "id": "HISTORY:ADEA3F00AFEDCD2A8BC180C4"
+}

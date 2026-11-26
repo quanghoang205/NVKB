@@ -1,0 +1,37 @@
+{
+  "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "claim_refs": [
+    "CLAIM:E8957A99FA3D9CE34834DF13",
+    "CLAIM:D74426A7577B585BE378BCDA",
+    "CLAIM:C8F37022F4561A74CCAC6960",
+    "CLAIM:C31147EFAF46ACB760A7805B",
+    "CLAIM:F51578F5A8E9894528B7BD54",
+    "CLAIM:6F3FAE099A591837DEC31D72",
+    "CLAIM:323E11BC002D80E56DBF2614",
+    "CLAIM:7458289EA645A55F09A5E5E0"
+  ],
+  "created_at": "2026-11-25T02:32:51+00:00",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "Xử lý SMTP trong vai trò mail proxy.",
+  "description": "Xử lý SMTP trong vai trò mail proxy.",
+  "diagram": "",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-MAIL-SMTP-MODULE",
+  "learning_objectives": [
+    "Giải thích ngx_mail_smtp_module bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "ngx_mail_smtp_module",
+  "normal_behavior": "Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:C741AEF2511359192099A6B8"
+  ],
+  "updated_at": "2026-11-25T04:13:03+00:00",
+  "verification_status": "INFERRED"
+}

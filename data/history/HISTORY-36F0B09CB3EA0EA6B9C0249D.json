@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3CA083E16D8B951F2A41FEBE",
+    "claim_value": "\"NGINX chọn nhóm listen theo địa chỉ/cổng và đối chiếu tên server; default server thuộc socket listen. TLS có bước chọn theo SNI.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FDB9B691A2BFB99A8CC78B34"
+    ],
+    "id": "CLAIM:3CA083E16D8B951F2A41FEBE",
+    "name": "COMPONENT:VIRTUAL-HOSTS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FDB9B691A2BFB99A8CC78B34"
+    ],
+    "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:3CA083E16D8B951F2A41FEBE",
+  "id": "HISTORY:36F0B09CB3EA0EA6B9C0249D"
+}

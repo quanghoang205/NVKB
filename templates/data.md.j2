@@ -1,0 +1,21 @@
+{{ frontmatter }}
+# {{ item.name }}
+
+{{ item.description }}
+
+| Thuộc tính | Giá trị |
+| --- | --- |
+{% for key, value in data_fields.items() %}| {{ key }} | {{ value | table_text }} |
+{% endfor %}
+
+{% if equivalents %}Cùng đánh giá gốc, khác observation/kênh: {{ links(equivalents) }}. Không phải nguồn đánh giá độc lập.
+{% endif %}
+{% include 'claim_trace.md.j2' %}
+
+## Nguồn
+
+{{ links(item.source_refs) }}
+
+Legacy: {{ item.verification_status }}. Xem Claim để biết source support và hiệu lực; package comparison không xác minh binary đang chạy.
+
+[[Patch-Management-Library|Patch Management Library]] · [[Research-Library|Research Library]]

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "claim_value": "\"TLS với xác thực chứng chỉ ở cả hai phía theo chính sách triển khai.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "id": "CLAIM:27DECF97A638F277ADB1A1F1",
+    "name": "PROTOCOL:MTLS: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:23+00:00",
+  "entity_id": "CLAIM:27DECF97A638F277ADB1A1F1",
+  "id": "HISTORY:8E21B18D302D126A99E281A7"
+}

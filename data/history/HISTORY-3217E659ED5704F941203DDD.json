@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:3AF5A5957AAA4A8CFC9716DC",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:75F1668EB5D1A1038E310693",
+    "claim_value": "\"CNA nêu khả năng đưa frame headers và payload bytes vào upstream peer; bài giữ ở mức framing integrity, không mô tả byte hoặc cách tái hiện.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:21+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3954E64C288301418D414EAF"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:75F1668EB5D1A1038E310693",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42926: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:28:21+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3954E64C288301418D414EAF"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T05:28:21+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:21+00:00",
+  "entity_id": "CLAIM:75F1668EB5D1A1038E310693",
+  "id": "HISTORY:3217E659ED5704F941203DDD"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:A2324B04F9F1AFC053E8A8C6",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:4ABC922B74D43584A39948C9",
+    "claim_value": "\"Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:D1A256FAF600ED2DE9E28CBA: ngx_http_v2_module",
+    "evidence_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:4ABC922B74D43584A39948C9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-HTTP-V2-MODULE: safety_assumptions",
+    "observation_key": "OBSERVATION:5BD057A1E3AB4C1E668C4D4B",
+    "observed_at": "2026-11-25T02:32:41+00:00",
+    "predicate": "safety_assumptions",
+    "product_scope": "MODULE:NGX-HTTP-V2-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:41+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+    "updated_at": "2026-11-25T04:12:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4ABC922B74D43584A39948C9",
+    "claim_value": "\"Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:41+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "id": "CLAIM:4ABC922B74D43584A39948C9",
+    "name": "MODULE:NGX-HTTP-V2-MODULE: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D1A256FAF600ED2DE9E28CBA"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-V2-MODULE",
+    "updated_at": "2026-11-25T02:32:41+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:35+00:00",
+  "entity_id": "CLAIM:4ABC922B74D43584A39948C9",
+  "id": "HISTORY:9F50BE551238D965CAB61075"
+}

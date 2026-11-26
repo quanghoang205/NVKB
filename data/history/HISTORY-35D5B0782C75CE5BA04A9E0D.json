@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:925298B1835027A9E5CD9329"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:1770D9D4BD8DA06265DDF330",
+    "name": "Điều kiện được công bố — CVE-2025-23419",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:AF1B942825307CEF770EBBF0"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:925298B1835027A9E5CD9329"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:1770D9D4BD8DA06265DDF330",
+    "name": "Điều kiện được công bố — CVE-2025-23419",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AF1B942825307CEF770EBBF0"
+    ],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:1770D9D4BD8DA06265DDF330",
+  "id": "HISTORY:35D5B0782C75CE5BA04A9E0D"
+}

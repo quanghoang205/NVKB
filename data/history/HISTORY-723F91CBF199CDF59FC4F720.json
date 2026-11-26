@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:5B4C67B984A66F74933A76A7",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:B94FC2AAA573561E1A8231A1",
+    "claim_value": "\"## Tradeoff và kiểm soát\\n\\nCache lâu giảm latency và lưu lượng truy vấn nhưng trì hoãn phản ánh thay đổi; nhiều truy vấn đồng thời tăng state chờ. Giới hạn timeout giảm thời gian giữ tài nguyên, đồng thời tạo thêm nhánh cleanup phải đúng. Đọc riêng CVE OCSP và CVE subrequest: chúng cùng dùng resolver nhưng không chứng minh cùng đường lỗi. Tài liệu directive không cho đủ cấu trúc dữ liệu nội bộ để xác định fault location bằng từ khóa.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:18:38+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "#resolver; #resolver_timeout",
+    "evidence_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B94FC2AAA573561E1A8231A1",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:DNS: v1.3:knowledge:Tradeoff và kiểm soát",
+    "observed_at": "2026-11-25T05:18:38+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và kiểm soát",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:18:38+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T05:18:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:32:09+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:5B4C67B984A66F74933A76A7",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:B94FC2AAA573561E1A8231A1",
+    "claim_value": "\"## Tradeoff và kiểm soát\\n\\nCache lâu giảm latency và lưu lượng truy vấn nhưng trì hoãn phản ánh thay đổi; nhiều truy vấn đồng thời tăng state chờ. Giới hạn timeout giảm thời gian giữ tài nguyên, đồng thời tạo thêm nhánh cleanup phải đúng. Đọc riêng CVE OCSP và CVE subrequest: chúng cùng dùng resolver nhưng không chứng minh cùng đường lỗi. Tài liệu directive không cho đủ cấu trúc dữ liệu nội bộ để xác định fault location bằng từ khóa.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:18:38+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:B94FC2AAA573561E1A8231A1",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:DNS: v1.3:knowledge:Tradeoff và kiểm soát",
+    "observed_at": "2026-11-25T05:18:38+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và kiểm soát",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T05:18:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:18:38+00:00",
+  "entity_id": "CLAIM:B94FC2AAA573561E1A8231A1",
+  "id": "HISTORY:723F91CBF199CDF59FC4F720"
+}

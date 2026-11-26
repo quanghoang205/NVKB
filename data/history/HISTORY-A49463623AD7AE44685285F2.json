@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:1F6659B9AA18EDF34F4A2080",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:45902A0ECFF470384F8744DB",
+    "claim_value": "\"## Một entry không phải toàn bộ nghiên cứu\\n\\nAdvisory là thông báo có product/version/scope do authority công bố tại một thời điểm. Entry NGINX cho case này ghi affected expression và các bản sửa theo nhánh. [[CLAIM-490B95C09DF13BDDBFE423FD|nhận định nguồn: CLAIM:490B95C09DF13BDDBFE423FD]] Phải đọc toàn entry: khoảng 1.11.4–1.27.3 không được dùng tách khỏi ngoại lệ nhánh sửa 1.26.3. Một phép so số phiên bản tuyến tính đơn lẻ có thể bỏ mất ý nghĩa nhánh.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:09+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:45902A0ECFF470384F8744DB",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:ADVISORY: pilot_section:Một entry không phải toàn bộ nghiên cứu",
+    "observed_at": "2026-11-25T04:21:09+00:00",
+    "predicate": "pilot_section:Một entry không phải toàn bộ nghiên cứu",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T04:21:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:09+00:00",
+  "entity_id": "CLAIM:45902A0ECFF470384F8744DB",
+  "id": "HISTORY:A49463623AD7AE44685285F2"
+}

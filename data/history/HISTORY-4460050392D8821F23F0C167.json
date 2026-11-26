@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:762AD8E58CD989EB1B6A88AE",
+    "claim_value": "\"Two security issues were identified in nginx HTTP/3 implementation,\\nwhich might allow an attacker that uses a specially crafted QUIC session\\nto cause a worker process crash (CVE-2024-24989, CVE-2024-24990) or\\nmight have potential other impact (CVE-2024-24990).\\n\\nThe issues affect nginx compiled with the ngx_http_v3_module (not\\ncompiled by default) if the \\\"quic\\\" option of the \\\"listen\\\" directive\\nis used in a configuration file.\\n\\nThe issue affects nginx 1.25.0 - 1.25.3.\\nThe issue is fixed in nginx 1.25.4.\\n\\n\\n-- \\nSergey Kandaurov\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:15+00:00",
+    "description": "vendor_advisory_statement",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0BF4E4CC924225F0C7F5F039"
+    ],
+    "id": "CLAIM:762AD8E58CD989EB1B6A88AE",
+    "name": "CVE:CVE-2024-24989: vendor_advisory_statement",
+    "predicate": "vendor_advisory_statement",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0BF4E4CC924225F0C7F5F039"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24989",
+    "updated_at": "2026-11-25T02:40:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:16+00:00",
+  "entity_id": "CLAIM:762AD8E58CD989EB1B6A88AE",
+  "id": "HISTORY:4460050392D8821F23F0C167"
+}

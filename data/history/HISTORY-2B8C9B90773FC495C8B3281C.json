@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:32A9F0E65E5A3372231CBC26",
+    "authority": "Debian Security Team",
+    "authority_scope": "Debian Security Team",
+    "claim_id": "CLAIM:35D23737D82B81F1B58D435C",
+    "claim_value": "\"Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:B182E33FA564AB250BC8D7F4: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:35D23737D82B81F1B58D435C",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:BACKPORT: definition",
+    "observation_key": "OBSERVATION:EBA07F7E6FC3366A21B3BF2E",
+    "observed_at": "2026-11-25T02:33:08+00:00",
+    "predicate": "definition",
+    "product_scope": "CONCEPT:BACKPORT",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:33:08+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "Debian Security Team",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T04:12:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:35D23737D82B81F1B58D435C",
+    "claim_value": "\"Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "id": "CLAIM:35D23737D82B81F1B58D435C",
+    "name": "CONCEPT:BACKPORT: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T02:33:08+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:33+00:00",
+  "entity_id": "CLAIM:35D23737D82B81F1B58D435C",
+  "id": "HISTORY:2B8C9B90773FC495C8B3281C"
+}

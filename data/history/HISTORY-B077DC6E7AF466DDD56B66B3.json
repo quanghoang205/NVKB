@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:9FE8EDAFF768B0E7BBBDABEB",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:5128F1868A36791671D8B1FF",
+    "claim_value": "\"## Thuật ngữ chuẩn\\n\\nTên MITRE là Incorrect Authorization. [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]] Authentication hỏi chủ thể là ai hoặc có bằng chứng identity phù hợp không; authorization hỏi chủ thể được làm hành động nào trên tài nguyên nào trong context hiện tại. Identity verification là việc kiểm chứng một khai báo danh tính theo cơ chế đã chọn. Access control là cơ chế thực thi chính sách truy cập; session management duy trì và giới hạn context qua nhiều trao đổi. Các lớp này liên quan nhưng không thể thay tên cho nhau.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:02+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#Description; #Potential_Mitigations",
+    "evidence_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5128F1868A36791671D8B1FF",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-863: pilot_section:Thuật ngữ chuẩn",
+    "observed_at": "2026-11-25T04:21:03+00:00",
+    "predicate": "pilot_section:Thuật ngữ chuẩn",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read cwe863 at #Description; #Potential_Mitigations; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:21:03+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T04:21:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:42+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:9FE8EDAFF768B0E7BBBDABEB",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:5128F1868A36791671D8B1FF",
+    "claim_value": "\"## Thuật ngữ chuẩn\\n\\nTên MITRE là Incorrect Authorization. [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]] Authentication hỏi chủ thể là ai hoặc có bằng chứng identity phù hợp không; authorization hỏi chủ thể được làm hành động nào trên tài nguyên nào trong context hiện tại. Identity verification là việc kiểm chứng một khai báo danh tính theo cơ chế đã chọn. Access control là cơ chế thực thi chính sách truy cập; session management duy trì và giới hạn context qua nhiều trao đổi. Các lớp này liên quan nhưng không thể thay tên cho nhau.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:02+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5128F1868A36791671D8B1FF",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-863: pilot_section:Thuật ngữ chuẩn",
+    "observed_at": "2026-11-25T04:21:03+00:00",
+    "predicate": "pilot_section:Thuật ngữ chuẩn",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T04:21:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:21:03+00:00",
+  "entity_id": "CLAIM:5128F1868A36791671D8B1FF",
+  "id": "HISTORY:B077DC6E7AF466DDD56B66B3"
+}

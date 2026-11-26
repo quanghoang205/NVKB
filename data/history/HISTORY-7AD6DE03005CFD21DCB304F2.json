@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "9137adef4f620c735b7616d921cc7f8a9fff022c8681ac539ad2fce25d516c0d",
+    "created_at": "2026-11-25T02:28:38+00:00",
+    "description": "Debian trixie: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2026-90439",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:F701448C5D073240B2D00E55",
+    "id": "EVIDENCE:F701448C5D073240B2D00E55",
+    "local_snapshot_path": "data/raw/distribution/snapshots/9137adef4f620c735b7616d921cc7f8a9fff022c8681ac539ad2fce25d516c0d.html",
+    "name": "CVE-2026-90439",
+    "paraphrase": "Debian trixie: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:38+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=trixie",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-90439",
+    "updated_at": "2026-11-25T02:28:38+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:38+00:00",
+  "entity_id": "EVIDENCE:F701448C5D073240B2D00E55",
+  "id": "HISTORY:7AD6DE03005CFD21DCB304F2"
+}

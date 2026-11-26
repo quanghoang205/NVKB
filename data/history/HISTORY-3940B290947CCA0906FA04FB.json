@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "name": "PROTOCOL:IMAP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+  "id": "HISTORY:3940B290947CCA0906FA04FB"
+}

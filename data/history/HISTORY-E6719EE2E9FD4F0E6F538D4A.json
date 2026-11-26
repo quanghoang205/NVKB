@@ -1,0 +1,89 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:9E9B45EE12BCBE7487B2D596",
+      "CLAIM:7E7515D6A759557FB0C504E9",
+      "CLAIM:9CB960DA30DA49F0944907B1",
+      "CLAIM:0A8C571BC956D338ACF61EC3",
+      "CLAIM:337EA908B37E4E13918A3922",
+      "CLAIM:2D02ED30D90D13605DAF87B0",
+      "CLAIM:145EDB9ADA87F5AF9298B34F",
+      "CLAIM:D3AECC96312D62A60851896D"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cwe_id": "CWE-863",
+    "defensive_principles": "Tách authentication/authorization và kiểm thử chính sách ở mọi đường xử lý phiên.",
+    "definition": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "description": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.",
+    "id": "WEAKNESS:CWE-863",
+    "learning_objectives": [
+      "Giải thích CWE-863 — Authentication policy violation / Incorrect Authorization bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Incorrect Authorization",
+    "normal_behavior": "Danh tính đã xác thực được đối chiếu chính sách của đúng server/tài nguyên trước khi cấp truy cập.",
+    "related_failure_classes": "Authentication policy violation / Incorrect Authorization",
+    "related_knowledge": [],
+    "safety_assumptions": "Danh tính, session và policy context không bị dùng nhầm.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:50210F852D6BA196DDD0E202",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "updated_at": "2026-11-25T04:13:18+00:00",
+    "verification_limitations": "MITRE CWE-863 is authorization, not authentication. CVE classification unchanged.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:9E9B45EE12BCBE7487B2D596",
+      "CLAIM:7E7515D6A759557FB0C504E9",
+      "CLAIM:9CB960DA30DA49F0944907B1",
+      "CLAIM:0A8C571BC956D338ACF61EC3",
+      "CLAIM:337EA908B37E4E13918A3922",
+      "CLAIM:2D02ED30D90D13605DAF87B0",
+      "CLAIM:145EDB9ADA87F5AF9298B34F",
+      "CLAIM:D3AECC96312D62A60851896D"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "cwe_id": "CWE-863",
+    "defensive_principles": "Tách authentication/authorization và kiểm thử chính sách ở mọi đường xử lý phiên.",
+    "definition": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "description": "Kiểm tra quyền không đúng với chính sách bảo vệ tài nguyên.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.",
+    "id": "WEAKNESS:CWE-863",
+    "learning_objectives": [
+      "Giải thích CWE-863 — Authentication policy violation / Incorrect Authorization bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-863 — Authentication policy violation / Incorrect Authorization",
+    "normal_behavior": "Danh tính đã xác thực được đối chiếu chính sách của đúng server/tài nguyên trước khi cấp truy cập.",
+    "related_failure_classes": "Authentication policy violation / Incorrect Authorization",
+    "related_knowledge": [],
+    "safety_assumptions": "Danh tính, session và policy context không bị dùng nhầm.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:50210F852D6BA196DDD0E202",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "updated_at": "2026-11-25T04:13:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:18+00:00",
+  "entity_id": "WEAKNESS:CWE-863",
+  "id": "HISTORY:E6719EE2E9FD4F0E6F538D4A"
+}

@@ -1,0 +1,22 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "K000161377",
+    "entity_type": "Reference",
+    "id": "REFERENCE:F8A3E0B3F28FCEB933E90370",
+    "name": "K000161377",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8BC901ACCC60F2E2D63DC8EA"
+    ],
+    "source_url": "https://my.f5.com/manage/s/article/K000161377",
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:41+00:00",
+  "entity_id": "REFERENCE:F8A3E0B3F28FCEB933E90370",
+  "id": "HISTORY:793DF40D7784B0599AA6FED5"
+}

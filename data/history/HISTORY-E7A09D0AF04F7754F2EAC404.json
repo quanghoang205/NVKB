@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:667E5FF6158765B6CB9C7689",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "claim_value": "\"Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư; parser phân biệt rõ chế độ command với dữ liệu.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:1C89351EAC105E9377F3948E: Protocol overview and state machine; topic=PROTOCOL:SMTP",
+    "evidence_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:SMTP: normal_behavior",
+    "observation_key": "OBSERVATION:510BEBDC384C29DF3EEBCFF5",
+    "observed_at": "2026-11-25T02:44:23+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "PROTOCOL:SMTP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:25+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T04:12:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "claim_value": "\"Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư; parser phân biệt rõ chế độ command với dữ liệu.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "name": "PROTOCOL:SMTP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:33+00:00",
+  "entity_id": "CLAIM:36C88427E8FC8D70BDA57E22",
+  "id": "HISTORY:E7A09D0AF04F7754F2EAC404"
+}

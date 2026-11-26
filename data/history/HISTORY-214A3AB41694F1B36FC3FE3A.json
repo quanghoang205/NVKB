@@ -1,0 +1,62 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "Khoảng phiên bản do upstream công bố.",
+    "ecosystem": "upstream",
+    "entity_type": "VersionRange",
+    "exclusions": [],
+    "fixed_versions": [
+      "1.30.6",
+      "1.31.7"
+    ],
+    "id": "RANGE:EB955B3E4995A75AEADC2BF0",
+    "lower": "1.25.0",
+    "lower_inclusive": true,
+    "name": "1.25.0-1.31.6",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "raw_expression": "1.25.0-1.31.6",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1"
+    ],
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "upper": "1.31.6",
+    "upper_inclusive": true,
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "Khoảng phiên bản do upstream công bố.",
+    "ecosystem": "upstream",
+    "entity_type": "VersionRange",
+    "exclusions": [],
+    "fixed_versions": [
+      "1.30.6",
+      "1.31.7"
+    ],
+    "id": "RANGE:EB955B3E4995A75AEADC2BF0",
+    "lower": "1.25.0",
+    "lower_inclusive": true,
+    "name": "1.25.0-1.31.6",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "raw_expression": "1.25.0-1.31.6",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1"
+    ],
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "upper": "1.31.6",
+    "upper_inclusive": true,
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "RANGE:EB955B3E4995A75AEADC2BF0",
+  "id": "HISTORY:214A3AB41694F1B36FC3FE3A"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:6A8C1E22ECFADE9F7322B72B",
+    "claim_value": "\"Phép cộng/nhân kích thước được kiểm tra trước khi cấp phát hoặc tính offset.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:28+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1B9FC54844FF757989EB9A57"
+    ],
+    "id": "CLAIM:6A8C1E22ECFADE9F7322B72B",
+    "name": "WEAKNESS:CWE-190: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1B9FC54844FF757989EB9A57"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T02:44:28+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:28+00:00",
+  "entity_id": "CLAIM:6A8C1E22ECFADE9F7322B72B",
+  "id": "HISTORY:5B40EEAB91DB7F913C643557"
+}

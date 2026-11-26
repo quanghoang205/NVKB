@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:44+00:00",
+  "content_hash": "02a37e8e86111cdfd3d5d199a745a365fdccf341a97398fae7ea09adf11d4c0d",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/02a37e8e86111cdfd3d5d199a745a365fdccf341a97398fae7ea09adf11d4c0d.html",
+  "retrieved_at": "2026-11-25T02:27:44+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-28755"
+}

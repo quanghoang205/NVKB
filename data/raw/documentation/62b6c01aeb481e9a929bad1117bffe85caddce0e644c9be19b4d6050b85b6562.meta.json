@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:47+00:00",
+  "content_hash": "ac760b4443cccbfd4d941cea2f757b51c3ec2a79c7a87c2ebb8a2d7f86843d08",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac73-3979\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:39 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/ac760b4443cccbfd4d941cea2f757b51c3ec2a79c7a87c2ebb8a2d7f86843d08.html",
+  "retrieved_at": "2026-11-25T02:32:47+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_uwsgi_module.html"
+}

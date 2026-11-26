@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:1B08D4F3A491363FD90D1ADC",
+    "claim_value": "\"Offset, chiều dài và vòng đời đối tượng đều còn hợp lệ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F43E09B91F0D0A09B4E42149"
+    ],
+    "id": "CLAIM:1B08D4F3A491363FD90D1ADC",
+    "name": "WEAKNESS:CWE-125: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F43E09B91F0D0A09B4E42149"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-125",
+    "updated_at": "2026-11-25T02:32:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:33+00:00",
+  "entity_id": "CLAIM:1B08D4F3A491363FD90D1ADC",
+  "id": "HISTORY:387B1BEFA29A8C3A1D118605"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F790C8D094D029CB7A09A451",
+    "claim_value": "\"Configuration errors; resource exhaustion; stale patch evidence.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "id": "CLAIM:F790C8D094D029CB7A09A451",
+    "name": "CONTROL:LEAST-PRIVILEGE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CLAIM:F790C8D094D029CB7A09A451",
+  "id": "HISTORY:441C757250313F89BFDAD269"
+}

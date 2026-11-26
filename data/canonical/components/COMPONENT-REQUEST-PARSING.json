@@ -1,0 +1,37 @@
+{
+  "architecture_position": "Ranh giới byte stream và thông điệp HTTP.",
+  "claim_refs": [
+    "CLAIM:C7364C96010DED0677659CA4",
+    "CLAIM:8FBD94D201B0313055CA5525",
+    "CLAIM:26D6BDA6D4EE289C22823B35",
+    "CLAIM:FC27627E483600619EE638BA",
+    "CLAIM:8CF86BDF834F5FFC96232E0C",
+    "CLAIM:AF7FA105D6644DF4819B0282",
+    "CLAIM:7218789F401B3C900EC17BDA",
+    "CLAIM:0FB032A6122C96821A0E9B98"
+  ],
+  "created_at": "2026-11-25T02:32:06+00:00",
+  "defensive_principles": "Dùng parser tiêu chuẩn, loại thông điệp mơ hồ và cập nhật toàn bộ chuỗi proxy.",
+  "definition": "Biến byte trên kết nối thành cấu trúc request có ý nghĩa.",
+  "description": "Biến byte trên kết nối thành cấu trúc request có ý nghĩa.",
+  "diagram": "",
+  "entity_type": "Component",
+  "failure_impact": "Routing hoặc phân tách request sai giữa các thành phần.",
+  "id": "COMPONENT:REQUEST-PARSING",
+  "learning_objectives": [
+    "Giải thích Request parsing bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "Request parsing",
+  "normal_behavior": "Parser phân biệt request line, header và body framing theo giao thức, tiếp tục khi dữ liệu đến thành nhiều phần.",
+  "related_failure_classes": "Request parsing inconsistencies; integer overflow.",
+  "related_knowledge": [],
+  "safety_assumptions": "Các thành phần proxy phải hiểu thống nhất chiều dài và ranh giới thông điệp.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới byte stream và thông điệp HTTP.",
+  "source_refs": [
+    "EVIDENCE:4D44AF8511649D7946E70666"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "INFERRED"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:43711473F946EFBA9ECE06EF",
+    "claim_value": "\"CVE-2026-123640\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4123724170DE61098087FBA4"
+    ],
+    "id": "CLAIM:43711473F946EFBA9ECE06EF",
+    "name": "CVE:CVE-2026-123640: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4123724170DE61098087FBA4"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "CLAIM:43711473F946EFBA9ECE06EF",
+  "id": "HISTORY:99AD3148BA09ADA4FEED43E4"
+}

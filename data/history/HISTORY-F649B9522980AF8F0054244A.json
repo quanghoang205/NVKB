@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:163E769A8003F2450EBBE576",
+      "CLAIM:4AA6A72554C572F002647B5C",
+      "CLAIM:02C64D69653352A656283648",
+      "CLAIM:5BFC0D93C57E8CC367084B26",
+      "CLAIM:5C7EC9D54C7A667098C52FD4"
+    ],
+    "created_at": "2026-11-25T05:24:19+00:00",
+    "description": "CVE:CVE-2026-125283 learns_from COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-125283",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:8056BD14572D15F38A952769",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Buffer overflow có đủ để ghi confirmed RCE ở note này không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Buffer overflow có đủ để ghi confirmed RCE ở note này không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:19+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:49BF08A476CD657BA7A48B80",
+      "EVIDENCE:51346DE1523D4A2D40E1DC7A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-125283",
+    "updated_at": "2026-11-25T05:24:19+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:19+00:00",
+  "entity_id": "REL:8056BD14572D15F38A952769",
+  "id": "HISTORY:F649B9522980AF8F0054244A"
+}

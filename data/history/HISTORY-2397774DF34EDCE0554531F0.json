@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:AB4E33805D66F43643C5269C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:7F9157FC28533012F80B0582",
+    "claim_value": "\"CNA nêu tight send retry loop; khác lỗi 118899, worker vẫn nhận và xử lý connection nhưng tốn CPU.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7F9157FC28533012F80B0582",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:15:14+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:14+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:14+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:27:15+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:AB4E33805D66F43643C5269C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:7F9157FC28533012F80B0582",
+    "claim_value": "\"CNA nêu tight send retry loop; khác lỗi 118899, worker vẫn nhận và xử lý connection nhưng tốn CPU.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:13+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7F9157FC28533012F80B0582",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-132779: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:15:14+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9430D1A097BA45D829237492"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-132779",
+    "updated_at": "2026-11-25T05:15:14+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:15:14+00:00",
+  "entity_id": "CLAIM:7F9157FC28533012F80B0582",
+  "id": "HISTORY:2397774DF34EDCE0554531F0"
+}

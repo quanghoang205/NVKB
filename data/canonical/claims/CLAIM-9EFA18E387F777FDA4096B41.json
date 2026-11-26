@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:C64C1212B77D8489AD9D8265",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:9EFA18E387F777FDA4096B41",
+  "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:26+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:0D8FBF067DC0496EB9345796: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:0D8FBF067DC0496EB9345796"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:9EFA18E387F777FDA4096B41",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:POP3: defensive_principles",
+  "observation_key": "OBSERVATION:FADE3920F09376CC814EB69A",
+  "observed_at": "2026-11-25T02:32:26+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "PROTOCOL:POP3",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:26+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:0D8FBF067DC0496EB9345796"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:POP3",
+  "updated_at": "2026-11-25T04:12:45+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

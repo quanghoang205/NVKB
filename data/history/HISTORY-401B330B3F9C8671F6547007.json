@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CIRCL mirror",
+    "claim_id": "CLAIM:D5026819A80813F6E2711AB2",
+    "claim_value": "[\"PRODUCT:NGINX-OSS\"]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:03+00:00",
+    "description": "affected_products",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D12F4E9039435019D45D8A7F"
+    ],
+    "id": "CLAIM:D5026819A80813F6E2711AB2",
+    "name": "CVE:CVE-2026-42530: affected_products",
+    "predicate": "affected_products",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D12F4E9039435019D45D8A7F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42530",
+    "updated_at": "2026-11-25T02:28:03+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:03+00:00",
+  "entity_id": "CLAIM:D5026819A80813F6E2711AB2",
+  "id": "HISTORY:401B330B3F9C8671F6547007"
+}

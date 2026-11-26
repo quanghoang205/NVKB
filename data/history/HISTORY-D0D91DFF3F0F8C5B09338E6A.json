@@ -1,0 +1,36 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "K000162416",
+    "entity_type": "Reference",
+    "id": "REFERENCE:ECC5C83E74A8218CADC64610",
+    "name": "K000162416",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:3E9C443AD39E7D09329FCE25"
+    ],
+    "source_url": "https://my.f5.com/manage/s/article/K000162416",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "K000162416",
+    "entity_type": "Reference",
+    "id": "REFERENCE:ECC5C83E74A8218CADC64610",
+    "name": "K000162416",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3E9C443AD39E7D09329FCE25"
+    ],
+    "source_url": "https://my.f5.com/manage/s/article/K000162416",
+    "updated_at": "2026-11-25T02:27:21+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REFERENCE:ECC5C83E74A8218CADC64610",
+  "id": "HISTORY:D0D91DFF3F0F8C5B09338E6A"
+}

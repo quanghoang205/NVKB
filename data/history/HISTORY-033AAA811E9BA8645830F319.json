@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:56903D3C9DA17BFE4F15E8B5",
+    "claim_value": "\"Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "id": "CLAIM:56903D3C9DA17BFE4F15E8B5",
+    "name": "MODULE:NGX-MAIL-SMTP-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:51+00:00",
+  "entity_id": "CLAIM:56903D3C9DA17BFE4F15E8B5",
+  "id": "HISTORY:033AAA811E9BA8645830F319"
+}

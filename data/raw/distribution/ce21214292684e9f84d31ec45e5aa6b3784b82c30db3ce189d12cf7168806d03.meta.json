@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:14+00:00",
+  "content_hash": "1f428fb1fa2dc52373a8c82ea9ef76f6e1bad497f8ced3ba0b65cd414b7cd412",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/1f428fb1fa2dc52373a8c82ea9ef76f6e1bad497f8ced3ba0b65cd414b7cd412.html",
+  "retrieved_at": "2026-11-25T02:27:14+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-125283"
+}

@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:6BFB6CB62F9545532D841401",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:C80DFAFA37D7D77C24D7A369",
+  "claim_value": "\"## Invariant là điều gì\\n\\nTrong bài này, invariant bảo mật là điều kiện phải được giữ qua các chuyển trạng thái thuộc phạm vi đã nêu. Nó không chỉ là khẩu hiệu 'an toàn' hoặc một tên công nghệ. Ví dụ do tác giả suy luận: trước khi đọc tài nguyên T, decision phải dựa trên principal/context đúng và policy áp dụng cho T. [[CLAIM-E4BAA66AB83A2CA0FDAA9902|nhận định nguồn: CLAIM:E4BAA66AB83A2CA0FDAA9902]] cung cấp nền về kiểm soát theo vai trò và giới hạn của nó, không tự chứng minh invariant cho mọi ứng dụng.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:06+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#Potential_Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:7A43D63D03C50227DF951CF8"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:C80DFAFA37D7D77C24D7A369",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Invariant là điều gì",
+  "observed_at": "2026-11-25T04:21:06+00:00",
+  "predicate": "pilot_section:Invariant là điều gì",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read cwe863 at #Potential_Mitigations; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:06+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:7A43D63D03C50227DF951CF8"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+  "updated_at": "2026-11-25T04:21:06+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:42+00:00; deployment version not established"
+}

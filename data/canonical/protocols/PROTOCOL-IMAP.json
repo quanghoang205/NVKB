@@ -1,0 +1,37 @@
+{
+  "architecture_position": "Parser lệnh ↔ trạng thái mailbox và danh tính.",
+  "claim_refs": [
+    "CLAIM:91814A6A548562FF22598458",
+    "CLAIM:6D7B04A76771FE4D351B3049",
+    "CLAIM:FDBCE0F6D70012A299EA813F",
+    "CLAIM:DB88DB32D61ADA6F79406B9C",
+    "CLAIM:33B4037E2B8269D364A29810",
+    "CLAIM:BC3A8B44D2F2DB79793DA9B7",
+    "CLAIM:B475B66088EEF35E83D1C957",
+    "CLAIM:262C4A75E7637F30F197B00A"
+  ],
+  "created_at": "2026-11-25T02:32:28+00:00",
+  "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+  "definition": "Giao thức thao tác hộp thư đồng bộ với server.",
+  "description": "Giao thức thao tác hộp thư đồng bộ với server.",
+  "diagram": "",
+  "entity_type": "Protocol",
+  "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+  "id": "PROTOCOL:IMAP",
+  "learning_objectives": [
+    "Giải thích IMAP bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "IMAP",
+  "normal_behavior": "Client gửi command có tag; server phản hồi và quản lý trạng thái authenticated/selected cùng dữ liệu mailbox.",
+  "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+  "related_knowledge": [],
+  "safety_assumptions": "Độ dài literal và trạng thái phiên phải được kiểm tra.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Parser lệnh ↔ trạng thái mailbox và danh tính.",
+  "source_refs": [
+    "EVIDENCE:878D849708474C43DE32D05B"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "INFERRED"
+}

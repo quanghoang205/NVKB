@@ -1,0 +1,33 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:7B7FC82E246BC9A5D6B61EEE"
+    ],
+    "created_at": "2026-11-25T02:33:42+00:00",
+    "description": "CVE:CVE-2026-120993 related_protocols PROTOCOL:TLS",
+    "entity_type": "Relationship",
+    "id": "REL:A787D36720285A7B8997FA20",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:TLS",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120993",
+    "updated_at": "2026-11-25T02:33:42+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:42+00:00",
+  "entity_id": "REL:A787D36720285A7B8997FA20",
+  "id": "HISTORY:852CF43E126AA9691E41304F"
+}

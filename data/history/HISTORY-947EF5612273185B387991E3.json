@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:591E1E7E2D6B707AB78ED4B6",
+    "claim_value": "\"COMPONENT:MEMORY-POOL\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:40+00:00",
+    "description": "Liên kết ngữ cảnh học tập; không chứng minh thành phần là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C",
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+      "EVIDENCE:731A4A54AEE8E3E27D50F0A5",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:C991C441AABF308862C5097D",
+      "EVIDENCE:DA3DD605D5072152D133FF26",
+      "EVIDENCE:DBDA0BDE4EFAD46D32B6E9FC",
+      "EVIDENCE:ED3FFFAC9D39C0D9C5057BC3"
+    ],
+    "id": "CLAIM:591E1E7E2D6B707AB78ED4B6",
+    "name": "CVE:CVE-2025-53859: related_components",
+    "predicate": "related_components",
+    "reviewer_notes": "Liên kết ngữ cảnh học tập; không chứng minh thành phần là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C",
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+      "EVIDENCE:731A4A54AEE8E3E27D50F0A5",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:C991C441AABF308862C5097D",
+      "EVIDENCE:DA3DD605D5072152D133FF26",
+      "EVIDENCE:DBDA0BDE4EFAD46D32B6E9FC",
+      "EVIDENCE:ED3FFFAC9D39C0D9C5057BC3"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:33:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:40+00:00",
+  "entity_id": "CLAIM:591E1E7E2D6B707AB78ED4B6",
+  "id": "HISTORY:947EF5612273185B387991E3"
+}

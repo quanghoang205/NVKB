@@ -1,0 +1,377 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "SNI bypass when using client certificate validation in stream",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EDAF5ADAE098FA78945BDC69"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:09F1ABD04313CC5EEDB48A32",
+      "CLAIM:3573D0AEF877F69FB403E2A2",
+      "CLAIM:39DDDAB7BC6EB4F1BCE92F2E",
+      "CLAIM:445DC7070ADE012BAFF0C628",
+      "CLAIM:4F276ADEEFFC60A235FBB933",
+      "CLAIM:56967E34210AE18146060C8E",
+      "CLAIM:60F4EB7CC8350FDF2545B700",
+      "CLAIM:646B7125B869C8352DC23419",
+      "CLAIM:745896BB29147AB88C6CD5FB",
+      "CLAIM:877BE5EFF56CECD2FE8F679E",
+      "CLAIM:8C4FE1DF3302A6BA350C0CF4",
+      "CLAIM:8D2FB5DFFF75083C4F3AB3D2",
+      "CLAIM:9149FB4C042C4601797D0FD7",
+      "CLAIM:9172D3B1327FC45E3E55ECEF",
+      "CLAIM:9A86B805A856DD5EBDDC8CD0",
+      "CLAIM:AC2A47EC9801A7CADC5E3C11",
+      "CLAIM:B95FA2EE52EDBB969E79EDC8",
+      "CLAIM:BF8EE2F5DAD8A5B3F10D83DA",
+      "CLAIM:C3CD8B84A2974F04D194D550",
+      "CLAIM:D97177B2F2A8A717BB4333C5",
+      "CLAIM:D97F4A002D21936D96A90F29",
+      "CLAIM:E36BC4237C78111589C8F4BF",
+      "CLAIM:ED45992C8E8E086D5B990FD2",
+      "CLAIM:EF444C8AD9F45773A1FEE77B",
+      "CLAIM:F8522D7AF8DA8B2F3213572B",
+      "CLAIM:FA2001C361F8A1001C9F095C",
+      "CLAIM:FAE9BAD3DDE9CA6957631F93",
+      "CLAIM:FB10CF72F2045F99BBA3F945",
+      "CLAIM:FBAE429C8291A086C61034E2"
+    ],
+    "condition_refs": [
+      "CONDITION:14800F9B055BFCA4763524B8"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Có thể bỏ qua xác minh client certificate; CNA nêu data-plane issue.",
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-120967",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Dùng bản sửa; review policy giữa default và non-default server như một kiểm tra thiết kế bổ sung."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "distribution_status": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "documented_configuration_context": "Stream virtual server không mặc định có ssl_verify_client on theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Client certificate validation có thể không được giữ ở non-default stream virtual server.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120967",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-18T16:48:16.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Default-server policy không được thay policy của server đích sau lựa chọn virtual server.",
+      "Trả lời có evidence: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-120967",
+    "normal_component_behavior": "Server được chọn quyết định yêu cầu chứng thư trước khi kết nối được coi là đáp ứng policy.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Tài nguyên ứng dụng bị lộ chưa xác định; không suy tác động control plane hoặc quyền hệ điều hành.",
+    "publication_date": "2026-11-18T15:23:31.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6603EA922275DB1F330C73B2"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-1289"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nClient certificate validation có thể không được giữ ở non-default stream virtual server.\n\n## 2. CVE identity và product scope\n\nCVE-2026-120967; published 2026-11-18T15:23:31.955000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-D97F4A002D21936D96A90F29|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nStream SSL virtual-server selection và client-auth policy; không nhập điều kiện HTTP SSL của 23419. [[CLAIM-646B7125B869C8352DC23419|Claim / locator]].\n\n## 5. Normal component behavior\n\nServer được chọn quyết định yêu cầu chứng thư trước khi kết nối được coi là đáp ứng policy. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận có thể vượt yêu cầu client certificate ở non-default server; chưa nêu chi tiết chuyển context trong mã. [[CLAIM-3573D0AEF877F69FB403E2A2|Claim / locator]].\n\n## 7. Relevant security principles\n\nDefault-server policy không được thay policy của server đích sau lựa chọn virtual server. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nStream virtual server không mặc định có ssl_verify_client on theo CNA. [[CLAIM-646B7125B869C8352DC23419|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.5-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-FBAE429C8291A086C61034E2|Claim / locator]].\n\nAffected từ 1.25.5; fix 1.30.7/1.31.9, khác lỗi HTTP session reuse. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nCó thể bỏ qua xác minh client certificate; CNA nêu data-plane issue. [[CLAIM-B95FA2EE52EDBB969E79EDC8|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nTài nguyên ứng dụng bị lộ chưa xác định; không suy tác động control plane hoặc quyền hệ điều hành. [[CLAIM-39DDDAB7BC6EB4F1BCE92F2E|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng bản sửa; review policy giữa default và non-default server như một kiểm tra thiết kế bổ sung. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-FBAE429C8291A086C61034E2|Claim / locator]].\n\n## 14. Patch management considerations\n\nAffected từ 1.25.5; fix 1.30.7/1.31.9, khác lỗi HTTP session reuse.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-1289|CWE-1289 — Unsafe Equivalence in Input]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Default-server policy không được thay policy của server đích sau lựa chọn virtual server.\n- Trả lời có evidence: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?\n\n## 17. Discussion questions\n\nChứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?\n\nGợi ý đáp án: Không; phải kiểm policy được áp dụng tại context thực sự phục vụ kết nối.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-D97F4A002D21936D96A90F29|CLAIM:D97F4A002D21936D96A90F29]]\n- applicability: [[CLAIM-646B7125B869C8352DC23419|CLAIM:646B7125B869C8352DC23419]]\n- impact: [[CLAIM-B95FA2EE52EDBB969E79EDC8|CLAIM:B95FA2EE52EDBB969E79EDC8]]\n- potential: [[CLAIM-39DDDAB7BC6EB4F1BCE92F2E|CLAIM:39DDDAB7BC6EB4F1BCE92F2E]]\n- mechanism: [[CLAIM-3573D0AEF877F69FB403E2A2|CLAIM:3573D0AEF877F69FB403E2A2]]\n- versions: [[CLAIM-FBAE429C8291A086C61034E2|CLAIM:FBAE429C8291A086C61034E2]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nHàm chuyển context và tác động trên từng backend chưa xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:D97F4A002D21936D96A90F29",
+      "CLAIM:646B7125B869C8352DC23419",
+      "CLAIM:B95FA2EE52EDBB969E79EDC8",
+      "CLAIM:39DDDAB7BC6EB4F1BCE92F2E",
+      "CLAIM:3573D0AEF877F69FB403E2A2",
+      "CLAIM:FBAE429C8291A086C61034E2"
+    ],
+    "research_group": "tls",
+    "root_cause_summary": "CNA xác nhận có thể vượt yêu cầu client certificate ở non-default server; chưa nêu chi tiết chuyển context trong mã.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Default-server policy không được thay policy của server đích sau lựa chọn virtual server.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1105949AED9D916DFA7763C8",
+      "SEVERITY:8BA0AE0D6D451792FEC71261",
+      "SEVERITY:C2DDF024EE2682910895119E",
+      "SEVERITY:EF21DDB0538BC9C2EB2F5856",
+      "SEVERITY:FABB2A92664A6B8CB3DE7EFF"
+    ],
+    "source_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001",
+      "EVIDENCE:1994A69D637E553F86F3B6B2",
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:608A179B53892BEE49B06889",
+      "EVIDENCE:64B4AD679CC15D65ECC749CE",
+      "EVIDENCE:66109A3E5325C97B7B17A996",
+      "EVIDENCE:B48A79C712BFAF1167411EBA",
+      "EVIDENCE:C6297E645A0B495F563B3FEB",
+      "EVIDENCE:CC93E19522BE11DF9D98023D"
+    ],
+    "title": "SNI bypass when using client certificate validation in stream",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Hàm chuyển context và tác động trên từng backend chưa xác minh.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:33:46+00:00",
+    "upstream_affected_expression": "1.25.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "SNI bypass when using client certificate validation in stream",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EDAF5ADAE098FA78945BDC69"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:09F1ABD04313CC5EEDB48A32",
+      "CLAIM:3573D0AEF877F69FB403E2A2",
+      "CLAIM:39DDDAB7BC6EB4F1BCE92F2E",
+      "CLAIM:445DC7070ADE012BAFF0C628",
+      "CLAIM:4F276ADEEFFC60A235FBB933",
+      "CLAIM:56967E34210AE18146060C8E",
+      "CLAIM:60F4EB7CC8350FDF2545B700",
+      "CLAIM:646B7125B869C8352DC23419",
+      "CLAIM:745896BB29147AB88C6CD5FB",
+      "CLAIM:877BE5EFF56CECD2FE8F679E",
+      "CLAIM:8C4FE1DF3302A6BA350C0CF4",
+      "CLAIM:8D2FB5DFFF75083C4F3AB3D2",
+      "CLAIM:9149FB4C042C4601797D0FD7",
+      "CLAIM:9172D3B1327FC45E3E55ECEF",
+      "CLAIM:9A86B805A856DD5EBDDC8CD0",
+      "CLAIM:AC2A47EC9801A7CADC5E3C11",
+      "CLAIM:B95FA2EE52EDBB969E79EDC8",
+      "CLAIM:BF8EE2F5DAD8A5B3F10D83DA",
+      "CLAIM:C3CD8B84A2974F04D194D550",
+      "CLAIM:D97177B2F2A8A717BB4333C5",
+      "CLAIM:E36BC4237C78111589C8F4BF",
+      "CLAIM:ED45992C8E8E086D5B990FD2",
+      "CLAIM:EF444C8AD9F45773A1FEE77B",
+      "CLAIM:F8522D7AF8DA8B2F3213572B",
+      "CLAIM:FA2001C361F8A1001C9F095C",
+      "CLAIM:FAE9BAD3DDE9CA6957631F93",
+      "CLAIM:FB10CF72F2045F99BBA3F945",
+      "CLAIM:FBAE429C8291A086C61034E2"
+    ],
+    "condition_refs": [
+      "CONDITION:14800F9B055BFCA4763524B8"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Có thể bỏ qua xác minh client certificate; CNA nêu data-plane issue.",
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-120967",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Dùng bản sửa; review policy giữa default và non-default server như một kiểm tra thiết kế bổ sung."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "distribution_status": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "documented_configuration_context": "Stream virtual server không mặc định có ssl_verify_client on theo CNA.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Client certificate validation có thể không được giữ ở non-default stream virtual server.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120967",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-18T16:48:16.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Default-server policy không được thay policy của server đích sau lựa chọn virtual server.",
+      "Trả lời có evidence: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-120967",
+    "normal_component_behavior": "Server được chọn quyết định yêu cầu chứng thư trước khi kết nối được coi là đáp ứng policy.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Tài nguyên ứng dụng bị lộ chưa xác định; không suy tác động control plane hoặc quyền hệ điều hành.",
+    "publication_date": "2026-11-18T15:23:31.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6603EA922275DB1F330C73B2"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-1289"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nClient certificate validation có thể không được giữ ở non-default stream virtual server.\n\n## 2. CVE identity và product scope\n\nCVE-2026-120967; published 2026-11-18T15:23:31.955000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-646B7125B869C8352DC23419|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nStream SSL virtual-server selection và client-auth policy; không nhập điều kiện HTTP SSL của 23419. [[CLAIM-646B7125B869C8352DC23419|Claim / locator]].\n\n## 5. Normal component behavior\n\nServer được chọn quyết định yêu cầu chứng thư trước khi kết nối được coi là đáp ứng policy. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận có thể vượt yêu cầu client certificate ở non-default server; chưa nêu chi tiết chuyển context trong mã. [[CLAIM-3573D0AEF877F69FB403E2A2|Claim / locator]].\n\n## 7. Relevant security principles\n\nDefault-server policy không được thay policy của server đích sau lựa chọn virtual server. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nStream virtual server không mặc định có ssl_verify_client on theo CNA. [[CLAIM-646B7125B869C8352DC23419|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.25.5-1.31.8; not vulnerable/fixed branches 1.31.9+, 1.30.7+. [[CLAIM-FBAE429C8291A086C61034E2|Claim / locator]].\n\nAffected từ 1.25.5; fix 1.30.7/1.31.9, khác lỗi HTTP session reuse. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nCó thể bỏ qua xác minh client certificate; CNA nêu data-plane issue. [[CLAIM-B95FA2EE52EDBB969E79EDC8|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nTài nguyên ứng dụng bị lộ chưa xác định; không suy tác động control plane hoặc quyền hệ điều hành. [[CLAIM-39DDDAB7BC6EB4F1BCE92F2E|Claim / locator]].\n\n## 12. Remediation principles\n\nDùng bản sửa; review policy giữa default và non-default server như một kiểm tra thiết kế bổ sung. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-FBAE429C8291A086C61034E2|Claim / locator]].\n\n## 14. Patch management considerations\n\nAffected từ 1.25.5; fix 1.30.7/1.31.9, khác lỗi HTTP session reuse.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] · [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] · [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]] · [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-1289|CWE-1289 — Unsafe Equivalence in Input]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Default-server policy không được thay policy của server đích sau lựa chọn virtual server.\n- Trả lời có evidence: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?\n\n## 17. Discussion questions\n\nChứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?\n\nGợi ý đáp án: Không; phải kiểm policy được áp dụng tại context thực sự phục vụ kết nối.\n\n## 18. Claim-level evidence\n\n- applicability: [[CLAIM-646B7125B869C8352DC23419|CLAIM:646B7125B869C8352DC23419]]\n- impact: [[CLAIM-B95FA2EE52EDBB969E79EDC8|CLAIM:B95FA2EE52EDBB969E79EDC8]]\n- potential: [[CLAIM-39DDDAB7BC6EB4F1BCE92F2E|CLAIM:39DDDAB7BC6EB4F1BCE92F2E]]\n- mechanism: [[CLAIM-3573D0AEF877F69FB403E2A2|CLAIM:3573D0AEF877F69FB403E2A2]]\n- versions: [[CLAIM-FBAE429C8291A086C61034E2|CLAIM:FBAE429C8291A086C61034E2]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nHàm chuyển context và tác động trên từng backend chưa xác minh.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:646B7125B869C8352DC23419",
+      "CLAIM:B95FA2EE52EDBB969E79EDC8",
+      "CLAIM:39DDDAB7BC6EB4F1BCE92F2E",
+      "CLAIM:3573D0AEF877F69FB403E2A2",
+      "CLAIM:FBAE429C8291A086C61034E2"
+    ],
+    "research_group": "tls",
+    "root_cause_summary": "CNA xác nhận có thể vượt yêu cầu client certificate ở non-default server; chưa nêu chi tiết chuyển context trong mã.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Default-server policy không được thay policy của server đích sau lựa chọn virtual server.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1105949AED9D916DFA7763C8",
+      "SEVERITY:8BA0AE0D6D451792FEC71261",
+      "SEVERITY:C2DDF024EE2682910895119E",
+      "SEVERITY:EF21DDB0538BC9C2EB2F5856",
+      "SEVERITY:FABB2A92664A6B8CB3DE7EFF"
+    ],
+    "source_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001",
+      "EVIDENCE:1994A69D637E553F86F3B6B2",
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:608A179B53892BEE49B06889",
+      "EVIDENCE:66109A3E5325C97B7B17A996",
+      "EVIDENCE:B48A79C712BFAF1167411EBA",
+      "EVIDENCE:C6297E645A0B495F563B3FEB",
+      "EVIDENCE:CC93E19522BE11DF9D98023D"
+    ],
+    "title": "SNI bypass when using client certificate validation in stream",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:15:07+00:00",
+    "upstream_affected_expression": "1.25.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:33:46+00:00",
+  "entity_id": "CVE:CVE-2026-120967",
+  "id": "HISTORY:B3C2661539DB668BE974458F"
+}

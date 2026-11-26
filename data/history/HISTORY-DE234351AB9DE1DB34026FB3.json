@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F2EED967132BA6F0B5A1D673",
+    "claim_value": "\"Giới hạn buffer/tệp tạm, theo dõi dung lượng và cập nhật module liên quan.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8D54799B23DF55AB033CB16C"
+    ],
+    "id": "CLAIM:F2EED967132BA6F0B5A1D673",
+    "name": "COMPONENT:RESPONSE-BUFFERING: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8D54799B23DF55AB033CB16C"
+    ],
+    "subject_entity_id": "COMPONENT:RESPONSE-BUFFERING",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:F2EED967132BA6F0B5A1D673",
+  "id": "HISTORY:DE234351AB9DE1DB34026FB3"
+}

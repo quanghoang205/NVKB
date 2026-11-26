@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "016fecbe4103587c79e841ebb27ebe3c63a037417540d8650619f78e6be36ea8",
+    "created_at": "2026-11-25T02:28:06+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-42533",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2CA0DB5A8F2B5BC11A66FFC5",
+    "id": "EVIDENCE:2CA0DB5A8F2B5BC11A66FFC5",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/016fecbe4103587c79e841ebb27ebe3c63a037417540d8650619f78e6be36ea8.json",
+    "name": "CVE-2026-42533",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:06+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-42533",
+    "updated_at": "2026-11-25T02:28:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:06+00:00",
+  "entity_id": "EVIDENCE:2CA0DB5A8F2B5BC11A66FFC5",
+  "id": "HISTORY:4BBDECCD8FA9F7D8FB04BF78"
+}

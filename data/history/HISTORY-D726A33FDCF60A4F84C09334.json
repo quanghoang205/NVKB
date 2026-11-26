@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:39D38F4A6FF601466D4C8AB4",
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C459FCC770E3F0CDA9B25D22",
+    "claim_value": "\"SSI module xử lý lệnh trong response và có thể đưa nội dung khác vào qua include; việc này khác với gửi response nguyên trạng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:17+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C459FCC770E3F0CDA9B25D22",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-SSI-MODULE: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T05:24:17+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:17+00:00",
+  "entity_id": "CLAIM:C459FCC770E3F0CDA9B25D22",
+  "id": "HISTORY:D726A33FDCF60A4F84C09334"
+}

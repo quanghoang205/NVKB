@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:35D23737D82B81F1B58D435C",
+      "CLAIM:37F3491FD4364F18FC55AD6F",
+      "CLAIM:58962544F9498BE103537C1A",
+      "CLAIM:4D9A3AF869AE8F71DF74CEC4",
+      "CLAIM:431370632F30DFBEF533E731",
+      "CLAIM:992FCF3E4E9209B5DC0A1519",
+      "CLAIM:E070C1C3C56D7DED0D98D412",
+      "CLAIM:594E0A13B603777814CF74BC"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.",
+    "description": "Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:BACKPORT",
+    "learning_objectives": [
+      "Giải thích Distribution backport bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Distribution backport",
+    "normal_behavior": "Bản sửa được đưa vào package distribution mà không nhất thiết nâng upstream version lên nhánh mới.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "updated_at": "2026-11-25T02:33:08+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:08+00:00",
+  "entity_id": "CONCEPT:BACKPORT",
+  "id": "HISTORY:9BC07793739A869372188C6B"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:00+00:00",
+  "content_hash": "6e40ef8893cfd058b26f4f6a075af6bbb4bb7e135a576a39fcb30a14add5c366",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"b8f5b131c38712bc6da18c12e4108caadcb8acc0b2fc6f3b786ebe3e782a57d5\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/6e40ef8893cfd058b26f4f6a075af6bbb4bb7e135a576a39fcb30a14add5c366.json",
+  "retrieved_at": "2026-11-25T02:26:00+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2021/23xxx/CVE-2021-23017.json"
+}

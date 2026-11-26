@@ -1,0 +1,145 @@
+{
+  "action": "created",
+  "after": {
+    "affected_feature_description": "Buffer overflow when using alias with try_files",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:FF738853B22667978A7208EC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:03E4349791000BBB75A1C454",
+      "CLAIM:08171DF0E87C804DAB5C2B05",
+      "CLAIM:28B5E198383AF0E06E540263",
+      "CLAIM:2C544E4DBD39AD3AA1B976E4",
+      "CLAIM:2E11817F34F3560FEFA54DA0",
+      "CLAIM:425CEE4CD02A2715099819A6",
+      "CLAIM:44825E675A49BA8A6E72F5EE",
+      "CLAIM:5D31124AB17223BDC812017D",
+      "CLAIM:61F2E8141D0CDCDDD9463452",
+      "CLAIM:62B79768F3B7F43E1773B3BD",
+      "CLAIM:6D512AD78D9B2A1A12D596C8",
+      "CLAIM:871189286B8F970E18AA2574",
+      "CLAIM:9CB2F58F71ADEFB5D9C420AC",
+      "CLAIM:9EEA6C1F15F57FF3CEEF4C33",
+      "CLAIM:B1E59A1A346C14A782BF1F92",
+      "CLAIM:CB5862518DECAF439A366188",
+      "CLAIM:DE833B94536B84612E5F3673",
+      "CLAIM:E70E9CB936F3AA8D2963E1BD",
+      "CLAIM:F7D69790CEB22ED5A97A4F15",
+      "CLAIM:F8A53048C1699C4D907361EA"
+    ],
+    "condition_refs": [
+      "CONDITION:D9CAF91EDC2F0813AE2E25C6"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:14+00:00",
+    "cve_id": "CVE-2026-125283",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:5AD237AC5291E8C80F76C93D",
+      "PACKAGE:FD91F458C0111B32E04F9E18",
+      "PACKAGE:B23E1770B438253A2C0EA188"
+    ],
+    "distribution_status": [
+      "PACKAGE:5AD237AC5291E8C80F76C93D",
+      "PACKAGE:FD91F458C0111B32E04F9E18",
+      "PACKAGE:B23E1770B438253A2C0EA188"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-125283 ghi nhận: Buffer overflow when using alias with try_files. Phạm vi upstream: 0.9.6-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-125283",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T16:48:00.521000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-125283",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:32.329000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:3380388A07531035D91DC1E6"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-191"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow when using alias with try_files. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:234A2715BE95D699FB906311",
+      "SEVERITY:52C229AB9631F7115F406302",
+      "SEVERITY:9AEC5DFF9C0347B941E8B686",
+      "SEVERITY:9B2730A3392BDF52BE39FC4F",
+      "SEVERITY:B2CADDE879BB0284C2F05ED0"
+    ],
+    "source_refs": [
+      "EVIDENCE:065AF50E1D00607FE9A69385",
+      "EVIDENCE:44DDDAA722857F4B90BBAA0F",
+      "EVIDENCE:49BF08A476CD657BA7A48B80",
+      "EVIDENCE:67F0330559BC7FD512D1BCD6",
+      "EVIDENCE:8245586D43209CA1D6064B51",
+      "EVIDENCE:D10842D66DC8C1765103B901",
+      "EVIDENCE:E5D6A097B43D7EB31179D3D5",
+      "EVIDENCE:EBC00C4C250179C07BC479C5"
+    ],
+    "title": "Buffer overflow when using alias with try_files",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:27:14+00:00",
+    "upstream_affected_expression": "0.9.6-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.\n\nImpact:\nAn attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:14+00:00",
+  "entity_id": "CVE:CVE-2026-125283",
+  "id": "HISTORY:37A4EB88E104812268C03022"
+}

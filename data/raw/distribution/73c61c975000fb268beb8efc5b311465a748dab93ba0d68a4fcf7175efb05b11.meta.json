@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:34+00:00",
+  "content_hash": "3bc56f12b8d64a2166bd86378e1cf665e05689c2b8a1ed6d2ec11b5a021fdda8",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/3bc56f12b8d64a2166bd86378e1cf665e05689c2b8a1ed6d2ec11b5a021fdda8.html",
+  "retrieved_at": "2026-11-25T02:28:34+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-60005"
+}

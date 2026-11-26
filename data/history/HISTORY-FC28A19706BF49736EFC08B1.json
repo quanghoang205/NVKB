@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:3BD39EE71A00CD16E68C433B",
+    "authority": "CVE Program",
+    "authority_scope": "CVE Program",
+    "claim_id": "CLAIM:89AB71FA615C2334090F6123",
+    "claim_value": "\"2026-02-04T15:02:06.154000+00:00\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "description": "publication_date",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:379925BC759F8C386C7E131C: /cveMetadata",
+    "evidence_refs": [
+      "EVIDENCE:379925BC759F8C386C7E131C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:89AB71FA615C2334090F6123",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-1642: publication_date",
+    "observation_key": "OBSERVATION:587DB4511450970D9DAB0020",
+    "observed_at": "2026-11-25T02:27:25+00:00",
+    "predicate": "publication_date",
+    "product_scope": "CVE:CVE-2026-1642",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:23+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:379925BC759F8C386C7E131C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T04:12:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:89AB71FA615C2334090F6123",
+    "claim_value": "\"2026-02-04T15:02:06.154000+00:00\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "description": "publication_date",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:379925BC759F8C386C7E131C"
+    ],
+    "id": "CLAIM:89AB71FA615C2334090F6123",
+    "name": "CVE:CVE-2026-1642: publication_date",
+    "predicate": "publication_date",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:379925BC759F8C386C7E131C"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:43+00:00",
+  "entity_id": "CLAIM:89AB71FA615C2334090F6123",
+  "id": "HISTORY:FC28A19706BF49736EFC08B1"
+}

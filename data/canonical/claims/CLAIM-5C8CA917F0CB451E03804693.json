@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:3A0F08755AB7996D3D515A3C",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:5C8CA917F0CB451E03804693",
+  "claim_value": "\"CNA mô tả plaintext injection vào response upstream. Đây là lỗi ở contract chuyển dữ liệu/state; chưa xác định code path hoặc cryptographic primitive bị lỗi.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:28:17+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "evidence_refs": [
+    "EVIDENCE:1C42DD8610CBF414D32C272F"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:5C8CA917F0CB451E03804693",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-1642: v1.3:mechanism",
+  "observed_at": "2026-11-25T05:28:17+00:00",
+  "predicate": "v1.3:mechanism",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:28:17+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "CNA F5 / CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:1C42DD8610CBF414D32C272F"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CVE:CVE-2026-1642",
+  "updated_at": "2026-11-25T05:28:17+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:27:23+00:00; CVE versions are scoped separately."
+}

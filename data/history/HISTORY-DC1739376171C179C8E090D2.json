@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:379DECE7F0A36B9D04E25797",
+    "claim_value": "\"Parser theo dõi số byte còn lại, không dùng sentinel ngoài vùng hợp lệ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "id": "CLAIM:379DECE7F0A36B9D04E25797",
+    "name": "WEAKNESS:CWE-126: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2739A81C1376F4477260234A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-126",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "CLAIM:379DECE7F0A36B9D04E25797",
+  "id": "HISTORY:DC1739376171C179C8E090D2"
+}

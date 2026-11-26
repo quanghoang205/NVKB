@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:DA3BAE8E75438C83985C63AF",
+    "claim_value": "\"HTTP stream ↔ QUIC transport.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:21+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DD141E612567C094A4084923"
+    ],
+    "id": "CLAIM:DA3BAE8E75438C83985C63AF",
+    "name": "PROTOCOL:HTTP-3: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DD141E612567C094A4084923"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T02:44:21+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:21+00:00",
+  "entity_id": "CLAIM:DA3BAE8E75438C83985C63AF",
+  "id": "HISTORY:19D3DB281ACB6A16221BABBC"
+}

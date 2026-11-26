@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E9D8A5528874351A96514691",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:D5B78F237646CB013D95B5FA",
+    "claim_value": "\"Ánh xạ giá trị biến bằng bảng khai báo.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:F47F745917FF932456D874F4: ngx_http_map_module; topic=MODULE:NGX-HTTP-MAP-MODULE",
+    "evidence_refs": [
+      "EVIDENCE:F47F745917FF932456D874F4"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D5B78F237646CB013D95B5FA",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-MAP-MODULE: definition",
+    "observation_key": "OBSERVATION:C8D772A5C3937CA218ADEA1C",
+    "observed_at": "2026-11-25T02:44:32+00:00",
+    "predicate": "definition",
+    "product_scope": "MODULE:NGX-HTTP-MAP-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:50+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:F47F745917FF932456D874F4"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-MAP-MODULE",
+    "updated_at": "2026-11-25T04:12:51+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D5B78F237646CB013D95B5FA",
+    "claim_value": "\"Ánh xạ giá trị biến bằng bảng khai báo.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F47F745917FF932456D874F4"
+    ],
+    "id": "CLAIM:D5B78F237646CB013D95B5FA",
+    "name": "MODULE:NGX-HTTP-MAP-MODULE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F47F745917FF932456D874F4"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-MAP-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:51+00:00",
+  "entity_id": "CLAIM:D5B78F237646CB013D95B5FA",
+  "id": "HISTORY:63EA5C9474B95D1F38DAB9B5"
+}

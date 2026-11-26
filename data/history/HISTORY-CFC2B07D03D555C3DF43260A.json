@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:4155B534D4BA30841F1F92F8",
+    "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "id": "CLAIM:4155B534D4BA30841F1F92F8",
+    "name": "PROTOCOL:SMTP: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:32:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:25+00:00",
+  "entity_id": "CLAIM:4155B534D4BA30841F1F92F8",
+  "id": "HISTORY:CFC2B07D03D555C3DF43260A"
+}

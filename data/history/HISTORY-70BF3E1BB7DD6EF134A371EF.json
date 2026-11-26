@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:3985BC400B044BA56BF15918",
+      "CLAIM:A5E5AA3023F7C9E11D6C5E7F",
+      "CLAIM:A71DACBD0D3B090145AF5131",
+      "CLAIM:D8AD747AB3516933AE2194ED",
+      "CLAIM:B79E887234C2F569E76E4F0D",
+      "CLAIM:93DB1CB0012A80492E50B353",
+      "CLAIM:76050868A030B337BF114903",
+      "CLAIM:E45564EB7C8BFABF912998F9"
+    ],
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "description": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_ssl_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_ssl_module",
+    "normal_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:71BAF5F02DE4748241A21610"
+    ],
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:DB10A4F2A9E2507E65E504D8",
+      "CLAIM:0B1E2E3C99417540A300AF7D",
+      "CLAIM:CECAFDC32787A856E8B9211F",
+      "CLAIM:58105F1248902BEF6846955D",
+      "CLAIM:C49EC5B2BF5E66CB92621002",
+      "CLAIM:7FE24D156AAC941338BA2444",
+      "CLAIM:C39EDF12EA97485E283A4BBB",
+      "CLAIM:FDAEF40408A61E5B3072BB29"
+    ],
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "description": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_ssl_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_ssl_module",
+    "normal_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+    ],
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+  "id": "HISTORY:70BF3E1BB7DD6EF134A371EF"
+}

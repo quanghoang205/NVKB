@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:29+00:00",
+  "content_hash": "7ee78d58bc9747f7179abfc1a90601892a939cb26842f413b77a057bb09cfe11",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/7ee78d58bc9747f7179abfc1a90601892a939cb26842f413b77a057bb09cfe11.html",
+  "retrieved_at": "2026-11-25T02:27:29+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27651"
+}

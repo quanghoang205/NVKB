@@ -1,0 +1,114 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Authorization theo object/context. Authentication thành công không cấp mọi quyền.\n2. Không. Giữ tên chuẩn [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]], giữ classification nguồn và nêu giới hạn; không biến diễn giải thành correction không chứng cứ. 0–2 điểm mỗi câu.",
+    "architecture_position": "Lớp weakness mô tả quyết định quyền trên subject/action/resource, không chỉ định module gây lỗi.",
+    "article_body": "## Thuật ngữ chuẩn\n\nTên MITRE là Incorrect Authorization. [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]] Authentication hỏi chủ thể là ai hoặc có bằng chứng identity phù hợp không; authorization hỏi chủ thể được làm hành động nào trên tài nguyên nào trong context hiện tại. Identity verification là việc kiểm chứng một khai báo danh tính theo cơ chế đã chọn. Access control là cơ chế thực thi chính sách truy cập; session management duy trì và giới hạn context qua nhiều trao đổi. Các lớp này liên quan nhưng không thể thay tên cho nhau.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-5128F1868A36791671D8B1FF|Claim theo section]].\n\n## Cơ chế quyết định quyền\n\nMô hình khái niệm: nhận subject/context → xác định resource và action → nạp policy áp dụng → kiểm tra điều kiện → cho phép hoặc từ chối. Một kiểm tra hiện diện nhưng bỏ qua một chiều cần thiết của policy có thể thuộc lớp Incorrect Authorization. Không có kiểm tra và kiểm tra sai là hai mô tả cần phân biệt; chỉ gán CWE cụ thể khi có bằng chứng thích hợp.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-003BFE984ACCCAE36D90753A|Claim theo section]].\n\n## Ranh giới và invariant\n\nDiễn giải phòng vệ: quyết định phải dựa trên context đáng tin và tài nguyên thực sự đang được truy cập. Kiểm tra vai trò không luôn giải quyết quyền giữa hai người cùng vai trò. MITRE ghi nhận giới hạn này trong phần mitigations; do đó RBAC là công cụ, không là bảo đảm mọi kiểm tra theo object đều đúng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-08CC6C5677653679D8CD9DC8|Claim theo section]].\n\n## Liên hệ case study\n\nCNA gán CWE-863 cho CVE-2025-23419 trong khi mô tả nói về yêu cầu xác thực chứng chỉ client và TLS session resumption. Hai điều này được trình bày song song: tên taxonomy chuẩn giữ nguyên, câu mô tả sản phẩm giữ provenance riêng. Không đổi CWE thành lớp authentication vì suy đoán, và không đổi tên CWE-863 thành 'Authentication policy violation'. Cần nguồn CNA khác hoặc review được ghi nhận trước khi sửa classification.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-FA30BE9D7F3893451E81F661|Claim theo section]].\n\n## Bài tập giấy, tradeoff và giới hạn\n\nXét A có chứng thư hợp lệ nhưng chưa có quyền đọc tài liệu T. Kênh TLS xác thực A không trả lời quyền đọc T. Policy tập trung giảm phân tán nhưng cần truyền context tin cậy; policy cục bộ giảm phụ thuộc nhưng dễ thiếu nhất quán. Đó là tradeoff thiết kế, không là remediation cụ thể đã được vendor công bố.\n\nKhông suy root cause cấp mã nguồn từ nhãn CWE. Câu hỏi mở của một deployment là nơi thực thi policy, sự sống của context phiên và phiên bản đang chạy; bài không xác minh các thông tin đó.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-338BC1201E71F65F7A468BDF|Claim theo section]].\n",
+    "assessment": "1. Client certificate hợp lệ nhưng tài khoản không có quyền đọc object: kiểm tra còn thiếu thuộc lớp nào?\n2. CNA nói client authentication nhưng gán CWE-863: curator có được tự đổi CWE không?",
+    "claim_refs": [
+      "CLAIM:240685A26BEC532BD8384C22",
+      "CLAIM:5128F1868A36791671D8B1FF",
+      "CLAIM:003BFE984ACCCAE36D90753A",
+      "CLAIM:08CC6C5677653679D8CD9DC8",
+      "CLAIM:FA30BE9D7F3893451E81F661",
+      "CLAIM:338BC1201E71F65F7A468BDF"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "curation_version": "1.2.0",
+    "cwe_id": "CWE-863",
+    "defensive_principles": "Tách authentication/authorization và kiểm thử chính sách ở mọi đường xử lý phiên.",
+    "definition": "CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.",
+    "description": "CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.",
+    "id": "WEAKNESS:CWE-863",
+    "learning_objectives": [
+      "Phân loại đúng bốn phát biểu về authentication, authorization, access control và session management.",
+      "Giải thích vì sao giữ CWE do CNA gán mà không đổi nghĩa thuật ngữ."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Incorrect Authorization",
+    "normal_behavior": "CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.",
+    "prerequisites": [
+      "COMPONENT:TLS-SESSION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Authentication policy violation / Incorrect Authorization",
+    "related_knowledge": [
+      "COMPONENT:TLS-SESSION-LIFECYCLE",
+      "CONTROL:LEAST-PRIVILEGE",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Kiểm tra vai trò không đủ nếu policy còn yêu cầu kiểm quyền giữa các object cùng vai trò.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Authorization dùng context identity tin cậy để thực thi đúng policy trên tài nguyên thực tế.",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F3B7A9F2EE582122C10045B",
+      "EVIDENCE:50210F852D6BA196DDD0E202",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "updated_at": "2026-11-25T04:30:42+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "answer_explanations": "1. Authorization theo object/context. Authentication thành công không cấp mọi quyền.\n2. Không. Giữ tên chuẩn [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]], giữ classification nguồn và nêu giới hạn; không biến diễn giải thành correction không chứng cứ. 0–2 điểm mỗi câu.",
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "article_body": "## Thuật ngữ chuẩn\n\nTên MITRE là Incorrect Authorization. [[CLAIM-240685A26BEC532BD8384C22|nhận định nguồn: CLAIM:240685A26BEC532BD8384C22]] Authentication hỏi chủ thể là ai hoặc có bằng chứng identity phù hợp không; authorization hỏi chủ thể được làm hành động nào trên tài nguyên nào trong context hiện tại. Identity verification là việc kiểm chứng một khai báo danh tính theo cơ chế đã chọn. Access control là cơ chế thực thi chính sách truy cập; session management duy trì và giới hạn context qua nhiều trao đổi. Các lớp này liên quan nhưng không thể thay tên cho nhau.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-5128F1868A36791671D8B1FF|Claim theo section]].\n\n## Cơ chế quyết định quyền\n\nMô hình khái niệm: nhận subject/context → xác định resource và action → nạp policy áp dụng → kiểm tra điều kiện → cho phép hoặc từ chối. Một kiểm tra hiện diện nhưng bỏ qua một chiều cần thiết của policy có thể thuộc lớp Incorrect Authorization. Không có kiểm tra và kiểm tra sai là hai mô tả cần phân biệt; chỉ gán CWE cụ thể khi có bằng chứng thích hợp.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-003BFE984ACCCAE36D90753A|Claim theo section]].\n\n## Ranh giới và invariant\n\nDiễn giải phòng vệ: quyết định phải dựa trên context đáng tin và tài nguyên thực sự đang được truy cập. Kiểm tra vai trò không luôn giải quyết quyền giữa hai người cùng vai trò. MITRE ghi nhận giới hạn này trong phần mitigations; do đó RBAC là công cụ, không là bảo đảm mọi kiểm tra theo object đều đúng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-08CC6C5677653679D8CD9DC8|Claim theo section]].\n\n## Liên hệ case study\n\nCNA gán CWE-863 cho CVE-2025-23419 trong khi mô tả nói về yêu cầu xác thực chứng chỉ client và TLS session resumption. Hai điều này được trình bày song song: tên taxonomy chuẩn giữ nguyên, câu mô tả sản phẩm giữ provenance riêng. Không đổi CWE thành lớp authentication vì suy đoán, và không đổi tên CWE-863 thành 'Authentication policy violation'. Cần nguồn CNA khác hoặc review được ghi nhận trước khi sửa classification.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-FA30BE9D7F3893451E81F661|Claim theo section]].\n\n## Bài tập giấy, tradeoff và giới hạn\n\nXét A có chứng thư hợp lệ nhưng chưa có quyền đọc tài liệu T. Kênh TLS xác thực A không trả lời quyền đọc T. Policy tập trung giảm phân tán nhưng cần truyền context tin cậy; policy cục bộ giảm phụ thuộc nhưng dễ thiếu nhất quán. Đó là tradeoff thiết kế, không là remediation cụ thể đã được vendor công bố.\n\nKhông suy root cause cấp mã nguồn từ nhãn CWE. Câu hỏi mở của một deployment là nơi thực thi policy, sự sống của context phiên và phiên bản đang chạy; bài không xác minh các thông tin đó.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-338BC1201E71F65F7A468BDF|Claim theo section]].\n",
+    "assessment": "1. Client certificate hợp lệ nhưng tài khoản không có quyền đọc object: kiểm tra còn thiếu thuộc lớp nào?\n2. CNA nói client authentication nhưng gán CWE-863: curator có được tự đổi CWE không?",
+    "claim_refs": [
+      "CLAIM:240685A26BEC532BD8384C22",
+      "CLAIM:5128F1868A36791671D8B1FF",
+      "CLAIM:003BFE984ACCCAE36D90753A",
+      "CLAIM:08CC6C5677653679D8CD9DC8",
+      "CLAIM:FA30BE9D7F3893451E81F661",
+      "CLAIM:338BC1201E71F65F7A468BDF"
+    ],
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "curation_version": "1.2.0",
+    "cwe_id": "CWE-863",
+    "defensive_principles": "Tách authentication/authorization và kiểm thử chính sách ở mọi đường xử lý phiên.",
+    "definition": "CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.",
+    "description": "CWE-863 là Incorrect Authorization: có thực hiện kiểm tra quyền nhưng kiểm tra đó không đúng.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Truy cập trái chính sách; tác động cụ thể phụ thuộc advisory.",
+    "id": "WEAKNESS:CWE-863",
+    "learning_objectives": [
+      "Phân loại đúng bốn phát biểu về authentication, authorization, access control và session management.",
+      "Giải thích vì sao giữ CWE do CNA gán mà không đổi nghĩa thuật ngữ."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Incorrect Authorization",
+    "normal_behavior": "Danh tính đã xác thực được đối chiếu chính sách của đúng server/tài nguyên trước khi cấp truy cập.",
+    "prerequisites": [
+      "COMPONENT:TLS-SESSION-LIFECYCLE"
+    ],
+    "related_failure_classes": "Authentication policy violation / Incorrect Authorization",
+    "related_knowledge": [
+      "COMPONENT:TLS-SESSION-LIFECYCLE",
+      "CONTROL:LEAST-PRIVILEGE",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Danh tính, session và policy context không bị dùng nhầm.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F3B7A9F2EE582122C10045B",
+      "EVIDENCE:50210F852D6BA196DDD0E202",
+      "EVIDENCE:BA3B0AEE884498D2B3876382",
+      "EVIDENCE:BCF67241230218EB4C26F27C"
+    ],
+    "updated_at": "2026-11-25T04:21:05+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "changed_at": "2026-11-25T04:30:42+00:00",
+  "entity_id": "WEAKNESS:CWE-863",
+  "id": "HISTORY:C04716B76DE83EAC136B0900"
+}

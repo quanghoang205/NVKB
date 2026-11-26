@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:EDC37F25E940AFC82616BDA7"
+    ],
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "cvss_score": 8.5,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:EABB9A044821029C38D8F09B",
+    "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"LOCAL\", \"baseScore\": 8.5, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"LOW\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"HIGH\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+    "name": "CVE-2026-27784 CVSS 4.0 f5",
+    "schema_version": "1.0.0",
+    "scoring_authority": "f5 via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:09931024439D883417DF7C1E"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:27:36+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:36+00:00",
+  "entity_id": "SEVERITY:EABB9A044821029C38D8F09B",
+  "id": "HISTORY:1D0C1B2783485F338CC4A748"
+}

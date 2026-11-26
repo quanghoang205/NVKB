@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C38A1433A76D377491A9DE58",
+    "claim_value": "\"Đặt giới hạn công việc, kiểm tra invariant tiến triển và xử lý trạng thái không đổi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:01+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "id": "CLAIM:C38A1433A76D377491A9DE58",
+    "name": "WEAKNESS:CWE-835: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-835",
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:01+00:00",
+  "entity_id": "CLAIM:C38A1433A76D377491A9DE58",
+  "id": "HISTORY:DC36B715C94F5C74503DEAF6"
+}

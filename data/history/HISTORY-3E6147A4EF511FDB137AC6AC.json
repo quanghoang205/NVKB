@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+    "created_at": "2026-11-25T02:28:26+00:00",
+    "description": "CVE-2026-48142: Buffer overread in the ngx_http_charset_module",
+    "document_title": "NGINX security advisories",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C0617F819EAADD029A16979F",
+    "id": "EVIDENCE:C0617F819EAADD029A16979F",
+    "local_snapshot_path": "data/raw/nginx/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+    "name": "NGINX security advisories",
+    "paraphrase": "CVE-2026-48142: Buffer overread in the ngx_http_charset_module",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "li containing CVE-2026-48142",
+    "source_refs": [],
+    "source_type": "advisory",
+    "source_url": "https://nginx.org/en/security_advisories.html",
+    "updated_at": "2026-11-25T02:28:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:26+00:00",
+  "entity_id": "EVIDENCE:C0617F819EAADD029A16979F",
+  "id": "HISTORY:3E6147A4EF511FDB137AC6AC"
+}

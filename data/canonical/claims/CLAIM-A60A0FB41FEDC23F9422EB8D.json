@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:435476516FCD8BC609087A80",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:A60A0FB41FEDC23F9422EB8D",
+  "claim_value": "\"Memory safety hoặc policy/state inconsistency tùy code path.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:48+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:D341E487F7315AF675499151: ngx_http_slice_module",
+  "evidence_refs": [
+    "EVIDENCE:D341E487F7315AF675499151"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:A60A0FB41FEDC23F9422EB8D",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SLICE-MODULE: related_failure_classes",
+  "observation_key": "OBSERVATION:B1C49338D3A4CD3B332FA85E",
+  "observed_at": "2026-11-25T02:32:48+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "MODULE:NGX-HTTP-SLICE-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:48+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:D341E487F7315AF675499151"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SLICE-MODULE",
+  "updated_at": "2026-11-25T04:12:46+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

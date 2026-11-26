@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:010B80F47389CA738D517D1B",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:1380E03E6882E1DF9F22C2B5",
+  "claim_value": "\"Start-line, header và cơ chế độ dài body xác định ranh giới message trên kết nối; parser phải xử lý dữ liệu theo từng phần.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:18+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:8F398F8452AFF9B2EB8ABBC3: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:8F398F8452AFF9B2EB8ABBC3"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:1380E03E6882E1DF9F22C2B5",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:HTTP-1.1: normal_behavior",
+  "observation_key": "OBSERVATION:3570850F6AE60B006C0DF977",
+  "observed_at": "2026-11-25T02:32:18+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "PROTOCOL:HTTP-1.1",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:17+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:8F398F8452AFF9B2EB8ABBC3"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:HTTP-1.1",
+  "updated_at": "2026-11-25T04:12:29+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

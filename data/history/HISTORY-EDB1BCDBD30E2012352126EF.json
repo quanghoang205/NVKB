@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:C00A48E5522D1E568A284C40",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:C9C09ED28AFD039CD8643784",
+    "claim_value": "\"Giá trị trung gian và chuyển đổi signed/unsigned không làm thay đổi ý nghĩa.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:FA9426B951F6B8E59FF3E9A0: Description / Potential Mitigations",
+    "evidence_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C9C09ED28AFD039CD8643784",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "WEAKNESS:CWE-190: safety_assumptions",
+    "observation_key": "OBSERVATION:49E4C4255EB46DBD7D739D8B",
+    "observed_at": "2026-11-25T02:32:37+00:00",
+    "predicate": "safety_assumptions",
+    "product_scope": "WEAKNESS:CWE-190",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:37+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T04:12:50+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C9C09ED28AFD039CD8643784",
+    "claim_value": "\"Giá trị trung gian và chuyển đổi signed/unsigned không làm thay đổi ý nghĩa.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "id": "CLAIM:C9C09ED28AFD039CD8643784",
+    "name": "WEAKNESS:CWE-190: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T02:32:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:50+00:00",
+  "entity_id": "CLAIM:C9C09ED28AFD039CD8643784",
+  "id": "HISTORY:EDB1BCDBD30E2012352126EF"
+}

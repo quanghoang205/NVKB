@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:36+00:00",
+  "content_hash": "0e2efd06d446ad31b13fbed8b46bcfc7c837f5389cff49f436a09322fd06c36e",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/0e2efd06d446ad31b13fbed8b46bcfc7c837f5389cff49f436a09322fd06c36e.html",
+  "retrieved_at": "2026-11-25T02:27:36+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27784"
+}

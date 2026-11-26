@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0A026862EC15C9285755FCCB"
+    ],
+    "created_at": "2026-11-25T02:28:03+00:00",
+    "description": "CVE:CVE-2026-42530 classified_as WEAKNESS:CWE-416",
+    "entity_type": "Relationship",
+    "id": "REL:F9683C9FF36BA7733EECFC3A",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-416",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:ED2D3F3385DEAB5550841C6D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42530",
+    "updated_at": "2026-11-25T02:28:03+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:03+00:00",
+  "entity_id": "REL:F9683C9FF36BA7733EECFC3A",
+  "id": "HISTORY:F051F3306B83562FFAD9C732"
+}

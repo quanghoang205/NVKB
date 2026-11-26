@@ -1,0 +1,321 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Stack overflow and use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B318EAFA58A18F25789C5103",
+      "RANGE:DDF8AB8005478AAE290682FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:174C488D132B37C8DF1E208A",
+      "CLAIM:21258BBC6B4F0AF3D1E63618",
+      "CLAIM:273203D34F20E97D0B0E0E1A",
+      "CLAIM:2F3462F61715CEC2CB713B74",
+      "CLAIM:30332CFFD97F8422B7232EB1",
+      "CLAIM:3F6B1A7D264198A4104D0F87",
+      "CLAIM:44BED46A552970CDBC79C90B",
+      "CLAIM:4952EAF732431E53E3BD84AD",
+      "CLAIM:537FCEC6B8ED2F4AD6EDD5A2",
+      "CLAIM:5622E167F3E54DC0F5EC8489",
+      "CLAIM:70EB586462B4AF12EC26789A",
+      "CLAIM:743E723BE060BF21B4B8B275",
+      "CLAIM:7D4986A840B8A330AAD74841",
+      "CLAIM:7DF65C8FCDB0F8FB720485A2",
+      "CLAIM:844B3C08DCE73AA30AAFA535",
+      "CLAIM:881B33FC939F7C20724AA3F7",
+      "CLAIM:A2CEA96C760E11B6E8D827F9",
+      "CLAIM:A4C86C85DC669B240F4D55D6",
+      "CLAIM:A6FCB596CD6DAF01583F17B1",
+      "CLAIM:ADF86F3A3CD033D95FD6D382",
+      "CLAIM:B926F840EBA8990742271818",
+      "CLAIM:B951285F44C4C9C48496E1F0",
+      "CLAIM:C5716C83CB85D1B09B74E16F",
+      "CLAIM:D0626581FCFA8CECE91BE1C0",
+      "CLAIM:D2A1D3DC06AC65AC2A587DCC",
+      "CLAIM:DA9645F7B76C3A66A7607A86",
+      "CLAIM:DABBE0312E570B773E74B13F",
+      "CLAIM:EF0D562A59F60FA12140E39E"
+    ],
+    "condition_refs": [
+      "CONDITION:F6F93544F7DC84AC8A52182C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "cve_id": "CVE-2024-31079",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "distribution_backports": [
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "distribution_status": [
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.\n\nThông báo upstream bổ sung:\nHello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-31079 ghi nhận: Stack overflow and use-after-free in HTTP/3. Phạm vi upstream: 1.25.0-1.25.5, 1.26.0. Bản sửa được công bố: 1.27.0+, 1.26.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-31079",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-02-13T17:47:50.656000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-31079",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-05-29T16:02:04.620000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:F683F61E851C02AD2F881707"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-121"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Stack overflow and use-after-free in HTTP/3.\n\nCWE-121 — Stack-based Buffer Overflow: Ghi vượt dung lượng buffer đặt trên stack.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Dung lượng biến cục bộ và chiều dài dữ liệu phải được kiểm tra trước thao tác ghi.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:502F9AB82894D46F1196D9FA",
+      "SEVERITY:54A4FF0AD7D6477C56E3983C",
+      "SEVERITY:62BC19537827D5C3FF60BC57"
+    ],
+    "source_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "title": "Stack overflow and use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:08+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+      "Hello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov"
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Stack overflow and use-after-free in HTTP/3",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B318EAFA58A18F25789C5103",
+      "RANGE:DDF8AB8005478AAE290682FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:174C488D132B37C8DF1E208A",
+      "CLAIM:21258BBC6B4F0AF3D1E63618",
+      "CLAIM:273203D34F20E97D0B0E0E1A",
+      "CLAIM:2F3462F61715CEC2CB713B74",
+      "CLAIM:30332CFFD97F8422B7232EB1",
+      "CLAIM:3F6B1A7D264198A4104D0F87",
+      "CLAIM:4952EAF732431E53E3BD84AD",
+      "CLAIM:537FCEC6B8ED2F4AD6EDD5A2",
+      "CLAIM:5622E167F3E54DC0F5EC8489",
+      "CLAIM:70EB586462B4AF12EC26789A",
+      "CLAIM:743E723BE060BF21B4B8B275",
+      "CLAIM:7D4986A840B8A330AAD74841",
+      "CLAIM:881B33FC939F7C20724AA3F7",
+      "CLAIM:A2CEA96C760E11B6E8D827F9",
+      "CLAIM:A4C86C85DC669B240F4D55D6",
+      "CLAIM:A6FCB596CD6DAF01583F17B1",
+      "CLAIM:ADF86F3A3CD033D95FD6D382",
+      "CLAIM:B926F840EBA8990742271818",
+      "CLAIM:B951285F44C4C9C48496E1F0",
+      "CLAIM:C5716C83CB85D1B09B74E16F",
+      "CLAIM:D0626581FCFA8CECE91BE1C0",
+      "CLAIM:D2A1D3DC06AC65AC2A587DCC",
+      "CLAIM:DA9645F7B76C3A66A7607A86",
+      "CLAIM:DABBE0312E570B773E74B13F",
+      "CLAIM:EF0D562A59F60FA12140E39E"
+    ],
+    "condition_refs": [
+      "CONDITION:F6F93544F7DC84AC8A52182C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "cve_id": "CVE-2024-31079",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "direct_impact": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+    "distribution_backports": [
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "distribution_status": [
+      "PACKAGE:359F7633D23E75DAE040AF8A",
+      "PACKAGE:5DF98E687CBD9950679F038E",
+      "PACKAGE:1851429F46BCB09D64A09D70",
+      "PACKAGE:FD3E9DC1C6FE11C86EC90FDD"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.\n\nThông báo upstream bổ sung:\nHello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2024-31079 ghi nhận: Stack overflow and use-after-free in HTTP/3. Phạm vi upstream: 1.25.0-1.25.5, 1.26.0. Bản sửa được công bố: 1.27.0+, 1.26.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.1",
+      "VERSION:NGINX-1.27.0"
+    ],
+    "id": "CVE:CVE-2024-31079",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2025-02-13T17:47:50.656000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2024-31079",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2024-05-29T16:02:04.620000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:75ADEF763762E522E90F684B",
+      "REFERENCE:5E5F1BA6028217ACC624645B",
+      "REFERENCE:8A75F469DF02712C2434C625",
+      "REFERENCE:FAD4824679E0DD3600363FE1",
+      "REFERENCE:F683F61E851C02AD2F881707"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3",
+      "PROTOCOL:QUIC"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-121"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Stack overflow and use-after-free in HTTP/3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:502F9AB82894D46F1196D9FA",
+      "SEVERITY:54A4FF0AD7D6477C56E3983C",
+      "SEVERITY:62BC19537827D5C3FF60BC57"
+    ],
+    "source_refs": [
+      "EVIDENCE:4B3FF00AD62E27AE79FF8311",
+      "EVIDENCE:794F9317F5F0B67AF541B6D4",
+      "EVIDENCE:88FD4BD53DD070C91FA2F618",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B4D32A47B3A297FDD04BD433",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4",
+      "EVIDENCE:E28D8CD66261432B86752BDA",
+      "EVIDENCE:EB0E96F78DD1953C76E01A4A",
+      "EVIDENCE:F0A6006AC984A73AFF370C66"
+    ],
+    "title": "Stack overflow and use-after-free in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:53+00:00",
+    "upstream_affected_expression": "1.25.0-1.25.5, 1.26.0",
+    "upstream_unaffected_expression": "1.27.0+, 1.26.1+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over.",
+      "Hello!\n\nFour security issues were identified in nginx HTTP/3 implementation, which\nmight allow an attacker that uses a specially crafted QUIC session to cause\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\nworker process memory disclosure on systems with MTU larger than 4096\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\nCVE-2024-32760).\n\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\n(not compiled by default) if the \"quic\" option of the \"listen\" directive\nis used in a configuration file.\n\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\nThe issues are fixed in nginx 1.27.0, 1.26.1.\n\nThanks to Nils Bars of CISPA.\n\n\n-- \nSergey Kandaurov"
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:08+00:00",
+  "entity_id": "CVE:CVE-2024-31079",
+  "id": "HISTORY:0F2781F72BB2C67897CCC8E6"
+}

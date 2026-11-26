@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:26F478BFC9E21C155CA8EA98",
+    "claim_value": "\"WEAKNESS:CWE-349\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:390C6877B8808296F820D86C"
+    ],
+    "id": "CLAIM:26F478BFC9E21C155CA8EA98",
+    "name": "CVE:CVE-2026-1642: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:390C6877B8808296F820D86C"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:25+00:00",
+  "entity_id": "CLAIM:26F478BFC9E21C155CA8EA98",
+  "id": "HISTORY:0D7CAE9A23185A26E39E1863"
+}

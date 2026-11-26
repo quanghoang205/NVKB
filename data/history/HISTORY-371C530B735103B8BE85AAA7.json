@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:E9637CB09D202A1EAC6F74E1",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:34+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AD97F945283CADAECB352952"
+    ],
+    "id": "CLAIM:E9637CB09D202A1EAC6F74E1",
+    "name": "CONCEPT:CVSS: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AD97F945283CADAECB352952"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CLAIM:E9637CB09D202A1EAC6F74E1",
+  "id": "HISTORY:371C530B735103B8BE85AAA7"
+}

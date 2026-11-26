@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:30FCA932EDA1BA7F5B7DEA67",
+    "claim_value": "\"Request đi qua các phase như rewrite/access/content; output filter xử lý header/body trước khi gửi. Finalization điều phối tài nguyên và subrequest.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:825B88FA70EA2766B62C5351"
+    ],
+    "id": "CLAIM:30FCA932EDA1BA7F5B7DEA67",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:825B88FA70EA2766B62C5351"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:06+00:00",
+  "entity_id": "CLAIM:30FCA932EDA1BA7F5B7DEA67",
+  "id": "HISTORY:058030E79C9ABA7C014742F2"
+}

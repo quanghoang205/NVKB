@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:55AC3AE44EAEE714251323CA",
+    "claim_value": "\"Giải phóng cùng tài nguyên bộ nhớ nhiều lần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:27+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C2CD8A5F4F470AAECCF5C8F6"
+    ],
+    "id": "CLAIM:55AC3AE44EAEE714251323CA",
+    "name": "WEAKNESS:CWE-415: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C2CD8A5F4F470AAECCF5C8F6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-415",
+    "updated_at": "2026-11-25T02:44:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:27+00:00",
+  "entity_id": "CLAIM:55AC3AE44EAEE714251323CA",
+  "id": "HISTORY:AAA3084841E7BBEC61F02BB0"
+}

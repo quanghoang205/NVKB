@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:40+00:00",
+  "content_hash": "4d8da7db0274fbc834caed206133b0eafc4c4c1dfe692c1a86a6d3f401e67a2a",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/4d8da7db0274fbc834caed206133b0eafc4c4c1dfe692c1a86a6d3f401e67a2a.html",
+  "retrieved_at": "2026-11-25T02:27:40+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-28753"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:A2D8D58B3EE3C5C71D4B5E95",
+    "claim_value": "\"Out-of-range Pointer Offset\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:00+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "id": "CLAIM:A2D8D58B3EE3C5C71D4B5E95",
+    "name": "WEAKNESS:CWE-823: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-823",
+    "updated_at": "2026-11-25T02:49:00+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:00+00:00",
+  "entity_id": "CLAIM:A2D8D58B3EE3C5C71D4B5E95",
+  "id": "HISTORY:B0B14307241DF9651F33CC6A"
+}

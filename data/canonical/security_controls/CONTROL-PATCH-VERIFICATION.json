@@ -1,0 +1,50 @@
+{
+  "answer_explanations": "1. Ghi kết quả advisory/package có phạm vi, runtime UNKNOWN và required manual review. [[CLAIM-EF7992CF2DC6A2CF77E3D846|nhận định nguồn: CLAIM:EF7992CF2DC6A2CF77E3D846]] là evidence fix, không evidence process.\n2. Không; catalogue membership chỉ là membership tại snapshot, không phủ định exploitation.\n3. Một release có thể đã sửa CVE này nhưng hết hỗ trợ; cần evidence lifecycle độc lập. 0–2 điểm mỗi câu.",
+  "architecture_position": "Bước đối chiếu giữa inventory quản trị viên cung cấp với advisory, distribution và nguồn lifecycle/catalogue.",
+  "article_body": "## Năm câu hỏi khác nhau\n\nAdvisory patch status trả lời version được nguồn nêu đã sửa chưa. Distribution package status trả lời row release/package nói gì. Product support lifecycle trả lời dòng sản phẩm còn hỗ trợ theo nguồn phù hợp không. KEV membership trả lời CVE có trong snapshot catalogue CISA tại thời điểm nào. Runtime verification trả lời bằng chứng quản trị cung cấp có xác nhận binary/process hiện hành không. [[CLAIM-EF7992CF2DC6A2CF77E3D846|nhận định nguồn: CLAIM:EF7992CF2DC6A2CF77E3D846]] chỉ hỗ trợ câu hỏi upstream fix, không giải quyết cả năm.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-D678876C5E369AA9B1E52987|Claim theo section]].\n\n## Luồng quyết định phòng vệ\n\nBắt đầu từ inventory do quản trị viên cung cấp: product chính xác, version, distribution/release/package nếu có, origin và thời điểm quan sát. Thiếu product hoặc dữ liệu release phù hợp thì NEEDS_REVIEW. Chọn source đúng scope; so sánh version đúng ecosystem; ghi kết quả so sánh cùng locator. Sau đó tách kết luận runtime khỏi kết quả số học.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-72A1AAFA8CAA2289360AB838|Claim theo section]].\n\n## Lifecycle và responsibility\n\nPackage trên đĩa, executable của process và worker generation có thể khác nhau trong một lần cập nhật. Quản trị viên cung cấp bằng chứng restart/rollover và build provenance; thư viện chỉ ghi nhận và đối chiếu. Không quét từ xa hoặc gọi endpoint hệ thống để tự thu inventory. Bằng chứng do quản trị viên khai báo vẫn không là attestation độc lập.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-CEDE3662DBF3C3EA321DA16E|Claim theo section]].\n\n## Invariants và tradeoff\n\nKhông suy 'đã vá một CVE' thành 'được hỗ trợ' hoặc 'an toàn với mọi CVE'. Không suy 'vắng trong KEV' thành 'chưa bị khai thác'. Không suy 'version lớn hơn' thành 'custom binary chứa đúng patch'. Snapshot cũ hoặc refresh lỗi phải hiển thị freshness và UNKNOWN khi không đủ nguồn hiện hành. Chính sách bảo thủ có thể tăng lượng review, đổi lại giảm kết luận chắc chắn sai khi input thiếu.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-7C34911C12A28ED40FD42790|Claim theo section]].\n\n## Ví dụ kiểm tra trên giấy\n\nAsset A khai báo nginx Debian bookworm đạt ngưỡng tracker nhưng thiếu repository và runtime evidence. Ghi package comparison đạt theo inventory; runtime UNKNOWN; manual review còn cần. Asset B có version upstream không tồn tại trong release catalogue hiện có: NEEDS_REVIEW, không tự nhận patched. Đây là workflow dựa trên dữ liệu được cung cấp, không là hướng dẫn kiểm thử khai thác.\n\nCâu hỏi mở: package có từ repository dự kiến không, lần quan sát inventory khi nào, worker cũ đã hết chưa và product có nguồn EOL tương ứng không? Chữ ký patch, source-code fix review và runtime attestation chưa được thực hiện trong pilot.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-AAE7833E7432FF4F952DC0F4|Claim theo section]].\n",
+  "assessment": "1. Package comparison đạt nhưng không có runtime evidence: ghi kết luận thế nào?\n2. KEV không có CVE trong snapshot có chứng minh không cần vá không?\n3. Vì sao lifecycle EOL phải là cột riêng?",
+  "claim_refs": [
+    "CLAIM:EF7992CF2DC6A2CF77E3D846",
+    "CLAIM:D678876C5E369AA9B1E52987",
+    "CLAIM:72A1AAFA8CAA2289360AB838",
+    "CLAIM:CEDE3662DBF3C3EA321DA16E",
+    "CLAIM:7C34911C12A28ED40FD42790",
+    "CLAIM:AAE7833E7432FF4F952DC0F4"
+  ],
+  "created_at": "2026-11-25T02:49:06+00:00",
+  "curation_version": "1.2.0",
+  "defensive_principles": "Lưu inventory/package evidence và kiểm tra lại sau cập nhật.",
+  "definition": "Bản sửa upstream do NGINX công bố cho CVE-2025-23419 là 1.26.3 và 1.27.4 theo nhánh.",
+  "description": "Bản sửa upstream do NGINX công bố cho CVE-2025-23419 là 1.26.3 và 1.27.4 theo nhánh.",
+  "diagram": "",
+  "entity_type": "SecurityControl",
+  "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+  "id": "CONTROL:PATCH-VERIFICATION",
+  "learning_objectives": [
+    "Phân tách năm trạng thái patch, package, support lifecycle, KEV và runtime.",
+    "Lập kết luận giới hạn từ inventory thiếu provenance mà không phỏng đoán."
+  ],
+  "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+  "name": "Xác minh bản vá từ inventory và bằng chứng triển khai",
+  "normal_behavior": "Bản sửa upstream do NGINX công bố cho CVE-2025-23419 là 1.26.3 và 1.27.4 theo nhánh.",
+  "prerequisites": [
+    "CONCEPT:BACKPORT",
+    "COMPONENT:MASTER-PROCESS"
+  ],
+  "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+  "related_knowledge": [
+    "CONCEPT:BACKPORT",
+    "COMPONENT:MASTER-PROCESS",
+    "LEARNING:PATH-01"
+  ],
+  "safety_assumptions": "Patch, package, lifecycle, KEV và runtime phải được quyết định riêng với freshness và scope rõ.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Version comparison là suy luận từ dữ liệu khai báo, không là xác minh binary đang chạy.",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "updated_at": "2026-11-25T04:30:42+00:00",
+  "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+  "verification_status": "INFERRED",
+  "version_scope": "See per-claim source snapshot/version scope"
+}

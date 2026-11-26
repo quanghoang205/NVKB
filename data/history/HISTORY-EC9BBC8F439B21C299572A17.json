@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:663DAA73603376BD97D73F44",
+    "claim_value": "\"Use-after-free; state-machine inconsistency.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "id": "CLAIM:663DAA73603376BD97D73F44",
+    "name": "COMPONENT:EVENT-DRIVEN: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:663DAA73603376BD97D73F44",
+  "id": "HISTORY:EC9BBC8F439B21C299572A17"
+}

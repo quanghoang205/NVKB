@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [nginx-announce] nginx security advisory (CVE-2024-31079, CVE-2024-32760, CVE-2024-34161, CVE-2024-35200)
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2024-31079%2C%0A%20CVE-2024-32760%2C%20CVE-2024-34161%2C%20CVE-2024-35200%29&In-Reply-To=%3C70B982A6-40C4-419B-8988-8702EA3407CE%40nginx.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <LINK REL="Previous"  HREF="WDB34G6L3UUHNNMW3Q5MGQVNMXA6T3WL.html">
+   <LINK REL="Next"  HREF="WSDMBJOIAISFC4KXX44V2VAXI6RKM7CX.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[nginx-announce] nginx security advisory (CVE-2024-31079, CVE-2024-32760, CVE-2024-34161, CVE-2024-35200)</H1>
+    <B>Sergey Kandaurov</B> 
+    <A HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2024-31079%2C%0A%20CVE-2024-32760%2C%20CVE-2024-34161%2C%20CVE-2024-35200%29&In-Reply-To=%3C70B982A6-40C4-419B-8988-8702EA3407CE%40nginx.com%3E"
+       TITLE="[nginx-announce] nginx security advisory (CVE-2024-31079, CVE-2024-32760, CVE-2024-34161, CVE-2024-35200)">pluknet at nginx.com
+       </A><BR>
+    <I>Wed May 29 15:12:07 UTC 2024</I>
+    <P><UL>
+        <LI>Previous message (by thread): <A HREF="WDB34G6L3UUHNNMW3Q5MGQVNMXA6T3WL.html">[nginx-announce] nginx-1.26.1
+</A></li>
+        <LI>Next message (by thread): <A HREF="WSDMBJOIAISFC4KXX44V2VAXI6RKM7CX.html">[nginx-announce] njs-0.8.5
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#352">[ date ]</a>
+              <a href="thread.html#352">[ thread ]</a>
+              <a href="subject.html#352">[ subject ]</a>
+              <a href="author.html#352">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello!
+
+Four security issues were identified in nginx HTTP/3 implementation, which
+might allow an attacker that uses a specially crafted QUIC session to cause
+a worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),
+worker process memory disclosure on systems with MTU larger than 4096
+bytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,
+CVE-2024-32760).
+
+The issues affect nginx compiled with the experimental ngx_http_v3_module
+(not compiled by default) if the &quot;quic&quot; option of the &quot;listen&quot; directive
+is used in a configuration file.
+
+The issues affect nginx 1.25.0-1.25.5, 1.26.0.
+The issues are fixed in nginx 1.27.0, 1.26.1.
+
+Thanks to Nils Bars of CISPA.
+
+
+-- 
+Sergey Kandaurov
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message (by thread): <A HREF="WDB34G6L3UUHNNMW3Q5MGQVNMXA6T3WL.html">[nginx-announce] nginx-1.26.1
+</A></li>
+	<LI>Next message (by thread): <A HREF="WSDMBJOIAISFC4KXX44V2VAXI6RKM7CX.html">[nginx-announce] njs-0.8.5
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#352">[ date ]</a>
+              <a href="thread.html#352">[ thread ]</a>
+              <a href="subject.html#352">[ subject ]</a>
+              <a href="author.html#352">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://mailman.nginx.org/mailman/listinfo/nginx-announce">More information about the nginx-announce
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:49+00:00",
+  "content_hash": "be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac72-f64\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:38 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/be6108daef7248c7b4d7c793afe78108a9243ae6e7f418557b22e060780924bb.html",
+  "retrieved_at": "2026-11-25T02:32:49+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_ssi_module.html"
+}

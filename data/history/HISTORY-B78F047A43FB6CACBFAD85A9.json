@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:263F80549296B1A4A3445D40",
+      "CLAIM:0DAC7151A4787F94F2B9736F",
+      "CLAIM:E348B3718AAF926B22C1F944",
+      "CLAIM:6007A2A86C86D3E815121446",
+      "CLAIM:0807876F1CCDD1A7EA061892",
+      "CLAIM:8CA12F8D3896EEC04FC0552C",
+      "CLAIM:89B75561601040C32F6F2FE5",
+      "CLAIM:2AB613B3EA6F7B6EA2EFDB67"
+    ],
+    "created_at": "2026-11-25T02:32:46+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển đổi charset cho response theo cấu hình.",
+    "description": "Chuyển đổi charset cho response theo cấu hình.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_charset_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_charset_module",
+    "normal_behavior": "Chuyển đổi charset cho response theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:E497B3129F2B3BD48F9D28B0"
+    ],
+    "updated_at": "2026-11-25T02:32:46+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:46+00:00",
+  "entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+  "id": "HISTORY:B78F047A43FB6CACBFAD85A9"
+}

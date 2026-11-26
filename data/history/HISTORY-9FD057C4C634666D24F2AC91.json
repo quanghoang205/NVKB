@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:63ED6B513E490C7BC19E6107",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:595ADEFD0C66B2604C106186",
+    "claim_value": "\"Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:64D90A0163303F39A538DD0C: Educational synthesis from linked knowledge notes; topic=LEARNING:PATH-03",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:595ADEFD0C66B2604C106186",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "LEARNING:PATH-03: defensive_principles",
+    "observation_key": "OBSERVATION:E1B2FE7D32E6C149AFC11D55",
+    "observed_at": "2026-11-25T02:44:35+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "LEARNING:PATH-03",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T04:12:37+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:595ADEFD0C66B2604C106186",
+    "claim_value": "\"Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "id": "CLAIM:595ADEFD0C66B2604C106186",
+    "name": "LEARNING:PATH-03: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:64D90A0163303F39A538DD0C"
+    ],
+    "subject_entity_id": "LEARNING:PATH-03",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:37+00:00",
+  "entity_id": "CLAIM:595ADEFD0C66B2604C106186",
+  "id": "HISTORY:9FD057C4C634666D24F2AC91"
+}

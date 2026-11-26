@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "claim_refs": [
+      "CLAIM:DFD58B8038310F051ECE059B",
+      "CLAIM:83857B7AB3A73EADC25FCFD8",
+      "CLAIM:20C323FBEC263DD61DB82D55",
+      "CLAIM:6C28C0030AE0C61184037A87",
+      "CLAIM:D8A9D49DB7D611D85D2FA3BF",
+      "CLAIM:9E99B08328928C023AC78C10",
+      "CLAIM:8E44024DB9C0D967E53DEEFD",
+      "CLAIM:05545CA3EAE6D2CE5966D7FE"
+    ],
+    "created_at": "2026-11-25T02:33:09+00:00",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-05",
+    "learning_objectives": [
+      "Giải thích Learning Path 05 — Vulnerability Management bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Learning Path 05 — Vulnerability Management",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "CONCEPT:BACKPORT",
+      "CONCEPT:ADVISORY",
+      "CONCEPT:CVSS",
+      "COMPONENT:PROCESS-PRIVILEGES"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "updated_at": "2026-11-25T02:33:09+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:09+00:00",
+  "entity_id": "LEARNING:PATH-05",
+  "id": "HISTORY:23956CD65EBD0688CCDC9C6A"
+}

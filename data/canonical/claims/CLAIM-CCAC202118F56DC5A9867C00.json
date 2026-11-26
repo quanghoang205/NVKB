@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:94F551E8D648D00EED2B931E",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:CCAC202118F56DC5A9867C00",
+  "claim_value": "\"Framing, authentication và thông tin chuyển tiếp phải nhất quán.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:25+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:50A866E441A4800F7F11E38E: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:50A866E441A4800F7F11E38E"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:CCAC202118F56DC5A9867C00",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:SMTP: safety_assumptions",
+  "observation_key": "OBSERVATION:F5CE12084854885D4DDE7993",
+  "observed_at": "2026-11-25T02:32:25+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "PROTOCOL:SMTP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:25+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:50A866E441A4800F7F11E38E"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:SMTP",
+  "updated_at": "2026-11-25T04:12:50+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

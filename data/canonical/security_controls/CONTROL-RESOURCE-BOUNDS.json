@@ -1,0 +1,72 @@
+{
+  "answer_explanations": "Không; nó có thể thay thời điểm gặp nhánh lỗi nhưng không sửa contract lifetime của implementation.",
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "article_body": "Nguồn xác nhận: [[CLAIM-04713563C5E55DDA4423EBD3|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nWorker quản lý nhiều connection trong event loop. Một request proxy có thể cần tài nguyên phía client lẫn upstream, cùng buffer, timer và file. Giới hạn connection không phải số request tối đa vì keepalive và multiplexing thay đổi ánh xạ. Giới hạn file descriptor của tiến trình/hệ điều hành có thể khiến capacity thực tế thấp hơn cấu hình dự định.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-E94BEFD17EF78FE8CD62A9DA|Claim của section]].\n\n## Ownership và liveness\n\nKhi cạn tài nguyên, đường cấp phát thất bại vẫn phải giữ state nhất quán và trả quyền điều khiển. Một vòng lặp liên tục retry mà không tạo tiến độ có thể tiêu thụ CPU dù memory còn đủ. Timer không bảo đảm hiệu lực nếu event loop không được chạy timer callback. Liveness vì vậy bao gồm tiến độ công việc, không chỉ process còn tồn tại.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-400BD665D0DD9B68887CD6D5|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nTăng giới hạn giúp throughput trong một số workload nhưng giữ nhiều state và làm tăng ngân sách memory/file. Giới hạn quá thấp có thể gây từ chối công việc hợp lệ. Cần capacity model theo workload và metric quản trị; đây không là công cụ dò hệ thống bên ngoài. Kiểm đường resource exhaustion, timeout và cancellation ở code review, rồi dùng evidence deployment để kiểm bản sửa đang chạy. Điều chỉnh một knob không thay remediation lỗi UAF hoặc arithmetic.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-2E1993A8EBD3EF9A53757421|Claim của section]].",
+  "assessment": "Tăng worker_connections có sửa được UAF trên nhánh cấp connection thất bại không?",
+  "claim_refs": [
+    "CLAIM:04713563C5E55DDA4423EBD3",
+    "CLAIM:E94BEFD17EF78FE8CD62A9DA",
+    "CLAIM:400BD665D0DD9B68887CD6D5",
+    "CLAIM:2E1993A8EBD3EF9A53757421"
+  ],
+  "created_at": "2026-11-25T02:49:05+00:00",
+  "curated_fields": [
+    "answer_explanations",
+    "article_body",
+    "assessment",
+    "claim_refs",
+    "curation_version",
+    "definition",
+    "description",
+    "diagram",
+    "editorial_maturity",
+    "editorial_review_note",
+    "learning_objectives",
+    "name",
+    "prerequisites",
+    "related_knowledge",
+    "research_claim_refs",
+    "source_refs",
+    "verification_limitations"
+  ],
+  "curation_version": "1.3.0",
+  "defensive_principles": "Theo dõi tài nguyên và đặt timeout/limit dựa trên workload.",
+  "definition": "worker_connections giới hạn số connection của một worker, bao gồm kết nối tới upstream; khả năng mở file descriptor và giới hạn hệ điều hành còn ràng buộc capacity thực tế.",
+  "description": "worker_connections giới hạn số connection của một worker, bao gồm kết nối tới upstream; khả năng mở file descriptor và giới hạn hệ điều hành còn ràng buộc capacity thực tế.",
+  "diagram": "",
+  "editorial_maturity": "AI_REVIEWED",
+  "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+  "entity_type": "SecurityControl",
+  "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+  "id": "CONTROL:RESOURCE-BOUNDS",
+  "learning_objectives": [
+    "Tính ngân sách connection theo cả client và upstream.",
+    "Phân biệt giới hạn tài nguyên với tính đúng của đường xử lý lỗi."
+  ],
+  "name": "Giới hạn tài nguyên và tiến độ event loop",
+  "normal_behavior": "Các connection, request và buffer vận hành trong giới hạn cấu hình.",
+  "prerequisites": [
+    "COMPONENT:EVENT-DRIVEN",
+    "COMPONENT:CONNECTION-LIFECYCLE"
+  ],
+  "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+  "related_knowledge": [
+    "COMPONENT:EVENT-DRIVEN",
+    "COMPONENT:CONNECTION-LIFECYCLE"
+  ],
+  "research_claim_refs": [
+    "CLAIM:04713563C5E55DDA4423EBD3",
+    "CLAIM:E94BEFD17EF78FE8CD62A9DA",
+    "CLAIM:400BD665D0DD9B68887CD6D5",
+    "CLAIM:2E1993A8EBD3EF9A53757421"
+  ],
+  "safety_assumptions": "Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+  ],
+  "updated_at": "2026-11-25T05:29:02+00:00",
+  "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+  "verification_status": "INFERRED"
+}

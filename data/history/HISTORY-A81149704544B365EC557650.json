@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:0E37E1FF01B63514620124FA",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "claim_value": "\"Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:155F8E324B04AAB40EA5EF69: Educational synthesis from linked knowledge notes; topic=LEARNING:PATH-04",
+    "evidence_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "LEARNING:PATH-04: security_boundary",
+    "observation_key": "OBSERVATION:4F34592A4B8397F92A75FE15",
+    "observed_at": "2026-11-25T02:44:35+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "LEARNING:PATH-04",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T04:12:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "claim_value": "\"Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "name": "LEARNING:PATH-04: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:32+00:00",
+  "entity_id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+  "id": "HISTORY:A81149704544B365EC557650"
+}

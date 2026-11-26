@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "claim_refs": [
+      "CLAIM:00B24BDCD0AB2937B66C8AB6",
+      "CLAIM:453CA02184B1AD656EF6FE8C",
+      "CLAIM:C0C818EE2AC8FFBE04DAC301",
+      "CLAIM:342CACDD4D63564B33E4517E",
+      "CLAIM:B5F933671F18C42102F1919E",
+      "CLAIM:A152B798FA76AE43F5CDB0E0",
+      "CLAIM:538ABCC99CAA91C438BD9541",
+      "CLAIM:1817A9CF43E4288AF4B430A5"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "defensive_principles": "Ghi rõ ownership, kiểm tra callback trễ và dùng công cụ phát hiện lỗi bộ nhớ trong kiểm thử phát triển.",
+    "definition": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "description": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Worker crash hoặc hỏng bộ nhớ tùy lỗi cụ thể.",
+    "id": "COMPONENT:MEMORY-POOL",
+    "learning_objectives": [
+      "Giải thích Memory pool bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Memory pool",
+    "normal_behavior": "NGINX sử dụng pool để cấp phát nhiều đối tượng nhỏ và giải phóng theo vòng đời pool; cleanup handler xử lý tài nguyên liên quan.",
+    "related_failure_classes": "Use-after-free; double free; memory leak.",
+    "related_knowledge": [],
+    "safety_assumptions": "Vòng đời request, connection và callback phải tương thích với vòng đời pool.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:05+00:00",
+  "entity_id": "COMPONENT:MEMORY-POOL",
+  "id": "HISTORY:E120A939D2CBDF0E5ACC3D99"
+}

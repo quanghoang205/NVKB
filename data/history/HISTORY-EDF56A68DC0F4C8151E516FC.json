@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "b8cea2b143911bcc4b1b0e7789216b9cd3180c1eacd68ad4c9db7323e6ce7440",
+    "created_at": "2026-11-25T02:28:22+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-42946",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2532452C6D671C3F54F43C7D",
+    "id": "EVIDENCE:2532452C6D671C3F54F43C7D",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/b8cea2b143911bcc4b1b0e7789216b9cd3180c1eacd68ad4c9db7323e6ce7440.json",
+    "name": "CVE-2026-42946",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:22+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-42946",
+    "updated_at": "2026-11-25T02:28:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:22+00:00",
+  "entity_id": "EVIDENCE:2532452C6D671C3F54F43C7D",
+  "id": "HISTORY:EDF56A68DC0F4C8151E516FC"
+}

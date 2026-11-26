@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:9ABEAC3BF6085CFE6F4A7383",
+    "claim_value": "\"Infinite loop; excessive CPU usage.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "id": "CLAIM:9ABEAC3BF6085CFE6F4A7383",
+    "name": "COMPONENT:EVENT-LOOP: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:9ABEAC3BF6085CFE6F4A7383",
+  "id": "HISTORY:81AA94FA77F91DD3AF2952BB"
+}

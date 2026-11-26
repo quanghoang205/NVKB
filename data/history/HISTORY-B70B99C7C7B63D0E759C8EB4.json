@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:629632A4FE6147B3051EFF9E",
+    "claim_value": "\"Cấp phát thiếu, truy cập ngoài biên hoặc quyết định kiểm tra sai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "id": "CLAIM:629632A4FE6147B3051EFF9E",
+    "name": "WEAKNESS:CWE-190: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FA9426B951F6B8E59FF3E9A0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-190",
+    "updated_at": "2026-11-25T02:32:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:37+00:00",
+  "entity_id": "CLAIM:629632A4FE6147B3051EFF9E",
+  "id": "HISTORY:B70B99C7C7B63D0E759C8EB4"
+}

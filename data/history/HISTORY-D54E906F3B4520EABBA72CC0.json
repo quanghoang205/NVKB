@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4D57738FDF9B3D396FF37C24",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:664F97879595648BF4C80AC6",
+    "claim_value": "\"Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:59CE30AA3E107BC7084952CD: Processes",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:664F97879595648BF4C80AC6",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:WORKER-PROCESS: security_boundary",
+    "observation_key": "OBSERVATION:ABD0B5720B219510D60164C9",
+    "observed_at": "2026-11-25T02:32:03+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "COMPONENT:WORKER-PROCESS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T04:12:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:664F97879595648BF4C80AC6",
+    "claim_value": "\"Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "id": "CLAIM:664F97879595648BF4C80AC6",
+    "name": "COMPONENT:WORKER-PROCESS: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:32:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:39+00:00",
+  "entity_id": "CLAIM:664F97879595648BF4C80AC6",
+  "id": "HISTORY:D54E906F3B4520EABBA72CC0"
+}

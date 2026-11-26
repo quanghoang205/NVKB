@@ -1,0 +1,33 @@
+{
+  "claim_refs": [
+    "CLAIM:80A832C1B423F1432C03012A"
+  ],
+  "created_at": "2026-11-25T02:21:55+00:00",
+  "description": "CVE:CVE-2025-23419 fixed_in VERSION:NGINX-1.27.4",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:B08EE0EE9DC3F489213425E6",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "fixed_in",
+  "object_entity_id": "VERSION:NGINX-1.27.4",
+  "predicate": "fixed_in",
+  "rationale": "Legacy association: Documented fixed upstream release. Source references alone do not establish causation.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Documented fixed upstream release",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2025-23419",
+  "updated_at": "2026-11-25T04:13:08+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy evidence scope; no all-version generalization"
+}

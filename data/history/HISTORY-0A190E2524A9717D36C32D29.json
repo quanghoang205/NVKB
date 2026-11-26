@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:EBF2CA88F56C11B88E60181F",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+    "claim_value": "\"Tên dịch vụ ↔ địa chỉ kết nối.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99: Protocol overview and state machine; topic=PROTOCOL:DNS",
+    "evidence_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:DNS: architecture_position",
+    "observation_key": "OBSERVATION:91ACCC265D4ABC8D3940B638",
+    "observed_at": "2026-11-25T02:44:23+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "PROTOCOL:DNS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:23+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T04:12:52+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+    "claim_value": "\"Tên dịch vụ ↔ địa chỉ kết nối.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "id": "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+    "name": "PROTOCOL:DNS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:52+00:00",
+  "entity_id": "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+  "id": "HISTORY:0A190E2524A9717D36C32D29"
+}

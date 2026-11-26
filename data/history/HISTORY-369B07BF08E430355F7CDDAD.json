@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:B516DBA10A631B3948CC23B2",
+    "claim_value": "\"Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:47+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+    ],
+    "id": "CLAIM:B516DBA10A631B3948CC23B2",
+    "name": "MODULE:NGX-HTTP-SCGI-MODULE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-SCGI-MODULE",
+    "updated_at": "2026-11-25T02:32:47+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:47+00:00",
+  "entity_id": "CLAIM:B516DBA10A631B3948CC23B2",
+  "id": "HISTORY:369B07BF08E430355F7CDDAD"
+}

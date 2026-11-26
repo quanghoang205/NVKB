@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-25T02:27:40+00:00",
+  "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+  "document_title": "K000160367",
+  "entity_type": "Reference",
+  "id": "REFERENCE:AA8BDA5343C0601BE7ACB32C",
+  "name": "K000160367",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:4EB14B422FD37FC4AE185DD3"
+  ],
+  "source_url": "https://my.f5.com/manage/s/article/K000160367",
+  "updated_at": "2026-11-25T04:13:05+00:00",
+  "verification_status": "VERIFIED"
+}

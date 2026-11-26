@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "5f92a4723efc54b7ef60d90ced7cc22d67b82945cb721ce071f9b2ab0461dcfa",
+    "created_at": "2026-11-25T02:27:13+00:00",
+    "description": "Mô tả và điều kiện do CNA công bố.",
+    "document_title": "CVE-2026-125283",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:EBC00C4C250179C07BC479C5",
+    "id": "EVIDENCE:EBC00C4C250179C07BC479C5",
+    "local_snapshot_path": "data/raw/cve/snapshots/5f92a4723efc54b7ef60d90ced7cc22d67b82945cb721ce071f9b2ab0461dcfa.json",
+    "name": "CVE-2026-125283",
+    "paraphrase": "Mô tả và điều kiện do CNA công bố.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:27:11+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/descriptions",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/125xxx/CVE-2026-125283.json",
+    "updated_at": "2026-11-25T02:27:13+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:13+00:00",
+  "entity_id": "EVIDENCE:EBC00C4C250179C07BC479C5",
+  "id": "HISTORY:D39D735E69906A724C921F10"
+}

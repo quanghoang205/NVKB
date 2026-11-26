@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E994C8B1DCB31263E3AC0677",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:14D5906C605DC065E20F9DE9",
+    "claim_value": "\"## Ownership và lifecycle của nhận định\\n\\nCNA cung cấp nội dung nhận định, còn CVE Program hoặc mirror phân phối record. Hai URL mang cùng container không tạo hai xác nhận độc lập. Phiên bản record có thể thay đổi hoặc bị rejected; khi đó phải giữ observation cũ và chỉ rõ record mới thay đổi điều gì. Trong NVKB, thời điểm truy xuất nói về snapshot, còn thời gian hiệu lực của Claim phải có quyết định riêng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/description; /definitions/cveMetadataPublished; /definitions/cnaPublishedContainer; /definitions/affected",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:14D5906C605DC065E20F9DE9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Ownership và lifecycle của nhận định",
+    "observed_at": "2026-11-25T05:15:15+00:00",
+    "predicate": "v1.3:knowledge:Ownership và lifecycle của nhận định",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:15+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T04:16:41+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:E994C8B1DCB31263E3AC0677",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:14D5906C605DC065E20F9DE9",
+    "claim_value": "\"## Ownership và lifecycle của nhận định\\n\\nCNA cung cấp nội dung nhận định, còn CVE Program hoặc mirror phân phối record. Hai URL mang cùng container không tạo hai xác nhận độc lập. Phiên bản record có thể thay đổi hoặc bị rejected; khi đó phải giữ observation cũ và chỉ rõ record mới thay đổi điều gì. Trong NVKB, thời điểm truy xuất nói về snapshot, còn thời gian hiệu lực của Claim phải có quyết định riêng.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:14D5906C605DC065E20F9DE9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:CVE: v1.3:knowledge:Ownership và lifecycle của nhận định",
+    "observed_at": "2026-11-25T05:15:15+00:00",
+    "predicate": "v1.3:knowledge:Ownership và lifecycle của nhận định",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T05:15:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:15:15+00:00",
+  "entity_id": "CLAIM:14D5906C605DC065E20F9DE9",
+  "id": "HISTORY:796CD53E0E8B0924546E3401"
+}

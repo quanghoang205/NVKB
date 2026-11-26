@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:615DFFE187613A1CA1FF6541
+title: 'RFC 9051: Internet Message Access Protocol (IMAP) - Version 4rev2'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'RFC 9051: Internet Message Access Protocol (IMAP) - Version 4rev2'
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# RFC 9051: Internet Message Access Protocol (IMAP) - Version 4rev2
+
+Giao thức thao tác hộp thư đồng bộ với server.
+
+- Nguồn: [IETF / RFC Editor](https://www.rfc-editor.org/rfc/rfc9051.html)
+- Authority gốc: IETF / RFC Editor
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `Protocol overview and state machine`
+
+- Truy xuất: 2026-11-25T02:32:27+00:00
+- SHA-256: `f86ae6c51f08e419e35ebb21cc170a7afbedf85d8453006732a14371a5a70e31`
+- Snapshot từ project root: `data/raw/documentation/snapshots/f86ae6c51f08e419e35ebb21cc170a7afbedf85d8453006732a14371a5a70e31.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

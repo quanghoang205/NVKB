@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "911606b9d4362588bbbe8f3123aa0c6e2a8e1de9e1895b73c9b8b5ad1bd3672b",
+    "created_at": "2026-11-25T02:32:35+00:00",
+    "description": "Giải phóng cùng tài nguyên bộ nhớ nhiều lần.",
+    "document_title": "CWE -\r\n\n    CWE-415: Double Free (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0F318B013600D8CC562EC9BA",
+    "id": "EVIDENCE:0F318B013600D8CC562EC9BA",
+    "local_snapshot_path": "data/raw/documentation/snapshots/911606b9d4362588bbbe8f3123aa0c6e2a8e1de9e1895b73c9b8b5ad1bd3672b.html",
+    "name": "CWE -\r\n\n    CWE-415: Double Free (5.0)",
+    "paraphrase": "Giải phóng cùng tài nguyên bộ nhớ nhiều lần.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:35+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/415.html",
+    "updated_at": "2026-11-25T02:32:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:35+00:00",
+  "entity_id": "EVIDENCE:0F318B013600D8CC562EC9BA",
+  "id": "HISTORY:1B6779B4FAC9CEBDBAEEF731"
+}

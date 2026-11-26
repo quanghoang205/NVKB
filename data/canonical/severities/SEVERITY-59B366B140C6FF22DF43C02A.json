@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:5AAAD5451CA7C424C05E9D1B",
+  "claim_refs": [
+    "CLAIM:7F937C2FB2B7928CAD1EBEBE"
+  ],
+  "created_at": "2026-11-25T02:27:21+00:00",
+  "cvss_score": 8.1,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cvss_version": "3.1",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CIRCL mirror",
+  "entity_type": "Severity",
+  "id": "SEVERITY:59B366B140C6FF22DF43C02A",
+  "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 8.1, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+  "name": "CVE-2026-15176 CVSS 3.1 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CIRCL mirror",
+  "severity_label": "HIGH",
+  "source_refs": [
+    "EVIDENCE:B91587FE936225A889D5B550"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-15176",
+  "updated_at": "2026-11-25T04:13:16+00:00",
+  "verification_status": "VERIFIED"
+}

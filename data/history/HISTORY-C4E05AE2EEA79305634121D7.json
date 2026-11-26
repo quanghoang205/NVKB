@@ -1,0 +1,321 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Memory corruption in HTTP/2 flow control",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:17DF74BCEB8A465D0123A6D8"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:00A724039C3A1CFF0FC49752",
+      "CLAIM:034C4E12BDBF0ED2C559957E",
+      "CLAIM:03FF6F8A7542D4405598E680",
+      "CLAIM:06900A5B69F3353B6E27DD41",
+      "CLAIM:22DD2213F30F89E1480641C4",
+      "CLAIM:2870E0419D731BDD7BB42426",
+      "CLAIM:380F4DBF3DC6E6BA008A5AFA",
+      "CLAIM:3B85F039E897B812B62BB5DA",
+      "CLAIM:3BC53FF858AC60055FFDFDFE",
+      "CLAIM:3E624D0E451D2592FE426BEF",
+      "CLAIM:40B85CC0617D3F9257E229A5",
+      "CLAIM:42B19A723C2FC319C2BE5AFD",
+      "CLAIM:4523ACE9AA33B5CD3E56F5E1",
+      "CLAIM:47BE64FF8767494247D5397B",
+      "CLAIM:508A528D2A7A810E9171C3A4",
+      "CLAIM:50F7B25B823B76F31EA8D467",
+      "CLAIM:598BFADEED8DACBC7681FA4C",
+      "CLAIM:618C9C3E710E923FAF2939ED",
+      "CLAIM:61E01C8D17AE81AA667FE32D",
+      "CLAIM:7BCB573B500AAD3FE873BCD8",
+      "CLAIM:7E4967901F60242AD92F85EF",
+      "CLAIM:8BEA1DD41DFEBD3D4DD382C9",
+      "CLAIM:9442E1B1E3C69E645F001AE9",
+      "CLAIM:959C3084E91CE8FAE9DD0EF6",
+      "CLAIM:AE5455AF1704B43A15437F40",
+      "CLAIM:C6E54C8926B4D81DFEFB5F50",
+      "CLAIM:D81326AAEC06548AFE3F82BE",
+      "CLAIM:DBACD6FFC34674B33D39D870",
+      "CLAIM:DE6EA24DF599BD4A38552EF6",
+      "CLAIM:E3B84615DC9483740C08EE7D",
+      "CLAIM:EF7A82528F9EC15AB12546F5",
+      "CLAIM:F409284A7F807C73F4EBB533",
+      "CLAIM:FD87359DB878BABB5DCD6AD3"
+    ],
+    "condition_refs": [
+      "CONDITION:34B72E1A33DDB7BA6B5591BE"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "cve_id": "CVE-2026-123007",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:742AC4D3FBB9C7208CFBD64F",
+      "PACKAGE:078311926FAC7F7434C47EA4",
+      "PACKAGE:A8271D7CC0A7096095196016"
+    ],
+    "distribution_status": [
+      "PACKAGE:742AC4D3FBB9C7208CFBD64F",
+      "PACKAGE:078311926FAC7F7434C47EA4",
+      "PACKAGE:A8271D7CC0A7096095196016"
+    ],
+    "documented_configuration_context": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-123007 ghi nhận: Memory corruption in HTTP/2 flow control. Phạm vi upstream: 1.9.5-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-123007",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:24.201000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-123007",
+    "normal_component_behavior": "Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.008000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:E3A1C522FD3C780CAD28B723"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V2-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-2"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-191",
+      "WEAKNESS:CWE-787"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Memory corruption in HTTP/2 flow control.\n\nCWE-191 — Integer Underflow: Phép tính số nguyên vượt dưới miền biểu diễn và có thể wraparound.\n\nCWE-787 — Out-of-bounds write: Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp lệ.\nTính toán offset và kích thước không overflow/underflow.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4DD4D40245C9BD4C82421B16",
+      "SEVERITY:74BCB71209A40B4B2580DCFC",
+      "SEVERITY:88DECA6D4FDF4FB0E953ECCB",
+      "SEVERITY:CF8F17CC80820CBFA802D8B5",
+      "SEVERITY:CFBF251DB4AF8498E35E9973"
+    ],
+    "source_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7",
+      "EVIDENCE:251C4361182524FDBC6E54E0",
+      "EVIDENCE:5E789FD4C9F9ECAAD664E917",
+      "EVIDENCE:6CE3B5987DB4EEED3ABA6775",
+      "EVIDENCE:8FB561518A4F0171E5D1F239",
+      "EVIDENCE:C14C94F53F5BF0314B9F272C",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:FB40C5879DD41E0FB053EFA8"
+    ],
+    "title": "Memory corruption in HTTP/2 flow control",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:11+00:00",
+    "upstream_affected_expression": "1.9.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Memory corruption in HTTP/2 flow control",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:17DF74BCEB8A465D0123A6D8"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:00A724039C3A1CFF0FC49752",
+      "CLAIM:034C4E12BDBF0ED2C559957E",
+      "CLAIM:06900A5B69F3353B6E27DD41",
+      "CLAIM:22DD2213F30F89E1480641C4",
+      "CLAIM:380F4DBF3DC6E6BA008A5AFA",
+      "CLAIM:3B85F039E897B812B62BB5DA",
+      "CLAIM:3BC53FF858AC60055FFDFDFE",
+      "CLAIM:3E624D0E451D2592FE426BEF",
+      "CLAIM:40B85CC0617D3F9257E229A5",
+      "CLAIM:42B19A723C2FC319C2BE5AFD",
+      "CLAIM:4523ACE9AA33B5CD3E56F5E1",
+      "CLAIM:47BE64FF8767494247D5397B",
+      "CLAIM:508A528D2A7A810E9171C3A4",
+      "CLAIM:50F7B25B823B76F31EA8D467",
+      "CLAIM:598BFADEED8DACBC7681FA4C",
+      "CLAIM:618C9C3E710E923FAF2939ED",
+      "CLAIM:61E01C8D17AE81AA667FE32D",
+      "CLAIM:7BCB573B500AAD3FE873BCD8",
+      "CLAIM:7E4967901F60242AD92F85EF",
+      "CLAIM:8BEA1DD41DFEBD3D4DD382C9",
+      "CLAIM:9442E1B1E3C69E645F001AE9",
+      "CLAIM:959C3084E91CE8FAE9DD0EF6",
+      "CLAIM:AE5455AF1704B43A15437F40",
+      "CLAIM:C6E54C8926B4D81DFEFB5F50",
+      "CLAIM:D81326AAEC06548AFE3F82BE",
+      "CLAIM:DE6EA24DF599BD4A38552EF6",
+      "CLAIM:E3B84615DC9483740C08EE7D",
+      "CLAIM:EF7A82528F9EC15AB12546F5",
+      "CLAIM:F409284A7F807C73F4EBB533",
+      "CLAIM:FD87359DB878BABB5DCD6AD3"
+    ],
+    "condition_refs": [
+      "CONDITION:34B72E1A33DDB7BA6B5591BE"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "cve_id": "CVE-2026-123007",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:742AC4D3FBB9C7208CFBD64F",
+      "PACKAGE:078311926FAC7F7434C47EA4",
+      "PACKAGE:A8271D7CC0A7096095196016"
+    ],
+    "distribution_status": [
+      "PACKAGE:742AC4D3FBB9C7208CFBD64F",
+      "PACKAGE:078311926FAC7F7434C47EA4",
+      "PACKAGE:A8271D7CC0A7096095196016"
+    ],
+    "documented_configuration_context": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-123007 ghi nhận: Memory corruption in HTTP/2 flow control. Phạm vi upstream: 1.9.5-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-123007",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:24.201000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-123007",
+    "normal_component_behavior": "Xử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.008000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:E3A1C522FD3C780CAD28B723"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V2-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-2"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-191",
+      "WEAKNESS:CWE-787"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Memory corruption in HTTP/2 flow control.\n\nCWE-787 — Out-of-bounds write: Ghi vào địa chỉ bên ngoài đối tượng được cấp phát.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Tính toán offset và kích thước không overflow/underflow.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4DD4D40245C9BD4C82421B16",
+      "SEVERITY:74BCB71209A40B4B2580DCFC",
+      "SEVERITY:88DECA6D4FDF4FB0E953ECCB",
+      "SEVERITY:CF8F17CC80820CBFA802D8B5",
+      "SEVERITY:CFBF251DB4AF8498E35E9973"
+    ],
+    "source_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7",
+      "EVIDENCE:251C4361182524FDBC6E54E0",
+      "EVIDENCE:5E789FD4C9F9ECAAD664E917",
+      "EVIDENCE:6CE3B5987DB4EEED3ABA6775",
+      "EVIDENCE:8FB561518A4F0171E5D1F239",
+      "EVIDENCE:C14C94F53F5BF0314B9F272C",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:FB40C5879DD41E0FB053EFA8"
+    ],
+    "title": "Memory corruption in HTTP/2 flow control",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:45:02+00:00",
+    "upstream_affected_expression": "1.9.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:11+00:00",
+  "entity_id": "CVE:CVE-2026-123007",
+  "id": "HISTORY:C4E05AE2EEA79305634121D7"
+}

@@ -1,0 +1,41 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:51861748B86419308252ADB7"
+    ],
+    "created_at": "2026-11-25T04:57:04+00:00",
+    "description": "MODULE:NGX-HTTP-MP4-MODULE REQUIRES_KNOWLEDGE_OF COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:57695AAA99045838BFE996A1",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Mục tiêu 'Phân biệt gửi file MP4 tĩnh với việc phân tích và tái sắp metadata.' cần mô hình Memory pool: ownership, lifetime và cleanup. Quyết định sư phạm, không là fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T04:57:04+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:57:04+00:00",
+  "entity_id": "REL:57695AAA99045838BFE996A1",
+  "id": "HISTORY:A3395B149255B56C69920C25"
+}

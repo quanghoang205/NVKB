@@ -1,0 +1,35 @@
+{
+  "action": "modified",
+  "after": {
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "cwe_id": "CWE-787",
+    "description": "CWE-787 Out-of-bounds Write",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-787",
+    "name": "CWE-787",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E",
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "cwe_id": "CWE-787",
+    "description": "CWE-787 Out-of-bounds Write",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-787",
+    "name": "CWE-787",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0C6A671431F2CA2EA43D9D2E"
+    ],
+    "updated_at": "2026-11-25T02:26:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "WEAKNESS:CWE-787",
+  "id": "HISTORY:905CDD9E843273A362B2B5A0"
+}

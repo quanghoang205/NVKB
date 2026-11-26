@@ -1,0 +1,34 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0503E7532A5A78FC803351E8"
+    ],
+    "created_at": "2026-11-25T02:33:40+00:00",
+    "description": "CVE:CVE-2025-23419 related_components COMPONENT:VIRTUAL-HOSTS",
+    "entity_type": "Relationship",
+    "id": "REL:4322AC4EEDB55455A9218509",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:33:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:40+00:00",
+  "entity_id": "REL:4322AC4EEDB55455A9218509",
+  "id": "HISTORY:56E3505586A5A3747593D587"
+}

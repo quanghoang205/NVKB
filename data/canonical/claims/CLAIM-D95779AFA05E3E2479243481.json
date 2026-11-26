@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:869D805E0D9E0AB1A22D672E",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:D95779AFA05E3E2479243481",
+  "claim_value": "\"Parsing inconsistencies; state confusion; resource exhaustion.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:18+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:9CB9359531A83E40EF3A2F04: Protocol overview and state machine; topic=PROTOCOL:TCP",
+  "evidence_refs": [
+    "EVIDENCE:9CB9359531A83E40EF3A2F04"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:D95779AFA05E3E2479243481",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "PROTOCOL:TCP: related_failure_classes",
+  "observation_key": "OBSERVATION:94B437E0F2133BA232C79364",
+  "observed_at": "2026-11-25T02:44:18+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "PROTOCOL:TCP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:15+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:9CB9359531A83E40EF3A2F04"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:TCP",
+  "updated_at": "2026-11-25T04:12:52+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

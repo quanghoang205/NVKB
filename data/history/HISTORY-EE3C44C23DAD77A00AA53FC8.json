@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:07E10C246BBC17D6E411BB01",
+    "claim_value": "\"Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "id": "CLAIM:07E10C246BBC17D6E411BB01",
+    "name": "CONCEPT:CVSS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:33:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:04+00:00",
+  "entity_id": "CLAIM:07E10C246BBC17D6E411BB01",
+  "id": "HISTORY:EE3C44C23DAD77A00AA53FC8"
+}

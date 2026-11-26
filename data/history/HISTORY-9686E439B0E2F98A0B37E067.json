@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:091EBC1B71EF53B255DE5CC0",
+    "claim_value": "\"Hỏng đối tượng lân cận hoặc dừng tiến trình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48"
+    ],
+    "id": "CLAIM:091EBC1B71EF53B255DE5CC0",
+    "name": "WEAKNESS:CWE-787: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A4EEA6D224631DCC0EB9BC48"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T02:32:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:33+00:00",
+  "entity_id": "CLAIM:091EBC1B71EF53B255DE5CC0",
+  "id": "HISTORY:9686E439B0E2F98A0B37E067"
+}

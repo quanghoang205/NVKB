@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1AA3A1C2A20BFFC6F2D22D0F",
+    "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+    ],
+    "id": "CLAIM:1AA3A1C2A20BFFC6F2D22D0F",
+    "name": "MODULE:NGX-MAIL-POP3-MODULE: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E17CA21CCE3EF8F73A1CA580"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "CLAIM:1AA3A1C2A20BFFC6F2D22D0F",
+  "id": "HISTORY:12FC31162C2EFAE914D0E771"
+}

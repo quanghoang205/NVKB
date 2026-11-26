@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3AC97BBD3713E4725AA8B899"
+    ],
+    "created_at": "2026-11-25T02:26:11+00:00",
+    "description": "CVE:CVE-2024-24990 distribution_fix PACKAGE:125CD0E9129EA0CF48B5CA08",
+    "entity_type": "Relationship",
+    "id": "REL:660F07ADBA8EF3E59D58A89D",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:125CD0E9129EA0CF48B5CA08",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A18FE6B6B740CA0FB133CDDC"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24990",
+    "updated_at": "2026-11-25T02:26:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:11+00:00",
+  "entity_id": "REL:660F07ADBA8EF3E59D58A89D",
+  "id": "HISTORY:AD0F206CDB411A3C72723078"
+}

@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "HTTP stream ↔ QUIC transport.",
+    "claim_refs": [
+      "CLAIM:FEF090B668AF73F8E33E14BA",
+      "CLAIM:41E34684E6C3E4EA7F3A1F86",
+      "CLAIM:6AF17CB57CB99868DA4EBD25",
+      "CLAIM:0FC9C23DE83FE51FCF7724CF",
+      "CLAIM:F382E5BCB6C6DFFB68FFF13C",
+      "CLAIM:B910A92D1220DE5491BFBC9E",
+      "CLAIM:FF9728564E7151DB0EEF3D41",
+      "CLAIM:B980E6CD0959E278569F4240"
+    ],
+    "created_at": "2026-11-25T02:32:20+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Ánh xạ HTTP lên QUIC.",
+    "description": "Ánh xạ HTTP lên QUIC.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-3",
+    "learning_objectives": [
+      "Giải thích HTTP/3 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP/3",
+    "normal_behavior": "HTTP/3 sử dụng các QUIC stream và control stream; metadata có QPACK, trạng thái request phải được tách theo stream.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái và vòng đời đối tượng phải đồng bộ giữa hai lớp.",
+    "schema_version": "1.0.0",
+    "security_boundary": "HTTP stream ↔ QUIC transport.",
+    "source_refs": [
+      "EVIDENCE:CA8A923060789AF5BE7AB688"
+    ],
+    "updated_at": "2026-11-25T02:32:20+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:20+00:00",
+  "entity_id": "PROTOCOL:HTTP-3",
+  "id": "HISTORY:F87C2721CAEF9FF0C3B0EC30"
+}

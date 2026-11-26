@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:39D4A63A8849E270A9556B65",
+    "claim_value": "\"Handler không được chạy vòng lặp vô hạn hoặc gọi thư viện blocking không kiểm soát.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "id": "CLAIM:39D4A63A8849E270A9556B65",
+    "name": "COMPONENT:EVENT-LOOP: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:39D4A63A8849E270A9556B65",
+  "id": "HISTORY:DCB9068B80A3EC10DC75E989"
+}

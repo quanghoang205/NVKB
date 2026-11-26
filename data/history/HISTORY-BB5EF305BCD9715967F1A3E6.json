@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:47BE64FF8767494247D5397B",
+    "claim_value": "\"NGINX worker process (được nêu trực tiếp trong mô tả nguồn).\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:26+00:00",
+    "description": "affected_process",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7",
+      "EVIDENCE:251C4361182524FDBC6E54E0",
+      "EVIDENCE:5E789FD4C9F9ECAAD664E917",
+      "EVIDENCE:6CE3B5987DB4EEED3ABA6775",
+      "EVIDENCE:8FB561518A4F0171E5D1F239",
+      "EVIDENCE:C14C94F53F5BF0314B9F272C",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:FB40C5879DD41E0FB053EFA8"
+    ],
+    "id": "CLAIM:47BE64FF8767494247D5397B",
+    "name": "CVE:CVE-2026-123007: affected_process",
+    "predicate": "affected_process",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7",
+      "EVIDENCE:251C4361182524FDBC6E54E0",
+      "EVIDENCE:5E789FD4C9F9ECAAD664E917",
+      "EVIDENCE:6CE3B5987DB4EEED3ABA6775",
+      "EVIDENCE:8FB561518A4F0171E5D1F239",
+      "EVIDENCE:C14C94F53F5BF0314B9F272C",
+      "EVIDENCE:F03600C558EF2F690E6E4A14",
+      "EVIDENCE:FB40C5879DD41E0FB053EFA8"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:40:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:27+00:00",
+  "entity_id": "CLAIM:47BE64FF8767494247D5397B",
+  "id": "HISTORY:BB5EF305BCD9715967F1A3E6"
+}

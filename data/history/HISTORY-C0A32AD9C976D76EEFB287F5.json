@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0A0ED642963CE421880C9854"
+    ],
+    "created_at": "2026-11-25T02:27:37+00:00",
+    "cve_ref": "CVE:CVE-2026-27784",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.22.1-9+deb12u5",
+    "id": "PACKAGE:67998DDB67C74E2E87978E72",
+    "name": "nginx / Debian bookworm / CVE-2026-27784",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "bookworm",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:AAFFEB58A409FCE33AB7E1E1"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:0A0ED642963CE421880C9854"
+    ],
+    "created_at": "2026-11-25T02:27:37+00:00",
+    "cve_ref": "CVE:CVE-2026-27784",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.22.1-9+deb12u5",
+    "id": "PACKAGE:67998DDB67C74E2E87978E72",
+    "name": "nginx / Debian bookworm / CVE-2026-27784",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "bookworm",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AAFFEB58A409FCE33AB7E1E1"
+    ],
+    "updated_at": "2026-11-25T02:27:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PACKAGE:67998DDB67C74E2E87978E72",
+  "id": "HISTORY:C0A32AD9C976D76EEFB287F5"
+}

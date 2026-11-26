@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:DB10A4F2A9E2507E65E504D8",
+      "CLAIM:0B1E2E3C99417540A300AF7D",
+      "CLAIM:CECAFDC32787A856E8B9211F",
+      "CLAIM:58105F1248902BEF6846955D",
+      "CLAIM:C49EC5B2BF5E66CB92621002",
+      "CLAIM:7FE24D156AAC941338BA2444",
+      "CLAIM:C39EDF12EA97485E283A4BBB",
+      "CLAIM:FDAEF40408A61E5B3072BB29"
+    ],
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "description": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_ssl_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_ssl_module",
+    "normal_behavior": "TLS handshake, certificate, session cache và session ticket cho HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+    ],
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:40+00:00",
+  "entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+  "id": "HISTORY:45F01AD607D876620307AD66"
+}

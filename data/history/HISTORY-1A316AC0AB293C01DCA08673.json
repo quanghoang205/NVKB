@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8A26ADDD09E13F66B5387F75",
+    "claim_value": "\"Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "id": "CLAIM:8A26ADDD09E13F66B5387F75",
+    "name": "MODULE:NGX-HTTP-MP4-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:75862F23DA8A4FFDD6B7CFA1"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:8A26ADDD09E13F66B5387F75",
+  "id": "HISTORY:1A316AC0AB293C01DCA08673"
+}

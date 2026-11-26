@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "claim_value": "\"Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư; parser phân biệt rõ chế độ command với dữ liệu.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "id": "CLAIM:36C88427E8FC8D70BDA57E22",
+    "name": "PROTOCOL:SMTP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C89351EAC105E9377F3948E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "CLAIM:36C88427E8FC8D70BDA57E22",
+  "id": "HISTORY:F649D596470F03788162B546"
+}

@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Datagram mạng ↔ trạng thái ứng dụng.",
+    "claim_refs": [
+      "CLAIM:8DD8B4E59595EAC95571F611",
+      "CLAIM:AEA017DACCCFCF524A5AB782",
+      "CLAIM:9F0828685980F8F14993BD70",
+      "CLAIM:54AA4F34114F1ACC2F72C083",
+      "CLAIM:0AA0E960AFE17A284FB2FED8",
+      "CLAIM:94046EE195C3344D39A0D9D7",
+      "CLAIM:3A51E37117EBBA66B80611C8",
+      "CLAIM:A406CE6C30B8BAB12B1F6B73"
+    ],
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "description": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:UDP",
+    "learning_objectives": [
+      "Giải thích UDP bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "UDP",
+    "normal_behavior": "Mỗi datagram có chiều dài riêng; ứng dụng xử lý mất gói, trùng lặp và thứ tự khi cần.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Địa chỉ nguồn và datagram chưa mặc nhiên được xác thực.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Datagram mạng ↔ trạng thái ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "updated_at": "2026-11-25T04:13:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Datagram mạng ↔ trạng thái ứng dụng.",
+    "claim_refs": [
+      "CLAIM:8DD8B4E59595EAC95571F611",
+      "CLAIM:AEA017DACCCFCF524A5AB782",
+      "CLAIM:9F0828685980F8F14993BD70",
+      "CLAIM:54AA4F34114F1ACC2F72C083",
+      "CLAIM:0AA0E960AFE17A284FB2FED8",
+      "CLAIM:94046EE195C3344D39A0D9D7",
+      "CLAIM:3A51E37117EBBA66B80611C8",
+      "CLAIM:A406CE6C30B8BAB12B1F6B73"
+    ],
+    "created_at": "2026-11-25T02:32:16+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "description": "Transport datagram không bảo đảm giao hàng hay thứ tự.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:UDP",
+    "learning_objectives": [
+      "Giải thích UDP bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "UDP",
+    "normal_behavior": "Mỗi datagram có chiều dài riêng; ứng dụng xử lý mất gói, trùng lặp và thứ tự khi cần.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Địa chỉ nguồn và datagram chưa mặc nhiên được xác thực.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Datagram mạng ↔ trạng thái ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "updated_at": "2026-11-25T02:44:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:04+00:00",
+  "entity_id": "PROTOCOL:UDP",
+  "id": "HISTORY:8A05F79798DE47D7782FFFB0"
+}

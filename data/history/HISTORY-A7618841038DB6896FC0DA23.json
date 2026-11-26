@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:9942CAA2FBB689C8756D51BE"
+    ],
+    "created_at": "2026-11-25T02:26:47+00:00",
+    "description": "CVE:CVE-2026-120967 distribution_fix PACKAGE:A22DF57F2EA1A43E39719A34",
+    "entity_type": "Relationship",
+    "id": "REL:0E1C25DD6DE069AB203F5EE7",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:A22DF57F2EA1A43E39719A34",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F7C8C76F3D7D3E7B7C450AF5"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T02:26:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:47+00:00",
+  "entity_id": "REL:0E1C25DD6DE069AB203F5EE7",
+  "id": "HISTORY:A7618841038DB6896FC0DA23"
+}

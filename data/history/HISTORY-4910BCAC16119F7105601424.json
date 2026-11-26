@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:004A7E5FEAF4A2E693BC7675",
+    "claim_value": "\"Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "id": "CLAIM:004A7E5FEAF4A2E693BC7675",
+    "name": "CONCEPT:CVE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "subject_entity_id": "CONCEPT:CVE",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:004A7E5FEAF4A2E693BC7675",
+  "id": "HISTORY:4910BCAC16119F7105601424"
+}

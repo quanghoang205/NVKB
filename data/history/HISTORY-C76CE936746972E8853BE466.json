@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4761F0A268C36DEAEB4F8AA2",
+    "claim_value": "\"Các connection, request và buffer vận hành trong giới hạn cấu hình.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E87A726DEC866AA27FA5B159"
+    ],
+    "id": "CLAIM:4761F0A268C36DEAEB4F8AA2",
+    "name": "CONTROL:RESOURCE-BOUNDS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E87A726DEC866AA27FA5B159"
+    ],
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:05+00:00",
+  "entity_id": "CLAIM:4761F0A268C36DEAEB4F8AA2",
+  "id": "HISTORY:C76CE936746972E8853BE466"
+}

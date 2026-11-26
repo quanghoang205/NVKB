@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:AEB57659A721796533230855",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+    "claim_value": "\"HTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:47+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-95101: v1.3:applicability",
+    "observed_at": "2026-11-25T05:08:47+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:47+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T05:08:47+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:28:47+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:AEB57659A721796533230855",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+    "claim_value": "\"HTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:47+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-95101: v1.3:applicability",
+    "observed_at": "2026-11-25T05:08:47+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7442F7FA2E81C7E05FC8656D"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-95101",
+    "updated_at": "2026-11-25T05:08:47+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T05:08:47+00:00",
+  "entity_id": "CLAIM:05B0C5A0C6E6DDFA7CB8CDCC",
+  "id": "HISTORY:6F8090A9C1F9C85F4A8F35BB"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:877543CBAE03F68859AD9FBA",
+    "claim_value": "\"Readiness của socket, timer và posted event kích hoạt callback; callback cập nhật trạng thái rồi trả điều khiển.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "id": "CLAIM:877543CBAE03F68859AD9FBA",
+    "name": "COMPONENT:EVENT-DRIVEN: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7CACEF491477F7E109DDAC32"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:04+00:00",
+  "entity_id": "CLAIM:877543CBAE03F68859AD9FBA",
+  "id": "HISTORY:0203D315D6154D52E7DA516C"
+}

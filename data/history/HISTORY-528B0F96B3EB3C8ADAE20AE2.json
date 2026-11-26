@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:18AD45F92348066064B07536",
+    "claim_value": "\"Stream bytes ↔ parser ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "id": "CLAIM:18AD45F92348066064B07536",
+    "name": "PROTOCOL:TCP: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:18AD45F92348066064B07536",
+  "id": "HISTORY:528B0F96B3EB3C8ADAE20AE2"
+}

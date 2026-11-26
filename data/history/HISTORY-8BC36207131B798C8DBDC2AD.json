@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "bf928677966df405fff66415910a88d19190d850dabb55891d23efaea9e22384",
+    "created_at": "2026-11-25T02:27:18+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-132779",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C3C886D0021B2976BD862AA0",
+    "id": "EVIDENCE:C3C886D0021B2976BD862AA0",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/bf928677966df405fff66415910a88d19190d850dabb55891d23efaea9e22384.json",
+    "name": "CVE-2026-132779",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:17+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-132779",
+    "updated_at": "2026-11-25T02:27:18+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:18+00:00",
+  "entity_id": "EVIDENCE:C3C886D0021B2976BD862AA0",
+  "id": "HISTORY:8BC36207131B798C8DBDC2AD"
+}

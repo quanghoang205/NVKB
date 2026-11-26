@@ -1,0 +1,317 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in ngx_http_dav_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:365C0526B779FCE7F6EE58FC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:1EB66FB51F287753F718C49C",
+      "CLAIM:2043ED0B1FE44BEE06A50BD8",
+      "CLAIM:228823E36F227A96BD73B968",
+      "CLAIM:263F12566FA471B2251A5E81",
+      "CLAIM:32B109EB61F9903E8542191F",
+      "CLAIM:33D33BEF19BFADE29346FC42",
+      "CLAIM:42195EFD315DB28872FD43A0",
+      "CLAIM:4C29BDF90B39A4159F60C664",
+      "CLAIM:57C9166A55208083FE4774D5",
+      "CLAIM:59005A7C176A40C26DADE686",
+      "CLAIM:5CAE016986DB54814486FF0D",
+      "CLAIM:5FB956C472134FB1681F9989",
+      "CLAIM:6E1F284451DD74658ED3553C",
+      "CLAIM:71289EB45A10EDA4AB7D11AB",
+      "CLAIM:72F54E5E7301A5C7D7295481",
+      "CLAIM:850C32DA7EE1CEA7AAD7C9B6",
+      "CLAIM:90AD86BCD4C503363D4862DF",
+      "CLAIM:90FE123A15ACFDA75633AD4D",
+      "CLAIM:959293D546D02251A60BB915",
+      "CLAIM:A565403186CD723CADD01486",
+      "CLAIM:A6C3FB02E22FAD99DD0BEDA3",
+      "CLAIM:AAB930CE31C4A887235CB661",
+      "CLAIM:AB40A7259A8D7547BB2CAC4F",
+      "CLAIM:AF5BC1FB8CE36D018408CCD5",
+      "CLAIM:BC1F7D42D8D837D83A407D66",
+      "CLAIM:D6D7AEEDCD262A232ED6DE80",
+      "CLAIM:F3B6CDDFAABE630D074AE44F",
+      "CLAIM:FB2707B6043930A50391C965"
+    ],
+    "condition_refs": [
+      "CONDITION:7D221B6EC6F7990DC6D51701"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "cve_id": "CVE-2026-27654",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD"
+    ],
+    "distribution_status": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD"
+    ],
+    "documented_configuration_context": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-27654 ghi nhận: Buffer overflow in ngx_http_dav_module. Phạm vi upstream: 0.5.13-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27654",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-07-15T01:13:37.047000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-27654",
+    "normal_component_behavior": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:26.879000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:40B2D1E1376ECB5FF1094B2D"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-DAV-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in ngx_http_dav_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:068E14C0F542846AF33EEEF6",
+      "SEVERITY:1FA8F5633016AE095E274CFB",
+      "SEVERITY:3D63CDA60E7D77A3236BF573",
+      "SEVERITY:B0684F40C5C96019A43D1535",
+      "SEVERITY:BF67414C9CBBBC5C643EFBE9",
+      "SEVERITY:CC460EE40FC04370F3657F39",
+      "SEVERITY:F5C88ACFC6A5FF47059D2DE8"
+    ],
+    "source_refs": [
+      "EVIDENCE:0528880A025D3293DC737CA5",
+      "EVIDENCE:0A708F37C968E347E4556F1E",
+      "EVIDENCE:1B0D58BFAD0869C507B6F6B7",
+      "EVIDENCE:8260359881BD6D4BF0F436F1",
+      "EVIDENCE:9D87D5F6F94BB341F23851EC",
+      "EVIDENCE:9EC6E37A4F37696FA15990A7",
+      "EVIDENCE:A4A7113E3D797686B944D416",
+      "EVIDENCE:BF47C1BB683B9443A4E5CC40",
+      "EVIDENCE:C94E0F9365304B3C6C4642D2",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90"
+    ],
+    "title": "Buffer overflow in ngx_http_dav_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:43+00:00",
+    "upstream_affected_expression": "0.5.13-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in ngx_http_dav_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:365C0526B779FCE7F6EE58FC"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:1EB66FB51F287753F718C49C",
+      "CLAIM:2043ED0B1FE44BEE06A50BD8",
+      "CLAIM:228823E36F227A96BD73B968",
+      "CLAIM:263F12566FA471B2251A5E81",
+      "CLAIM:32B109EB61F9903E8542191F",
+      "CLAIM:33D33BEF19BFADE29346FC42",
+      "CLAIM:42195EFD315DB28872FD43A0",
+      "CLAIM:4C29BDF90B39A4159F60C664",
+      "CLAIM:57C9166A55208083FE4774D5",
+      "CLAIM:59005A7C176A40C26DADE686",
+      "CLAIM:5CAE016986DB54814486FF0D",
+      "CLAIM:5FB956C472134FB1681F9989",
+      "CLAIM:71289EB45A10EDA4AB7D11AB",
+      "CLAIM:72F54E5E7301A5C7D7295481",
+      "CLAIM:850C32DA7EE1CEA7AAD7C9B6",
+      "CLAIM:90AD86BCD4C503363D4862DF",
+      "CLAIM:90FE123A15ACFDA75633AD4D",
+      "CLAIM:959293D546D02251A60BB915",
+      "CLAIM:A565403186CD723CADD01486",
+      "CLAIM:A6C3FB02E22FAD99DD0BEDA3",
+      "CLAIM:AAB930CE31C4A887235CB661",
+      "CLAIM:AB40A7259A8D7547BB2CAC4F",
+      "CLAIM:AF5BC1FB8CE36D018408CCD5",
+      "CLAIM:BC1F7D42D8D837D83A407D66",
+      "CLAIM:D6D7AEEDCD262A232ED6DE80",
+      "CLAIM:F3B6CDDFAABE630D074AE44F",
+      "CLAIM:FB2707B6043930A50391C965"
+    ],
+    "condition_refs": [
+      "CONDITION:7D221B6EC6F7990DC6D51701"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:32+00:00",
+    "cve_id": "CVE-2026-27654",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD"
+    ],
+    "distribution_status": [
+      "PACKAGE:27F2BBE022C537A46FEC987B",
+      "PACKAGE:93DC0B1902796879E3826C62",
+      "PACKAGE:BEDA2297D1744F4D3A51233D",
+      "PACKAGE:7FAA1C27A6DD8A8753E76ABD"
+    ],
+    "documented_configuration_context": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-27654 ghi nhận: Buffer overflow in ngx_http_dav_module. Phạm vi upstream: 0.5.13-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27654",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-07-15T01:13:37.047000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-27654",
+    "normal_component_behavior": "Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:26.879000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:40B2D1E1376ECB5FF1094B2D"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-DAV-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in ngx_http_dav_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:068E14C0F542846AF33EEEF6",
+      "SEVERITY:1FA8F5633016AE095E274CFB",
+      "SEVERITY:3D63CDA60E7D77A3236BF573",
+      "SEVERITY:B0684F40C5C96019A43D1535",
+      "SEVERITY:BF67414C9CBBBC5C643EFBE9",
+      "SEVERITY:CC460EE40FC04370F3657F39",
+      "SEVERITY:F5C88ACFC6A5FF47059D2DE8"
+    ],
+    "source_refs": [
+      "EVIDENCE:0528880A025D3293DC737CA5",
+      "EVIDENCE:0A708F37C968E347E4556F1E",
+      "EVIDENCE:1B0D58BFAD0869C507B6F6B7",
+      "EVIDENCE:8260359881BD6D4BF0F436F1",
+      "EVIDENCE:9D87D5F6F94BB341F23851EC",
+      "EVIDENCE:9EC6E37A4F37696FA15990A7",
+      "EVIDENCE:A4A7113E3D797686B944D416",
+      "EVIDENCE:BF47C1BB683B9443A4E5CC40",
+      "EVIDENCE:C94E0F9365304B3C6C4642D2",
+      "EVIDENCE:F7F3915BEDFBC5BA090B7D90"
+    ],
+    "title": "Buffer overflow in ngx_http_dav_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:34+00:00",
+    "upstream_affected_expression": "0.5.13-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:44:43+00:00",
+  "entity_id": "CVE:CVE-2026-27654",
+  "id": "HISTORY:546DFAF3489B90A2D5768F33"
+}

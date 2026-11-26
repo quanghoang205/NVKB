@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c",
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "document_title": "Module ngx_http_ssl_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:71BAF5F02DE4748241A21610",
+    "id": "EVIDENCE:71BAF5F02DE4748241A21610",
+    "local_snapshot_path": "data/raw/documentation/snapshots/3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c.html",
+    "name": "Module ngx_http_ssl_module",
+    "paraphrase": "TLS handshake, certificate, session cache và session ticket cho HTTP.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_ssl_module; topic=MODULE:NGX-HTTP-SSL-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_ssl_module.html",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "EVIDENCE:71BAF5F02DE4748241A21610",
+  "id": "HISTORY:319919F727C5346DF1ED684A"
+}

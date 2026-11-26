@@ -1,0 +1,37 @@
+{
+  "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "claim_refs": [
+    "CLAIM:9DC579C7AD0F88ABE819C745",
+    "CLAIM:A5300B1E97FAD6A2752A5354",
+    "CLAIM:EBAFBCC320FCA9B63CC5DB06",
+    "CLAIM:F942BC984D05DA45770B6A78",
+    "CLAIM:2A42C87DB79D745907C0CFF2",
+    "CLAIM:825C166937862BF3E1998EDD",
+    "CLAIM:C342451DD575A9A21A38A79E",
+    "CLAIM:09A1E4284E4F59BE671294B2"
+  ],
+  "created_at": "2026-11-25T02:32:42+00:00",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "Chuyển tiếp HTTP request/response đến upstream.",
+  "description": "Chuyển tiếp HTTP request/response đến upstream.",
+  "diagram": "",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-HTTP-PROXY-MODULE",
+  "learning_objectives": [
+    "Giải thích ngx_http_proxy_module bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "ngx_http_proxy_module",
+  "normal_behavior": "Chuyển tiếp HTTP request/response đến upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:4CC5D57B6B6573849287D7EB"
+  ],
+  "updated_at": "2026-11-25T04:13:03+00:00",
+  "verification_status": "INFERRED"
+}

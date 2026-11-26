@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6c2a106cf1774d1c6cd12fb5e8e625afaacb02e9d0fe074c5eecced32707852b",
+    "created_at": "2026-11-25T02:28:55+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "document_title": "CVE-2026-97205",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:F5330D76612408C7F66C12F6",
+    "id": "EVIDENCE:F5330D76612408C7F66C12F6",
+    "local_snapshot_path": "data/raw/distribution/snapshots/6c2a106cf1774d1c6cd12fb5e8e625afaacb02e9d0fe074c5eecced32707852b.html",
+    "name": "CVE-2026-97205",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u11, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:54+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-97205",
+    "updated_at": "2026-11-25T02:28:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:55+00:00",
+  "entity_id": "EVIDENCE:F5330D76612408C7F66C12F6",
+  "id": "HISTORY:F7EFB04609AEB5E30FBD1732"
+}

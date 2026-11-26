@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:212691C999A4301D5E070B27",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:CD31F3792D2BDE87B569196A",
+    "claim_value": "\"AIO bật trong một số cấu hình và xử lý trang SSI include virtual theo CNA; không suy mọi file serving đều có lỗi.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:29+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9B12705ADDD0A1674C9D2C6B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:CD31F3792D2BDE87B569196A",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-97205: v1.3:applicability",
+    "observed_at": "2026-11-25T05:24:29+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:9B12705ADDD0A1674C9D2C6B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T05:24:29+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:29+00:00",
+  "entity_id": "CLAIM:CD31F3792D2BDE87B569196A",
+  "id": "HISTORY:1957498918820DCD9D0B518E"
+}

@@ -1,0 +1,22 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Tài liệu được nguồn chính thức dẫn chiếu; nội dung không mặc nhiên đã xác minh.",
+    "document_title": "CVE-2025-23419",
+    "entity_type": "Reference",
+    "id": "REFERENCE:BA7FFA5174CD3F3C6714EE3B",
+    "name": "K000149173",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EF03D902D12B9BD739833F79"
+    ],
+    "source_url": "https://my.f5.com/manage/s/article/K000149173",
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "REFERENCE:BA7FFA5174CD3F3C6714EE3B",
+  "id": "HISTORY:86802FE2A5B2B77DD6735F95"
+}

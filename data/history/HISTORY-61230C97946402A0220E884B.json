@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:0FE52C7852A904DDCBD066D4",
+    "claim_value": "\"Điều kiện thoát của vòng lặp không thể đạt trong một trạng thái xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:49:01+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "id": "CLAIM:0FE52C7852A904DDCBD066D4",
+    "name": "WEAKNESS:CWE-835: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0062C4E072953C3410CED3E5"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-835",
+    "updated_at": "2026-11-25T02:49:01+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:01+00:00",
+  "entity_id": "CLAIM:0FE52C7852A904DDCBD066D4",
+  "id": "HISTORY:61230C97946402A0220E884B"
+}

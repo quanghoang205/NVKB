@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:35AF5EEAA1E3A125305D3059
+title: Module ngx_mail_proxy_module
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- Module ngx_mail_proxy_module
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# Module ngx_mail_proxy_module
+
+Chuyển tiếp phiên mail đến backend.
+
+- Nguồn: [NGINX / F5](https://nginx.org/en/docs/mail/ngx_mail_proxy_module.html)
+- Authority gốc: NGINX / F5
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `ngx_mail_proxy_module`
+
+- Truy xuất: 2026-11-25T02:32:53+00:00
+- SHA-256: `ed89e4d203daa411862d29723cd87bc85f8d603957a5becc7edf0878758896fe`
+- Snapshot từ project root: `data/raw/documentation/snapshots/ed89e4d203daa411862d29723cd87bc85f8d603957a5becc7edf0878758896fe.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:BACC9DABCE19D3B649EC4194"
+    ],
+    "created_at": "2026-11-25T05:24:16+00:00",
+    "description": "COMPONENT:REWRITE-ENGINE REQUIRES_KNOWLEDGE_OF COMPONENT:CONNECTION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "Introduction;",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:3872015FE92CC02E40FFF4FC",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Mục tiêu 'Phân biệt URI với đường dẫn filesystem.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Mục tiêu 'Phân biệt URI với đường dẫn filesystem.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:16+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:55E423A56D64C254EE0D8DDE"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T05:24:16+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:16+00:00",
+  "entity_id": "REL:3872015FE92CC02E40FFF4FC",
+  "id": "HISTORY:24C33E684D0659B520B2FF83"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:D077F9ECE5B48C65BF4D1B69",
+    "claim_value": "[\"PRODUCT:NGINX-OSS\"]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:03+00:00",
+    "description": "affected_products",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D3C404EE32EAE50BFC12AD7D"
+    ],
+    "id": "CLAIM:D077F9ECE5B48C65BF4D1B69",
+    "name": "CVE:CVE-2026-123633: affected_products",
+    "predicate": "affected_products",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D3C404EE32EAE50BFC12AD7D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123633",
+    "updated_at": "2026-11-25T02:27:03+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:03+00:00",
+  "entity_id": "CLAIM:D077F9ECE5B48C65BF4D1B69",
+  "id": "HISTORY:E9F38C0D56A00E77049885AF"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3161DEF149ABFFFC4480E0DA",
+    "claim_value": "\"Không chuyển tiếp danh tính giả định mà không kiểm tra.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "id": "CLAIM:3161DEF149ABFFFC4480E0DA",
+    "name": "DEPLOYMENT:REVERSE-PROXY: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3CA4441F1D905E29DF89DFEB"
+    ],
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "CLAIM:3161DEF149ABFFFC4480E0DA",
+  "id": "HISTORY:BBBFB43D8784C5A4E121106A"
+}

@@ -1,0 +1,74 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0503E7532A5A78FC803351E8"
+    ],
+    "created_at": "2026-11-25T02:33:40+00:00",
+    "description": "CVE:CVE-2025-23419 related_components COMPONENT:VIRTUAL-HOSTS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:4322AC4EEDB55455A9218509",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "predicate": "related_components",
+    "rationale": "Legacy association: Context only; not fault location. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Context only; not fault location",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T04:13:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:0503E7532A5A78FC803351E8"
+    ],
+    "created_at": "2026-11-25T02:33:40+00:00",
+    "description": "CVE:CVE-2025-23419 related_components COMPONENT:VIRTUAL-HOSTS",
+    "entity_type": "Relationship",
+    "id": "REL:4322AC4EEDB55455A9218509",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4",
+      "EVIDENCE:2BE634B44A5BFFF65B2BE48B",
+      "EVIDENCE:3F61D027CE4D9052EE9C8318",
+      "EVIDENCE:7089B40AEA556F47764AE55C",
+      "EVIDENCE:A38A031F685C602F9C82686E",
+      "EVIDENCE:AF1B942825307CEF770EBBF0",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:EF03D902D12B9BD739833F79",
+      "EVIDENCE:F3900FE1A45C906CF105D39E"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:33:40+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:07+00:00",
+  "entity_id": "REL:4322AC4EEDB55455A9218509",
+  "id": "HISTORY:E3DC8565E535304322F791C2"
+}

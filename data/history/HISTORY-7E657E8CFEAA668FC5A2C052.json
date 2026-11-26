@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:2B92D78A61BC0CA4A2A3E4E8",
+    "claim_value": "\"Ánh xạ HTTP lên binary framing và nhiều stream trong một connection.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:20+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DED9E38342759D8072604063"
+    ],
+    "id": "CLAIM:2B92D78A61BC0CA4A2A3E4E8",
+    "name": "PROTOCOL:HTTP-2: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DED9E38342759D8072604063"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:44:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:20+00:00",
+  "entity_id": "CLAIM:2B92D78A61BC0CA4A2A3E4E8",
+  "id": "HISTORY:7E657E8CFEAA668FC5A2C052"
+}

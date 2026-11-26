@@ -1,0 +1,24 @@
+{
+  "claim_refs": [
+    "CLAIM:3D5C45EEF7E0BF385247F140"
+  ],
+  "created_at": "2026-11-25T02:27:59+00:00",
+  "cve_ref": "CVE:CVE-2026-42055",
+  "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+  "distribution": "debian",
+  "ecosystem": "debian",
+  "entity_type": "DistributionPackage",
+  "fixed_version": "1.22.1-9+deb12u9",
+  "id": "PACKAGE:B81B35F53CE1CB991EE32CB9",
+  "name": "nginx / Debian bookworm / CVE-2026-42055",
+  "package_name": "nginx",
+  "patch_status": "fixed",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "release": "bookworm",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "VERIFIED"
+}

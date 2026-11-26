@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "91f404c66d40a2d8ec690c90be9ca5defc42c9d53b41561abd583bf0e112b81e",
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.",
+    "document_title": "CWE -\r\n\n    CWE-908: Use of Uninitialized Resource (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87",
+    "id": "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87",
+    "local_snapshot_path": "data/raw/documentation/snapshots/91f404c66d40a2d8ec690c90be9ca5defc42c9d53b41561abd583bf0e112b81e.html",
+    "name": "CWE -\r\n\n    CWE-908: Use of Uninitialized Resource (5.0)",
+    "paraphrase": "Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:49:01+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-908",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/908.html",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87",
+  "id": "HISTORY:C209DF24AA88FB5D000AAC41"
+}

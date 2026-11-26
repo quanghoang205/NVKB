@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:64F4C22FE40456699426DD22",
+    "claim_value": "\"NULL pointer dereference while using CRAM-MD5 or APOP\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:28+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D"
+    ],
+    "id": "CLAIM:64F4C22FE40456699426DD22",
+    "name": "CVE:CVE-2026-27651: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T02:27:28+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:28+00:00",
+  "entity_id": "CLAIM:64F4C22FE40456699426DD22",
+  "id": "HISTORY:2F2650346EFAE9E55EA98E52"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:5BDFEFEA1D8ED6287C6FB893",
+    "claim_value": "\"Client ↔ proxy ↔ upstream.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "id": "CLAIM:5BDFEFEA1D8ED6287C6FB893",
+    "name": "PROTOCOL:HTTP-1.1: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-1.1",
+    "updated_at": "2026-11-25T02:44:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:19+00:00",
+  "entity_id": "CLAIM:5BDFEFEA1D8ED6287C6FB893",
+  "id": "HISTORY:055449C7CF945624751F3F84"
+}

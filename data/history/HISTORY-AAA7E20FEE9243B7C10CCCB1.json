@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:DF2C47F616A9A0250D7567B8",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:08CC6C5677653679D8CD9DC8",
+    "claim_value": "\"## Ranh giới và invariant\\n\\nDiễn giải phòng vệ: quyết định phải dựa trên context đáng tin và tài nguyên thực sự đang được truy cập. Kiểm tra vai trò không luôn giải quyết quyền giữa hai người cùng vai trò. MITRE ghi nhận giới hạn này trong phần mitigations; do đó RBAC là công cụ, không là bảo đảm mọi kiểm tra theo object đều đúng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:04+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:08CC6C5677653679D8CD9DC8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-863: pilot_section:Ranh giới và invariant",
+    "observed_at": "2026-11-25T04:21:04+00:00",
+    "predicate": "pilot_section:Ranh giới và invariant",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3F3B7A9F2EE582122C10045B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-863",
+    "updated_at": "2026-11-25T04:21:04+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:04+00:00",
+  "entity_id": "CLAIM:08CC6C5677653679D8CD9DC8",
+  "id": "HISTORY:AAA7E20FEE9243B7C10CCCB1"
+}

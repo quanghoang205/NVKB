@@ -1,0 +1,33 @@
+{
+  "claim_refs": [
+    "CLAIM:F859AF459A12572ABB2E8237"
+  ],
+  "created_at": "2026-11-25T04:22:00+00:00",
+  "description": "CVE:CVE-2025-23419 distribution_fix PACKAGE:9D67237552EC0418B94E1F45",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:B7133CFA7ED0107FB18B0FF5",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "distribution_fix",
+  "object_entity_id": "PACKAGE:9D67237552EC0418B94E1F45",
+  "predicate": "distribution_fix",
+  "rationale": "Official Ubuntu row for the exact CVE, release and source package; does not attest installed/running binary.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Distribution-specific package statement",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:3A62BA07BA6CB8645B2EC1AF"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2025-23419",
+  "updated_at": "2026-11-25T04:22:00+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

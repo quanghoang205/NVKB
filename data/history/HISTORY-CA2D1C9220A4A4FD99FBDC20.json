@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:594E0A13B603777814CF74BC",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "id": "CLAIM:594E0A13B603777814CF74BC",
+    "name": "CONCEPT:BACKPORT: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B182E33FA564AB250BC8D7F4"
+    ],
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T02:33:08+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:08+00:00",
+  "entity_id": "CLAIM:594E0A13B603777814CF74BC",
+  "id": "HISTORY:CA2D1C9220A4A4FD99FBDC20"
+}

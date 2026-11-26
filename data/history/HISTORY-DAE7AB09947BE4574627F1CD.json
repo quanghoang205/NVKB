@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:691BA0348DD70540B9FA84C9",
+    "claim_value": "\"Buffer overwrite in HTTP/3\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:19+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7E458156B85BD305352AA055"
+    ],
+    "id": "CLAIM:691BA0348DD70540B9FA84C9",
+    "name": "CVE:CVE-2024-32760: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7E458156B85BD305352AA055"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-32760",
+    "updated_at": "2026-11-25T02:26:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:19+00:00",
+  "entity_id": "CLAIM:691BA0348DD70540B9FA84C9",
+  "id": "HISTORY:DAE7AB09947BE4574627F1CD"
+}

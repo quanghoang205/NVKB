@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:7EE9E1726626D8EA43AAC578",
+    "claim_value": "\"Phép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được sở hữu.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:00+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "id": "CLAIM:7EE9E1726626D8EA43AAC578",
+    "name": "WEAKNESS:CWE-823: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:90C3D812878A1FE5CC409A23"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-823",
+    "updated_at": "2026-11-25T02:49:00+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:00+00:00",
+  "entity_id": "CLAIM:7EE9E1726626D8EA43AAC578",
+  "id": "HISTORY:3C163B82C9B71CF69F697E41"
+}

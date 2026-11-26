@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:7078653912747AD75E7C88D0",
+    "claim_value": "\"Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "id": "CLAIM:7078653912747AD75E7C88D0",
+    "name": "WEAKNESS:CWE-789: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:10D1CE64C7D374A3FFA0935A"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-789",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:7078653912747AD75E7C88D0",
+  "id": "HISTORY:51FD6726DA3292D6E0E64A86"
+}

@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:220745DD3F0F6A6C2F0E53C3"
+    ],
+    "created_at": "2026-11-25T02:28:55+00:00",
+    "description": "CVE:CVE-2026-97205 distribution_fix PACKAGE:246BFCA4404A21599F2990F9",
+    "entity_type": "Relationship",
+    "id": "REL:3088AD8A9DED6DF18D9E8857",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:246BFCA4404A21599F2990F9",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F5330D76612408C7F66C12F6"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97205",
+    "updated_at": "2026-11-25T02:28:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:55+00:00",
+  "entity_id": "REL:3088AD8A9DED6DF18D9E8857",
+  "id": "HISTORY:3E3D456179A189759CCB38D5"
+}

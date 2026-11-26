@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:6303D3C4ACB38BEC6C45244B",
+      "CLAIM:7897DF69E2FF025E4EA609EC",
+      "CLAIM:59719993AA636A8945E222A4",
+      "CLAIM:C2E9518AB84BC6EDEE852353",
+      "CLAIM:859001337C6A4C5F973FE38B",
+      "CLAIM:02EAD3399301228D3BB342CC",
+      "CLAIM:5A9ED272F4AD573DA5C9639E",
+      "CLAIM:B7983CBE63802BEBAD39B522"
+    ],
+    "created_at": "2026-11-25T02:32:53+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp phiên mail đến backend.",
+    "description": "Chuyển tiếp phiên mail đến backend.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-PROXY-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_proxy_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_proxy_module",
+    "normal_behavior": "Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "updated_at": "2026-11-25T02:32:53+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:53+00:00",
+  "entity_id": "MODULE:NGX-MAIL-PROXY-MODULE",
+  "id": "HISTORY:387C6E3B0CA036F738BEED8A"
+}

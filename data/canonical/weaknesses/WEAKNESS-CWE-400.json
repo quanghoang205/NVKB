@@ -1,0 +1,39 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:73F2E957993B6988FA280889",
+    "CLAIM:9A88AE98E43CA7D49CF10C13",
+    "CLAIM:ED01D31BC3B6BB0AB676DF76",
+    "CLAIM:D30D3C024D9D8788B9793B17",
+    "CLAIM:F051CD0376B4FD43C1ACEAFD",
+    "CLAIM:0C615F17B2CDC66A1C2EDEE5",
+    "CLAIM:D84C9125F768D91DC11635AB",
+    "CLAIM:FAA88F5D0DECD0B03B566759"
+  ],
+  "created_at": "2026-11-25T02:32:38+00:00",
+  "cwe_id": "CWE-400",
+  "defensive_principles": "Đo nguồn lực, đặt hạn mức và timeout dựa trên workload.",
+  "definition": "Tiêu thụ tài nguyên mà không có giới hạn phù hợp.",
+  "description": "Tiêu thụ tài nguyên mà không có giới hạn phù hợp.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Suy giảm availability.",
+  "id": "WEAKNESS:CWE-400",
+  "learning_objectives": [
+    "Giải thích CWE-400 — Resource exhaustion bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-400 — Resource exhaustion",
+  "normal_behavior": "Hệ thống giữ hạn mức CPU, RAM, kết nối và thời gian cho từng đơn vị công việc.",
+  "related_failure_classes": "Resource exhaustion",
+  "related_knowledge": [],
+  "safety_assumptions": "Chi phí xử lý không tăng ngoài ngân sách khi trạng thái thay đổi.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:0838953B2BE98F7124CC4F87",
+    "EVIDENCE:74C44A41A6BA4045B073D6AB"
+  ],
+  "updated_at": "2026-11-25T04:13:15+00:00",
+  "verification_status": "INFERRED"
+}

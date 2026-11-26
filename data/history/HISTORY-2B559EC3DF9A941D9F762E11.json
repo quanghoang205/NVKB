@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C2847A272B46BC3323078D15",
+    "claim_value": "\"Index và offset được kiểm tra trong phạm vi đối tượng trước khi đọc.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F43E09B91F0D0A09B4E42149"
+    ],
+    "id": "CLAIM:C2847A272B46BC3323078D15",
+    "name": "WEAKNESS:CWE-125: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F43E09B91F0D0A09B4E42149"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-125",
+    "updated_at": "2026-11-25T02:32:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:33+00:00",
+  "entity_id": "CLAIM:C2847A272B46BC3323078D15",
+  "id": "HISTORY:2B559EC3DF9A941D9F762E11"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "d361f7c4d2aceb066b2afb21dbf48d87c2be8eef474466f3ac3cc4ac8a726b7c",
+    "created_at": "2026-11-25T02:28:54+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-97205",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:11D661193742367787FAE30B",
+    "id": "EVIDENCE:11D661193742367787FAE30B",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/d361f7c4d2aceb066b2afb21dbf48d87c2be8eef474466f3ac3cc4ac8a726b7c.json",
+    "name": "CVE-2026-97205",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:53+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-97205",
+    "updated_at": "2026-11-25T02:28:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:54+00:00",
+  "entity_id": "EVIDENCE:11D661193742367787FAE30B",
+  "id": "HISTORY:23D7879187B3DEA640DD76F6"
+}

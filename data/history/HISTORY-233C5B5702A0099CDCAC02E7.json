@@ -1,0 +1,325 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2AECE25E14F8B149195B07FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0264C73286B767BCE82210F5",
+      "CLAIM:16AC1FCC64847F627D466A8A",
+      "CLAIM:2B6DC2A571BE2A5BFA076C6C",
+      "CLAIM:3324B437A36ABAFACE680557",
+      "CLAIM:34B25CE38F83C3912B894B98",
+      "CLAIM:36A7B25BC855199983AAAB72",
+      "CLAIM:529BA920197B39430FC718D3",
+      "CLAIM:535769B6E546F82D02251AAC",
+      "CLAIM:536D41EB33EEDD18264B2A61",
+      "CLAIM:5DE90A84743800EBE9A765CE",
+      "CLAIM:5F08509DC9ED222C7784EBF1",
+      "CLAIM:658A505DCF4FE66A79817269",
+      "CLAIM:6BA4716E96519A91AEF6FA40",
+      "CLAIM:71F63DBD30BAF6E59BDC965C",
+      "CLAIM:7FEB32A3C90E032FCC610BA6",
+      "CLAIM:8265C88D8A372AE4A446B146",
+      "CLAIM:8BBABFD82D1FCFA6C51F5548",
+      "CLAIM:8CCA2058403A5EAB31D648AD",
+      "CLAIM:8D32D10BAEE90799D13826FD",
+      "CLAIM:961E7BEDBFED562B4909B882",
+      "CLAIM:9B0FBCFF8CE8D53E42E281E9",
+      "CLAIM:A3693275F906E44675B87E5E",
+      "CLAIM:A80576D26469E90B2F9E4EAE",
+      "CLAIM:A99DE64014A880D9133BE0B7",
+      "CLAIM:AB31168D06BB635AC311C597",
+      "CLAIM:B70A286503EE51504FCB4811",
+      "CLAIM:CA690A979BDA19AE6B4C4F8A",
+      "CLAIM:CC9F2D138E2858BAF3D71567",
+      "CLAIM:E88D861771CDC953B11D9CD8",
+      "CLAIM:F5A4AF8DB1D1B16C0461D271"
+    ],
+    "condition_refs": [
+      "CONDITION:B7E8704DAA3B778DAEB6E764"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "cve_id": "CVE-2026-42946",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C4E0E0BBC995CB3E5D4A1090",
+      "PACKAGE:F09145BC65980E0F35AD5BC9",
+      "PACKAGE:C0314C7D64368F2B53440851",
+      "PACKAGE:4E5E41BFFE3408DA098DE1D1"
+    ],
+    "distribution_status": [
+      "PACKAGE:C4E0E0BBC995CB3E5D4A1090",
+      "PACKAGE:F09145BC65980E0F35AD5BC9",
+      "PACKAGE:C0314C7D64368F2B53440851",
+      "PACKAGE:4E5E41BFFE3408DA098DE1D1"
+    ],
+    "documented_configuration_context": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-42946 ghi nhận: Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module. Phạm vi upstream: 0.8.42-1.30.0. Bản sửa được công bố: 1.31.0+, 1.30.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42946",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-05-13T16:06:56.898000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-42946",
+    "normal_component_behavior": "Chuyển tiếp request đến SCGI server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\n\nChuyển tiếp request đến uwsgi server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-13T14:12:44.697000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C5D31B36B8A340CD65C3BAC1"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SCGI-MODULE",
+      "MODULE:NGX-HTTP-UWSGI-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-789",
+      "WEAKNESS:CWE-823"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module.\n\nCWE-789 — Excessive Memory Allocation: Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.\n\nCWE-823 — Out-of-range Pointer Offset: Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.\nPhép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được sở hữu.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:2D21831880960524DA5DFCFC",
+      "SEVERITY:30F54E43C50BA9EE988A4ADF",
+      "SEVERITY:35097FD6DEE622F88AF40103",
+      "SEVERITY:44399BCF51B40F4A19210649",
+      "SEVERITY:52D367D08C3DD50FFFE5DBEB"
+    ],
+    "source_refs": [
+      "EVIDENCE:1C43E772F27127F2E496D09C",
+      "EVIDENCE:2532452C6D671C3F54F43C7D",
+      "EVIDENCE:3EFC2338173D38F29F1B5E2F",
+      "EVIDENCE:5D6E54835E2136719F4BF0EF",
+      "EVIDENCE:B1562C40A51145CCA6BD510D",
+      "EVIDENCE:DE4755FF1EDD61966A8A248D",
+      "EVIDENCE:EBFE74A3AD46F6648BEB0DFC",
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "title": "Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:22:05+00:00",
+    "upstream_affected_expression": "0.8.42-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2AECE25E14F8B149195B07FD"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0264C73286B767BCE82210F5",
+      "CLAIM:16AC1FCC64847F627D466A8A",
+      "CLAIM:2B6DC2A571BE2A5BFA076C6C",
+      "CLAIM:3324B437A36ABAFACE680557",
+      "CLAIM:34B25CE38F83C3912B894B98",
+      "CLAIM:36A7B25BC855199983AAAB72",
+      "CLAIM:529BA920197B39430FC718D3",
+      "CLAIM:535769B6E546F82D02251AAC",
+      "CLAIM:536D41EB33EEDD18264B2A61",
+      "CLAIM:5DE90A84743800EBE9A765CE",
+      "CLAIM:5F08509DC9ED222C7784EBF1",
+      "CLAIM:658A505DCF4FE66A79817269",
+      "CLAIM:6BA4716E96519A91AEF6FA40",
+      "CLAIM:71F63DBD30BAF6E59BDC965C",
+      "CLAIM:7FEB32A3C90E032FCC610BA6",
+      "CLAIM:8265C88D8A372AE4A446B146",
+      "CLAIM:8BBABFD82D1FCFA6C51F5548",
+      "CLAIM:8CCA2058403A5EAB31D648AD",
+      "CLAIM:8D32D10BAEE90799D13826FD",
+      "CLAIM:961E7BEDBFED562B4909B882",
+      "CLAIM:9B0FBCFF8CE8D53E42E281E9",
+      "CLAIM:A3693275F906E44675B87E5E",
+      "CLAIM:A80576D26469E90B2F9E4EAE",
+      "CLAIM:A99DE64014A880D9133BE0B7",
+      "CLAIM:AB31168D06BB635AC311C597",
+      "CLAIM:B70A286503EE51504FCB4811",
+      "CLAIM:CA690A979BDA19AE6B4C4F8A",
+      "CLAIM:CC9F2D138E2858BAF3D71567",
+      "CLAIM:E88D861771CDC953B11D9CD8",
+      "CLAIM:F5A4AF8DB1D1B16C0461D271"
+    ],
+    "condition_refs": [
+      "CONDITION:B7E8704DAA3B778DAEB6E764"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "cve_id": "CVE-2026-42946",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C4E0E0BBC995CB3E5D4A1090",
+      "PACKAGE:F09145BC65980E0F35AD5BC9",
+      "PACKAGE:C0314C7D64368F2B53440851",
+      "PACKAGE:4E5E41BFFE3408DA098DE1D1"
+    ],
+    "distribution_status": [
+      "PACKAGE:C4E0E0BBC995CB3E5D4A1090",
+      "PACKAGE:F09145BC65980E0F35AD5BC9",
+      "PACKAGE:C0314C7D64368F2B53440851",
+      "PACKAGE:4E5E41BFFE3408DA098DE1D1"
+    ],
+    "documented_configuration_context": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-42946 ghi nhận: Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module. Phạm vi upstream: 0.8.42-1.30.0. Bản sửa được công bố: 1.31.0+, 1.30.1+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-42946",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-05-13T16:06:56.898000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-42946",
+    "normal_component_behavior": "Chuyển tiếp request đến SCGI server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\n\nChuyển tiếp request đến uwsgi server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-05-13T14:12:44.697000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C5D31B36B8A340CD65C3BAC1"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SCGI-MODULE",
+      "MODULE:NGX-HTTP-UWSGI-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-789",
+      "WEAKNESS:CWE-823"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module.\n\nCWE-789 — Excessive Memory Allocation: Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào.\n\nCWE-823 — Out-of-range Pointer Offset: Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Kích thước allocation phải được kiểm tra theo giới hạn và khả năng xử lý.\nPhép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được sở hữu.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:2D21831880960524DA5DFCFC",
+      "SEVERITY:30F54E43C50BA9EE988A4ADF",
+      "SEVERITY:35097FD6DEE622F88AF40103",
+      "SEVERITY:44399BCF51B40F4A19210649",
+      "SEVERITY:52D367D08C3DD50FFFE5DBEB"
+    ],
+    "source_refs": [
+      "EVIDENCE:1C43E772F27127F2E496D09C",
+      "EVIDENCE:2532452C6D671C3F54F43C7D",
+      "EVIDENCE:3EFC2338173D38F29F1B5E2F",
+      "EVIDENCE:5D6E54835E2136719F4BF0EF",
+      "EVIDENCE:B1562C40A51145CCA6BD510D",
+      "EVIDENCE:DE4755FF1EDD61966A8A248D",
+      "EVIDENCE:EBFE74A3AD46F6648BEB0DFC",
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "title": "Buffer overread in the ngx_http_scgi_module and ngx_http_uwsgi_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "upstream_affected_expression": "0.8.42-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:22:05+00:00",
+  "entity_id": "CVE:CVE-2026-42946",
+  "id": "HISTORY:233C5B5702A0099CDCAC02E7"
+}

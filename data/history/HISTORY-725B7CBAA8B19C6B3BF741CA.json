@@ -1,0 +1,302 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow when using alias with rewrite",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:D2BB600C29BEE99C913C7776"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:04137BEF0009E91FC37AFB35",
+      "CLAIM:08131952D93BA07A778471FF",
+      "CLAIM:1FE6E1D1ECADC5520E9CB42D",
+      "CLAIM:333F6465B82AFEE41F000EE5",
+      "CLAIM:34B7C575B6543AF4B8A93ED0",
+      "CLAIM:37C47D84CF0D3690B5E544A5",
+      "CLAIM:3CEC4684A139B08949D667B7",
+      "CLAIM:47621DBFBE46E6DAD3EDAFA5",
+      "CLAIM:4CF6DE0B8B92EA5CFB57DB5A",
+      "CLAIM:5F7C5F3EE67F78F0C2F8921D",
+      "CLAIM:6DACA9F6E160BB49317CC89E",
+      "CLAIM:7686C3840C39C27A9B217D66",
+      "CLAIM:789C62FEECEF62B86D437591",
+      "CLAIM:7F937C2FB2B7928CAD1EBEBE",
+      "CLAIM:821E45247657A5C34257B35B",
+      "CLAIM:8CA20F44EE65D7C3AF660046",
+      "CLAIM:92FE886F199CA5853B0F32E3",
+      "CLAIM:A0E4D9CA969077FC61AE155E",
+      "CLAIM:A45A73BAF40D582AF21DE7D7",
+      "CLAIM:B19763D34426B395FDCAFD7B",
+      "CLAIM:B6A97B50E185734F89F20407",
+      "CLAIM:BFA1B3C5BA60CC67D05CB8A3",
+      "CLAIM:C9B6FA70642D83FCD92EA01D",
+      "CLAIM:CF1F6F34CDFB31C7DC4B18C2",
+      "CLAIM:DBF94884E9416DE6A1743647",
+      "CLAIM:F2FDA313DE18026EDED0A391"
+    ],
+    "condition_refs": [
+      "CONDITION:1464B09CB03606E1763B1140"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "cve_id": "CVE-2026-15176",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:1871E92C1C6E6D687807EFFC",
+      "PACKAGE:3A6BA4F48A8905E546107228",
+      "PACKAGE:BB7F076B9544EB5CB2764430"
+    ],
+    "distribution_status": [
+      "PACKAGE:1871E92C1C6E6D687807EFFC",
+      "PACKAGE:3A6BA4F48A8905E546107228",
+      "PACKAGE:BB7F076B9544EB5CB2764430"
+    ],
+    "documented_configuration_context": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-15176 ghi nhận: Buffer overflow when using alias with rewrite. Phạm vi upstream: 0.1.29-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-15176",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-15T10:31:15.809000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-15176",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:26.374000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:ECC5C83E74A8218CADC64610"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overflow when using alias with rewrite.\n\nCWE-122 — Heap-based Buffer Overflow: Ghi vượt buffer được cấp phát trên heap.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở hữu.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:02EDD78A83CB88747CB8350A",
+      "SEVERITY:3F0268372F5C246FAC4BB61D",
+      "SEVERITY:59B366B140C6FF22DF43C02A",
+      "SEVERITY:B06765CBD7E16C3321A3E023",
+      "SEVERITY:B960C8946DCA4F2BB6416987"
+    ],
+    "source_refs": [
+      "EVIDENCE:0CCC16DDE68A1713FAED2329",
+      "EVIDENCE:1B0139E19B8B90DB359F998D",
+      "EVIDENCE:3E9C443AD39E7D09329FCE25",
+      "EVIDENCE:54767638C2D4C6C69DDCDC11",
+      "EVIDENCE:68E2496B00A2AAA6C860517F",
+      "EVIDENCE:A2D9EB6612FDF3E660D9122D",
+      "EVIDENCE:B91587FE936225A889D5B550",
+      "EVIDENCE:EEC3FBA90740148A47AD169F"
+    ],
+    "title": "Buffer overflow when using alias with rewrite",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "upstream_affected_expression": "0.1.29-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow when using alias with rewrite",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:D2BB600C29BEE99C913C7776"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:04137BEF0009E91FC37AFB35",
+      "CLAIM:08131952D93BA07A778471FF",
+      "CLAIM:1FE6E1D1ECADC5520E9CB42D",
+      "CLAIM:333F6465B82AFEE41F000EE5",
+      "CLAIM:34B7C575B6543AF4B8A93ED0",
+      "CLAIM:37C47D84CF0D3690B5E544A5",
+      "CLAIM:3CEC4684A139B08949D667B7",
+      "CLAIM:47621DBFBE46E6DAD3EDAFA5",
+      "CLAIM:4CF6DE0B8B92EA5CFB57DB5A",
+      "CLAIM:5F7C5F3EE67F78F0C2F8921D",
+      "CLAIM:6DACA9F6E160BB49317CC89E",
+      "CLAIM:7686C3840C39C27A9B217D66",
+      "CLAIM:789C62FEECEF62B86D437591",
+      "CLAIM:7F937C2FB2B7928CAD1EBEBE",
+      "CLAIM:821E45247657A5C34257B35B",
+      "CLAIM:8CA20F44EE65D7C3AF660046",
+      "CLAIM:92FE886F199CA5853B0F32E3",
+      "CLAIM:A0E4D9CA969077FC61AE155E",
+      "CLAIM:A45A73BAF40D582AF21DE7D7",
+      "CLAIM:B19763D34426B395FDCAFD7B",
+      "CLAIM:B6A97B50E185734F89F20407",
+      "CLAIM:BFA1B3C5BA60CC67D05CB8A3",
+      "CLAIM:C9B6FA70642D83FCD92EA01D",
+      "CLAIM:CF1F6F34CDFB31C7DC4B18C2",
+      "CLAIM:DBF94884E9416DE6A1743647",
+      "CLAIM:F2FDA313DE18026EDED0A391"
+    ],
+    "condition_refs": [
+      "CONDITION:1464B09CB03606E1763B1140"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:21+00:00",
+    "cve_id": "CVE-2026-15176",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:1871E92C1C6E6D687807EFFC",
+      "PACKAGE:3A6BA4F48A8905E546107228",
+      "PACKAGE:BB7F076B9544EB5CB2764430"
+    ],
+    "distribution_status": [
+      "PACKAGE:1871E92C1C6E6D687807EFFC",
+      "PACKAGE:3A6BA4F48A8905E546107228",
+      "PACKAGE:BB7F076B9544EB5CB2764430"
+    ],
+    "documented_configuration_context": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-15176 ghi nhận: Buffer overflow when using alias with rewrite. Phạm vi upstream: 0.1.29-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-15176",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-15T10:31:15.809000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-15176",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:26.374000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:ECC5C83E74A8218CADC64610"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overflow when using alias with rewrite.\n\nCWE-122 — Heap-based Buffer Overflow: Ghi vượt buffer được cấp phát trên heap.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Allocation phải đủ kích thước; mọi offset ghi nằm trong vùng sở hữu.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:02EDD78A83CB88747CB8350A",
+      "SEVERITY:3F0268372F5C246FAC4BB61D",
+      "SEVERITY:59B366B140C6FF22DF43C02A",
+      "SEVERITY:B06765CBD7E16C3321A3E023",
+      "SEVERITY:B960C8946DCA4F2BB6416987"
+    ],
+    "source_refs": [
+      "EVIDENCE:0CCC16DDE68A1713FAED2329",
+      "EVIDENCE:1B0139E19B8B90DB359F998D",
+      "EVIDENCE:3E9C443AD39E7D09329FCE25",
+      "EVIDENCE:54767638C2D4C6C69DDCDC11",
+      "EVIDENCE:68E2496B00A2AAA6C860517F",
+      "EVIDENCE:A2D9EB6612FDF3E660D9122D",
+      "EVIDENCE:B91587FE936225A889D5B550",
+      "EVIDENCE:EEC3FBA90740148A47AD169F"
+    ],
+    "title": "Buffer overflow when using alias with rewrite",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:12+00:00",
+    "upstream_affected_expression": "0.1.29-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CVE:CVE-2026-15176",
+  "id": "HISTORY:725B7CBAA8B19C6B3BF741CA"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:D8D5155D7BE616DEBF9B67A8",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "claim_value": "\"HTTP upgrade ↔ kênh dài hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:9F3C63782B28B4BF08E2AD36: Protocol overview and state machine; topic=PROTOCOL:WEBSOCKET",
+    "evidence_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:WEBSOCKET: security_boundary",
+    "observation_key": "OBSERVATION:35B4FCB4BADB5BAA5C67F0D8",
+    "observed_at": "2026-11-25T02:44:23+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "PROTOCOL:WEBSOCKET",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:24+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T04:12:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "claim_value": "\"HTTP upgrade ↔ kênh dài hạn.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+    "name": "PROTOCOL:WEBSOCKET: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9F3C63782B28B4BF08E2AD36"
+    ],
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:32+00:00",
+  "entity_id": "CLAIM:2E46A2CF3B7CC9814AE10D37",
+  "id": "HISTORY:FD58EB695E6A2F7BD54DFCF5"
+}

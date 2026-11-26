@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "8f741316c7d1c7f926bebd971695a270853f5eb55fb19c0c727ebe3dbd0897b9",
+    "created_at": "2026-11-25T02:26:26+00:00",
+    "description": "Mô tả và điều kiện do CNA công bố.",
+    "document_title": "CVE-2024-35200",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+    "id": "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+    "local_snapshot_path": "data/raw/cve/snapshots/8f741316c7d1c7f926bebd971695a270853f5eb55fb19c0c727ebe3dbd0897b9.json",
+    "name": "CVE-2024-35200",
+    "paraphrase": "Mô tả và điều kiện do CNA công bố.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:26:24+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/descriptions",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/35xxx/CVE-2024-35200.json",
+    "updated_at": "2026-11-25T02:26:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:26+00:00",
+  "entity_id": "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+  "id": "HISTORY:CF6DB8965DB5C27E41FD469A"
+}

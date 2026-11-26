@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "claim_value": "\"Danh tính certificate ↔ quyết định authorization ứng dụng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "id": "CLAIM:7F5DB59512C07F96D864DEFA",
+    "name": "PROTOCOL:MTLS: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:12CE03DF5B6F2AB898D02BFB"
+    ],
+    "subject_entity_id": "PROTOCOL:MTLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:7F5DB59512C07F96D864DEFA",
+  "id": "HISTORY:B3AAB74B531858EB7202238B"
+}

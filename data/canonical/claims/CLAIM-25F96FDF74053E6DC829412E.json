@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:EE59E8A01340457029B277CF",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:25F96FDF74053E6DC829412E",
+  "claim_value": "\"Hello!\\n\\nFour security issues were identified in nginx HTTP/3 implementation, which\\nmight allow an attacker that uses a specially crafted QUIC session to cause\\na worker process crash (CVE-2024-31079, CVE-2024-32760, CVE-2024-35200),\\nworker process memory disclosure on systems with MTU larger than 4096\\nbytes (CVE-2024-34161), or might have potential other impact (CVE-2024-31079,\\nCVE-2024-32760).\\n\\nThe issues affect nginx compiled with the experimental ngx_http_v3_module\\n(not compiled by default) if the \\\"quic\\\" option of the \\\"listen\\\" directive\\nis used in a configuration file.\\n\\nThe issues affect nginx 1.25.0-1.25.5, 1.26.0.\\nThe issues are fixed in nginx 1.27.0, 1.26.1.\\n\\nThanks to Nils Bars of CISPA.\\n\\n\\n-- \\nSergey Kandaurov\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:40:18+00:00",
+  "description": "vendor_advisory_statement",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:ADE803DD55AF1C4D6A59D83F: advisory body",
+  "evidence_refs": [
+    "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:25F96FDF74053E6DC829412E",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2024-32760: vendor_advisory_statement",
+  "observation_key": "OBSERVATION:3D3B9DD926E892991F1CA636",
+  "observed_at": "2026-11-25T02:40:18+00:00",
+  "predicate": "vendor_advisory_statement",
+  "product_scope": "CVE:CVE-2024-32760",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:26:15+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:ADE803DD55AF1C4D6A59D83F"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2024-32760",
+  "updated_at": "2026-11-25T04:12:31+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

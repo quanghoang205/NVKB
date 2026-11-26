@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4C999DAB956AFD156F83F74D",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:1A0D4A88DE4CD986BCC21E8D",
+    "claim_value": "\"Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:933B8CBD189D3FD36D12481D: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1A0D4A88DE4CD986BCC21E8D",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:TLS: security_boundary",
+    "observation_key": "OBSERVATION:AC44B807761B2DD0EA8F8F1B",
+    "observed_at": "2026-11-25T02:32:22+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "PROTOCOL:TLS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:22+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:12:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:1A0D4A88DE4CD986BCC21E8D",
+    "claim_value": "\"Kênh mạng ↔ danh tính được chứng chỉ/chính sách xác nhận.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:22+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "id": "CLAIM:1A0D4A88DE4CD986BCC21E8D",
+    "name": "PROTOCOL:TLS: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:933B8CBD189D3FD36D12481D"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:32:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:30+00:00",
+  "entity_id": "CLAIM:1A0D4A88DE4CD986BCC21E8D",
+  "id": "HISTORY:4E64635EC72B6EB75E6F4777"
+}

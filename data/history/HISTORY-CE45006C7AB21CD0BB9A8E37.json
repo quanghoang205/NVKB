@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "0e2efd06d446ad31b13fbed8b46bcfc7c837f5389cff49f436a09322fd06c36e",
+    "created_at": "2026-11-25T02:27:37+00:00",
+    "description": "Debian unstable: fixed_version=1.28.3-1, status=fixed.",
+    "document_title": "CVE-2026-27784",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DE9F7EF864E1B5650BF6CD45",
+    "id": "EVIDENCE:DE9F7EF864E1B5650BF6CD45",
+    "local_snapshot_path": "data/raw/distribution/snapshots/0e2efd06d446ad31b13fbed8b46bcfc7c837f5389cff49f436a09322fd06c36e.html",
+    "name": "CVE-2026-27784",
+    "paraphrase": "Debian unstable: fixed_version=1.28.3-1, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:36+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27784",
+    "updated_at": "2026-11-25T02:27:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:37+00:00",
+  "entity_id": "EVIDENCE:DE9F7EF864E1B5650BF6CD45",
+  "id": "HISTORY:CE45006C7AB21CD0BB9A8E37"
+}

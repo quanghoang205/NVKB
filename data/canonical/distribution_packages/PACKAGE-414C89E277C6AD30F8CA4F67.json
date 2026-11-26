@@ -1,0 +1,24 @@
+{
+  "claim_refs": [
+    "CLAIM:8B29C9B068D1CBC8DF724743"
+  ],
+  "created_at": "2026-11-25T02:27:51+00:00",
+  "cve_ref": "CVE:CVE-2026-40460",
+  "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+  "distribution": "debian",
+  "ecosystem": "debian",
+  "entity_type": "DistributionPackage",
+  "fixed_version": "",
+  "id": "PACKAGE:414C89E277C6AD30F8CA4F67",
+  "name": "nginx / Debian bookworm / CVE-2026-40460",
+  "package_name": "nginx",
+  "patch_status": "not-affected",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "release": "bookworm",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:41AC0AB033ADC1B3A9C87DE7"
+  ],
+  "updated_at": "2026-11-25T04:13:04+00:00",
+  "verification_status": "VERIFIED"
+}

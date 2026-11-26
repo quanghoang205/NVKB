@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:56+00:00",
+  "content_hash": "c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac75-82d\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:41 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/c73cbdefbdb78c51078691979ac2d7d9e72d446ce1e782dce9179b4b112f2078.html",
+  "retrieved_at": "2026-11-25T02:32:56+00:00",
+  "source_url": "https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html"
+}

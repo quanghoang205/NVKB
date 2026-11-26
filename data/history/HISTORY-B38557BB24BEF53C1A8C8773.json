@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:B32675F0D0CCAE1FCA553547",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:49E25C579D0B32F4B5D8E175",
+    "claim_value": "\"## Serialization và identity\\n\\nMetadata có thể đi qua nhiều giao thức: mail, HTTP authentication, resolver và upstream mail. Diễn giải phòng vệ: dữ liệu ở một miền không được đổi thành cú pháp điều khiển ở miền khác khi serialize. DNS host name là dữ liệu đầu vào, không có quyền bổ sung header. Authentication server và upstream server là hai vai trò; thông tin đi tới auth server không tự chứng minh client nhận lại được nó.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:16:30+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B2BE18E50D92C6087EA91A4A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:49E25C579D0B32F4B5D8E175",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE: v1.3:knowledge:Serialization và identity",
+    "observed_at": "2026-11-25T05:16:30+00:00",
+    "predicate": "v1.3:knowledge:Serialization và identity",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:B2BE18E50D92C6087EA91A4A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+    "updated_at": "2026-11-25T05:16:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:16:30+00:00",
+  "entity_id": "CLAIM:49E25C579D0B32F4B5D8E175",
+  "id": "HISTORY:B38557BB24BEF53C1A8C8773"
+}

@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:4F0B44496D4D6371ED9E249E"
+    ],
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "description": "CVE:CVE-2026-123640 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:138F84E89E31BEDE54FDF282",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:87D9A7069F362A007391E943"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "REL:138F84E89E31BEDE54FDF282",
+  "id": "HISTORY:FBE0C1833CE6CF0FB5E2549E"
+}

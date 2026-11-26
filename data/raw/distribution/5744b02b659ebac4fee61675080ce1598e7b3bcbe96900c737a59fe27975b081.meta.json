@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:35+00:00",
+  "content_hash": "3c6eaefc37b94d7f69da2f3b16a42e96a04dabeb358eaedd5bbc36f31f1d0532",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/3c6eaefc37b94d7f69da2f3b16a42e96a04dabeb358eaedd5bbc36f31f1d0532.html",
+  "retrieved_at": "2026-11-25T02:26:35+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2025-53859"
+}

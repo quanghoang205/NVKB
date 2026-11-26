@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "HTTP upgrade ↔ kênh dài hạn.",
+    "claim_refs": [
+      "CLAIM:A1CFF79478E3E2B71047C627",
+      "CLAIM:606C256C3B5A88670CAD5B70",
+      "CLAIM:E9A57BA46B85316ECFFC5AAB",
+      "CLAIM:AAA418135FBC86DC85001541",
+      "CLAIM:072740B5F6557170D2A7A933",
+      "CLAIM:DCD22049AC5D5D96AE3EB55F",
+      "CLAIM:FD8545D0A542FC631B7C0C05",
+      "CLAIM:6F0E507BFA0575035C3D5173"
+    ],
+    "created_at": "2026-11-25T02:32:24+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Giao thức thông điệp hai chiều sau handshake.",
+    "description": "Giao thức thông điệp hai chiều sau handshake.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:WEBSOCKET",
+    "learning_objectives": [
+      "Giải thích WEBSOCKET bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "WEBSOCKET",
+    "normal_behavior": "Handshake HTTP thiết lập kênh, sau đó trao đổi frame với trạng thái close và message fragmentation.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Proxy phải xử lý header hop-by-hop và timeout phù hợp với kênh nâng cấp.",
+    "schema_version": "1.0.0",
+    "security_boundary": "HTTP upgrade ↔ kênh dài hạn.",
+    "source_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "updated_at": "2026-11-25T02:32:24+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:24+00:00",
+  "entity_id": "PROTOCOL:WEBSOCKET",
+  "id": "HISTORY:B71E8E768EDAC22C5D2A7D7E"
+}

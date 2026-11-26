@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:B34098A5507BB6CF14DAEA73",
+    "claim_value": "\"Handshake thỏa thuận tham số mật mã và xác thực; khóa phiên bảo vệ record. Session resumption dùng lại ngữ cảnh theo điều kiện giao thức.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "id": "CLAIM:B34098A5507BB6CF14DAEA73",
+    "name": "PROTOCOL:TLS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:066B773A5331E2B1080FE1E3"
+    ],
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:B34098A5507BB6CF14DAEA73",
+  "id": "HISTORY:0B17BD5D95FA304C4B89E490"
+}

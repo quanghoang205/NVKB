@@ -1,0 +1,74 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:279B707270D36273101A90C0"
+    ],
+    "created_at": "2026-11-25T02:33:39+00:00",
+    "description": "CVE:CVE-2024-35200 related_protocols PROTOCOL:QUIC",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:0CB9BDB742B1AD4B14CE7178",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:QUIC",
+    "predicate": "related_protocols",
+    "rationale": "Legacy association: Protocol context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Protocol context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T04:13:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:279B707270D36273101A90C0"
+    ],
+    "created_at": "2026-11-25T02:33:39+00:00",
+    "description": "CVE:CVE-2024-35200 related_protocols PROTOCOL:QUIC",
+    "entity_type": "Relationship",
+    "id": "REL:0CB9BDB742B1AD4B14CE7178",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:QUIC",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:33:39+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:06+00:00",
+  "entity_id": "REL:0CB9BDB742B1AD4B14CE7178",
+  "id": "HISTORY:96D272A10FBA9D7B20702DDC"
+}

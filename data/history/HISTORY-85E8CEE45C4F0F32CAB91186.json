@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:62A1D601B085DCE8196621B8",
+    "authority": "CVE Program / CNA",
+    "authority_scope": "CVE Program / CNA",
+    "claim_id": "CLAIM:3910B19C2F694F1AAA1E0840",
+    "claim_value": "\"When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\\n\\nImpact:\\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:38+00:00",
+    "description": "vendor_documented_conditions",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:2C74501240903031F91BB707: /containers/cna/descriptions",
+    "evidence_refs": [
+      "EVIDENCE:2C74501240903031F91BB707"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3910B19C2F694F1AAA1E0840",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-113425: vendor_documented_conditions",
+    "observation_key": "OBSERVATION:8EAC3BCD6805700A67A2A700",
+    "observed_at": "2026-11-25T02:26:38+00:00",
+    "predicate": "vendor_documented_conditions",
+    "product_scope": "CVE:CVE-2026-113425",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:26:35+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program / CNA",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2C74501240903031F91BB707"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-113425",
+    "updated_at": "2026-11-25T04:12:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:3910B19C2F694F1AAA1E0840",
+    "claim_value": "\"When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\\n\\nImpact:\\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:38+00:00",
+    "description": "vendor_documented_conditions",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2C74501240903031F91BB707"
+    ],
+    "id": "CLAIM:3910B19C2F694F1AAA1E0840",
+    "name": "CVE:CVE-2026-113425: vendor_documented_conditions",
+    "predicate": "vendor_documented_conditions",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:2C74501240903031F91BB707"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-113425",
+    "updated_at": "2026-11-25T02:26:38+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:33+00:00",
+  "entity_id": "CLAIM:3910B19C2F694F1AAA1E0840",
+  "id": "HISTORY:85E8CEE45C4F0F32CAB91186"
+}

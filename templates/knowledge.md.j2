@@ -1,0 +1,52 @@
+{{ frontmatter }}
+# {{ item.name }}
+
+{{ item.description }}
+
+{% if item.get('learning_objectives') %}## Mục tiêu đo được
+
+{% for objective in item.learning_objectives %}- {{ objective }}
+{% endfor %}
+{% endif %}
+{% if item.get('prerequisites') %}Kiến thức tiên quyết: {{ links(item.prerequisites) }}.
+{% endif %}
+{% if item.get('article_body') %}{{ item.article_body }}
+{% else %}
+{% for field, title in sections %}{% if item.get(field) %}## {{ title }}
+
+{{ item[field] }}
+
+{% endif %}{% endfor %}
+{% endif %}
+{% if item.get('diagram') %}## Sơ đồ cơ chế
+
+```mermaid
+{{ item.diagram }}
+```
+
+Sơ đồ là diễn giải sư phạm trong phạm vi bài; không phải sơ đồ mã nguồn đầy đủ.
+{% endif %}
+{% if item.get('assessment') %}## Tự đánh giá
+
+{{ item.assessment }}
+
+## Đáp án và giải thích
+
+{{ item.answer_explanations }}
+{% endif %}
+{% if item.get('related_knowledge') %}## Liên hệ và bước tiếp theo
+
+{{ links(item.related_knowledge) }}
+{% endif %}
+{% include 'relationships.md.j2' %}
+{% include 'claim_trace.md.j2' %}
+
+## Phạm vi kiểm chứng
+
+{{ links(item.source_refs) }}
+
+{{ item.get('verification_limitations', 'Bản biên soạn cần semantic review; nhãn legacy không chứng nhận factual accuracy.') }}
+
+{% if item.get('limitations') %}{{ item.limitations }}{% endif %}
+
+[[Learning-Library|Learning Library]] · [[Research-Library|Research Library]]

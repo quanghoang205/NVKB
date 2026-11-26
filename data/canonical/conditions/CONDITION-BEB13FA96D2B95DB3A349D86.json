@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:3910B19C2F694F1AAA1E0840"
+  ],
+  "created_at": "2026-11-25T02:26:38+00:00",
+  "description": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:BEB13FA96D2B95DB3A349D86",
+  "name": "Điều kiện được công bố — CVE-2026-113425",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:2C74501240903031F91BB707"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

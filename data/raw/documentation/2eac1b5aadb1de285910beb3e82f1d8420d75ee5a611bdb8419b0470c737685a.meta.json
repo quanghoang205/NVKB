@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:54+00:00",
+  "content_hash": "b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac73-c97\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:39 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/b89e9dfcc222bd42cf8ce646ee9f00506a84f472ef9fae3ea61e4036b2b0b5e5.html",
+  "retrieved_at": "2026-11-25T02:32:54+00:00",
+  "source_url": "https://nginx.org/en/docs/mail/ngx_mail_auth_http_module.html"
+}

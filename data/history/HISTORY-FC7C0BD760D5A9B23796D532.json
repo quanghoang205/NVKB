@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:340BA06E27E6CA6AFDF3493B",
+    "claim_value": "\"Các trường bắt buộc được khởi tạo trước khi đối tượng được công bố cho callback.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:02+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "id": "CLAIM:340BA06E27E6CA6AFDF3493B",
+    "name": "WEAKNESS:CWE-908: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-908",
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "CLAIM:340BA06E27E6CA6AFDF3493B",
+  "id": "HISTORY:FC7C0BD760D5A9B23796D532"
+}

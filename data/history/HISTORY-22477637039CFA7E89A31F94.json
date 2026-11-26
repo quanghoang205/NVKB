@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "38f7c830dd0a16edb57732c9221fcb0a02b9115484f96e6b08d45abc96fd2a5a",
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "description": "Thông báo chi tiết liên kết từ danh sách advisory.",
+    "document_title": "CVE-2024-24989",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:0BF4E4CC924225F0C7F5F039",
+    "id": "EVIDENCE:0BF4E4CC924225F0C7F5F039",
+    "local_snapshot_path": "data/raw/nginx/snapshots/38f7c830dd0a16edb57732c9221fcb0a02b9115484f96e6b08d45abc96fd2a5a.html",
+    "name": "CVE-2024-24989",
+    "paraphrase": "Thông báo chi tiết liên kết từ danh sách advisory.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:26:07+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "advisory body",
+    "source_refs": [],
+    "source_type": "advisory",
+    "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/NW6MNW34VZ6HDIHH5YFBIJYZJN7FGNAV.html",
+    "updated_at": "2026-11-25T02:26:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:07+00:00",
+  "entity_id": "EVIDENCE:0BF4E4CC924225F0C7F5F039",
+  "id": "HISTORY:22477637039CFA7E89A31F94"
+}

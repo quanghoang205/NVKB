@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:61E01C8D17AE81AA667FE32D",
+    "claim_value": "\"WEAKNESS:CWE-787\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "id": "CLAIM:61E01C8D17AE81AA667FE32D",
+    "name": "CVE:CVE-2026-123007: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F03600C558EF2F690E6E4A14"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:59+00:00",
+  "entity_id": "CLAIM:61E01C8D17AE81AA667FE32D",
+  "id": "HISTORY:B5021F054C58F832E7BC586A"
+}

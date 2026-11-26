@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A7E109CB70CB4CC8A5D9E087",
+    "claim_value": "\"Sai phân quyền; cấu hình không nhất quán.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "id": "CLAIM:A7E109CB70CB4CC8A5D9E087",
+    "name": "COMPONENT:MASTER-PROCESS: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:32:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:03+00:00",
+  "entity_id": "CLAIM:A7E109CB70CB4CC8A5D9E087",
+  "id": "HISTORY:EC612C10FEC935D084E8E47C"
+}

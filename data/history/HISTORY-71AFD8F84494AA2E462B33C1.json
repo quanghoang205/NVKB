@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:2B6DC2A571BE2A5BFA076C6C"
+    ],
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "description": "CVE:CVE-2026-42946 classified_as WEAKNESS:CWE-789",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:D42918697A5C0E56A25C8F4A",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-789",
+    "predicate": "classified_as",
+    "rationale": "Legacy association: Published weakness classification. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Published weakness classification",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T04:13:09+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:2B6DC2A571BE2A5BFA076C6C"
+    ],
+    "created_at": "2026-11-25T02:28:23+00:00",
+    "description": "CVE:CVE-2026-42946 classified_as WEAKNESS:CWE-789",
+    "entity_type": "Relationship",
+    "id": "REL:D42918697A5C0E56A25C8F4A",
+    "name": "classified_as",
+    "object_entity_id": "WEAKNESS:CWE-789",
+    "predicate": "classified_as",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:ECF1840A41504F1DC886C7C7"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42946",
+    "updated_at": "2026-11-25T02:28:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:09+00:00",
+  "entity_id": "REL:D42918697A5C0E56A25C8F4A",
+  "id": "HISTORY:71AFD8F84494AA2E462B33C1"
+}

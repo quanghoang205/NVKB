@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2395D118C53BEA095A623CF7",
+    "claim_value": "\"HTTP/3 address spoofing\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1FEEF31A592F0B183FF80FED"
+    ],
+    "id": "CLAIM:2395D118C53BEA095A623CF7",
+    "name": "CVE:CVE-2026-40460: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1FEEF31A592F0B183FF80FED"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40460",
+    "updated_at": "2026-11-25T02:27:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:51+00:00",
+  "entity_id": "CLAIM:2395D118C53BEA095A623CF7",
+  "id": "HISTORY:D5CAF8696D85FA50572659B3"
+}

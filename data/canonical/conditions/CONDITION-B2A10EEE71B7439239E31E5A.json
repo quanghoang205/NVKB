@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:DBB7983899F89C70F5642272"
+  ],
+  "created_at": "2026-11-25T02:28:10+00:00",
+  "description": "When NGINX Open Source is configured to proxy HTTP/2 traffic by setting proxy_http_version to 2, and also uses proxy_set_body, an attacker may be able to inject frame headers and payload bytes to the upstream peer.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:B2A10EEE71B7439239E31E5A",
+  "name": "Điều kiện được công bố — CVE-2026-42926",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:55DCAE249330189B1FE59BE1"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

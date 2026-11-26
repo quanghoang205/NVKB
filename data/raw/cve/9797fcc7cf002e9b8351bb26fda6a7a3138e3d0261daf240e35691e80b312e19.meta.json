@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:50+00:00",
+  "content_hash": "addbb601be3bbec5ba07a839f260a419229c1b5d8c9886c2d1e753140cc65ed7",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"1c0f9718268aeb6a7ee2ce093ebb2c0f0e36a71570c38b9909a144370f22d22b\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/addbb601be3bbec5ba07a839f260a419229c1b5d8c9886c2d1e753140cc65ed7.json",
+  "retrieved_at": "2026-11-25T02:25:50+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2014/0xxx/CVE-2014-0133.json"
+}

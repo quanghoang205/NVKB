@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CF89298AFFA4507E084632EE",
+    "claim_value": "\"Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8C4CFCAEA38B3A1A6F92A183"
+    ],
+    "id": "CLAIM:CF89298AFFA4507E084632EE",
+    "name": "MODULE:NGX-HTTP-REWRITE-MODULE: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8C4CFCAEA38B3A1A6F92A183"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:CF89298AFFA4507E084632EE",
+  "id": "HISTORY:6AD4E795B75E9B754148476C"
+}

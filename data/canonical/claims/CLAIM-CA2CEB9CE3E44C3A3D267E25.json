@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:481B182C24A9A9A29E93E780",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:CA2CEB9CE3E44C3A3D267E25",
+  "claim_value": "\"When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:21:55+00:00",
+  "description": "documented_configuration_context",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:AF1B942825307CEF770EBBF0: /containers/cna/descriptions",
+  "evidence_refs": [
+    "EVIDENCE:AF1B942825307CEF770EBBF0"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:CA2CEB9CE3E44C3A3D267E25",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2025-23419: documented_configuration_context",
+  "observation_key": "OBSERVATION:9A3205DE10818CC672B8CBF1",
+  "observed_at": "2026-11-25T02:21:55+00:00",
+  "predicate": "documented_configuration_context",
+  "product_scope": "CVE:CVE-2025-23419",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:21:55+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:AF1B942825307CEF770EBBF0"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2025-23419",
+  "updated_at": "2026-11-25T04:12:50+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

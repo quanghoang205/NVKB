@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:BE57064B7403B7017CBD5E71",
+    "claim_value": "\"Liên kết identity với bằng chứng mật mã/chính sách và kiểm tra trust boundary.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:58+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "id": "CLAIM:BE57064B7403B7017CBD5E71",
+    "name": "WEAKNESS:CWE-290: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-290",
+    "updated_at": "2026-11-25T02:48:58+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:58+00:00",
+  "entity_id": "CLAIM:BE57064B7403B7017CBD5E71",
+  "id": "HISTORY:E286860A3E54C9AF7E04CABF"
+}

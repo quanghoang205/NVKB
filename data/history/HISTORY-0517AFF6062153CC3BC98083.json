@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:646B7125B869C8352DC23419",
+      "CLAIM:B95FA2EE52EDBB969E79EDC8",
+      "CLAIM:39DDDAB7BC6EB4F1BCE92F2E",
+      "CLAIM:3573D0AEF877F69FB403E2A2",
+      "CLAIM:FBAE429C8291A086C61034E2"
+    ],
+    "created_at": "2026-11-25T05:15:07+00:00",
+    "description": "CVE:CVE-2026-120967 learns_from MODULE:NGX-STREAM-SSL-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-120967",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:3A07C73C3DF1E9683267FA82",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "predicate": "learns_from",
+    "rationale": "Đọc Stream TLS — chứng thư, policy và trạng thái OCSP để thảo luận: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Stream TLS — chứng thư, policy và trạng thái OCSP để thảo luận: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:15:07+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD",
+      "EVIDENCE:B48A79C712BFAF1167411EBA"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T05:15:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:07+00:00",
+  "entity_id": "REL:3A07C73C3DF1E9683267FA82",
+  "id": "HISTORY:0517AFF6062153CC3BC98083"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:896C64D525D89052ABCF7C60",
+    "claim_value": "\"Ranh giới mạng giữa proxy và backend.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "id": "CLAIM:896C64D525D89052ABCF7C60",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:896C64D525D89052ABCF7C60",
+  "id": "HISTORY:3E352537468CBC9652A98EC4"
+}

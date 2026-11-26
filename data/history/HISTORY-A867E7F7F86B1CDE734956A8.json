@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "claim_refs": [
+      "CLAIM:73ED7F07DDF322A134F85FBB",
+      "CLAIM:A6D7DF6A547A0A0C7C1AF903",
+      "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+      "CLAIM:4A559C72CD4F832427FC8DF5",
+      "CLAIM:D7E3B6C42CAC6FDB70D486FE",
+      "CLAIM:C6C868B2105B8D196003BA4E",
+      "CLAIM:8CFDBE1026C57AE9FF84BBFA",
+      "CLAIM:F3F15F5AFB938E1111183512"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "defensive_principles": "Hủy timer/posted event đúng lúc và kiểm tra trạng thái trước khi xử lý callback.",
+    "definition": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "description": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Mất kết nối hoặc lỗi worker.",
+    "id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "learning_objectives": [
+      "Giải thích Connection lifecycle bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Connection lifecycle",
+    "normal_behavior": "Cấu trúc connection lưu socket và event đọc/ghi; close phải phối hợp giải phóng socket, pool và các tham chiếu còn tồn tại.",
+    "related_failure_classes": "Use-after-free; NULL dereference; leak.",
+    "related_knowledge": [],
+    "safety_assumptions": "Mỗi tài nguyên có một chủ sở hữu và thao tác hoàn tất nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "source_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "claim_refs": [
+      "CLAIM:73ED7F07DDF322A134F85FBB",
+      "CLAIM:A6D7DF6A547A0A0C7C1AF903",
+      "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+      "CLAIM:4A559C72CD4F832427FC8DF5",
+      "CLAIM:D7E3B6C42CAC6FDB70D486FE",
+      "CLAIM:C6C868B2105B8D196003BA4E",
+      "CLAIM:8CFDBE1026C57AE9FF84BBFA",
+      "CLAIM:F3F15F5AFB938E1111183512"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "defensive_principles": "Hủy timer/posted event đúng lúc và kiểm tra trạng thái trước khi xử lý callback.",
+    "definition": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "description": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Mất kết nối hoặc lỗi worker.",
+    "id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "learning_objectives": [
+      "Giải thích Connection lifecycle bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Connection lifecycle",
+    "normal_behavior": "Cấu trúc connection lưu socket và event đọc/ghi; close phải phối hợp giải phóng socket, pool và các tham chiếu còn tồn tại.",
+    "related_failure_classes": "Use-after-free; NULL dereference; leak.",
+    "related_knowledge": [],
+    "safety_assumptions": "Mỗi tài nguyên có một chủ sở hữu và thao tác hoàn tất nhất quán.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "source_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "updated_at": "2026-11-25T02:44:14+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+  "id": "HISTORY:A867E7F7F86B1CDE734956A8"
+}

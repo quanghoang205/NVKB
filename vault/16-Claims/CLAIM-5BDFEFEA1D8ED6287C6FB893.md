@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:5BDFEFEA1D8ED6287C6FB893
+title: 'PROTOCOL:HTTP-1.1: architecture_position'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'PROTOCOL:HTTP-1.1: architecture_position'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# PROTOCOL:HTTP-1.1: architecture_position
+
+`CLAIM:5BDFEFEA1D8ED6287C6FB893` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[PROTOCOL-HTTP-1.1|HTTP/1.1]]. Predicate: `architecture_position`.
+
+```json
+"Client ↔ proxy ↔ upstream."
+```
+
+## Nguồn và phạm vi
+
+Authority: IETF / RFC Editor. IETF / RFC Editor
+
+[[EVIDENCE-96FE1EE21A4EF574C0704E19|RFC 9112: HTTP/1.1]]
+
+Locator: EVIDENCE:96FE1EE21A4EF574C0704E19: Protocol overview and state machine; topic=PROTOCOL:HTTP-1.1
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:44:19+00:00. Truy xuất: 2026-11-25T02:32:17+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

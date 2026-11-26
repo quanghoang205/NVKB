@@ -1,0 +1,48 @@
+DEPLOYMENT:REVERSE-PROXY:
+  architecture_position: Worker nằm giữa client connection và upstream connection; master ở đường điều khiển.
+  security_boundary: Tin cậy client→proxy và proxy→ứng dụng phải xác định riêng; process topology không chứng minh tenant isolation.
+  safety_assumptions: Identity được dùng cho policy phải có nguồn sinh và nơi xác minh được xác định.
+COMPONENT:MASTER-PROCESS:
+  architecture_position: Master quản lý cấu hình, worker generations và tín hiệu; worker phục vụ connection.
+  security_boundary: Quyền OS của tiến trình khác policy truy cập ứng dụng; reload không tự là ranh giới tenant.
+  safety_assumptions: Chỉ xác nhận cấu hình có hiệu lực khi có bằng chứng áp dụng và generation tương ứng.
+COMPONENT:EVENT-DRIVEN:
+  architecture_position: Event loop thuộc worker và các tiến trình I/O; dispatcher phối hợp I/O events, timer và posted work.
+  security_boundary: Readiness của kernel không xác minh dữ liệu peer; parser và policy ở lớp xử lý tương ứng.
+  safety_assumptions: Callback chỉ dùng context còn sống và trả quyền cho loop sau lượng công việc có giới hạn phù hợp.
+COMPONENT:CONNECTION-LIFECYCLE:
+  architecture_position: Connection sở hữu ngữ cảnh socket; HTTP request có phase và finalization riêng.
+  security_boundary: Chọn policy và diễn giải input không tự được bảo đảm bởi việc tạo connection/request struct.
+  safety_assumptions: Không dùng state có lifetime request như thể còn sống cho request sau trên cùng connection.
+COMPONENT:MEMORY-POOL:
+  architecture_position: Pool thuộc owner NGINX cụ thể; shared memory là cơ chế riêng với heap/pool cục bộ.
+  security_boundary: Pool là quản lý lifetime, không phải cơ chế kiểm quyền hoặc kiểm giới hạn mọi truy cập bộ nhớ.
+  safety_assumptions: Mọi callback truy cập allocation phải chứng minh allocation/owner còn sống hoặc dùng ownership khác hợp lệ.
+PROTOCOL:TLS:
+  architecture_position: TLS endpoint thực hiện handshake và record protection giữa các peer; ứng dụng xử lý policy tài nguyên.
+  security_boundary: Xác thực peer và bảo vệ kênh không đồng nghĩa authorization nghiệp vụ.
+  safety_assumptions: Bằng chứng xác thực phải gắn đúng peer, transcript/context và policy áp dụng.
+COMPONENT:TLS-SESSION-LIFECYCLE:
+  architecture_position: Resumption state vượt lifetime một connection; handshake mới quyết định chấp nhận PSK/context.
+  security_boundary: Ticket/PSK không tự cấp quyền mọi virtual server hoặc mọi tài nguyên ứng dụng.
+  safety_assumptions: Policy hiện hành phải phù hợp context được chấp nhận; early data cần reasoning replay riêng.
+WEAKNESS:CWE-863:
+  architecture_position: Lớp weakness mô tả quyết định quyền trên subject/action/resource, không chỉ định module gây lỗi.
+  security_boundary: Authorization dùng context identity tin cậy để thực thi đúng policy trên tài nguyên thực tế.
+  safety_assumptions: Kiểm tra vai trò không đủ nếu policy còn yêu cầu kiểm quyền giữa các object cùng vai trò.
+CONTROL:LEAST-PRIVILEGE:
+  architecture_position: Kiểm soát quyền có thể áp dụng ở OS process, proxy hoặc ứng dụng với scope khác nhau.
+  security_boundary: Ranh giới đặc quyền OS khác ranh giới quyền trên object của tenant.
+  safety_assumptions: Invariant phải nêu owner, scope, chuyển trạng thái và bằng chứng kiểm tra; có control không tự chứng minh invariant.
+CONCEPT:ADVISORY:
+  architecture_position: Advisory là artifact tri thức nối authority với product, version scope và remediation.
+  security_boundary: Tách dữ kiện công bố khỏi suy luận curator; integrity của tài liệu khác semantic source support.
+  safety_assumptions: Đọc branch fixes cùng affected expression và giữ UNKNOWN khi nguồn không nêu context.
+CONCEPT:BACKPORT:
+  architecture_position: Distribution source package nối upstream fix với release/revision riêng của distribution.
+  security_boundary: Authority package/release khác authority inventory và attestation runtime.
+  safety_assumptions: Chỉ so version bằng đúng ecosystem sau khi chọn đúng package/release và giữ build provenance.
+CONTROL:PATCH-VERIFICATION:
+  architecture_position: Bước đối chiếu giữa inventory quản trị viên cung cấp với advisory, distribution và nguồn lifecycle/catalogue.
+  security_boundary: Version comparison là suy luận từ dữ liệu khai báo, không là xác minh binary đang chạy.
+  safety_assumptions: Patch, package, lifecycle, KEV và runtime phải được quyết định riêng với freshness và scope rõ.

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:3BFA59A0612B0C464661112B",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:9D145D040B592FBA01A2D841",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:9CB9359531A83E40EF3A2F04: Protocol overview and state machine; topic=PROTOCOL:TCP",
+    "evidence_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9D145D040B592FBA01A2D841",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:TCP: failure_impact",
+    "observation_key": "OBSERVATION:AEDFFFEE99FE85B9035B1DE1",
+    "observed_at": "2026-11-25T02:44:18+00:00",
+    "predicate": "failure_impact",
+    "product_scope": "PROTOCOL:TCP",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:15+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T04:12:45+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:9D145D040B592FBA01A2D841",
+    "claim_value": "\"Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "id": "CLAIM:9D145D040B592FBA01A2D841",
+    "name": "PROTOCOL:TCP: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:45+00:00",
+  "entity_id": "CLAIM:9D145D040B592FBA01A2D841",
+  "id": "HISTORY:B6A4B778A1BB75B1EDE51701"
+}

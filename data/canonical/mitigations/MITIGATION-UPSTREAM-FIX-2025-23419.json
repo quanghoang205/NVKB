@@ -1,0 +1,24 @@
+{
+  "applicable_context": "NGINX OSS và phạm vi CVE-2025-23419.",
+  "claim_refs": [
+    "CLAIM:49A09338163D5DC9406B9EFD"
+  ],
+  "created_at": "2026-11-25T04:21:17+00:00",
+  "definition": "Chọn release chứa bản sửa theo advisory hoặc backport chính thức đúng distribution/release.",
+  "description": "Biện pháp remediation được công bố, không phải workaround chưa có nguồn.",
+  "entity_type": "Mitigation",
+  "id": "MITIGATION:UPSTREAM-FIX-2025-23419",
+  "limitations": "Version comparison không attest binary/process; không mở rộng sang Plus hoặc package tùy biến.",
+  "name": "Cập nhật bản sửa đúng nhánh cho CVE-2025-23419",
+  "related_knowledge": [
+    "CONTROL:PATCH-VERIFICATION",
+    "CONCEPT:BACKPORT"
+  ],
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "updated_at": "2026-11-25T04:21:17+00:00",
+  "verification_limitations": "Advisory version evidence only; runtime and patch signatures not verified.",
+  "verification_status": "INFERRED"
+}

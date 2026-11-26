@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E02F7B4A8ACF72A66BE33AD5",
+    "authority": "f5",
+    "authority_scope": "f5",
+    "claim_id": "CLAIM:C0C25FABCB30CB55F51230F6",
+    "claim_value": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.8, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"CHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "description": "severity:CVE Program:f5:3.1",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:BE5A602C16440B3F29CEBF0C: /containers/cna/metrics",
+    "evidence_refs": [
+      "EVIDENCE:BE5A602C16440B3F29CEBF0C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C0C25FABCB30CB55F51230F6",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42926: severity:CVE Program:f5:3.1",
+    "observation_key": "OBSERVATION:A597F91618B888C3340B7968",
+    "observed_at": "2026-11-25T02:28:10+00:00",
+    "predicate": "severity:CVE Program:f5:3.1",
+    "product_scope": "CVE:CVE-2026-42926",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "f5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:BE5A602C16440B3F29CEBF0C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T04:12:49+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "f5",
+    "claim_id": "CLAIM:C0C25FABCB30CB55F51230F6",
+    "claim_value": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"NONE\", \"baseScore\": 5.8, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"CHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N\", \"version\": \"3.1\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:10+00:00",
+    "description": "severity:CVE Program:f5:3.1",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BE5A602C16440B3F29CEBF0C"
+    ],
+    "id": "CLAIM:C0C25FABCB30CB55F51230F6",
+    "name": "CVE:CVE-2026-42926: severity:CVE Program:f5:3.1",
+    "predicate": "severity:CVE Program:f5:3.1",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BE5A602C16440B3F29CEBF0C"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42926",
+    "updated_at": "2026-11-25T02:28:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:49+00:00",
+  "entity_id": "CLAIM:C0C25FABCB30CB55F51230F6",
+  "id": "HISTORY:7525EE00B356A4EFA2EE3E9F"
+}

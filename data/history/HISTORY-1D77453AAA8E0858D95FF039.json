@@ -1,0 +1,398 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in script evaluation",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DD8D78512362475616659BBC",
+      "RANGE:08A22B536C6A58776E605182"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:057805383BAFA46241C86CF0",
+      "CLAIM:15FBD21069E323DD3228AC4C",
+      "CLAIM:1D23A716C4FF73F258AA569B",
+      "CLAIM:296CC7548558347B38F426F2",
+      "CLAIM:2D1BD4E307CA008F2B6C7B06",
+      "CLAIM:33F17EB1F74A9BABE2D8EAC4",
+      "CLAIM:34C8049B5139DA766A262A1E",
+      "CLAIM:36D38C3C262938CB047E1F58",
+      "CLAIM:36FCC1BA55A902E6B3183F88",
+      "CLAIM:4B0ECD3E36C1DD9DE32CEA28",
+      "CLAIM:4F696898A2BCA0E268DE094C",
+      "CLAIM:5E70648F152777CF32C30B5C",
+      "CLAIM:606FE71DFAE7127E1A0E3594",
+      "CLAIM:740F56853D980DFE6BC120D3",
+      "CLAIM:78D0C2E7686B4A274C3CF5B8",
+      "CLAIM:79057140FE2778ADA0D87E05",
+      "CLAIM:7D8AA08FB328697F22E0859E",
+      "CLAIM:86836340CCBDC066271FF463",
+      "CLAIM:916BD5172FC11D856C94BF60",
+      "CLAIM:9E2173AD3013D49FDAFFB9B1",
+      "CLAIM:AC60EEDF1DE39CDD4A6B3513",
+      "CLAIM:B825F5F97DACC81DA6108044",
+      "CLAIM:BC02D16857454F2B262F0BAB",
+      "CLAIM:C12464677FD4F1E68330547C",
+      "CLAIM:C4410CB172DE534E62F447E4",
+      "CLAIM:C7F16FD64C662FDB3E709572",
+      "CLAIM:D7A0F15AA6BDB74E636988AA",
+      "CLAIM:E62654346F17FEEC255D219E",
+      "CLAIM:F36191BA3261E2260BA57F5F",
+      "CLAIM:F39A882D2A6BB5857F49BD03",
+      "CLAIM:FA44A28ECCF44A87B7BDF96C",
+      "CLAIM:FCB9E9B01264E55152028DF1"
+    ],
+    "condition_refs": [
+      "CONDITION:D3046655EF35C52D94E5367E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Heap overflow có thể restart worker; CNA xác định data-plane issue.",
+    "created_at": "2026-11-25T02:28:46+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-93479",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá các nhánh bị ảnh hưởng và review expression evaluation xuyên phase."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7",
+      "PACKAGE:C75645B16DFDEF4773C1AAAD"
+    ],
+    "distribution_status": [
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7",
+      "PACKAGE:C75645B16DFDEF4773C1AAAD"
+    ],
+    "documented_configuration_context": "Map regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Script evaluation trong root hoặc access-log context có thể gặp heap overflow khi dùng state map/regex.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-93479",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-24T18:26:14.903000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.",
+      "Trả lời có evidence: Vì sao logging vẫn có thể thuộc phạm vi memory-safety review?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-93479",
+    "normal_component_behavior": "Đánh giá biến cho log và đường dẫn phải tôn trọng lifetime/capacity như các phase xử lý khác.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Code execution là khả năng có điều kiện ASLR, chưa được xác minh runtime.",
+    "publication_date": "2026-10-14T14:40:27.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:DF9C9F5C48FFC75860110F6C"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nScript evaluation trong root hoặc access-log context có thể gặp heap overflow khi dùng state map/regex.\n\n## 2. CVE identity và product scope\n\nCVE-2026-93479; published 2026-10-14T14:40:27.107000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-057805383BAFA46241C86CF0|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-MAP-MODULE|ngx_http_map_module]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP variable evaluation tại filesystem-root hoặc logging, không chỉ rewrite URI. [[CLAIM-D7A0F15AA6BDB74E636988AA|Claim / locator]].\n\n## 5. Normal component behavior\n\nĐánh giá biến cho log và đường dẫn phải tôn trọng lifetime/capacity như các phase xử lý khác. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu capture/map ordering và non-cacheable values. Chưa có bằng chứng để tuyên bố đây chỉ là cùng lỗi 42533 chưa sửa. [[CLAIM-4B0ECD3E36C1DD9DE32CEA28|Claim / locator]].\n\n## 7. Relevant security principles\n\nCác phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nMap regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện. [[CLAIM-D7A0F15AA6BDB74E636988AA|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.31.2-1.31.6, 1.30.0-1.30.5; not vulnerable/fixed branches 1.31.7+, 1.30.6+. [[CLAIM-C4410CB172DE534E62F447E4|Claim / locator]].\n\nAdvisory có hai khoảng 1.31.2–1.31.6 và 1.30.0–1.30.5; fix 1.31.7/1.30.6. Không nối hai khoảng thành một khoảng suy đoán. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nHeap overflow có thể restart worker; CNA xác định data-plane issue. [[CLAIM-606FE71DFAE7127E1A0E3594|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCode execution là khả năng có điều kiện ASLR, chưa được xác minh runtime. [[CLAIM-FCB9E9B01264E55152028DF1|Claim / locator]].\n\n## 12. Remediation principles\n\nVá các nhánh bị ảnh hưởng và review expression evaluation xuyên phase. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-C4410CB172DE534E62F447E4|Claim / locator]].\n\n## 14. Patch management considerations\n\nAdvisory có hai khoảng 1.31.2–1.31.6 và 1.30.0–1.30.5; fix 1.31.7/1.30.6. Không nối hai khoảng thành một khoảng suy đoán.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-MAP-MODULE|ngx_http_map_module]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.\n- Trả lời có evidence: Vì sao logging vẫn có thể thuộc phạm vi memory-safety review?\n\n## 17. Discussion questions\n\nVì sao logging vẫn có thể thuộc phạm vi memory-safety review?\n\nGợi ý đáp án: Nó có thể đánh giá biến và tạo buffer, nên cũng có ownership, sizing và state transition.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-057805383BAFA46241C86CF0|CLAIM:057805383BAFA46241C86CF0]]\n- applicability: [[CLAIM-D7A0F15AA6BDB74E636988AA|CLAIM:D7A0F15AA6BDB74E636988AA]]\n- impact: [[CLAIM-606FE71DFAE7127E1A0E3594|CLAIM:606FE71DFAE7127E1A0E3594]]\n- potential: [[CLAIM-FCB9E9B01264E55152028DF1|CLAIM:FCB9E9B01264E55152028DF1]]\n- mechanism: [[CLAIM-4B0ECD3E36C1DD9DE32CEA28|CLAIM:4B0ECD3E36C1DD9DE32CEA28]]\n- versions: [[CLAIM-C4410CB172DE534E62F447E4|CLAIM:C4410CB172DE534E62F447E4]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nQuan hệ code-level với 42533 chưa xác minh; không kết luận duplicate hoặc regression chỉ từ mô tả.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:057805383BAFA46241C86CF0",
+      "CLAIM:D7A0F15AA6BDB74E636988AA",
+      "CLAIM:606FE71DFAE7127E1A0E3594",
+      "CLAIM:FCB9E9B01264E55152028DF1",
+      "CLAIM:4B0ECD3E36C1DD9DE32CEA28",
+      "CLAIM:C4410CB172DE534E62F447E4"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu capture/map ordering và non-cacheable values. Chưa có bằng chứng để tuyên bố đây chỉ là cùng lỗi 42533 chưa sửa.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:215F6042C29D546AC43439F6",
+      "SEVERITY:23905B3682B3D996A7FEF0FC",
+      "SEVERITY:67131486FBBF651F5413AF56",
+      "SEVERITY:AF9D7CD55ADF7D0D2E6B0063",
+      "SEVERITY:B9E27390F1735DAAA15DEE9B"
+    ],
+    "source_refs": [
+      "EVIDENCE:2CFF924ED599A33A433D939D",
+      "EVIDENCE:662D152F4BC6298A07F60B8A",
+      "EVIDENCE:70BEDA9150444C679734E102",
+      "EVIDENCE:8F5015B6CA57FA297E6319B8",
+      "EVIDENCE:A311A0B415C8E4750AB331AD",
+      "EVIDENCE:A36D6146D2111A87FE77F3AF",
+      "EVIDENCE:AF107B717AAF59FE9827BD10",
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8",
+      "EVIDENCE:E9B9A1478D48D00D4890FB56",
+      "EVIDENCE:F0C5601D2D413B800D14F8B5"
+    ],
+    "title": "Buffer overflow in script evaluation",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Quan hệ code-level với 42533 chưa xác minh; không kết luận duplicate hoặc regression chỉ từ mô tả.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:48+00:00",
+    "upstream_affected_expression": "1.31.2-1.31.6, 1.30.0-1.30.5",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in script evaluation",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DD8D78512362475616659BBC",
+      "RANGE:08A22B536C6A58776E605182"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:057805383BAFA46241C86CF0",
+      "CLAIM:15FBD21069E323DD3228AC4C",
+      "CLAIM:1D23A716C4FF73F258AA569B",
+      "CLAIM:296CC7548558347B38F426F2",
+      "CLAIM:2D1BD4E307CA008F2B6C7B06",
+      "CLAIM:33F17EB1F74A9BABE2D8EAC4",
+      "CLAIM:34C8049B5139DA766A262A1E",
+      "CLAIM:36D38C3C262938CB047E1F58",
+      "CLAIM:36FCC1BA55A902E6B3183F88",
+      "CLAIM:4B0ECD3E36C1DD9DE32CEA28",
+      "CLAIM:4F696898A2BCA0E268DE094C",
+      "CLAIM:5E70648F152777CF32C30B5C",
+      "CLAIM:606FE71DFAE7127E1A0E3594",
+      "CLAIM:740F56853D980DFE6BC120D3",
+      "CLAIM:78D0C2E7686B4A274C3CF5B8",
+      "CLAIM:79057140FE2778ADA0D87E05",
+      "CLAIM:7D8AA08FB328697F22E0859E",
+      "CLAIM:86836340CCBDC066271FF463",
+      "CLAIM:916BD5172FC11D856C94BF60",
+      "CLAIM:9E2173AD3013D49FDAFFB9B1",
+      "CLAIM:AC60EEDF1DE39CDD4A6B3513",
+      "CLAIM:B825F5F97DACC81DA6108044",
+      "CLAIM:BC02D16857454F2B262F0BAB",
+      "CLAIM:C12464677FD4F1E68330547C",
+      "CLAIM:C4410CB172DE534E62F447E4",
+      "CLAIM:C7F16FD64C662FDB3E709572",
+      "CLAIM:D7A0F15AA6BDB74E636988AA",
+      "CLAIM:E62654346F17FEEC255D219E",
+      "CLAIM:F36191BA3261E2260BA57F5F",
+      "CLAIM:F39A882D2A6BB5857F49BD03",
+      "CLAIM:FA44A28ECCF44A87B7BDF96C",
+      "CLAIM:FCB9E9B01264E55152028DF1"
+    ],
+    "condition_refs": [
+      "CONDITION:D3046655EF35C52D94E5367E"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Heap overflow có thể restart worker; CNA xác định data-plane issue.",
+    "created_at": "2026-11-25T02:28:46+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-93479",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá các nhánh bị ảnh hưởng và review expression evaluation xuyên phase."
+    ],
+    "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7",
+      "PACKAGE:C75645B16DFDEF4773C1AAAD"
+    ],
+    "distribution_status": [
+      "PACKAGE:B7FE9A41E2F94F3D5708D084",
+      "PACKAGE:BF751A03F08FF1420A2B6FA7",
+      "PACKAGE:C75645B16DFDEF4773C1AAAD"
+    ],
+    "documented_configuration_context": "Map regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Script evaluation trong root hoặc access-log context có thể gặp heap overflow khi dùng state map/regex.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-93479",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-11-24T18:26:14.903000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.",
+      "Trả lời có evidence: Vì sao logging vẫn có thể thuộc phạm vi memory-safety review?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-93479",
+    "normal_component_behavior": "Đánh giá biến cho log và đường dẫn phải tôn trọng lifetime/capacity như các phase xử lý khác.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Code execution là khả năng có điều kiện ASLR, chưa được xác minh runtime.",
+    "publication_date": "2026-10-14T14:40:27.107000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:DF9C9F5C48FFC75860110F6C"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-122"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nScript evaluation trong root hoặc access-log context có thể gặp heap overflow khi dùng state map/regex.\n\n## 2. CVE identity và product scope\n\nCVE-2026-93479; published 2026-10-14T14:40:27.107000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-057805383BAFA46241C86CF0|Claim / locator]].\n\n## 3. Technical background\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-MAP-MODULE|ngx_http_map_module]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP variable evaluation tại filesystem-root hoặc logging, không chỉ rewrite URI. [[CLAIM-D7A0F15AA6BDB74E636988AA|Claim / locator]].\n\n## 5. Normal component behavior\n\nĐánh giá biến cho log và đường dẫn phải tôn trọng lifetime/capacity như các phase xử lý khác. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu capture/map ordering và non-cacheable values. Chưa có bằng chứng để tuyên bố đây chỉ là cùng lỗi 42533 chưa sửa. [[CLAIM-4B0ECD3E36C1DD9DE32CEA28|Claim / locator]].\n\n## 7. Relevant security principles\n\nCác phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nMap regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện. [[CLAIM-D7A0F15AA6BDB74E636988AA|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.31.2-1.31.6, 1.30.0-1.30.5; not vulnerable/fixed branches 1.31.7+, 1.30.6+. [[CLAIM-C4410CB172DE534E62F447E4|Claim / locator]].\n\nAdvisory có hai khoảng 1.31.2–1.31.6 và 1.30.0–1.30.5; fix 1.31.7/1.30.6. Không nối hai khoảng thành một khoảng suy đoán. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nHeap overflow có thể restart worker; CNA xác định data-plane issue. [[CLAIM-606FE71DFAE7127E1A0E3594|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nCode execution là khả năng có điều kiện ASLR, chưa được xác minh runtime. [[CLAIM-FCB9E9B01264E55152028DF1|Claim / locator]].\n\n## 12. Remediation principles\n\nVá các nhánh bị ảnh hưởng và review expression evaluation xuyên phase. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-C4410CB172DE534E62F447E4|Claim / locator]].\n\n## 14. Patch management considerations\n\nAdvisory có hai khoảng 1.31.2–1.31.6 và 1.30.0–1.30.5; fix 1.31.7/1.30.6. Không nối hai khoảng thành một khoảng suy đoán.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]] · [[MODULE-NGX-HTTP-MAP-MODULE|ngx_http_map_module]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-122|CWE-122 — Heap-based Buffer Overflow]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.\n- Trả lời có evidence: Vì sao logging vẫn có thể thuộc phạm vi memory-safety review?\n\n## 17. Discussion questions\n\nVì sao logging vẫn có thể thuộc phạm vi memory-safety review?\n\nGợi ý đáp án: Nó có thể đánh giá biến và tạo buffer, nên cũng có ownership, sizing và state transition.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-057805383BAFA46241C86CF0|CLAIM:057805383BAFA46241C86CF0]]\n- applicability: [[CLAIM-D7A0F15AA6BDB74E636988AA|CLAIM:D7A0F15AA6BDB74E636988AA]]\n- impact: [[CLAIM-606FE71DFAE7127E1A0E3594|CLAIM:606FE71DFAE7127E1A0E3594]]\n- potential: [[CLAIM-FCB9E9B01264E55152028DF1|CLAIM:FCB9E9B01264E55152028DF1]]\n- mechanism: [[CLAIM-4B0ECD3E36C1DD9DE32CEA28|CLAIM:4B0ECD3E36C1DD9DE32CEA28]]\n- versions: [[CLAIM-C4410CB172DE534E62F447E4|CLAIM:C4410CB172DE534E62F447E4]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nQuan hệ code-level với 42533 chưa xác minh; không kết luận duplicate hoặc regression chỉ từ mô tả.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:057805383BAFA46241C86CF0",
+      "CLAIM:D7A0F15AA6BDB74E636988AA",
+      "CLAIM:606FE71DFAE7127E1A0E3594",
+      "CLAIM:FCB9E9B01264E55152028DF1",
+      "CLAIM:4B0ECD3E36C1DD9DE32CEA28",
+      "CLAIM:C4410CB172DE534E62F447E4"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu capture/map ordering và non-cacheable values. Chưa có bằng chứng để tuyên bố đây chỉ là cùng lỗi 42533 chưa sửa.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Các phase muộn như logging vẫn phải giữ invariant bộ nhớ, không được coi là chỉ quan sát vô hại.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:215F6042C29D546AC43439F6",
+      "SEVERITY:23905B3682B3D996A7FEF0FC",
+      "SEVERITY:67131486FBBF651F5413AF56",
+      "SEVERITY:AF9D7CD55ADF7D0D2E6B0063",
+      "SEVERITY:B9E27390F1735DAAA15DEE9B"
+    ],
+    "source_refs": [
+      "EVIDENCE:2CFF924ED599A33A433D939D",
+      "EVIDENCE:662D152F4BC6298A07F60B8A",
+      "EVIDENCE:70BEDA9150444C679734E102",
+      "EVIDENCE:8F5015B6CA57FA297E6319B8",
+      "EVIDENCE:A311A0B415C8E4750AB331AD",
+      "EVIDENCE:A36D6146D2111A87FE77F3AF",
+      "EVIDENCE:AF107B717AAF59FE9827BD10",
+      "EVIDENCE:C05A1F1081D885EB9DE87CF8",
+      "EVIDENCE:E9B9A1478D48D00D4890FB56",
+      "EVIDENCE:F0C5601D2D413B800D14F8B5"
+    ],
+    "title": "Buffer overflow in script evaluation",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Quan hệ code-level với 42533 chưa xác minh; không kết luận duplicate hoặc regression chỉ từ mô tả.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:36:36+00:00",
+    "upstream_affected_expression": "1.31.2-1.31.6, 1.30.0-1.30.5",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:46:48+00:00",
+  "entity_id": "CVE:CVE-2026-93479",
+  "id": "HISTORY:1D77453AAA8E0858D95FF039"
+}

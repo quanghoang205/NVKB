@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "75cb1fd22bcb638fa6a56aa84c2a8991fcc7971cbb88e8155859f22b6c9982b7",
+    "created_at": "2026-11-25T02:28:22+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-42946",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:EBFE74A3AD46F6648BEB0DFC",
+    "id": "EVIDENCE:EBFE74A3AD46F6648BEB0DFC",
+    "local_snapshot_path": "data/raw/cve/snapshots/75cb1fd22bcb638fa6a56aa84c2a8991fcc7971cbb88e8155859f22b6c9982b7.json",
+    "name": "CVE-2026-42946",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:28:20+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42946.json",
+    "updated_at": "2026-11-25T02:28:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:22+00:00",
+  "entity_id": "EVIDENCE:EBFE74A3AD46F6648BEB0DFC",
+  "id": "HISTORY:A9368A05ECB49D171E57523F"
+}

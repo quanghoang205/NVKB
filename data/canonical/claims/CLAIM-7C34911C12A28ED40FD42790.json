@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:9A4DDADF0264E0FF9FB676CA",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:7C34911C12A28ED40FD42790",
+  "claim_value": "\"## Invariants và tradeoff\\n\\nKhông suy 'đã vá một CVE' thành 'được hỗ trợ' hoặc 'an toàn với mọi CVE'. Không suy 'vắng trong KEV' thành 'chưa bị khai thác'. Không suy 'version lớn hơn' thành 'custom binary chứa đúng patch'. Snapshot cũ hoặc refresh lỗi phải hiển thị freshness và UNKNOWN khi không đủ nguồn hiện hành. Chính sách bảo thủ có thể tăng lượng review, đổi lại giảm kết luận chắc chắn sai khi input thiếu.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:15+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "li containing CVE-2025-23419",
+  "evidence_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:7C34911C12A28ED40FD42790",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CONTROL:PATCH-VERIFICATION: pilot_section:Invariants và tradeoff",
+  "observed_at": "2026-11-25T04:21:16+00:00",
+  "predicate": "pilot_section:Invariants và tradeoff",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read advisories at li containing CVE-2025-23419; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:16+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E19E68B2E196A0C50233787A"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+  "updated_at": "2026-11-25T04:21:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:12:10+00:00; deployment version not established"
+}

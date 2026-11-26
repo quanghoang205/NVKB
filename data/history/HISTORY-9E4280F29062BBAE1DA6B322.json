@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:04942A39B249C626E4E812FC",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:E361731A0CC17C4A28D27B01",
+    "claim_value": "{\"cve_id\": \"CVE-2026-28753\", \"problem_types\": [{\"descriptions\": [{\"cweId\": \"CWE-93\", \"description\": \"CWE-93 Improper Neutralization of CRLF Sequences ('CRLF Injection')\", \"lang\": \"en\", \"type\": \"CWE\"}]}], \"products\": [\"NGINX Open Source\", \"NGINX Plus\"], \"publication_date\": \"2026-03-24T14:13:26.107Z\", \"research_product\": \"NGINX Open Source\", \"state\": \"PUBLISHED\"}",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:34:29+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BCA4079FE2A9703F7528DF14"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E361731A0CC17C4A28D27B01",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-28753: v1.3:identity",
+    "observed_at": "2026-11-25T05:34:30+00:00",
+    "predicate": "v1.3:identity",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:BCA4079FE2A9703F7528DF14"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T05:34:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:34:30+00:00",
+  "entity_id": "CLAIM:E361731A0CC17C4A28D27B01",
+  "id": "HISTORY:9E4280F29062BBAE1DA6B322"
+}

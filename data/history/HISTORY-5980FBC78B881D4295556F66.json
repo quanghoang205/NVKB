@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:22F4F6075FE555E04E1AA2B8",
+    "claim_value": "\"Giao thức truy xuất hộp thư theo các trạng thái phiên.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "id": "CLAIM:22F4F6075FE555E04E1AA2B8",
+    "name": "PROTOCOL:POP3: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "subject_entity_id": "PROTOCOL:POP3",
+    "updated_at": "2026-11-25T02:32:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:26+00:00",
+  "entity_id": "CLAIM:22F4F6075FE555E04E1AA2B8",
+  "id": "HISTORY:5980FBC78B881D4295556F66"
+}

@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:2112EC9DF08FE5F03E05961F",
+  "claim_refs": [
+    "CLAIM:2F3462F61715CEC2CB713B74"
+  ],
+  "created_at": "2026-11-25T02:26:15+00:00",
+  "cvss_score": 4.8,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "cvss_version": "3.1",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CIRCL mirror",
+  "entity_type": "Severity",
+  "id": "SEVERITY:62BC19537827D5C3FF60BC57",
+  "metric_json": "{\"attackComplexity\": \"HIGH\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"LOW\", \"baseScore\": 4.8, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"LOW\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L\", \"version\": \"3.1\"}",
+  "name": "CVE-2024-31079 CVSS 3.1 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CIRCL mirror",
+  "severity_label": "MEDIUM",
+  "source_refs": [
+    "EVIDENCE:88FD4BD53DD070C91FA2F618"
+  ],
+  "subject_entity_id": "CVE:CVE-2024-31079",
+  "updated_at": "2026-11-25T04:13:17+00:00",
+  "verification_status": "VERIFIED"
+}

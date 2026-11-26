@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "claim_value": "\"Client gửi command có tag; server phản hồi và quản lý trạng thái authenticated/selected cùng dữ liệu mailbox.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "id": "CLAIM:6D7B04A76771FE4D351B3049",
+    "name": "PROTOCOL:IMAP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:878D849708474C43DE32D05B"
+    ],
+    "subject_entity_id": "PROTOCOL:IMAP",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:25+00:00",
+  "entity_id": "CLAIM:6D7B04A76771FE4D351B3049",
+  "id": "HISTORY:9320A01029B7B7B9E2578E10"
+}

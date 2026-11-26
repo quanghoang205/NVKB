@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "claim_refs": [
+      "CLAIM:D09795D44F8C5444AE8C8017",
+      "CLAIM:AA73B9B4262DA3C6F147624B",
+      "CLAIM:DDB8BA9A13C1FC3CD997BBE4",
+      "CLAIM:29F945FD7DE3CFCFE6AA7DA0",
+      "CLAIM:233D789E955C70D3E8887AB6",
+      "CLAIM:048A2BAEA50ACD2AB24FBE06",
+      "CLAIM:584D292B17C7AD0F604DF79C",
+      "CLAIM:8B422C3742B58ACA2C7BDB34"
+    ],
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Hệ thống phân giải tên phân cấp.",
+    "description": "Hệ thống phân giải tên phân cấp.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:DNS",
+    "learning_objectives": [
+      "Giải thích DNS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "DNS",
+    "normal_behavior": "Resolver gửi truy vấn, kiểm tra response và theo dõi các bản ghi cùng thời gian sống; việc dùng kết quả còn phụ thuộc chính sách ứng dụng.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Phản hồi phải tương ứng truy vấn và trạng thái callback còn hiệu lực.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "source_refs": [
+      "EVIDENCE:2FA1B5ABB85F74B2C3EC3E99"
+    ],
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "claim_refs": [
+      "CLAIM:5E73D2C91F8C7FABAE92A273",
+      "CLAIM:DDB033977FC00CC057A6DE9A",
+      "CLAIM:CBD0B23BFA980BCA24FAAEE8",
+      "CLAIM:1885301875AFF7B760F8FD31",
+      "CLAIM:EAD1F5CFE9EDCCD34FEEB6DB",
+      "CLAIM:0CC8A220677D432AEA2D41A6",
+      "CLAIM:B0517701F2800E57476F874E",
+      "CLAIM:A63E4FA8A923FCD66CDD9C22"
+    ],
+    "created_at": "2026-11-25T02:32:23+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Hệ thống phân giải tên phân cấp.",
+    "description": "Hệ thống phân giải tên phân cấp.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:DNS",
+    "learning_objectives": [
+      "Giải thích DNS bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "DNS",
+    "normal_behavior": "Resolver gửi truy vấn, kiểm tra response và theo dõi các bản ghi cùng thời gian sống; việc dùng kết quả còn phụ thuộc chính sách ứng dụng.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Phản hồi phải tương ứng truy vấn và trạng thái callback còn hiệu lực.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Tên dịch vụ ↔ địa chỉ kết nối.",
+    "source_refs": [
+      "EVIDENCE:562CA6466BB3C0694F53C8C9"
+    ],
+    "updated_at": "2026-11-25T02:32:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "PROTOCOL:DNS",
+  "id": "HISTORY:90DFD08BF6617DBB422012B7"
+}

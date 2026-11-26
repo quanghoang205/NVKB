@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "claim_refs": [
+      "CLAIM:D6B545C2CD742E6062D5C366",
+      "CLAIM:56BA4B2A209C0C606A8B4806",
+      "CLAIM:FE2F8DE7693A2329FC07B840",
+      "CLAIM:6EAB7A2F993F641F7DB8EAEC",
+      "CLAIM:31A001479CEFE269DAFB5691",
+      "CLAIM:EB0FE8AE1651C99DD9E10F9B",
+      "CLAIM:F6F7797F7C2EA9277CE6799A",
+      "CLAIM:365347A22E152B3304A6B069"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát cache key, Authorization/Cookie, Vary và điều kiện bypass cho dữ liệu riêng tư.",
+    "definition": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "description": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.",
+    "id": "COMPONENT:HTTP-CACHING",
+    "learning_objectives": [
+      "Giải thích HTTP caching bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP caching",
+    "normal_behavior": "NGINX tra cache theo key, thời gian hiệu lực và chỉ thị cache; các điều kiện bypass/no-cache quyết định việc đọc hoặc lưu response.",
+    "related_failure_classes": "Information disclosure; cache key inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Cache key phải phân biệt các context trả về nội dung khác nhau.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới dữ liệu dùng chung trong cache và dữ liệu gắn người dùng/tenant.",
+    "source_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:12+00:00",
+  "entity_id": "COMPONENT:HTTP-CACHING",
+  "id": "HISTORY:4B06F43D45F944A8A3331DDB"
+}

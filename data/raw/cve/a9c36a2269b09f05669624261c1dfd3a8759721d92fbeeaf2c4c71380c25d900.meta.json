@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:20+00:00",
+  "content_hash": "fe99b8ddd891dbe933af48f9af29118b84f0515f2ea9d115fac5840bd6ca29ec",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"54e0be833bd96de8dfd793201ddd1af28835f243cd65a4e9b3f088afa069ff9c\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/fe99b8ddd891dbe933af48f9af29118b84f0515f2ea9d115fac5840bd6ca29ec.json",
+  "retrieved_at": "2026-11-25T02:26:20+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/34xxx/CVE-2024-34161.json"
+}

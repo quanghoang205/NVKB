@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "7ee78d58bc9747f7179abfc1a90601892a939cb26842f413b77a057bb09cfe11",
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "description": "Debian unstable: fixed_version=1.28.3-1, status=fixed.",
+    "document_title": "CVE-2026-27651",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:7121148C01083E54BBE941CD",
+    "id": "EVIDENCE:7121148C01083E54BBE941CD",
+    "local_snapshot_path": "data/raw/distribution/snapshots/7ee78d58bc9747f7179abfc1a90601892a939cb26842f413b77a057bb09cfe11.html",
+    "name": "CVE-2026-27651",
+    "paraphrase": "Debian unstable: fixed_version=1.28.3-1, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:29+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-27651",
+    "updated_at": "2026-11-25T02:27:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:29+00:00",
+  "entity_id": "EVIDENCE:7121148C01083E54BBE941CD",
+  "id": "HISTORY:13D39A5786686C64325B355B"
+}

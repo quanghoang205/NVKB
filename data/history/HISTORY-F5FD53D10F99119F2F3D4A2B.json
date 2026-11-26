@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e",
+    "created_at": "2026-11-25T02:27:26+00:00",
+    "description": "Debian bookworm: fixed_version=1.22.1-9+deb12u4, status=fixed.",
+    "document_title": "CVE-2026-1642",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:A54E83700B231ECBE004319A",
+    "id": "EVIDENCE:A54E83700B231ECBE004319A",
+    "local_snapshot_path": "data/raw/distribution/snapshots/ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e.html",
+    "name": "CVE-2026-1642",
+    "paraphrase": "Debian bookworm: fixed_version=1.22.1-9+deb12u4, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:26+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:26+00:00",
+  "entity_id": "EVIDENCE:A54E83700B231ECBE004319A",
+  "id": "HISTORY:F5FD53D10F99119F2F3D4A2B"
+}

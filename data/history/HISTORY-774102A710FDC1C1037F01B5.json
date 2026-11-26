@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A2FEFF49544142C530329781",
+    "claim_value": "\"Trạng thái sửa lỗi được đối chiếu đúng product, branch và distribution release.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "id": "CLAIM:A2FEFF49544142C530329781",
+    "name": "CONTROL:PATCH-VERIFICATION: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "subject_entity_id": "CONTROL:PATCH-VERIFICATION",
+    "updated_at": "2026-11-25T02:49:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:49:06+00:00",
+  "entity_id": "CLAIM:A2FEFF49544142C530329781",
+  "id": "HISTORY:774102A710FDC1C1037F01B5"
+}

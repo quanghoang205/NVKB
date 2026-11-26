@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:2EBD5BB85353CA79FCE10D7A",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:2E0C14C0590DB868EF90A1B2",
+    "claim_value": "\"Hỏng bộ nhớ hoặc crash tùy vị trí và điều kiện.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:BF818BD2C0248E0A0E1C69B0: Description / Potential Mitigations; topic=WEAKNESS:CWE-120",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2E0C14C0590DB868EF90A1B2",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-120: failure_impact",
+    "observation_key": "OBSERVATION:1FD1F57DB0F852D5AB693201",
+    "observed_at": "2026-11-25T02:44:25+00:00",
+    "predicate": "failure_impact",
+    "product_scope": "WEAKNESS:CWE-120",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:32+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T04:12:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:2E0C14C0590DB868EF90A1B2",
+    "claim_value": "\"Hỏng bộ nhớ hoặc crash tùy vị trí và điều kiện.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "id": "CLAIM:2E0C14C0590DB868EF90A1B2",
+    "name": "WEAKNESS:CWE-120: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:32+00:00",
+  "entity_id": "CLAIM:2E0C14C0590DB868EF90A1B2",
+  "id": "HISTORY:8AAAC29B71BAE0988578906F"
+}

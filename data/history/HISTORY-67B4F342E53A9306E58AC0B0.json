@@ -1,0 +1,355 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free when using ngx_http_ssi_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DB32028E7E4C344D73C0EE97"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:10737A370E03AE5AB0266AF1",
+      "CLAIM:1FFD5F4968E0099D8DA95F85",
+      "CLAIM:21127BFC4B7B755823402366",
+      "CLAIM:22F9F99BD43C073E55D21629",
+      "CLAIM:2397B128EEA9DC3F5AAA5764",
+      "CLAIM:33C1758F4DEC45DE973FBBAE",
+      "CLAIM:35C05723862D6097D650C02A",
+      "CLAIM:4D20A992A43E5E9536F2EF5A",
+      "CLAIM:519E45438FC36EBE885231E6",
+      "CLAIM:5B772913AD7D4084D72CB54E",
+      "CLAIM:5D6F816B3130D29D0766F667",
+      "CLAIM:5EF3DB87B32290EC6E113DFA",
+      "CLAIM:69402CEDAD43DC42E5D819E9",
+      "CLAIM:6CDA8660C74316CA0EFAB996",
+      "CLAIM:7EEE78E89AA3F327AC4273BF",
+      "CLAIM:8018EE5C1A8A56C48D391DA1",
+      "CLAIM:8F2E85F0398238E9207311BC",
+      "CLAIM:938E1696528A89DD5CACD9FF",
+      "CLAIM:9E86B06F8E8B9CA8500B39BC",
+      "CLAIM:A0EC76F30B8F97C0E5F19DEA",
+      "CLAIM:A2F6225006C2807F6E6D0EC9",
+      "CLAIM:A7D7541371BD930F27214C47",
+      "CLAIM:AAFA52BFE7ECF5953EA88EFC",
+      "CLAIM:AEAFAA30F284DEFE5E198C52",
+      "CLAIM:AFDF85DF7D99A963DC5E175C",
+      "CLAIM:B5113B572E125F493FC53EB0",
+      "CLAIM:B6E552FE4051C7A8B0BC64CB",
+      "CLAIM:C244F8ECCF6D8D22073433E3",
+      "CLAIM:CA4D9B6D45D155F5A82C0F26",
+      "CLAIM:CBA4EF9BBBA9222845649E3C",
+      "CLAIM:CD918C828AF2508C50DF3443",
+      "CLAIM:DD91B86A01FC9C08BDFE931A",
+      "CLAIM:FADC6D2D167585CB640BD93D"
+    ],
+    "condition_refs": [
+      "CONDITION:8B9B8F435C4F29970EE88434"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Limited memory modification hoặc worker restart; nguồn xác định data-plane scope.",
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-56434",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá NGINX, bảo vệ kết nối upstream và review ownership filter; TLS bảo vệ đường truyền không thay patch parser."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:14AE6D436200C40A6AC17B52",
+      "PACKAGE:494695845EEACE19BCB546A1",
+      "PACKAGE:8CC9F762BF77412DEAA83274"
+    ],
+    "distribution_status": [
+      "PACKAGE:14AE6D436200C40A6AC17B52",
+      "PACKAGE:494695845EEACE19BCB546A1",
+      "PACKAGE:8CC9F762BF77412DEAA83274"
+    ],
+    "documented_configuration_context": "SSI, proxy_pass và proxy_buffering off; CNA yêu cầu khả năng kiểm soát response upstream ở vị trí MITM.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "SSI trên response proxy không buffering có thể gặp use-after-free khi response upstream bị bên ngoài kiểm soát.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "id": "CVE:CVE-2026-56434",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T18:10:54.402000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Nội dung upstream vẫn đi qua trust boundary và không được quyết định lifetime của bộ nhớ xử lý nó.",
+      "Trả lời có evidence: Vì sao quyền kiểm soát upstream response là giới hạn applicability cần giữ?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-56434",
+    "normal_component_behavior": "Filter giữ tham chiếu input chỉ trong lifetime mà producer bảo đảm; cleanup không được giải phóng state còn dùng.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không suy mọi client có thể đạt tác động, hoặc nâng limited modification thành confirmed RCE.",
+    "publication_date": "2026-07-15T14:33:46.142000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6B1BC779B98BCBA27F3BDC00"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSI-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nSSI trên response proxy không buffering có thể gặp use-after-free khi response upstream bị bên ngoài kiểm soát.\n\n## 2. CVE identity và product scope\n\nCVE-2026-56434; published 2026-07-15T14:33:46.142000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-8F2E85F0398238E9207311BC|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-HTTP-SSI-MODULE|SSI và subrequest — công việc con, output và cleanup]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nSSI response filter và upstream response buffer. [[CLAIM-8F2E85F0398238E9207311BC|Claim / locator]].\n\n## 5. Normal component behavior\n\nFilter giữ tham chiếu input chỉ trong lifetime mà producer bảo đảm; cleanup không được giải phóng state còn dùng. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu UAF; quan hệ consumer/producer buffer là mô hình giải thích, chưa xác định callback/free cụ thể. [[CLAIM-A2F6225006C2807F6E6D0EC9|Claim / locator]].\n\n## 7. Relevant security principles\n\nNội dung upstream vẫn đi qua trust boundary và không được quyết định lifetime của bộ nhớ xử lý nó. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nSSI, proxy_pass và proxy_buffering off; CNA yêu cầu khả năng kiểm soát response upstream ở vị trí MITM. [[CLAIM-8F2E85F0398238E9207311BC|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 0.8.11-1.31.2; not vulnerable/fixed branches 1.31.3+, 1.30.4+. [[CLAIM-69402CEDAD43DC42E5D819E9|Claim / locator]].\n\nFix 1.30.4/1.31.3; phân biệt với UAF AIO/SSI 97205. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nLimited memory modification hoặc worker restart; nguồn xác định data-plane scope. [[CLAIM-5D6F816B3130D29D0766F667|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông suy mọi client có thể đạt tác động, hoặc nâng limited modification thành confirmed RCE. [[CLAIM-7EEE78E89AA3F327AC4273BF|Claim / locator]].\n\n## 12. Remediation principles\n\nVá NGINX, bảo vệ kết nối upstream và review ownership filter; TLS bảo vệ đường truyền không thay patch parser. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-69402CEDAD43DC42E5D819E9|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.4/1.31.3; phân biệt với UAF AIO/SSI 97205.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-HTTP-SSI-MODULE|SSI và subrequest — công việc con, output và cleanup]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Nội dung upstream vẫn đi qua trust boundary và không được quyết định lifetime của bộ nhớ xử lý nó.\n- Trả lời có evidence: Vì sao quyền kiểm soát upstream response là giới hạn applicability cần giữ?\n\n## 17. Discussion questions\n\nVì sao quyền kiểm soát upstream response là giới hạn applicability cần giữ?\n\nGợi ý đáp án: Nó mô tả trust boundary và khả năng cần có theo nguồn; bỏ điều kiện này sẽ làm phạm vi rộng hơn chứng cứ.\n\n## 18. Claim-level evidence\n\n- applicability: [[CLAIM-8F2E85F0398238E9207311BC|CLAIM:8F2E85F0398238E9207311BC]]\n- impact: [[CLAIM-5D6F816B3130D29D0766F667|CLAIM:5D6F816B3130D29D0766F667]]\n- potential: [[CLAIM-7EEE78E89AA3F327AC4273BF|CLAIM:7EEE78E89AA3F327AC4273BF]]\n- mechanism: [[CLAIM-A2F6225006C2807F6E6D0EC9|CLAIM:A2F6225006C2807F6E6D0EC9]]\n- versions: [[CLAIM-69402CEDAD43DC42E5D819E9|CLAIM:69402CEDAD43DC42E5D819E9]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nCallback, allocation và mức sửa đổi dữ liệu chưa được review độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:8F2E85F0398238E9207311BC",
+      "CLAIM:5D6F816B3130D29D0766F667",
+      "CLAIM:7EEE78E89AA3F327AC4273BF",
+      "CLAIM:A2F6225006C2807F6E6D0EC9",
+      "CLAIM:69402CEDAD43DC42E5D819E9"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu UAF; quan hệ consumer/producer buffer là mô hình giải thích, chưa xác định callback/free cụ thể.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Nội dung upstream vẫn đi qua trust boundary và không được quyết định lifetime của bộ nhớ xử lý nó.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:2089F6AB7CEFA6D8955D5117",
+      "SEVERITY:4E38B9CFF4F726FD892F0E49",
+      "SEVERITY:93D3DC015466208DA4AC4BCE",
+      "SEVERITY:9E51B3A6D06BDB73D3A5083C",
+      "SEVERITY:D6BCF99612F9E90960FC1862"
+    ],
+    "source_refs": [
+      "EVIDENCE:03C2467C91A6D22077768FBC",
+      "EVIDENCE:1729A41D4AF1446592600F42",
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD",
+      "EVIDENCE:46DA921D33C4B32EE8D009E7",
+      "EVIDENCE:596E210E185279F943621E04",
+      "EVIDENCE:5F38EA689F4892FB28385F6D",
+      "EVIDENCE:82B053F4877AA363ECB539C7",
+      "EVIDENCE:D4407539F1B8A1CE04978E33",
+      "EVIDENCE:E2964AC3611A9E3EAB70945A"
+    ],
+    "title": "Use-after-free when using ngx_http_ssi_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:24:28+00:00",
+    "upstream_affected_expression": "0.8.11-1.31.2",
+    "upstream_unaffected_expression": "1.31.3+, 1.30.4+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free when using ngx_http_ssi_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:DB32028E7E4C344D73C0EE97"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:10737A370E03AE5AB0266AF1",
+      "CLAIM:1FFD5F4968E0099D8DA95F85",
+      "CLAIM:21127BFC4B7B755823402366",
+      "CLAIM:22F9F99BD43C073E55D21629",
+      "CLAIM:2397B128EEA9DC3F5AAA5764",
+      "CLAIM:33C1758F4DEC45DE973FBBAE",
+      "CLAIM:35C05723862D6097D650C02A",
+      "CLAIM:4D20A992A43E5E9536F2EF5A",
+      "CLAIM:519E45438FC36EBE885231E6",
+      "CLAIM:5B772913AD7D4084D72CB54E",
+      "CLAIM:5EF3DB87B32290EC6E113DFA",
+      "CLAIM:6CDA8660C74316CA0EFAB996",
+      "CLAIM:8018EE5C1A8A56C48D391DA1",
+      "CLAIM:938E1696528A89DD5CACD9FF",
+      "CLAIM:9E86B06F8E8B9CA8500B39BC",
+      "CLAIM:A0EC76F30B8F97C0E5F19DEA",
+      "CLAIM:A7D7541371BD930F27214C47",
+      "CLAIM:AAFA52BFE7ECF5953EA88EFC",
+      "CLAIM:AEAFAA30F284DEFE5E198C52",
+      "CLAIM:AFDF85DF7D99A963DC5E175C",
+      "CLAIM:B5113B572E125F493FC53EB0",
+      "CLAIM:B6E552FE4051C7A8B0BC64CB",
+      "CLAIM:C244F8ECCF6D8D22073433E3",
+      "CLAIM:CA4D9B6D45D155F5A82C0F26",
+      "CLAIM:CBA4EF9BBBA9222845649E3C",
+      "CLAIM:CD918C828AF2508C50DF3443",
+      "CLAIM:DD91B86A01FC9C08BDFE931A",
+      "CLAIM:FADC6D2D167585CB640BD93D"
+    ],
+    "condition_refs": [
+      "CONDITION:8B9B8F435C4F29970EE88434"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "cve_id": "CVE-2026-56434",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:494695845EEACE19BCB546A1",
+      "PACKAGE:14AE6D436200C40A6AC17B52",
+      "PACKAGE:8CC9F762BF77412DEAA83274"
+    ],
+    "distribution_status": [
+      "PACKAGE:494695845EEACE19BCB546A1",
+      "PACKAGE:14AE6D436200C40A6AC17B52",
+      "PACKAGE:8CC9F762BF77412DEAA83274"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-56434 ghi nhận: Use-after-free when using ngx_http_ssi_module. Phạm vi upstream: 0.8.11-1.31.2. Bản sửa được công bố: 1.31.3+, 1.30.4+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "id": "CVE:CVE-2026-56434",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T18:10:54.402000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-56434",
+    "normal_component_behavior": "Xử lý Server Side Includes trong response. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-07-15T14:33:46.142000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6B1BC779B98BCBA27F3BDC00"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSI-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free when using ngx_http_ssi_module.\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:2089F6AB7CEFA6D8955D5117",
+      "SEVERITY:4E38B9CFF4F726FD892F0E49",
+      "SEVERITY:93D3DC015466208DA4AC4BCE",
+      "SEVERITY:9E51B3A6D06BDB73D3A5083C",
+      "SEVERITY:D6BCF99612F9E90960FC1862"
+    ],
+    "source_refs": [
+      "EVIDENCE:03C2467C91A6D22077768FBC",
+      "EVIDENCE:1729A41D4AF1446592600F42",
+      "EVIDENCE:3791CC5E20A071F2F7E13CFD",
+      "EVIDENCE:46DA921D33C4B32EE8D009E7",
+      "EVIDENCE:596E210E185279F943621E04",
+      "EVIDENCE:5F38EA689F4892FB28385F6D",
+      "EVIDENCE:82B053F4877AA363ECB539C7",
+      "EVIDENCE:D4407539F1B8A1CE04978E33"
+    ],
+    "title": "Use-after-free when using ngx_http_ssi_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:22:05+00:00",
+    "upstream_affected_expression": "0.8.11-1.31.2",
+    "upstream_unaffected_expression": "1.31.3+, 1.30.4+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.\n\nImpact:\nThis vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:24:28+00:00",
+  "entity_id": "CVE:CVE-2026-56434",
+  "id": "HISTORY:67B4F342E53A9306E58AC0B0"
+}

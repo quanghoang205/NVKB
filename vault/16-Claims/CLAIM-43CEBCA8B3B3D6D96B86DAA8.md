@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:43CEBCA8B3B3D6D96B86DAA8
+title: 'WEAKNESS:CWE-1289: normal_behavior'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'WEAKNESS:CWE-1289: normal_behavior'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# WEAKNESS:CWE-1289: normal_behavior
+
+`CLAIM:43CEBCA8B3B3D6D96B86DAA8` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[WEAKNESS-CWE-1289|CWE-1289 — Unsafe Equivalence in Input]]. Predicate: `normal_behavior`.
+
+```json
+"Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật."
+```
+
+## Nguồn và phạm vi
+
+Authority: MITRE CWE. MITRE CWE
+
+[[EVIDENCE-89A71DECA0CDA7465848AA99|CWE - CWE-1289: Improper Validation of Unsafe Equivalence in Input (5.0)]]
+
+Locator: EVIDENCE:89A71DECA0CDA7465848AA99: Description / Potential Mitigations; topic=WEAKNESS:CWE-1289
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:48:55+00:00. Truy xuất: 2026-11-25T02:48:55+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

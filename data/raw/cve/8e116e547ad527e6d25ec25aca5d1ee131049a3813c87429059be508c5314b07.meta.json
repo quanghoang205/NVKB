@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:44+00:00",
+  "content_hash": "59e328292d2ba5c5daeeef67fb6aa4454fbc4631fbdfc481578d5c1b8af0da91",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"195f841c26306b0f6dc9b8f38dd3c0954b845a4323449cb0a210c71b44a5b069\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/59e328292d2ba5c5daeeef67fb6aa4454fbc4631fbdfc481578d5c1b8af0da91.json",
+  "retrieved_at": "2026-11-25T02:25:44+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2011/4xxx/CVE-2011-4315.json"
+}

@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:D4BF028B5E46E158B345BE41"
+    ],
+    "created_at": "2026-11-25T05:18:38+00:00",
+    "description": "PROTOCOL:DNS REQUIRES_KNOWLEDGE_OF COMPONENT:CONNECTION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "#resolver; #resolver_timeout",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:065A89A8EBE4AD473C0AD404",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Mục tiêu 'Phân biệt cached DNS result với context chờ của request.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Mục tiêu 'Phân biệt cached DNS result với context chờ của request.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:18:38+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:4FF4160FB0B56E492E1FCF7C"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "PROTOCOL:DNS",
+    "updated_at": "2026-11-25T05:18:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:18:38+00:00",
+  "entity_id": "REL:065A89A8EBE4AD473C0AD404",
+  "id": "HISTORY:F3328AB0E3128360D2E98EBB"
+}

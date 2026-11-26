@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2328FDD109A07BEF2C78298C",
+    "claim_value": "\"Vòng lặp điều phối I/O event, timer và posted event.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "id": "CLAIM:2328FDD109A07BEF2C78298C",
+    "name": "COMPONENT:EVENT-LOOP: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:3E71E844253FAD718F69DF57"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-LOOP",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:2328FDD109A07BEF2C78298C",
+  "id": "HISTORY:6260FFA182BCDF965E8869DC"
+}

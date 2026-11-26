@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:234C3556D3EE3655407BBF37"
+    ],
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:407584D6BB87E87391C72E44",
+    "name": "Điều kiện được công bố — CVE-2026-27651",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:234C3556D3EE3655407BBF37"
+    ],
+    "created_at": "2026-11-25T02:27:29+00:00",
+    "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:407584D6BB87E87391C72E44",
+    "name": "Điều kiện được công bố — CVE-2026-27651",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91"
+    ],
+    "updated_at": "2026-11-25T02:27:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:407584D6BB87E87391C72E44",
+  "id": "HISTORY:15634300A0238698E0C31F46"
+}

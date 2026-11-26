@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:00B24BDCD0AB2937B66C8AB6",
+    "claim_value": "\"Bộ cấp phát nhóm các allocation có vòng đời gần nhau.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "id": "CLAIM:00B24BDCD0AB2937B66C8AB6",
+    "name": "COMPONENT:MEMORY-POOL: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:05+00:00",
+  "entity_id": "CLAIM:00B24BDCD0AB2937B66C8AB6",
+  "id": "HISTORY:06209962ABDFC7DEA83A3B4F"
+}

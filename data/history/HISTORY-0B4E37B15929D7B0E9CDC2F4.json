@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "3cf4c3045d84743fe625d4024be251a969dc4b69a4c153726a1587e26e1ea1e4",
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Chấp nhận dữ liệu không tin cậy bổ sung cùng dữ liệu được xem là tin cậy.",
+    "document_title": "CWE -\r\n\n    CWE-349: Acceptance of Extraneous Untrusted Data With Trusted Data (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:8AD94753451D74F7F738AEA6",
+    "id": "EVIDENCE:8AD94753451D74F7F738AEA6",
+    "local_snapshot_path": "data/raw/documentation/snapshots/3cf4c3045d84743fe625d4024be251a969dc4b69a4c153726a1587e26e1ea1e4.html",
+    "name": "CWE -\r\n\n    CWE-349: Acceptance of Extraneous Untrusted Data With Trusted Data (5.0)",
+    "paraphrase": "Chấp nhận dữ liệu không tin cậy bổ sung cùng dữ liệu được xem là tin cậy.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:58+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-349",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/349.html",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "EVIDENCE:8AD94753451D74F7F738AEA6",
+  "id": "HISTORY:0B4E37B15929D7B0E9CDC2F4"
+}

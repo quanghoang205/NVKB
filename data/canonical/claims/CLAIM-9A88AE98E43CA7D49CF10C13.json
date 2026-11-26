@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:7ADD311D2EA07509A129DBA0",
+  "authority": "MITRE CWE",
+  "authority_scope": "MITRE CWE",
+  "claim_id": "CLAIM:9A88AE98E43CA7D49CF10C13",
+  "claim_value": "\"Hệ thống giữ hạn mức CPU, RAM, kết nối và thời gian cho từng đơn vị công việc.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:44:28+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:74C44A41A6BA4045B073D6AB: Description / Potential Mitigations; topic=WEAKNESS:CWE-400",
+  "evidence_refs": [
+    "EVIDENCE:74C44A41A6BA4045B073D6AB"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:9A88AE98E43CA7D49CF10C13",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "WEAKNESS:CWE-400: normal_behavior",
+  "observation_key": "OBSERVATION:3C23C6F6451AF08813FF6881",
+  "observed_at": "2026-11-25T02:44:28+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "WEAKNESS:CWE-400",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:37+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:74C44A41A6BA4045B073D6AB"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "WEAKNESS:CWE-400",
+  "updated_at": "2026-11-25T04:12:45+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

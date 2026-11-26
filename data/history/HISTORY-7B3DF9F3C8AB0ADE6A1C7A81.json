@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:A89C804CB5F54E91FA02747E",
+      "CLAIM:AC803F5985395399F52AA6E0",
+      "CLAIM:BDF733EC133D970E80AF30CB",
+      "CLAIM:45C1502FB16D20C7DFFC17E2",
+      "CLAIM:3A1812D38E2802E0E1D73B5F",
+      "CLAIM:82DFFF79D81827F3C49D263C",
+      "CLAIM:23607221D6DC2F8EE545F7C7",
+      "CLAIM:5DD98D2E7ED1118474690BD9"
+    ],
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp request đến uwsgi server.",
+    "description": "Chuyển tiếp request đến uwsgi server.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-UWSGI-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_uwsgi_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_uwsgi_module",
+    "normal_behavior": "Chuyển tiếp request đến uwsgi server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:C0851D7E9E66145AD3D7C8EA"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:A89C804CB5F54E91FA02747E",
+      "CLAIM:AC803F5985395399F52AA6E0",
+      "CLAIM:BDF733EC133D970E80AF30CB",
+      "CLAIM:45C1502FB16D20C7DFFC17E2",
+      "CLAIM:3A1812D38E2802E0E1D73B5F",
+      "CLAIM:82DFFF79D81827F3C49D263C",
+      "CLAIM:23607221D6DC2F8EE545F7C7",
+      "CLAIM:5DD98D2E7ED1118474690BD9"
+    ],
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp request đến uwsgi server.",
+    "description": "Chuyển tiếp request đến uwsgi server.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-UWSGI-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_uwsgi_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_uwsgi_module",
+    "normal_behavior": "Chuyển tiếp request đến uwsgi server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:C0851D7E9E66145AD3D7C8EA"
+    ],
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-HTTP-UWSGI-MODULE",
+  "id": "HISTORY:7B3DF9F3C8AB0ADE6A1C7A81"
+}

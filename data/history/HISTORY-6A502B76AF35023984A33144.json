@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7897DF69E2FF025E4EA609EC",
+    "claim_value": "\"Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:53+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "id": "CLAIM:7897DF69E2FF025E4EA609EC",
+    "name": "MODULE:NGX-MAIL-PROXY-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:35AF5EEAA1E3A125305D3059"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-PROXY-MODULE",
+    "updated_at": "2026-11-25T02:32:53+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:53+00:00",
+  "entity_id": "CLAIM:7897DF69E2FF025E4EA609EC",
+  "id": "HISTORY:6A502B76AF35023984A33144"
+}

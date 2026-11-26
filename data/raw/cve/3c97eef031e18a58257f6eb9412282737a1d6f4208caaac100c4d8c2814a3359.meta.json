@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:27+00:00",
+  "content_hash": "9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"d41a65311f2d1f04426c698852e41a3c22c90b167c6cf347a2d000feefb270dc\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/9378b764e568edfd0a81771a8cedc19b195b64df370d9e3d064ae673522089cb.json",
+  "retrieved_at": "2026-11-25T02:28:27+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/56xxx/CVE-2026-56434.json"
+}

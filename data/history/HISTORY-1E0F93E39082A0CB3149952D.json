@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:36+00:00",
+    "description": "LEARNING:PATH-04 learns_from CONCEPT:CVE",
+    "entity_type": "Relationship",
+    "id": "REL:43D93360B801CEDD905FF040",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:CVE",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:33:36+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:36+00:00",
+  "entity_id": "REL:43D93360B801CEDD905FF040",
+  "id": "HISTORY:1E0F93E39082A0CB3149952D"
+}

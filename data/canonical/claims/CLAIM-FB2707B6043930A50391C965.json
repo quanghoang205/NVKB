@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:0D7A7194D9BED436A8FDE1DA",
+  "authority": "CVE Program / CNA",
+  "authority_scope": "CVE Program / CNA",
+  "claim_id": "CLAIM:FB2707B6043930A50391C965",
+  "claim_value": "\"NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:27:32+00:00",
+  "description": "description",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:A4A7113E3D797686B944D416: /containers/cna/descriptions",
+  "evidence_refs": [
+    "EVIDENCE:A4A7113E3D797686B944D416"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:FB2707B6043930A50391C965",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-27654: description",
+  "observation_key": "OBSERVATION:BC4219493A98F945E836C03E",
+  "observed_at": "2026-11-25T02:27:32+00:00",
+  "predicate": "description",
+  "product_scope": "CVE:CVE-2026-27654",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:27:30+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program / CNA",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:A4A7113E3D797686B944D416"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-27654",
+  "updated_at": "2026-11-25T04:12:56+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

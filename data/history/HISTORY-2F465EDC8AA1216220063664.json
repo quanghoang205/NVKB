@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "4d6f28cdd08613ef5592f4cd60f4f7a3483953c58b795e839bab4e81d073e9c2",
+    "created_at": "2026-11-25T02:28:54+00:00",
+    "description": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "document_title": "CVE-2026-97205",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+    "id": "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+    "local_snapshot_path": "data/raw/cve/snapshots/4d6f28cdd08613ef5592f4cd60f4f7a3483953c58b795e839bab4e81d073e9c2.json",
+    "modified_at": "2026-10-15T10:31:15.547000+00:00",
+    "name": "CVE-2026-97205",
+    "paraphrase": "Định danh, trạng thái và ngày công bố từ CVE Program.",
+    "published_at": "2026-10-14T14:40:27.487000+00:00",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:28:50+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/cveMetadata",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/97xxx/CVE-2026-97205.json",
+    "updated_at": "2026-11-25T02:28:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:54+00:00",
+  "entity_id": "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+  "id": "HISTORY:2F465EDC8AA1216220063664"
+}

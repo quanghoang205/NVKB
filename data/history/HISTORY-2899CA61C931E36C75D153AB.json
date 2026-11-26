@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:4219DAC420900BE305526297",
+      "CLAIM:B3D7414DFCE6B3CC6CB6C262",
+      "CLAIM:659F80408ACF66D5A6C6BEF7",
+      "CLAIM:81D0B6E7D27363B02E646EB4",
+      "CLAIM:28B1F15B9894FB68D890DDDA",
+      "CLAIM:17FE349CEFD87705DF70216E",
+      "CLAIM:7DD11B19AFCA7A1A00204F1F",
+      "CLAIM:418A1A06BB6061CF83740BA7"
+    ],
+    "created_at": "2026-11-25T02:32:43+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.",
+    "description": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_rewrite_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_rewrite_module",
+    "normal_behavior": "Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:98E122F56AC9EFC999816DB9"
+    ],
+    "updated_at": "2026-11-25T02:32:43+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:43+00:00",
+  "entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+  "id": "HISTORY:2899CA61C931E36C75D153AB"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C7364C96010DED0677659CA4",
+    "claim_value": "\"Biến byte trên kết nối thành cấu trúc request có ý nghĩa.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "id": "CLAIM:C7364C96010DED0677659CA4",
+    "name": "COMPONENT:REQUEST-PARSING: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "subject_entity_id": "COMPONENT:REQUEST-PARSING",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:C7364C96010DED0677659CA4",
+  "id": "HISTORY:402C41FAB512E342FA893951"
+}

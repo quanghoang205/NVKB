@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:E0DF1E757255DB6CCF02BF50",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:4CA276F95EF0504B101CF426",
+  "claim_value": "\"Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy ứng dụng cần xét đúng server context.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:57+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:0B05F3AB3B86F4D8FE94D13C: ssl_verify_client",
+  "evidence_refs": [
+    "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:4CA276F95EF0504B101CF426",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "DIRECTIVE:SSL-VERIFY-CLIENT: normal_behavior",
+  "observation_key": "OBSERVATION:35E4D7D3E3A5B037DAB40007",
+  "observed_at": "2026-11-25T02:32:57+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "DIRECTIVE:SSL-VERIFY-CLIENT",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:08+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+  "updated_at": "2026-11-25T04:12:35+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,33 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:903F1DA95DC4096CF3B81F15"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-28753 related_modules MODULE:NGX-MAIL-SMTP-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:E383315EBCE8B220E4D1972F",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "predicate": "related_modules",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:19F8147C60F6BF74BA023F44",
+      "EVIDENCE:1AFB3C299E364CB222680BE6",
+      "EVIDENCE:3E384190B1D03C3D0FAE84AB",
+      "EVIDENCE:4EB14B422FD37FC4AE185DD3",
+      "EVIDENCE:B08BA542EDDE73461AFF4370",
+      "EVIDENCE:C5A225F86EA1A78912011287",
+      "EVIDENCE:CF77599A9366449D824011BC",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T02:33:48+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:48+00:00",
+  "entity_id": "REL:E383315EBCE8B220E4D1972F",
+  "id": "HISTORY:CC88BC1D63442C5E6B4FF2C1"
+}

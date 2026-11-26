@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6350b1494192ac53559dcbeaf4484b53b82ac160b5afc06238c22ad30debb886",
+    "created_at": "2026-11-25T02:28:30+00:00",
+    "description": "Debian unstable: fixed_version=1.30.1-7, status=fixed.",
+    "document_title": "CVE-2026-56434",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DAD8D7701893639C78B394B5",
+    "id": "EVIDENCE:DAD8D7701893639C78B394B5",
+    "local_snapshot_path": "data/raw/distribution/snapshots/6350b1494192ac53559dcbeaf4484b53b82ac160b5afc06238c22ad30debb886.html",
+    "name": "CVE-2026-56434",
+    "paraphrase": "Debian unstable: fixed_version=1.30.1-7, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:28:30+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=(unstable)",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-56434",
+    "updated_at": "2026-11-25T02:28:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:30+00:00",
+  "entity_id": "EVIDENCE:DAD8D7701893639C78B394B5",
+  "id": "HISTORY:20145292B504BB34F4BE66A6"
+}

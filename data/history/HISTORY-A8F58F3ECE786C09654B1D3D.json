@@ -1,0 +1,351 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Memory disclosure when using ngx_http_slice_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:1EB198768794765FD728B568"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0072A128DBD721A782179EEB",
+      "CLAIM:059BE6CB7C5DBBAA9DCA0520",
+      "CLAIM:06CBF969A202F7C589DCAE52",
+      "CLAIM:0701FC69D18495D80EAE8C8F",
+      "CLAIM:097EACB85F77DA2101284B73",
+      "CLAIM:189FC72C1C62DF1233F6D358",
+      "CLAIM:1DF54B9D3B0BBFC9689B1AB1",
+      "CLAIM:228349341F5AB7EFB69C0DFE",
+      "CLAIM:233E16440E83F4F2FA80E106",
+      "CLAIM:2BA071D3B2C1BAC4B41124B3",
+      "CLAIM:3F139AD107C0C526DFF1E531",
+      "CLAIM:51A74DA5E2E6E234C8596EBB",
+      "CLAIM:5441631D1EEAE60604504CA4",
+      "CLAIM:54CD05204A79488A1A10896B",
+      "CLAIM:6500FD6BEDC4A6BAE021EEAD",
+      "CLAIM:786FB471ABDE6CB92B41B897",
+      "CLAIM:796A396D683B0CD1DE55754E",
+      "CLAIM:7C90AEB37D7663D1CC09E9FF",
+      "CLAIM:87471C707C6BEA4D1D2216C9",
+      "CLAIM:92F031E7979EDCD9E69CCBAD",
+      "CLAIM:A0E829D4094AB65A6767E872",
+      "CLAIM:A51109E21B7BE3CFCE26C712",
+      "CLAIM:A679078A0281C4C7E5591776",
+      "CLAIM:A8FA140AAE0285AB6B115098",
+      "CLAIM:AC74E77E9A53C64CBF34B076",
+      "CLAIM:AE908A312C85623546680811",
+      "CLAIM:AEB1063A5D3524AB2EC7D5DE",
+      "CLAIM:B5298DE35AFAF319A58100FF",
+      "CLAIM:BB11CE2BB4AB95387AD92860",
+      "CLAIM:CA72DC6B791B585513B60854",
+      "CLAIM:DE578948B35B07912A900971",
+      "CLAIM:FDD45406BCF7131A07A53D42"
+    ],
+    "condition_refs": [
+      "CONDITION:F9D590FEDC8EB6B8DD9FA70F"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Limited memory disclosure hoặc worker restart được công bố.",
+    "created_at": "2026-11-25T02:28:34+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-60005",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá module; review initialization trên nhánh subrequest và background update, không chỉ đường request trực tiếp."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:D8CD1658968ABABE7E16A870",
+      "PACKAGE:DF1EBBB1B5116CB1C6E4295E",
+      "PACKAGE:EE51BE1DA898D82398957879"
+    ],
+    "distribution_status": [
+      "PACKAGE:D8CD1658968ABABE7E16A870",
+      "PACKAGE:DF1EBBB1B5116CB1C6E4295E",
+      "PACKAGE:EE51BE1DA898D82398957879"
+    ],
+    "documented_configuration_context": "Slice dùng unnamed regex capture hoặc có background cache update theo CNA; module không được build mặc định.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Slice response processing có thể dùng bộ nhớ chưa khởi tạo, dẫn đến lộ dữ liệu giới hạn hoặc restart.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "id": "CVE:CVE-2026-60005",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T15:41:06.279000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Phân biệt initialized, allocated và owned; ba trạng thái này không thay thế nhau.",
+      "Trả lời có evidence: Vì sao một con trỏ còn trong allocation hợp lệ vẫn có thể đọc dữ liệu không hợp lệ?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-60005",
+    "normal_component_behavior": "Mỗi công việc slice phải có state khởi tạo trước đọc, và dữ liệu phát ra thuộc đúng response/range.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Loại dữ liệu thực tế và độ dài rò chưa biết; không suy RCE.",
+    "publication_date": "2026-07-15T15:04:21.040000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:CA879EB70DABAD2F19EA326E"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SLICE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-908"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nSlice response processing có thể dùng bộ nhớ chưa khởi tạo, dẫn đến lộ dữ liệu giới hạn hoặc restart.\n\n## 2. CVE identity và product scope\n\nCVE-2026-60005; published 2026-07-15T15:04:21.040000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-FDD45406BCF7131A07A53D42|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-HTTP-SLICE-MODULE|ngx_http_slice_module]] · [[MODULE-NGX-HTTP-SSI-MODULE|SSI và subrequest — công việc con, output và cleanup]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP slice subrequests và state cho capture hoặc background cache update. [[CLAIM-FDD45406BCF7131A07A53D42|Claim / locator]].\n\n## 5. Normal component behavior\n\nMỗi công việc slice phải có state khởi tạo trước đọc, và dữ liệu phát ra thuộc đúng response/range. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA nêu uninitialized memory access. Lifetime còn sống không đủ; các trường đọc còn phải được gán giá trị hợp lệ. [[CLAIM-CA72DC6B791B585513B60854|Claim / locator]].\n\n## 7. Relevant security principles\n\nPhân biệt initialized, allocated và owned; ba trạng thái này không thay thế nhau. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nSlice dùng unnamed regex capture hoặc có background cache update theo CNA; module không được build mặc định. [[CLAIM-FDD45406BCF7131A07A53D42|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.15.8-1.31.2; not vulnerable/fixed branches 1.31.3+, 1.30.4+. [[CLAIM-796A396D683B0CD1DE55754E|Claim / locator]].\n\nFix 1.30.4/1.31.3; không dùng giới hạn SSI/buffering của 56434 cho slice. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nLimited memory disclosure hoặc worker restart được công bố. [[CLAIM-AE908A312C85623546680811|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nLoại dữ liệu thực tế và độ dài rò chưa biết; không suy RCE. [[CLAIM-2BA071D3B2C1BAC4B41124B3|Claim / locator]].\n\n## 12. Remediation principles\n\nVá module; review initialization trên nhánh subrequest và background update, không chỉ đường request trực tiếp. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-796A396D683B0CD1DE55754E|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.4/1.31.3; không dùng giới hạn SSI/buffering của 56434 cho slice.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-HTTP-SLICE-MODULE|ngx_http_slice_module]] · [[MODULE-NGX-HTTP-SSI-MODULE|SSI và subrequest — công việc con, output và cleanup]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-908|CWE-908 — Uninitialized Resource]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Phân biệt initialized, allocated và owned; ba trạng thái này không thay thế nhau.\n- Trả lời có evidence: Vì sao một con trỏ còn trong allocation hợp lệ vẫn có thể đọc dữ liệu không hợp lệ?\n\n## 17. Discussion questions\n\nVì sao một con trỏ còn trong allocation hợp lệ vẫn có thể đọc dữ liệu không hợp lệ?\n\nGợi ý đáp án: Byte hoặc field có thể chưa được khởi tạo cho công việc hiện tại; spatial safety không bảo đảm semantic validity.\n\n## 18. Claim-level evidence\n\n- applicability: [[CLAIM-FDD45406BCF7131A07A53D42|CLAIM:FDD45406BCF7131A07A53D42]]\n- impact: [[CLAIM-AE908A312C85623546680811|CLAIM:AE908A312C85623546680811]]\n- potential: [[CLAIM-2BA071D3B2C1BAC4B41124B3|CLAIM:2BA071D3B2C1BAC4B41124B3]]\n- mechanism: [[CLAIM-CA72DC6B791B585513B60854|CLAIM:CA72DC6B791B585513B60854]]\n- versions: [[CLAIM-796A396D683B0CD1DE55754E|CLAIM:796A396D683B0CD1DE55754E]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nTrường state, dữ liệu đọc và đường initialization bị thiếu chưa xác minh độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:FDD45406BCF7131A07A53D42",
+      "CLAIM:AE908A312C85623546680811",
+      "CLAIM:2BA071D3B2C1BAC4B41124B3",
+      "CLAIM:CA72DC6B791B585513B60854",
+      "CLAIM:796A396D683B0CD1DE55754E"
+    ],
+    "research_group": "http",
+    "root_cause_summary": "CNA nêu uninitialized memory access. Lifetime còn sống không đủ; các trường đọc còn phải được gán giá trị hợp lệ.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Phân biệt initialized, allocated và owned; ba trạng thái này không thay thế nhau.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:332C419A2966631934F6CA2A",
+      "SEVERITY:4C85264F80D2414A3F73D957",
+      "SEVERITY:5CFA5C5D7898419362940F7D",
+      "SEVERITY:A90227DBDD5BC4704641C786",
+      "SEVERITY:A985A273FE2CB3EE032C4851"
+    ],
+    "source_refs": [
+      "EVIDENCE:34FCB632530FB945A3B2C3EA",
+      "EVIDENCE:3C1D5978A2712727A1FFC37B",
+      "EVIDENCE:44E04D582288DB0AE7CC939E",
+      "EVIDENCE:4860BCB436E6D2CDE2B80E3A",
+      "EVIDENCE:7F415CB9F63C40B261390124",
+      "EVIDENCE:87BA44CCA6668791F5799BD2",
+      "EVIDENCE:D65891EAED081D52B754BC3F",
+      "EVIDENCE:E249E8C616C63CD9A664D9E4",
+      "EVIDENCE:FD87EF5C4B310D3FFAC19E36"
+    ],
+    "title": "Memory disclosure when using ngx_http_slice_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:24:29+00:00",
+    "upstream_affected_expression": "1.15.8-1.31.2",
+    "upstream_unaffected_expression": "1.31.3+, 1.30.4+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Memory disclosure when using ngx_http_slice_module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:1EB198768794765FD728B568"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:0072A128DBD721A782179EEB",
+      "CLAIM:059BE6CB7C5DBBAA9DCA0520",
+      "CLAIM:06CBF969A202F7C589DCAE52",
+      "CLAIM:0701FC69D18495D80EAE8C8F",
+      "CLAIM:097EACB85F77DA2101284B73",
+      "CLAIM:189FC72C1C62DF1233F6D358",
+      "CLAIM:1DF54B9D3B0BBFC9689B1AB1",
+      "CLAIM:228349341F5AB7EFB69C0DFE",
+      "CLAIM:233E16440E83F4F2FA80E106",
+      "CLAIM:3F139AD107C0C526DFF1E531",
+      "CLAIM:51A74DA5E2E6E234C8596EBB",
+      "CLAIM:5441631D1EEAE60604504CA4",
+      "CLAIM:54CD05204A79488A1A10896B",
+      "CLAIM:6500FD6BEDC4A6BAE021EEAD",
+      "CLAIM:786FB471ABDE6CB92B41B897",
+      "CLAIM:7C90AEB37D7663D1CC09E9FF",
+      "CLAIM:87471C707C6BEA4D1D2216C9",
+      "CLAIM:92F031E7979EDCD9E69CCBAD",
+      "CLAIM:A0E829D4094AB65A6767E872",
+      "CLAIM:A51109E21B7BE3CFCE26C712",
+      "CLAIM:A679078A0281C4C7E5591776",
+      "CLAIM:A8FA140AAE0285AB6B115098",
+      "CLAIM:AC74E77E9A53C64CBF34B076",
+      "CLAIM:AEB1063A5D3524AB2EC7D5DE",
+      "CLAIM:B5298DE35AFAF319A58100FF",
+      "CLAIM:BB11CE2BB4AB95387AD92860",
+      "CLAIM:DE578948B35B07912A900971"
+    ],
+    "condition_refs": [
+      "CONDITION:F9D590FEDC8EB6B8DD9FA70F"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:34+00:00",
+    "cve_id": "CVE-2026-60005",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:EE51BE1DA898D82398957879",
+      "PACKAGE:DF1EBBB1B5116CB1C6E4295E",
+      "PACKAGE:D8CD1658968ABABE7E16A870"
+    ],
+    "distribution_status": [
+      "PACKAGE:EE51BE1DA898D82398957879",
+      "PACKAGE:DF1EBBB1B5116CB1C6E4295E",
+      "PACKAGE:D8CD1658968ABABE7E16A870"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-60005 ghi nhận: Memory disclosure when using ngx_http_slice_module. Phạm vi upstream: 1.15.8-1.31.2. Bản sửa được công bố: 1.31.3+, 1.30.4+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.4",
+      "VERSION:NGINX-1.31.3"
+    ],
+    "id": "CVE:CVE-2026-60005",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-07-15T15:41:06.279000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-60005",
+    "normal_component_behavior": "Chia request nội dung thành các slice theo cấu hình. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-07-15T15:04:21.040000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:CA879EB70DABAD2F19EA326E"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SLICE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-908"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Memory disclosure when using ngx_http_slice_module.\n\nCWE-908 — Uninitialized Resource: Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Các trường bắt buộc được khởi tạo trước khi đối tượng được công bố cho callback.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:332C419A2966631934F6CA2A",
+      "SEVERITY:4C85264F80D2414A3F73D957",
+      "SEVERITY:5CFA5C5D7898419362940F7D",
+      "SEVERITY:A90227DBDD5BC4704641C786",
+      "SEVERITY:A985A273FE2CB3EE032C4851"
+    ],
+    "source_refs": [
+      "EVIDENCE:3C1D5978A2712727A1FFC37B",
+      "EVIDENCE:44E04D582288DB0AE7CC939E",
+      "EVIDENCE:4860BCB436E6D2CDE2B80E3A",
+      "EVIDENCE:7F415CB9F63C40B261390124",
+      "EVIDENCE:87BA44CCA6668791F5799BD2",
+      "EVIDENCE:D65891EAED081D52B754BC3F",
+      "EVIDENCE:E249E8C616C63CD9A664D9E4",
+      "EVIDENCE:FD87EF5C4B310D3FFAC19E36"
+    ],
+    "title": "Memory disclosure when using ngx_http_slice_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:22:05+00:00",
+    "upstream_affected_expression": "1.15.8-1.31.2",
+    "upstream_unaffected_expression": "1.31.3+, 1.30.4+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\nImpact:\nThis vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.\nNote: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:24:29+00:00",
+  "entity_id": "CVE:CVE-2026-60005",
+  "id": "HISTORY:A8F58F3ECE786C09654B1D3D"
+}

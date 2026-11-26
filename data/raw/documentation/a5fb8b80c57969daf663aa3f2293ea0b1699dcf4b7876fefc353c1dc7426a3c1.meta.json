@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:43+00:00",
+  "content_hash": "e50ccebd8955486eb424d9fa8de8e98b9a4390ebb0b96b17d19268a6b74f76f7",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac71-1d82\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:37 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/e50ccebd8955486eb424d9fa8de8e98b9a4390ebb0b96b17d19268a6b74f76f7.html",
+  "retrieved_at": "2026-11-25T02:32:43+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_grpc_module.html"
+}

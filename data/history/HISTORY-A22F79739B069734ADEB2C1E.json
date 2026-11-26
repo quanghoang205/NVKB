@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:36+00:00",
+    "description": "LEARNING:PATH-04 learns_from CONCEPT:CVSS",
+    "entity_type": "Relationship",
+    "id": "REL:C09254FD0154CB43BD5E44F8",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:CVSS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:36+00:00",
+    "description": "LEARNING:PATH-04 learns_from CONCEPT:CVSS",
+    "entity_type": "Relationship",
+    "id": "REL:C09254FD0154CB43BD5E44F8",
+    "name": "learns_from",
+    "object_entity_id": "CONCEPT:CVSS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6C70BB482B61BC6114F272E7"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:33:36+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:37+00:00",
+  "entity_id": "REL:C09254FD0154CB43BD5E44F8",
+  "id": "HISTORY:A22F79739B069734ADEB2C1E"
+}

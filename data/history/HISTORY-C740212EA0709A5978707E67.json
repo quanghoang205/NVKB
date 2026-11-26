@@ -1,0 +1,313 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free when using asynchronous file I/O (AIO)",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B82411E643A9ACCB008B6600"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:11E10BBB92BE13582E850D12",
+      "CLAIM:1EFFB88D6A2CCB38EBBEF282",
+      "CLAIM:200B1DB8883DE6B34EA21D4F",
+      "CLAIM:21AC47725F059EA6275AFE25",
+      "CLAIM:2C0D84B6E503D61E065B3AF5",
+      "CLAIM:3550929442963C1C80CF6ABA",
+      "CLAIM:364D0594E6A97EA2C12EE018",
+      "CLAIM:4D809FF3E2D503915F31637D",
+      "CLAIM:4EA3BD319DBAB56F55C972AD",
+      "CLAIM:544E1C70F3762038FE48EEDB",
+      "CLAIM:5A9ED89ADCD94FDDC1126154",
+      "CLAIM:5BD8C0BDDCF3EC939DF2467D",
+      "CLAIM:5C402EA7B2670AD249C0144D",
+      "CLAIM:656557675D409CE4F1893D9B",
+      "CLAIM:6B950DACD451CEA7685C7143",
+      "CLAIM:7942F643672346AB1BCC4FA3",
+      "CLAIM:9908702AC32F308411A162A2",
+      "CLAIM:9BD272EA7DFBE18975945D9B",
+      "CLAIM:C0DB1A4513EF4B2ED6FDDFF0",
+      "CLAIM:D05CAC821164602DF27BA545",
+      "CLAIM:D1440BAAFDA757FBD934A937",
+      "CLAIM:D5B423D722018CDB4D423085",
+      "CLAIM:DC0B96F8125CE1A9DF618E6B",
+      "CLAIM:E0620EA8DC390509D0711365",
+      "CLAIM:EE430783452E96549E55B38A",
+      "CLAIM:F440EA66B9C7685331A8122C",
+      "CLAIM:F86622D32C328342D5FFAD75"
+    ],
+    "condition_refs": [
+      "CONDITION:7DCE01E4EB7730F0A1088A20"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:54+00:00",
+    "cve_id": "CVE-2026-97205",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:246BFCA4404A21599F2990F9",
+      "PACKAGE:5FFE3804B7137E016605C424",
+      "PACKAGE:3312A8BE30B709609519870B"
+    ],
+    "distribution_status": [
+      "PACKAGE:246BFCA4404A21599F2990F9",
+      "PACKAGE:5FFE3804B7137E016605C424",
+      "PACKAGE:3312A8BE30B709609519870B"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-97205 ghi nhận: Use-after-free when using asynchronous file I/O (AIO). Phạm vi upstream: 0.8.11-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-97205",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-10-15T10:31:15.547000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-97205",
+    "normal_component_behavior": "Cấu hình server, location, connection và xử lý HTTP nền tảng. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:27.487000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:B62F057ACF12EBAA309C0935"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-CORE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free when using asynchronous file I/O (AIO).\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:3568CB83D52D8023F293F4B9",
+      "SEVERITY:7BFAF4D5ADAC301D7D21950C",
+      "SEVERITY:9EB2D0AC8B0175DA7E48EEE8",
+      "SEVERITY:E24C47FDDADB3F736412973E",
+      "SEVERITY:E58E229E52F1D9177FF5C902"
+    ],
+    "source_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "title": "Use-after-free when using asynchronous file I/O (AIO)",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:22:05+00:00",
+    "upstream_affected_expression": "0.8.11-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free when using asynchronous file I/O (AIO)",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:B82411E643A9ACCB008B6600"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:11E10BBB92BE13582E850D12",
+      "CLAIM:1EFFB88D6A2CCB38EBBEF282",
+      "CLAIM:200B1DB8883DE6B34EA21D4F",
+      "CLAIM:21AC47725F059EA6275AFE25",
+      "CLAIM:2C0D84B6E503D61E065B3AF5",
+      "CLAIM:3550929442963C1C80CF6ABA",
+      "CLAIM:364D0594E6A97EA2C12EE018",
+      "CLAIM:4D809FF3E2D503915F31637D",
+      "CLAIM:4EA3BD319DBAB56F55C972AD",
+      "CLAIM:544E1C70F3762038FE48EEDB",
+      "CLAIM:5A9ED89ADCD94FDDC1126154",
+      "CLAIM:5BD8C0BDDCF3EC939DF2467D",
+      "CLAIM:5C402EA7B2670AD249C0144D",
+      "CLAIM:656557675D409CE4F1893D9B",
+      "CLAIM:6B950DACD451CEA7685C7143",
+      "CLAIM:7942F643672346AB1BCC4FA3",
+      "CLAIM:9908702AC32F308411A162A2",
+      "CLAIM:9BD272EA7DFBE18975945D9B",
+      "CLAIM:C0DB1A4513EF4B2ED6FDDFF0",
+      "CLAIM:D05CAC821164602DF27BA545",
+      "CLAIM:D1440BAAFDA757FBD934A937",
+      "CLAIM:D5B423D722018CDB4D423085",
+      "CLAIM:DC0B96F8125CE1A9DF618E6B",
+      "CLAIM:E0620EA8DC390509D0711365",
+      "CLAIM:EE430783452E96549E55B38A",
+      "CLAIM:F440EA66B9C7685331A8122C",
+      "CLAIM:F86622D32C328342D5FFAD75"
+    ],
+    "condition_refs": [
+      "CONDITION:7DCE01E4EB7730F0A1088A20"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:54+00:00",
+    "cve_id": "CVE-2026-97205",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:246BFCA4404A21599F2990F9",
+      "PACKAGE:5FFE3804B7137E016605C424",
+      "PACKAGE:3312A8BE30B709609519870B"
+    ],
+    "distribution_status": [
+      "PACKAGE:246BFCA4404A21599F2990F9",
+      "PACKAGE:5FFE3804B7137E016605C424",
+      "PACKAGE:3312A8BE30B709609519870B"
+    ],
+    "documented_configuration_context": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-97205 ghi nhận: Use-after-free when using asynchronous file I/O (AIO). Phạm vi upstream: 0.8.11-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-97205",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-15T10:31:15.547000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-97205",
+    "normal_component_behavior": "Cấu hình server, location, connection và xử lý HTTP nền tảng. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:27.487000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:B62F057ACF12EBAA309C0935"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-CORE-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free when using asynchronous file I/O (AIO).\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:3568CB83D52D8023F293F4B9",
+      "SEVERITY:7BFAF4D5ADAC301D7D21950C",
+      "SEVERITY:9EB2D0AC8B0175DA7E48EEE8",
+      "SEVERITY:E24C47FDDADB3F736412973E",
+      "SEVERITY:E58E229E52F1D9177FF5C902"
+    ],
+    "source_refs": [
+      "EVIDENCE:11D661193742367787FAE30B",
+      "EVIDENCE:49E983F13A5FF0D581C3675B",
+      "EVIDENCE:AE7BD39E2B4F91A6144A6DA5",
+      "EVIDENCE:BB3F86930A1E39AD58131B03",
+      "EVIDENCE:D9E46882376ECEC8C775B4C8",
+      "EVIDENCE:DA58A8C9C64BBC27B381CA6F",
+      "EVIDENCE:F3098454B4751E961D149C8B",
+      "EVIDENCE:FE5014320D014371AB9F838E"
+    ],
+    "title": "Use-after-free when using asynchronous file I/O (AIO)",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:12:58+00:00",
+    "upstream_affected_expression": "0.8.11-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:22:05+00:00",
+  "entity_id": "CVE:CVE-2026-97205",
+  "id": "HISTORY:C740212EA0709A5978707E67"
+}

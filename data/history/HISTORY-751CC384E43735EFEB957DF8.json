@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:8BCF7D43FB057853F9C464B1",
+    "claim_value": "\"Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:58+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "id": "CLAIM:8BCF7D43FB057853F9C464B1",
+    "name": "WEAKNESS:CWE-290: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-290",
+    "updated_at": "2026-11-25T02:48:58+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:58+00:00",
+  "entity_id": "CLAIM:8BCF7D43FB057853F9C464B1",
+  "id": "HISTORY:751CC384E43735EFEB957DF8"
+}

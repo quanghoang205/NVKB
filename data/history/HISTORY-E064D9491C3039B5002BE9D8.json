@@ -1,0 +1,54 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-SESSION-CACHE learns_from PROTOCOL:TLS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:382C5DF8075247A1B478C304",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:TLS",
+    "predicate": "learns_from",
+    "rationale": "ssl_session_cache recommends TLS as background. This legacy curriculum choice has no measured learner validation; not a technical causal edge.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:734374E097DD08CB87E09B80"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T04:13:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-SESSION-CACHE learns_from PROTOCOL:TLS",
+    "entity_type": "Relationship",
+    "id": "REL:382C5DF8075247A1B478C304",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:TLS",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:734374E097DD08CB87E09B80"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:44:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:06+00:00",
+  "entity_id": "REL:382C5DF8075247A1B478C304",
+  "id": "HISTORY:E064D9491C3039B5002BE9D8"
+}

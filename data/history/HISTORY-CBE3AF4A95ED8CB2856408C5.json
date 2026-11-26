@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:A10A22A979A40A48F2EE1909",
+      "CLAIM:F194DBC161FCCD035031E2EB",
+      "CLAIM:54B9FD64ADBCA9A295E52531",
+      "CLAIM:7E6D56099A1C64FC248B4C29",
+      "CLAIM:BD113F48112B0835CAFE7165",
+      "CLAIM:76530C72E434FC25AC60C580",
+      "CLAIM:B516DBA10A631B3948CC23B2",
+      "CLAIM:DD8C622668F51F727DDF8612"
+    ],
+    "created_at": "2026-11-25T02:32:47+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp request đến SCGI server.",
+    "description": "Chuyển tiếp request đến SCGI server.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SCGI-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_scgi_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_scgi_module",
+    "normal_behavior": "Chuyển tiếp request đến SCGI server. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+    ],
+    "updated_at": "2026-11-25T02:32:47+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:47+00:00",
+  "entity_id": "MODULE:NGX-HTTP-SCGI-MODULE",
+  "id": "HISTORY:CBE3AF4A95ED8CB2856408C5"
+}

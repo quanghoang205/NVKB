@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:AE81BA5E6902D216A2318EAC",
+      "CLAIM:89D8E5AFCF8245630450ECF8",
+      "CLAIM:60B690326B8D1FDF67F52330",
+      "CLAIM:DF7818F7C6B6BE65ECBB43B5",
+      "CLAIM:338D3ADA615507774F142B5F",
+      "CLAIM:8F62B99AB89FB474FE430C65",
+      "CLAIM:ED733F7EEC8A1F4D86B131C4",
+      "CLAIM:D8B66CEFDA96CB7B976D1DD2"
+    ],
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "description": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_stream_ssl_preread_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_stream_ssl_preread_module",
+    "normal_behavior": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:AE81BA5E6902D216A2318EAC",
+      "CLAIM:89D8E5AFCF8245630450ECF8",
+      "CLAIM:60B690326B8D1FDF67F52330",
+      "CLAIM:DF7818F7C6B6BE65ECBB43B5",
+      "CLAIM:338D3ADA615507774F142B5F",
+      "CLAIM:8F62B99AB89FB474FE430C65",
+      "CLAIM:ED733F7EEC8A1F4D86B131C4",
+      "CLAIM:D8B66CEFDA96CB7B976D1DD2"
+    ],
+    "created_at": "2026-11-25T02:32:56+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "description": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_stream_ssl_preread_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_stream_ssl_preread_module",
+    "normal_behavior": "Đọc metadata ClientHello mà không kết thúc TLS trong preread phase. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "stream subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:15AE23603CC592238936C538"
+    ],
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:03+00:00",
+  "entity_id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+  "id": "HISTORY:FDE686CB9417EDD3E7C7571E"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E0DF1E757255DB6CCF02BF50",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:61FDE5F49071560948A1D9AA",
+    "claim_value": "\"Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy ứng dụng cần xét đúng server context.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:AAB65CD4FFD0CC297AE37B2B: ssl_verify_client; topic=DIRECTIVE:SSL-VERIFY-CLIENT",
+    "evidence_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:61FDE5F49071560948A1D9AA",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: normal_behavior",
+    "observation_key": "OBSERVATION:C507BDFA0A9CCEDB6B7183B4",
+    "observed_at": "2026-11-25T02:44:33+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T04:12:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:61FDE5F49071560948A1D9AA",
+    "claim_value": "\"Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy ứng dụng cần xét đúng server context.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "id": "CLAIM:61FDE5F49071560948A1D9AA",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:38+00:00",
+  "entity_id": "CLAIM:61FDE5F49071560948A1D9AA",
+  "id": "HISTORY:6DD7F541EC9544C2ECE30A22"
+}

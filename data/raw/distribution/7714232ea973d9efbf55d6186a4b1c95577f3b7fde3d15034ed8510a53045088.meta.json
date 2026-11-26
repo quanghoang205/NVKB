@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:00+00:00",
+  "content_hash": "c5597690d2caa9f34257213d84c8c543bff10a31200ee406378df8da3abd42ae",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/c5597690d2caa9f34257213d84c8c543bff10a31200ee406378df8da3abd42ae.html",
+  "retrieved_at": "2026-11-25T02:27:00+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-123007"
+}

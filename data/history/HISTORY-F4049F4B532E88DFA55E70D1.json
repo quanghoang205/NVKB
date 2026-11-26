@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "756b7697045b623b6c698a224d22e1070c12485e375571dddaa3ef0d81c27710",
+    "created_at": "2026-11-25T02:32:48+00:00",
+    "description": "Chia request nội dung thành các slice theo cấu hình.",
+    "document_title": "Module ngx_http_slice_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:D341E487F7315AF675499151",
+    "id": "EVIDENCE:D341E487F7315AF675499151",
+    "local_snapshot_path": "data/raw/documentation/snapshots/756b7697045b623b6c698a224d22e1070c12485e375571dddaa3ef0d81c27710.html",
+    "name": "Module ngx_http_slice_module",
+    "paraphrase": "Chia request nội dung thành các slice theo cấu hình.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:48+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_slice_module",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_slice_module.html",
+    "updated_at": "2026-11-25T02:32:48+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:48+00:00",
+  "entity_id": "EVIDENCE:D341E487F7315AF675499151",
+  "id": "HISTORY:F4049F4B532E88DFA55E70D1"
+}

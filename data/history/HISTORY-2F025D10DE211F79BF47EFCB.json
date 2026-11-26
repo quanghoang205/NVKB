@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:9A6DFF6D10880FABA2872DBB",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:D1351840EFFC441E740C62F5",
+    "claim_value": "\"## Nguyên tắc review\\n\\nSo sánh lifetime request, control stream và buffer khi đọc advisory. Với lỗi ở nén trường, tên encoder không tự chỉ ra hàm hay thuật toán cụ thể; nguồn chuẩn chỉ dạy cơ chế bình thường. Với lỗi address spoofing, đọc QUIC address validation và policy ứng dụng; với lỗi body injection, đọc ranh giới message/upstream. Các bài CVE không cung cấp traffic hay quy trình tái hiện.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:37+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8D04B81E8C20010F84D4889B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D1351840EFFC441E740C62F5",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:HTTP-3: v1.3:knowledge:Nguyên tắc review",
+    "observed_at": "2026-11-25T05:08:37+00:00",
+    "predicate": "v1.3:knowledge:Nguyên tắc review",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:8D04B81E8C20010F84D4889B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-3",
+    "updated_at": "2026-11-25T05:08:37+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:37+00:00",
+  "entity_id": "CLAIM:D1351840EFFC441E740C62F5",
+  "id": "HISTORY:2F025D10DE211F79BF47EFCB"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_refs": [
+    "CLAIM:9252E23EDBC990FFC8F37FA5"
+  ],
+  "created_at": "2026-11-25T02:28:41+00:00",
+  "description": "CVE:CVE-2026-9256 classified_as WEAKNESS:CWE-122",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:9A7F4E6E274152DB4C107718",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "name": "classified_as",
+  "object_entity_id": "WEAKNESS:CWE-122",
+  "predicate": "classified_as",
+  "rationale": "Legacy association: Published weakness classification. Source references alone do not establish causation.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Published weakness classification",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:F8A106D1BC0974617FFB0815"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-9256",
+  "updated_at": "2026-11-25T04:13:08+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy evidence scope; no all-version generalization"
+}

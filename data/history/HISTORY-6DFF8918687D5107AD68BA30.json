@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:B245C7ECE6D75567E3849488",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:69043B2AA151FD1486D5663D",
+    "claim_value": "\"Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:C67CBD8D65FDA0EC66099A3F: Description / Potential Mitigations",
+    "evidence_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:69043B2AA151FD1486D5663D",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "WEAKNESS:CWE-444: definition",
+    "observation_key": "OBSERVATION:D7151964E0E0FA2E92070B99",
+    "observed_at": "2026-11-25T02:32:40+00:00",
+    "predicate": "definition",
+    "product_scope": "WEAKNESS:CWE-444",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:40+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T04:12:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:69043B2AA151FD1486D5663D",
+    "claim_value": "\"Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:40+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "id": "CLAIM:69043B2AA151FD1486D5663D",
+    "name": "WEAKNESS:CWE-444: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C67CBD8D65FDA0EC66099A3F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:32:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:39+00:00",
+  "entity_id": "CLAIM:69043B2AA151FD1486D5663D",
+  "id": "HISTORY:6DFF8918687D5107AD68BA30"
+}

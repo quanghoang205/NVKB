@@ -1,0 +1,31 @@
+{
+  "action": "created",
+  "after": {
+    "applicable_context": "CVE-2026-42926",
+    "claim_refs": [
+      "CLAIM:6C8FDF135A056404B413D373"
+    ],
+    "created_at": "2026-11-25T05:38:28+00:00",
+    "definition": "Nguồn 42926 nêu upstream request injection; không suy hậu quả ứng dụng tiếp theo.",
+    "description": "Nguồn 42926 nêu upstream request injection; không suy hậu quả ứng dụng tiếp theo.",
+    "entity_type": "Impact",
+    "id": "IMPACT:UPSTREAM-MESSAGE-INTEGRITY",
+    "limitations": "Not an asset-level observation; source scope only.",
+    "name": "Vi phạm toàn vẹn message tới upstream",
+    "related_knowledge": [
+      "COMPONENT:UPSTREAM-COMMUNICATION",
+      "WEAKNESS:CWE-172",
+      "CONTROL:PATCH-VERIFICATION"
+    ],
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:3954E64C288301418D414EAF"
+    ],
+    "updated_at": "2026-11-25T05:38:28+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:38:28+00:00",
+  "entity_id": "IMPACT:UPSTREAM-MESSAGE-INTEGRITY",
+  "id": "HISTORY:87DC460CF1E9F867121D5814"
+}

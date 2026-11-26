@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:2E484284D523205C1CDACD1F",
+    "claim_value": "\"Quản lý vòng đời, hủy callback và dùng sanitizer trong phát triển.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:27+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B9375A036875A5652FF36425"
+    ],
+    "id": "CLAIM:2E484284D523205C1CDACD1F",
+    "name": "WEAKNESS:CWE-416: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B9375A036875A5652FF36425"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-416",
+    "updated_at": "2026-11-25T02:44:27+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:27+00:00",
+  "entity_id": "CLAIM:2E484284D523205C1CDACD1F",
+  "id": "HISTORY:8A5D8105DC6CD9B697433029"
+}

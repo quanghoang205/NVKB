@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:949797526F089C1F8563287E",
+    "claim_value": "\"Chuyển từ dữ liệu chưa tin cậy sang cấu hình, handler và response.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "id": "CLAIM:949797526F089C1F8563287E",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DFBB5BD88F7FC640669D3012"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:949797526F089C1F8563287E",
+  "id": "HISTORY:7C38A88A33704063F67BDA1E"
+}

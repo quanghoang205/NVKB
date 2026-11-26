@@ -1,0 +1,74 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:DAF64FA8FB72DDD2D06CF48D"
+    ],
+    "created_at": "2026-11-25T02:33:39+00:00",
+    "description": "CVE:CVE-2024-35200 related_modules MODULE:NGX-HTTP-V3-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:7936D9A35700AA674B77019E",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-V3-MODULE",
+    "predicate": "related_modules",
+    "rationale": "Legacy association: Document context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Document context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T04:13:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:DAF64FA8FB72DDD2D06CF48D"
+    ],
+    "created_at": "2026-11-25T02:33:39+00:00",
+    "description": "CVE:CVE-2024-35200 related_modules MODULE:NGX-HTTP-V3-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:7936D9A35700AA674B77019E",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-V3-MODULE",
+    "predicate": "related_modules",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:107B95FF1D170EC14FF582F7",
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:2BBBE149A8BE0485DCDED59B",
+      "EVIDENCE:323F5BF36A13643795E6FBFA",
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B",
+      "EVIDENCE:8BF3D0FCA81064E12AD074DB",
+      "EVIDENCE:ADE803DD55AF1C4D6A59D83F",
+      "EVIDENCE:B250179A33F97BECB42DB182",
+      "EVIDENCE:BA034511FAFD312CAA51718A"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:33:39+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:08+00:00",
+  "entity_id": "REL:7936D9A35700AA674B77019E",
+  "id": "HISTORY:15A1DAE6104E9E1D06B55D2E"
+}

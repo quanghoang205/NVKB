@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:3F8C454AB4ED232DADB34147",
+    "claim_value": "\"Transport bảo mật dựa trên UDP với nhiều stream độc lập.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "id": "CLAIM:3F8C454AB4ED232DADB34147",
+    "name": "PROTOCOL:QUIC: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:3F8C454AB4ED232DADB34147",
+  "id": "HISTORY:58AD10CF05FC0F13E93ABD51"
+}

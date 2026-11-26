@@ -1,0 +1,316 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:3162647B7C0DF9E24139047E"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:1BD673BA82BBB69D80BE0515",
+      "CLAIM:1C46E4A6066C6F2876BEE350",
+      "CLAIM:31032AB3B3B6EC1D63EC1FB2",
+      "CLAIM:351117F7AE0E2F443B3061CC",
+      "CLAIM:3AC1F2C40BA78464730094CB",
+      "CLAIM:3E6BF1A2C80A4AD218ABC9D9",
+      "CLAIM:43E1DE2D0E0E10968706A81D",
+      "CLAIM:44557EF5E70ABE6DABF426A9",
+      "CLAIM:4A18953A1E1FCEA7DF1C4784",
+      "CLAIM:4B40B348550459EF00148062",
+      "CLAIM:52FD59AA99409764E05F8650",
+      "CLAIM:63D158AB6B383415668B9DAC",
+      "CLAIM:6A9E8D3BE0FA626A61460EFE",
+      "CLAIM:7269BF6FAC7ED614C16BF2DB",
+      "CLAIM:78BFECCF8B1A5E76DCB5D818",
+      "CLAIM:7D8072BD1D2DC62D88753710",
+      "CLAIM:80BF25CD7D78D696B7253DCA",
+      "CLAIM:8C2B5CE5AAAC53303C116DD7",
+      "CLAIM:ACF09F1B44864D023BEEAA9F",
+      "CLAIM:C96EB4E6EB72F840CE3AFF9F",
+      "CLAIM:CD8BBDD332E9653D5F5EFB57",
+      "CLAIM:CE5C3BC7DDCD97661F656F70",
+      "CLAIM:D1066137D7460FCB9A0C413B",
+      "CLAIM:DAAE48223976FAE29C498D02",
+      "CLAIM:DB660690BC856F7DB84F32AE",
+      "CLAIM:E876019A10FA287F78DC04A9",
+      "CLAIM:E96C50DD33ACA737FD1B927E",
+      "CLAIM:ED9D16652312B3E9C4EF3AAA",
+      "CLAIM:EDC37F25E940AFC82616BDA7"
+    ],
+    "condition_refs": [
+      "CONDITION:74E460C8865C9FB0849188DE"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "cve_id": "CVE-2026-27784",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:085256A33E16E3B5EC449201",
+      "PACKAGE:67998DDB67C74E2E87978E72",
+      "PACKAGE:8021CA8ADB5E0F0E880F87BE",
+      "PACKAGE:3F9D831C66B0D11A4FE800BD"
+    ],
+    "distribution_status": [
+      "PACKAGE:085256A33E16E3B5EC449201",
+      "PACKAGE:67998DDB67C74E2E87978E72",
+      "PACKAGE:8021CA8ADB5E0F0E880F87BE",
+      "PACKAGE:3F9D831C66B0D11A4FE800BD"
+    ],
+    "documented_configuration_context": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-27784 ghi nhận: Buffer overflow in the ngx_http_mp4_module. Phạm vi upstream: 1.1.19-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27784",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-07-15T01:12:57.824000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-27784",
+    "normal_component_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:25.343000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:810BB081B8D8FB8F5B808204"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-190"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Buffer overflow in the ngx_http_mp4_module.\n\nCWE-190 — Integer overflow: Kết quả số học vượt miền biểu diễn của kiểu số.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Giá trị trung gian và chuyển đổi signed/unsigned không làm thay đổi ý nghĩa.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:092C8F66AF1FDF27BD4074E2",
+      "SEVERITY:0EC82D0486A5E1D85BECE683",
+      "SEVERITY:3B0D1EA24B5FC1758A7489C0",
+      "SEVERITY:5080F216F713DBDF6DE529C3",
+      "SEVERITY:C09032CF5D6B12DB2D510B9E",
+      "SEVERITY:C2CE2A984B4262BA011497C4",
+      "SEVERITY:EABB9A044821029C38D8F09B"
+    ],
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "title": "Buffer overflow in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:40:35+00:00",
+    "upstream_affected_expression": "1.1.19-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overflow in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:3162647B7C0DF9E24139047E"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:1BD673BA82BBB69D80BE0515",
+      "CLAIM:1C46E4A6066C6F2876BEE350",
+      "CLAIM:31032AB3B3B6EC1D63EC1FB2",
+      "CLAIM:351117F7AE0E2F443B3061CC",
+      "CLAIM:3AC1F2C40BA78464730094CB",
+      "CLAIM:3E6BF1A2C80A4AD218ABC9D9",
+      "CLAIM:43E1DE2D0E0E10968706A81D",
+      "CLAIM:44557EF5E70ABE6DABF426A9",
+      "CLAIM:4A18953A1E1FCEA7DF1C4784",
+      "CLAIM:4B40B348550459EF00148062",
+      "CLAIM:63D158AB6B383415668B9DAC",
+      "CLAIM:6A9E8D3BE0FA626A61460EFE",
+      "CLAIM:7269BF6FAC7ED614C16BF2DB",
+      "CLAIM:7D8072BD1D2DC62D88753710",
+      "CLAIM:80BF25CD7D78D696B7253DCA",
+      "CLAIM:8C2B5CE5AAAC53303C116DD7",
+      "CLAIM:C96EB4E6EB72F840CE3AFF9F",
+      "CLAIM:CD8BBDD332E9653D5F5EFB57",
+      "CLAIM:CE5C3BC7DDCD97661F656F70",
+      "CLAIM:D1066137D7460FCB9A0C413B",
+      "CLAIM:DAAE48223976FAE29C498D02",
+      "CLAIM:E876019A10FA287F78DC04A9",
+      "CLAIM:E96C50DD33ACA737FD1B927E",
+      "CLAIM:ED9D16652312B3E9C4EF3AAA",
+      "CLAIM:EDC37F25E940AFC82616BDA7"
+    ],
+    "condition_refs": [
+      "CONDITION:74E460C8865C9FB0849188DE"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "cve_id": "CVE-2026-27784",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:085256A33E16E3B5EC449201",
+      "PACKAGE:67998DDB67C74E2E87978E72",
+      "PACKAGE:8021CA8ADB5E0F0E880F87BE",
+      "PACKAGE:3F9D831C66B0D11A4FE800BD"
+    ],
+    "distribution_status": [
+      "PACKAGE:085256A33E16E3B5EC449201",
+      "PACKAGE:67998DDB67C74E2E87978E72",
+      "PACKAGE:8021CA8ADB5E0F0E880F87BE",
+      "PACKAGE:3F9D831C66B0D11A4FE800BD"
+    ],
+    "documented_configuration_context": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-27784 ghi nhận: Buffer overflow in the ngx_http_mp4_module. Phạm vi upstream: 1.1.19-1.29.6. Bản sửa được công bố: 1.29.7+, 1.28.3+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.28.3",
+      "VERSION:NGINX-1.29.7"
+    ],
+    "id": "CVE:CVE-2026-27784",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-07-15T01:12:57.824000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-27784",
+    "normal_component_behavior": "Hỗ trợ streaming nội dung MP4 với xử lý metadata của media. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-03-24T14:13:25.343000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:810BB081B8D8FB8F5B808204"
+    ],
+    "related_components": [
+      "COMPONENT:MEMORY-POOL",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-190"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Buffer overflow in the ngx_http_mp4_module. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:092C8F66AF1FDF27BD4074E2",
+      "SEVERITY:0EC82D0486A5E1D85BECE683",
+      "SEVERITY:3B0D1EA24B5FC1758A7489C0",
+      "SEVERITY:5080F216F713DBDF6DE529C3",
+      "SEVERITY:C09032CF5D6B12DB2D510B9E",
+      "SEVERITY:C2CE2A984B4262BA011497C4",
+      "SEVERITY:EABB9A044821029C38D8F09B"
+    ],
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "title": "Buffer overflow in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:33:48+00:00",
+    "upstream_affected_expression": "1.1.19-1.29.6",
+    "upstream_unaffected_expression": "1.29.7+, 1.28.3+",
+    "vendor_documented_conditions": [
+      "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:40:35+00:00",
+  "entity_id": "CVE:CVE-2026-27784",
+  "id": "HISTORY:A15C32421090D9897384233A"
+}

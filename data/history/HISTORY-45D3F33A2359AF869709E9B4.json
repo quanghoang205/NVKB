@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F596CCF8EB3AF1896A75CA37",
+    "claim_value": "\"Kiểm thử các trường hợp URI đại diện và kiểm tra sự tương tác giữa location, alias và rewrite.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CC0FC3E5BE9713A5AEAA31DE"
+    ],
+    "id": "CLAIM:F596CCF8EB3AF1896A75CA37",
+    "name": "COMPONENT:LOCATION-MATCHING: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CC0FC3E5BE9713A5AEAA31DE"
+    ],
+    "subject_entity_id": "COMPONENT:LOCATION-MATCHING",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:F596CCF8EB3AF1896A75CA37",
+  "id": "HISTORY:45D3F33A2359AF869709E9B4"
+}

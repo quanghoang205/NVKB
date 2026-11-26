@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:44+00:00",
+  "content_hash": "39d11e54416c5b5390efcdda1e62e3f083ce9acb5c8ac3aad1591dadc1d7499a",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"72cde27467d21811e756ac7b99e6041e05e4caf7feab39e9dc37a91dd190de94\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/39d11e54416c5b5390efcdda1e62e3f083ce9acb5c8ac3aad1591dadc1d7499a.json",
+  "retrieved_at": "2026-11-25T02:25:44+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2011/4xxx/CVE-2011-4963.json"
+}

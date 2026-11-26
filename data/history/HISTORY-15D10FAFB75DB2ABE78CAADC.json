@@ -1,0 +1,65 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:89F7BA8BF0376ECF502B3FE8",
+      "CLAIM:146D0B90811C4CC907CFDAD5",
+      "CLAIM:8B55FE9932E8A282386D717A",
+      "CLAIM:F342CD2613E175FE9A4CA819",
+      "CLAIM:86279142E0FFAC3AB1B5AE53",
+      "CLAIM:579C6F59A31E20DCAA9F5115",
+      "CLAIM:262F6E340FD3A523234A3B2A",
+      "CLAIM:4FF2F606ABD06256BBB642C7"
+    ],
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "cwe_id": "CWE-476",
+    "defensive_principles": "Kiểm tra trả về, lan truyền lỗi và bao phủ trạng thái đối tượng chưa khởi tạo.",
+    "definition": "Truy cập qua con trỏ NULL.",
+    "description": "Truy cập qua con trỏ NULL.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Worker có thể kết thúc bất thường.",
+    "id": "WEAKNESS:CWE-476",
+    "learning_objectives": [
+      "Giải thích CWE-476 — NULL pointer dereference bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-476 — NULL pointer dereference",
+    "normal_behavior": "Kết quả allocation/lookup được kiểm tra trước khi dùng trường dữ liệu.",
+    "related_failure_classes": "NULL pointer dereference",
+    "related_knowledge": [],
+    "safety_assumptions": "Đường lỗi không tiếp tục như đường thành công.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:8B4D10F312B6AD83E27780ED",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:E080BE810C888D9012E21ECF"
+    ],
+    "updated_at": "2026-11-25T02:32:36+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:26:07+00:00",
+    "cwe_id": "CWE-476",
+    "description": "CWE-476 NULL Pointer Dereference",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-476",
+    "name": "CWE-476",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1E2175F7CBA0B7C5E6E8CFC9",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:8B4D10F312B6AD83E27780ED",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6"
+    ],
+    "updated_at": "2026-11-25T02:27:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:32:36+00:00",
+  "entity_id": "WEAKNESS:CWE-476",
+  "id": "HISTORY:15D10FAFB75DB2ABE78CAADC"
+}

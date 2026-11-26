@@ -1,0 +1,12 @@
+{
+  "claim_refs": [
+    "CLAIM:18510C1F4FF6928A7125D65D",
+    "CLAIM:92B59E59B223B4DBA9859276"
+  ],
+  "id": "CONFLICT:DD48BE942267BC2DB3532E43",
+  "predicate": "v1.3:mtu_boundary",
+  "resolution": null,
+  "reviewer_notes": "Cần đối chiếu phạm vi, nhánh và thời điểm của từng nguồn.",
+  "status": "CONFLICTED",
+  "subject_entity_id": "CVE:CVE-2024-34161"
+}

@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:26:42+00:00",
+    "cwe_id": "CWE-835",
+    "description": "CWE-835 Loop with Unreachable Exit Condition ('Infinite Loop')",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-835",
+    "name": "CWE-835",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DE52FE1407841B766BE78251"
+    ],
+    "updated_at": "2026-11-25T02:26:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:42+00:00",
+  "entity_id": "WEAKNESS:CWE-835",
+  "id": "HISTORY:8FC4A4412667AAE7C32EC17A"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:612BD854C12BE17E5165C660",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:F313FBBE46034C739C7DC3A2",
+    "claim_value": "\"Có khả năng chèn plaintext vào response từ upstream theo CNA.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:17+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C42DD8610CBF414D32C272F"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F313FBBE46034C739C7DC3A2",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-1642: v1.3:impact",
+    "observed_at": "2026-11-25T05:28:17+00:00",
+    "predicate": "v1.3:impact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1C42DD8610CBF414D32C272F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-1642",
+    "updated_at": "2026-11-25T05:28:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:28:17+00:00",
+  "entity_id": "CLAIM:F313FBBE46034C739C7DC3A2",
+  "id": "HISTORY:81AB17E05EFF8F04E98736B0"
+}

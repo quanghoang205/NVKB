@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:D3BCAE31B1479FB6FD3A9FE4",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "claim_value": "\"## Lựa chọn kỹ thuật\\n\\nDrain kết nối giúp giảm gián đoạn nhưng thời gian kết thúc phụ thuộc công việc còn sống và cấu hình shutdown. Reload cấu hình không thay binary của tiến trình đang chạy. Cập nhật package, chuyển cấu hình và chuyển binary là ba sự kiện cần kiểm chứng riêng. Worker cũ còn sống không tự chứng minh lỗi, nhưng có ý nghĩa khi một chính sách mới cần hiệu lực đồng nhất.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:38+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:64A2B524922D35EEBF31C76B",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: pilot_section:Lựa chọn kỹ thuật",
+    "observed_at": "2026-11-25T04:20:39+00:00",
+    "predicate": "pilot_section:Lựa chọn kỹ thuật",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:20:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:39+00:00",
+  "entity_id": "CLAIM:64A2B524922D35EEBF31C76B",
+  "id": "HISTORY:5368C1D75A88F3BBB3CA15B4"
+}

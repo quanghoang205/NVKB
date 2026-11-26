@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:629B84F9C04938C437FE7233",
+  "authority": "MITRE CWE",
+  "authority_scope": "MITRE CWE",
+  "claim_id": "CLAIM:43B1C8B8C138B98F706BDBC2",
+  "claim_value": "\"Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:49:02+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87: Description / Potential Mitigations; topic=WEAKNESS:CWE-908",
+  "evidence_refs": [
+    "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:43B1C8B8C138B98F706BDBC2",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "WEAKNESS:CWE-908: definition",
+  "observation_key": "OBSERVATION:011CC59C6844752A2114BF27",
+  "observed_at": "2026-11-25T02:49:02+00:00",
+  "predicate": "definition",
+  "product_scope": "WEAKNESS:CWE-908",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:49:01+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "WEAKNESS:CWE-908",
+  "updated_at": "2026-11-25T04:12:35+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

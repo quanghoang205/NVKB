@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:38BD07621B2533867CD371B5",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6F0E507BFA0575035C3D5173",
+    "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:24+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:D83549758905640EF04525E3: Protocol overview and state machine",
+    "evidence_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:6F0E507BFA0575035C3D5173",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "PROTOCOL:WEBSOCKET: defensive_principles",
+    "observation_key": "OBSERVATION:C8E43C3A64906ED5D35C387F",
+    "observed_at": "2026-11-25T02:32:24+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "PROTOCOL:WEBSOCKET",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:24+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T04:12:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:6F0E507BFA0575035C3D5173",
+    "claim_value": "\"Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:24+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "id": "CLAIM:6F0E507BFA0575035C3D5173",
+    "name": "PROTOCOL:WEBSOCKET: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:D83549758905640EF04525E3"
+    ],
+    "subject_entity_id": "PROTOCOL:WEBSOCKET",
+    "updated_at": "2026-11-25T02:32:24+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:40+00:00",
+  "entity_id": "CLAIM:6F0E507BFA0575035C3D5173",
+  "id": "HISTORY:C54769A01D8A9FD6B946E3AD"
+}

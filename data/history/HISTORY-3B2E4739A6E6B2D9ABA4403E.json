@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:3052794618927FB78F062146",
+      "CLAIM:56903D3C9DA17BFE4F15E8B5",
+      "CLAIM:82E6759D79E7EC36462C6FF4",
+      "CLAIM:AFB915E6CBA477DB495A6345",
+      "CLAIM:1231FF784691A314926CD122",
+      "CLAIM:B31771EF49086A442771189C",
+      "CLAIM:AC858FFC5D609C7FECE76D02",
+      "CLAIM:8471CA0306F7C6C6E78AF012"
+    ],
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý SMTP trong vai trò mail proxy.",
+    "description": "Xử lý SMTP trong vai trò mail proxy.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-MAIL-SMTP-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_mail_smtp_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_mail_smtp_module",
+    "normal_behavior": "Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:51+00:00",
+  "entity_id": "MODULE:NGX-MAIL-SMTP-MODULE",
+  "id": "HISTORY:3B2E4739A6E6B2D9ABA4403E"
+}

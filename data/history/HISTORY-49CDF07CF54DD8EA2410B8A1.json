@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "Debian Security Team",
+    "claim_id": "CLAIM:9F90135E83841E74EAC70C5C",
+    "claim_value": "\"Ưu tiên hoặc kết luận trạng thái bản vá sai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:34+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B52E5E1DCD6E4C83A52DD2CD"
+    ],
+    "id": "CLAIM:9F90135E83841E74EAC70C5C",
+    "name": "CONCEPT:BACKPORT: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B52E5E1DCD6E4C83A52DD2CD"
+    ],
+    "subject_entity_id": "CONCEPT:BACKPORT",
+    "updated_at": "2026-11-25T02:44:34+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:34+00:00",
+  "entity_id": "CLAIM:9F90135E83841E74EAC70C5C",
+  "id": "HISTORY:49CDF07CF54DD8EA2410B8A1"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4CA276F95EF0504B101CF426",
+    "claim_value": "\"Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy ứng dụng cần xét đúng server context.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+    ],
+    "id": "CLAIM:4CA276F95EF0504B101CF426",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "CLAIM:4CA276F95EF0504B101CF426",
+  "id": "HISTORY:B3497375B8A568212EAA74E7"
+}

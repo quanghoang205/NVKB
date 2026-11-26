@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:743ED7B2672D0E8A079FE0E7",
+    "authority": "CVE Program / CNA",
+    "authority_scope": "CVE Program / CNA",
+    "claim_id": "CLAIM:BCD4E9752123B823673F4B9A",
+    "claim_value": "\"This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\\n\\nImpact: \\nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "description",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:A2163880C26D9E0DFAE927BB: /containers/cna/descriptions",
+    "evidence_refs": [
+      "EVIDENCE:A2163880C26D9E0DFAE927BB"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:BCD4E9752123B823673F4B9A",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-123634: description",
+    "observation_key": "OBSERVATION:1EA8163EE4376A0AAB2ACC46",
+    "observed_at": "2026-11-25T02:27:06+00:00",
+    "predicate": "description",
+    "product_scope": "CVE:CVE-2026-123634",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:04+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program / CNA",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:A2163880C26D9E0DFAE927BB"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T04:12:48+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:BCD4E9752123B823673F4B9A",
+    "claim_value": "\"This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\\n\\nImpact: \\nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A2163880C26D9E0DFAE927BB"
+    ],
+    "id": "CLAIM:BCD4E9752123B823673F4B9A",
+    "name": "CVE:CVE-2026-123634: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A2163880C26D9E0DFAE927BB"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:48+00:00",
+  "entity_id": "CLAIM:BCD4E9752123B823673F4B9A",
+  "id": "HISTORY:2E996D68853D04C73F33834D"
+}

@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:0BBA1539AB3B86C071F01C87",
+      "CLAIM:4E0CC07A953FE4404FF238E7",
+      "CLAIM:3A2124D6BD3AC57477ABB87D",
+      "CLAIM:528B70D8ABC4FE345B1F49D4",
+      "CLAIM:FCBB6EC579DB4C61DF3852C4"
+    ],
+    "created_at": "2026-11-25T05:08:49+00:00",
+    "description": "CVE:CVE-2026-121810 learns_from PROTOCOL:QUIC",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-121810",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:BD5667924B49051D76143EB7",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:QUIC",
+    "predicate": "learns_from",
+    "rationale": "Đọc QUIC — stream, connection và kiểm chứng địa chỉ để thảo luận: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc QUIC — stream, connection và kiểm chứng địa chỉ để thảo luận: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:49+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:84906714DEB3580C84775572",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T05:08:49+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:49+00:00",
+  "entity_id": "REL:BD5667924B49051D76143EB7",
+  "id": "HISTORY:64E8711A575E5EF76405AF4D"
+}

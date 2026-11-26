@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c",
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Directive điều khiển xác minh chứng chỉ client.",
+    "document_title": "Module ngx_http_ssl_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:AAB65CD4FFD0CC297AE37B2B",
+    "id": "EVIDENCE:AAB65CD4FFD0CC297AE37B2B",
+    "local_snapshot_path": "data/raw/documentation/snapshots/3c1a452cc5260825260b4157ceff7953299fe690cee8673d72fdb91219fe882c.html",
+    "name": "Module ngx_http_ssl_module",
+    "paraphrase": "Directive điều khiển xác minh chứng chỉ client.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:28:08+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ssl_verify_client; topic=DIRECTIVE:SSL-VERIFY-CLIENT",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_ssl_module.html",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "EVIDENCE:AAB65CD4FFD0CC297AE37B2B",
+  "id": "HISTORY:F475AB6F37E0A3BA850424C6"
+}

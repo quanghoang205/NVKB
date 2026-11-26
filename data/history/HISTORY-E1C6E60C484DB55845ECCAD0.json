@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D5DF8335B917D699450B0E29",
+    "claim_value": "\"Session forgery when using TLS session tickets\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:57+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "id": "CLAIM:D5DF8335B917D699450B0E29",
+    "name": "CVE:CVE-2026-97629: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A716EB10BF59F23E716FB566"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:57+00:00",
+  "entity_id": "CLAIM:D5DF8335B917D699450B0E29",
+  "id": "HISTORY:E1C6E60C484DB55845ECCAD0"
+}

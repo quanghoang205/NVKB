@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:B317621A9B2FC76F4294510B",
+    "claim_value": "\"Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "id": "CLAIM:B317621A9B2FC76F4294510B",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:B317621A9B2FC76F4294510B",
+  "id": "HISTORY:AD0B0363DA114C53C20AF1B5"
+}

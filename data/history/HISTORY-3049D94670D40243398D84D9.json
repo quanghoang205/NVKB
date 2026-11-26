@@ -1,0 +1,285 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "SNI bypass when using client certificate validation in stream",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EDAF5ADAE098FA78945BDC69"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:09F1ABD04313CC5EEDB48A32",
+      "CLAIM:445DC7070ADE012BAFF0C628",
+      "CLAIM:4F276ADEEFFC60A235FBB933",
+      "CLAIM:56967E34210AE18146060C8E",
+      "CLAIM:60F4EB7CC8350FDF2545B700",
+      "CLAIM:745896BB29147AB88C6CD5FB",
+      "CLAIM:877BE5EFF56CECD2FE8F679E",
+      "CLAIM:8C4FE1DF3302A6BA350C0CF4",
+      "CLAIM:8D2FB5DFFF75083C4F3AB3D2",
+      "CLAIM:9149FB4C042C4601797D0FD7",
+      "CLAIM:9172D3B1327FC45E3E55ECEF",
+      "CLAIM:9A86B805A856DD5EBDDC8CD0",
+      "CLAIM:AC2A47EC9801A7CADC5E3C11",
+      "CLAIM:BF8EE2F5DAD8A5B3F10D83DA",
+      "CLAIM:C3CD8B84A2974F04D194D550",
+      "CLAIM:D97177B2F2A8A717BB4333C5",
+      "CLAIM:E36BC4237C78111589C8F4BF",
+      "CLAIM:ED45992C8E8E086D5B990FD2",
+      "CLAIM:EF444C8AD9F45773A1FEE77B",
+      "CLAIM:F8522D7AF8DA8B2F3213572B",
+      "CLAIM:FA2001C361F8A1001C9F095C",
+      "CLAIM:FAE9BAD3DDE9CA6957631F93",
+      "CLAIM:FB10CF72F2045F99BBA3F945"
+    ],
+    "condition_refs": [
+      "CONDITION:14800F9B055BFCA4763524B8"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "cve_id": "CVE-2026-120967",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "distribution_status": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-120967 ghi nhận: SNI bypass when using client certificate validation in stream. Phạm vi upstream: 1.25.5-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120967",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T16:48:16.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-120967",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:31.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6603EA922275DB1F330C73B2"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-1289"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: SNI bypass when using client certificate validation in stream.\n\nCWE-1289 — Unsafe Equivalence in Input: Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:1105949AED9D916DFA7763C8",
+      "SEVERITY:8BA0AE0D6D451792FEC71261",
+      "SEVERITY:C2DDF024EE2682910895119E",
+      "SEVERITY:EF21DDB0538BC9C2EB2F5856",
+      "SEVERITY:FABB2A92664A6B8CB3DE7EFF"
+    ],
+    "source_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001",
+      "EVIDENCE:1994A69D637E553F86F3B6B2",
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:608A179B53892BEE49B06889",
+      "EVIDENCE:66109A3E5325C97B7B17A996",
+      "EVIDENCE:C6297E645A0B495F563B3FEB",
+      "EVIDENCE:CC93E19522BE11DF9D98023D"
+    ],
+    "title": "SNI bypass when using client certificate validation in stream",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:49:10+00:00",
+    "upstream_affected_expression": "1.25.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "SNI bypass when using client certificate validation in stream",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EDAF5ADAE098FA78945BDC69"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:445DC7070ADE012BAFF0C628",
+      "CLAIM:4F276ADEEFFC60A235FBB933",
+      "CLAIM:56967E34210AE18146060C8E",
+      "CLAIM:60F4EB7CC8350FDF2545B700",
+      "CLAIM:745896BB29147AB88C6CD5FB",
+      "CLAIM:877BE5EFF56CECD2FE8F679E",
+      "CLAIM:8C4FE1DF3302A6BA350C0CF4",
+      "CLAIM:8D2FB5DFFF75083C4F3AB3D2",
+      "CLAIM:9149FB4C042C4601797D0FD7",
+      "CLAIM:9172D3B1327FC45E3E55ECEF",
+      "CLAIM:9A86B805A856DD5EBDDC8CD0",
+      "CLAIM:AC2A47EC9801A7CADC5E3C11",
+      "CLAIM:BF8EE2F5DAD8A5B3F10D83DA",
+      "CLAIM:C3CD8B84A2974F04D194D550",
+      "CLAIM:D97177B2F2A8A717BB4333C5",
+      "CLAIM:E36BC4237C78111589C8F4BF",
+      "CLAIM:ED45992C8E8E086D5B990FD2",
+      "CLAIM:EF444C8AD9F45773A1FEE77B",
+      "CLAIM:F8522D7AF8DA8B2F3213572B",
+      "CLAIM:FAE9BAD3DDE9CA6957631F93"
+    ],
+    "condition_refs": [
+      "CONDITION:14800F9B055BFCA4763524B8"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "cve_id": "CVE-2026-120967",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "distribution_status": [
+      "PACKAGE:370A4A3883DE7ADAF2DDC259",
+      "PACKAGE:84AC28229D9D22B5AB1E9A3B",
+      "PACKAGE:A22DF57F2EA1A43E39719A34"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-120967 ghi nhận: SNI bypass when using client certificate validation in stream. Phạm vi upstream: 1.25.5-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120967",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T16:48:16.533000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-120967",
+    "normal_component_behavior": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:31.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:6603EA922275DB1F330C73B2"
+    ],
+    "related_components": [],
+    "related_modules": [],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-1289"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: SNI bypass when using client certificate validation in stream. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:1105949AED9D916DFA7763C8",
+      "SEVERITY:8BA0AE0D6D451792FEC71261",
+      "SEVERITY:C2DDF024EE2682910895119E",
+      "SEVERITY:EF21DDB0538BC9C2EB2F5856",
+      "SEVERITY:FABB2A92664A6B8CB3DE7EFF"
+    ],
+    "source_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001",
+      "EVIDENCE:1994A69D637E553F86F3B6B2",
+      "EVIDENCE:3192E1E77E6179EFCF3D92BD",
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:608A179B53892BEE49B06889",
+      "EVIDENCE:66109A3E5325C97B7B17A996",
+      "EVIDENCE:C6297E645A0B495F563B3FEB",
+      "EVIDENCE:CC93E19522BE11DF9D98023D"
+    ],
+    "title": "SNI bypass when using client certificate validation in stream",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:26:47+00:00",
+    "upstream_affected_expression": "1.25.5-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to require client certificates (\"ssl_verify_client on\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\n\nImpact:\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:10+00:00",
+  "entity_id": "CVE:CVE-2026-120967",
+  "id": "HISTORY:3049D94670D40243398D84D9"
+}

@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:D6D7AEEDCD262A232ED6DE80
+title: 'CVE:CVE-2026-27654: documented_configuration_context'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-27654: documented_configuration_context'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-27654: documented_configuration_context
+
+`CLAIM:D6D7AEEDCD262A232ED6DE80` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-27654|CVE-2026-27654]]. Predicate: `documented_configuration_context`.
+
+```json
+"NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-A4A7113E3D797686B944D416|CVE-2026-27654]]
+
+Locator: EVIDENCE:A4A7113E3D797686B944D416: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:27:32+00:00. Truy xuất: 2026-11-25T02:27:30+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

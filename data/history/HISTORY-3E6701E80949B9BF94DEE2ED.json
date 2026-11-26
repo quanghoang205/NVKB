@@ -1,0 +1,92 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Có trong mô hình keepalive của bài; request lifetime hẹp hơn connection lifetime.\n2. Không; phải xét buffered output và cơ chế finalization. Tham chiếu [[CLAIM-3069E62B9E341B143D78FB42|nhận định nguồn: CLAIM:3069E62B9E341B143D78FB42]] và #http_request_finalization. Mỗi câu 2 điểm khi nêu được đúng đối tượng và trạng thái.",
+    "architecture_position": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "article_body": "## Hai đối tượng cần phân biệt\n\nConnection biểu diễn trao đổi ở mức kết nối; request là một công việc HTTP với parsing, phase processing và response. Trong keepalive HTTP/1.1, một connection có thể phục vụ nhiều request kế tiếp. Phần HTTP trong development guide mô tả creation/finalization của request riêng với connection. [[CLAIM-3069E62B9E341B143D78FB42|nhận định nguồn: CLAIM:3069E62B9E341B143D78FB42]] Bài này không áp mô hình một-request-tại-một-thời-điểm cho multiplexing HTTP/2 hoặc HTTP/3.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-B572CC36FAA4E3A3A357E4F6|Claim theo section]].\n\n## Cơ chế hoạt động\n\nSau accept, worker chờ dữ liệu và tạo ngữ cảnh HTTP phù hợp. Parser tích lũy request line/headers, các phase chọn và thực hiện handler, rồi output filter chuyển response qua chuỗi buffer. Finalization cần xét công việc chưa kết thúc; subrequest hoặc buffered output khiến 'handler trả về' khác với 'mọi tài nguyên đã được giải phóng'. Sau hoàn tất, connection có thể về trạng thái keepalive hoặc đóng theo quyết định tương ứng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-D67C24E1A6DF436B5F62F0AF|Claim theo section]].\n\n## Ownership và security boundary\n\nMột dữ liệu có lifetime request không được giữ như thể nó tồn tại suốt connection. Ngược lại, hủy request không tự là quyền hủy dữ liệu chia sẻ còn được request khác dùng. Diễn giải invariant: mỗi callback cần biết nó gắn với connection hay request nào, và điều kiện để context đó còn sống. Boundary tin cậy xuất hiện lúc diễn giải dữ liệu client và lựa chọn policy, không phải cứ tạo một struct là tạo isolation.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1AFA403D320F75514E1C207C|Claim theo section]].\n\n## Tradeoff, điều khiển và giới hạn\n\nKeepalive giảm chi phí tạo kết nối, nhưng giữ thêm state và cần timeout/ngân sách connection. Streaming giảm buffering toàn bộ nhưng yêu cầu quản lý backpressure và partial output. Không suy từ chữ 'buffer' trong advisory rằng lỗi ở memory pool: chỉ mô tả nguồn hoặc review mã mới xác định subsystem.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-35E487EF59FD2E0491D9A31A|Claim theo section]].\n\n## Ví dụ giấy và ngộ nhận\n\nVẽ socket S chứa request A rồi B. A kết thúc, request pool A hết lifetime, nhưng S vẫn sống để nhận B. Đánh dấu dữ liệu nào phải sao chép hoặc tái tạo nếu B cần dùng; không mặc định con trỏ cũ hợp lệ. Đây là bài reasoning ownership, không là đầu vào tái hiện lỗi.\n\nCâu hỏi mở: giao thức, module lọc và upstream configuration cụ thể ảnh hưởng finalization như thế nào? Cần phiên bản và mã nguồn tương ứng trước khẳng định chi tiết thứ tự cleanup.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-C63DFA01D161CC11AB99363B|Claim theo section]].\n",
+    "assessment": "1. Một connection đã xử lý A và đang chờ B có thể còn sống khi pool A đã hủy không?\n2. Khi handler trả về, có được kết luận output đã gửi hết không?",
+    "claim_refs": [
+      "CLAIM:3069E62B9E341B143D78FB42",
+      "CLAIM:B572CC36FAA4E3A3A357E4F6",
+      "CLAIM:D67C24E1A6DF436B5F62F0AF",
+      "CLAIM:1AFA403D320F75514E1C207C",
+      "CLAIM:35E487EF59FD2E0491D9A31A",
+      "CLAIM:C63DFA01D161CC11AB99363B"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Hủy timer/posted event đúng lúc và kiểm tra trạng thái trước khi xử lý callback.",
+    "definition": "Connection giữ ngữ cảnh socket và các sự kiện đọc/ghi; HTTP request có cấu trúc và quy trình finalization riêng.",
+    "description": "Connection giữ ngữ cảnh socket và các sự kiện đọc/ghi; HTTP request có cấu trúc và quy trình finalization riêng.",
+    "diagram": "stateDiagram-v2\n  [*] --> Accepted\n  Accepted --> RequestA\n  RequestA --> FinalizeA\n  FinalizeA --> Keepalive\n  Keepalive --> RequestB\n  RequestB --> FinalizeB\n  FinalizeB --> Closed\n  Closed --> [*]",
+    "entity_type": "Component",
+    "failure_impact": "Mất kết nối hoặc lỗi worker.",
+    "id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "learning_objectives": [
+      "Vẽ hai request tuần tự trên một HTTP/1.1 keepalive connection.",
+      "Xác định vì sao finalize request không luôn đồng nghĩa đóng socket."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Connection và HTTP request: hai vòng đời",
+    "normal_behavior": "Cấu trúc connection lưu socket và event đọc/ghi; close phải phối hợp giải phóng socket, pool và các tham chiếu còn tồn tại.",
+    "prerequisites": [
+      "COMPONENT:EVENT-DRIVEN"
+    ],
+    "related_failure_classes": "Use-after-free; NULL dereference; leak.",
+    "related_knowledge": [
+      "COMPONENT:EVENT-DRIVEN",
+      "COMPONENT:MEMORY-POOL",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Mỗi tài nguyên có một chủ sở hữu và thao tác hoàn tất nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "source_refs": [
+      "EVIDENCE:73508A92036558C7B2D50317"
+    ],
+    "updated_at": "2026-11-25T04:20:51+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "claim_refs": [
+      "CLAIM:73ED7F07DDF322A134F85FBB",
+      "CLAIM:A6D7DF6A547A0A0C7C1AF903",
+      "CLAIM:FAA5D2D5CEC952B95F5C5E08",
+      "CLAIM:4A559C72CD4F832427FC8DF5",
+      "CLAIM:D7E3B6C42CAC6FDB70D486FE",
+      "CLAIM:C6C868B2105B8D196003BA4E",
+      "CLAIM:8CFDBE1026C57AE9FF84BBFA",
+      "CLAIM:F3F15F5AFB938E1111183512"
+    ],
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "defensive_principles": "Hủy timer/posted event đúng lúc và kiểm tra trạng thái trước khi xử lý callback.",
+    "definition": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "description": "Chuỗi trạng thái từ tiếp nhận đến giải phóng kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Mất kết nối hoặc lỗi worker.",
+    "id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "learning_objectives": [
+      "Giải thích Connection lifecycle bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Connection lifecycle",
+    "normal_behavior": "Cấu trúc connection lưu socket và event đọc/ghi; close phải phối hợp giải phóng socket, pool và các tham chiếu còn tồn tại.",
+    "related_failure_classes": "Use-after-free; NULL dereference; leak.",
+    "related_knowledge": [],
+    "safety_assumptions": "Mỗi tài nguyên có một chủ sở hữu và thao tác hoàn tất nhất quán.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa socket, timer, request và bộ nhớ lưu trạng thái.",
+    "source_refs": [
+      "EVIDENCE:4814A83F9C52805610E42D7B"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:51+00:00",
+  "entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+  "id": "HISTORY:3E6701E80949B9BF94DEE2ED"
+}

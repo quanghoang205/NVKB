@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:BE19CD5A8BA5D556A0817EB6
+title: 'CVE:CVE-2026-42926: description'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-42926: description'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-42926: description
+
+`CLAIM:BE19CD5A8BA5D556A0817EB6` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-42926|CVE-2026-42926]]. Predicate: `description`.
+
+```json
+"When NGINX Open Source is configured to proxy HTTP/2 traffic by setting proxy_http_version to 2, and also uses proxy_set_body, an attacker may be able to inject frame headers and payload bytes to the upstream peer.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program / CNA. CVE Program / CNA
+
+[[EVIDENCE-55DCAE249330189B1FE59BE1|CVE-2026-42926]]
+
+Locator: EVIDENCE:55DCAE249330189B1FE59BE1: /containers/cna/descriptions
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:28:10+00:00. Truy xuất: 2026-11-25T02:28:08+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:430DD9583B749AF06C6B4BF4",
+    "claim_value": "\"Cập nhật proxy/backend và chuẩn hóa chính sách xử lý thông điệp không hợp lệ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "id": "CLAIM:430DD9583B749AF06C6B4BF4",
+    "name": "WEAKNESS:CWE-444: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:430DD9583B749AF06C6B4BF4",
+  "id": "HISTORY:64C38F0DB4094793236067F0"
+}

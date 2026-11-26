@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C5CC886B05343FEA8F6C2729",
+    "claim_value": "\"Rà soát cache key, Authorization/Cookie, Vary và điều kiện bypass cho dữ liệu riêng tư.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "id": "CLAIM:C5CC886B05343FEA8F6C2729",
+    "name": "COMPONENT:HTTP-CACHING: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:C5CC886B05343FEA8F6C2729",
+  "id": "HISTORY:752FD6CDEAF59DDF9922DC48"
+}

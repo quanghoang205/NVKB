@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:2476A0AA51F38D4BC02C2E4F
+title: 'CVE:CVE-2026-90439: security_boundary'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-90439: security_boundary'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-90439: security_boundary
+
+`CLAIM:2476A0AA51F38D4BC02C2E4F` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-90439|CVE-2026-90439]]. Predicate: `security_boundary`.
+
+```json
+"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-0CCC16DDE68A1713FAED2329|CVE-2026-15176]], [[EVIDENCE-1F6DBE760A34B37CAD1CF4A7|CVE-2026-42055]], [[EVIDENCE-2C3479DA69C20FDBA07AC92B|CVE-2026-90439]], [[EVIDENCE-4DFBBE4B964C3500C9AAFD36|CVE-2026-42533]], [[EVIDENCE-54EAAC75D1E52B666B8C855A|CVE-2026-90439]], [[EVIDENCE-55674A60244B91435EFF0035|CVE-2026-90439]], [[EVIDENCE-8A5EFD9F2F8B58978470483B|CVE-2026-90439]], [[EVIDENCE-8F5015B6CA57FA297E6319B8|CVE-2026-93479]], [[EVIDENCE-9CACCA6E8BBE80A22AD98B06|CVE-2026-90439]], [[EVIDENCE-A71EC4E15514D61BE101A79A|NGINX security advisories]], [[EVIDENCE-AC77FAA5BCFF7678FAEA0D75|CWE - CWE-122: Heap-based Buffer Overflow (5.0)]], [[EVIDENCE-C94AB35CB1BA18616960E146|CVE-2026-90439]], [[EVIDENCE-DC1432949B4CBBFA7575048F|CVE-2026-42945]], [[EVIDENCE-E22B6DDECF64286781AE8961|CVE-2026-90439]], [[EVIDENCE-F7F3915BEDFBC5BA090B7D90|CVE-2026-27654]], [[EVIDENCE-F8A106D1BC0974617FFB0815|CVE-2026-9256]]
+
+Locator: EVIDENCE:0CCC16DDE68A1713FAED2329: /containers/cna/problemTypes; EVIDENCE:1F6DBE760A34B37CAD1CF4A7: /containers/cna/problemTypes; EVIDENCE:2C3479DA69C20FDBA07AC92B: /containers/cna/descriptions; EVIDENCE:4DFBBE4B964C3500C9AAFD36: /containers/cna/problemTypes; EVIDENCE:54EAAC75D1E52B666B8C855A: /cveMetadata; EVIDENCE:55674A60244B91435EFF0035: /containers/cna/metrics; EVIDENCE:8A5EFD9F2F8B58978470483B: /containers/cna/problemTypes; EVIDENCE:8F5015B6CA57FA297E6319B8: /containers/cna/problemTypes; EVIDENCE:9CACCA6E8BBE80A22AD98B06: /containers/cna/metrics; EVIDENCE:A71EC4E15514D61BE101A79A: li containing CVE-2026-90439; EVIDENCE:AC77FAA5BCFF7678FAEA0D75: Description / Potential Mitigations; topic=WEAKNESS:CWE-122; EVIDENCE:C94AB35CB1BA18616960E146: /containers/cna/affected; EVIDENCE:DC1432949B4CBBFA7575048F: /containers/cna/problemTypes; EVIDENCE:E22B6DDECF64286781AE8961: /containers/cna/affected; EVIDENCE:F7F3915BEDFBC5BA090B7D90: /containers/cna/problemTypes; EVIDENCE:F8A106D1BC0974617FFB0815: /containers/cna/problemTypes
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:49:15+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

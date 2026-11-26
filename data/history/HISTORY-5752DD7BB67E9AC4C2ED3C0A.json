@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:7D22F1A571C5FD0FAD14CB46"
+    ],
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "CVE:CVE-2026-121810 distribution_fix PACKAGE:3AB749AA4B0A40F016084BF4",
+    "entity_type": "Relationship",
+    "id": "REL:79B2AA83434C35D2771E5331",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:3AB749AA4B0A40F016084BF4",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BD67DD803727F77441ABB586"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T02:26:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:55+00:00",
+  "entity_id": "REL:79B2AA83434C35D2771E5331",
+  "id": "HISTORY:5752DD7BB67E9AC4C2ED3C0A"
+}

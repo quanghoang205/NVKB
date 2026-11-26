@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe",
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "document_title": "Module ngx_http_proxy_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:EB05C6F9389F40F1937A4BF0",
+    "id": "EVIDENCE:EB05C6F9389F40F1937A4BF0",
+    "local_snapshot_path": "data/raw/documentation/snapshots/4cc11bb141aea1f73224d1a9e0a321f9c72ccc96d32e2190f67caf65e928aabe.html",
+    "name": "Module ngx_http_proxy_module",
+    "paraphrase": "Tái sử dụng response upstream theo cache key và chính sách cache.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "proxy_cache; topic=COMPONENT:HTTP-CACHING",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "EVIDENCE:EB05C6F9389F40F1937A4BF0",
+  "id": "HISTORY:018122A8BDD70A1C5C406491"
+}

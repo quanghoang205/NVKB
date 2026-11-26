@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới mạng giữa proxy và backend.",
+    "claim_refs": [
+      "CLAIM:2273D46050187FBAE1119DFA",
+      "CLAIM:B317621A9B2FC76F4294510B",
+      "CLAIM:896C64D525D89052ABCF7C60",
+      "CLAIM:5DC014C4A8E36F9D163E5F7D",
+      "CLAIM:F6A758740EC902B1961D13D1",
+      "CLAIM:28E59CA3C2DB948A8DC495E0",
+      "CLAIM:2816A7BFB804C374024870AD",
+      "CLAIM:1CFFD0DC41D442211D667ACF"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream theo yêu cầu triển khai.",
+    "definition": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "description": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Kết quả request trùng lặp hoặc truyền dữ liệu sai backend.",
+    "id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "learning_objectives": [
+      "Giải thích Upstream communication bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Upstream communication",
+    "normal_behavior": "Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.",
+    "related_failure_classes": "State confusion; improper certificate validation.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không coi mọi request có thể retry an toàn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới mạng giữa proxy và backend.",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới mạng giữa proxy và backend.",
+    "claim_refs": [
+      "CLAIM:2273D46050187FBAE1119DFA",
+      "CLAIM:B317621A9B2FC76F4294510B",
+      "CLAIM:896C64D525D89052ABCF7C60",
+      "CLAIM:5DC014C4A8E36F9D163E5F7D",
+      "CLAIM:F6A758740EC902B1961D13D1",
+      "CLAIM:28E59CA3C2DB948A8DC495E0",
+      "CLAIM:2816A7BFB804C374024870AD",
+      "CLAIM:1CFFD0DC41D442211D667ACF"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream theo yêu cầu triển khai.",
+    "definition": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "description": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Kết quả request trùng lặp hoặc truyền dữ liệu sai backend.",
+    "id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "learning_objectives": [
+      "Giải thích Upstream communication bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Upstream communication",
+    "normal_behavior": "Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.",
+    "related_failure_classes": "State confusion; improper certificate validation.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không coi mọi request có thể retry an toàn.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới mạng giữa proxy và backend.",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+  "id": "HISTORY:7B8096415C935F9B79132B4D"
+}

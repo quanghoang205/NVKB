@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E838F06C768320870ABD11C6",
+    "authority": "CVE Program",
+    "authority_scope": "CVE Program",
+    "claim_id": "CLAIM:E3B84615DC9483740C08EE7D",
+    "claim_value": "[{\"lessThan\": \"1.31.9\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.30.7\", \"status\": \"affected\", \"version\": \"1.30.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"*\", \"status\": \"affected\", \"version\": \"1.9.5\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "cna_version_data:CVE Program",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:17CD33A63A20DD8F235C66B7: /containers/cna/affected",
+    "evidence_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E3B84615DC9483740C08EE7D",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-123007: cna_version_data:CVE Program",
+    "observation_key": "OBSERVATION:DF41970BED6F61649BCB1953",
+    "observed_at": "2026-11-25T02:26:59+00:00",
+    "predicate": "cna_version_data:CVE Program",
+    "product_scope": "CVE:CVE-2026-123007",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:26:56+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T04:12:53+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:E3B84615DC9483740C08EE7D",
+    "claim_value": "[{\"lessThan\": \"1.31.9\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.30.7\", \"status\": \"affected\", \"version\": \"1.30.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"*\", \"status\": \"affected\", \"version\": \"1.9.5\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:59+00:00",
+    "description": "cna_version_data:CVE Program",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7"
+    ],
+    "id": "CLAIM:E3B84615DC9483740C08EE7D",
+    "name": "CVE:CVE-2026-123007: cna_version_data:CVE Program",
+    "predicate": "cna_version_data:CVE Program",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:17CD33A63A20DD8F235C66B7"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123007",
+    "updated_at": "2026-11-25T02:26:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:53+00:00",
+  "entity_id": "CLAIM:E3B84615DC9483740C08EE7D",
+  "id": "HISTORY:B5A30688758B7ADA578279A3"
+}

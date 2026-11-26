@@ -1,0 +1,49 @@
+{
+  "action": "modified",
+  "after": {
+    "branch": "stable",
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "Upstream release được advisory xác định đã sửa lỗi.",
+    "ecosystem": "upstream",
+    "entity_type": "Version",
+    "id": "VERSION:NGINX-1.30.1",
+    "name": "NGINX 1.30.1",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C43E772F27127F2E496D09C",
+      "EVIDENCE:1FEEF31A592F0B183FF80FED",
+      "EVIDENCE:61274833A24B2819EF33D8A3",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:C9A9A982F3F93845A04DEE06"
+    ],
+    "updated_at": "2026-11-25T02:28:22+00:00",
+    "verification_status": "VERIFIED",
+    "version": "1.30.1"
+  },
+  "before": {
+    "branch": "stable",
+    "created_at": "2026-11-25T02:27:51+00:00",
+    "description": "Upstream release được advisory xác định đã sửa lỗi.",
+    "ecosystem": "upstream",
+    "entity_type": "Version",
+    "id": "VERSION:NGINX-1.30.1",
+    "name": "NGINX 1.30.1",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1FEEF31A592F0B183FF80FED",
+      "EVIDENCE:61274833A24B2819EF33D8A3",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:C9A9A982F3F93845A04DEE06"
+    ],
+    "updated_at": "2026-11-25T02:28:18+00:00",
+    "verification_status": "VERIFIED",
+    "version": "1.30.1"
+  },
+  "changed_at": "2026-11-25T02:28:22+00:00",
+  "entity_id": "VERSION:NGINX-1.30.1",
+  "id": "HISTORY:286209BEDE8C19C39A2B8447"
+}

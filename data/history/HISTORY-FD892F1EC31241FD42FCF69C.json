@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "0be501b21b790ae4fa1db0cfe3d3ee935a94f69dc8e0ef7e32a04250eaa30f13",
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Transport byte stream tin cậy, có thứ tự.",
+    "document_title": "RFC 9293: Transmission Control Protocol (TCP)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:9CB9359531A83E40EF3A2F04",
+    "id": "EVIDENCE:9CB9359531A83E40EF3A2F04",
+    "local_snapshot_path": "data/raw/documentation/snapshots/0be501b21b790ae4fa1db0cfe3d3ee935a94f69dc8e0ef7e32a04250eaa30f13.html",
+    "name": "RFC 9293: Transmission Control Protocol (TCP)",
+    "paraphrase": "Transport byte stream tin cậy, có thứ tự.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:15+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine; topic=PROTOCOL:TCP",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "EVIDENCE:9CB9359531A83E40EF3A2F04",
+  "id": "HISTORY:FD892F1EC31241FD42FCF69C"
+}

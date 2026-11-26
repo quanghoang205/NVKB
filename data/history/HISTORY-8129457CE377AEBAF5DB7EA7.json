@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:021CBFBD063D62313C40A986",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:F83667480742D548F575B9CC",
+    "claim_value": "\"Ranh giới giữa quyền quản trị cấu hình và xử lý lưu lượng trong worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:0CE549207866AD440A1B35D8: Processes; topic=COMPONENT:MASTER-PROCESS",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F83667480742D548F575B9CC",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: security_boundary",
+    "observation_key": "OBSERVATION:89621F3B3DA610AF89843C61",
+    "observed_at": "2026-11-25T02:44:10+00:00",
+    "predicate": "security_boundary",
+    "product_scope": "COMPONENT:MASTER-PROCESS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:12:56+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F83667480742D548F575B9CC",
+    "claim_value": "\"Ranh giới giữa quyền quản trị cấu hình và xử lý lưu lượng trong worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:F83667480742D548F575B9CC",
+    "name": "COMPONENT:MASTER-PROCESS: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:56+00:00",
+  "entity_id": "CLAIM:F83667480742D548F575B9CC",
+  "id": "HISTORY:8129457CE377AEBAF5DB7EA7"
+}

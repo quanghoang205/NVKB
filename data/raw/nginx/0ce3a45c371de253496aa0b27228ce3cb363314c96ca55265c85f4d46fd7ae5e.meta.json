@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:15+00:00",
+  "content_hash": "baa351e71298505004cb32ae3eb73ba8c6af2f84218a7e7adf32e48c34c17885",
+  "content_type": "text/html",
+  "etag": "\"667b3dd1-e53\"",
+  "last_modified": "Tue, 25 Jun 2024 21:59:45 GMT",
+  "local_snapshot_path": "data/raw/nginx/snapshots/baa351e71298505004cb32ae3eb73ba8c6af2f84218a7e7adf32e48c34c17885.html",
+  "retrieved_at": "2026-11-25T02:26:15+00:00",
+  "source_url": "https://mailman.nginx.org/pipermail/nginx-announce/2024/GMY32CSHFH6VFTN76HJNX7WNEX4RLHF6.html"
+}

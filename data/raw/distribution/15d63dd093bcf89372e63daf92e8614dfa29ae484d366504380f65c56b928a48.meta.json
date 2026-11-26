@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:48+00:00",
+  "content_hash": "f5db81c48ffa8f21ec3359f43e8a4c366e3f44a8e9c3a9e8ae433d390c8672ae",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/f5db81c48ffa8f21ec3359f43e8a4c366e3f44a8e9c3a9e8ae433d390c8672ae.html",
+  "retrieved_at": "2026-11-25T02:27:48+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-32647"
+}

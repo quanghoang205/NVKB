@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:F0894196B0DB89FF63159E75"
+    ],
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "CVE:CVE-2026-123634 fixed_in VERSION:NGINX-1.31.9",
+    "entity_type": "Relationship",
+    "id": "REL:D330BF397067EFDC4503DCF2",
+    "name": "fixed_in",
+    "object_entity_id": "VERSION:NGINX-1.31.9",
+    "predicate": "fixed_in",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A731232A8B68F56783F395BE"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "REL:D330BF397067EFDC4503DCF2",
+  "id": "HISTORY:EFD2D3C3140CA5C969DDC4C3"
+}

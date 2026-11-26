@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:914336CE9563902DFE2486CF",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:ED9FF733B90C3CB64934CC56",
+    "claim_value": "\"## Ranh giới và tradeoff\\n\\nSự linh hoạt của rewrite cho phép biểu diễn policy routing gọn, nhưng tăng tương tác giữa location, URI và filesystem. Capture mang dữ liệu, không mang quyền vượt ranh giới document root. Các nhánh lỗi, redirect và internal redirect đều phải giữ giới hạn buffer và trạng thái biến. Kiểm cấu hình giúp nhận diện tính năng cần quản trị; không thay cập nhật implementation khi vendor công bố lỗi memory.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:15+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:55E423A56D64C254EE0D8DDE"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:ED9FF733B90C3CB64934CC56",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:REWRITE-ENGINE: v1.3:knowledge:Ranh giới và tradeoff",
+    "observed_at": "2026-11-25T05:24:15+00:00",
+    "predicate": "v1.3:knowledge:Ranh giới và tradeoff",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:55E423A56D64C254EE0D8DDE"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:REWRITE-ENGINE",
+    "updated_at": "2026-11-25T05:24:15+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:15+00:00",
+  "entity_id": "CLAIM:ED9FF733B90C3CB64934CC56",
+  "id": "HISTORY:8EDBA73E6D4CA2C09C8B2022"
+}

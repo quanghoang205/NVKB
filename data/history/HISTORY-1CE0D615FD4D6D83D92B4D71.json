@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:4895510E3E0267E50223886D",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:A40BF1C199A49EAF8EB6BA37",
+    "claim_value": "\"## Từ ownership đến kiểm soát\\n\\nỞ memory pool, owner/lifetime giới hạn khi được dùng state. Ở TLS, endpoint quản lý secret và authentication context. Ở ứng dụng, policy xác định quyền trên resource. Ba trách nhiệm này có thể nằm trong cùng process nhưng không trở thành cùng một quyết định. Least privilege giới hạn quyền của một chủ thể theo nhu cầu; nó giảm phạm vi ảnh hưởng nếu có lỗi, không chứng minh mọi check quyền đã đúng.\\n\\nMột invariant dùng được cần bốn thông tin: đối tượng chịu ràng buộc; các trạng thái/chuyển tiếp có liên quan; thành phần chịu trách nhiệm giữ điều kiện; bằng chứng dùng để kiểm tra. Khi thiếu một phần, ghi câu hỏi review thay vì gắn VERIFIED.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:06+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:A40BF1C199A49EAF8EB6BA37",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Từ ownership đến kiểm soát",
+    "observed_at": "2026-11-25T04:21:07+00:00",
+    "predicate": "pilot_section:Từ ownership đến kiểm soát",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:7A43D63D03C50227DF951CF8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:21:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:07+00:00",
+  "entity_id": "CLAIM:A40BF1C199A49EAF8EB6BA37",
+  "id": "HISTORY:1CE0D615FD4D6D83D92B4D71"
+}

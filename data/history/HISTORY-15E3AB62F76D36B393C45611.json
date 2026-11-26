@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F6F7797F7C2EA9277CE6799A",
+    "claim_value": "\"Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "id": "CLAIM:F6F7797F7C2EA9277CE6799A",
+    "name": "COMPONENT:HTTP-CACHING: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:32DDC19F1D421BD128D06B8E"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:12+00:00",
+  "entity_id": "CLAIM:F6F7797F7C2EA9277CE6799A",
+  "id": "HISTORY:15E3AB62F76D36B393C45611"
+}

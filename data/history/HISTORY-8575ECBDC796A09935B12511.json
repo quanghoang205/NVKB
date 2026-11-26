@@ -1,0 +1,35 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:760B599BB6E0444CBD5DC813"
+    ],
+    "created_at": "2026-11-25T02:33:51+00:00",
+    "description": "CVE:CVE-2026-42055 related_protocols PROTOCOL:HTTP-2",
+    "entity_type": "Relationship",
+    "id": "REL:36B5D7072DEB335822716B85",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:HTTP-2",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0366AD8E4DE0ADBD84F034DB",
+      "EVIDENCE:1F6DBE760A34B37CAD1CF4A7",
+      "EVIDENCE:2338DDDA3ED8307209847AE2",
+      "EVIDENCE:37F199B99DBEA79229B4C468",
+      "EVIDENCE:3F81316F094BCE6B826FC65C",
+      "EVIDENCE:45867639B41FF94D1F19BC0B",
+      "EVIDENCE:942E4C4B271860134AC6C8E7",
+      "EVIDENCE:AFAA6A12EA44778C8BB2C34D",
+      "EVIDENCE:B3C9BC053AB467A97D065FFA",
+      "EVIDENCE:CC4820C04CABDFB933A471CC"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42055",
+    "updated_at": "2026-11-25T02:33:51+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:51+00:00",
+  "entity_id": "REL:36B5D7072DEB335822716B85",
+  "id": "HISTORY:8575ECBDC796A09935B12511"
+}

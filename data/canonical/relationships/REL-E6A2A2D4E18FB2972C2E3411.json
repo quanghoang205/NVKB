@@ -1,0 +1,37 @@
+{
+  "claim_refs": [
+    "CLAIM:42775420035E17A7D510E87D"
+  ],
+  "created_at": "2026-11-25T05:08:37+00:00",
+  "description": "PROTOCOL:HTTP-3 REQUIRES_KNOWLEDGE_OF PROTOCOL:QUIC",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "evidence_locator": "§4.1 HTTP Message Framing; §6 Stream Mapping and Usage",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "LEARNING",
+  "id": "REL:E6A2A2D4E18FB2972C2E3411",
+  "inference_type": "PEDAGOGICAL",
+  "legacy_verification_status": "INFERRED",
+  "name": "REQUIRES_KNOWLEDGE_OF",
+  "object_entity_id": "PROTOCOL:QUIC",
+  "predicate": "REQUIRES_KNOWLEDGE_OF",
+  "rationale": "Mục tiêu 'Vẽ ranh giới HTTP message và QUIC stream.' cần mô hình QUIC — stream, connection và kiểm chứng địa chỉ. Quyết định sư phạm, không là fault location.",
+  "reference_availability": "UNKNOWN",
+  "review_rationale": "Mục tiêu 'Vẽ ranh giới HTTP message và QUIC stream.' cần mô hình QUIC — stream, connection và kiểm chứng địa chỉ. Quyết định sư phạm, không là fault location.",
+  "review_required": true,
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:08:37+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Subject lesson requires object prerequisite",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:8D04B81E8C20010F84D4889B"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "PROTOCOL:HTTP-3",
+  "updated_at": "2026-11-25T05:08:37+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

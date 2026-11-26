@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:2EDFE428971025F3362EED7E",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:2E1993A8EBD3EF9A53757421",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nTăng giới hạn giúp throughput trong một số workload nhưng giữ nhiều state và làm tăng ngân sách memory/file. Giới hạn quá thấp có thể gây từ chối công việc hợp lệ. Cần capacity model theo workload và metric quản trị; đây không là công cụ dò hệ thống bên ngoài. Kiểm đường resource exhaustion, timeout và cancellation ở code review, rồi dùng evidence deployment để kiểm bản sửa đang chạy. Điều chỉnh một knob không thay remediation lỗi UAF hoặc arithmetic.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:29:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "#worker_connections; #worker_rlimit_nofile; #worker_shutdown_timeout",
+    "evidence_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2E1993A8EBD3EF9A53757421",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:RESOURCE-BOUNDS: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:29:01+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:29:02+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T05:29:02+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:49:05+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:2EDFE428971025F3362EED7E",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:2E1993A8EBD3EF9A53757421",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nTăng giới hạn giúp throughput trong một số workload nhưng giữ nhiều state và làm tăng ngân sách memory/file. Giới hạn quá thấp có thể gây từ chối công việc hợp lệ. Cần capacity model theo workload và metric quản trị; đây không là công cụ dò hệ thống bên ngoài. Kiểm đường resource exhaustion, timeout và cancellation ở code review, rồi dùng evidence deployment để kiểm bản sửa đang chạy. Điều chỉnh một knob không thay remediation lỗi UAF hoặc arithmetic.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:29:01+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:2E1993A8EBD3EF9A53757421",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:RESOURCE-BOUNDS: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:29:01+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+    "updated_at": "2026-11-25T05:29:02+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:29:02+00:00",
+  "entity_id": "CLAIM:2E1993A8EBD3EF9A53757421",
+  "id": "HISTORY:3112769A9B88F848C089917F"
+}

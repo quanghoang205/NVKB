@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:C0FF0282B8BC5AE57410C9A2",
+    "claim_value": "\"Các thành phần hiểu khác nhau về ranh giới hoặc nội dung request.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:29+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "id": "CLAIM:C0FF0282B8BC5AE57410C9A2",
+    "name": "WEAKNESS:CWE-444: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:5C04483DC3CB040209557469"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-444",
+    "updated_at": "2026-11-25T02:44:29+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:29+00:00",
+  "entity_id": "CLAIM:C0FF0282B8BC5AE57410C9A2",
+  "id": "HISTORY:8347F18C9BBF1C452ECD0764"
+}

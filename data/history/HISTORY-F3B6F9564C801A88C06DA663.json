@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "f60ef156460c11db03bc5dd84f3aa9b4cfd5b47727a1779ab8ff806be8695700",
+    "created_at": "2026-11-25T02:28:26+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-48142",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:929475C90EED3AAB36A56764",
+    "id": "EVIDENCE:929475C90EED3AAB36A56764",
+    "local_snapshot_path": "data/raw/cve/snapshots/f60ef156460c11db03bc5dd84f3aa9b4cfd5b47727a1779ab8ff806be8695700.json",
+    "name": "CVE-2026-48142",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:28:24+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/48xxx/CVE-2026-48142.json",
+    "updated_at": "2026-11-25T02:28:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:26+00:00",
+  "entity_id": "EVIDENCE:929475C90EED3AAB36A56764",
+  "id": "HISTORY:F3B6F9564C801A88C06DA663"
+}

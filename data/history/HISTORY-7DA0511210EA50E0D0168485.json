@@ -1,0 +1,35 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:FDABA12CEBACB392A9987928"
+    ],
+    "created_at": "2026-11-25T02:33:47+00:00",
+    "description": "CVE:CVE-2026-27651 related_components COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:651BA78A9D159717B5CB0455",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:06A3ED36BB04D8872758749D",
+      "EVIDENCE:11E5B7EC9460D81E92616E1F",
+      "EVIDENCE:33F0AADEF3D4F5B6E71E4AE7",
+      "EVIDENCE:62FBFBCCE074909D2E2ABE91",
+      "EVIDENCE:6AB3409720F80EA88A3B8A1D",
+      "EVIDENCE:6D5EE1924CE80867E38D4C5C",
+      "EVIDENCE:8306189DC142C4B552E2BDF0",
+      "EVIDENCE:B70DFB7CE216936748B0CCE6",
+      "EVIDENCE:EA030512DDB20C2CCA1C76C0",
+      "EVIDENCE:FBC929081743AD839F06DD1B"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27651",
+    "updated_at": "2026-11-25T02:33:47+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:47+00:00",
+  "entity_id": "REL:651BA78A9D159717B5CB0455",
+  "id": "HISTORY:7DA0511210EA50E0D0168485"
+}

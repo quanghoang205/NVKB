@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:004A7E5FEAF4A2E693BC7675",
+      "CLAIM:D59671517D032578C31B6C21",
+      "CLAIM:CDFA5DDB7584580FB1C5F203",
+      "CLAIM:CA0519710E20BA2145C8585B",
+      "CLAIM:A0000A278A20C9DDEF0DBC6E",
+      "CLAIM:B598D195DA86A137BE3614DC",
+      "CLAIM:B477D7B090D830D4B2B53BD0",
+      "CLAIM:F11DAB1085009C1042F317B9"
+    ],
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "description": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CVE",
+    "learning_objectives": [
+      "Giải thích CVE bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CVE",
+    "normal_behavior": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:004A7E5FEAF4A2E693BC7675",
+      "CLAIM:D59671517D032578C31B6C21",
+      "CLAIM:CDFA5DDB7584580FB1C5F203",
+      "CLAIM:CA0519710E20BA2145C8585B",
+      "CLAIM:A0000A278A20C9DDEF0DBC6E",
+      "CLAIM:B598D195DA86A137BE3614DC",
+      "CLAIM:B477D7B090D830D4B2B53BD0",
+      "CLAIM:F11DAB1085009C1042F317B9"
+    ],
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "description": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CVE",
+    "learning_objectives": [
+      "Giải thích CVE bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CVE",
+    "normal_behavior": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONCEPT:CVE",
+  "id": "HISTORY:6B22E805C695CF8EBFE28956"
+}

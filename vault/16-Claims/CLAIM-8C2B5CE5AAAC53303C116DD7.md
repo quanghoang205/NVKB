@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:8C2B5CE5AAAC53303C116DD7
+title: 'CVE:CVE-2026-27784: publication_date'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-27784: publication_date'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-27784: publication_date
+
+`CLAIM:8C2B5CE5AAAC53303C116DD7` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-27784|CVE-2026-27784]]. Predicate: `publication_date`.
+
+```json
+"2026-03-24T14:13:25.343000+00:00"
+```
+
+## Nguồn và phạm vi
+
+Authority: CVE Program. CVE Program
+
+[[EVIDENCE-034B9E939C5C808F81C15395|CVE-2026-27784]]
+
+Locator: EVIDENCE:034B9E939C5C808F81C15395: /cveMetadata
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:27:36+00:00. Truy xuất: 2026-11-25T02:27:34+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

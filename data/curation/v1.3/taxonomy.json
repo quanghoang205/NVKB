@@ -1,0 +1,66 @@
+{
+  "media": {
+    "component": "MP4 metadata parser in HTTP worker",
+    "protocol": ["HTTP", "MP4 file format (not a transport protocol)"],
+    "weakness": ["Bounds checking", "Integer representation — classification only where CNA states it"],
+    "impact": ["Worker termination", "Possible code execution only where specifically documented"],
+    "remediation": "Upstream branch fixes; media publication controls; size and ownership invariants",
+    "background": ["MODULE:NGX-HTTP-MP4-MODULE", "COMPONENT:MEMORY-POOL", "WEAKNESS:CWE-787"]
+  },
+  "quic": {
+    "component": "HTTP/3 over QUIC; request/control stream and connection lifecycle",
+    "protocol": ["HTTP/3", "QUIC", "TLS (handshake context, not all CVEs)"],
+    "weakness": ["NULL dereference", "Use-after-free", "Buffer bounds", "Identity/framing integrity"],
+    "impact": ["Worker termination", "Limited memory disclosure", "Policy or request integrity"],
+    "remediation": "Specific branch fix; state-transition and ownership review; source-scoped identity controls",
+    "background": ["PROTOCOL:QUIC", "PROTOCOL:HTTP-3", "COMPONENT:MEMORY-POOL"]
+  },
+  "multiplexing": {
+    "component": "HTTP/2 flow-control and client/proxy resource lifecycle",
+    "protocol": ["HTTP/2"],
+    "weakness": ["Flow-control counter bounds", "Use-after-free under resource pressure"],
+    "impact": ["Worker fault and memory corruption", "Conditional code execution remains potential"],
+    "remediation": "Patch; resource-error cleanup and protocol-counter invariants",
+    "background": ["PROTOCOL:HTTP-2", "COMPONENT:EVENT-DRIVEN", "CONTROL:RESOURCE-BOUNDS"]
+  },
+  "tls": {
+    "component": "HTTP/stream TLS policy, resumption, preread and I/O progress",
+    "protocol": ["TLS", "PROXY protocol v2 (120993 only)"],
+    "weakness": ["Authorization/context mismatch", "Validation", "Initialization", "NULL dereference", "Non-progress loop"],
+    "impact": ["Client-certificate policy violation", "Routing integrity", "Worker termination or CPU exhaustion"],
+    "remediation": "Patch; bind state to identity context; consume revocation result; preserve I/O progress",
+    "background": ["PROTOCOL:TLS", "COMPONENT:TLS-SESSION-LIFECYCLE", "MODULE:NGX-STREAM-SSL-MODULE", "MODULE:NGX-STREAM-SSL-PREREAD-MODULE"]
+  },
+  "mail": {
+    "component": "Mail proxy, SMTP authentication and auth HTTP serialization",
+    "protocol": ["SMTP", "HTTP authentication exchange", "DNS as an input boundary"],
+    "weakness": ["Over-read", "NULL dereference", "Use-after-free", "Delimiter handling"],
+    "impact": ["Worker termination", "Bytes disclosed towards auth server", "Upstream request integrity"],
+    "remediation": "Patch; session/retry ownership; context-aware serialization",
+    "background": ["MODULE:NGX-MAIL-AUTH-HTTP-MODULE", "COMPONENT:MEMORY-POOL", "PROTOCOL:DNS"]
+  },
+  "resolver": {
+    "component": "Resolver callbacks serving OCSP and proxy/subrequest consumers",
+    "protocol": ["DNS", "HTTP/TLS context for OCSP"],
+    "weakness": ["Use-after-free"],
+    "impact": ["Worker restart", "Memory modification", "Conditional code execution only for 123634"],
+    "remediation": "Patch; distinguish cached result from live waiting context; coordinate cancellation",
+    "background": ["PROTOCOL:DNS", "COMPONENT:MEMORY-POOL", "COMPONENT:CONNECTION-LIFECYCLE"]
+  },
+  "http": {
+    "component": "Rewrite/map/path expressions, charset filter, SSI/slice/AIO",
+    "protocol": ["HTTP; upstream transport varies"],
+    "weakness": ["Buffer bounds", "Uninitialized access", "Use-after-free"],
+    "impact": ["Worker restart", "Limited memory disclosure/modification", "Conditional code execution where stated"],
+    "remediation": "Patch; size/evaluation consistency; filter/subrequest ownership; explicit initialization",
+    "background": ["COMPONENT:REWRITE-ENGINE", "MODULE:NGX-HTTP-CHARSET-MODULE", "MODULE:NGX-HTTP-SSI-MODULE", "COMPONENT:MEMORY-POOL"]
+  },
+  "proxy": {
+    "component": "Upstream protocol transformation and DAV filesystem boundary",
+    "protocol": ["HTTP/2 upstream", "TLS upstream", "SCGI", "uwsgi", "WebDAV"],
+    "weakness": ["Message integrity", "Buffer bounds", "Resource allocation", "Filesystem path integrity"],
+    "impact": ["Response/request modification", "Worker restart", "Limited memory disclosure", "Filesystem changes within worker privileges"],
+    "remediation": "Patch; separate input and output contracts; trust upstream explicitly; restrict worker filesystem rights",
+    "background": ["COMPONENT:UPSTREAM-COMMUNICATION", "CONTROL:LEAST-PRIVILEGE", "CONTROL:RESOURCE-BOUNDS"]
+  }
+}

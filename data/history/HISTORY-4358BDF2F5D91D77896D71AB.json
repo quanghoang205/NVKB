@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:60A95C227CE7336D6BCC3BF0",
+    "claim_value": "\"Out-of-bounds write\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "id": "CLAIM:60A95C227CE7336D6BCC3BF0",
+    "name": "WEAKNESS:CWE-787: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:93E077BF039FAE4289B5A57E"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "CLAIM:60A95C227CE7336D6BCC3BF0",
+  "id": "HISTORY:4358BDF2F5D91D77896D71AB"
+}

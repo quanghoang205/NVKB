@@ -1,0 +1,16 @@
+{
+  "claim_refs": [
+    "CLAIM:A185572967484517CE63A4C5"
+  ],
+  "created_at": "2026-11-25T02:26:19+00:00",
+  "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 encoder instructions can cause NGINX worker processes to terminate or cause or other potential impact.",
+  "entity_type": "AffectedCondition",
+  "id": "CONDITION:C4BB9A5A5B5CCEF08A29EB4C",
+  "name": "Điều kiện được công bố — CVE-2024-32760",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:98AD7C6E41234A0541C37EF5"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "VERIFIED"
+}

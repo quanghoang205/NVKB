@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "539524ee7c7891c6ac98b850ce4ca7eead6e1d5ff4f1d8f5a3865b12304f1706",
+    "created_at": "2026-11-25T02:26:09+00:00",
+    "description": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-24989",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:A52F8FA3C7C50F695E0243D8",
+    "id": "EVIDENCE:A52F8FA3C7C50F695E0243D8",
+    "local_snapshot_path": "data/raw/distribution/snapshots/539524ee7c7891c6ac98b850ce4ca7eead6e1d5ff4f1d8f5a3865b12304f1706.html",
+    "name": "CVE-2024-24989",
+    "paraphrase": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:09+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-24989",
+    "updated_at": "2026-11-25T02:26:09+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:09+00:00",
+  "entity_id": "EVIDENCE:A52F8FA3C7C50F695E0243D8",
+  "id": "HISTORY:ECC1712D04DF4777680E400A"
+}

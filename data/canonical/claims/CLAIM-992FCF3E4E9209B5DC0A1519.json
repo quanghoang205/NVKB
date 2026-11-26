@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:8206CDE0961ABC5D56FBC2EB",
+  "authority": "Debian Security Team",
+  "authority_scope": "Debian Security Team",
+  "claim_id": "CLAIM:992FCF3E4E9209B5DC0A1519",
+  "claim_value": "\"Incorrect inference; stale metadata.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:33:08+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:B182E33FA564AB250BC8D7F4: Overview / documented record",
+  "evidence_refs": [
+    "EVIDENCE:B182E33FA564AB250BC8D7F4"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:992FCF3E4E9209B5DC0A1519",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "CONCEPT:BACKPORT: related_failure_classes",
+  "observation_key": "OBSERVATION:40BDD3E5FA2525F9F29358A0",
+  "observed_at": "2026-11-25T02:33:08+00:00",
+  "predicate": "related_failure_classes",
+  "product_scope": "CONCEPT:BACKPORT",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:33:08+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "Debian Security Team",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:B182E33FA564AB250BC8D7F4"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CONCEPT:BACKPORT",
+  "updated_at": "2026-11-25T04:12:45+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

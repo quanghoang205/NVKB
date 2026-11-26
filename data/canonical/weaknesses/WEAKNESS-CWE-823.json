@@ -1,0 +1,39 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:6DBC54DE46838C31FB9F2A83",
+    "CLAIM:9F16AA3256747818611A68F5",
+    "CLAIM:534EC6E449F83585DF836246",
+    "CLAIM:34551A0564208C1024FA11D5",
+    "CLAIM:7EE9E1726626D8EA43AAC578",
+    "CLAIM:A2D8D58B3EE3C5C71D4B5E95",
+    "CLAIM:59DF8A2D5574DE8B7594F875",
+    "CLAIM:326093C7EE52F5F4154AE02F"
+  ],
+  "created_at": "2026-11-25T02:28:23+00:00",
+  "cwe_id": "CWE-823",
+  "defensive_principles": "Kiểm tra cả offset và số byte truy cập trước khi tạo/giải tham chiếu con trỏ.",
+  "definition": "Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.",
+  "description": "Dùng offset con trỏ nằm ngoài vùng đối tượng hợp lệ.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+  "id": "WEAKNESS:CWE-823",
+  "learning_objectives": [
+    "Giải thích CWE-823 — Out-of-range Pointer Offset bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-823 — Out-of-range Pointer Offset",
+  "normal_behavior": "Phép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được sở hữu.",
+  "related_failure_classes": "Out-of-range Pointer Offset",
+  "related_knowledge": [],
+  "safety_assumptions": "Phép tính địa chỉ phải giữ con trỏ trong phạm vi vùng nhớ được sở hữu.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:90C3D812878A1FE5CC409A23",
+    "EVIDENCE:ECF1840A41504F1DC886C7C7"
+  ],
+  "updated_at": "2026-11-25T04:13:15+00:00",
+  "verification_status": "INFERRED"
+}

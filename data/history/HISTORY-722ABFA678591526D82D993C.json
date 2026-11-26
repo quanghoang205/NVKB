@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "description": "PROTOCOL:TLS CONTEXTUAL_ASSOCIATION WEAKNESS:CWE-863",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:1C76FE0241ADFE693F82D370",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "CONTEXTUAL_ASSOCIATION",
+    "object_entity_id": "WEAKNESS:CWE-863",
+    "predicate": "CONTEXTUAL_ASSOCIATION",
+    "rationale": "TLS authentication và authorization có quan hệ context nhưng không đồng nghĩa.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Related context, not causation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:21:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:17+00:00",
+  "entity_id": "REL:1C76FE0241ADFE693F82D370",
+  "id": "HISTORY:722ABFA678591526D82D993C"
+}

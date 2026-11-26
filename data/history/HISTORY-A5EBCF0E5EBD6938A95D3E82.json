@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:51C00ACB05B95A63338573F2",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1E0DCB10803E56ED48E6761E",
+    "claim_value": "\"## Lifecycle có thể suy luận\\n\\nCreate owner → cấp phát state → dùng trong các callback hợp lệ → hoàn tất công việc → hủy pool và cleanup. Cleanup là thao tác cuối vòng đời đã định, không phải garbage collector theo dõi mọi tham chiếu bên ngoài. Pool không biết một module đã lưu địa chỉ ở đâu; việc phối hợp event/timer với lifetime vẫn thuộc trách nhiệm code sử dụng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:52+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1E0DCB10803E56ED48E6761E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MEMORY-POOL: pilot_section:Lifecycle có thể suy luận",
+    "observed_at": "2026-11-25T04:20:53+00:00",
+    "predicate": "pilot_section:Lifecycle có thể suy luận",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:20:53+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:53+00:00",
+  "entity_id": "CLAIM:1E0DCB10803E56ED48E6761E",
+  "id": "HISTORY:A5EBCF0E5EBD6938A95D3E82"
+}

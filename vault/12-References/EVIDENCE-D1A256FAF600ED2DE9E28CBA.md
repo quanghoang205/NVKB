@@ -1,0 +1,33 @@
+---
+entity_type: evidence
+id: EVIDENCE:D1A256FAF600ED2DE9E28CBA
+title: Module ngx_http_v2_module
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- Module ngx_http_v2_module
+tags:
+- nginx
+- evidence
+- provenance
+---
+
+# Module ngx_http_v2_module
+
+Xử lý HTTP/2 frame, stream và flow control.
+
+- Nguồn: [NGINX / F5](https://nginx.org/en/docs/http/ngx_http_v2_module.html)
+- Authority gốc: NGINX / F5
+- Vai trò kênh: ORIGINAL_AUTHORITY
+- Locator: `ngx_http_v2_module`
+
+- Truy xuất: 2026-11-25T02:32:41+00:00
+- SHA-256: `f5026454613530a70706b9b50c261568884812157bdcd3fdbb82db3c2c67dc97`
+- Snapshot từ project root: `data/raw/documentation/snapshots/f5026454613530a70706b9b50c261568884812157bdcd3fdbb82db3c2c67dc97.html`
+- Reference: AVAILABLE; integrity: HASH_MATCH
+- Source support: NOT_REVIEWED; review: NOT_REVIEWED
+
+Hash khớp chỉ chứng minh bytes được bảo toàn. Semantic support phải đọc ở từng Claim; mirror không phải authority độc lập.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

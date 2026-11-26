@@ -1,0 +1,427 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Buffer overread in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2EC1AD7783FA5A7C58328E80"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07E23984E58B3F7630B7E709",
+      "CLAIM:1033839EC534A5BCB6893D72",
+      "CLAIM:13B204C7237DD100CF423231",
+      "CLAIM:15B17AFDB1504B80E3E43104",
+      "CLAIM:284DD3323239CA59D94BB960",
+      "CLAIM:37A68E8BE13721BE765A09F8",
+      "CLAIM:48DFBBEF5A863E8CC07AD3CD",
+      "CLAIM:510F4418FA869ECC11484ADF",
+      "CLAIM:5AEE005C51582322B25FA667",
+      "CLAIM:5B5A8F78DB2B18FB91CB52F1",
+      "CLAIM:5BEB30B0817DE9F164195A04",
+      "CLAIM:6090DB08645ED5EC42F10652",
+      "CLAIM:673465036F399D0693B2D6E3",
+      "CLAIM:68B07F162EDEED6A62E4529F",
+      "CLAIM:68CD35D77F8F673DEC588E6D",
+      "CLAIM:6F3A4AE61104AA6B4426564D",
+      "CLAIM:7D2575CCE788F14AA0BE8D9B",
+      "CLAIM:7D9E403C641A7423808C5A0A",
+      "CLAIM:853D4EE8A181972B81C9BCB5",
+      "CLAIM:87FD95E0AEA3A5457CC2CE3D",
+      "CLAIM:88D33CFA7ED4FF9304570400",
+      "CLAIM:AE9BB4404ACF8FB633D560AE",
+      "CLAIM:B36FB1760820913CFF0044B2",
+      "CLAIM:BC9B4C38C163FF15307D5BF6",
+      "CLAIM:BD3BFC01BF3998542A0F78C6",
+      "CLAIM:BE7C8F9998324B4A0E258D23",
+      "CLAIM:C31BBA49E90D0EB7B2C45F5B",
+      "CLAIM:C66372A3D8793D6EA903F86A",
+      "CLAIM:CDFDE23DD178252ABBC7254B",
+      "CLAIM:D4BB7B188598CBEB525C7C2D",
+      "CLAIM:D8E834CD3716C2A000207C62",
+      "CLAIM:E1853D33699961812D58628A",
+      "CLAIM:E3184E7893236E34206E0B8B",
+      "CLAIM:E4D2AA5F1F88C53BC0B6E2A7",
+      "CLAIM:E9375757BCE1ACBC54B11BAD",
+      "CLAIM:EA24392EEA3F276E9915B6C6",
+      "CLAIM:EDBB61CF08BCAC407204EED0",
+      "CLAIM:F10FA10C99E0D0AD218F15C8",
+      "CLAIM:F6E8151C7D00544ED9E5F94A"
+    ],
+    "condition_refs": [
+      "CONDITION:0C814AA8EB9F630866D48731"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "CNA xác nhận khả năng over-read bộ nhớ worker và làm worker kết thúc. Không có xác nhận rằng bộ nhớ đó được gửi ra client.",
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2024-7347",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Rà soát đường xuất bản media và quyền thay đổi file; ưu tiên bản sửa đúng nhánh. Đánh giá nhu cầu pseudo-streaming trước khi thay đổi tính năng đang phục vụ người dùng."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:040760AF72242E3A682EAA21",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:C0038C63763B5F2AD80A4399"
+    ],
+    "distribution_status": [
+      "PACKAGE:040760AF72242E3A682EAA21",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:C0038C63763B5F2AD80A4399"
+    ],
+    "documented_configuration_context": "NGINX Open Source có ngx_http_mp4_module và cấu hình dùng mp4; nội dung phải được xử lý qua module. CNA cũng nói đến Plus, nhưng dải phiên bản ở bài này chỉ dành cho OSS.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI_REVIEWED — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Over-read trong module MP4 có thể làm worker kết thúc khi xử lý media. Việc chỉ phục vụ tệp có đuôi MP4 không đủ xác định applicability; CNA yêu cầu module được build, directive mp4 được sử dụng và tệp được đưa qua đường xử lý đó.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "id": "CVE:CVE-2024-7347",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [
+      "IMPACT:WORKER-TERMINATION"
+    ],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2025-11-03T20:56:24.679000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.",
+      "Trả lời có evidence: Vì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2024-7347",
+    "normal_component_behavior": "Worker đọc metadata phục vụ pseudo-streaming và tạo nội dung đầu ra theo request. Buffer metadata phải chứa đủ dữ liệu cho mọi phép đọc; vòng đời buffer phải bao trùm việc sử dụng nó.",
+    "official_mitigation_refs": [],
+    "patch_refs": [
+      "PATCH:D9038A2C1536868D4EBE5200"
+    ],
+    "potential_impact": "Khả năng tiết lộ dữ liệu hoặc thực thi mã cho riêng CVE này là UNKNOWN trong nguồn đã đọc; over-read không tự chứng minh hai hậu quả đó.",
+    "publication_date": "2024-08-14T14:32:33.913000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:EBA1ABF6DF9C47419E7FC8B6",
+      "REFERENCE:10A563A19FC0A544073BA315"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-126"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nOver-read trong module MP4 có thể làm worker kết thúc khi xử lý media. Việc chỉ phục vụ tệp có đuôi MP4 không đủ xác định applicability; CNA yêu cầu module được build, directive mp4 được sử dụng và tệp được đưa qua đường xử lý đó.\n\n## 2. CVE identity và product scope\n\nCVE-2024-7347; published 2024-08-14T14:32:33.913000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-6F3A4AE61104AA6B4426564D|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-HTTP-MP4-MODULE|MP4 pseudo-streaming và ranh giới metadata]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nngx_http_mp4_module trong worker xử lý HTTP; chưa xác định atom, hàm hoặc allocation chịu lỗi từ các nguồn đã đọc. [[CLAIM-B36FB1760820913CFF0044B2|Claim / locator]].\n\n## 5. Normal component behavior\n\nWorker đọc metadata phục vụ pseudo-streaming và tạo nội dung đầu ra theo request. Buffer metadata phải chứa đủ dữ liệu cho mọi phép đọc; vòng đời buffer phải bao trùm việc sử dụng nó. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nNguồn mô tả đọc vượt vùng bộ nhớ khi phân tích MP4. Về nguyên lý, kích thước được chấp nhận và miền byte thực sự được đọc phải nhất quán; đây là invariant diễn giải, chưa phải kết luận về dòng kiểm tra bị thiếu. [[CLAIM-673465036F399D0693B2D6E3|Claim / locator]].\n\n## 7. Relevant security principles\n\nDuy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nNGINX Open Source có ngx_http_mp4_module và cấu hình dùng mp4; nội dung phải được xử lý qua module. CNA cũng nói đến Plus, nhưng dải phiên bản ở bài này chỉ dành cho OSS. [[CLAIM-B36FB1760820913CFF0044B2|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.5.13-1.27.0; not vulnerable/fixed branches 1.27.1+, 1.26.2+. [[CLAIM-5BEB30B0817DE9F164195A04|Claim / locator]].\n\nBản sửa 1.26.2 thuộc nhánh ổn định và 1.27.1 thuộc nhánh mainline của đợt công bố; điều đó không xác nhận các nhánh này còn hỗ trợ ở thời điểm triển khai. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nCNA xác nhận khả năng over-read bộ nhớ worker và làm worker kết thúc. Không có xác nhận rằng bộ nhớ đó được gửi ra client. [[CLAIM-BE7C8F9998324B4A0E258D23|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhả năng tiết lộ dữ liệu hoặc thực thi mã cho riêng CVE này là UNKNOWN trong nguồn đã đọc; over-read không tự chứng minh hai hậu quả đó. [[CLAIM-853D4EE8A181972B81C9BCB5|Claim / locator]].\n\n## 12. Remediation principles\n\nRà soát đường xuất bản media và quyền thay đổi file; ưu tiên bản sửa đúng nhánh. Đánh giá nhu cầu pseudo-streaming trước khi thay đổi tính năng đang phục vụ người dùng. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-5BEB30B0817DE9F164195A04|Claim / locator]].\n\n## 14. Patch management considerations\n\nBản sửa 1.26.2 thuộc nhánh ổn định và 1.27.1 thuộc nhánh mainline của đợt công bố; điều đó không xác nhận các nhánh này còn hỗ trợ ở thời điểm triển khai.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-HTTP-MP4-MODULE|MP4 pseudo-streaming và ranh giới metadata]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-126|CWE-126 — Buffer Over-read]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.\n- Trả lời có evidence: Vì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?\n\n## 17. Discussion questions\n\nVì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?\n\nGợi ý đáp án: Hành vi đọc vượt biên và việc truyền dữ liệu ra ngoài là hai bước khác nhau; CNA của CVE này chỉ xác nhận hậu quả kết thúc worker.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-6F3A4AE61104AA6B4426564D|CLAIM:6F3A4AE61104AA6B4426564D]]\n- applicability: [[CLAIM-B36FB1760820913CFF0044B2|CLAIM:B36FB1760820913CFF0044B2]]\n- impact: [[CLAIM-BE7C8F9998324B4A0E258D23|CLAIM:BE7C8F9998324B4A0E258D23]]\n- potential: [[CLAIM-853D4EE8A181972B81C9BCB5|CLAIM:853D4EE8A181972B81C9BCB5]]\n- mechanism: [[CLAIM-673465036F399D0693B2D6E3|CLAIM:673465036F399D0693B2D6E3]]\n- versions: [[CLAIM-5BEB30B0817DE9F164195A04|CLAIM:5BEB30B0817DE9F164195A04]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nChưa biết atom/hàm lỗi, đường truyền dữ liệu đọc được hoặc quyền của worker trong một deployment cụ thể.\n\n## 20. Review status\n\nAI_REVIEWED — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:6F3A4AE61104AA6B4426564D",
+      "CLAIM:B36FB1760820913CFF0044B2",
+      "CLAIM:BE7C8F9998324B4A0E258D23",
+      "CLAIM:853D4EE8A181972B81C9BCB5",
+      "CLAIM:673465036F399D0693B2D6E3",
+      "CLAIM:5BEB30B0817DE9F164195A04"
+    ],
+    "research_group": "media",
+    "root_cause_summary": "Nguồn mô tả đọc vượt vùng bộ nhớ khi phân tích MP4. Về nguyên lý, kích thước được chấp nhận và miền byte thực sự được đọc phải nhất quán; đây là invariant diễn giải, chưa phải kết luận về dòng kiểm tra bị thiếu.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4658A7708394EBCF3B4DC152",
+      "SEVERITY:4DA6B9DD3975B817268E51F2",
+      "SEVERITY:95AC6580F67D5A18C3C2B722",
+      "SEVERITY:A76899BA848DDB57F6E93D5D",
+      "SEVERITY:EA469274456165937771F19C"
+    ],
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529",
+      "EVIDENCE:33F64381C1DFA0573EACDDA6",
+      "EVIDENCE:858892E47130845469DFB70F",
+      "EVIDENCE:8BAA61AB297F1AEE277F0889",
+      "EVIDENCE:96277BC472ED92F8657D0FC0",
+      "EVIDENCE:98AA650589527FE324CA3595",
+      "EVIDENCE:A090E44B4D6823649A1DA8FD",
+      "EVIDENCE:DD31363C4E8C1F210DB23B4E",
+      "EVIDENCE:EAD35522BA8E5C36338FC518",
+      "EVIDENCE:F247C10B88E2879A1FFE9187",
+      "EVIDENCE:FDDF8361C7CDD452453122B7"
+    ],
+    "title": "Buffer overread in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Chưa biết atom/hàm lỗi, đường truyền dữ liệu đọc được hoặc quyền của worker trong một deployment cụ thể.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:47:53+00:00",
+    "upstream_affected_expression": "1.5.13-1.27.0",
+    "upstream_unaffected_expression": "1.27.1+, 1.26.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Buffer overread in the ngx_http_mp4_module",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:2EC1AD7783FA5A7C58328E80"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:07E23984E58B3F7630B7E709",
+      "CLAIM:1033839EC534A5BCB6893D72",
+      "CLAIM:13B204C7237DD100CF423231",
+      "CLAIM:15B17AFDB1504B80E3E43104",
+      "CLAIM:284DD3323239CA59D94BB960",
+      "CLAIM:37A68E8BE13721BE765A09F8",
+      "CLAIM:48DFBBEF5A863E8CC07AD3CD",
+      "CLAIM:510F4418FA869ECC11484ADF",
+      "CLAIM:5AEE005C51582322B25FA667",
+      "CLAIM:5B5A8F78DB2B18FB91CB52F1",
+      "CLAIM:5BEB30B0817DE9F164195A04",
+      "CLAIM:6090DB08645ED5EC42F10652",
+      "CLAIM:673465036F399D0693B2D6E3",
+      "CLAIM:68B07F162EDEED6A62E4529F",
+      "CLAIM:68CD35D77F8F673DEC588E6D",
+      "CLAIM:6F3A4AE61104AA6B4426564D",
+      "CLAIM:7D2575CCE788F14AA0BE8D9B",
+      "CLAIM:7D9E403C641A7423808C5A0A",
+      "CLAIM:853D4EE8A181972B81C9BCB5",
+      "CLAIM:87FD95E0AEA3A5457CC2CE3D",
+      "CLAIM:88D33CFA7ED4FF9304570400",
+      "CLAIM:AE9BB4404ACF8FB633D560AE",
+      "CLAIM:B36FB1760820913CFF0044B2",
+      "CLAIM:BC9B4C38C163FF15307D5BF6",
+      "CLAIM:BD3BFC01BF3998542A0F78C6",
+      "CLAIM:BE7C8F9998324B4A0E258D23",
+      "CLAIM:C31BBA49E90D0EB7B2C45F5B",
+      "CLAIM:C66372A3D8793D6EA903F86A",
+      "CLAIM:CDFDE23DD178252ABBC7254B",
+      "CLAIM:D4BB7B188598CBEB525C7C2D",
+      "CLAIM:D8E834CD3716C2A000207C62",
+      "CLAIM:E1853D33699961812D58628A",
+      "CLAIM:E3184E7893236E34206E0B8B",
+      "CLAIM:E4D2AA5F1F88C53BC0B6E2A7",
+      "CLAIM:E9375757BCE1ACBC54B11BAD",
+      "CLAIM:EA24392EEA3F276E9915B6C6",
+      "CLAIM:EDBB61CF08BCAC407204EED0",
+      "CLAIM:F10FA10C99E0D0AD218F15C8",
+      "CLAIM:F6E8151C7D00544ED9E5F94A"
+    ],
+    "condition_refs": [
+      "CONDITION:0C814AA8EB9F630866D48731"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "CNA xác nhận khả năng over-read bộ nhớ worker và làm worker kết thúc. Không có xác nhận rằng bộ nhớ đó được gửi ra client.",
+    "created_at": "2026-11-25T02:26:31+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2024-7347",
+    "cve_year": 2024,
+    "defensive_recommendations": [
+      "Rà soát đường xuất bản media và quyền thay đổi file; ưu tiên bản sửa đúng nhánh. Đánh giá nhu cầu pseudo-streaming trước khi thay đổi tính năng đang phục vụ người dùng."
+    ],
+    "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:040760AF72242E3A682EAA21",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:C0038C63763B5F2AD80A4399"
+    ],
+    "distribution_status": [
+      "PACKAGE:040760AF72242E3A682EAA21",
+      "PACKAGE:171901AEC1F7504A7B231436",
+      "PACKAGE:C0038C63763B5F2AD80A4399"
+    ],
+    "documented_configuration_context": "NGINX Open Source có ngx_http_mp4_module và cấu hình dùng mp4; nội dung phải được xử lý qua module. CNA cũng nói đến Plus, nhưng dải phiên bản ở bài này chỉ dành cho OSS.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI_REVIEWED — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Over-read trong module MP4 có thể làm worker kết thúc khi xử lý media. Việc chỉ phục vụ tệp có đuôi MP4 không đủ xác định applicability; CNA yêu cầu module được build, directive mp4 được sử dụng và tệp được đưa qua đường xử lý đó.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.26.2",
+      "VERSION:NGINX-1.27.1"
+    ],
+    "id": "CVE:CVE-2024-7347",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [
+      "IMPACT:WORKER-TERMINATION"
+    ],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2025-11-03T20:56:24.679000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.",
+      "Trả lời có evidence: Vì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2024-7347",
+    "normal_component_behavior": "Worker đọc metadata phục vụ pseudo-streaming và tạo nội dung đầu ra theo request. Buffer metadata phải chứa đủ dữ liệu cho mọi phép đọc; vòng đời buffer phải bao trùm việc sử dụng nó.",
+    "official_mitigation_refs": [],
+    "patch_refs": [
+      "PATCH:D9038A2C1536868D4EBE5200"
+    ],
+    "potential_impact": "Khả năng tiết lộ dữ liệu hoặc thực thi mã cho riêng CVE này là UNKNOWN trong nguồn đã đọc; over-read không tự chứng minh hai hậu quả đó.",
+    "publication_date": "2024-08-14T14:32:33.913000+00:00",
+    "publication_year": 2024,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:EBA1ABF6DF9C47419E7FC8B6",
+      "REFERENCE:10A563A19FC0A544073BA315"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-MP4-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-126"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nOver-read trong module MP4 có thể làm worker kết thúc khi xử lý media. Việc chỉ phục vụ tệp có đuôi MP4 không đủ xác định applicability; CNA yêu cầu module được build, directive mp4 được sử dụng và tệp được đưa qua đường xử lý đó.\n\n## 2. CVE identity và product scope\n\nCVE-2024-7347; published 2024-08-14T14:32:33.913000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-6F3A4AE61104AA6B4426564D|Claim / locator]].\n\n## 3. Technical background\n\n[[MODULE-NGX-HTTP-MP4-MODULE|MP4 pseudo-streaming và ranh giới metadata]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nngx_http_mp4_module trong worker xử lý HTTP; chưa xác định atom, hàm hoặc allocation chịu lỗi từ các nguồn đã đọc. [[CLAIM-B36FB1760820913CFF0044B2|Claim / locator]].\n\n## 5. Normal component behavior\n\nWorker đọc metadata phục vụ pseudo-streaming và tạo nội dung đầu ra theo request. Buffer metadata phải chứa đủ dữ liệu cho mọi phép đọc; vòng đời buffer phải bao trùm việc sử dụng nó. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nNguồn mô tả đọc vượt vùng bộ nhớ khi phân tích MP4. Về nguyên lý, kích thước được chấp nhận và miền byte thực sự được đọc phải nhất quán; đây là invariant diễn giải, chưa phải kết luận về dòng kiểm tra bị thiếu. [[CLAIM-673465036F399D0693B2D6E3|Claim / locator]].\n\n## 7. Relevant security principles\n\nDuy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nNGINX Open Source có ngx_http_mp4_module và cấu hình dùng mp4; nội dung phải được xử lý qua module. CNA cũng nói đến Plus, nhưng dải phiên bản ở bài này chỉ dành cho OSS. [[CLAIM-B36FB1760820913CFF0044B2|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.5.13-1.27.0; not vulnerable/fixed branches 1.27.1+, 1.26.2+. [[CLAIM-5BEB30B0817DE9F164195A04|Claim / locator]].\n\nBản sửa 1.26.2 thuộc nhánh ổn định và 1.27.1 thuộc nhánh mainline của đợt công bố; điều đó không xác nhận các nhánh này còn hỗ trợ ở thời điểm triển khai. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nCNA xác nhận khả năng over-read bộ nhớ worker và làm worker kết thúc. Không có xác nhận rằng bộ nhớ đó được gửi ra client. [[CLAIM-BE7C8F9998324B4A0E258D23|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhả năng tiết lộ dữ liệu hoặc thực thi mã cho riêng CVE này là UNKNOWN trong nguồn đã đọc; over-read không tự chứng minh hai hậu quả đó. [[CLAIM-853D4EE8A181972B81C9BCB5|Claim / locator]].\n\n## 12. Remediation principles\n\nRà soát đường xuất bản media và quyền thay đổi file; ưu tiên bản sửa đúng nhánh. Đánh giá nhu cầu pseudo-streaming trước khi thay đổi tính năng đang phục vụ người dùng. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-5BEB30B0817DE9F164195A04|Claim / locator]].\n\n## 14. Patch management considerations\n\nBản sửa 1.26.2 thuộc nhánh ổn định và 1.27.1 thuộc nhánh mainline của đợt công bố; điều đó không xác nhận các nhánh này còn hỗ trợ ở thời điểm triển khai.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[MODULE-NGX-HTTP-MP4-MODULE|MP4 pseudo-streaming và ranh giới metadata]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-126|CWE-126 — Buffer Over-read]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.\n- Trả lời có evidence: Vì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?\n\n## 17. Discussion questions\n\nVì sao over-read gây kết thúc worker vẫn chưa đủ để ghi confirmed information disclosure?\n\nGợi ý đáp án: Hành vi đọc vượt biên và việc truyền dữ liệu ra ngoài là hai bước khác nhau; CNA của CVE này chỉ xác nhận hậu quả kết thúc worker.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-6F3A4AE61104AA6B4426564D|CLAIM:6F3A4AE61104AA6B4426564D]]\n- applicability: [[CLAIM-B36FB1760820913CFF0044B2|CLAIM:B36FB1760820913CFF0044B2]]\n- impact: [[CLAIM-BE7C8F9998324B4A0E258D23|CLAIM:BE7C8F9998324B4A0E258D23]]\n- potential: [[CLAIM-853D4EE8A181972B81C9BCB5|CLAIM:853D4EE8A181972B81C9BCB5]]\n- mechanism: [[CLAIM-673465036F399D0693B2D6E3|CLAIM:673465036F399D0693B2D6E3]]\n- versions: [[CLAIM-5BEB30B0817DE9F164195A04|CLAIM:5BEB30B0817DE9F164195A04]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nChưa biết atom/hàm lỗi, đường truyền dữ liệu đọc được hoặc quyền của worker trong một deployment cụ thể.\n\n## 20. Review status\n\nAI_REVIEWED — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:6F3A4AE61104AA6B4426564D",
+      "CLAIM:B36FB1760820913CFF0044B2",
+      "CLAIM:BE7C8F9998324B4A0E258D23",
+      "CLAIM:853D4EE8A181972B81C9BCB5",
+      "CLAIM:673465036F399D0693B2D6E3",
+      "CLAIM:5BEB30B0817DE9F164195A04"
+    ],
+    "research_group": "media",
+    "root_cause_summary": "Nguồn mô tả đọc vượt vùng bộ nhớ khi phân tích MP4. Về nguyên lý, kích thước được chấp nhận và miền byte thực sự được đọc phải nhất quán; đây là invariant diễn giải, chưa phải kết luận về dòng kiểm tra bị thiếu.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Duy trì kiểm biên đọc ở từng cấu trúc metadata và gắn tài nguyên parser với lifecycle request; không coi file trên đĩa là dữ liệu đã tin cậy.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4658A7708394EBCF3B4DC152",
+      "SEVERITY:4DA6B9DD3975B817268E51F2",
+      "SEVERITY:95AC6580F67D5A18C3C2B722",
+      "SEVERITY:A76899BA848DDB57F6E93D5D",
+      "SEVERITY:EA469274456165937771F19C"
+    ],
+    "source_refs": [
+      "EVIDENCE:2695A7B7DBF16C16C1D16529",
+      "EVIDENCE:33F64381C1DFA0573EACDDA6",
+      "EVIDENCE:858892E47130845469DFB70F",
+      "EVIDENCE:8BAA61AB297F1AEE277F0889",
+      "EVIDENCE:96277BC472ED92F8657D0FC0",
+      "EVIDENCE:98AA650589527FE324CA3595",
+      "EVIDENCE:A090E44B4D6823649A1DA8FD",
+      "EVIDENCE:DD31363C4E8C1F210DB23B4E",
+      "EVIDENCE:EAD35522BA8E5C36338FC518",
+      "EVIDENCE:F247C10B88E2879A1FFE9187",
+      "EVIDENCE:FDDF8361C7CDD452453122B7"
+    ],
+    "title": "Buffer overread in the ngx_http_mp4_module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Chưa biết atom/hàm lỗi, đường truyền dữ liệu đọc được hoặc quyền của worker trong một deployment cụ thể.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:46:49+00:00",
+    "upstream_affected_expression": "1.5.13-1.27.0",
+    "upstream_unaffected_expression": "1.27.1+, 1.26.2+",
+    "vendor_documented_conditions": [
+      "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "A security issue was identified in the ngx_http_mp4_module, which might allow an attacker to cause a worker process crash by using a specially crafted mp4 file (CVE-2024-7347). The issue only affects nginx if it is built with the ngx_http_mp4_module (the module is not built by default) and the “mp4” directive is used in the configuration file. Further, the attack is only possible if an attacker is able to trigger processing of a specially crafted mp4 file with the ngx_http_mp4_module.\n \nThe issue affects nginx 1.5.13+.\nThe issue is fixed in 1.27.1, 1.26.2.\n \nPatch for the issue can be found here: https://nginx.org/download/patch.2024.mp4.txt Thanks to Nils Bars for the initial report."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:47:53+00:00",
+  "entity_id": "CVE:CVE-2024-7347",
+  "id": "HISTORY:832438A717CC8D5C331D50C4"
+}

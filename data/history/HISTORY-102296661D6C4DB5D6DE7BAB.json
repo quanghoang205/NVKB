@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "CVE-2026-123634: Use-after-free during response processing in resolver",
+    "document_title": "NGINX security advisories",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:A731232A8B68F56783F395BE",
+    "id": "EVIDENCE:A731232A8B68F56783F395BE",
+    "local_snapshot_path": "data/raw/nginx/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+    "name": "NGINX security advisories",
+    "paraphrase": "CVE-2026-123634: Use-after-free during response processing in resolver",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "li containing CVE-2026-123634",
+    "source_refs": [],
+    "source_type": "advisory",
+    "source_url": "https://nginx.org/en/security_advisories.html",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "EVIDENCE:A731232A8B68F56783F395BE",
+  "id": "HISTORY:102296661D6C4DB5D6DE7BAB"
+}

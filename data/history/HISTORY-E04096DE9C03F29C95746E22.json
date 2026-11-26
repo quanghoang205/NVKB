@@ -1,0 +1,48 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "TLS session ↔ HTTP virtual server.",
+    "claim_refs": [
+      "CLAIM:22C264392E02E2985DFBBA30",
+      "CLAIM:4CA276F95EF0504B101CF426",
+      "CLAIM:E163E943A8B29F099A8CA48D",
+      "CLAIM:DAECA0B08BE1C49ACE267B29",
+      "CLAIM:4E357ABB61C799A304BA71E1",
+      "CLAIM:A1617EFD0CBF4EF9025FEB15",
+      "CLAIM:02BA188568BA301BD1440AE6",
+      "CLAIM:A11C0356CE56CC8F8907B419"
+    ],
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "defensive_principles": "Rà soát directive cùng default server và phiên bản đã sửa.",
+    "definition": "Directive điều khiển xác minh chứng chỉ client.",
+    "description": "Directive điều khiển xác minh chứng chỉ client.",
+    "diagram": "",
+    "entity_type": "ConfigurationDirective",
+    "failure_impact": "Sai chính sách xác thực theo điều kiện advisory.",
+    "id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "learning_objectives": [
+      "Giải thích ssl_verify_client bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ssl_verify_client",
+    "normal_behavior": "Các chế độ và kết quả kiểm tra được module SSL cung cấp; policy ứng dụng cần xét đúng server context.",
+    "related_failure_classes": "Incorrect authorization; session-context confusion.",
+    "related_knowledge": [
+      "MODULE:NGX-HTTP-SSL-MODULE",
+      "PROTOCOL:TLS",
+      "PROTOCOL:MTLS"
+    ],
+    "safety_assumptions": "Policy context của session phải gắn đúng server.",
+    "schema_version": "1.0.0",
+    "security_boundary": "TLS session ↔ HTTP virtual server.",
+    "source_refs": [
+      "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+    ],
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+  "id": "HISTORY:E04096DE9C03F29C95746E22"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8",
+    "created_at": "2026-11-25T02:26:20+00:00",
+    "description": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-32760",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:612BCFB1AD79CF53BA24AB5F",
+    "id": "EVIDENCE:612BCFB1AD79CF53BA24AB5F",
+    "local_snapshot_path": "data/raw/distribution/snapshots/6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8.html",
+    "name": "CVE-2024-32760",
+    "paraphrase": "Debian bookworm: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:20+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bookworm",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-32760",
+    "updated_at": "2026-11-25T02:26:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:20+00:00",
+  "entity_id": "EVIDENCE:612BCFB1AD79CF53BA24AB5F",
+  "id": "HISTORY:4F816C53C7D48E1595A48CF8"
+}

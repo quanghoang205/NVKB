@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:90FE6627899214D62F8B91C7",
+    "claim_value": "\"Tin vào thông tin định danh có thể bị giả mạo trong quá trình authentication.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:58+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "id": "CLAIM:90FE6627899214D62F8B91C7",
+    "name": "WEAKNESS:CWE-290: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DE7D1D7AF92C028CF23ED19B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-290",
+    "updated_at": "2026-11-25T02:48:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:58+00:00",
+  "entity_id": "CLAIM:90FE6627899214D62F8B91C7",
+  "id": "HISTORY:EF44E60D5E1173997ED57764"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:50+00:00",
+  "content_hash": "1f3343a39cc4417cac77707f012b3be272a8ae711a928b5e16b8c719bcc92c62",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"f4b6530927ddf2fd91a0e83d1142bc4dbcca6ff7471b742528a5e373a3f0509a\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/1f3343a39cc4417cac77707f012b3be272a8ae711a928b5e16b8c719bcc92c62.json",
+  "retrieved_at": "2026-11-25T02:25:50+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2014/3xxx/CVE-2014-3556.json"
+}

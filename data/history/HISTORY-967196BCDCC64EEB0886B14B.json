@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:08F17A750EDC0745ED09310D",
+    "claim_value": "\"Khi bật buffering, NGINX đọc response upstream vào buffer cấu hình; dữ liệu vượt ngưỡng có thể được ghi ra tệp tạm.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "id": "CLAIM:08F17A750EDC0745ED09310D",
+    "name": "COMPONENT:RESPONSE-BUFFERING: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "subject_entity_id": "COMPONENT:RESPONSE-BUFFERING",
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:12+00:00",
+  "entity_id": "CLAIM:08F17A750EDC0745ED09310D",
+  "id": "HISTORY:967196BCDCC64EEB0886B14B"
+}

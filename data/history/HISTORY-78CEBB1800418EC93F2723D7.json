@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:85C8AEB675B3D8DC6F4914B2",
+    "claim_value": "\"Use-after-free; NULL dereference; leak.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:755F421436BF042EB7BD0F3F"
+    ],
+    "id": "CLAIM:85C8AEB675B3D8DC6F4914B2",
+    "name": "COMPONENT:CONNECTION-LIFECYCLE: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:755F421436BF042EB7BD0F3F"
+    ],
+    "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:05+00:00",
+  "entity_id": "CLAIM:85C8AEB675B3D8DC6F4914B2",
+  "id": "HISTORY:78CEBB1800418EC93F2723D7"
+}

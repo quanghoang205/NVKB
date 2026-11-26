@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "f76c54c2d9c80ac662a7dfeb55077b0e401b60593782b692487cccff0d08b9b0",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-95101",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:EB7D6436B7498FEEC6E51ECE",
+    "id": "EVIDENCE:EB7D6436B7498FEEC6E51ECE",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/f76c54c2d9c80ac662a7dfeb55077b0e401b60593782b692487cccff0d08b9b0.json",
+    "name": "CVE-2026-95101",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:28:49+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-95101",
+    "updated_at": "2026-11-25T02:28:49+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:49+00:00",
+  "entity_id": "EVIDENCE:EB7D6436B7498FEEC6E51ECE",
+  "id": "HISTORY:9B6342E8F69EAF6F3118834A"
+}

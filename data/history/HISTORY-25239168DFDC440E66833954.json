@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "5df422fb9940f2659fbf468d2a9f78fc8aebc2eec63f92a9dc598b4630ad48aa",
+    "created_at": "2026-11-25T02:44:23+00:00",
+    "description": "Giao thức chuyển tiếp thư theo command/reply.",
+    "document_title": "SMTP",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:1C89351EAC105E9377F3948E",
+    "id": "EVIDENCE:1C89351EAC105E9377F3948E",
+    "local_snapshot_path": "data/raw/documentation/snapshots/5df422fb9940f2659fbf468d2a9f78fc8aebc2eec63f92a9dc598b4630ad48aa.html",
+    "name": "SMTP",
+    "paraphrase": "Giao thức chuyển tiếp thư theo command/reply.",
+    "publisher": "IETF / RFC Editor",
+    "retrieved_at": "2026-11-25T02:32:25+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Protocol overview and state machine; topic=PROTOCOL:SMTP",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "EVIDENCE:1C89351EAC105E9377F3948E",
+  "id": "HISTORY:25239168DFDC440E66833954"
+}

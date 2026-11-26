@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:42D4583902C8B3FAAF20E59C",
+    "claim_value": "\"Ranh giới buffer, bộ nhớ worker và filesystem tạm.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "id": "CLAIM:42D4583902C8B3FAAF20E59C",
+    "name": "COMPONENT:RESPONSE-BUFFERING: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0876D85604E6C1C5C554D16A"
+    ],
+    "subject_entity_id": "COMPONENT:RESPONSE-BUFFERING",
+    "updated_at": "2026-11-25T02:32:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:12+00:00",
+  "entity_id": "CLAIM:42D4583902C8B3FAAF20E59C",
+  "id": "HISTORY:8CC4C1D4EF130FBD24655727"
+}

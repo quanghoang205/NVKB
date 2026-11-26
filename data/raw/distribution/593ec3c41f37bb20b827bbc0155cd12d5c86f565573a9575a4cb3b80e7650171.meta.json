@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:55+00:00",
+  "content_hash": "1083388da75d0bb64f46dce00b3ea9d45ba7b0fe537f013cabf55a0393c11f79",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/1083388da75d0bb64f46dce00b3ea9d45ba7b0fe537f013cabf55a0393c11f79.html",
+  "retrieved_at": "2026-11-25T02:26:55+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-121810"
+}

@@ -1,0 +1,115 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Chưa; cần biết consumer, buffered output và callback còn chờ trước khi kết luận lifetime đã kết thúc.",
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-C459FCC770E3F0CDA9B25D22|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nSSI là filter có thể tạo công việc bổ sung để lấy nội dung và ghép vào response. Công việc con tham gia lifecycle của request nhưng không đồng nhất với một client connection mới. Một phần output có thể đã sẵn sàng trong khi phần khác còn chờ; mô hình dữ liệu cần biểu diễn thứ tự và điểm hoàn tất rõ ràng.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-E1147B065A605EEF9000EB6F|Claim của section]].\n\n## Ownership và invariant\n\nDiễn giải thiết kế: main request, subrequest, buffer và thao tác I/O có thể hoàn thành khác thời điểm. Callback hoàn tất phải được ràng buộc với owner còn sống; hủy main request không cho phép callback muộn tiếp tục dùng bộ nhớ cũ. Bộ lọc giữ con trỏ input phải biết khi nào upstream hoặc pool được quyền tái dùng vùng đó. Việc chuyển sang đường AIO còn thêm một mốc hoàn tất ngoài lần gọi hiện tại.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-C49DD0691E11CE3BE7D1D540|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nGhép nội dung tăng khả năng tái sử dụng nhưng tăng số tác vụ và tài nguyên đồng thời. Buffering giảm lệ thuộc tốc độ bên nhận nhưng cần thêm bộ nhớ/đĩa; tắt buffering không loại bỏ lifetime requirement. Review cancellation, timeout và thứ tự cleanup; dùng bản sửa khi advisory chỉ ra UAF. SSI, slice và mirror đều có thể liên hệ subrequest nhưng không được coi cùng implementation hay cùng lỗi.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-6FE3B4622D0220E05DB45343|Claim của section]].",
+    "assessment": "Handler tạo subrequest đã trả về có nghĩa mọi output của nó đã được giải phóng được chưa?",
+    "claim_refs": [
+      "CLAIM:C459FCC770E3F0CDA9B25D22",
+      "CLAIM:E1147B065A605EEF9000EB6F",
+      "CLAIM:C49DD0691E11CE3BE7D1D540",
+      "CLAIM:6FE3B4622D0220E05DB45343"
+    ],
+    "created_at": "2026-11-25T02:32:49+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "SSI module xử lý lệnh trong response và có thể đưa nội dung khác vào qua include; việc này khác với gửi response nguyên trạng.",
+    "description": "SSI module xử lý lệnh trong response và có thể đưa nội dung khác vào qua include; việc này khác với gửi response nguyên trạng.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "learning_objectives": [
+      "Phân biệt subrequest với client connection mới.",
+      "Nêu nghĩa vụ giữ output sống đến khi consumer kết thúc."
+    ],
+    "name": "SSI và subrequest — công việc con, output và cleanup",
+    "normal_behavior": "Xử lý Server Side Includes trong response. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "prerequisites": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "research_claim_refs": [
+      "CLAIM:C459FCC770E3F0CDA9B25D22",
+      "CLAIM:E1147B065A605EEF9000EB6F",
+      "CLAIM:C49DD0691E11CE3BE7D1D540",
+      "CLAIM:6FE3B4622D0220E05DB45343"
+    ],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:E407E38B58D01A696505E388"
+    ],
+    "updated_at": "2026-11-25T05:24:18+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:9D1CE1DFC3B99B2CD5816759",
+      "CLAIM:0337B4CA30C0E2A96B99BE40",
+      "CLAIM:00BA0397C9BB6A354DF192BE",
+      "CLAIM:43BFF1BD1775212670B8DAC6",
+      "CLAIM:8C3285F6D6CAE21D514FFC93",
+      "CLAIM:D2A6107E7E19A3CA3485731E",
+      "CLAIM:51A61F687541435EAB3EE0DF",
+      "CLAIM:5EEEFFBAF64BD40C10C06CD0"
+    ],
+    "created_at": "2026-11-25T02:32:49+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Xử lý Server Side Includes trong response.",
+    "description": "Xử lý Server Side Includes trong response.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-SSI-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_ssi_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_ssi_module",
+    "normal_behavior": "Xử lý Server Side Includes trong response. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.2.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:25D294C72DC04B09747CE615"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:24:18+00:00",
+  "entity_id": "MODULE:NGX-HTTP-SSI-MODULE",
+  "id": "HISTORY:77ABBEA6395D53F2B536EEA5"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:493E54EA1A523D15248A3CE0",
+    "claim_value": "\"Worker có thể kết thúc bất thường.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:27+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "id": "CLAIM:493E54EA1A523D15248A3CE0",
+    "name": "WEAKNESS:CWE-476: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AA8B7EDD8456037A5C73C2CB"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-476",
+    "updated_at": "2026-11-25T02:44:27+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:27+00:00",
+  "entity_id": "CLAIM:493E54EA1A523D15248A3CE0",
+  "id": "HISTORY:DDED083E545E961D0C929B19"
+}

@@ -1,0 +1,309 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Request body injection in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EB955B3E4995A75AEADC2BF0"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:022B6768DBA1F2CE4A740561",
+      "CLAIM:09644567344D9AD14184539D",
+      "CLAIM:1491AED55424632165585287",
+      "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+      "CLAIM:274D92808052887B2174A2F8",
+      "CLAIM:28F6A19E31126E9C52F8A44B",
+      "CLAIM:39109BD434AF9A8859C38B75",
+      "CLAIM:3A53B7C93B7D3A67EC8605F2",
+      "CLAIM:40912890DF89072740680ED5",
+      "CLAIM:47352377A558B60B54680A95",
+      "CLAIM:57DC5126394D1D17CFA98AAF",
+      "CLAIM:63EE7D7B57469D8005B8A327",
+      "CLAIM:A4EFABAFA326A4B67F469AA3",
+      "CLAIM:B82FE2E9C33706793DA8301C",
+      "CLAIM:BBA2002C152FDD50D91A68D2",
+      "CLAIM:BCED52667E26CEC2DEAAD504",
+      "CLAIM:BD6BED9850A1F66BEA018E65",
+      "CLAIM:C5E8E437D8F623A30E3EE425",
+      "CLAIM:C782B14546A5E01E2F6E1ADC",
+      "CLAIM:C9DA58FC92231617FCB95A5B",
+      "CLAIM:CCD487D5863A0304426EC4AC",
+      "CLAIM:D3C35BAF9D6D5BA772B2919F",
+      "CLAIM:E4D7DB96114C7592E3827033",
+      "CLAIM:E98D324C67D0A6FE81CB9A9C",
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "condition_refs": [
+      "CONDITION:0E931C064854F6CED00E806D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "cve_id": "CVE-2026-95101",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "distribution_status": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "documented_configuration_context": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-95101 ghi nhận: Request body injection in HTTP/3. Phạm vi upstream: 1.25.0-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-95101",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-15T16:43:46.630000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-95101",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:28.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C4BACC1F66494C7E52B12C56"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-172"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Request body injection in HTTP/3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+      "SEVERITY:6C30A1CF7141753DFA256598",
+      "SEVERITY:7908602630E2AB22543D6B4F",
+      "SEVERITY:D167990BFB76179813E6269D",
+      "SEVERITY:D9F4EE0529065FD88DBD495E"
+    ],
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1",
+      "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3",
+      "EVIDENCE:7EC7AFAB177164F5C7B6934B",
+      "EVIDENCE:8CF50ADB53DA7699EF6F5D8B",
+      "EVIDENCE:A59E329248E28B36814C7E0F",
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E",
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "title": "Request body injection in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:45:27+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Request body injection in HTTP/3",
+    "affected_process": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:EB955B3E4995A75AEADC2BF0"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:022B6768DBA1F2CE4A740561",
+      "CLAIM:09644567344D9AD14184539D",
+      "CLAIM:1491AED55424632165585287",
+      "CLAIM:1BBFF4927AF8636E2D0DA9B7",
+      "CLAIM:274D92808052887B2174A2F8",
+      "CLAIM:28F6A19E31126E9C52F8A44B",
+      "CLAIM:39109BD434AF9A8859C38B75",
+      "CLAIM:3A53B7C93B7D3A67EC8605F2",
+      "CLAIM:40912890DF89072740680ED5",
+      "CLAIM:47352377A558B60B54680A95",
+      "CLAIM:57DC5126394D1D17CFA98AAF",
+      "CLAIM:63EE7D7B57469D8005B8A327",
+      "CLAIM:A18AC43A7C3D0C2DF25E750C",
+      "CLAIM:A4EFABAFA326A4B67F469AA3",
+      "CLAIM:B82FE2E9C33706793DA8301C",
+      "CLAIM:BBA2002C152FDD50D91A68D2",
+      "CLAIM:BCED52667E26CEC2DEAAD504",
+      "CLAIM:BD6BED9850A1F66BEA018E65",
+      "CLAIM:C5E8E437D8F623A30E3EE425",
+      "CLAIM:C782B14546A5E01E2F6E1ADC",
+      "CLAIM:C9DA58FC92231617FCB95A5B",
+      "CLAIM:CCD487D5863A0304426EC4AC",
+      "CLAIM:D3C35BAF9D6D5BA772B2919F",
+      "CLAIM:E4D7DB96114C7592E3827033",
+      "CLAIM:E98D324C67D0A6FE81CB9A9C",
+      "CLAIM:FCFDF8446877041EB3B472C3"
+    ],
+    "condition_refs": [
+      "CONDITION:0E931C064854F6CED00E806D"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:28:49+00:00",
+    "cve_id": "CVE-2026-95101",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "distribution_status": [
+      "PACKAGE:3552BECB30CCFAFF483E3C10",
+      "PACKAGE:B352FB49547838C40FAFA750",
+      "PACKAGE:BCCC63327055C4BC1106744C"
+    ],
+    "documented_configuration_context": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-95101 ghi nhận: Request body injection in HTTP/3. Phạm vi upstream: 1.25.0-1.31.6. Bản sửa được công bố: 1.31.7+, 1.30.6+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.6",
+      "VERSION:NGINX-1.31.7"
+    ],
+    "id": "CVE:CVE-2026-95101",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-10-15T16:43:46.630000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-95101",
+    "normal_component_behavior": "Xử lý HTTP/3 dựa trên QUIC. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-10-14T14:40:28.955000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C4BACC1F66494C7E52B12C56"
+    ],
+    "related_components": [
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-V3-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:HTTP-3"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-172"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại lỗi: Request body injection in HTTP/3. Chưa có phân tích root cause ở mức mã nguồn đã được duyệt; không suy diễn chi tiết vượt quá advisory.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "security_boundary": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "severity_refs": [
+      "SEVERITY:6B4CE4CCC2F8D426972F09F5",
+      "SEVERITY:6C30A1CF7141753DFA256598",
+      "SEVERITY:7908602630E2AB22543D6B4F",
+      "SEVERITY:D167990BFB76179813E6269D",
+      "SEVERITY:D9F4EE0529065FD88DBD495E"
+    ],
+    "source_refs": [
+      "EVIDENCE:0C7486A2233AE015DC7FB8C1",
+      "EVIDENCE:1EDD266ED7B0B613E2F7C3DD",
+      "EVIDENCE:278A0675E65AFCDAE97BE8D3",
+      "EVIDENCE:7EC7AFAB177164F5C7B6934B",
+      "EVIDENCE:8CF50ADB53DA7699EF6F5D8B",
+      "EVIDENCE:A59E329248E28B36814C7E0F",
+      "EVIDENCE:C4A5449A62FA7F84636A2B3E",
+      "EVIDENCE:EB7D6436B7498FEEC6E51ECE"
+    ],
+    "title": "Request body injection in HTTP/3",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "impacts",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:48+00:00",
+    "upstream_affected_expression": "1.25.0-1.31.6",
+    "upstream_unaffected_expression": "1.31.7+, 1.30.6+",
+    "vendor_documented_conditions": [
+      "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:45:27+00:00",
+  "entity_id": "CVE:CVE-2026-95101",
+  "id": "HISTORY:776B9BF31992B196ECE47802"
+}

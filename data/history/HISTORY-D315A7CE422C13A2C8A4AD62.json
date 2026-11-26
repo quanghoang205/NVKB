@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:78622CC0388ECE06E9F3C473",
+    "claim_value": "\"Hỏng bộ nhớ hoặc crash tùy vị trí và điều kiện.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:32+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:28D21A886526208768AB863F"
+    ],
+    "id": "CLAIM:78622CC0388ECE06E9F3C473",
+    "name": "WEAKNESS:CWE-120: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:28D21A886526208768AB863F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:32:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:32+00:00",
+  "entity_id": "CLAIM:78622CC0388ECE06E9F3C473",
+  "id": "HISTORY:D315A7CE422C13A2C8A4AD62"
+}

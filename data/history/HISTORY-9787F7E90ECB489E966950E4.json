@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:8F2E85F0398238E9207311BC",
+      "CLAIM:5D6F816B3130D29D0766F667",
+      "CLAIM:7EEE78E89AA3F327AC4273BF",
+      "CLAIM:A2F6225006C2807F6E6D0EC9",
+      "CLAIM:69402CEDAD43DC42E5D819E9"
+    ],
+    "created_at": "2026-11-25T05:24:28+00:00",
+    "description": "CVE:CVE-2026-56434 learns_from COMPONENT:MEMORY-POOL",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2026-56434",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:09BA57AD643F0D941DDE38E3",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "COMPONENT:MEMORY-POOL",
+    "predicate": "learns_from",
+    "rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Vì sao quyền kiểm soát upstream response là giới hạn applicability cần giữ? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc Memory pool: ownership, lifetime và cleanup để thảo luận: Vì sao quyền kiểm soát upstream response là giới hạn applicability cần giữ? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:28+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1729A41D4AF1446592600F42",
+      "EVIDENCE:E2964AC3611A9E3EAB70945A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-56434",
+    "updated_at": "2026-11-25T05:24:28+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:28+00:00",
+  "entity_id": "REL:09BA57AD643F0D941DDE38E3",
+  "id": "HISTORY:9787F7E90ECB489E966950E4"
+}

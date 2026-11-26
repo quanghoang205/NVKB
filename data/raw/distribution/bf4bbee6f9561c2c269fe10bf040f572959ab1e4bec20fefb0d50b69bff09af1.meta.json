@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:51+00:00",
+  "content_hash": "223aa2fd4cd4d9922ee04e4c4a59c906d1b7da2be276326c60d6483571aea0c6",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/223aa2fd4cd4d9922ee04e4c4a59c906d1b7da2be276326c60d6483571aea0c6.html",
+  "retrieved_at": "2026-11-25T02:26:51+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-120993"
+}

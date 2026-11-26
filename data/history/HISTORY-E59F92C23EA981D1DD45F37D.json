@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:E06452DCC62567404172FEF7",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:39D1855A0C973C0B12414028",
+    "claim_value": "\"## Cơ chế bình thường\\n\\nTLS trong stream xử lý bảo vệ và xác thực kết nối trước khi proxy dữ liệu ứng dụng. Certificate chain, kết quả revocation và policy yêu cầu chứng thư là những dữ kiện khác nhau. Tài liệu phân biệt xác minh chứng thư được yêu cầu, tùy chọn, và OCSP validation. Một kết quả OCSP đã trả về không tự thực thi policy; đường hoàn tất handshake phải sử dụng kết quả đó đúng cách.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:15:02+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:39D1855A0C973C0B12414028",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-STREAM-SSL-MODULE: v1.3:knowledge:Cơ chế bình thường",
+    "observed_at": "2026-11-25T05:15:03+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế bình thường",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:3A43D6C5BBCD84195240076C"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-STREAM-SSL-MODULE",
+    "updated_at": "2026-11-25T05:15:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:15:03+00:00",
+  "entity_id": "CLAIM:39D1855A0C973C0B12414028",
+  "id": "HISTORY:E59F92C23EA981D1DD45F37D"
+}

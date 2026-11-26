@@ -1,0 +1,23 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:C96EB4E6EB72F840CE3AFF9F"
+    ],
+    "created_at": "2026-11-25T02:27:36+00:00",
+    "description": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:74E460C8865C9FB0849188DE",
+    "name": "Điều kiện được công bố — CVE-2026-27784",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E3A0312E8EBA339353ECC94F"
+    ],
+    "updated_at": "2026-11-25T02:27:36+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:36+00:00",
+  "entity_id": "CONDITION:74E460C8865C9FB0849188DE",
+  "id": "HISTORY:0D509AD456AE1E26788AE747"
+}

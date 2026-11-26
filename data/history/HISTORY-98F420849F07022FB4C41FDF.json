@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:4ABA8A217DA7C51F0BE8B036",
+    "authority": "NGINX official documentation",
+    "authority_scope": "NGINX official documentation",
+    "claim_id": "CLAIM:42195EFD315DB28872FD43A0",
+    "claim_value": "\"Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:33+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:79BFD9CD66F30BFD55CEF032: ngx_http_dav_module",
+    "evidence_refs": [
+      "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:42195EFD315DB28872FD43A0",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CVE:CVE-2026-27654: normal_component_behavior",
+    "observation_key": "OBSERVATION:9BDFD1D8A86F4BC819D163BD",
+    "observed_at": "2026-11-25T02:40:33+00:00",
+    "predicate": "normal_component_behavior",
+    "product_scope": "CVE:CVE-2026-27654",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:44+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX official documentation",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-27654",
+    "updated_at": "2026-11-25T04:12:34+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:42195EFD315DB28872FD43A0",
+    "claim_value": "\"Các phương thức WebDAV được module hỗ trợ để thao tác tài nguyên. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:33+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+    ],
+    "id": "CLAIM:42195EFD315DB28872FD43A0",
+    "name": "CVE:CVE-2026-27654: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:79BFD9CD66F30BFD55CEF032"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27654",
+    "updated_at": "2026-11-25T02:40:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:34+00:00",
+  "entity_id": "CLAIM:42195EFD315DB28872FD43A0",
+  "id": "HISTORY:98F420849F07022FB4C41FDF"
+}

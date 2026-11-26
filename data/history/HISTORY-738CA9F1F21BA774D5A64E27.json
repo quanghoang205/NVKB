@@ -1,0 +1,31 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3AC97BBD3713E4725AA8B899"
+    ],
+    "created_at": "2026-11-25T02:26:11+00:00",
+    "cve_ref": "CVE:CVE-2024-24990",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "",
+    "id": "PACKAGE:125CD0E9129EA0CF48B5CA08",
+    "name": "nginx / Debian bookworm / CVE-2024-24990",
+    "package_name": "nginx",
+    "patch_status": "not-affected",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "bookworm",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A18FE6B6B740CA0FB133CDDC"
+    ],
+    "updated_at": "2026-11-25T02:26:11+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:11+00:00",
+  "entity_id": "PACKAGE:125CD0E9129EA0CF48B5CA08",
+  "id": "HISTORY:738CA9F1F21BA774D5A64E27"
+}

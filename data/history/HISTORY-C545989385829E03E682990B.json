@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "95f8e607b4ab54eaee444da4cc182b4af1d50c14f994fbd6a139d7b68d1488fc",
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "document_title": "CWE - \nAbout CWE",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:9925DD082C49842C94D96D0D",
+    "id": "EVIDENCE:9925DD082C49842C94D96D0D",
+    "local_snapshot_path": "data/raw/documentation/snapshots/95f8e607b4ab54eaee444da4cc182b4af1d50c14f994fbd6a139d7b68d1488fc.html",
+    "name": "CWE - \nAbout CWE",
+    "paraphrase": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:33:02+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Overview / documented record; topic=CONCEPT:CWE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/about/index.html",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "EVIDENCE:9925DD082C49842C94D96D0D",
+  "id": "HISTORY:C545989385829E03E682990B"
+}

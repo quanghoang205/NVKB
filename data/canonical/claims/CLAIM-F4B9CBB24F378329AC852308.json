@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:63D8A639FF64F544372C66D6",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:F4B9CBB24F378329AC852308",
+  "claim_value": "\"Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:54+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:02EDDD1DC6D71C101E0DAE27: ngx_mail_auth_http_module",
+  "evidence_refs": [
+    "EVIDENCE:02EDDD1DC6D71C101E0DAE27"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:F4B9CBB24F378329AC852308",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE: defensive_principles",
+  "observation_key": "OBSERVATION:75629BFEDCAD4F731FF095FE",
+  "observed_at": "2026-11-25T02:32:54+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:54+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:02EDDD1DC6D71C101E0DAE27"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+  "updated_at": "2026-11-25T04:12:56+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:EBF2CA88F56C11B88E60181F",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:CBD0B23BFA980BCA24FAAEE8",
+  "claim_value": "\"Tên dịch vụ ↔ địa chỉ kết nối.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:23+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:562CA6466BB3C0694F53C8C9: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:562CA6466BB3C0694F53C8C9"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:CBD0B23BFA980BCA24FAAEE8",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:DNS: architecture_position",
+  "observation_key": "OBSERVATION:630F4D6A60957305CFB96D63",
+  "observed_at": "2026-11-25T02:32:23+00:00",
+  "predicate": "architecture_position",
+  "product_scope": "PROTOCOL:DNS",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:23+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:562CA6466BB3C0694F53C8C9"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:DNS",
+  "updated_at": "2026-11-25T04:12:50+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

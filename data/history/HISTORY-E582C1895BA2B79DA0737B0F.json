@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:A5BEA708D03C4B6AC90988D0"
+    ],
+    "created_at": "2026-11-25T02:27:47+00:00",
+    "cvss_score": 7.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+    "entity_type": "Severity",
+    "id": "SEVERITY:60212147DB991FE031FBD965",
+    "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"LOCAL\", \"availabilityImpact\": \"HIGH\", \"baseScore\": 7.8, \"baseSeverity\": \"HIGH\", \"confidentialityImpact\": \"HIGH\", \"integrityImpact\": \"HIGH\", \"privilegesRequired\": \"LOW\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H\", \"version\": \"3.1\"}",
+    "name": "CVE-2026-32647 CVSS 3.1 redhat-SADP",
+    "schema_version": "1.0.0",
+    "scoring_authority": "redhat-SADP via CIRCL mirror",
+    "severity_label": "HIGH",
+    "source_refs": [
+      "EVIDENCE:280FFDADEB891CC9C19C62D0"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-32647",
+    "updated_at": "2026-11-25T02:27:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:47+00:00",
+  "entity_id": "SEVERITY:60212147DB991FE031FBD965",
+  "id": "HISTORY:E582C1895BA2B79DA0737B0F"
+}

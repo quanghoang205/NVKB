@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:38BFBE0482A2B3CDFFFC43BD",
+  "claim_refs": [
+    "CLAIM:1185412FC385566D5630B025"
+  ],
+  "created_at": "2026-11-25T02:27:51+00:00",
+  "cvss_score": 6.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+  "cvss_version": "3.1",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CIRCL mirror",
+  "entity_type": "Severity",
+  "id": "SEVERITY:EA7EEF9CFB89ADC26A2A5603",
+  "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"LOW\", \"baseScore\": 6.5, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"LOW\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L\", \"version\": \"3.1\"}",
+  "name": "CVE-2026-40460 CVSS 3.1 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CIRCL mirror",
+  "severity_label": "MEDIUM",
+  "source_refs": [
+    "EVIDENCE:8FF99937524AF53FBC748172"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-40460",
+  "updated_at": "2026-11-25T04:13:17+00:00",
+  "verification_status": "VERIFIED"
+}

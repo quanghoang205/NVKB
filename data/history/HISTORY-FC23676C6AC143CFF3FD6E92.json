@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "539524ee7c7891c6ac98b850ce4ca7eead6e1d5ff4f1d8f5a3865b12304f1706",
+    "created_at": "2026-11-25T02:26:09+00:00",
+    "description": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-24989",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E1D960DEA8C3FD17B96C5A24",
+    "id": "EVIDENCE:E1D960DEA8C3FD17B96C5A24",
+    "local_snapshot_path": "data/raw/distribution/snapshots/539524ee7c7891c6ac98b850ce4ca7eead6e1d5ff4f1d8f5a3865b12304f1706.html",
+    "name": "CVE-2024-24989",
+    "paraphrase": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:09+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-24989",
+    "updated_at": "2026-11-25T02:26:09+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:09+00:00",
+  "entity_id": "EVIDENCE:E1D960DEA8C3FD17B96C5A24",
+  "id": "HISTORY:FC23676C6AC143CFF3FD6E92"
+}

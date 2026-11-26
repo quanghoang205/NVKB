@@ -1,0 +1,60 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:C48F5450AAEEC38293632BE9"
+    ],
+    "created_at": "2026-11-25T04:22:03+00:00",
+    "cve_ref": "CVE:CVE-2025-23419",
+    "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+    "distribution": "ubuntu",
+    "ecosystem": "ubuntu",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.18.0-0ubuntu1.7",
+    "id": "PACKAGE:28A3593DD847BBD4079C2DA0",
+    "lifecycle_evidence_ref": "EVIDENCE:C64B9C283A0D3EE3AE970E38",
+    "lifecycle_rationale": "Ubuntu release standard maintenance window only; package component, subscription and build support are not inferred.",
+    "name": "nginx / Ubuntu focal / CVE-2025-23419",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "focal",
+    "release_support_end_month": "2025-05",
+    "release_support_status": "STANDARD_WINDOW_ENDED",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:32D79DF82C442A095DB51A3A"
+    ],
+    "updated_at": "2026-11-25T04:22:05+00:00",
+    "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:C48F5450AAEEC38293632BE9"
+    ],
+    "created_at": "2026-11-25T04:22:03+00:00",
+    "cve_ref": "CVE:CVE-2025-23419",
+    "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+    "distribution": "ubuntu",
+    "ecosystem": "ubuntu",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.18.0-0ubuntu1.7",
+    "id": "PACKAGE:28A3593DD847BBD4079C2DA0",
+    "name": "nginx / Ubuntu focal / CVE-2025-23419",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "focal",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:32D79DF82C442A095DB51A3A"
+    ],
+    "updated_at": "2026-11-25T04:22:03+00:00",
+    "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:22:05+00:00",
+  "entity_id": "PACKAGE:28A3593DD847BBD4079C2DA0",
+  "id": "HISTORY:B348264A6A30E94F9A93A168"
+}

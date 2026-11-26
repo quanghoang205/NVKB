@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:BF2AC8E990C78117855C9D75",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:BBD6C877F9D37C6D536B6600",
+  "claim_value": "\"## Ngộ nhận và câu hỏi mở\\n\\nMột worker không phải một virtual host. Có TLS không đồng nghĩa đã cấp quyền đúng. Chưa có inventory, build flags hoặc cấu hình thật để xác nhận các ranh giới trong một deployment cụ thể. Nguồn: development guide theo snapshot, không cam kết mọi module bên thứ ba.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:20:36+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#processes; #http; #connection",
+  "evidence_refs": [
+    "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:BBD6C877F9D37C6D536B6600",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "DEPLOYMENT:REVERSE-PROXY: pilot_section:Ngộ nhận và câu hỏi mở",
+  "observed_at": "2026-11-25T04:20:36+00:00",
+  "predicate": "pilot_section:Ngộ nhận và câu hỏi mở",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read development at #processes; #http; #connection; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:20:37+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+  "updated_at": "2026-11-25T04:20:37+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:38+00:00; deployment version not established"
+}

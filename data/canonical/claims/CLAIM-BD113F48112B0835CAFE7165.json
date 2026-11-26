@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:79F69F30CD024876A698C725",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:BD113F48112B0835CAFE7165",
+  "claim_value": "\"Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:32:47+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49: ngx_http_scgi_module",
+  "evidence_refs": [
+    "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:BD113F48112B0835CAFE7165",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SCGI-MODULE: safety_assumptions",
+  "observation_key": "OBSERVATION:6945696947450AEB9262D906",
+  "observed_at": "2026-11-25T02:32:47+00:00",
+  "predicate": "safety_assumptions",
+  "product_scope": "MODULE:NGX-HTTP-SCGI-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:46+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:18CAE6E6F4ABEAA0B33AAE49"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SCGI-MODULE",
+  "updated_at": "2026-11-25T04:12:48+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

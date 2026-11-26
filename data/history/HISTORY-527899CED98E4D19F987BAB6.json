@@ -1,0 +1,92 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Không; readiness chỉ cho biết có khả năng tiến triển I/O. Parser vẫn giữ trạng thái chờ phần còn thiếu.\n2. Không; event loop không tự offload tính toán. Phải xem đường offload được hỗ trợ và scope của nó. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]] cùng các section I/O/timer/posted events giải thích cơ chế. 0–2 điểm mỗi câu.",
+    "architecture_position": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "article_body": "## Readiness và tiến độ\n\nEvent-driven không có nghĩa mỗi connection có một thread riêng. Worker lưu trạng thái để tiếp tục xử lý khi có sự kiện phù hợp. Backend I/O báo socket có thể sẵn sàng; callback thử đọc/ghi, xử lý lượng dữ liệu đã có rồi trả quyền điều khiển khi cần chờ. Ready không bảo đảm toàn bộ message ứng dụng đã đến, cũng không bảo đảm mọi byte muốn ghi đã được gửi. [[CLAIM-D17E29368273C82888C95A90|nhận định nguồn: CLAIM:D17E29368273C82888C95A90]]\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1D1D846BA118D5F4878A92A0|Claim theo section]].\n\n## Vòng đời callback\n\nDevelopment guide phân biệt I/O events, timer và posted events. Timer biểu diễn hạn chờ; posted event trì hoãn xử lý trong luồng event loop, không tự tạo thread. Mã callback phải duy trì vị trí đã xử lý và trạng thái chờ của đối tượng. Một response có thể cần nhiều lần callback trước khi hoàn tất. Khi kết nối đóng, các tham chiếu sự kiện liên quan phải tương thích với lifetime đối tượng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-2CF6401DB3A7E756F86936E7|Claim theo section]].\n\n## Ownership và invariant phòng vệ\n\nDiễn giải từ cơ chế: callback chỉ được truy cập context còn sống và phải trả quyền cho vòng lặp trong thời gian phù hợp với thiết kế. Kernel readiness là thông tin về khả năng I/O, không phải phê duyệt dữ liệu từ peer. Parse và authorization vẫn là nhiệm vụ ở lớp tương ứng. Ngân sách tài nguyên cần xét tổng các kết nối trên worker, không chỉ từng request.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-91DFF79891134742C71BF8C2|Claim theo section]].\n\n## Tradeoff và hiểu lầm\n\nNon-blocking socket hạn chế thời gian chờ I/O trong callback, nhưng không làm mọi đoạn tính toán hoặc thư viện ngoài trở nên bất đồng bộ. Một tác vụ CPU dài hay lời gọi blocking có thể giữ worker bận, làm chậm các kết nối khác. Thread pool/offload chỉ áp dụng cho các đường được triển khai hỗ trợ, không tự động bao mọi module. Cấu trúc event-driven giảm nhu cầu thread-per-connection nhưng khiến state machine và cleanup cần được thiết kế rõ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-3AACD36DD5D6FF55A2579CB8|Claim theo section]].\n\n## Ví dụ đọc timeline\n\nT0 socket ready; T1 callback đọc được phần đầu; T2 cần thêm dữ liệu và trả; T3 timer cho một request khác được xử lý; T4 socket ready lần nữa. Giải thích được T3 là đã hiểu lợi ích trả quyền cho event loop. Nếu callback T1 quay vòng chờ dữ liệu, đây là vi phạm mô hình của ví dụ, không cần chạy một chương trình gây treo để học.\n\nChưa đo scheduler fairness, latency hoặc backend cụ thể trong deployment. Thứ tự chi tiết cần đọc phiên bản mã nguồn tương ứng; sơ đồ dưới đây chỉ là chu kỳ khái niệm.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-9970C2D5D5603FB16C467573|Claim theo section]].\n",
+    "assessment": "1. Ready-read có đồng nghĩa HTTP request đầy đủ không?\n2. Callback làm phép tính dài có được non-blocking socket tự động chuyển sang thread khác không?",
+    "claim_refs": [
+      "CLAIM:D17E29368273C82888C95A90",
+      "CLAIM:1D1D846BA118D5F4878A92A0",
+      "CLAIM:2CF6401DB3A7E756F86936E7",
+      "CLAIM:91DFF79891134742C71BF8C2",
+      "CLAIM:3AACD36DD5D6FF55A2579CB8",
+      "CLAIM:9970C2D5D5603FB16C467573"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.",
+    "definition": "Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.",
+    "description": "Event loop NGINX xử lý thông báo I/O, timer và posted events; worker lặp vòng xử lý đến khi thoát.",
+    "diagram": "flowchart LR\n  P[Chờ sự kiện hoặc timeout] --> D[Dispatch callback]\n  D --> S[Lưu state và trả quyền]\n  S --> T[Xử lý timer và posted work theo loop]\n  T --> P",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.",
+    "id": "COMPONENT:EVENT-DRIVEN",
+    "learning_objectives": [
+      "Phân biệt readiness với hoàn tất I/O qua một timeline.",
+      "Giải thích tác động của callback blocking lên các kết nối cùng worker."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "Event loop và non-blocking I/O",
+    "normal_behavior": "Readiness của socket, timer và posted event kích hoạt callback; callback cập nhật trạng thái rồi trả điều khiển.",
+    "prerequisites": [
+      "COMPONENT:MASTER-PROCESS"
+    ],
+    "related_failure_classes": "Use-after-free; state-machine inconsistency.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Callback phải xử lý trường hợp dữ liệu chưa hoàn chỉnh và không giữ tham chiếu quá vòng đời.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "source_refs": [
+      "EVIDENCE:D35DA452C2D1E165CD488B2C"
+    ],
+    "updated_at": "2026-11-25T04:20:46+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "architecture_position": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "claim_refs": [
+      "CLAIM:1350D20631B3AD7C1CA11A59",
+      "CLAIM:5CC63B3145DFA6C0817D06F8",
+      "CLAIM:7A3A1A2B8E6C08ECA87DCE7C",
+      "CLAIM:C1D6AD380FDC0680BCAE9413",
+      "CLAIM:F104A943799A92E4A02B5297",
+      "CLAIM:663DAA73603376BD97D73F44",
+      "CLAIM:BA89E4105200F644C0076AED",
+      "CLAIM:79E199376ED1F1B0B02FFA07"
+    ],
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "defensive_principles": "Quản lý vòng đời rõ ràng, kiểm tra trạng thái và giữ callback có thời gian thực thi hữu hạn.",
+    "definition": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "description": "Mô hình xử lý công việc khi có sự kiện thay vì dành một thread cho mỗi kết nối.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Hỏng trạng thái hoặc trì hoãn hàng loạt kết nối.",
+    "id": "COMPONENT:EVENT-DRIVEN",
+    "learning_objectives": [
+      "Giải thích Event-driven architecture bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Event-driven architecture",
+    "normal_behavior": "Readiness của socket, timer và posted event kích hoạt callback; callback cập nhật trạng thái rồi trả điều khiển.",
+    "related_failure_classes": "Use-after-free; state-machine inconsistency.",
+    "related_knowledge": [],
+    "safety_assumptions": "Callback phải xử lý trường hợp dữ liệu chưa hoàn chỉnh và không giữ tham chiếu quá vòng đời.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.",
+    "source_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:46+00:00",
+  "entity_id": "COMPONENT:EVENT-DRIVEN",
+  "id": "HISTORY:527899CED98E4D19F987BAB6"
+}

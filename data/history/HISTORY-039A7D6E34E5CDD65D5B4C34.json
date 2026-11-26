@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:3B89A9052FD5FA44522FB9D8",
+    "claim_value": "\"Buffer overread in the ngx_mail_smtp_module\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C"
+    ],
+    "id": "CLAIM:3B89A9052FD5FA44522FB9D8",
+    "name": "CVE:CVE-2025-53859: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:34+00:00",
+  "entity_id": "CLAIM:3B89A9052FD5FA44522FB9D8",
+  "id": "HISTORY:039A7D6E34E5CDD65D5B4C34"
+}

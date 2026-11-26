@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e",
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Chọn cấu hình xử lý theo URI.",
+    "document_title": "Module ngx_http_core_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:CC0FC3E5BE9713A5AEAA31DE",
+    "id": "EVIDENCE:CC0FC3E5BE9713A5AEAA31DE",
+    "local_snapshot_path": "data/raw/documentation/snapshots/7b9eb00d68421c60a971b96c46e8ffc67168f6e61052975a2ee241938080622e.html",
+    "name": "Module ngx_http_core_module",
+    "paraphrase": "Chọn cấu hình xử lý theo URI.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:09+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "location; topic=COMPONENT:LOCATION-MATCHING",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "EVIDENCE:CC0FC3E5BE9713A5AEAA31DE",
+  "id": "HISTORY:ACF0F772CAB5DBA321A3E9E4"
+}

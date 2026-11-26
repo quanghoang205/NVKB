@@ -1,0 +1,108 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Master điều phối; worker mới/cũ có thể cùng sống; request pools A/B có lifetime riêng với connection. Xem bài master/connection/pool.\n2. Resumption dùng state/PSK, policy authorization vẫn cần đúng context. Giữ classification CNA và tên MITRE chuẩn; không gọi title+CWE là root-cause review.\n3. Package đạt ngưỡng tracker theo inventory; upstream banner không dùng thay comparator Debian. Lifecycle UNKNOWN nếu không có nguồn đúng scope; KEV chỉ có nghĩa theo snapshot/freshness; runtime UNKNOWN. Origin chưa biết → manual review. Không gọi asset đã được attest.\n4. Hash là integrity; mirror chung authority không độc lập; absence KEV không phủ định exploitation; không có chứng cứ deployment. Cần claim support và runtime evidence riêng.\n5. Theo module SSL, `optional` yêu cầu certificate nhưng chỉ xác minh nếu có, không tương đương mọi client phải có certificate. Phải nêu policy, trust store, context và phiên bản; không suy từ một directive rằng application authorization đã đúng. Nguồn đọc thêm: [NGINX ssl_verify_client](https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_verify_client).\n\nRubric chi tiết trong reports/PILOT_CURRICULUM_REPORT.md và ACADEMIC_REVIEW_QUEUE.md; người chấm phải ghi bằng chứng cho mỗi điểm, không dùng độ dài bài làm làm tiêu chí.\n",
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "article_body": "## Đầu vào và cách sử dụng\n\nCần biết socket, process, HTTP request/response và cách đọc bảng phiên bản. Nếu chưa vững, đọc các liên kết nền trong bài đầu và ghi câu hỏi trước khi đi tiếp. Ước lượng biên tập: 6–9 giờ đọc và bài tập; chưa đo trên người học. Mỗi bài ghi prerequisite; thứ tự dưới đây đi từ ownership đến policy rồi tới provenance của bản vá.\n\n## Tiến trình có lý do\n\n1. [[DEPLOYMENT-REVERSE-PROXY|Kiến trúc NGINX: tiến trình, kết nối và ranh giới tin cậy]] — Vẽ đường đi request qua worker và upstream, phân biệt với đường điều khiển của master.\n2. [[COMPONENT-MASTER-PROCESS|Master, worker và graceful reload]] — Sắp xếp đúng các bước reload và xác định nhánh thất bại.\n3. [[COMPONENT-EVENT-DRIVEN|Event loop và non-blocking I/O]] — Phân biệt readiness với hoàn tất I/O qua một timeline.\n4. [[COMPONENT-CONNECTION-LIFECYCLE|Connection và HTTP request: hai vòng đời]] — Vẽ hai request tuần tự trên một HTTP/1.1 keepalive connection.\n5. [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] — Gán owner/lifetime cho ba tài nguyên trong request.\n6. [[PROTOCOL-TLS|TLS 1.3: handshake, identity và protected records]] — Phân biệt key establishment, peer authentication và application authorization.\n7. [[COMPONENT-TLS-SESSION-LIFECYCLE|TLS resumption: state, ticket và policy hiện hành]] — So sánh lifetime của connection với resumption state.\n8. [[WEAKNESS-CWE-863|Incorrect Authorization]] — Phân loại đúng bốn phát biểu về authentication, authorization, access control và session management.\n9. [[CONTROL-LEAST-PRIVILEGE|Security invariants và trách nhiệm kiểm soát]] — Viết một invariant có owner, scope và điều kiện hiệu lực.\n10. [[CONCEPT-ADVISORY|Đọc advisory: dữ kiện, điều kiện và điều chưa biết]] — Trích đúng product, phạm vi phiên bản và bản sửa từ entry CVE.\n11. [[CONCEPT-BACKPORT|Upstream version và distribution backport]] — Đọc đúng release row và fixed package trong Debian tracker.\n12. [[CONTROL-PATCH-VERIFICATION|Xác minh bản vá từ inventory và bằng chứng triển khai]] — Phân tách năm trạng thái patch, package, support lifecycle, KEV và runtime.\n\n## Tổng hợp: CVE-2025-23419\n\n[[CVE-2025-23419|Case study có provenance]] nối kiến trúc/session policy với đọc advisory và backport. Không yêu cầu tái hiện lỗ hổng. Người học phải tách lời vendor khỏi giải thích invariant và ghi UNKNOWN cho thông tin thiếu.\n\n## Chuẩn đầu ra\n\nHoàn thành câu hỏi trong từng bài; sau đó làm capstone độc lập trước khi mở đáp án. Rubric dùng 11 tiêu chí, mỗi tiêu chí 0–3, tổng 33. Mốc đề xuất 26/33 và không có lỗi nghiêm trọng về terminology/source support. Đây là ngưỡng biên tập, chưa được learner-tested. Điểm bài tập không tự trở thành human approval cho corpus.\n\n## Gate review\n\nAI self-review: đã có per-claim metadata. Independent agent review: NOT_PERFORMED. Human technical review: PENDING. Human pedagogy review: PENDING. Learner study: PENDING. Không dùng nhãn peer-reviewed.\n",
+    "assessment": "Capstone (tài liệu giấy, không kết nối hệ thống):\n\n1. Vẽ master/worker reload và hai request trên một keepalive connection; gắn owner của pool.\n2. Giải thích tại sao session resumption không cấp mọi quyền cho mọi virtual server; phân biệt định nghĩa CWE-863 với mô tả authentication trong CNA.\n3. Với inventory mẫu A = Debian bookworm nginx 1.22.1-9+deb12u1, origin UNKNOWN, runtime evidence trống: lập năm cột advisory/package/lifecycle/KEV/runtime.\n4. Phê bình nhận định “hash khớp + CVE mirror đồng ý + không trong KEV = đã vá an toàn”. Chỉ ra từng bước suy luận thiếu chứng cứ.\n5. Thiết kế trên giấy policy cho endpoint đòi client certificate: phân biệt mode `optional` với yêu cầu mọi client phải được xác thực; nêu dữ liệu cần kiểm tra trước quyết định. Không triển khai hoặc thử bypass.\n",
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "curation_version": "1.2.0",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Pilot 12 bài ghép bao phủ 14 chủ đề, có prerequisite DAG, assessment và capstone. Bản AI self-reviewed để chuyên gia thẩm định.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-01",
+    "learning_objectives": [
+      "Vẽ và giải thích lifecycle process/connection/request với owner đúng.",
+      "Phân biệt TLS authentication, application authorization và session policy.",
+      "Lập kết luận patch có scope từ advisory/package/inventory và phát hiện claim thiếu chứng cứ."
+    ],
+    "name": "NGINX Architecture, TLS Security & Patch Verification",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "prerequisites": [],
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "DEPLOYMENT:REVERSE-PROXY",
+      "COMPONENT:MASTER-PROCESS",
+      "COMPONENT:EVENT-DRIVEN",
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:MEMORY-POOL",
+      "PROTOCOL:TLS",
+      "COMPONENT:TLS-SESSION-LIFECYCLE",
+      "WEAKNESS:CWE-863",
+      "CONTROL:LEAST-PRIVILEGE",
+      "CONCEPT:ADVISORY",
+      "CONCEPT:BACKPORT",
+      "CONTROL:PATCH-VERIFICATION",
+      "CVE:CVE-2025-23419"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA",
+      "EVIDENCE:3F3B7A9F2EE582122C10045B",
+      "EVIDENCE:73508A92036558C7B2D50317",
+      "EVIDENCE:7A43D63D03C50227DF951CF8",
+      "EVIDENCE:80187DCEBADB8A87EBAC7B6E",
+      "EVIDENCE:81E73A1E91C1D45517423D7A",
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6",
+      "EVIDENCE:D35DA452C2D1E165CD488B2C",
+      "EVIDENCE:D520284776E11B5BE3AC5151",
+      "EVIDENCE:E19E68B2E196A0C50233787A",
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "updated_at": "2026-11-25T04:21:16+00:00",
+    "verification_limitations": "Curriculum is authored pedagogy; no human approval or measured learner outcomes.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "claim_refs": [
+      "CLAIM:49E713CAE550CFC0DFB7A531",
+      "CLAIM:A04448FECCE59A4F4871CA7B",
+      "CLAIM:1F71F517A7E2D1E125E86F12",
+      "CLAIM:1567133D86679FD7429B6DD0",
+      "CLAIM:5821A669AD9DEC58C25E24BB",
+      "CLAIM:168596B2882DB2A6D87ACECA",
+      "CLAIM:D46C4C0A83ADCF6B546E00CC",
+      "CLAIM:75C18E6DD275449C1C35FF09"
+    ],
+    "created_at": "2026-11-25T02:33:08+00:00",
+    "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+    "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+    "diagram": "",
+    "entity_type": "LearningObjective",
+    "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+    "id": "LEARNING:PATH-01",
+    "learning_objectives": [
+      "Giải thích Learning Path 01 — NGINX Fundamentals bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Learning Path 01 — NGINX Fundamentals",
+    "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+    "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+    "related_knowledge": [
+      "COMPONENT:MASTER-PROCESS",
+      "COMPONENT:WORKER-PROCESS",
+      "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+      "COMPONENT:REVERSE-PROXY",
+      "COMPONENT:LOCATION-MATCHING"
+    ],
+    "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+    "source_refs": [
+      "EVIDENCE:0012C3AAFAE82D8CD012A953"
+    ],
+    "updated_at": "2026-11-25T04:13:03+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:21:16+00:00",
+  "entity_id": "LEARNING:PATH-01",
+  "id": "HISTORY:4C97521C5965C502514E2DE0"
+}

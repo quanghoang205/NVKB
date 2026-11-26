@@ -1,0 +1,74 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:DB394EF2D0B618CCB41C90D5"
+    ],
+    "created_at": "2026-11-25T02:33:37+00:00",
+    "description": "CVE:CVE-2024-24990 related_protocols PROTOCOL:HTTP-3",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:9BD962EF88E58DE8104BC9DC",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:HTTP-3",
+    "predicate": "related_protocols",
+    "rationale": "Legacy association: Protocol context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Protocol context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:0294CB89856E43B0006C7D35",
+      "EVIDENCE:0A1449B66184C3759604429B",
+      "EVIDENCE:0BF4E4CC924225F0C7F5F039",
+      "EVIDENCE:4DA43556D459ED068CF95469",
+      "EVIDENCE:746115FE114312FD34607DDB",
+      "EVIDENCE:8DACEC54F6C2D927D39F6309",
+      "EVIDENCE:9EAFCBFFFE5ABAC3C4E129F3",
+      "EVIDENCE:A1E6A38EC59839D676065425",
+      "EVIDENCE:D6B91C2E5962D50D24049841"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-24990",
+    "updated_at": "2026-11-25T04:13:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:DB394EF2D0B618CCB41C90D5"
+    ],
+    "created_at": "2026-11-25T02:33:37+00:00",
+    "description": "CVE:CVE-2024-24990 related_protocols PROTOCOL:HTTP-3",
+    "entity_type": "Relationship",
+    "id": "REL:9BD962EF88E58DE8104BC9DC",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:HTTP-3",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0294CB89856E43B0006C7D35",
+      "EVIDENCE:0A1449B66184C3759604429B",
+      "EVIDENCE:0BF4E4CC924225F0C7F5F039",
+      "EVIDENCE:4DA43556D459ED068CF95469",
+      "EVIDENCE:746115FE114312FD34607DDB",
+      "EVIDENCE:8DACEC54F6C2D927D39F6309",
+      "EVIDENCE:9EAFCBFFFE5ABAC3C4E129F3",
+      "EVIDENCE:A1E6A38EC59839D676065425",
+      "EVIDENCE:D6B91C2E5962D50D24049841"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-24990",
+    "updated_at": "2026-11-25T02:33:37+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:08+00:00",
+  "entity_id": "REL:9BD962EF88E58DE8104BC9DC",
+  "id": "HISTORY:AB29FEEF06C9713B286E6B42"
+}

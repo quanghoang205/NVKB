@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:B2BCEC45A91885F6062E4920",
+    "claim_value": "\"Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9925DD082C49842C94D96D0D"
+    ],
+    "id": "CLAIM:B2BCEC45A91885F6062E4920",
+    "name": "CONCEPT:CWE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9925DD082C49842C94D96D0D"
+    ],
+    "subject_entity_id": "CONCEPT:CWE",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:B2BCEC45A91885F6062E4920",
+  "id": "HISTORY:86C9D7179F5E1F016BD266A4"
+}

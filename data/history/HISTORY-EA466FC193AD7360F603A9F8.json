@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:7A3A1A2B8E6C08ECA87DCE7C",
+    "claim_value": "\"Event handler và trạng thái kết nối thuộc cùng vòng đời xử lý.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:12+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "id": "CLAIM:7A3A1A2B8E6C08ECA87DCE7C",
+    "name": "COMPONENT:EVENT-DRIVEN: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:82D6FCC9506A4386ADB18F1D"
+    ],
+    "subject_entity_id": "COMPONENT:EVENT-DRIVEN",
+    "updated_at": "2026-11-25T02:44:12+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:12+00:00",
+  "entity_id": "CLAIM:7A3A1A2B8E6C08ECA87DCE7C",
+  "id": "HISTORY:EA466FC193AD7360F603A9F8"
+}

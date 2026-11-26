@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ liệu request.",
+    "claim_refs": [
+      "CLAIM:8D31F5CF6CCFCE4E54508B39",
+      "CLAIM:CCF7BB5E5C9D7652506FF72A",
+      "CLAIM:4A51BA6BA0DEC432E31BF856",
+      "CLAIM:93119D93AFEB48B0FAAAC842",
+      "CLAIM:8DBD3FC8006A9B1C480811E4",
+      "CLAIM:51184D27F430B3B6DB406310",
+      "CLAIM:5AC620E0D0AB23D5D83B5715",
+      "CLAIM:2043F40A58798EA0B70E2F4B"
+    ],
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "defensive_principles": "Áp dụng least privilege và đối chiếu service unit, user directive cùng quyền tệp.",
+    "definition": "Tách quyền của tiến trình điều phối và tiến trình xử lý request.",
+    "description": "Tách quyền của tiến trình điều phối và tiến trình xử lý request.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Phạm vi tác động có thể lớn hơn khi quyền worker vượt nhu cầu.",
+    "id": "COMPONENT:PROCESS-PRIVILEGES",
+    "learning_objectives": [
+      "Giải thích Process privileges bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Process privileges",
+    "normal_behavior": "Master có thể cần quyền tạo tài nguyên; worker sử dụng user/group cấu hình. Quyền thực tế phụ thuộc cách vận hành dịch vụ.",
+    "related_failure_classes": "Privilege misconfiguration.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không suy ra worker chạy root chỉ từ việc master có quyền cao.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ liệu request.",
+    "source_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ liệu request.",
+    "claim_refs": [
+      "CLAIM:8D31F5CF6CCFCE4E54508B39",
+      "CLAIM:CCF7BB5E5C9D7652506FF72A",
+      "CLAIM:4A51BA6BA0DEC432E31BF856",
+      "CLAIM:93119D93AFEB48B0FAAAC842",
+      "CLAIM:8DBD3FC8006A9B1C480811E4",
+      "CLAIM:51184D27F430B3B6DB406310",
+      "CLAIM:5AC620E0D0AB23D5D83B5715",
+      "CLAIM:2043F40A58798EA0B70E2F4B"
+    ],
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "defensive_principles": "Áp dụng least privilege và đối chiếu service unit, user directive cùng quyền tệp.",
+    "definition": "Tách quyền của tiến trình điều phối và tiến trình xử lý request.",
+    "description": "Tách quyền của tiến trình điều phối và tiến trình xử lý request.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Phạm vi tác động có thể lớn hơn khi quyền worker vượt nhu cầu.",
+    "id": "COMPONENT:PROCESS-PRIVILEGES",
+    "learning_objectives": [
+      "Giải thích Process privileges bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Process privileges",
+    "normal_behavior": "Master có thể cần quyền tạo tài nguyên; worker sử dụng user/group cấu hình. Quyền thực tế phụ thuộc cách vận hành dịch vụ.",
+    "related_failure_classes": "Privilege misconfiguration.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không suy ra worker chạy root chỉ từ việc master có quyền cao.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ liệu request.",
+    "source_refs": [
+      "EVIDENCE:DEAA4C59D9EB3708DB5D7CA6"
+    ],
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:PROCESS-PRIVILEGES",
+  "id": "HISTORY:E62D22760D64EF8F5E48B7B4"
+}

@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:A01E2EF0B31D01F313E81E6C",
+      "CLAIM:A2FEFF49544142C530329781",
+      "CLAIM:76A6736CC16890C41D9A0B1D",
+      "CLAIM:F4867746FE9C16DA001A9263",
+      "CLAIM:D08E659DDA218DF706781C95",
+      "CLAIM:A617D11F35D9AE3C99759B8C",
+      "CLAIM:C1B5D4E20CF885CAE163230E",
+      "CLAIM:6354EB30C99ADA4A41C60C45"
+    ],
+    "created_at": "2026-11-25T02:49:06+00:00",
+    "defensive_principles": "Lưu inventory/package evidence và kiểm tra lại sau cập nhật.",
+    "definition": "Nguyên tắc phòng vệ vận hành NGINX: Patch verification",
+    "description": "Nguyên tắc phòng vệ vận hành NGINX: Patch verification",
+    "diagram": "",
+    "entity_type": "SecurityControl",
+    "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+    "id": "CONTROL:PATCH-VERIFICATION",
+    "learning_objectives": [
+      "Giải thích Patch verification bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Patch verification",
+    "normal_behavior": "Trạng thái sửa lỗi được đối chiếu đúng product, branch và distribution release.",
+    "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+    "related_knowledge": [],
+    "safety_assumptions": "Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:A01E2EF0B31D01F313E81E6C",
+      "CLAIM:A2FEFF49544142C530329781",
+      "CLAIM:76A6736CC16890C41D9A0B1D",
+      "CLAIM:F4867746FE9C16DA001A9263",
+      "CLAIM:D08E659DDA218DF706781C95",
+      "CLAIM:A617D11F35D9AE3C99759B8C",
+      "CLAIM:C1B5D4E20CF885CAE163230E",
+      "CLAIM:6354EB30C99ADA4A41C60C45"
+    ],
+    "created_at": "2026-11-25T02:49:06+00:00",
+    "defensive_principles": "Lưu inventory/package evidence và kiểm tra lại sau cập nhật.",
+    "definition": "Nguyên tắc phòng vệ vận hành NGINX: Patch verification",
+    "description": "Nguyên tắc phòng vệ vận hành NGINX: Patch verification",
+    "diagram": "",
+    "entity_type": "SecurityControl",
+    "failure_impact": "Gia tăng tác động sự cố hoặc kết luận bản vá không chính xác.",
+    "id": "CONTROL:PATCH-VERIFICATION",
+    "learning_objectives": [
+      "Giải thích Patch verification bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Patch verification",
+    "normal_behavior": "Trạng thái sửa lỗi được đối chiếu đúng product, branch và distribution release.",
+    "related_failure_classes": "Configuration errors; resource exhaustion; stale patch evidence.",
+    "related_knowledge": [],
+    "safety_assumptions": "Dữ liệu inventory và cấu hình phản ánh đúng trạng thái vận hành.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:EF48AF94A2577B9F810DED95"
+    ],
+    "updated_at": "2026-11-25T02:49:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONTROL:PATCH-VERIFICATION",
+  "id": "HISTORY:1AE9D28ED214FF697AE651D6"
+}

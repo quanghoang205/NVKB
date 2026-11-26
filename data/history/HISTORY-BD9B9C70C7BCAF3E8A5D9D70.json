@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "51c9fa1c2ffcb4a703727f344ce465f9371d3a3a8a67991c27d475bd82bfc60f",
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "Debian trixie: fixed_version=1.26.3-3+deb13u7, status=fixed.",
+    "document_title": "CVE-2026-42055",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:097687B13EDBC6F6FA7D7F7E",
+    "id": "EVIDENCE:097687B13EDBC6F6FA7D7F7E",
+    "local_snapshot_path": "data/raw/distribution/snapshots/51c9fa1c2ffcb4a703727f344ce465f9371d3a3a8a67991c27d475bd82bfc60f.html",
+    "name": "CVE-2026-42055",
+    "paraphrase": "Debian trixie: fixed_version=1.26.3-3+deb13u7, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:59+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=trixie",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-42055",
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:59+00:00",
+  "entity_id": "EVIDENCE:097687B13EDBC6F6FA7D7F7E",
+  "id": "HISTORY:BD9B9C70C7BCAF3E8A5D9D70"
+}

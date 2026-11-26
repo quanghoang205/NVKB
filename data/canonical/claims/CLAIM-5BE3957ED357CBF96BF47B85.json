@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:CF8F98A861DE30F4B441C3E4",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:5BE3957ED357CBF96BF47B85",
+  "claim_value": "\"## Ownership và lifecycle\\n\\nStream có trạng thái gửi và nhận; connection giữ state vận chuyển chung lâu hơn một request đơn lẻ. Đóng stream, hủy công việc ứng dụng và kết thúc connection là ba sự kiện cần phối hợp. Trong giai đoạn closing/draining, endpoint không còn hoạt động như kết nối đang trao đổi bình thường, nhưng một phần state vẫn cần tồn tại theo quy tắc giao thức. Diễn giải implementation: callback đã xếp hàng không được dùng một context stream sau khi owner giải phóng nó, kể cả khi connection vẫn sống.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:08:33+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "§2 Streams; §3 Stream States; §4 Flow Control; §8 Address Validation; §10 Connection Termination",
+  "evidence_refs": [
+    "EVIDENCE:E2199047E6281CFD9EC42B26"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:5BE3957ED357CBF96BF47B85",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "PROTOCOL:QUIC: v1.3:knowledge:Ownership và lifecycle",
+  "observed_at": "2026-11-25T05:08:33+00:00",
+  "predicate": "v1.3:knowledge:Ownership và lifecycle",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:08:33+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:E2199047E6281CFD9EC42B26"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "PROTOCOL:QUIC",
+  "updated_at": "2026-11-25T05:08:33+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:21+00:00; CVE versions are scoped separately."
+}

@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Catalog phân tách sản phẩm; CVE không tự động nhập vào NGINX OSS.",
+    "entity_type": "Product",
+    "id": "PRODUCT:THIRD-PARTY-MODULES",
+    "in_primary_scope": false,
+    "name": "Third-party modules",
+    "product_family": "THIRD-PARTY-MODULES",
+    "schema_version": "1.0.0",
+    "source_refs": [],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "vendor": "Various",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "PRODUCT:THIRD-PARTY-MODULES",
+  "id": "HISTORY:D474CAE6D1DA903CE607401D"
+}

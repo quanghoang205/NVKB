@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:1A13BBEAA9DCB02C15CC08EC
+title: 'WEAKNESS:CWE-120: defensive_principles'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'WEAKNESS:CWE-120: defensive_principles'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# WEAKNESS:CWE-120: defensive_principles
+
+`CLAIM:1A13BBEAA9DCB02C15CC08EC` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[WEAKNESS-CWE-120|CWE-120 — Buffer overflow]]. Predicate: `defensive_principles`.
+
+```json
+"Kiểm tra capacity/length, dùng API có giới hạn và công cụ phát hiện lỗi bộ nhớ."
+```
+
+## Nguồn và phạm vi
+
+Authority: MITRE CWE. MITRE CWE
+
+[[EVIDENCE-28D21A886526208768AB863F|CWE - CWE-120: Buffer Copy without Checking Size of Input (5.0)]]
+
+Locator: EVIDENCE:28D21A886526208768AB863F: Description / Potential Mitigations
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.
+
+Quan sát: 2026-11-25T02:32:32+00:00. Truy xuất: 2026-11-25T02:32:32+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

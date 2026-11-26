@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184",
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "CVE-2026-9256: Buffer overflow in the ngx_http_rewrite_module",
+    "document_title": "NGINX security advisories",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:15444CBCEDABE7F2E128DB96",
+    "id": "EVIDENCE:15444CBCEDABE7F2E128DB96",
+    "local_snapshot_path": "data/raw/nginx/snapshots/2d976f0070a87e0d2763a80cab85f20bbfb838ce20aa184f959d55e28a372184.html",
+    "name": "NGINX security advisories",
+    "paraphrase": "CVE-2026-9256: Buffer overflow in the ngx_http_rewrite_module",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "li containing CVE-2026-9256",
+    "source_refs": [],
+    "source_type": "advisory",
+    "source_url": "https://nginx.org/en/security_advisories.html",
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:41+00:00",
+  "entity_id": "EVIDENCE:15444CBCEDABE7F2E128DB96",
+  "id": "HISTORY:2ADE159C6450C372C846EF7A"
+}

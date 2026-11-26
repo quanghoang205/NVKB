@@ -1,0 +1,308 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "Use-after-free in mail proxy module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:698EF461019C660CBB45334F"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:03FE9B822F9A80B6FF2FF4BD",
+      "CLAIM:088083C57CF2D32941E29960",
+      "CLAIM:10B20DE810145F23626BAAAF",
+      "CLAIM:115F5A073228B5BC251FEEC9",
+      "CLAIM:15CB240569C2EF7CBC7E354B",
+      "CLAIM:1BD73D274FDCA2D4D772EB33",
+      "CLAIM:2C960BC10D6035FD9F6CC057",
+      "CLAIM:3910B19C2F694F1AAA1E0840",
+      "CLAIM:3CE546365DD49C8FC2BD73D3",
+      "CLAIM:581B52CE61165A16C428169D",
+      "CLAIM:773ED599A529A1839AFF3BAE",
+      "CLAIM:7B2A2B9BC5101DBED7E53FF2",
+      "CLAIM:808CC29A7E59E3740E3BC65E",
+      "CLAIM:89E9A42BF2D1608848D14D6A",
+      "CLAIM:96681BB4934493E9B38D7A66",
+      "CLAIM:9C8B2C6DFD09A45B88866A0F",
+      "CLAIM:9FDED3D8D889CAD5DB7EC237",
+      "CLAIM:A7E2CDD072D485EB5BF616D7",
+      "CLAIM:C048FE5ED8F9E36A2B46BB54",
+      "CLAIM:CDA284E76CC439F7208DA957",
+      "CLAIM:E0B14644B785741C58C74F4F",
+      "CLAIM:E1A15A5AA02D1EBED575744D",
+      "CLAIM:E63216C03307D9DEED456008",
+      "CLAIM:E8ABCE45106C1C8BF73CC25D",
+      "CLAIM:EF58D774DEE59DCF8018C5E5",
+      "CLAIM:F210CB6F82CF21F6B8E82CFA",
+      "CLAIM:FD04C102B25306265F993296"
+    ],
+    "condition_refs": [
+      "CONDITION:BEB13FA96D2B95DB3A349D86"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:38+00:00",
+    "cve_id": "CVE-2026-113425",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C9D8D386B0C5396D44CDCE76",
+      "PACKAGE:AB9DF45403A47E412463FA90",
+      "PACKAGE:90A5E9946CCE74455CC1B582"
+    ],
+    "distribution_status": [
+      "PACKAGE:C9D8D386B0C5396D44CDCE76",
+      "PACKAGE:AB9DF45403A47E412463FA90",
+      "PACKAGE:90A5E9946CCE74455CC1B582"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-113425 ghi nhận: Use-after-free in mail proxy module. Phạm vi upstream: 0.5.33-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-113425",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:21.714000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-113425",
+    "normal_component_behavior": "Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:28.642000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:14949B5707FDF6A9FA215935"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-MAIL-PROXY-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free in mail proxy module.\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:072AEB1B20A1384E16D66A96",
+      "SEVERITY:09826DA45A6E8A4CAADA851A",
+      "SEVERITY:7D7DF2F4C6E0A17B11BE45BC",
+      "SEVERITY:9F571D4005315BCFB7D3FDDC",
+      "SEVERITY:FE83C7A3A399621BF31011BC"
+    ],
+    "source_refs": [
+      "EVIDENCE:2C74501240903031F91BB707",
+      "EVIDENCE:6A12C8C873065240CF92AD60",
+      "EVIDENCE:6E83F5258B7F8C9923FBCC54",
+      "EVIDENCE:A90CAE836D63673C02491963",
+      "EVIDENCE:C670CDD1D61B1AA9B8D5CEB4",
+      "EVIDENCE:C85B39660FD9080E5605E2A8",
+      "EVIDENCE:D6FDDE415022E4DA92E4BD57",
+      "EVIDENCE:DD6EC472BBAF1F7FE71604DD"
+    ],
+    "title": "Use-after-free in mail proxy module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:59+00:00",
+    "upstream_affected_expression": "0.5.33-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "Use-after-free in mail proxy module",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:698EF461019C660CBB45334F"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:03FE9B822F9A80B6FF2FF4BD",
+      "CLAIM:088083C57CF2D32941E29960",
+      "CLAIM:0E6F5BAB95DBA16D21D0C244",
+      "CLAIM:10B20DE810145F23626BAAAF",
+      "CLAIM:115F5A073228B5BC251FEEC9",
+      "CLAIM:15CB240569C2EF7CBC7E354B",
+      "CLAIM:1BD73D274FDCA2D4D772EB33",
+      "CLAIM:2C960BC10D6035FD9F6CC057",
+      "CLAIM:3910B19C2F694F1AAA1E0840",
+      "CLAIM:3CE546365DD49C8FC2BD73D3",
+      "CLAIM:581B52CE61165A16C428169D",
+      "CLAIM:773ED599A529A1839AFF3BAE",
+      "CLAIM:7B2A2B9BC5101DBED7E53FF2",
+      "CLAIM:808CC29A7E59E3740E3BC65E",
+      "CLAIM:80C0AC3F2C36B09CCD591954",
+      "CLAIM:89E9A42BF2D1608848D14D6A",
+      "CLAIM:96681BB4934493E9B38D7A66",
+      "CLAIM:9C8B2C6DFD09A45B88866A0F",
+      "CLAIM:9FDED3D8D889CAD5DB7EC237",
+      "CLAIM:A75610BFAFAC6F06C45F4477",
+      "CLAIM:A7E2CDD072D485EB5BF616D7",
+      "CLAIM:C048FE5ED8F9E36A2B46BB54",
+      "CLAIM:C5EE0AF09F64AC29F37C8D9C",
+      "CLAIM:CDA284E76CC439F7208DA957",
+      "CLAIM:E0B14644B785741C58C74F4F",
+      "CLAIM:E1A15A5AA02D1EBED575744D",
+      "CLAIM:E63216C03307D9DEED456008",
+      "CLAIM:E8ABCE45106C1C8BF73CC25D",
+      "CLAIM:EF58D774DEE59DCF8018C5E5",
+      "CLAIM:F210CB6F82CF21F6B8E82CFA",
+      "CLAIM:FD04C102B25306265F993296"
+    ],
+    "condition_refs": [
+      "CONDITION:BEB13FA96D2B95DB3A349D86"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:38+00:00",
+    "cve_id": "CVE-2026-113425",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:C9D8D386B0C5396D44CDCE76",
+      "PACKAGE:AB9DF45403A47E412463FA90",
+      "PACKAGE:90A5E9946CCE74455CC1B582"
+    ],
+    "distribution_status": [
+      "PACKAGE:C9D8D386B0C5396D44CDCE76",
+      "PACKAGE:AB9DF45403A47E412463FA90",
+      "PACKAGE:90A5E9946CCE74455CC1B582"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-113425 ghi nhận: Use-after-free in mail proxy module. Phạm vi upstream: 0.5.33-1.31.8. Bản sửa được công bố: 1.31.9+, 1.30.7+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.7",
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-113425",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-20T11:19:21.714000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-113425",
+    "normal_component_behavior": "Chuyển tiếp phiên mail đến backend. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:28.642000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:14949B5707FDF6A9FA215935"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-MAIL-PROXY-MODULE"
+    ],
+    "related_protocols": [],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: Use-after-free in mail proxy module.\n\nCWE-416 — Use-after-free: Tiếp tục dùng bộ nhớ sau khi đối tượng đã được giải phóng.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Ownership và refcount phản ánh mọi callback và timer.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:072AEB1B20A1384E16D66A96",
+      "SEVERITY:09826DA45A6E8A4CAADA851A",
+      "SEVERITY:7D7DF2F4C6E0A17B11BE45BC",
+      "SEVERITY:9F571D4005315BCFB7D3FDDC",
+      "SEVERITY:FE83C7A3A399621BF31011BC"
+    ],
+    "source_refs": [
+      "EVIDENCE:2C74501240903031F91BB707",
+      "EVIDENCE:6A12C8C873065240CF92AD60",
+      "EVIDENCE:6E83F5258B7F8C9923FBCC54",
+      "EVIDENCE:A90CAE836D63673C02491963",
+      "EVIDENCE:C670CDD1D61B1AA9B8D5CEB4",
+      "EVIDENCE:C85B39660FD9080E5605E2A8",
+      "EVIDENCE:D6FDDE415022E4DA92E4BD57",
+      "EVIDENCE:DD6EC472BBAF1F7FE71604DD"
+    ],
+    "title": "Use-after-free in mail proxy module",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:44:40+00:00",
+    "upstream_affected_expression": "0.5.33-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+, 1.30.7+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:44:59+00:00",
+  "entity_id": "CVE:CVE-2026-113425",
+  "id": "HISTORY:47F8E41A66116BAF0463D1FB"
+}

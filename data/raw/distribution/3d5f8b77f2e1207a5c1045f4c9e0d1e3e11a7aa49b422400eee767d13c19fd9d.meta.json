@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:42+00:00",
+  "content_hash": "5758bca88914ecaa4c8fd28c13a0361db33c94dd2eab96e9503eefc0f4625d63",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/5758bca88914ecaa4c8fd28c13a0361db33c94dd2eab96e9503eefc0f4625d63.html",
+  "retrieved_at": "2026-11-25T02:28:42+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-9256"
+}

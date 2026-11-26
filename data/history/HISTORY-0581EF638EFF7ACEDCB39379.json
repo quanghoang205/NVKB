@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Client ↔ proxy ↔ upstream.",
+    "claim_refs": [
+      "CLAIM:A77047720A896AA882BF03AD",
+      "CLAIM:B6B52BD5F2407348C184D134",
+      "CLAIM:5BDFEFEA1D8ED6287C6FB893",
+      "CLAIM:A7D5AAC18406A93FD32437CF",
+      "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+      "CLAIM:D864A9199BF98A60A498CD95",
+      "CLAIM:9F59D04D11EF6FFA5988D092",
+      "CLAIM:41657C9DAC94E05E87C52B71"
+    ],
+    "created_at": "2026-11-25T02:32:18+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Cú pháp và framing thông điệp HTTP/1.1.",
+    "description": "Cú pháp và framing thông điệp HTTP/1.1.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-1.1",
+    "learning_objectives": [
+      "Giải thích HTTP/1.1 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP/1.1",
+    "normal_behavior": "Start-line, header và cơ chế độ dài body xác định ranh giới message trên kết nối; parser phải xử lý dữ liệu theo từng phần.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Các hop phải thống nhất cách xử lý framing và thông điệp không hợp lệ.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Client ↔ proxy ↔ upstream.",
+    "source_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "updated_at": "2026-11-25T02:44:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Client ↔ proxy ↔ upstream.",
+    "claim_refs": [
+      "CLAIM:62FBC5076F2CA821E0F03127",
+      "CLAIM:1380E03E6882E1DF9F22C2B5",
+      "CLAIM:AB56571A520EB348D05C734A",
+      "CLAIM:1A07B3003508E808F24FA8D0",
+      "CLAIM:1D33EFFFF081ABBA88E0BF2F",
+      "CLAIM:B21BC4896A3C229EF8A119AE",
+      "CLAIM:B419FBD86AA73841919C43E6",
+      "CLAIM:610C2FB3FAA1AB20968630BF"
+    ],
+    "created_at": "2026-11-25T02:32:18+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Cú pháp và framing thông điệp HTTP/1.1.",
+    "description": "Cú pháp và framing thông điệp HTTP/1.1.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:HTTP-1.1",
+    "learning_objectives": [
+      "Giải thích HTTP/1.1 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "HTTP/1.1",
+    "normal_behavior": "Start-line, header và cơ chế độ dài body xác định ranh giới message trên kết nối; parser phải xử lý dữ liệu theo từng phần.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Các hop phải thống nhất cách xử lý framing và thông điệp không hợp lệ.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Client ↔ proxy ↔ upstream.",
+    "source_refs": [
+      "EVIDENCE:8F398F8452AFF9B2EB8ABBC3"
+    ],
+    "updated_at": "2026-11-25T02:32:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:19+00:00",
+  "entity_id": "PROTOCOL:HTTP-1.1",
+  "id": "HISTORY:0581EF638EFF7ACEDCB39379"
+}

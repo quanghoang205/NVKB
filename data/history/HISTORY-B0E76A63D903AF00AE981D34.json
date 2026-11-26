@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:1E7514F80DBC3A3877E5AAF9",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:A5305F31F30BF8D09CA6215E",
+    "claim_value": "\"## Cơ chế tri thức và invariant\\n\\nClaim là một nhận định; Evidence là observation nguồn có locator. Snapshot hash chứng minh bytes, extraction match chứng minh giá trị được lấy đúng, source support cần review ý nghĩa, còn human approval là gate khác. Diễn giải invariant cho học tập phải ghi là inference, kể cả khi có nguồn tham khảo đúng chủ đề.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:21:10+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:A5305F31F30BF8D09CA6215E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONCEPT:ADVISORY: pilot_section:Cơ chế tri thức và invariant",
+    "observed_at": "2026-11-25T04:21:10+00:00",
+    "predicate": "pilot_section:Cơ chế tri thức và invariant",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T04:21:10+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:10+00:00",
+  "entity_id": "CLAIM:A5305F31F30BF8D09CA6215E",
+  "id": "HISTORY:B0E76A63D903AF00AE981D34"
+}

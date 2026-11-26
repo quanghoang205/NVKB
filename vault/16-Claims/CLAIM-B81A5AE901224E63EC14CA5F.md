@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:B81A5AE901224E63EC14CA5F
+title: 'COMPONENT:REWRITE-ENGINE: normal_behavior'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'COMPONENT:REWRITE-ENGINE: normal_behavior'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# COMPONENT:REWRITE-ENGINE: normal_behavior
+
+`CLAIM:B81A5AE901224E63EC14CA5F` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[COMPONENT-REWRITE-ENGINE|HTTP rewrite — URI, biến và kích thước biểu diễn]]. Predicate: `normal_behavior`.
+
+```json
+"Các directive rewrite được biên dịch thành lệnh nội bộ khi nạp cấu hình; xử lý request có thể thay URI và kích hoạt chọn lại location theo cờ."
+```
+
+## Nguồn và phạm vi
+
+Authority: NGINX / F5. NGINX / F5
+
+[[EVIDENCE-6B5BC482779060E2A4DEF4A0|Module ngx_http_rewrite_module]]
+
+Locator: EVIDENCE:6B5BC482779060E2A4DEF4A0: ngx_http_rewrite_module; topic=COMPONENT:REWRITE-ENGINE
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.
+
+Quan sát: 2026-11-25T02:44:16+00:00. Truy xuất: 2026-11-25T02:32:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

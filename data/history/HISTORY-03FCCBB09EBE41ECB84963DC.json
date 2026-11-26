@@ -1,0 +1,40 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:49A09338163D5DC9406B9EFD"
+    ],
+    "created_at": "2026-11-25T04:21:18+00:00",
+    "description": "CVE:CVE-2025-23419 MITIGATED_BY MITIGATION:UPSTREAM-FIX-2025-23419",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:96F8BFED0D982F3BA007A17F",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "MITIGATED_BY",
+    "object_entity_id": "MITIGATION:UPSTREAM-FIX-2025-23419",
+    "predicate": "MITIGATED_BY",
+    "rationale": "Advisory fixe(s) provide version-based remediation; no runtime attestation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject risk limited by object within scope",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T04:21:18+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:18+00:00",
+  "entity_id": "REL:96F8BFED0D982F3BA007A17F",
+  "id": "HISTORY:03FCCBB09EBE41ECB84963DC"
+}

@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:1A76A2A57D255C438041C905"
+    ],
+    "created_at": "2026-11-25T02:26:55+00:00",
+    "description": "CVE:CVE-2026-121810 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:B4041900D8013A7D9595C90E",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T02:26:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:55+00:00",
+  "entity_id": "REL:B4041900D8013A7D9595C90E",
+  "id": "HISTORY:9A6420CBE02CFDA80C8A71CF"
+}

@@ -1,0 +1,173 @@
+group: tls
+name: TLS — identity, resumption và tiến độ I/O
+shared_knowledge: [PROTOCOL:TLS, COMPONENT:TLS-SESSION-LIFECYCLE, MODULE:NGX-STREAM-SSL-MODULE, COMPONENT:EVENT-DRIVEN]
+knowledge:
+  - id: MODULE:NGX-STREAM-SSL-MODULE
+    name: Stream TLS — chứng thư, policy và trạng thái OCSP
+    source: https://nginx.org/en/docs/stream/ngx_stream_ssl_module.html
+    locator: '#ssl_verify_client; #ssl_ocsp; #ssl_certificate; #ssl_session_cache'
+    excerpt: Enables OCSP validation
+    source_fact: Module stream SSL có các directive riêng để xác minh client certificate và OCSP; ssl_ocsp yêu cầu policy xác minh chứng thư thích hợp và resolver cho tên OCSP responder.
+    prerequisites: [PROTOCOL:TLS, COMPONENT:TLS-SESSION-LIFECYCLE]
+    objectives: [Phân biệt chứng thư hợp chuỗi với chứng thư còn được chấp nhận theo revocation policy., Xác định context virtual server của quyết định xác thực.]
+    body: |
+      ## Cơ chế bình thường
+
+      TLS trong stream xử lý bảo vệ và xác thực kết nối trước khi proxy dữ liệu ứng dụng. Certificate chain, kết quả revocation và policy yêu cầu chứng thư là những dữ kiện khác nhau. Tài liệu phân biệt xác minh chứng thư được yêu cầu, tùy chọn, và OCSP validation. Một kết quả OCSP đã trả về không tự thực thi policy; đường hoàn tất handshake phải sử dụng kết quả đó đúng cách.
+
+      ## Ownership và lifecycle
+
+      State handshake thuộc connection, trong khi cấu hình trust và policy thuộc virtual server/cấu hình đang sử dụng. Resolver hoặc OCSP có thể cần chờ ngoài một lần callback; request kiểm tra có owner và điểm hoàn tất riêng. Diễn giải phòng vệ là quyết định chấp nhận không được xảy ra trước kết quả bắt buộc, và callback muộn không được dùng context đã hủy. Session resumption lại mang state từ kết nối trước sang quyết định mới, nên không được coi socket mới đã thừa hưởng mọi quyền cũ.
+
+      ## Invariant và tradeoff
+
+      Chính sách của server được chọn phải chi phối client-auth decision, kể cả server không phải mặc định và handshake rút gọn. Cache làm giảm độ trễ nhưng kéo dài thời gian state tồn tại; cần scope, timeout và quy tắc đổi khóa rõ ràng. OCSP bổ sung trạng thái thu hồi nhưng tạo phụ thuộc vào resolver, responder và timeout; chính sách lỗi phải được thiết kế rõ thay vì suy từ việc đã bật TLS.
+
+      ## Phòng vệ và giới hạn
+
+      Review identity context qua virtual-server selection, handshake và resume. Ghi nguồn trust, revocation policy và thế hệ cấu hình trong chứng cứ triển khai. Các directive của stream không được mặc nhiên đồng nhất với HTTP SSL. Bài này mô tả contract cần có; các CVE riêng mới xác định thời điểm và phạm vi implementation vi phạm contract.
+    assessment: OCSP trả revoked nhưng handshake thành công có thể được coi là client đã hợp lệ vì chain đúng không?
+    answer: Không khi policy bắt buộc revocation validation; chain và revocation kiểm tra các điều kiện khác nhau và đều phải chi phối quyết định cuối.
+  - id: MODULE:NGX-STREAM-SSL-PREREAD-MODULE
+    name: TLS preread — routing metadata và giới hạn tin cậy
+    source: https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html
+    locator: Introduction; #ssl_preread; Embedded Variables
+    excerpt: extracting information
+    source_fact: Module ssl_preread lấy thông tin từ ClientHello ở preread phase, không cần kết thúc TLS tại proxy; biến thu được có thể phục vụ routing.
+    prerequisites: [PROTOCOL:TLS]
+    objectives: [Phân biệt metadata ClientHello với identity đã được xác thực., Giải thích yêu cầu nhất quán parser giữa proxy và backend.]
+    body: |
+      ## Cơ chế và ownership
+
+      Preread quan sát phần đầu connection để lấy metadata phục vụ quyết định định tuyến. Proxy chưa kết thúc TLS nên không có cùng chứng cứ với endpoint hoàn tất handshake. Buffer đầu vào, vị trí đã đọc và biến kết quả cần được giữ trong context connection; đọc thiếu dữ liệu phải dẫn đến chờ hoặc lỗi có kiểm soát, không để biến chưa xác định thành quyết định routing.
+
+      ## Invariant giữa hai bên
+
+      Diễn giải: giá trị được proxy sử dụng và ý nghĩa backend gán cho cùng ClientHello phải tương thích trong phạm vi phiên bản giao thức. Metadata không phải chứng thư và không chứng minh quyền vào backend. Routing segmentation không nên dựa vào giả định rằng một biến parser có thể thay thế authentication ở đích.
+
+      ## Tradeoff và phòng vệ
+
+      Không terminate TLS cho phép backend giữ vai trò bảo mật đầu cuối nhưng làm proxy có ít thông tin đã xác thực hơn. Cần kiểm soát tập backend được định tuyến và policy độc lập tại backend. Giữ version support của backend trong tài liệu thiết kế. Đây là nguyên tắc phòng vệ, không là cấu hình workaround đã được vendor xác nhận cho một CVE.
+    assessment: Vì sao tên SNI quan sát ở preread không chứng minh client được phép truy cập server đó?
+    answer: Nó là dữ liệu đề xuất trong handshake, chưa phải kết quả xác thực và authorization của endpoint.
+articles:
+  - cve: CVE-2025-23419
+    summary: Session resumption có thể làm mất yêu cầu client certificate giữa virtual servers. Cần giữ riêng policy phiên đã lưu và policy server đang được chọn.
+    architecture: HTTP SSL, TLS session state và virtual hosts dùng chung listener; không phải lỗi mặc nhiên của stream TLS.
+    normal: Phiên được resume chỉ được chấp nhận trong context xác thực phù hợp với policy hiện hành của virtual server.
+    mechanism: CNA mô tả reuse session giữa context không tương thích; invariant diễn giải là identity của session phải ràng buộc đúng client-auth policy. Chưa review dòng mã.
+    applicability: Nhiều server block cùng IP/port; default server có client-certificate authentication và session tickets và/hoặc cache. Announcement bổ sung OpenSSL, TLS 1.3 và resumption.
+    impact: Yêu cầu xác thực client certificate có thể bị bỏ qua theo CNA.
+    potential: Dữ liệu hay chức năng cụ thể phụ thuộc policy ứng dụng; không có xác nhận RCE, crash hoặc root compromise.
+    principle: Tái dùng state xác thực không có nghĩa tái dùng mọi quyền trong mọi virtual server.
+    defense: Vá NGINX và rà soát phạm vi session state; phân biệt authentication với authorization tại ứng dụng.
+    patch_note: Fix 1.26.3/1.27.4 theo hai nhánh; version upstream không thay phiên bản package backport.
+    question: Vì sao hai virtual server chung cache không được mặc nhiên chung quyền?
+    answer: Cache là cơ chế lưu state; quyền do policy của context đích quyết định.
+    unknown: Chi tiết patch, runtime policy và quyền ứng dụng sau xác thực chưa được kiểm chứng.
+    maturity: AI_REVIEWED
+  - cve: CVE-2026-120967
+    summary: Client certificate validation có thể không được giữ ở non-default stream virtual server.
+    architecture: Stream SSL virtual-server selection và client-auth policy; không nhập điều kiện HTTP SSL của 23419.
+    normal: Server được chọn quyết định yêu cầu chứng thư trước khi kết nối được coi là đáp ứng policy.
+    mechanism: CNA xác nhận có thể vượt yêu cầu client certificate ở non-default server; chưa nêu chi tiết chuyển context trong mã.
+    applicability: Stream virtual server không mặc định có ssl_verify_client on theo CNA.
+    impact: Có thể bỏ qua xác minh client certificate; CNA nêu data-plane issue.
+    potential: Tài nguyên ứng dụng bị lộ chưa xác định; không suy tác động control plane hoặc quyền hệ điều hành.
+    principle: Default-server policy không được thay policy của server đích sau lựa chọn virtual server.
+    defense: Dùng bản sửa; review policy giữa default và non-default server như một kiểm tra thiết kế bổ sung.
+    patch_note: Affected từ 1.25.5; fix 1.30.7/1.31.9, khác lỗi HTTP session reuse.
+    question: Chứng thư đã được yêu cầu ở default server có bảo đảm mọi server khác đúng policy không?
+    answer: Không; phải kiểm policy được áp dụng tại context thực sự phục vụ kết nối.
+    unknown: Hàm chuyển context và tác động trên từng backend chưa xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-28755
+    summary: Kết quả OCSP revoked không ngăn handshake stream TLS trong điều kiện được CNA mô tả.
+    architecture: Quyết định handshake của stream SSL sau client-certificate OCSP validation.
+    normal: Policy bắt buộc revocation validation phải sử dụng kết quả OCSP trước khi chấp nhận connection.
+    mechanism: CNA mô tả certificate revoked nhưng handshake vẫn có thể thành công; đó là lỗi áp dụng kết quả policy, không phải khẳng định OCSP responder trả sai.
+    applicability: Stream SSL có ssl_verify_client on và ssl_ocsp on.
+    impact: Chứng thư đã được OCSP xác định thu hồi vẫn có thể được chấp nhận khi handshake.
+    potential: Quyền ứng dụng mà kết nối nhận được là UNKNOWN; không suy compromise toàn server.
+    principle: Mọi kết quả xác minh bắt buộc phải ảnh hưởng quyết định cuối, không chỉ được ghi nhận.
+    defense: Cập nhật release sửa; review cách propagating failure qua các bước bất đồng bộ của handshake.
+    patch_note: Entry upstream affected 1.27.2–1.29.6; fix 1.28.3/1.29.7.
+    question: Bật kiểm OCSP có đủ làm bằng chứng policy được thực thi không?
+    answer: Không; cần bằng chứng implementation sử dụng kết quả đúng trong quyết định chấp nhận.
+    unknown: Đường callback và quy tắc xử lý lỗi trong patch chưa được review độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-97629
+    summary: State session ticket có thể cho phép giả mạo SSL session khi cơ chế tự xoay khóa được sử dụng theo điều kiện CNA.
+    architecture: Shared session cache và quản lý TLS session ticket key, không phải mật khẩu ứng dụng.
+    normal: Khóa ticket và state session phải được khởi tạo đầy đủ, có scope và lifecycle phù hợp khi xoay khóa hoặc tái dùng phiên.
+    mechanism: CNA nêu session forgery không tất định; diễn giải phòng vệ tập trung integrity và initialization của state khóa, chưa xác định dòng mã lỗi.
+    applicability: Shared ssl_session_cache dùng tự tạo/xoay ticket keys mà không có ssl_session_ticket_key file chỉ định rõ, theo CNA.
+    impact: Có khả năng bỏ qua client certificate verification và lộ tài nguyên/chức năng cho chủ thể ngoài dự kiến theo CNA.
+    potential: Truy cập dữ liệu cụ thể phụ thuộc ứng dụng; nguồn không xác nhận quyền root hay code execution.
+    principle: Đổi vòng đời khóa không được tạo state session có thể được chấp nhận ngoài context identity dự định.
+    defense: Vá bản đang sử dụng, ghi nhận chính sách xoay khóa và scope cache. Không biến phương án chỉ định khóa thủ công thành mitigation chính thức khi chưa được nguồn xác nhận.
+    patch_note: Affected bắt đầu 1.23.2; fix 1.30.6/1.31.7. Điều kiện cache trong CNA quan trọng hơn việc chỉ nhận diện TLS.
+    question: Session cache có đồng nghĩa chỉ là tối ưu hiệu suất vô hại không?
+    answer: Không; nó giữ state liên quan quyết định bảo mật và cần integrity, scope, initialization cùng lifecycle.
+    unknown: Chi tiết state không khởi tạo, xác suất và tác động thực tế chưa xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-123640
+    summary: Validation không đủ trong stream ssl_preread có thể làm sai biến routing và phân vùng backend.
+    architecture: ClientHello preread parser trước TLS termination tại backend.
+    normal: Parser lấy metadata nhất quán với giao thức backend hiểu; metadata này chỉ phục vụ routing, không chứng minh identity client.
+    mechanism: CNA nêu forged preread variables và bất đồng với một số backend; cơ chế khái niệm là hai bên hiểu không nhất quán cùng input.
+    applicability: ngx_stream_ssl_preread_module được sử dụng; nguồn còn nêu bất đồng với backend terminate TLS không hỗ trợ TLS 1.3.
+    impact: Sai lựa chọn virtual server và có thể vượt phân vùng stream routing được CNA công bố.
+    potential: Khả năng đến backend nhạy cảm được nguồn nêu là có thể; tài nguyên cụ thể chưa xác định, không phải chứng cứ compromise control plane.
+    principle: Tách parsing metadata, lựa chọn backend và authentication; duy trì cùng ý nghĩa dữ liệu giữa các endpoint.
+    defense: Vá parser và rà soát allowlist backend cùng authorization tại đích; đây là nguyên tắc thiết kế, không quy trình bypass.
+    patch_note: Fix 1.30.7/1.31.9; phạm vi từ 1.15.2 theo entry upstream.
+    question: Vì sao không thể dùng SNI preread làm bằng chứng client đã được xác thực?
+    answer: Preread chưa hoàn tất handshake và chỉ quan sát metadata do peer cung cấp.
+    unknown: Quy tắc parsing cụ thể và mức bất đồng phiên bản backend còn cần review.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-120993
+    summary: NULL dereference có thể kết thúc worker khi dynamic certificate loading tương tác với PROXY protocol v2 và handshake rút gọn.
+    architecture: Stream SSL và stream proxy metadata; PROXY protocol metadata không phải danh tính được TLS xác minh.
+    normal: Certificate context và metadata connection phải được khởi tạo phù hợp cả đường handshake đầy đủ lẫn rút gọn.
+    mechanism: Advisory nêu NULL pointer dereference, CNA nêu abbreviated handshake. Chưa đủ dữ kiện xác định con trỏ hay nhánh khởi tạo cụ thể.
+    applicability: ngx_stream_ssl_module với dynamic certificate loading và stream proxy dùng PROXY protocol v2 theo CNA.
+    impact: Worker có thể kết thúc, gây DoS; CNA xác định data-plane scope.
+    potential: Không có xác nhận RCE hoặc lộ bộ nhớ trong mô tả đã đọc.
+    principle: Fast path của handshake phải tuân cùng điều kiện tồn tại state như đường đầy đủ.
+    defense: Cập nhật release sửa và kiểm inventory tính năng tương tác; không chỉ kiểm có TLS hay không.
+    patch_note: Upstream nêu affected 1.31.4–1.31.8 và fix 1.31.9+; không tự bổ sung fix 1.30.7 vì CVE cùng đợt có bản đó.
+    question: Vì sao không thể sao chép bảng fix của CVE cùng ngày sang lỗi này?
+    answer: Tính năng hoặc lỗi có thể chỉ được đưa vào một nhánh; nguồn riêng của CVE quyết định bảng fix.
+    unknown: State NULL, timing cleanup và ảnh hưởng trên cấu hình khác chưa được xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-118899
+    summary: Vòng lặp không kết thúc khi đọc HTTP request body qua TLS 1.3 có thể làm worker ngừng xử lý kết nối.
+    architecture: HTTP body reader qua TLS trong event loop của worker.
+    normal: Read handler tiến triển khi có byte/trạng thái mới hoặc trả về chờ sự kiện; không được chiếm event loop khi không có tiến độ.
+    mechanism: CNA nêu infinite loop làm worker ngừng nhận và xử lý connection. Invariant bị vi phạm là tiến độ/yield, chưa xác định hàm vòng lặp.
+    applicability: HTTP listener bật ssl và TLS 1.3 theo CNA; không gán lỗi cho mọi stream TLS hoặc mọi phiên bản giao thức.
+    impact: Worker ngừng nhận kết nối mới và xử lý kết nối hiện có; DoS được công bố.
+    potential: Không có xác nhận memory corruption, tiết lộ dữ liệu hoặc thực thi mã.
+    principle: Mỗi vòng lặp I/O phải tạo tiến độ hoặc trở lại cơ chế chờ hợp lệ.
+    defense: Vá implementation và theo dõi worker progress; timeout chỉ hữu ích nếu event loop còn xử lý timer.
+    patch_note: Fix 1.30.7/1.31.9; không gộp với lỗi early-data send loop 132779.
+    question: Vì sao timer cấu hình không bảo đảm cứu một event loop bị kẹt?
+    answer: Callback timer cũng cần cơ hội chạy; vòng lặp không yield có thể ngăn xử lý timer.
+    unknown: Điều kiện loop và hiệu lực timeout trong implementation bị lỗi chưa được xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-132779
+    summary: TLS 1.3 early data có thể làm worker lặp gửi không tiến độ, tiêu thụ một CPU core dù vẫn xử lý kết nối.
+    architecture: Send path liên quan early data trong event loop TLS của worker.
+    normal: Gửi chưa hoàn tất phải cập nhật vị trí dữ liệu hoặc chờ readiness phù hợp, tránh tái thử vô hạn không tiến độ.
+    mechanism: CNA nêu tight send retry loop; khác lỗi 118899, worker vẫn nhận và xử lý connection nhưng tốn CPU.
+    applicability: TLS 1.3 với ssl_early_data on theo CNA.
+    impact: Một core bị sử dụng 100% và hiệu suất giảm cho đến khi worker được restart, theo mô tả nguồn.
+    potential: Có thể dẫn tới DoS do suy giảm dịch vụ; chưa có xác nhận memory corruption hoặc RCE.
+    principle: Event-driven cần cả khả năng yield lẫn kiểm soát retry không tiến độ; liveness không chỉ là process còn sống.
+    defense: Triển khai bản sửa và quan sát CPU/progress; restart là phục hồi vận hành, không xóa lỗi trong binary.
+    patch_note: Fix 1.30.8/1.31.10; các bản 1.30.7/1.31.9 sửa nhiều lỗi trước đó vẫn nằm trước ngưỡng của lỗi này.
+    question: Worker vẫn nhận connection có loại trừ vấn đề availability không?
+    answer: Không; CPU bị chiếm có thể giảm năng lực phục vụ dù event loop chưa dừng hoàn toàn.
+    unknown: Nhánh retry cụ thể, tác động theo workload và mitigation ngoài update chưa xác minh.
+    maturity: TECHNICAL_DRAFT

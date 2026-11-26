@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:8661F013C888C4B51B146162",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:C0C818EE2AC8FFBE04DAC301",
+    "claim_value": "\"Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:DA8FA63AD841F188DF0128A2: Pool",
+    "evidence_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C0C818EE2AC8FFBE04DAC301",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "COMPONENT:MEMORY-POOL: architecture_position",
+    "observation_key": "OBSERVATION:135F8EE1B8C52C5D97D193AD",
+    "observed_at": "2026-11-25T02:32:05+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "COMPONENT:MEMORY-POOL",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:12:49+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C0C818EE2AC8FFBE04DAC301",
+    "claim_value": "\"Con trỏ không được tiếp tục dùng sau khi pool chứa nó đã bị hủy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "id": "CLAIM:C0C818EE2AC8FFBE04DAC301",
+    "name": "COMPONENT:MEMORY-POOL: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DA8FA63AD841F188DF0128A2"
+    ],
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:49+00:00",
+  "entity_id": "CLAIM:C0C818EE2AC8FFBE04DAC301",
+  "id": "HISTORY:9BAE6A4674ED9A5D378C7DC0"
+}

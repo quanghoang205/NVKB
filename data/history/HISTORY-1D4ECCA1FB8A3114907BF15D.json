@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:43CEBCA8B3B3D6D96B86DAA8",
+    "claim_value": "\"Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "id": "CLAIM:43CEBCA8B3B3D6D96B86DAA8",
+    "name": "WEAKNESS:CWE-1289: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-1289",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "CLAIM:43CEBCA8B3B3D6D96B86DAA8",
+  "id": "HISTORY:1D4ECCA1FB8A3114907BF15D"
+}

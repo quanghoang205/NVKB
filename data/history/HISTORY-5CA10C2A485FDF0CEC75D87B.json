@@ -1,0 +1,32 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:7ED5DEC0AE6DB9556F44D43E",
+    "claim_value": "\"Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\\n\\nXử lý HTTP/2 frame, stream và flow control. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:45+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA",
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "id": "CLAIM:7ED5DEC0AE6DB9556F44D43E",
+    "name": "CVE:CVE-2026-42055: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:19086F01DD263178E3B6A7DA",
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42055",
+    "updated_at": "2026-11-25T02:44:45+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:45+00:00",
+  "entity_id": "CLAIM:7ED5DEC0AE6DB9556F44D43E",
+  "id": "HISTORY:5CA10C2A485FDF0CEC75D87B"
+}

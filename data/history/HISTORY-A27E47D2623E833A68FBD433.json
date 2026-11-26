@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A373C008821EC639C2D93C1C",
+    "claim_value": "\"Xử lý sai thông điệp hoặc truy cập ngoài vùng nhớ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9B8ACCA74E379BD21D09B52D"
+    ],
+    "id": "CLAIM:A373C008821EC639C2D93C1C",
+    "name": "COMPONENT:NONBLOCKING-IO: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9B8ACCA74E379BD21D09B52D"
+    ],
+    "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+    "updated_at": "2026-11-25T02:32:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:04+00:00",
+  "entity_id": "CLAIM:A373C008821EC639C2D93C1C",
+  "id": "HISTORY:A27E47D2623E833A68FBD433"
+}

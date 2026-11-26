@@ -1,0 +1,37 @@
+{
+  "claim_refs": [
+    "CLAIM:04713563C5E55DDA4423EBD3"
+  ],
+  "created_at": "2026-11-25T05:29:02+00:00",
+  "description": "CONTROL:RESOURCE-BOUNDS REQUIRES_KNOWLEDGE_OF COMPONENT:CONNECTION-LIFECYCLE",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "evidence_locator": "#worker_connections; #worker_rlimit_nofile; #worker_shutdown_timeout",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "LEARNING",
+  "id": "REL:F857A8BD10E64CF8A39F8589",
+  "inference_type": "PEDAGOGICAL",
+  "legacy_verification_status": "INFERRED",
+  "name": "REQUIRES_KNOWLEDGE_OF",
+  "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+  "predicate": "REQUIRES_KNOWLEDGE_OF",
+  "rationale": "Mục tiêu 'Tính ngân sách connection theo cả client và upstream.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+  "reference_availability": "UNKNOWN",
+  "review_rationale": "Mục tiêu 'Tính ngân sách connection theo cả client và upstream.' cần mô hình Connection và HTTP request: hai vòng đời. Quyết định sư phạm, không là fault location.",
+  "review_required": true,
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:29:02+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Subject lesson requires object prerequisite",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:296B9DBE04BA6F34CC70FCBA"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CONTROL:RESOURCE-BOUNDS",
+  "updated_at": "2026-11-25T05:29:02+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

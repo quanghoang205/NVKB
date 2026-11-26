@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:AF860C5C12DEBD6C84659DF1",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:1CFFD0DC41D442211D667ACF",
+  "claim_value": "\"Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream theo yêu cầu triển khai.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:17+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:CF0A5819734837C63FAD4EB1: Load balancing; topic=COMPONENT:UPSTREAM-COMMUNICATION",
+  "evidence_refs": [
+    "EVIDENCE:CF0A5819734837C63FAD4EB1"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:1CFFD0DC41D442211D667ACF",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "COMPONENT:UPSTREAM-COMMUNICATION: defensive_principles",
+  "observation_key": "OBSERVATION:633274A4F87FC9DC20EF7397",
+  "observed_at": "2026-11-25T02:44:17+00:00",
+  "predicate": "defensive_principles",
+  "product_scope": "COMPONENT:UPSTREAM-COMMUNICATION",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:16+00:00",
+  "review_reason": "Preserved earlier knowledge edition; v1.3 has scoped replacement statements, not retroactive support.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:CF0A5819734837C63FAD4EB1"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+  "updated_at": "2026-11-25T05:28:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

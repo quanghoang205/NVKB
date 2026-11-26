@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:29C9F1BDF54448DB4247A1D6",
+    "claim_value": "\"Chuyển tiếp request đến gRPC upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "id": "CLAIM:29C9F1BDF54448DB4247A1D6",
+    "name": "MODULE:NGX-HTTP-GRPC-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4BD858D3AB9CC21BC1B67E1D"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-GRPC-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:29C9F1BDF54448DB4247A1D6",
+  "id": "HISTORY:49C21D3F73F88B5DA74F5372"
+}

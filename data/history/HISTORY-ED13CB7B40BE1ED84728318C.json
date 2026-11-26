@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:D3D5084FCF6DEF9BB5195031",
+    "claim_value": "\"Nguồn gốc và phạm vi của từng phần dữ liệu phải được giữ riêng qua quá trình hợp nhất.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "id": "CLAIM:D3D5084FCF6DEF9BB5195031",
+    "name": "WEAKNESS:CWE-349: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-349",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:D3D5084FCF6DEF9BB5195031",
+  "id": "HISTORY:ED13CB7B40BE1ED84728318C"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "53e4527055780a38ff46f9e053e51abba442e1ea52d13d31d69ca9ff587766ad",
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Xử lý POP3 trong vai trò mail proxy.",
+    "document_title": "Module ngx_mail_pop3_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:E17CA21CCE3EF8F73A1CA580",
+    "id": "EVIDENCE:E17CA21CCE3EF8F73A1CA580",
+    "local_snapshot_path": "data/raw/documentation/snapshots/53e4527055780a38ff46f9e053e51abba442e1ea52d13d31d69ca9ff587766ad.html",
+    "name": "Module ngx_mail_pop3_module",
+    "paraphrase": "Xử lý POP3 trong vai trò mail proxy.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:51+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_mail_pop3_module; topic=MODULE:NGX-MAIL-POP3-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/mail/ngx_mail_pop3_module.html",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "EVIDENCE:E17CA21CCE3EF8F73A1CA580",
+  "id": "HISTORY:833BB28DE207317A3889A496"
+}

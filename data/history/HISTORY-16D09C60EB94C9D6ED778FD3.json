@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:C1978979DE6A4B200D79ACB5",
+    "claim_value": "\"Buffer overread in the ngx_http_charset_module\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:61274833A24B2819EF33D8A3"
+    ],
+    "id": "CLAIM:C1978979DE6A4B200D79ACB5",
+    "name": "CVE:CVE-2026-42934: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:61274833A24B2819EF33D8A3"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42934",
+    "updated_at": "2026-11-25T02:28:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:14+00:00",
+  "entity_id": "CLAIM:C1978979DE6A4B200D79ACB5",
+  "id": "HISTORY:16D09C60EB94C9D6ED778FD3"
+}

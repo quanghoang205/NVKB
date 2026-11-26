@@ -1,0 +1,44 @@
+{
+  "action": "created",
+  "after": {
+    "architecture_position": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "claim_refs": [
+      "CLAIM:1B90F5FCD0A1C7BFF951E2B3",
+      "CLAIM:19A40F61812C2306C1946996",
+      "CLAIM:3E564BF599FC1A3B9D3DA671",
+      "CLAIM:091705A582E7D0F48D44F0A3",
+      "CLAIM:7DADAE3DB60AD9F98441861B",
+      "CLAIM:B7532AB013DB4EA79E44671F",
+      "CLAIM:8A1C7E05E918B338A7ED23F1",
+      "CLAIM:4D07BEC79A80E15564429D04"
+    ],
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+    "definition": "Chuyển tiếp HTTP request/response đến upstream.",
+    "description": "Chuyển tiếp HTTP request/response đến upstream.",
+    "diagram": "",
+    "entity_type": "Module",
+    "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+    "id": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "learning_objectives": [
+      "Giải thích ngx_http_proxy_module bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "ngx_http_proxy_module",
+    "normal_behavior": "Chuyển tiếp HTTP request/response đến upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+    "related_knowledge": [],
+    "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+    "schema_version": "1.0.0",
+    "security_boundary": "http subsystem của NGINX; giữa input protocol và handler cấu hình.",
+    "source_refs": [
+      "EVIDENCE:1B9F3DAC3F7C4AF6A506D698"
+    ],
+    "updated_at": "2026-11-25T02:32:42+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:42+00:00",
+  "entity_id": "MODULE:NGX-HTTP-PROXY-MODULE",
+  "id": "HISTORY:AC9832EE068BE1B57965B159"
+}

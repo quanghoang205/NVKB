@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:B16B16FC36FF52CE2DA45A46",
+  "claim_refs": [
+    "CLAIM:370CC564CD22ECB4F09F30DE"
+  ],
+  "created_at": "2026-11-25T02:26:26+00:00",
+  "cvss_score": 5.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "cvss_version": "3.1",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CVE Program",
+  "entity_type": "Severity",
+  "id": "SEVERITY:1E7F1AB6566E9F595049AF4F",
+  "metric_json": "{\"attackComplexity\": \"LOW\", \"attackVector\": \"NETWORK\", \"availabilityImpact\": \"LOW\", \"baseScore\": 5.3, \"baseSeverity\": \"MEDIUM\", \"confidentialityImpact\": \"NONE\", \"integrityImpact\": \"NONE\", \"privilegesRequired\": \"NONE\", \"scope\": \"UNCHANGED\", \"userInteraction\": \"NONE\", \"vectorString\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L\", \"version\": \"3.1\"}",
+  "name": "CVE-2024-35200 CVSS 3.1 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CVE Program",
+  "severity_label": "MEDIUM",
+  "source_refs": [
+    "EVIDENCE:107B95FF1D170EC14FF582F7"
+  ],
+  "subject_entity_id": "CVE:CVE-2024-35200",
+  "updated_at": "2026-11-25T04:13:15+00:00",
+  "verification_status": "VERIFIED"
+}

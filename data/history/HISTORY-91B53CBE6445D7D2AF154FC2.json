@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Catalog phân tách sản phẩm; CVE không tự động nhập vào NGINX OSS.",
+    "entity_type": "Product",
+    "id": "PRODUCT:NGINX-GATEWAY-FABRIC",
+    "in_primary_scope": false,
+    "name": "NGINX Gateway Fabric",
+    "product_family": "NGINX-GATEWAY-FABRIC",
+    "schema_version": "1.0.0",
+    "source_refs": [],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "vendor": "F5",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "PRODUCT:NGINX-GATEWAY-FABRIC",
+  "id": "HISTORY:91B53CBE6445D7D2AF154FC2"
+}

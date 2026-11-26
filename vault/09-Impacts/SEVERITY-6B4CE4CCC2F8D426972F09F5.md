@@ -1,0 +1,54 @@
+---
+entity_type: severity
+id: SEVERITY:6B4CE4CCC2F8D426972F09F5
+title: CVE-2026-95101 CVSS 3.1 f5
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- CVE-2026-95101 CVSS 3.1 f5
+tags:
+- nginx
+- severity
+- knowledge
+---
+
+# CVE-2026-95101 CVSS 3.1 f5
+
+Đánh giá của nguồn; không thay thế đánh giá từ authority khác.
+
+| Thuộc tính | Giá trị |
+| --- | --- |
+| assessment_key | ASSESSMENT:225BCBE910004AFD11660B20 |
+| cvss_score | 5.3 |
+| cvss_vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N |
+| cvss_version | 3.1 |
+| distribution_channel | f5 via CIRCL mirror |
+| metric_json | {"attackComplexity": "LOW", "attackVector": "NETWORK", "availabilityImpact": "NONE", "baseScore": 5.3, "baseSeverity": "MEDIUM", "confidentialityImpact": "NONE", "integrityImpact": "LOW", "privilegesRequired": "NONE", "scope": "UNCHANGED", "userInteraction": "NONE", "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N", "version": "3.1"} |
+| original_authority | f5 |
+| scoring_authority | f5 via CIRCL mirror |
+| severity_label | MEDIUM |
+| subject_entity_id | CVE:CVE-2026-95101 |
+
+
+Cùng đánh giá gốc, khác observation/kênh: [[SEVERITY-6C30A1CF7141753DFA256598|CVE-2026-95101 CVSS 3.1 f5]]. Không phải nguồn đánh giá độc lập.
+
+## Truy vết nhận định
+
+Mỗi link mở đúng Claim ID và giá trị; nhãn legacy không phải semantic approval.
+
+| Claim / giá trị | Authority | Hiệu lực | Source support / review | Evidence locator |
+| --- | --- | --- | --- | --- |
+| [[CLAIM-BD6BED9850A1F66BEA018E65\|CVE:CVE-2026-95101: severity:CIRCL mirror:f5:3.1]] — {"attackComplexity": "LOW", "attackVector": "NETWORK", "availabilityImpact": "NONE", "baseScore": 5.3, "baseSeverity": "MEDIUM", "confidentialityImpact": "NONE", "integrityImpact":… (mở Claim để đọc đủ) | f5 | CURRENT | NOT_REVIEWED / NOT_REVIEWED | EVIDENCE:EB7D6436B7498FEEC6E51ECE: /containers/cna/metrics — [[EVIDENCE-EB7D6436B7498FEEC6E51ECE\|CVE-2026-95101]] |
+
+
+
+
+## Nguồn
+
+[[EVIDENCE-EB7D6436B7498FEEC6E51ECE|CVE-2026-95101]]
+
+Legacy: VERIFIED. Xem Claim để biết source support và hiệu lực; package comparison không xác minh binary đang chạy.
+
+[[Patch-Management-Library|Patch Management Library]] · [[Research-Library|Research Library]]
+

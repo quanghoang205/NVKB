@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:74CA085F3F9DA4DB0C883EFF"
+    ],
+    "created_at": "2026-11-25T02:28:19+00:00",
+    "description": "CVE:CVE-2026-42945 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:E05D8E7507059833F7C04D3B",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9A41A4C86EE0F14F74983A61"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T02:28:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:19+00:00",
+  "entity_id": "REL:E05D8E7507059833F7C04D3B",
+  "id": "HISTORY:409964A685DEEBB99062345A"
+}

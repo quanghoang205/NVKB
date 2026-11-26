@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:AB3C1108D21EDBEF2CCCD051",
+    "claim_value": "\"Các tham chiếu được giữ trong thời gian đối tượng còn sống; cleanup xảy ra sau khi callback cuối cùng không còn sử dụng.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:34+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A0ADB173EC54D8F7EE765F51"
+    ],
+    "id": "CLAIM:AB3C1108D21EDBEF2CCCD051",
+    "name": "WEAKNESS:CWE-416: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A0ADB173EC54D8F7EE765F51"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-416",
+    "updated_at": "2026-11-25T02:32:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:34+00:00",
+  "entity_id": "CLAIM:AB3C1108D21EDBEF2CCCD051",
+  "id": "HISTORY:E624978CA190EB4D91539D13"
+}

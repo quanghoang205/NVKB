@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:26F581F60778AA192FC8CD01",
+    "claim_value": "\"Không được coi một lần đọc là một thông điệp hoàn chỉnh.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:13+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "id": "CLAIM:26F581F60778AA192FC8CD01",
+    "name": "COMPONENT:NONBLOCKING-IO: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:826B3248E579FD9221DF4A43"
+    ],
+    "subject_entity_id": "COMPONENT:NONBLOCKING-IO",
+    "updated_at": "2026-11-25T02:44:13+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:13+00:00",
+  "entity_id": "CLAIM:26F581F60778AA192FC8CD01",
+  "id": "HISTORY:80623E89F461F713C35CB7E3"
+}

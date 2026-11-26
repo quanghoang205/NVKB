@@ -1,0 +1,30 @@
+group: governance
+name: Đọc CVE record và phân biệt evidence
+articles: []
+knowledge:
+  - id: CONCEPT:CVE
+    name: CVE record — định danh, authority và trạng thái tri thức
+    source: https://raw.githubusercontent.com/CVEProject/cve-schema/main/schema/CVE_Record_Format.json
+    locator: /description; /definitions/cveMetadataPublished; /definitions/cnaPublishedContainer; /definitions/affected
+    excerpt: CVE JSON record format
+    source_fact: Schema chính thức tách CVE metadata, dữ liệu CNA và dữ liệu ADP; có trường định danh, trạng thái, product/version và references. Trạng thái PUBLISHED/REJECTED của record khác với đánh giá applicability một deployment.
+    prerequisites: [CONCEPT:ADVISORY]
+    objectives: [Phân biệt CVE ID với severity và deployment assessment., Giữ đúng authority khi đọc bản mirror.]
+    body: |
+      ## Cơ chế bình thường
+
+      CVE ID định danh một record trong hệ thống công bố. Record gồm metadata do CVE Services quản lý và container do CNA/ADP cung cấp. Schema thể hiện ngày reserved, published và updated với ý nghĩa riêng. Ngày reserved không phải thời điểm phát hiện hay công bố. Một trường không bắt buộc có thể vắng mặt; thiếu workaround không chứng minh không tồn tại workaround ở nơi khác.
+
+      ## Ownership và lifecycle của nhận định
+
+      CNA cung cấp nội dung nhận định, còn CVE Program hoặc mirror phân phối record. Hai URL mang cùng container không tạo hai xác nhận độc lập. Phiên bản record có thể thay đổi hoặc bị rejected; khi đó phải giữ observation cũ và chỉ rõ record mới thay đổi điều gì. Trong NVKB, thời điểm truy xuất nói về snapshot, còn thời gian hiệu lực của Claim phải có quyết định riêng.
+
+      ## Invariant biên tập
+
+      Diễn giải: phải giữ tuple gồm subject, predicate, value, authority, scope và source locator. Không dùng CVSS thay mô tả hậu quả; không dùng PUBLISHED thay bằng chứng mọi host bị ảnh hưởng; không dùng hash thay source support. Khi nguồn chỉ là HTML shell không có nội dung, Claim phải giữ UNSUPPORTED dù URL hợp lệ. Các Claim v1.0 của khái niệm này được lưu ở lịch sử và không được hợp thức hóa bằng schema mới.
+
+      ## Tradeoff và phòng vệ
+
+      Schema cho phép nhập tự động dữ liệu có cấu trúc, giảm lỗi chép version và authority. Tuy nhiên, pass schema không quyết định mô tả có chính xác hay đủ sâu. Giữ UNKNOWN giúp tránh kết luận vượt nguồn nhưng cũng tạo công việc review cần ưu tiên rõ. Với nghiên cứu, đọc mô tả và applicability trước khi suy taxonomy; với vận hành, bổ sung provenance package và chứng cứ binary thực chạy. Không lấy số Claim hay số mirror làm thước đo độ tin cậy.
+    assessment: Một record PUBLISHED có hai mirror và cùng hash có chứng minh asset đã được vá không?
+    answer: Không. PUBLISHED là state của record, mirror là kênh phân phối và hash là integrity; còn patch/runtime cần evidence đúng subject và scope.

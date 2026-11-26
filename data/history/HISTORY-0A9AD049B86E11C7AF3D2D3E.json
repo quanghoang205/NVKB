@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:5DCD385687EE88948DB4522F",
+    "claim_value": "\"Directive lưu cache thông tin phiên TLS.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:57+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "id": "CLAIM:5DCD385687EE88948DB4522F",
+    "name": "DIRECTIVE:SSL-SESSION-CACHE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:715E87292613A03E89F682B6"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-SESSION-CACHE",
+    "updated_at": "2026-11-25T02:32:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:57+00:00",
+  "entity_id": "CLAIM:5DCD385687EE88948DB4522F",
+  "id": "HISTORY:0A9AD049B86E11C7AF3D2D3E"
+}

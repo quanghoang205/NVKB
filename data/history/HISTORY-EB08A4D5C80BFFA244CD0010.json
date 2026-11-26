@@ -1,0 +1,40 @@
+{
+  "action": "modified",
+  "after": {
+    "branch": "stable",
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "Upstream release được advisory xác định đã sửa lỗi.",
+    "ecosystem": "upstream",
+    "entity_type": "Version",
+    "id": "VERSION:NGINX-1.30.2",
+    "name": "NGINX 1.30.2",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:15444CBCEDABE7F2E128DB96"
+    ],
+    "updated_at": "2026-11-25T04:13:14+00:00",
+    "verification_status": "VERIFIED",
+    "version": "1.30.2"
+  },
+  "before": {
+    "branch": "stable",
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "Upstream release được advisory xác định đã sửa lỗi.",
+    "ecosystem": "upstream",
+    "entity_type": "Version",
+    "id": "VERSION:NGINX-1.30.2",
+    "name": "NGINX 1.30.2",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:15444CBCEDABE7F2E128DB96"
+    ],
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED",
+    "version": "1.30.2"
+  },
+  "changed_at": "2026-11-25T04:13:14+00:00",
+  "entity_id": "VERSION:NGINX-1.30.2",
+  "id": "HISTORY:EB08A4D5C80BFFA244CD0010"
+}

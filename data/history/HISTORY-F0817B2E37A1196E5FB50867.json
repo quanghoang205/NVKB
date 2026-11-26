@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:B23DFD94A50AAFC259AAE30A",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:E25B476228B501EF176B04A1",
+    "claim_value": "\"Nguyên tắc phòng vệ vận hành NGINX: Least privilege\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:1C2925279A773E33A771D2F4: Core module directives; topic=CONTROL:LEAST-PRIVILEGE",
+    "evidence_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E25B476228B501EF176B04A1",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CONTROL:LEAST-PRIVILEGE: definition",
+    "observation_key": "OBSERVATION:48DDF5FD8D9F08A6CB26C49E",
+    "observed_at": "2026-11-25T02:49:05+00:00",
+    "predicate": "definition",
+    "product_scope": "CONTROL:LEAST-PRIVILEGE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:49:05+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T04:12:53+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:E25B476228B501EF176B04A1",
+    "claim_value": "\"Nguyên tắc phòng vệ vận hành NGINX: Least privilege\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:49:05+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "id": "CLAIM:E25B476228B501EF176B04A1",
+    "name": "CONTROL:LEAST-PRIVILEGE: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1C2925279A773E33A771D2F4"
+    ],
+    "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+    "updated_at": "2026-11-25T02:49:05+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:53+00:00",
+  "entity_id": "CLAIM:E25B476228B501EF176B04A1",
+  "id": "HISTORY:F0817B2E37A1196E5FB50867"
+}

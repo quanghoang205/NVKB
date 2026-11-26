@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "claim_value": "\"Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:35+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+    "name": "LEARNING:PATH-04: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:155F8E324B04AAB40EA5EF69"
+    ],
+    "subject_entity_id": "LEARNING:PATH-04",
+    "updated_at": "2026-11-25T02:44:35+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:35+00:00",
+  "entity_id": "CLAIM:2CC1BC98F12BF6D53B98B85D",
+  "id": "HISTORY:E34B1B2EB6500E715AC53D44"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:385B5BEC33FF052913552CF9",
+    "claim_value": "\"Giao thức chuyển tiếp thư theo command/reply.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:25+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "id": "CLAIM:385B5BEC33FF052913552CF9",
+    "name": "PROTOCOL:SMTP: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:50A866E441A4800F7F11E38E"
+    ],
+    "subject_entity_id": "PROTOCOL:SMTP",
+    "updated_at": "2026-11-25T02:32:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:25+00:00",
+  "entity_id": "CLAIM:385B5BEC33FF052913552CF9",
+  "id": "HISTORY:3CCD03D53F094F5D727EB30D"
+}

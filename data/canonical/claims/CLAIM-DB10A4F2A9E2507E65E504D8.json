@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:8D11A85E7B1CD494F25C92D2",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:DB10A4F2A9E2507E65E504D8",
+  "claim_value": "\"TLS handshake, certificate, session cache và session ticket cho HTTP.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:40+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:21CE7F049B27FEF9D9BE6542: ngx_http_ssl_module",
+  "evidence_refs": [
+    "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:DB10A4F2A9E2507E65E504D8",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "MODULE:NGX-HTTP-SSL-MODULE: definition",
+  "observation_key": "OBSERVATION:889E3D8A0F19E8FD0509F01F",
+  "observed_at": "2026-11-25T02:32:40+00:00",
+  "predicate": "definition",
+  "product_scope": "MODULE:NGX-HTTP-SSL-MODULE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:08+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:21CE7F049B27FEF9D9BE6542"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+  "updated_at": "2026-11-25T04:12:52+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

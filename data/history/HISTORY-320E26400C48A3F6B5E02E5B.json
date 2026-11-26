@@ -1,0 +1,38 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:1227DCF1874FAC97427C6D17"
+    ],
+    "created_at": "2026-11-25T02:27:03+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:56464BDC5F4F189A7B7D6706",
+    "name": "Điều kiện được công bố — CVE-2026-123633",
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:F35057971FC6ABBD47BA4E7F"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:1227DCF1874FAC97427C6D17"
+    ],
+    "created_at": "2026-11-25T02:27:03+00:00",
+    "description": "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "entity_type": "AffectedCondition",
+    "id": "CONDITION:56464BDC5F4F189A7B7D6706",
+    "name": "Điều kiện được công bố — CVE-2026-123633",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F35057971FC6ABBD47BA4E7F"
+    ],
+    "updated_at": "2026-11-25T02:27:03+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONDITION:56464BDC5F4F189A7B7D6706",
+  "id": "HISTORY:320E26400C48A3F6B5E02E5B"
+}

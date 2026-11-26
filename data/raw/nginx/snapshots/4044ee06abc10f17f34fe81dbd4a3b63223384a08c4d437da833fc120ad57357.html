@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [nginx-announce] nginx security advisory (CVE-2025-23419)
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2025-23419%29&In-Reply-To=%3CBYAPR01MB5334A267E2C7ECB8835E96F7A9F72%40BYAPR01MB5334.prod.exchangelabs.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <LINK REL="Previous"  HREF="U4EOBVNR46CKTAYCY4D6XG4PUSO2OAYZ.html">
+   <LINK REL="Next"  HREF="OWXY2P2DB23SS7HTIDJIAGD244AFEH4W.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[nginx-announce] nginx security advisory (CVE-2025-23419)</H1>
+    <B>F5SIRT</B> 
+    <A HREF="mailto:nginx-announce%40nginx.org?Subject=Re%3A%20%5Bnginx-announce%5D%20nginx%20security%20advisory%20%28CVE-2025-23419%29&In-Reply-To=%3CBYAPR01MB5334A267E2C7ECB8835E96F7A9F72%40BYAPR01MB5334.prod.exchangelabs.com%3E"
+       TITLE="[nginx-announce] nginx security advisory (CVE-2025-23419)">f5sirt at F5.com
+       </A><BR>
+    <I>Wed Feb  5 17:23:12 UTC 2025</I>
+    <P><UL>
+        <LI>Previous message (by thread): <A HREF="U4EOBVNR46CKTAYCY4D6XG4PUSO2OAYZ.html">[nginx-announce] nginx-1.26.3
+</A></li>
+        <LI>Next message (by thread): <A HREF="OWXY2P2DB23SS7HTIDJIAGD244AFEH4W.html">[nginx-announce] njs-0.8.10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#366">[ date ]</a>
+              <a href="thread.html#366">[ thread ]</a>
+              <a href="subject.html#366">[ subject ]</a>
+              <a href="author.html#366">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>A problem with SSL session resumption in nginx was identified.
+It was possible to reuse SSL sessions in named-based
+virtual hosts in unrelated contexts, allowing to bypass client
+certificate authentication in some configurations (CVE-2025-23419).
+
+The problem affects nginx 1.11.4 and newer built with OpenSSL if the
+TLSv1.3 protocol and session resumption are enabled either with
+ssl_session_cache or ssl_session_tickets.
+
+The problem is fixed in 1.26.3 and 1.27.4.
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message (by thread): <A HREF="U4EOBVNR46CKTAYCY4D6XG4PUSO2OAYZ.html">[nginx-announce] nginx-1.26.3
+</A></li>
+	<LI>Next message (by thread): <A HREF="OWXY2P2DB23SS7HTIDJIAGD244AFEH4W.html">[nginx-announce] njs-0.8.10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#366">[ date ]</a>
+              <a href="thread.html#366">[ thread ]</a>
+              <a href="subject.html#366">[ subject ]</a>
+              <a href="author.html#366">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://mailman.nginx.org/mailman/listinfo/nginx-announce">More information about the nginx-announce
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "63f0c1446f4b107219c26eaa32884d3dddf28eaac7ac08f34368066b2367d964",
+    "created_at": "2026-11-25T02:44:32+00:00",
+    "description": "Xử lý IMAP trong vai trò mail proxy.",
+    "document_title": "Module ngx_mail_imap_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:F69550F5596B2A5F41B07EBB",
+    "id": "EVIDENCE:F69550F5596B2A5F41B07EBB",
+    "local_snapshot_path": "data/raw/documentation/snapshots/63f0c1446f4b107219c26eaa32884d3dddf28eaac7ac08f34368066b2367d964.html",
+    "name": "Module ngx_mail_imap_module",
+    "paraphrase": "Xử lý IMAP trong vai trò mail proxy.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:52+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_mail_imap_module; topic=MODULE:NGX-MAIL-IMAP-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/mail/ngx_mail_imap_module.html",
+    "updated_at": "2026-11-25T02:44:32+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:32+00:00",
+  "entity_id": "EVIDENCE:F69550F5596B2A5F41B07EBB",
+  "id": "HISTORY:1318914F2793938CF96ABAB2"
+}

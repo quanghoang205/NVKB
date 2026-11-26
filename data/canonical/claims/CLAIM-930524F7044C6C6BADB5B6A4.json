@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:90F7E4D154DEC9707C21BE08",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:930524F7044C6C6BADB5B6A4",
+  "claim_value": "\"## Tradeoff và kiểm soát\\n\\nRetry giúp người dùng sửa thông tin nhập nhưng kéo dài session và tăng số allocation. Tách quyết định xác thực ra dịch vụ riêng giúp quản trị identity nhưng thêm timeout và trust boundary. Review giới hạn retry, serialization và cleanup cùng nhau; giữ quyền worker tối thiểu và dùng bản sửa khi advisory nêu lỗi memory. Đây là nguyên tắc thiết kế, không cung cấp phương thức quan sát hoặc lấy dữ liệu rò.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:16:30+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "#protocol; #auth_http_timeout",
+  "evidence_refs": [
+    "EVIDENCE:B2BE18E50D92C6087EA91A4A"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:930524F7044C6C6BADB5B6A4",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE: v1.3:knowledge:Tradeoff và kiểm soát",
+  "observed_at": "2026-11-25T05:16:31+00:00",
+  "predicate": "v1.3:knowledge:Tradeoff và kiểm soát",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:16:31+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:B2BE18E50D92C6087EA91A4A"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+  "updated_at": "2026-11-25T05:16:31+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:54+00:00; CVE versions are scoped separately."
+}

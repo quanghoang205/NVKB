@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:12+00:00",
+  "content_hash": "807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"9cf3c50abcde0f4661e118e2ef3dfa79817d80f06d62ab8e2879dd477069380b\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/807ca82717c0e8e1013d4e9bc2a2dcc081d609901da513be17b315bfeba799b0.json",
+  "retrieved_at": "2026-11-25T02:26:12+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/31xxx/CVE-2024-31079.json"
+}

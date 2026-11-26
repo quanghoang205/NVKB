@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:27:45+00:00",
+  "content_hash": "3ba7ba09103b6e4c9a3bc0f4a1888ed98d4b0c22cf4d6eaf3e31cc2e42a8578d",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"9f1dbd9035f3f947bfeccfc5622d955fe39d02874c2f66b6cf55f6fff814fbf9\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/3ba7ba09103b6e4c9a3bc0f4a1888ed98d4b0c22cf4d6eaf3e31cc2e42a8578d.json",
+  "retrieved_at": "2026-11-25T02:27:45+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/32xxx/CVE-2026-32647.json"
+}

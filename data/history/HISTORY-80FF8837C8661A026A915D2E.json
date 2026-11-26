@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:1037F0EEC7205B405F04D205",
+    "claim_value": "\"QUIC quản lý connection ID, stream, flow control, loss recovery và xác nhận địa chỉ trong quá trình thiết lập/di chuyển đường truyền.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:22+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "id": "CLAIM:1037F0EEC7205B405F04D205",
+    "name": "PROTOCOL:QUIC: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F1911FDE0179646EC603B606"
+    ],
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T02:44:22+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:22+00:00",
+  "entity_id": "CLAIM:1037F0EEC7205B405F04D205",
+  "id": "HISTORY:80FF8837C8661A026A915D2E"
+}

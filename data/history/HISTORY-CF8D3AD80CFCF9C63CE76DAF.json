@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:75E306CFD71852D3FAD75170",
+    "authority": "CIRCL mirror",
+    "authority_scope": "CIRCL mirror",
+    "claim_id": "CLAIM:A6BF63C3DEED832BF89B2DF1",
+    "claim_value": "[\"PRODUCT:NGINX-OSS\"]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "affected_products",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:37F199B99DBEA79229B4C468: /containers/cna/affected",
+    "evidence_refs": [
+      "EVIDENCE:37F199B99DBEA79229B4C468"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:A6BF63C3DEED832BF89B2DF1",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-42055: affected_products",
+    "observation_key": "OBSERVATION:43C87A8F023D23BA6699ABB9",
+    "observed_at": "2026-11-25T02:27:59+00:00",
+    "predicate": "affected_products",
+    "product_scope": "CVE:CVE-2026-42055",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:27:58+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CIRCL mirror",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:37F199B99DBEA79229B4C468"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42055",
+    "updated_at": "2026-11-25T04:12:46+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CIRCL mirror",
+    "claim_id": "CLAIM:A6BF63C3DEED832BF89B2DF1",
+    "claim_value": "[\"PRODUCT:NGINX-OSS\"]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "affected_products",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:37F199B99DBEA79229B4C468"
+    ],
+    "id": "CLAIM:A6BF63C3DEED832BF89B2DF1",
+    "name": "CVE:CVE-2026-42055: affected_products",
+    "predicate": "affected_products",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:37F199B99DBEA79229B4C468"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42055",
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:46+00:00",
+  "entity_id": "CLAIM:A6BF63C3DEED832BF89B2DF1",
+  "id": "HISTORY:CF8D3AD80CFCF9C63CE76DAF"
+}

@@ -1,0 +1,35 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:D8ACA8573C32B7DE47D117CA"
+    ],
+    "created_at": "2026-11-25T02:27:17+00:00",
+    "description": "Khoảng phiên bản do upstream công bố.",
+    "ecosystem": "upstream",
+    "entity_type": "VersionRange",
+    "exclusions": [],
+    "fixed_versions": [
+      "1.30.8",
+      "1.31.10"
+    ],
+    "id": "RANGE:7F8D057281D34605915A77F6",
+    "lower": "1.21.4",
+    "lower_inclusive": true,
+    "name": "1.21.4-1.31.9",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "raw_expression": "1.21.4-1.31.9",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A17573095491115BED292829"
+    ],
+    "updated_at": "2026-11-25T02:27:17+00:00",
+    "upper": "1.31.9",
+    "upper_inclusive": true,
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:17+00:00",
+  "entity_id": "RANGE:7F8D057281D34605915A77F6",
+  "id": "HISTORY:1274283BDB0FD2C4197D3077"
+}

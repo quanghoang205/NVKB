@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:47+00:00",
+  "content_hash": "c23e7409a91afc1ff451bb5d5b4598355aa075f473557bc5c0cd6852c9704cd4",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"a9c7002ad7bf4fe89d8c15346431eb718b483e84bcbde69efb5ba367e9e5c0eb\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/c23e7409a91afc1ff451bb5d5b4598355aa075f473557bc5c0cd6852c9704cd4.json",
+  "retrieved_at": "2026-11-25T02:25:47+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2013/2xxx/CVE-2013-2070.json"
+}

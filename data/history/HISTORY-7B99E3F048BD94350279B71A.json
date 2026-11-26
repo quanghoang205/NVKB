@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "0f4fbd731c45834df3bad5877ccb11702c11e40baabc511e591777b8a1201fb9",
+    "created_at": "2026-11-25T02:48:55+00:00",
+    "description": "Đọc tiếp qua cuối buffer chứa dữ liệu.",
+    "document_title": "CWE -\r\n\n    CWE-126: Buffer Over-read (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2739A81C1376F4477260234A",
+    "id": "EVIDENCE:2739A81C1376F4477260234A",
+    "local_snapshot_path": "data/raw/documentation/snapshots/0f4fbd731c45834df3bad5877ccb11702c11e40baabc511e591777b8a1201fb9.html",
+    "name": "CWE -\r\n\n    CWE-126: Buffer Over-read (5.0)",
+    "paraphrase": "Đọc tiếp qua cuối buffer chứa dữ liệu.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:48:54+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations; topic=WEAKNESS:CWE-126",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/126.html",
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:55+00:00",
+  "entity_id": "EVIDENCE:2739A81C1376F4477260234A",
+  "id": "HISTORY:7B99E3F048BD94350279B71A"
+}

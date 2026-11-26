@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Chứng thực tài khoản ↔ dữ liệu hộp thư.",
+    "claim_refs": [
+      "CLAIM:8E18B4D06759F9668B57B268",
+      "CLAIM:77348BD78504C875B7C3F639",
+      "CLAIM:D14F4B36C8A0647C60C47E3E",
+      "CLAIM:742DD3EDAFA58270FE55B50A",
+      "CLAIM:8CAB038A068DA0564152EEAD",
+      "CLAIM:CD1A76BA31DCF3E63EBF1A67",
+      "CLAIM:9FBD763048105F2E7016D487",
+      "CLAIM:FB88F8BFF824200F20C55BC8"
+    ],
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "description": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:POP3",
+    "learning_objectives": [
+      "Giải thích POP3 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "POP3",
+    "normal_behavior": "Phiên chuyển qua authorization, transaction và update; command được chấp nhận theo trạng thái hiện tại.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không cho phép command ngoài trạng thái hoặc nhầm context xác thực.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Chứng thực tài khoản ↔ dữ liệu hộp thư.",
+    "source_refs": [
+      "EVIDENCE:52133EFF4255B050D755A95C"
+    ],
+    "updated_at": "2026-11-25T02:44:23+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Chứng thực tài khoản ↔ dữ liệu hộp thư.",
+    "claim_refs": [
+      "CLAIM:22F4F6075FE555E04E1AA2B8",
+      "CLAIM:B60D9B30BFEB2347694427DB",
+      "CLAIM:BD5CF12BFF23F9CA530421ED",
+      "CLAIM:D3D00DFDFE43973C0946036D",
+      "CLAIM:E13EC5043FCCCB815B9B62E9",
+      "CLAIM:E2D3017E906E0FDB07F8D820",
+      "CLAIM:B0057DC05E722B67A94B1C77",
+      "CLAIM:9EFA18E387F777FDA4096B41"
+    ],
+    "created_at": "2026-11-25T02:32:26+00:00",
+    "defensive_principles": "Áp dụng bản vá implementation, giới hạn tài nguyên và kiểm tra cấu hình giao thức theo tài liệu nhà cung cấp.",
+    "definition": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "description": "Giao thức truy xuất hộp thư theo các trạng thái phiên.",
+    "diagram": "",
+    "entity_type": "Protocol",
+    "failure_impact": "Sai xử lý thông điệp hoặc suy giảm availability; tác động cụ thể cần advisory tương ứng.",
+    "id": "PROTOCOL:POP3",
+    "learning_objectives": [
+      "Giải thích POP3 bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "POP3",
+    "normal_behavior": "Phiên chuyển qua authorization, transaction và update; command được chấp nhận theo trạng thái hiện tại.",
+    "related_failure_classes": "Parsing inconsistencies; state confusion; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không cho phép command ngoài trạng thái hoặc nhầm context xác thực.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Chứng thực tài khoản ↔ dữ liệu hộp thư.",
+    "source_refs": [
+      "EVIDENCE:0D8FBF067DC0496EB9345796"
+    ],
+    "updated_at": "2026-11-25T02:32:26+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T02:44:23+00:00",
+  "entity_id": "PROTOCOL:POP3",
+  "id": "HISTORY:036C36D25513F28E822545DA"
+}

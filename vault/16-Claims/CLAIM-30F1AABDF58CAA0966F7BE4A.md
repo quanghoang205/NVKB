@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:30F1AABDF58CAA0966F7BE4A
+title: 'CVE:CVE-2026-125283: security_assumption_violated'
+verification_status: INFERRED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-125283: security_assumption_violated'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-125283: security_assumption_violated
+
+`CLAIM:30F1AABDF58CAA0966F7BE4A` · **HISTORICAL**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-125283|CVE-2026-125283]]. Predicate: `security_assumption_violated`.
+
+```json
+"Trước phép trừ kích thước phải bảo đảm quan hệ các toán hạng hợp lệ."
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-065AF50E1D00607FE9A69385|CVE-2026-125283]], [[EVIDENCE-44DDDAA722857F4B90BBAA0F|CVE-2026-125283]], [[EVIDENCE-49BF08A476CD657BA7A48B80|NGINX security advisories]], [[EVIDENCE-67F0330559BC7FD512D1BCD6|CVE-2026-125283]], [[EVIDENCE-8245586D43209CA1D6064B51|CVE-2026-125283]], [[EVIDENCE-D10842D66DC8C1765103B901|CVE-2026-125283]], [[EVIDENCE-E5D6A097B43D7EB31179D3D5|CVE-2026-125283]], [[EVIDENCE-EBC00C4C250179C07BC479C5|CVE-2026-125283]], [[EVIDENCE-F03600C558EF2F690E6E4A14|CVE-2026-123007]], [[EVIDENCE-F92CFDA044BB160372AF06A6|CWE - CWE-191: Integer Underflow (Wrap or Wraparound) (5.0)]]
+
+Locator: EVIDENCE:065AF50E1D00607FE9A69385: /containers/cna/affected; EVIDENCE:44DDDAA722857F4B90BBAA0F: /containers/cna/affected; EVIDENCE:49BF08A476CD657BA7A48B80: li containing CVE-2026-125283; EVIDENCE:67F0330559BC7FD512D1BCD6: /cveMetadata; EVIDENCE:8245586D43209CA1D6064B51: /containers/cna/metrics; EVIDENCE:D10842D66DC8C1765103B901: /containers/cna/metrics; EVIDENCE:E5D6A097B43D7EB31179D3D5: /containers/cna/problemTypes; EVIDENCE:EBC00C4C250179C07BC479C5: /containers/cna/descriptions; EVIDENCE:F03600C558EF2F690E6E4A14: /containers/cna/problemTypes; EVIDENCE:F92CFDA044BB160372AF06A6: Description / Potential Mitigations; topic=WEAKNESS:CWE-191
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | INTERPRETATION |
+| Legacy | INFERRED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Earlier generated interpretation retained; the v1.3 article supplies bounded source claims and explicit author reasoning.
+
+Quan sát: 2026-11-25T02:49:11+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

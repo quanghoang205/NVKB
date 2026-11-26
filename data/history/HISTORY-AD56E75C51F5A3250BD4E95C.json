@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "5afee59118544d8dd083f8be85ffe84cb94220c64a493b97e2b4649c18d25cbc",
+    "created_at": "2026-11-25T02:27:06+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-123634",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:196409B38DB084C21B2DD2CA",
+    "id": "EVIDENCE:196409B38DB084C21B2DD2CA",
+    "local_snapshot_path": "data/raw/cve/snapshots/5afee59118544d8dd083f8be85ffe84cb94220c64a493b97e2b4649c18d25cbc.json",
+    "name": "CVE-2026-123634",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:27:04+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/123xxx/CVE-2026-123634.json",
+    "updated_at": "2026-11-25T02:27:06+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:06+00:00",
+  "entity_id": "EVIDENCE:196409B38DB084C21B2DD2CA",
+  "id": "HISTORY:AD56E75C51F5A3250BD4E95C"
+}

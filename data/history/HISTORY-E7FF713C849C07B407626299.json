@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e",
+    "created_at": "2026-11-25T02:27:26+00:00",
+    "description": "Debian trixie: fixed_version=1.26.3-3+deb13u2, status=fixed.",
+    "document_title": "CVE-2026-1642",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DE76454FCD9A69A459A28D92",
+    "id": "EVIDENCE:DE76454FCD9A69A459A28D92",
+    "local_snapshot_path": "data/raw/distribution/snapshots/ef4e0877b178ffdf41e28befb20d4f99d43e875e10b823281b2e77fc99b8282e.html",
+    "name": "CVE-2026-1642",
+    "paraphrase": "Debian trixie: fixed_version=1.26.3-3+deb13u2, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:26+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=trixie",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:26+00:00",
+  "entity_id": "EVIDENCE:DE76454FCD9A69A459A28D92",
+  "id": "HISTORY:E7FF713C849C07B407626299"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:8DD8B4E59595EAC95571F611",
+    "claim_value": "\"Transport datagram không bảo đảm giao hàng hay thứ tự.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "id": "CLAIM:8DD8B4E59595EAC95571F611",
+    "name": "PROTOCOL:UDP: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E65DF6456DB05C4C3E3E5B5E"
+    ],
+    "subject_entity_id": "PROTOCOL:UDP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:8DD8B4E59595EAC95571F611",
+  "id": "HISTORY:D5D1B45566265F6DA0A9D017"
+}

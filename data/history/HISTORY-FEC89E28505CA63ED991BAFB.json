@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:ECC1804F91D1532258D2628B"
+    ],
+    "created_at": "2026-11-25T02:26:35+00:00",
+    "description": "CVE:CVE-2025-53859 distribution_fix PACKAGE:D9FEEA28EEDB587DB834EB52",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:B51818C683C26E2459A0CB62",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:D9FEEA28EEDB587DB834EB52",
+    "predicate": "distribution_fix",
+    "rationale": "Legacy association: Distribution-specific package statement. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Distribution-specific package statement",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:DF0DCA7D85A48D126FE948B7"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T04:13:08+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:ECC1804F91D1532258D2628B"
+    ],
+    "created_at": "2026-11-25T02:26:35+00:00",
+    "description": "CVE:CVE-2025-53859 distribution_fix PACKAGE:D9FEEA28EEDB587DB834EB52",
+    "entity_type": "Relationship",
+    "id": "REL:B51818C683C26E2459A0CB62",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:D9FEEA28EEDB587DB834EB52",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:DF0DCA7D85A48D126FE948B7"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:26:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:08+00:00",
+  "entity_id": "REL:B51818C683C26E2459A0CB62",
+  "id": "HISTORY:FEC89E28505CA63ED991BAFB"
+}

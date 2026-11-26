@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:F82A810F7333CC00CE5CB05B",
+    "claim_value": "[{\"lessThan\": \"1.31.9\", \"status\": \"affected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.30.7\", \"status\": \"affected\", \"version\": \"1.30.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"*\", \"status\": \"affected\", \"version\": \"1.15.2\", \"versionType\": \"semver\"}]",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:10+00:00",
+    "description": "cna_version_data:CVE Program",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:99E9B5AAF5C505E7365C525F"
+    ],
+    "id": "CLAIM:F82A810F7333CC00CE5CB05B",
+    "name": "CVE:CVE-2026-123640: cna_version_data:CVE Program",
+    "predicate": "cna_version_data:CVE Program",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:99E9B5AAF5C505E7365C525F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-123640",
+    "updated_at": "2026-11-25T02:27:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:10+00:00",
+  "entity_id": "CLAIM:F82A810F7333CC00CE5CB05B",
+  "id": "HISTORY:2FDBC4DFC786B361BF9311E8"
+}

@@ -1,0 +1,74 @@
+{
+  "answer_explanations": "Không; nó là điều kiện tương tác. Bên nào vi phạm memory/serialization contract cần evidence riêng.",
+  "architecture_position": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "article_body": "Nguồn xác nhận: [[CLAIM-EA72B5981D4566F40399CF5B|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nMail proxy trao đổi với authentication server qua HTTP để lấy quyết định và thông tin backend. Response body không mang quyết định; các header có nghĩa riêng trong contract. HTTP status thành công tự nó không thay Auth-Status. Auth-Wait cho phép retry trong cùng phiên; timeout điều chỉnh thời gian chờ, không phải số lần thử.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-6C785FAA062562B8D390E2DC|Claim của section]].\n\n## Ownership và lifecycle\n\nTài liệu nói mỗi lần authentication cấp phát bộ nhớ và giải phóng khi session kết thúc. Vì vậy một lần thất bại không nhất thiết trả lại toàn bộ tài nguyên phiên. Khi retry, state của lần trước phải được giữ hoặc thay theo quy tắc rõ: con trỏ, độ dài và trạng thái phương thức không thể được dùng như vẫn hợp lệ nếu owner đã đổi. Giới hạn số retry là phần của ngân sách tài nguyên, không phải bản vá mọi lỗi retry.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-CD5E1DA9480B4D6392318E85|Claim của section]].\n\n## Serialization và identity\n\nMetadata có thể đi qua nhiều giao thức: mail, HTTP authentication, resolver và upstream mail. Diễn giải phòng vệ: dữ liệu ở một miền không được đổi thành cú pháp điều khiển ở miền khác khi serialize. DNS host name là dữ liệu đầu vào, không có quyền bổ sung header. Authentication server và upstream server là hai vai trò; thông tin đi tới auth server không tự chứng minh client nhận lại được nó.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-49E25C579D0B32F4B5D8E175|Claim của section]].\n\n## Tradeoff và kiểm soát\n\nRetry giúp người dùng sửa thông tin nhập nhưng kéo dài session và tăng số allocation. Tách quyết định xác thực ra dịch vụ riêng giúp quản trị identity nhưng thêm timeout và trust boundary. Review giới hạn retry, serialization và cleanup cùng nhau; giữ quyền worker tối thiểu và dùng bản sửa khi advisory nêu lỗi memory. Đây là nguyên tắc thiết kế, không cung cấp phương thức quan sát hoặc lấy dữ liệu rò.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-930524F7044C6C6BADB5B6A4|Claim của section]].",
+  "assessment": "Auth-Wait tồn tại có chứng minh lỗi nằm ở authentication server không?",
+  "claim_refs": [
+    "CLAIM:EA72B5981D4566F40399CF5B",
+    "CLAIM:6C785FAA062562B8D390E2DC",
+    "CLAIM:CD5E1DA9480B4D6392318E85",
+    "CLAIM:49E25C579D0B32F4B5D8E175",
+    "CLAIM:930524F7044C6C6BADB5B6A4"
+  ],
+  "created_at": "2026-11-25T02:32:54+00:00",
+  "curated_fields": [
+    "answer_explanations",
+    "article_body",
+    "assessment",
+    "claim_refs",
+    "curation_version",
+    "definition",
+    "description",
+    "diagram",
+    "editorial_maturity",
+    "editorial_review_note",
+    "learning_objectives",
+    "name",
+    "prerequisites",
+    "related_knowledge",
+    "research_claim_refs",
+    "source_refs",
+    "verification_limitations"
+  ],
+  "curation_version": "1.3.0",
+  "defensive_principles": "Kiểm kê module thực tế, đối chiếu directive và áp dụng fixed release đúng nhánh.",
+  "definition": "NGINX dùng HTTP để trao đổi với authentication server và lấy kết quả từ response headers; bộ nhớ mỗi lần authentication chỉ được giải phóng khi phiên kết thúc theo tài liệu.",
+  "description": "NGINX dùng HTTP để trao đổi với authentication server và lấy kết quả từ response headers; bộ nhớ mỗi lần authentication chỉ được giải phóng khi phiên kết thúc theo tài liệu.",
+  "diagram": "",
+  "editorial_maturity": "AI_REVIEWED",
+  "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+  "entity_type": "Module",
+  "failure_impact": "Tác động phải đối chiếu CVE cụ thể; tên module tự nó không chứng minh có lỗi.",
+  "id": "MODULE:NGX-MAIL-AUTH-HTTP-MODULE",
+  "learning_objectives": [
+    "Phân biệt phiên mail với một lần authentication.",
+    "Giải thích trust boundary khi serialize metadata sang auth server."
+  ],
+  "name": "Mail auth HTTP — trust boundary và vòng đời phiên",
+  "normal_behavior": "Dùng HTTP service để cung cấp thông tin xác thực/định tuyến mail. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+  "prerequisites": [
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "COMPONENT:MEMORY-POOL"
+  ],
+  "related_failure_classes": "Memory safety hoặc policy/state inconsistency tùy code path.",
+  "related_knowledge": [
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "COMPONENT:MEMORY-POOL"
+  ],
+  "research_claim_refs": [
+    "CLAIM:EA72B5981D4566F40399CF5B",
+    "CLAIM:6C785FAA062562B8D390E2DC",
+    "CLAIM:CD5E1DA9480B4D6392318E85",
+    "CLAIM:49E25C579D0B32F4B5D8E175",
+    "CLAIM:930524F7044C6C6BADB5B6A4"
+  ],
+  "safety_assumptions": "Trạng thái, kích thước dữ liệu và vòng đời đối tượng phải phù hợp tài liệu module.",
+  "schema_version": "1.2.0",
+  "security_boundary": "mail subsystem của NGINX; giữa input protocol và handler cấu hình.",
+  "source_refs": [
+    "EVIDENCE:B2BE18E50D92C6087EA91A4A"
+  ],
+  "updated_at": "2026-11-25T05:16:31+00:00",
+  "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+  "verification_status": "INFERRED"
+}

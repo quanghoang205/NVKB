@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:ACF6F5A7BF71D6EB2E1D4CD5"
+    ],
+    "created_at": "2026-11-25T02:26:27+00:00",
+    "description": "CVE:CVE-2024-35200 distribution_fix PACKAGE:159421DA7ED8259898EDEFF6",
+    "entity_type": "Relationship",
+    "id": "REL:CDF24217B5DA4F2BA6A8C0CA",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:159421DA7ED8259898EDEFF6",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:163DD6E7FBE114ABDC9B21C9"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:26:27+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:27+00:00",
+  "entity_id": "REL:CDF24217B5DA4F2BA6A8C0CA",
+  "id": "HISTORY:7415A75A47CA8004BA751F1A"
+}

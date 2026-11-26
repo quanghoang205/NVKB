@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:02FFC1546F56B293BF4289B0",
+    "claim_value": "\"Sai chính sách xác thực theo điều kiện advisory.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "id": "CLAIM:02FFC1546F56B293BF4289B0",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:02FFC1546F56B293BF4289B0",
+  "id": "HISTORY:AB1C978229371D9D5D95C6B2"
+}

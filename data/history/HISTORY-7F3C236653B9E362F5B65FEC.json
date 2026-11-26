@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:3F0A5A0FF376A62D7B828659",
+    "authority": "IETF / RFC Editor",
+    "authority_scope": "IETF / RFC Editor",
+    "claim_id": "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+    "claim_value": "\"Các hop phải thống nhất cách xử lý framing và thông điệp không hợp lệ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:96FE1EE21A4EF574C0704E19: Protocol overview and state machine; topic=PROTOCOL:HTTP-1.1",
+    "evidence_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:HTTP-1.1: safety_assumptions",
+    "observation_key": "OBSERVATION:9378A80A440018160C759E30",
+    "observed_at": "2026-11-25T02:44:19+00:00",
+    "predicate": "safety_assumptions",
+    "product_scope": "PROTOCOL:HTTP-1.1",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:17+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "IETF / RFC Editor",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:HTTP-1.1",
+    "updated_at": "2026-11-25T04:12:38+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+    "claim_value": "\"Các hop phải thống nhất cách xử lý framing và thông điệp không hợp lệ.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "id": "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+    "name": "PROTOCOL:HTTP-1.1: safety_assumptions",
+    "predicate": "safety_assumptions",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-1.1",
+    "updated_at": "2026-11-25T02:44:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:38+00:00",
+  "entity_id": "CLAIM:5EA5C2AA0B43AFB7CEA4E679",
+  "id": "HISTORY:7F3C236653B9E362F5B65FEC"
+}

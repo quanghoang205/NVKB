@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2B12835240D8BD55A32F0CBA",
+    "claim_value": "\"Master đọc cấu hình, quản lý worker và phản ứng với tín hiệu; graceful reload tạo worker mới rồi cho worker cũ kết thúc các request đang xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:2B12835240D8BD55A32F0CBA",
+    "name": "COMPONENT:MASTER-PROCESS: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:10+00:00",
+  "entity_id": "CLAIM:2B12835240D8BD55A32F0CBA",
+  "id": "HISTORY:8E51E5031B0702CA606A463A"
+}

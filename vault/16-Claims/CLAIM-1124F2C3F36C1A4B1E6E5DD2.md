@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:1124F2C3F36C1A4B1E6E5DD2
+title: 'CVE:CVE-2026-32647: related_modules'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'CVE:CVE-2026-32647: related_modules'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# CVE:CVE-2026-32647: related_modules
+
+`CLAIM:1124F2C3F36C1A4B1E6E5DD2` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[CVE-2026-32647|CVE-2026-32647]]. Predicate: `related_modules`.
+
+```json
+"MODULE:NGX-HTTP-MP4-MODULE"
+```
+
+## Nguồn và phạm vi
+
+Authority: NVKB curation. NVKB curation
+
+[[EVIDENCE-1696EE213A5424E97075EA01|CVE-2026-32647]], [[EVIDENCE-198C480BD0F040C0B875841A|CVE-2026-32647]], [[EVIDENCE-280FFDADEB891CC9C19C62D0|CVE-2026-32647]], [[EVIDENCE-3E16F0C4F9C825A40E41DD71|CVE-2026-32647]], [[EVIDENCE-50E46DFFEBA88B1049A4FD9B|CVE-2026-32647]], [[EVIDENCE-5DFD44D1745EC65F51418FC1|CVE-2026-32647]], [[EVIDENCE-99EFFF4C70D5B2FC77D9645D|CVE-2026-32647]], [[EVIDENCE-C59266D723B685ACE2719D33|NGINX security advisories]], [[EVIDENCE-ED5DE28FAC8FF32E7DA3A310|CVE-2026-32647]], [[EVIDENCE-FB2A7E51F617D62E623BB202|CVE-2026-32647]]
+
+Locator: EVIDENCE:1696EE213A5424E97075EA01: /containers/adp/1/metrics; EVIDENCE:198C480BD0F040C0B875841A: /containers/cna/affected; EVIDENCE:280FFDADEB891CC9C19C62D0: /containers/adp/1/metrics; EVIDENCE:3E16F0C4F9C825A40E41DD71: /containers/cna/metrics; EVIDENCE:50E46DFFEBA88B1049A4FD9B: /containers/cna/affected; EVIDENCE:5DFD44D1745EC65F51418FC1: /cveMetadata; EVIDENCE:99EFFF4C70D5B2FC77D9645D: /containers/cna/metrics; EVIDENCE:C59266D723B685ACE2719D33: li containing CVE-2026-32647; EVIDENCE:ED5DE28FAC8FF32E7DA3A310: /containers/cna/descriptions; EVIDENCE:FB2A7E51F617D62E623BB202: /containers/cna/problemTypes
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:33:49+00:00. Truy xuất: 2026-11-25T02:18:10+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

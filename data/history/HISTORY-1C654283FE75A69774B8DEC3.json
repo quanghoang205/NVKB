@@ -1,0 +1,115 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Không. PUBLISHED là state của record, mirror là kênh phân phối và hash là integrity; còn patch/runtime cần evidence đúng subject và scope.",
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-3B7C044F9BD3EA04A5DDE1DB|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nCVE ID định danh một record trong hệ thống công bố. Record gồm metadata do CVE Services quản lý và container do CNA/ADP cung cấp. Schema thể hiện ngày reserved, published và updated với ý nghĩa riêng. Ngày reserved không phải thời điểm phát hiện hay công bố. Một trường không bắt buộc có thể vắng mặt; thiếu workaround không chứng minh không tồn tại workaround ở nơi khác.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-981F95374C940B4125598B46|Claim của section]].\n\n## Ownership và lifecycle của nhận định\n\nCNA cung cấp nội dung nhận định, còn CVE Program hoặc mirror phân phối record. Hai URL mang cùng container không tạo hai xác nhận độc lập. Phiên bản record có thể thay đổi hoặc bị rejected; khi đó phải giữ observation cũ và chỉ rõ record mới thay đổi điều gì. Trong NVKB, thời điểm truy xuất nói về snapshot, còn thời gian hiệu lực của Claim phải có quyết định riêng.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-14D5906C605DC065E20F9DE9|Claim của section]].\n\n## Invariant biên tập\n\nDiễn giải: phải giữ tuple gồm subject, predicate, value, authority, scope và source locator. Không dùng CVSS thay mô tả hậu quả; không dùng PUBLISHED thay bằng chứng mọi host bị ảnh hưởng; không dùng hash thay source support. Khi nguồn chỉ là HTML shell không có nội dung, Claim phải giữ UNSUPPORTED dù URL hợp lệ. Các Claim v1.0 của khái niệm này được lưu ở lịch sử và không được hợp thức hóa bằng schema mới.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-4080379FA5AE42027550CF8B|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nSchema cho phép nhập tự động dữ liệu có cấu trúc, giảm lỗi chép version và authority. Tuy nhiên, pass schema không quyết định mô tả có chính xác hay đủ sâu. Giữ UNKNOWN giúp tránh kết luận vượt nguồn nhưng cũng tạo công việc review cần ưu tiên rõ. Với nghiên cứu, đọc mô tả và applicability trước khi suy taxonomy; với vận hành, bổ sung provenance package và chứng cứ binary thực chạy. Không lấy số Claim hay số mirror làm thước đo độ tin cậy.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-F790CCB081A7D31E7B52367D|Claim của section]].",
+    "assessment": "Một record PUBLISHED có hai mirror và cùng hash có chứng minh asset đã được vá không?",
+    "claim_refs": [
+      "CLAIM:3B7C044F9BD3EA04A5DDE1DB",
+      "CLAIM:981F95374C940B4125598B46",
+      "CLAIM:14D5906C605DC065E20F9DE9",
+      "CLAIM:4080379FA5AE42027550CF8B",
+      "CLAIM:F790CCB081A7D31E7B52367D"
+    ],
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Schema chính thức tách CVE metadata, dữ liệu CNA và dữ liệu ADP; có trường định danh, trạng thái, product/version và references. Trạng thái PUBLISHED/REJECTED của record khác với đánh giá applicability một deployment.",
+    "description": "Schema chính thức tách CVE metadata, dữ liệu CNA và dữ liệu ADP; có trường định danh, trạng thái, product/version và references. Trạng thái PUBLISHED/REJECTED của record khác với đánh giá applicability một deployment.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CVE",
+    "learning_objectives": [
+      "Phân biệt CVE ID với severity và deployment assessment.",
+      "Giữ đúng authority khi đọc bản mirror."
+    ],
+    "name": "CVE record — định danh, authority và trạng thái tri thức",
+    "normal_behavior": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "prerequisites": [
+      "CONCEPT:ADVISORY"
+    ],
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [
+      "CONCEPT:ADVISORY"
+    ],
+    "research_claim_refs": [
+      "CLAIM:3B7C044F9BD3EA04A5DDE1DB",
+      "CLAIM:981F95374C940B4125598B46",
+      "CLAIM:14D5906C605DC065E20F9DE9",
+      "CLAIM:4080379FA5AE42027550CF8B",
+      "CLAIM:F790CCB081A7D31E7B52367D"
+    ],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:ADCD8C0C9E3CD4C8AC22451A"
+    ],
+    "updated_at": "2026-11-25T05:15:16+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:004A7E5FEAF4A2E693BC7675",
+      "CLAIM:D59671517D032578C31B6C21",
+      "CLAIM:CDFA5DDB7584580FB1C5F203",
+      "CLAIM:CA0519710E20BA2145C8585B",
+      "CLAIM:A0000A278A20C9DDEF0DBC6E",
+      "CLAIM:B598D195DA86A137BE3614DC",
+      "CLAIM:B477D7B090D830D4B2B53BD0",
+      "CLAIM:F11DAB1085009C1042F317B9"
+    ],
+    "created_at": "2026-11-25T02:32:59+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "description": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CVE",
+    "learning_objectives": [
+      "Giải thích CVE bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CVE",
+    "normal_behavior": "Định danh và record công bố lỗ hổng, không phải điểm severity hay bằng chứng mọi deployment bị ảnh hưởng.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:A7E3093DD56E544722EF8FDD"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:15:16+00:00",
+  "entity_id": "CONCEPT:CVE",
+  "id": "HISTORY:1C654283FE75A69774B8DEC3"
+}

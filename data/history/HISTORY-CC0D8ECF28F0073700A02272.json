@@ -1,0 +1,76 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:B50FB636BD236A8D52CDD890"
+    ],
+    "created_at": "2026-11-25T02:33:49+00:00",
+    "description": "CVE:CVE-2026-32647 related_components COMPONENT:WORKER-PROCESS",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:04FEFBFE07004601286190B7",
+    "inference_type": "KEYWORD_ASSOCIATION",
+    "legacy_verification_status": "INFERRED",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "rationale": "Legacy association: Context only; not fault location. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Context only; not fault location",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:1696EE213A5424E97075EA01",
+      "EVIDENCE:198C480BD0F040C0B875841A",
+      "EVIDENCE:280FFDADEB891CC9C19C62D0",
+      "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+      "EVIDENCE:50E46DFFEBA88B1049A4FD9B",
+      "EVIDENCE:5DFD44D1745EC65F51418FC1",
+      "EVIDENCE:99EFFF4C70D5B2FC77D9645D",
+      "EVIDENCE:C59266D723B685ACE2719D33",
+      "EVIDENCE:ED5DE28FAC8FF32E7DA3A310",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-32647",
+    "updated_at": "2026-11-25T04:13:05+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:B50FB636BD236A8D52CDD890"
+    ],
+    "created_at": "2026-11-25T02:33:49+00:00",
+    "description": "CVE:CVE-2026-32647 related_components COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:04FEFBFE07004601286190B7",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1696EE213A5424E97075EA01",
+      "EVIDENCE:198C480BD0F040C0B875841A",
+      "EVIDENCE:280FFDADEB891CC9C19C62D0",
+      "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+      "EVIDENCE:50E46DFFEBA88B1049A4FD9B",
+      "EVIDENCE:5DFD44D1745EC65F51418FC1",
+      "EVIDENCE:99EFFF4C70D5B2FC77D9645D",
+      "EVIDENCE:C59266D723B685ACE2719D33",
+      "EVIDENCE:ED5DE28FAC8FF32E7DA3A310",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-32647",
+    "updated_at": "2026-11-25T02:33:49+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:05+00:00",
+  "entity_id": "REL:04FEFBFE07004601286190B7",
+  "id": "HISTORY:CC0D8ECF28F0073700A02272"
+}

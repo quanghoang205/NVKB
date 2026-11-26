@@ -1,0 +1,25 @@
+{
+  "claim_refs": [
+    "CLAIM:8A08EC41FF6E0ACC9F428BDD"
+  ],
+  "created_at": "2026-11-25T04:22:03+00:00",
+  "cve_ref": "CVE:CVE-2025-23419",
+  "description": "Release-specific official package statement. Source-row extraction, not runtime verification.",
+  "distribution": "ubuntu",
+  "ecosystem": "ubuntu",
+  "entity_type": "DistributionPackage",
+  "fixed_version": "",
+  "id": "PACKAGE:B9C95087F107D0BD3EABB3A5",
+  "name": "nginx / Ubuntu bionic / CVE-2025-23419",
+  "package_name": "nginx",
+  "patch_status": "unknown",
+  "product_id": "PRODUCT:NGINX-OSS",
+  "release": "bionic",
+  "schema_version": "1.2.0",
+  "source_refs": [
+    "EVIDENCE:800C1F6FA1894472CBA43773"
+  ],
+  "updated_at": "2026-11-25T04:22:03+00:00",
+  "verification_limitations": "Snapshot-backed extraction; source refresh/curator mapping and runtime remain separate.",
+  "verification_status": "VERIFIED"
+}

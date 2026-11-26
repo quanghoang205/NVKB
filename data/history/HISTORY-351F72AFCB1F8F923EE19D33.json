@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:81906E1C0397D03C5D9B4A6F",
+    "claim_value": "\"Sai xử lý biểu diễn hoặc chuyển đổi encoding.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:56+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "id": "CLAIM:81906E1C0397D03C5D9B4A6F",
+    "name": "WEAKNESS:CWE-172: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:97ABE046C832384B27C5D13B"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-172",
+    "updated_at": "2026-11-25T02:48:56+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:56+00:00",
+  "entity_id": "CLAIM:81906E1C0397D03C5D9B4A6F",
+  "id": "HISTORY:351F72AFCB1F8F923EE19D33"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "182758f7fce9f0f03cd89ef49ca78012c087d4527b53bf20597fecd74918c63e",
+    "created_at": "2026-11-25T02:32:37+00:00",
+    "description": "Kết quả số học vượt miền biểu diễn của kiểu số.",
+    "document_title": "CWE -\r\n\n    CWE-190: Integer Overflow or Wraparound (5.0)",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:FA9426B951F6B8E59FF3E9A0",
+    "id": "EVIDENCE:FA9426B951F6B8E59FF3E9A0",
+    "local_snapshot_path": "data/raw/documentation/snapshots/182758f7fce9f0f03cd89ef49ca78012c087d4527b53bf20597fecd74918c63e.html",
+    "name": "CWE -\r\n\n    CWE-190: Integer Overflow or Wraparound (5.0)",
+    "paraphrase": "Kết quả số học vượt miền biểu diễn của kiểu số.",
+    "publisher": "MITRE CWE",
+    "retrieved_at": "2026-11-25T02:32:37+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Description / Potential Mitigations",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://cwe.mitre.org/data/definitions/190.html",
+    "updated_at": "2026-11-25T02:32:37+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:37+00:00",
+  "entity_id": "EVIDENCE:FA9426B951F6B8E59FF3E9A0",
+  "id": "HISTORY:A301B1EBE22818CD30D3C2B8"
+}

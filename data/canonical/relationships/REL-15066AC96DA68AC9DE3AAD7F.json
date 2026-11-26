@@ -1,0 +1,31 @@
+{
+  "claim_refs": [],
+  "created_at": "2026-11-25T04:21:17+00:00",
+  "description": "COMPONENT:CONNECTION-LIFECYCLE DEPENDS_ON COMPONENT:EVENT-DRIVEN",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:15066AC96DA68AC9DE3AAD7F",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "name": "DEPENDS_ON",
+  "object_entity_id": "COMPONENT:EVENT-DRIVEN",
+  "predicate": "DEPENDS_ON",
+  "rationale": "Connection tiến triển qua các sự kiện I/O và timer; không phải proof về một CVE.",
+  "reference_availability": "UNKNOWN",
+  "review_required": true,
+  "review_status": "NOT_REVIEWED",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Subject requires object mechanism",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:73508A92036558C7B2D50317"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+  "updated_at": "2026-11-25T04:21:17+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "See source evidence; no implicit all-version applicability"
+}

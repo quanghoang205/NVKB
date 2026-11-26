@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "1c5cf6507c171e0332d04605618ebe735cab8cf1944fda175ecf39f47872601a",
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-1642",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:9474EFFCFC5405DF9D3DC4BF",
+    "id": "EVIDENCE:9474EFFCFC5405DF9D3DC4BF",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/1c5cf6507c171e0332d04605618ebe735cab8cf1944fda175ecf39f47872601a.json",
+    "name": "CVE-2026-1642",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:24+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-1642",
+    "updated_at": "2026-11-25T02:27:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:25+00:00",
+  "entity_id": "EVIDENCE:9474EFFCFC5405DF9D3DC4BF",
+  "id": "HISTORY:35EA1A8E48B23CCFB3B15C95"
+}

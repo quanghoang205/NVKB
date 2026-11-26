@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:3E124339CEA7926D34DF33E3",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:34381B014005CD3D4161E553",
+    "claim_value": "\"Advisory phân loại NULL pointer dereference; không đủ dữ kiện xác định thiếu kiểm NULL ở hàm nào.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:43+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:34381B014005CD3D4161E553",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-35200: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:08:43+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:43+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T05:08:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:26:24+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:3E124339CEA7926D34DF33E3",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:34381B014005CD3D4161E553",
+    "claim_value": "\"Advisory phân loại NULL pointer dereference; không đủ dữ kiện xác định thiếu kiểm NULL ở hàm nào.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:43+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:34381B014005CD3D4161E553",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-35200: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:08:43+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T05:08:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:08:43+00:00",
+  "entity_id": "CLAIM:34381B014005CD3D4161E553",
+  "id": "HISTORY:DCCF6443C6055C143858B6AD"
+}

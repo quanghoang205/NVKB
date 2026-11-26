@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:F83667480742D548F575B9CC",
+    "claim_value": "\"Ranh giới giữa quyền quản trị cấu hình và xử lý lưu lượng trong worker.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:F83667480742D548F575B9CC",
+    "name": "COMPONENT:MASTER-PROCESS: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:10+00:00",
+  "entity_id": "CLAIM:F83667480742D548F575B9CC",
+  "id": "HISTORY:3753A5AEE4EAAB40070918FB"
+}

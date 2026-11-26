@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:6E6EEBB266D787BC1A5FE172",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:55DD3F817F5A0AFD2BD32A94",
+    "claim_value": "\"## Security boundary không phải hộp trên sơ đồ\\n\\nPhần này là suy luận phòng vệ từ cấu trúc trên. Ranh giới client → proxy cần quyết định dữ liệu nào được tin; proxy → upstream cần xác định danh tính đích và chính sách truyền metadata. Master → worker là quan hệ quản lý tiến trình, chưa tự chứng minh mỗi virtual host bị cô lập như một container. TLS kết thúc tại proxy cũng không tự làm đoạn upstream được mã hóa. Những điều này phải được kiểm tra từ cấu hình triển khai, không suy ra từ vị trí trong sơ đồ.\\n\\nInvariant thiết kế: chỉ dùng một thuộc tính identity để quyết định quyền nếu nguồn sinh thuộc tính đó và nơi kiểm tra nó đã được xác định. Đổi tên header không tạo ra nguồn tin cậy. Một bản vẽ tốt ghi cả ai tạo state, ai dùng state và ai hủy state.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:34+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:55DD3F817F5A0AFD2BD32A94",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "DEPLOYMENT:REVERSE-PROXY: pilot_section:Security boundary không phải hộp trên sơ đồ",
+    "observed_at": "2026-11-25T04:20:35+00:00",
+    "predicate": "pilot_section:Security boundary không phải hộp trên sơ đồ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:33D805BB8AC5FA2631CDD0EA"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "DEPLOYMENT:REVERSE-PROXY",
+    "updated_at": "2026-11-25T04:20:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:35+00:00",
+  "entity_id": "CLAIM:55DD3F817F5A0AFD2BD32A94",
+  "id": "HISTORY:FE09CE3074C5C8D6E504FA04"
+}

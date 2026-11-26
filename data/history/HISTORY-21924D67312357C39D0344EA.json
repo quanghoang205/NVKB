@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:4D1ECF29ABB268B0EEE0728D",
+    "claim_value": "\"TLS session ↔ HTTP virtual server.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:33+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "id": "CLAIM:4D1ECF29ABB268B0EEE0728D",
+    "name": "DIRECTIVE:SSL-VERIFY-CLIENT: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AAB65CD4FFD0CC297AE37B2B"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:33+00:00",
+  "entity_id": "CLAIM:4D1ECF29ABB268B0EEE0728D",
+  "id": "HISTORY:21924D67312357C39D0344EA"
+}

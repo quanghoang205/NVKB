@@ -1,0 +1,61 @@
+group: multiplexing
+name: HTTP/2 — flow control và lifetime
+shared_knowledge: [PROTOCOL:HTTP-2, COMPONENT:EVENT-DRIVEN, COMPONENT:MEMORY-POOL]
+knowledge:
+  - id: PROTOCOL:HTTP-2
+    name: HTTP/2 — multiplexing, cửa sổ và tài nguyên worker
+    source: https://www.rfc-editor.org/rfc/rfc9113.html
+    locator: §5.1 Stream States; §5.2 Flow Control; §6.9 WINDOW_UPDATE
+    excerpt: Flow control is used for both
+    source_fact: RFC 9113 quy định flow control ở cả stream và connection; cửa sổ thuộc từng hướng nhận trên một hop, không biểu diễn bộ nhớ tự do của toàn server.
+    prerequisites: [COMPONENT:CONNECTION-LIFECYCLE, COMPONENT:EVENT-DRIVEN]
+    objectives: [Phân biệt connection window với stream window., Giải thích vì sao giới hạn stream và worker_connections là hai loại tài nguyên.]
+    body: |
+      ## Hoạt động bình thường
+
+      HTTP/2 ghép nhiều stream trên một TCP connection. Mỗi stream có trạng thái và message riêng, còn connection giữ các giới hạn dùng chung. Flow control theo RFC là credit do bên nhận cấp; bên gửi tuân giới hạn ở cả hai cấp. Credit này có hướng, và chỉ thuộc hop đang trao đổi. Proxy kết thúc hop client và khởi tạo hop upstream không thể sao chép mọi trạng thái vận chuyển như một message bất biến.
+
+      ## Ownership và lifecycle
+
+      Stream HTTP có thể hoàn tất trước connection. Một request proxy còn liên quan upstream connection và output đang chờ. Khi không cấp thêm được connection hoặc tài nguyên, nhánh lỗi phải giải phóng đúng những phần đã được tạo mà không để callback cũ dùng state đã hủy. Đây là mô hình review ownership; RFC không mô tả allocator nội bộ của NGINX.
+
+      ## Invariant và tradeoff
+
+      Cửa sổ là số có giới hạn và phải cập nhật bằng phép toán giữ miền hợp lệ. Nới credit giúp throughput trên đường truyền có độ trễ nhưng tăng dữ liệu đang bay và ngân sách nhận. worker_connections là giới hạn đối tượng connection của worker, không phải credit HTTP/2 và không phải số request HTTP tối đa. Đổi một giá trị không sửa được phép toán hoặc lifetime bug ở giá trị kia.
+
+      ## Nguyên tắc phòng vệ
+
+      Review các đường cập nhật window, cấp tài nguyên thất bại và cleanup. Giới hạn tài nguyên phải làm request thất bại có kiểm soát, không phá invariant bộ nhớ. Các counter protocol, buffer capacity và lifecycle là ba nghĩa vụ riêng. Bài CVE-2026-123007 bàn về window; CVE-2026-123633 bàn về use-after-free khi tài nguyên connection hạn chế. Không dùng hai mô tả làm hướng dẫn tạo traffic.
+    assessment: Có thể khẳng định tăng worker_connections sẽ vá lỗi flow control không?
+    answer: Không. Một bên là giới hạn tài nguyên worker, bên kia là state/counter giao thức; remediation phải dựa release chứa bản sửa.
+articles:
+  - cve: CVE-2026-123007
+    summary: Sai lệch flow-control window HTTP/2 có thể dẫn đến heap overflow và worker fault theo CNA.
+    architecture: HTTP/2 flow control tại worker, chưa xác định counter hay hàm cập nhật cụ thể.
+    normal: Cửa sổ ở stream và connection phải duy trì miền số hợp lệ qua mọi cập nhật trước cấp phát hoặc ghi dữ liệu.
+    mechanism: CNA nêu window vượt ngưỡng cho phép, có thể dẫn đến heap overflow. Liên hệ giữa credit và buffer size là invariant diễn giải; không khẳng định phép toán C cụ thể.
+    applicability: NGINX OSS hoặc Plus sử dụng HTTP/2; không tự áp cho HTTP/3 dù cùng tên flow control.
+    impact: Crash worker và memory corruption được CNA công bố.
+    potential: CNA nêu khả năng code execution có điều kiện liên quan ASLR; chưa xác minh thực thi thực tế hoặc quyền của code.
+    principle: Kiểm miền số của counter trước khi dùng nó như dung lượng hay quyền ghi dữ liệu.
+    defense: Vá implementation và duy trì giới hạn tài nguyên có kiểm soát; không xem một window nhỏ là chứng cứ miễn nhiễm.
+    patch_note: Fix 1.30.7/1.31.9; entry upstream bắt đầu affected từ 1.9.5.
+    question: Flow-control credit có tương đương quyền ghi bất kỳ byte nào vào heap không?
+    answer: Không; credit chỉ là hạn mức giao thức, vẫn cần kiểm allocation capacity và offset.
+    unknown: Phép toán, buffer và call path cụ thể chưa được review độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-123633
+    summary: HTTP/2 proxying có thể gặp use-after-free khi worker thiếu ngân sách connection.
+    architecture: Client HTTP/2, request proxy và tài nguyên worker connection; fault location chính xác chưa xác định.
+    normal: Không lấy được upstream connection phải kết thúc hoặc chờ có kiểm soát, giữ ownership request nhất quán với callback còn chờ.
+    mechanism: CNA nêu use-after-free khi worker_connections gần cạn. Giải thích theo nhánh xử lý lỗi tài nguyên là diễn giải, chưa chứng minh cặp free/use.
+    applicability: HTTP/2 cho client, proxy request đến backend và worker chạy với tài nguyên worker_connections hạn chế theo CNA.
+    impact: Use-after-free có thể gây gián đoạn worker/DoS.
+    potential: Code execution là tác động có thể theo CNA với điều kiện ASLR; không có xác nhận root hoặc control-plane compromise.
+    principle: Nhánh resource exhaustion phải tuân cùng quy tắc lifetime như đường thành công.
+    defense: Cập nhật bản sửa, theo dõi ngân sách connection để vận hành ổn định; tăng giới hạn không thay patch.
+    patch_note: Fix 1.30.7/1.31.9; affected bắt đầu 1.19.7, khác phạm vi 123007.
+    question: Vì sao một lỗi chỉ được mô tả khi thiếu tài nguyên vẫn là lỗi correctness?
+    answer: Thiếu tài nguyên là trạng thái hệ thống hợp lệ cần được xử lý; nó không cho phép dùng con trỏ đã giải phóng.
+    unknown: Nhánh cleanup và object liên quan chưa được xác minh bằng review patch.
+    maturity: TECHNICAL_DRAFT

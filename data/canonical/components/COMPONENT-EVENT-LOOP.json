@@ -1,0 +1,37 @@
+{
+  "architecture_position": "Mọi request trong worker chia sẻ ngân sách thời gian xử lý.",
+  "claim_refs": [
+    "CLAIM:2328FDD109A07BEF2C78298C",
+    "CLAIM:6593786B56069DCD8AE9E2F9",
+    "CLAIM:2289BD62430EEC74F294DF31",
+    "CLAIM:E475D38B1AF8CE1AD2129338",
+    "CLAIM:39D4A63A8849E270A9556B65",
+    "CLAIM:9ABEAC3BF6085CFE6F4A7383",
+    "CLAIM:B246C5F3A9D195A614293AB3",
+    "CLAIM:E9A9AA539B2A2101B925884E"
+  ],
+  "created_at": "2026-11-25T02:32:04+00:00",
+  "defensive_principles": "Tách công việc blocking qua cơ chế được hỗ trợ và kiểm soát timeout/giới hạn công việc.",
+  "definition": "Vòng lặp điều phối I/O event, timer và posted event.",
+  "description": "Vòng lặp điều phối I/O event, timer và posted event.",
+  "diagram": "",
+  "entity_type": "Component",
+  "failure_impact": "Suy giảm availability của worker.",
+  "id": "COMPONENT:EVENT-LOOP",
+  "learning_objectives": [
+    "Giải thích Event loop bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "Event loop",
+  "normal_behavior": "Vòng lặp gọi backend sự kiện của hệ điều hành, xử lý các callback sẵn sàng và chạy timer đến hạn.",
+  "related_failure_classes": "Infinite loop; excessive CPU usage.",
+  "related_knowledge": [],
+  "safety_assumptions": "Handler không được chạy vòng lặp vô hạn hoặc gọi thư viện blocking không kiểm soát.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Mọi request trong worker chia sẻ ngân sách thời gian xử lý.",
+  "source_refs": [
+    "EVIDENCE:3E71E844253FAD718F69DF57"
+  ],
+  "updated_at": "2026-11-25T04:12:57+00:00",
+  "verification_status": "INFERRED"
+}

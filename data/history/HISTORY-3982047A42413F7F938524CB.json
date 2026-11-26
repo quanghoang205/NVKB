@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:2D7137ED0459B49BE291AA83",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:53DAAF09CE6062BF251881DF",
+    "claim_value": "\"Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:07+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:570365D44AC2D3327870962A: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:570365D44AC2D3327870962A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:53DAAF09CE6062BF251881DF",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:ADVISORY: normal_behavior",
+    "observation_key": "OBSERVATION:4FAB6822639D7BB6C40F4F73",
+    "observed_at": "2026-11-25T02:33:07+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "CONCEPT:ADVISORY",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:33:06+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:570365D44AC2D3327870962A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T04:12:36+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:53DAAF09CE6062BF251881DF",
+    "claim_value": "\"Thông báo nhà cung cấp về phạm vi, phiên bản và biện pháp xử lý.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:33:07+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:570365D44AC2D3327870962A"
+    ],
+    "id": "CLAIM:53DAAF09CE6062BF251881DF",
+    "name": "CONCEPT:ADVISORY: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:570365D44AC2D3327870962A"
+    ],
+    "subject_entity_id": "CONCEPT:ADVISORY",
+    "updated_at": "2026-11-25T02:33:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:36+00:00",
+  "entity_id": "CLAIM:53DAAF09CE6062BF251881DF",
+  "id": "HISTORY:3982047A42413F7F938524CB"
+}

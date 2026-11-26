@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:23+00:00",
+  "content_hash": "6875094d3b7e41419e58aaa64eda79c2dda1d02c902b05eb60bf72ce61516ec0",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/6875094d3b7e41419e58aaa64eda79c2dda1d02c902b05eb60bf72ce61516ec0.html",
+  "retrieved_at": "2026-11-25T02:26:23+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-34161"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "d173fc5b24f9a7962ca9deacdfdd76bea4c648af77e35e8746f400015734cd66",
+    "created_at": "2026-11-25T02:27:07+00:00",
+    "description": "Debian trixie: fixed_version=1.26.3-3+deb13u11, status=fixed.",
+    "document_title": "CVE-2026-123634",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:08C3D38ED3E70F29E118FD2B",
+    "id": "EVIDENCE:08C3D38ED3E70F29E118FD2B",
+    "local_snapshot_path": "data/raw/distribution/snapshots/d173fc5b24f9a7962ca9deacdfdd76bea4c648af77e35e8746f400015734cd66.html",
+    "name": "CVE-2026-123634",
+    "paraphrase": "Debian trixie: fixed_version=1.26.3-3+deb13u11, status=fixed.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:07+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=trixie",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-123634",
+    "updated_at": "2026-11-25T02:27:07+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:07+00:00",
+  "entity_id": "EVIDENCE:08C3D38ED3E70F29E118FD2B",
+  "id": "HISTORY:173D6CB287CA9A1BBB6B7D94"
+}

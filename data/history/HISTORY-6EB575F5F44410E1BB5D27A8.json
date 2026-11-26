@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:98CA8F0A621398AB919F0D36",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F709F5AC9579ACF8765010CE",
+    "claim_value": "\"## Identity và invariant\\n\\nAddress validation kiểm tra khả năng nhận gói tại địa chỉ mà peer sử dụng, hỗ trợ hạn chế amplification. Nó không chứng minh danh tính tài khoản và không cấp quyền ứng dụng. Connection ID phục vụ nhận diện connection, không nên bị dùng thay chứng cứ authorization. Khi deployment dựa vào địa chỉ nguồn cho policy, cần phân biệt địa chỉ quan sát, địa chỉ đã xác nhận và identity được ứng dụng xác thực.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:33+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F709F5AC9579ACF8765010CE",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:QUIC: v1.3:knowledge:Identity và invariant",
+    "observed_at": "2026-11-25T05:08:33+00:00",
+    "predicate": "v1.3:knowledge:Identity và invariant",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T05:08:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:33+00:00",
+  "entity_id": "CLAIM:F709F5AC9579ACF8765010CE",
+  "id": "HISTORY:6EB575F5F44410E1BB5D27A8"
+}

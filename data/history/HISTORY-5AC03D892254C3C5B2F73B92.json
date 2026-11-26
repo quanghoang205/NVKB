@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "02a37e8e86111cdfd3d5d199a745a365fdccf341a97398fae7ea09adf11d4c0d",
+    "created_at": "2026-11-25T02:27:44+00:00",
+    "description": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2026-28755",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:2D39DBF7B16AFE4FC8C7C08A",
+    "id": "EVIDENCE:2D39DBF7B16AFE4FC8C7C08A",
+    "local_snapshot_path": "data/raw/distribution/snapshots/02a37e8e86111cdfd3d5d199a745a365fdccf341a97398fae7ea09adf11d4c0d.html",
+    "name": "CVE-2026-28755",
+    "paraphrase": "Debian bullseye: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:27:44+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=bullseye",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-28755",
+    "updated_at": "2026-11-25T02:27:44+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:44+00:00",
+  "entity_id": "EVIDENCE:2D39DBF7B16AFE4FC8C7C08A",
+  "id": "HISTORY:5AC03D892254C3C5B2F73B92"
+}

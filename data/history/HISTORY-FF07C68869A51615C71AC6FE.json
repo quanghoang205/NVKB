@@ -1,0 +1,33 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:A5E4D9810249A8F2C302F920"
+    ],
+    "created_at": "2026-11-25T02:33:42+00:00",
+    "description": "CVE:CVE-2026-121810 related_protocols PROTOCOL:HTTP-3",
+    "entity_type": "Relationship",
+    "id": "REL:96409CFDF71649C80D9A7779",
+    "name": "related_protocols",
+    "object_entity_id": "PROTOCOL:HTTP-3",
+    "predicate": "related_protocols",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0D0FFCF269CB7D3F231487E3",
+      "EVIDENCE:2B1F5E6BC8E120F435E4B445",
+      "EVIDENCE:3C394C690A35530F2AB31721",
+      "EVIDENCE:5B1854AD17ECCD3F5E941C47",
+      "EVIDENCE:65256ECFFD16E574A729002D",
+      "EVIDENCE:6CCDF61BBB4FA184472E795D",
+      "EVIDENCE:9FC3BDAB06FE21AE81B0180F",
+      "EVIDENCE:FA542FB5096F8695BC0FAF57"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-121810",
+    "updated_at": "2026-11-25T02:33:42+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:42+00:00",
+  "entity_id": "REL:96409CFDF71649C80D9A7779",
+  "id": "HISTORY:FF07C68869A51615C71AC6FE"
+}

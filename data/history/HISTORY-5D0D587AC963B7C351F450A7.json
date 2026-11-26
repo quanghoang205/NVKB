@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8",
+    "created_at": "2026-11-25T02:26:20+00:00",
+    "description": "Debian buster: fixed_version=not specified, status=not-affected.",
+    "document_title": "CVE-2024-32760",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:C09CC543B48F96A7773676C9",
+    "id": "EVIDENCE:C09CC543B48F96A7773676C9",
+    "local_snapshot_path": "data/raw/distribution/snapshots/6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8.html",
+    "name": "CVE-2024-32760",
+    "paraphrase": "Debian buster: fixed_version=not specified, status=not-affected.",
+    "publisher": "Debian Security Team",
+    "retrieved_at": "2026-11-25T02:26:20+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "table Fixed Version; package=nginx; release=buster",
+    "source_refs": [],
+    "source_type": "distribution_tracker",
+    "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-32760",
+    "updated_at": "2026-11-25T02:26:20+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:20+00:00",
+  "entity_id": "EVIDENCE:C09CC543B48F96A7773676C9",
+  "id": "HISTORY:5D0D587AC963B7C351F450A7"
+}

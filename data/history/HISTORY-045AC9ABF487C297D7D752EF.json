@@ -1,0 +1,76 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:56DCE108019554AD39F415DF"
+    ],
+    "created_at": "2026-11-25T02:33:53+00:00",
+    "description": "CVE:CVE-2026-42945 related_modules MODULE:NGX-HTTP-REWRITE-MODULE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:1C791A0853EE35E15FD53959",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+    "predicate": "related_modules",
+    "rationale": "Legacy association: Document context; not causal proof. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Document context; not causal proof",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:32FA0944FAC2777E62ABDC55",
+      "EVIDENCE:3736739F84F851A4D69EDC0D",
+      "EVIDENCE:3A64681628B462A9B4A1EB19",
+      "EVIDENCE:83C382F9031A721F86C84AE8",
+      "EVIDENCE:8BD094C55AE576DA927DC8CE",
+      "EVIDENCE:94BAD2DEB5AC33DA6B9AF3E0",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:9E32087168F6A187D0C0545D",
+      "EVIDENCE:D7499FAAD66ACA4A6C462E03",
+      "EVIDENCE:DC1432949B4CBBFA7575048F"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T04:13:06+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:56DCE108019554AD39F415DF"
+    ],
+    "created_at": "2026-11-25T02:33:53+00:00",
+    "description": "CVE:CVE-2026-42945 related_modules MODULE:NGX-HTTP-REWRITE-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:1C791A0853EE35E15FD53959",
+    "name": "related_modules",
+    "object_entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+    "predicate": "related_modules",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:32FA0944FAC2777E62ABDC55",
+      "EVIDENCE:3736739F84F851A4D69EDC0D",
+      "EVIDENCE:3A64681628B462A9B4A1EB19",
+      "EVIDENCE:83C382F9031A721F86C84AE8",
+      "EVIDENCE:8BD094C55AE576DA927DC8CE",
+      "EVIDENCE:94BAD2DEB5AC33DA6B9AF3E0",
+      "EVIDENCE:9A41A4C86EE0F14F74983A61",
+      "EVIDENCE:9E32087168F6A187D0C0545D",
+      "EVIDENCE:D7499FAAD66ACA4A6C462E03",
+      "EVIDENCE:DC1432949B4CBBFA7575048F"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42945",
+    "updated_at": "2026-11-25T02:33:53+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:06+00:00",
+  "entity_id": "REL:1C791A0853EE35E15FD53959",
+  "id": "HISTORY:045AC9ABF487C297D7D752EF"
+}

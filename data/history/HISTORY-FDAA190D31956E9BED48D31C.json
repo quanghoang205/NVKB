@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:8B9690BEE98C9D78D18DAE96"
+    ],
+    "created_at": "2026-11-25T02:26:23+00:00",
+    "description": "CVE:CVE-2024-34161 affects PRODUCT:NGINX-OSS",
+    "entity_type": "Relationship",
+    "id": "REL:639DB92E726332799ECD23F7",
+    "name": "affects",
+    "object_entity_id": "PRODUCT:NGINX-OSS",
+    "predicate": "affects",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:6B525A3021A1B63C80CBC42A"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-34161",
+    "updated_at": "2026-11-25T02:26:23+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:23+00:00",
+  "entity_id": "REL:639DB92E726332799ECD23F7",
+  "id": "HISTORY:FDAA190D31956E9BED48D31C"
+}

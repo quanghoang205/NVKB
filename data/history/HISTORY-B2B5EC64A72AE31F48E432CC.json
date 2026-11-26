@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:B6B52BD5F2407348C184D134",
+    "claim_value": "\"Start-line, header và cơ chế độ dài body xác định ranh giới message trên kết nối; parser phải xử lý dữ liệu theo từng phần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:19+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "id": "CLAIM:B6B52BD5F2407348C184D134",
+    "name": "PROTOCOL:HTTP-1.1: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:96FE1EE21A4EF574C0704E19"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-1.1",
+    "updated_at": "2026-11-25T02:44:19+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:19+00:00",
+  "entity_id": "CLAIM:B6B52BD5F2407348C184D134",
+  "id": "HISTORY:B2B5EC64A72AE31F48E432CC"
+}

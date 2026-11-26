@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314",
+    "created_at": "2026-11-25T02:28:14+00:00",
+    "description": "Mô tả và điều kiện do CNA công bố.",
+    "document_title": "CVE-2026-42934",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:AB6E40B85C793808DE349809",
+    "id": "EVIDENCE:AB6E40B85C793808DE349809",
+    "local_snapshot_path": "data/raw/cve/snapshots/a3262e71e4160a82072bb2d5e77530423c0f91117a8d54a983d0af07dc337314.json",
+    "name": "CVE-2026-42934",
+    "paraphrase": "Mô tả và điều kiện do CNA công bố.",
+    "publisher": "CVE Program / CNA",
+    "retrieved_at": "2026-11-25T02:28:11+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/descriptions",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/42xxx/CVE-2026-42934.json",
+    "updated_at": "2026-11-25T02:28:14+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:14+00:00",
+  "entity_id": "EVIDENCE:AB6E40B85C793808DE349809",
+  "id": "HISTORY:DFE3040F5FA329C9D4762995"
+}

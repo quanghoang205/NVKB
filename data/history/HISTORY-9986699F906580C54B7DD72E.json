@@ -1,0 +1,414 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "resolver use-after-free in OCSP",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:8AE9D1829E390A898EC05213"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:006698BD0792909E5FCB18CA",
+      "CLAIM:024E2BA5461C1983B27BE96A",
+      "CLAIM:060272F1AA12F2547FC838A8",
+      "CLAIM:0B6741E1E4108EAE524D003B",
+      "CLAIM:0CCB7C874DF5EE0353568439",
+      "CLAIM:19429D93A7EF2682B3F545FD",
+      "CLAIM:1EF701037BEB53AD17CFFED7",
+      "CLAIM:21BE64E5AF0ADFD776A85D5D",
+      "CLAIM:2C260166AC8864A9134B2B7E",
+      "CLAIM:32E6D0ACC75EEA413725BC4D",
+      "CLAIM:36A3385E4674B6277F471169",
+      "CLAIM:37A421906EDAD84B18DF6E0E",
+      "CLAIM:38623189ECBE3B9B4CA522CF",
+      "CLAIM:41E9F20F46C1E9092C2F7FA3",
+      "CLAIM:431E4E182895AECFAA41EAEE",
+      "CLAIM:4C871CDD458715855E1A07D1",
+      "CLAIM:4E951F500F4446D10B8B58D3",
+      "CLAIM:6A97F8543CC30C66657BFEE0",
+      "CLAIM:7030CBC68FA9274E7AF130D1",
+      "CLAIM:75C68BFB95B5AD89E22A0187",
+      "CLAIM:75D50C37225A02FDFBF0A7F5",
+      "CLAIM:7DCD3F3373110FB5967126D4",
+      "CLAIM:80C2F25D2C5476AF53E0F949",
+      "CLAIM:81D371F8383C6655E7A7641F",
+      "CLAIM:875877305BD54B68DB933F05",
+      "CLAIM:89A33475F1DD01537E59A290",
+      "CLAIM:9100BF2A940769C4EA2BECDB",
+      "CLAIM:99E8F870C914FABEB0E00648",
+      "CLAIM:A05B46CD39DCAC5A0812A4E6",
+      "CLAIM:C3736341CE81523105AC0ACA",
+      "CLAIM:C3CD6E1876BD44296FD4E593",
+      "CLAIM:C6F76DA62D493EF4CA3A35E6",
+      "CLAIM:EEBCC53449AC67F81D7D5714",
+      "CLAIM:F07B82BCF8213C2070A64A10",
+      "CLAIM:FC2CDF5662251B049794B554"
+    ],
+    "condition_refs": [
+      "CONDITION:4273934B0FFE79F2ED4AC09C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Limited data modification hoặc worker restart theo CNA.",
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "related_components",
+      "related_modules",
+      "related_protocols",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions",
+      "unresolved_conflicts"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-40701",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá NGINX và rà soát xử lý timeout/cancellation; chỉ chọn resolver tin cậy không chứng minh lỗi lifetime đã hết."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:64703E0376FA906D2B592CC2",
+      "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+      "PACKAGE:F8EE73A69851E2DB43213FFC",
+      "PACKAGE:F9987CC31890F8A972270118"
+    ],
+    "distribution_status": [
+      "PACKAGE:64703E0376FA906D2B592CC2",
+      "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+      "PACKAGE:F8EE73A69851E2DB43213FFC",
+      "PACKAGE:F9987CC31890F8A972270118"
+    ],
+    "documented_configuration_context": "HTTP ssl_verify_client on hoặc optional, OCSP on hoặc leaf cùng resolver theo mô tả CNA; còn điều kiện ngoài kiểm soát tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free trong đường resolver phục vụ OCSP có thể restart worker hoặc gây sửa đổi bộ nhớ giới hạn.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-40701",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-05-13T16:07:37.463000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.",
+      "Trả lời có evidence: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-40701",
+    "normal_component_behavior": "OCSP chờ địa chỉ responder và kết quả xác minh trong context còn hợp lệ; cleanup phải hủy liên hệ tới callback muộn.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không mở rộng thành confirmed RCE hay thu hồi quyền root; nguồn của CVE này nêu tác động giới hạn.",
+    "publication_date": "2026-05-13T14:12:43.588000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C798A225C34EAE01A5DB3D8C"
+    ],
+    "related_components": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:DNS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free trong đường resolver phục vụ OCSP có thể restart worker hoặc gây sửa đổi bộ nhớ giới hạn.\n\n## 2. CVE identity và product scope\n\nCVE-2026-40701; published 2026-05-13T14:12:43.588000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-37A421906EDAD84B18DF6E0E|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-DNS|DNS resolver — cache, công việc chờ và quyền sở hữu]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-CONNECTION-LIFECYCLE|Connection và HTTP request: hai vòng đời]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP SSL client-certificate OCSP validation dùng resolver; không suy toàn bộ DNS resolver đều gặp cùng lỗi. [[CLAIM-89A33475F1DD01537E59A290|Claim / locator]].\n\n## 5. Normal component behavior\n\nOCSP chờ địa chỉ responder và kết quả xác minh trong context còn hợp lệ; cleanup phải hủy liên hệ tới callback muộn. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận heap-use-after-free trong điều kiện OCSP/resolver. Diễn giải theo lifetime công việc chờ; chưa có cặp allocation/free được review. [[CLAIM-32E6D0ACC75EEA413725BC4D|Claim / locator]].\n\n## 7. Relevant security principles\n\nChấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP ssl_verify_client on hoặc optional, OCSP on hoặc leaf cùng resolver theo mô tả CNA; còn điều kiện ngoài kiểm soát tác nhân. [[CLAIM-89A33475F1DD01537E59A290|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.19.0-1.30.0; not vulnerable/fixed branches 1.31.0+, 1.30.1+. [[CLAIM-4E951F500F4446D10B8B58D3|Claim / locator]].\n\nFix 1.30.1/1.31.0; affected từ 1.19.0, khác resolver subrequest CVE-2026-123634. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nLimited data modification hoặc worker restart theo CNA. [[CLAIM-0CCB7C874DF5EE0353568439|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông mở rộng thành confirmed RCE hay thu hồi quyền root; nguồn của CVE này nêu tác động giới hạn. [[CLAIM-6A97F8543CC30C66657BFEE0|Claim / locator]].\n\n## 12. Remediation principles\n\nVá NGINX và rà soát xử lý timeout/cancellation; chỉ chọn resolver tin cậy không chứng minh lỗi lifetime đã hết. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-4E951F500F4446D10B8B58D3|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.1/1.31.0; affected từ 1.19.0, khác resolver subrequest CVE-2026-123634.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-DNS|DNS resolver — cache, công việc chờ và quyền sở hữu]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-CONNECTION-LIFECYCLE|Connection và HTTP request: hai vòng đời]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.\n- Trả lời có evidence: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?\n\n## 17. Discussion questions\n\nTại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?\n\nGợi ý đáp án: Memory safety phụ thuộc ownership và xử lý trạng thái của implementation, kể cả khi dữ liệu đến từ nguồn tin cậy.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-37A421906EDAD84B18DF6E0E|CLAIM:37A421906EDAD84B18DF6E0E]]\n- applicability: [[CLAIM-89A33475F1DD01537E59A290|CLAIM:89A33475F1DD01537E59A290]]\n- impact: [[CLAIM-0CCB7C874DF5EE0353568439|CLAIM:0CCB7C874DF5EE0353568439]]\n- potential: [[CLAIM-6A97F8543CC30C66657BFEE0|CLAIM:6A97F8543CC30C66657BFEE0]]\n- mechanism: [[CLAIM-32E6D0ACC75EEA413725BC4D|CLAIM:32E6D0ACC75EEA413725BC4D]]\n- versions: [[CLAIM-4E951F500F4446D10B8B58D3|CLAIM:4E951F500F4446D10B8B58D3]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject, callback và điểm cleanup của OCSP/resolver chưa xác minh độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:37A421906EDAD84B18DF6E0E",
+      "CLAIM:89A33475F1DD01537E59A290",
+      "CLAIM:0CCB7C874DF5EE0353568439",
+      "CLAIM:6A97F8543CC30C66657BFEE0",
+      "CLAIM:32E6D0ACC75EEA413725BC4D",
+      "CLAIM:4E951F500F4446D10B8B58D3"
+    ],
+    "research_group": "resolver",
+    "root_cause_summary": "CNA xác nhận heap-use-after-free trong điều kiện OCSP/resolver. Diễn giải theo lifetime công việc chờ; chưa có cặp allocation/free được review.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4B3B8C8FA68C9864EA358311",
+      "SEVERITY:9C8BF5A47B9381E2103C650F",
+      "SEVERITY:A33142870EA18FBA1F6B6E7E",
+      "SEVERITY:B109F3C3B40ADF5CD5B9DB91",
+      "SEVERITY:D4F742635BC2F7DE3608CAFB"
+    ],
+    "source_refs": [
+      "EVIDENCE:1E38E9538EDEC757A6052B25",
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5",
+      "EVIDENCE:6CC40301E1F75C3E24EE61AF",
+      "EVIDENCE:7E2D52DB67E361A71B740E9E",
+      "EVIDENCE:84CF755B2579F9D84607D8E2",
+      "EVIDENCE:91376BB607136AEE7D9CF0A9",
+      "EVIDENCE:A236E8E52A0F6D1220BF705B",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:B4FBC86D74EE4D3A8D1F5FB3",
+      "EVIDENCE:DD998218BBEB14FC1E34A55D"
+    ],
+    "title": "resolver use-after-free in OCSP",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Object, callback và điểm cleanup của OCSP/resolver chưa xác minh độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:49:26+00:00",
+    "upstream_affected_expression": "1.19.0-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "resolver use-after-free in OCSP",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:8AE9D1829E390A898EC05213"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:006698BD0792909E5FCB18CA",
+      "CLAIM:024E2BA5461C1983B27BE96A",
+      "CLAIM:060272F1AA12F2547FC838A8",
+      "CLAIM:0B6741E1E4108EAE524D003B",
+      "CLAIM:0CCB7C874DF5EE0353568439",
+      "CLAIM:19429D93A7EF2682B3F545FD",
+      "CLAIM:1EF701037BEB53AD17CFFED7",
+      "CLAIM:21BE64E5AF0ADFD776A85D5D",
+      "CLAIM:2C260166AC8864A9134B2B7E",
+      "CLAIM:32E6D0ACC75EEA413725BC4D",
+      "CLAIM:36A3385E4674B6277F471169",
+      "CLAIM:37A421906EDAD84B18DF6E0E",
+      "CLAIM:38623189ECBE3B9B4CA522CF",
+      "CLAIM:41E9F20F46C1E9092C2F7FA3",
+      "CLAIM:431E4E182895AECFAA41EAEE",
+      "CLAIM:4C871CDD458715855E1A07D1",
+      "CLAIM:4E951F500F4446D10B8B58D3",
+      "CLAIM:6A97F8543CC30C66657BFEE0",
+      "CLAIM:7030CBC68FA9274E7AF130D1",
+      "CLAIM:75C68BFB95B5AD89E22A0187",
+      "CLAIM:75D50C37225A02FDFBF0A7F5",
+      "CLAIM:7DCD3F3373110FB5967126D4",
+      "CLAIM:80C2F25D2C5476AF53E0F949",
+      "CLAIM:81D371F8383C6655E7A7641F",
+      "CLAIM:875877305BD54B68DB933F05",
+      "CLAIM:89A33475F1DD01537E59A290",
+      "CLAIM:9100BF2A940769C4EA2BECDB",
+      "CLAIM:99E8F870C914FABEB0E00648",
+      "CLAIM:A05B46CD39DCAC5A0812A4E6",
+      "CLAIM:C3736341CE81523105AC0ACA",
+      "CLAIM:C3CD6E1876BD44296FD4E593",
+      "CLAIM:C6F76DA62D493EF4CA3A35E6",
+      "CLAIM:EEBCC53449AC67F81D7D5714",
+      "CLAIM:F07B82BCF8213C2070A64A10",
+      "CLAIM:FC2CDF5662251B049794B554"
+    ],
+    "condition_refs": [
+      "CONDITION:4273934B0FFE79F2ED4AC09C"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Limited data modification hoặc worker restart theo CNA.",
+    "created_at": "2026-11-25T02:27:55+00:00",
+    "curated_fields": [
+      "confirmed_impact",
+      "curation_version",
+      "defensive_recommendations",
+      "documented_configuration_context",
+      "editorial_maturity",
+      "editorial_review_note",
+      "educational_summary",
+      "learning_objectives",
+      "normal_component_behavior",
+      "potential_impact",
+      "research_body",
+      "research_claim_refs",
+      "research_group",
+      "root_cause_summary",
+      "security_assumption_violated",
+      "unknown_conditions"
+    ],
+    "curation_version": "1.3.0",
+    "cve_id": "CVE-2026-40701",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Vá NGINX và rà soát xử lý timeout/cancellation; chỉ chọn resolver tin cậy không chứng minh lỗi lifetime đã hết."
+    ],
+    "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:64703E0376FA906D2B592CC2",
+      "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+      "PACKAGE:F8EE73A69851E2DB43213FFC",
+      "PACKAGE:F9987CC31890F8A972270118"
+    ],
+    "distribution_status": [
+      "PACKAGE:64703E0376FA906D2B592CC2",
+      "PACKAGE:BDABB04A85EDBFE4CF8AE1D2",
+      "PACKAGE:F8EE73A69851E2DB43213FFC",
+      "PACKAGE:F9987CC31890F8A972270118"
+    ],
+    "documented_configuration_context": "HTTP ssl_verify_client on hoặc optional, OCSP on hoặc leaf cùng resolver theo mô tả CNA; còn điều kiện ngoài kiểm soát tác nhân.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "editorial_maturity": "TECHNICAL_DRAFT",
+    "editorial_review_note": "TECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.",
+    "educational_summary": "Use-after-free trong đường resolver phục vụ OCSP có thể restart worker hoặc gây sửa đổi bộ nhớ giới hạn.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.30.1",
+      "VERSION:NGINX-1.31.0"
+    ],
+    "id": "CVE:CVE-2026-40701",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "kev_catalogue_version": "2026.11.24",
+    "kev_checked_at": "2026-11-25T04:13:40+00:00",
+    "kev_evidence_id": "EVIDENCE:84FC256F5DC35781280F00D2",
+    "kev_snapshot_status": "ABSENT_AT_SNAPSHOT",
+    "kev_status": "UNKNOWN",
+    "last_modified_date": "2026-05-13T16:07:37.463000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Giải thích invariant: Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.",
+      "Trả lời có evidence: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?"
+    ],
+    "lifecycle_rationale": "No product/version-specific NGINX support lifecycle authority imported; package fixes do not establish support entitlement.",
+    "lifecycle_status": "UNKNOWN",
+    "name": "CVE-2026-40701",
+    "normal_component_behavior": "OCSP chờ địa chỉ responder và kết quả xác minh trong context còn hợp lệ; cleanup phải hủy liên hệ tới callback muộn.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Không mở rộng thành confirmed RCE hay thu hồi quyền root; nguồn của CVE này nêu tác động giới hạn.",
+    "publication_date": "2026-05-13T14:12:43.588000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:C798A225C34EAE01A5DB3D8C"
+    ],
+    "related_components": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-HTTP-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:DNS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-416"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "research_body": "## 1. Executive summary\n\nUse-after-free trong đường resolver phục vụ OCSP có thể restart worker hoặc gây sửa đổi bộ nhớ giới hạn.\n\n## 2. CVE identity và product scope\n\nCVE-2026-40701; published 2026-05-13T14:12:43.588000+00:00; Phạm vi nghiên cứu: NGINX Open Source; bảng upstream không dùng làm bảng phiên bản NGINX Plus, Ingress, Unit hoặc njs. CNA nguồn: F5 qua CVE Program.  [[CLAIM-37A421906EDAD84B18DF6E0E|Claim / locator]].\n\n## 3. Technical background\n\n[[PROTOCOL-DNS|DNS resolver — cache, công việc chờ và quyền sở hữu]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-CONNECTION-LIFECYCLE|Connection và HTTP request: hai vòng đời]]. Học mô hình chung ở các bài nền; phạm vi CVE lấy từ nguồn riêng bên dưới.\n\n## 4. Affected architecture\n\nHTTP SSL client-certificate OCSP validation dùng resolver; không suy toàn bộ DNS resolver đều gặp cùng lỗi. [[CLAIM-89A33475F1DD01537E59A290|Claim / locator]].\n\n## 5. Normal component behavior\n\nOCSP chờ địa chỉ responder và kết quả xác minh trong context còn hợp lệ; cleanup phải hủy liên hệ tới callback muộn. (Diễn giải mô hình từ bài nền.)\n\n## 6. High-level failure mechanism\n\nCNA xác nhận heap-use-after-free trong điều kiện OCSP/resolver. Diễn giải theo lifetime công việc chờ; chưa có cặp allocation/free được review. [[CLAIM-32E6D0ACC75EEA413725BC4D|Claim / locator]].\n\n## 7. Relevant security principles\n\nChấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó. (Diễn giải phòng vệ.)\n\n## 8. Vendor-documented applicability\n\nHTTP ssl_verify_client on hoặc optional, OCSP on hoặc leaf cùng resolver theo mô tả CNA; còn điều kiện ngoài kiểm soát tác nhân. [[CLAIM-89A33475F1DD01537E59A290|Claim / locator]].\n\n## 9. Affected và fixed versions\n\nNGINX OSS: affected 1.19.0-1.30.0; not vulnerable/fixed branches 1.31.0+, 1.30.1+. [[CLAIM-4E951F500F4446D10B8B58D3|Claim / locator]].\n\nFix 1.30.1/1.31.0; affected từ 1.19.0, khác resolver subrequest CVE-2026-123634. Các fix theo nhánh là ngoại lệ của khoảng affected tổng quát; không coi khoảng liền là tập hợp không có ngoại lệ.\n\n## 10. Confirmed impact\n\nLimited data modification hoặc worker restart theo CNA. [[CLAIM-0CCB7C874DF5EE0353568439|Claim / locator]].\n\n## 11. Potential impact và limitations\n\nKhông mở rộng thành confirmed RCE hay thu hồi quyền root; nguồn của CVE này nêu tác động giới hạn. [[CLAIM-6A97F8543CC30C66657BFEE0|Claim / locator]].\n\n## 12. Remediation principles\n\nVá NGINX và rà soát xử lý timeout/cancellation; chỉ chọn resolver tin cậy không chứng minh lỗi lifetime đã hết. (Khuyến nghị tác giả; không phải workaround đã được vendor xác nhận.)\n\n## 13. Official mitigation\n\nNguồn advisory xác nhận remediation bằng các release sửa trong mục 9. Workaround riêng ngoài nâng cấp: UNKNOWN trong các nguồn đã review; không gán khuyến nghị thiết kế ở mục 12 thành mitigation chính thức. [[CLAIM-4E951F500F4446D10B8B58D3|Claim / locator]].\n\n## 14. Patch management considerations\n\nFix 1.30.1/1.31.0; affected từ 1.19.0, khác resolver subrequest CVE-2026-123634.\n\n[[CONCEPT-BACKPORT|Đối chiếu package/backport]] → [[CONTROL-PATCH-VERIFICATION|xác minh bản chạy]]. Bằng chứng inventory/runtime/signature chưa được cung cấp trong nghiên cứu tài liệu này.\n\n## 15. Related knowledge\n\n[[PROTOCOL-DNS|DNS resolver — cache, công việc chờ và quyền sở hữu]] · [[COMPONENT-MEMORY-POOL|Memory pool: ownership, lifetime và cleanup]] · [[COMPONENT-CONNECTION-LIFECYCLE|Connection và HTTP request: hai vòng đời]]\n\nWeakness do CNA phân loại: [[WEAKNESS-CWE-416|CWE-416 — Use-after-free]]. CWE là taxonomy, không là bằng chứng fault location.\n\n## 16. Learning objectives\n\n- Giải thích invariant: Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.\n- Trả lời có evidence: Tại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?\n\n## 17. Discussion questions\n\nTại sao nguồn DNS tin cậy không đủ bảo đảm memory safety?\n\nGợi ý đáp án: Memory safety phụ thuộc ownership và xử lý trạng thái của implementation, kể cả khi dữ liệu đến từ nguồn tin cậy.\n\n## 18. Claim-level evidence\n\n- identity: [[CLAIM-37A421906EDAD84B18DF6E0E|CLAIM:37A421906EDAD84B18DF6E0E]]\n- applicability: [[CLAIM-89A33475F1DD01537E59A290|CLAIM:89A33475F1DD01537E59A290]]\n- impact: [[CLAIM-0CCB7C874DF5EE0353568439|CLAIM:0CCB7C874DF5EE0353568439]]\n- potential: [[CLAIM-6A97F8543CC30C66657BFEE0|CLAIM:6A97F8543CC30C66657BFEE0]]\n- mechanism: [[CLAIM-32E6D0ACC75EEA413725BC4D|CLAIM:32E6D0ACC75EEA413725BC4D]]\n- versions: [[CLAIM-4E951F500F4446D10B8B58D3|CLAIM:4E951F500F4446D10B8B58D3]]\n\nSource statement, author interpretation và unknown được tách trong từng Claim. Snapshot/hash dùng để tái kiểm tra, không thay việc đọc nguồn. Metadata cũ vẫn truy xuất qua lịch sử.\n\n## 19. Unknown information\n\nObject, callback và điểm cleanup của OCSP/resolver chưa xác minh độc lập.\n\n## 20. Review status\n\nTECHNICAL_DRAFT — AI biên soạn/review trong phạm vi tài liệu. Chưa có independent-agent review, human approval hoặc learner testing. Cần chuyên gia đối chiếu cơ chế với mã nguồn/bản vá và đánh giá sư phạm; không có xác minh trên hệ thống triển khai.\n",
+    "research_claim_refs": [
+      "CLAIM:37A421906EDAD84B18DF6E0E",
+      "CLAIM:89A33475F1DD01537E59A290",
+      "CLAIM:0CCB7C874DF5EE0353568439",
+      "CLAIM:6A97F8543CC30C66657BFEE0",
+      "CLAIM:32E6D0ACC75EEA413725BC4D",
+      "CLAIM:4E951F500F4446D10B8B58D3"
+    ],
+    "research_group": "resolver",
+    "root_cause_summary": "CNA xác nhận heap-use-after-free trong điều kiện OCSP/resolver. Diễn giải theo lifetime công việc chờ; chưa có cặp allocation/free được review.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Chấm dứt tác vụ xác minh phải vô hiệu hóa callback còn tham chiếu context của nó.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:4B3B8C8FA68C9864EA358311",
+      "SEVERITY:9C8BF5A47B9381E2103C650F",
+      "SEVERITY:A33142870EA18FBA1F6B6E7E",
+      "SEVERITY:B109F3C3B40ADF5CD5B9DB91",
+      "SEVERITY:D4F742635BC2F7DE3608CAFB"
+    ],
+    "source_refs": [
+      "EVIDENCE:1E38E9538EDEC757A6052B25",
+      "EVIDENCE:4AA885ADF0AAD59294FEEFE5",
+      "EVIDENCE:6CC40301E1F75C3E24EE61AF",
+      "EVIDENCE:7E2D52DB67E361A71B740E9E",
+      "EVIDENCE:84CF755B2579F9D84607D8E2",
+      "EVIDENCE:91376BB607136AEE7D9CF0A9",
+      "EVIDENCE:A236E8E52A0F6D1220BF705B",
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9",
+      "EVIDENCE:B4FBC86D74EE4D3A8D1F5FB3",
+      "EVIDENCE:DD998218BBEB14FC1E34A55D"
+    ],
+    "title": "resolver use-after-free in OCSP",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Object, callback và điểm cleanup của OCSP/resolver chưa xác minh độc lập.",
+      "Chưa có bằng chứng binary/runtime hoặc independent/human technical review."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T05:35:24+00:00",
+    "upstream_affected_expression": "1.19.0-1.30.0",
+    "upstream_unaffected_expression": "1.31.0+, 1.30.1+",
+    "vendor_documented_conditions": [
+      "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T05:49:26+00:00",
+  "entity_id": "CVE:CVE-2026-40701",
+  "id": "HISTORY:9986699F906580C54B7DD72E"
+}

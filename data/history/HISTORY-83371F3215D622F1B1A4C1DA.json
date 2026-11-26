@@ -1,0 +1,92 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "1. Không; state/ticket có lifetime khác connection, theo RFC §2.2/§4.6.1 ([[CLAIM-7EBD5B4A979DE0E75612046B|nhận định nguồn: CLAIM:7EBD5B4A979DE0E75612046B]]).\n2. Replay là thuộc tính riêng của early data; RFC §8 yêu cầu reasoning ở mức server/application. Không được suy từ confidentiality ra at-most-once. Mỗi câu 0–2 điểm.",
+    "architecture_position": "Resumption state vượt lifetime một connection; handshake mới quyết định chấp nhận PSK/context.",
+    "article_body": "## Session không đồng nhất connection\n\nConnection mới có thể dùng state từ một lần trao đổi trước để thiết lập khóa qua PSK resumption. RFC 8446 §2.2 và §4.6.1 mô tả vé và handshake tiếp theo. [[CLAIM-7EBD5B4A979DE0E75612046B|nhận định nguồn: CLAIM:7EBD5B4A979DE0E75612046B]] NewSessionTicket là message sau handshake, còn ticket là dữ liệu opaque cho client; server có thể dùng nó làm khóa tra cứu hoặc dữ liệu được bảo vệ tự chứa context. Không mặc định mọi ticket có cùng cấu trúc nội bộ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1945CB2CD633DBCEFE235982|Claim theo section]].\n\n## Chu trình và trách nhiệm\n\nKết nối đầu thiết lập state → server cấp ticket → client giữ trong giới hạn cho phép → kết nối sau đề xuất resumption → server quyết định chấp nhận hay từ chối theo context → key schedule của handshake mới. Ticket lifetime, rotation và policy server làm giới hạn sử dụng; một ticket tồn tại không buộc server phải tiếp tục chấp nhận nó. Resumption cũng không có nghĩa socket cũ sống mãi.\n\nTrong NGINX, tham chiếu bổ sung là các directive `ssl_session_cache`, `ssl_session_tickets`, `ssl_session_timeout` trong module SSL. Chúng mô tả lưu trữ và thời hạn, nhưng hiệu lực còn phụ thuộc phiên bản TLS và thư viện. Không đồng nhất cache truyền thống với mọi dạng resumption TLS 1.3.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-DBA66A3D0F79BE082B7DF7E3|Claim theo section]].\n\n## Invariant phòng vệ — diễn giải có phạm vi\n\nPolicy dùng để chấp nhận identity/context của phiên phải phù hợp server đang xử lý. Việc chứng minh một secret hay có một ticket không tự chứng minh mọi quyền ở virtual server khác. Đây là nguyên tắc reasoning cho case advisory, chưa phải phân tích dòng mã hoặc xác nhận nguyên nhân CVE. Nguồn RFC và directive là nền; kết luận CVE phải đọc nguồn riêng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-660665F8DA6E17CB7B38C640|Claim theo section]].\n\n## Early data và tradeoff\n\nResumption giúp giảm công việc handshake. 0-RTT còn giảm chờ trước khi gửi dữ liệu nhưng có vấn đề replay được RFC §8 xử lý riêng. Không suy ra 'đã mã hóa' thành 'chỉ xử lý một lần'. Ứng dụng cần xem tính chất thao tác trước khi cho phép early data; bài này không bật cấu hình hoặc tạo traffic kiểm thử.\n\nVí dụ giấy: đánh dấu ticket được cấp tại T1, policy thay đổi ở T2, connection mới ở T3. Liệt kê bằng chứng cần có để kết luận state ở T1 còn được chấp nhận đúng tại T3. Không có policy/version thì kết luận UNKNOWN. Câu hỏi mở gồm invalidation khi đổi cấu hình, đặc tính thư viện TLS và phạm vi shared cache thực tế.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-646B78F60A69821F9008AAA1|Claim theo section]].\n",
+    "assessment": "1. Connection cũ đóng có bắt buộc mọi resumption state biến mất không?\n2. Vì sao encrypted 0-RTT không đủ chứng minh một giao dịch chỉ xử lý một lần?",
+    "claim_refs": [
+      "CLAIM:7EBD5B4A979DE0E75612046B",
+      "CLAIM:1945CB2CD633DBCEFE235982",
+      "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+      "CLAIM:660665F8DA6E17CB7B38C640",
+      "CLAIM:646B78F60A69821F9008AAA1"
+    ],
+    "created_at": "2026-11-25T04:20:59+00:00",
+    "curation_version": "1.2.0",
+    "definition": "Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực hiện handshake resumption và early data có yêu cầu chống replay riêng.",
+    "description": "Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực hiện handshake resumption và early data có yêu cầu chống replay riêng.",
+    "diagram": "flowchart LR\n  H[Handshake đầu] --> T[NewSessionTicket]\n  T --> S[Client giữ resumption state]\n  S --> N[Connection và handshake mới]\n  N --> P{Policy chấp nhận}\n  P -->|có| R[Resumption]\n  P -->|không| F[Fallback hoặc từ chối theo giao thức]",
+    "entity_type": "Component",
+    "id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "learning_objectives": [
+      "So sánh lifetime của connection với resumption state.",
+      "Giải thích vì sao dùng lại phiên không được coi là tái dùng mọi quyền cũ."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "TLS resumption: state, ticket và policy hiện hành",
+    "normal_behavior": "Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực hiện handshake resumption và early data có yêu cầu chống replay riêng.",
+    "prerequisites": [
+      "PROTOCOL:TLS"
+    ],
+    "related_knowledge": [
+      "PROTOCOL:TLS",
+      "WEAKNESS:CWE-863",
+      "LEARNING:PATH-01"
+    ],
+    "safety_assumptions": "Policy hiện hành phải phù hợp context được chấp nhận; early data cần reasoning replay riêng.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ticket/PSK không tự cấp quyền mọi virtual server hoặc mọi tài nguyên ứng dụng.",
+    "source_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "updated_at": "2026-11-25T04:30:42+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "before": {
+    "answer_explanations": "1. Không; state/ticket có lifetime khác connection, theo RFC §2.2/§4.6.1 ([[CLAIM-7EBD5B4A979DE0E75612046B|nhận định nguồn: CLAIM:7EBD5B4A979DE0E75612046B]]).\n2. Replay là thuộc tính riêng của early data; RFC §8 yêu cầu reasoning ở mức server/application. Không được suy từ confidentiality ra at-most-once. Mỗi câu 0–2 điểm.",
+    "article_body": "## Session không đồng nhất connection\n\nConnection mới có thể dùng state từ một lần trao đổi trước để thiết lập khóa qua PSK resumption. RFC 8446 §2.2 và §4.6.1 mô tả vé và handshake tiếp theo. [[CLAIM-7EBD5B4A979DE0E75612046B|nhận định nguồn: CLAIM:7EBD5B4A979DE0E75612046B]] NewSessionTicket là message sau handshake, còn ticket là dữ liệu opaque cho client; server có thể dùng nó làm khóa tra cứu hoặc dữ liệu được bảo vệ tự chứa context. Không mặc định mọi ticket có cùng cấu trúc nội bộ.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-1945CB2CD633DBCEFE235982|Claim theo section]].\n\n## Chu trình và trách nhiệm\n\nKết nối đầu thiết lập state → server cấp ticket → client giữ trong giới hạn cho phép → kết nối sau đề xuất resumption → server quyết định chấp nhận hay từ chối theo context → key schedule của handshake mới. Ticket lifetime, rotation và policy server làm giới hạn sử dụng; một ticket tồn tại không buộc server phải tiếp tục chấp nhận nó. Resumption cũng không có nghĩa socket cũ sống mãi.\n\nTrong NGINX, tham chiếu bổ sung là các directive `ssl_session_cache`, `ssl_session_tickets`, `ssl_session_timeout` trong module SSL. Chúng mô tả lưu trữ và thời hạn, nhưng hiệu lực còn phụ thuộc phiên bản TLS và thư viện. Không đồng nhất cache truyền thống với mọi dạng resumption TLS 1.3.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-DBA66A3D0F79BE082B7DF7E3|Claim theo section]].\n\n## Invariant phòng vệ — diễn giải có phạm vi\n\nPolicy dùng để chấp nhận identity/context của phiên phải phù hợp server đang xử lý. Việc chứng minh một secret hay có một ticket không tự chứng minh mọi quyền ở virtual server khác. Đây là nguyên tắc reasoning cho case advisory, chưa phải phân tích dòng mã hoặc xác nhận nguyên nhân CVE. Nguồn RFC và directive là nền; kết luận CVE phải đọc nguồn riêng.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-660665F8DA6E17CB7B38C640|Claim theo section]].\n\n## Early data và tradeoff\n\nResumption giúp giảm công việc handshake. 0-RTT còn giảm chờ trước khi gửi dữ liệu nhưng có vấn đề replay được RFC §8 xử lý riêng. Không suy ra 'đã mã hóa' thành 'chỉ xử lý một lần'. Ứng dụng cần xem tính chất thao tác trước khi cho phép early data; bài này không bật cấu hình hoặc tạo traffic kiểm thử.\n\nVí dụ giấy: đánh dấu ticket được cấp tại T1, policy thay đổi ở T2, connection mới ở T3. Liệt kê bằng chứng cần có để kết luận state ở T1 còn được chấp nhận đúng tại T3. Không có policy/version thì kết luận UNKNOWN. Câu hỏi mở gồm invalidation khi đổi cấu hình, đặc tính thư viện TLS và phạm vi shared cache thực tế.\n\n_Diễn giải biên soạn; source support PARTIAL, AI self-review_: [[CLAIM-646B78F60A69821F9008AAA1|Claim theo section]].\n",
+    "assessment": "1. Connection cũ đóng có bắt buộc mọi resumption state biến mất không?\n2. Vì sao encrypted 0-RTT không đủ chứng minh một giao dịch chỉ xử lý một lần?",
+    "claim_refs": [
+      "CLAIM:7EBD5B4A979DE0E75612046B",
+      "CLAIM:1945CB2CD633DBCEFE235982",
+      "CLAIM:DBA66A3D0F79BE082B7DF7E3",
+      "CLAIM:660665F8DA6E17CB7B38C640",
+      "CLAIM:646B78F60A69821F9008AAA1"
+    ],
+    "created_at": "2026-11-25T04:20:59+00:00",
+    "curation_version": "1.2.0",
+    "definition": "Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực hiện handshake resumption và early data có yêu cầu chống replay riêng.",
+    "description": "Trong TLS 1.3, NewSessionTicket cung cấp dữ liệu cho resumption dựa trên PSK; connection sau thực hiện handshake resumption và early data có yêu cầu chống replay riêng.",
+    "diagram": "flowchart LR\n  H[Handshake đầu] --> T[NewSessionTicket]\n  T --> S[Client giữ resumption state]\n  S --> N[Connection và handshake mới]\n  N --> P{Policy chấp nhận}\n  P -->|có| R[Resumption]\n  P -->|không| F[Fallback hoặc từ chối theo giao thức]",
+    "entity_type": "Component",
+    "id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+    "learning_objectives": [
+      "So sánh lifetime của connection với resumption state.",
+      "Giải thích vì sao dùng lại phiên không được coi là tái dùng mọi quyền cũ."
+    ],
+    "limitations": "No deployment inspection or source-code root cause verification. Statements beyond cited mechanism are interpretations.",
+    "name": "TLS resumption: state, ticket và policy hiện hành",
+    "prerequisites": [
+      "PROTOCOL:TLS"
+    ],
+    "related_knowledge": [
+      "PROTOCOL:TLS",
+      "WEAKNESS:CWE-863",
+      "LEARNING:PATH-01"
+    ],
+    "schema_version": "1.2.0",
+    "source_refs": [
+      "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+    ],
+    "updated_at": "2026-11-25T04:21:02+00:00",
+    "verification_limitations": "AI self-review of a scoped source statement and authored interpretations; human technical/pedagogical review and learner evaluation PENDING.",
+    "verification_status": "INFERRED",
+    "version_scope": "See per-claim source snapshot/version scope"
+  },
+  "changed_at": "2026-11-25T04:30:42+00:00",
+  "entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+  "id": "HISTORY:83371F3215D622F1B1A4C1DA"
+}

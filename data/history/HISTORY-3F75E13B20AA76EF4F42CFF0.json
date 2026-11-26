@@ -1,0 +1,35 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:ED9D16652312B3E9C4EF3AAA"
+    ],
+    "created_at": "2026-11-25T02:33:48+00:00",
+    "description": "CVE:CVE-2026-27784 related_components COMPONENT:WORKER-PROCESS",
+    "entity_type": "Relationship",
+    "id": "REL:8DDFE9F64AFAACB00EA34DF4",
+    "name": "related_components",
+    "object_entity_id": "COMPONENT:WORKER-PROCESS",
+    "predicate": "related_components",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:034B9E939C5C808F81C15395",
+      "EVIDENCE:09931024439D883417DF7C1E",
+      "EVIDENCE:0D4014BF77D9F9D500D748A6",
+      "EVIDENCE:80D33BBF70F07DB821F5232D",
+      "EVIDENCE:81B3967C5EC538FED72F0479",
+      "EVIDENCE:8E4D40009FADB7881E537AEE",
+      "EVIDENCE:CB51A2751C96FB09AD144653",
+      "EVIDENCE:E3A0312E8EBA339353ECC94F",
+      "EVIDENCE:E8DE35A5DB92D9CBD839982A",
+      "EVIDENCE:F9A1F1B9A78981951B3C0E64"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-27784",
+    "updated_at": "2026-11-25T02:33:48+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:48+00:00",
+  "entity_id": "REL:8DDFE9F64AFAACB00EA34DF4",
+  "id": "HISTORY:3F75E13B20AA76EF4F42CFF0"
+}

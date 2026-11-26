@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8D79898B17BC949F399E1A9E",
+    "claim_value": "\"Áp dụng nhầm chính sách truy cập giữa virtual hosts.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:16+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:FDB9B691A2BFB99A8CC78B34"
+    ],
+    "id": "CLAIM:8D79898B17BC949F399E1A9E",
+    "name": "COMPONENT:VIRTUAL-HOSTS: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:FDB9B691A2BFB99A8CC78B34"
+    ],
+    "subject_entity_id": "COMPONENT:VIRTUAL-HOSTS",
+    "updated_at": "2026-11-25T02:44:16+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:16+00:00",
+  "entity_id": "CLAIM:8D79898B17BC949F399E1A9E",
+  "id": "HISTORY:DAFEB8619A0652C561AC5663"
+}

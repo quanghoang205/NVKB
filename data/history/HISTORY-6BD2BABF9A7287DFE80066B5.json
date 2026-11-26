@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:1B1B303BF90AEAAB4EC9D647",
+    "authority": "Canonical / Ubuntu",
+    "claim_id": "CLAIM:C48F5450AAEEC38293632BE9",
+    "claim_value": "{\"fixed_version\": \"1.18.0-0ubuntu1.7\", \"patch_status\": \"fixed\", \"release\": \"focal\", \"source_status\": \"Fixed in 1.18.0-0ubuntu1.7\"}",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T04:22:02+00:00",
+    "description": "distribution_patch_status",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:32D79DF82C442A095DB51A3A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:C48F5450AAEEC38293632BE9",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PACKAGE:28A3593DD847BBD4079C2DA0: distribution_patch_status",
+    "observed_at": "2026-11-25T04:22:03+00:00",
+    "predicate": "distribution_patch_status",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:32D79DF82C442A095DB51A3A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PACKAGE:28A3593DD847BBD4079C2DA0",
+    "updated_at": "2026-11-25T04:22:03+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:22:03+00:00",
+  "entity_id": "CLAIM:C48F5450AAEEC38293632BE9",
+  "id": "HISTORY:6BD2BABF9A7287DFE80066B5"
+}

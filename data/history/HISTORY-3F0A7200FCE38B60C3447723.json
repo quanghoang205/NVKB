@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:EC22DA6F2D56AB6B323693E7",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:704FA48792E4738C69796547",
+    "claim_value": "\"## Cơ chế bình thường\\n\\nQUIC vận chuyển dữ liệu qua UDP nhưng cung cấp cho ứng dụng các byte stream có thứ tự. Byte của một stream được sắp xếp trong stream đó; thứ tự byte giữa các stream không có cùng bảo đảm. Điều này cho phép nhiều công việc tiến triển độc lập hơn khi một stream còn chờ dữ liệu. Flow control giới hạn dữ liệu mà bên nhận sẵn sàng lưu; nó không đồng nghĩa congestion control quyết định tải lên đường truyền.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:32+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:704FA48792E4738C69796547",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:QUIC: v1.3:knowledge:Cơ chế bình thường",
+    "observed_at": "2026-11-25T05:08:32+00:00",
+    "predicate": "v1.3:knowledge:Cơ chế bình thường",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T05:08:32+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:32+00:00",
+  "entity_id": "CLAIM:704FA48792E4738C69796547",
+  "id": "HISTORY:3F0A7200FCE38B60C3447723"
+}

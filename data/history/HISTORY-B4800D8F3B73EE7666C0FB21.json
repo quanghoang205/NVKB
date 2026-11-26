@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:BB357B26AC72223094D99506",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:3CC064509827316E58DE1610",
+    "claim_value": "\"## Ví dụ an toàn và giới hạn\\n\\nĐọc một bảng sự kiện giả định: T0 cấu hình A; T1 yêu cầu reload; T2 phát hiện lỗi mở tài nguyên; T3 log tiếp tục A. Kết luận hợp lệ là B chưa được áp dụng. Với T2 thành công, chỉ ghi B đã khởi chạy; cần bằng chứng riêng về thời điểm worker A kết thúc. Không gửi tín hiệu cho máy thực trong bài này.\\n\\nNgộ nhận thường gặp là đồng nhất reload với restart hoặc cho rằng mọi kết nối chuyển tức thì sang policy mới. Guide mô tả quản lý tiến trình, không là bằng chứng cho thời hạn drain của một cấu hình bất kỳ. Câu hỏi mở: build, module và timeout của deployment có làm thay đổi kỳ vọng shutdown không?\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:39+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_locator": "#reconfiguration",
+    "evidence_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3CC064509827316E58DE1610",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: pilot_section:Ví dụ an toàn và giới hạn",
+    "observed_at": "2026-11-25T04:20:39+00:00",
+    "predicate": "pilot_section:Ví dụ an toàn và giới hạn",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read control at #reconfiguration; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T04:20:39+00:00",
+    "reviewer_id": "nvkb-v1.2-ai-curator",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:20:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:39+00:00; deployment version not established"
+  },
+  "before": {
+    "assertion_key": "ASSERTION:BB357B26AC72223094D99506",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:3CC064509827316E58DE1610",
+    "claim_value": "\"## Ví dụ an toàn và giới hạn\\n\\nĐọc một bảng sự kiện giả định: T0 cấu hình A; T1 yêu cầu reload; T2 phát hiện lỗi mở tài nguyên; T3 log tiếp tục A. Kết luận hợp lệ là B chưa được áp dụng. Với T2 thành công, chỉ ghi B đã khởi chạy; cần bằng chứng riêng về thời điểm worker A kết thúc. Không gửi tín hiệu cho máy thực trong bài này.\\n\\nNgộ nhận thường gặp là đồng nhất reload với restart hoặc cho rằng mọi kết nối chuyển tức thì sang policy mới. Guide mô tả quản lý tiến trình, không là bằng chứng cho thời hạn drain của một cấu hình bất kỳ. Câu hỏi mở: build, module và timeout của deployment có làm thay đổi kỳ vọng shutdown không?\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:39+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:3CC064509827316E58DE1610",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MASTER-PROCESS: pilot_section:Ví dụ an toàn và giới hạn",
+    "observed_at": "2026-11-25T04:20:39+00:00",
+    "predicate": "pilot_section:Ví dụ an toàn và giới hạn",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:81E73A1E91C1D45517423D7A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T04:20:39+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:20:39+00:00",
+  "entity_id": "CLAIM:3CC064509827316E58DE1610",
+  "id": "HISTORY:B4800D8F3B73EE7666C0FB21"
+}

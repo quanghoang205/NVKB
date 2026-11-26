@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:923702D52198533F6E0CD14A",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:19A40F61812C2306C1946996",
+    "claim_value": "\"Chuyển tiếp HTTP request/response đến upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:1B9F3DAC3F7C4AF6A506D698: ngx_http_proxy_module",
+    "evidence_refs": [
+      "EVIDENCE:1B9F3DAC3F7C4AF6A506D698"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:19A40F61812C2306C1946996",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "MODULE:NGX-HTTP-PROXY-MODULE: normal_behavior",
+    "observation_key": "OBSERVATION:E772523064DB629724345BF0",
+    "observed_at": "2026-11-25T02:32:42+00:00",
+    "predicate": "normal_behavior",
+    "product_scope": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:1B9F3DAC3F7C4AF6A506D698"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "updated_at": "2026-11-25T04:12:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:19A40F61812C2306C1946996",
+    "claim_value": "\"Chuyển tiếp HTTP request/response đến upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:42+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:1B9F3DAC3F7C4AF6A506D698"
+    ],
+    "id": "CLAIM:19A40F61812C2306C1946996",
+    "name": "MODULE:NGX-HTTP-PROXY-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1B9F3DAC3F7C4AF6A506D698"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "updated_at": "2026-11-25T02:32:42+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:30+00:00",
+  "entity_id": "CLAIM:19A40F61812C2306C1946996",
+  "id": "HISTORY:C622B8DCC4BB06EB5D696CC4"
+}

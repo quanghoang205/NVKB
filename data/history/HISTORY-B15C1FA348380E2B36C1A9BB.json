@@ -1,0 +1,38 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T04:21:17+00:00",
+    "description": "PROTOCOL:TLS REQUIRES_KNOWLEDGE_OF COMPONENT:CONNECTION-LIFECYCLE",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:ED3B206723E494B497D22E11",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "REQUIRES_KNOWLEDGE_OF",
+    "object_entity_id": "COMPONENT:CONNECTION-LIFECYCLE",
+    "predicate": "REQUIRES_KNOWLEDGE_OF",
+    "rationale": "Cần Connection và HTTP request: hai vòng đời để giải thích mục tiêu: Phân biệt key establishment, peer authentication và application authorization.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Subject lesson requires object prerequisite",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:21:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:21:17+00:00",
+  "entity_id": "REL:ED3B206723E494B497D22E11",
+  "id": "HISTORY:B15C1FA348380E2B36C1A9BB"
+}

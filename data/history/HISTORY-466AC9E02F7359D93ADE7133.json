@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:AF70DE6A330585B16DE3C1A0",
+    "claim_value": "\"Nguồn gốc và phạm vi của từng phần dữ liệu phải được giữ riêng qua quá trình hợp nhất.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "id": "CLAIM:AF70DE6A330585B16DE3C1A0",
+    "name": "WEAKNESS:CWE-349: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-349",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:AF70DE6A330585B16DE3C1A0",
+  "id": "HISTORY:466AC9E02F7359D93ADE7133"
+}

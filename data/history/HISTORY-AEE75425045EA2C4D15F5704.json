@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A18FBB156E31B6FD874DF25A",
+    "claim_value": "\"Thực thi rewrite, return và điều kiện liên quan trong xử lý HTTP. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8C4CFCAEA38B3A1A6F92A183"
+    ],
+    "id": "CLAIM:A18FBB156E31B6FD874DF25A",
+    "name": "MODULE:NGX-HTTP-REWRITE-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8C4CFCAEA38B3A1A6F92A183"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-REWRITE-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:A18FBB156E31B6FD874DF25A",
+  "id": "HISTORY:AEE75425045EA2C4D15F5704"
+}

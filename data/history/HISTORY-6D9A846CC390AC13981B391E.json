@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.",
+    "claim_refs": [
+      "CLAIM:569E2B97899B4238CD2C5C5A",
+      "CLAIM:8F18A7EEC60A64DAEAB7BC13",
+      "CLAIM:A6E5F4ECFD8EBAB145B26077",
+      "CLAIM:37481CEF32B9F2DE5256B707",
+      "CLAIM:EC7DA6D9CE36FD4FB0951592",
+      "CLAIM:87F4B0EE02C08F57117AAD5B",
+      "CLAIM:1463A761C9BE467460435BA4",
+      "CLAIM:6CFC0B328E2E9F8C337BC83B"
+    ],
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "defensive_principles": "Theo dõi worker restart, áp dụng bản vá và giới hạn nguồn lực theo workload.",
+    "definition": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "description": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Worker kết thúc bất thường hoặc giảm khả năng phục vụ các kết nối cùng worker.",
+    "id": "COMPONENT:WORKER-PROCESS",
+    "learning_objectives": [
+      "Giải thích Worker process bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Worker process",
+    "normal_behavior": "Worker nhận sự kiện mạng, chạy handler và duy trì trạng thái của nhiều kết nối; các worker là các process riêng.",
+    "related_failure_classes": "Memory safety; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Module không được làm hỏng bộ nhớ hoặc chặn event loop quá lâu.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.",
+    "claim_refs": [
+      "CLAIM:569E2B97899B4238CD2C5C5A",
+      "CLAIM:8F18A7EEC60A64DAEAB7BC13",
+      "CLAIM:A6E5F4ECFD8EBAB145B26077",
+      "CLAIM:37481CEF32B9F2DE5256B707",
+      "CLAIM:EC7DA6D9CE36FD4FB0951592",
+      "CLAIM:87F4B0EE02C08F57117AAD5B",
+      "CLAIM:1463A761C9BE467460435BA4",
+      "CLAIM:6CFC0B328E2E9F8C337BC83B"
+    ],
+    "created_at": "2026-11-25T02:32:03+00:00",
+    "defensive_principles": "Theo dõi worker restart, áp dụng bản vá và giới hạn nguồn lực theo workload.",
+    "definition": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "description": "Tiến trình xử lý các kết nối bằng cơ chế hướng sự kiện.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Worker kết thúc bất thường hoặc giảm khả năng phục vụ các kết nối cùng worker.",
+    "id": "COMPONENT:WORKER-PROCESS",
+    "learning_objectives": [
+      "Giải thích Worker process bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Worker process",
+    "normal_behavior": "Worker nhận sự kiện mạng, chạy handler và duy trì trạng thái của nhiều kết nối; các worker là các process riêng.",
+    "related_failure_classes": "Memory safety; resource exhaustion.",
+    "related_knowledge": [],
+    "safety_assumptions": "Module không được làm hỏng bộ nhớ hoặc chặn event loop quá lâu.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Dữ liệu từ kết nối đi vào không gian địa chỉ của worker.",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "COMPONENT:WORKER-PROCESS",
+  "id": "HISTORY:6D9A846CC390AC13981B391E"
+}

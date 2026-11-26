@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:D8BC36E7C775548591BD9D4D",
+    "claim_value": "\"Theo dõi provenance, framing và quyền của từng nguồn dữ liệu.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "id": "CLAIM:D8BC36E7C775548591BD9D4D",
+    "name": "WEAKNESS:CWE-349: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-349",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:D8BC36E7C775548591BD9D4D",
+  "id": "HISTORY:CF6C65645B727EE1EA5CB16D"
+}

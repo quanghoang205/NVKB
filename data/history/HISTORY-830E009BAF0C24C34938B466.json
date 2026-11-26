@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:0B9F82016D8E89AE046DD705",
+    "claim_value": "\"Tiêu thụ tài nguyên mà không có giới hạn phù hợp.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:38+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0838953B2BE98F7124CC4F87"
+    ],
+    "id": "CLAIM:0B9F82016D8E89AE046DD705",
+    "name": "WEAKNESS:CWE-400: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0838953B2BE98F7124CC4F87"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-400",
+    "updated_at": "2026-11-25T02:32:38+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:38+00:00",
+  "entity_id": "CLAIM:0B9F82016D8E89AE046DD705",
+  "id": "HISTORY:830E009BAF0C24C34938B466"
+}

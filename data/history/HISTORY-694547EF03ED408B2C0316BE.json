@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:2273D46050187FBAE1119DFA",
+    "claim_value": "\"Quản lý peer, kết nối và trao đổi với dịch vụ backend.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:17+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "id": "CLAIM:2273D46050187FBAE1119DFA",
+    "name": "COMPONENT:UPSTREAM-COMMUNICATION: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "subject_entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "updated_at": "2026-11-25T02:44:17+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:17+00:00",
+  "entity_id": "CLAIM:2273D46050187FBAE1119DFA",
+  "id": "HISTORY:694547EF03ED408B2C0316BE"
+}

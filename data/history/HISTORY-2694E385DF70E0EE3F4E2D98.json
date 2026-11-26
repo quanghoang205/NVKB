@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [],
+    "created_at": "2026-11-25T02:33:32+00:00",
+    "description": "DIRECTIVE:SSL-VERIFY-CLIENT learns_from MODULE:NGX-HTTP-SSL-MODULE",
+    "entity_type": "Relationship",
+    "id": "REL:02F29828C06A83A7B2255AC5",
+    "name": "learns_from",
+    "object_entity_id": "MODULE:NGX-HTTP-SSL-MODULE",
+    "predicate": "learns_from",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0B05F3AB3B86F4D8FE94D13C"
+    ],
+    "subject_entity_id": "DIRECTIVE:SSL-VERIFY-CLIENT",
+    "updated_at": "2026-11-25T02:33:32+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:33:32+00:00",
+  "entity_id": "REL:02F29828C06A83A7B2255AC5",
+  "id": "HISTORY:2694E385DF70E0EE3F4E2D98"
+}

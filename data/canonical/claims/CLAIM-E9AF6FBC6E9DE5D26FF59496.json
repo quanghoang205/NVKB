@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:5E117ADDA6716895AAD3FEDD",
+  "authority": "f5",
+  "authority_scope": "f5",
+  "claim_id": "CLAIM:E9AF6FBC6E9DE5D26FF59496",
+  "claim_value": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"PRESENT\", \"attackVector\": \"NETWORK\", \"baseScore\": 8.3, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"NONE\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"NONE\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"LOW\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:57+00:00",
+  "description": "severity:CIRCL mirror:f5:4.0",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:D11C098D135782D0EDB90A6E: /containers/cna/metrics",
+  "evidence_refs": [
+    "EVIDENCE:D11C098D135782D0EDB90A6E"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:E9AF6FBC6E9DE5D26FF59496",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-97629: severity:CIRCL mirror:f5:4.0",
+  "observation_key": "OBSERVATION:3DE24514A5AF6BD7752D83D5",
+  "observed_at": "2026-11-25T02:28:57+00:00",
+  "predicate": "severity:CIRCL mirror:f5:4.0",
+  "product_scope": "CVE:CVE-2026-97629",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:57+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "f5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:D11C098D135782D0EDB90A6E"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-97629",
+  "updated_at": "2026-11-25T04:12:54+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "6dd485c96b4c160f4c04b481df6f52b5a3b827d42e9e0615e4c4469503dbea63",
+    "created_at": "2026-11-25T02:27:47+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2026-32647",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+    "id": "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/6dd485c96b4c160f4c04b481df6f52b5a3b827d42e9e0615e4c4469503dbea63.json",
+    "name": "CVE-2026-32647",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:47+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-32647",
+    "updated_at": "2026-11-25T02:27:47+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:47+00:00",
+  "entity_id": "EVIDENCE:3E16F0C4F9C825A40E41DD71",
+  "id": "HISTORY:FD0616B7E5EA9DEA4B6FCE9B"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:68D1BABB766F877F773B7004",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:E7B7C6539590D6C0BDC27746",
+    "claim_value": "\"## Invariant về cấu trúc và kích thước\\n\\nDiễn giải phòng vệ: offset phải nằm trong vùng file tương ứng, số phần tử phải phù hợp độ dài bảng, và phép nhân/cộng để tính kích thước phải biểu diễn được trong kiểu đích trước cấp phát. Kiểm giới hạn một buffer không thay thế kiểm quan hệ giữa các bảng. Máy 32-bit có miền biểu diễn khác 64-bit; điều này giúp hiểu vì sao applicability có thể giới hạn kiến trúc, nhưng không tự chứng minh CVE nào là integer overflow.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:57:03+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:E7B7C6539590D6C0BDC27746",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-MP4-MODULE: v1.3:knowledge:Invariant về cấu trúc và kích thước",
+    "observed_at": "2026-11-25T04:57:04+00:00",
+    "predicate": "v1.3:knowledge:Invariant về cấu trúc và kích thước",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F28678BADEAF73E031E9FFF2"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-MP4-MODULE",
+    "updated_at": "2026-11-25T04:57:04+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:57:04+00:00",
+  "entity_id": "CLAIM:E7B7C6539590D6C0BDC27746",
+  "id": "HISTORY:8F25CC9BEE3CA73FA2743C2D"
+}

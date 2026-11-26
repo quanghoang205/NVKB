@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:8584CF8D69DEE62C40B891DC",
+    "authority": "CVE Program",
+    "authority_scope": "CVE Program",
+    "claim_id": "CLAIM:881FF4C87673F6116BE9CF22",
+    "claim_value": "\"CVE-2024-35200\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:26+00:00",
+    "description": "cve_id",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:819B90E37D1DB51B6D5AB03B: /cveMetadata",
+    "evidence_refs": [
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:881FF4C87673F6116BE9CF22",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-35200: cve_id",
+    "observation_key": "OBSERVATION:F4C0581265F819A7C1C10266",
+    "observed_at": "2026-11-25T02:26:26+00:00",
+    "predicate": "cve_id",
+    "product_scope": "CVE:CVE-2024-35200",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:26:24+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "CVE Program",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T04:12:42+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "CVE Program",
+    "claim_id": "CLAIM:881FF4C87673F6116BE9CF22",
+    "claim_value": "\"CVE-2024-35200\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:26+00:00",
+    "description": "cve_id",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B"
+    ],
+    "id": "CLAIM:881FF4C87673F6116BE9CF22",
+    "name": "CVE:CVE-2024-35200: cve_id",
+    "predicate": "cve_id",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:819B90E37D1DB51B6D5AB03B"
+    ],
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T02:26:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:42+00:00",
+  "entity_id": "CLAIM:881FF4C87673F6116BE9CF22",
+  "id": "HISTORY:2C3E3B4C6259EC1C7D80737E"
+}

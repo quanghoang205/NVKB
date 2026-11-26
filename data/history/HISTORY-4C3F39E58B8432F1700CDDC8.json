@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX official documentation",
+    "claim_id": "CLAIM:33C48433DF76E93AA99B3259",
+    "claim_value": "\"Xử lý SMTP trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:35+00:00",
+    "description": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "id": "CLAIM:33C48433DF76E93AA99B3259",
+    "name": "CVE:CVE-2026-28753: normal_component_behavior",
+    "predicate": "normal_component_behavior",
+    "reviewer_notes": "Cơ chế module từ tài liệu nguồn; không khẳng định là root cause.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4401B2B17FF062D7BE796E33"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T02:40:35+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:35+00:00",
+  "entity_id": "CLAIM:33C48433DF76E93AA99B3259",
+  "id": "HISTORY:4C3F39E58B8432F1700CDDC8"
+}

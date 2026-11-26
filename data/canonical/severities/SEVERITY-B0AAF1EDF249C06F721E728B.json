@@ -1,0 +1,26 @@
+{
+  "assessment_key": "ASSESSMENT:10ED7C7691A169D0ED9F64D7",
+  "claim_refs": [
+    "CLAIM:56AA76D27B8E76BEAFD47A0C"
+  ],
+  "created_at": "2026-11-25T02:27:47+00:00",
+  "cvss_score": 8.5,
+  "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "cvss_version": "4.0",
+  "description": "Đánh giá của nguồn; không thay thế đánh giá từ authority khác.",
+  "distribution_channel": "f5 via CVE Program",
+  "entity_type": "Severity",
+  "id": "SEVERITY:B0AAF1EDF249C06F721E728B",
+  "metric_json": "{\"Automatable\": \"NOT_DEFINED\", \"Recovery\": \"NOT_DEFINED\", \"Safety\": \"NOT_DEFINED\", \"attackComplexity\": \"LOW\", \"attackRequirements\": \"NONE\", \"attackVector\": \"LOCAL\", \"baseScore\": 8.5, \"baseSeverity\": \"HIGH\", \"privilegesRequired\": \"LOW\", \"providerUrgency\": \"NOT_DEFINED\", \"subAvailabilityImpact\": \"NONE\", \"subConfidentialityImpact\": \"NONE\", \"subIntegrityImpact\": \"NONE\", \"userInteraction\": \"NONE\", \"valueDensity\": \"NOT_DEFINED\", \"vectorString\": \"CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N\", \"version\": \"4.0\", \"vulnAvailabilityImpact\": \"HIGH\", \"vulnConfidentialityImpact\": \"HIGH\", \"vulnIntegrityImpact\": \"HIGH\", \"vulnerabilityResponseEffort\": \"NOT_DEFINED\"}",
+  "name": "CVE-2026-32647 CVSS 4.0 f5",
+  "original_authority": "f5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "f5 via CVE Program",
+  "severity_label": "HIGH",
+  "source_refs": [
+    "EVIDENCE:99EFFF4C70D5B2FC77D9645D"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-32647",
+  "updated_at": "2026-11-25T04:13:18+00:00",
+  "verification_status": "VERIFIED"
+}

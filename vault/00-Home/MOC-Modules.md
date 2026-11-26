@@ -1,0 +1,7 @@
+---
+generated: true
+entity_type: navigation
+---
+# Modules
+
+[[MODULE-NGX-HTTP-CHARSET-MODULE|Charset filter — chuyển mã trên các buffer]], [[MODULE-NGX-HTTP-CORE-MODULE|ngx_http_core_module]], [[MODULE-NGX-HTTP-DAV-MODULE|ngx_http_dav_module]], [[MODULE-NGX-HTTP-GRPC-MODULE|ngx_http_grpc_module]], [[MODULE-NGX-HTTP-MAP-MODULE|ngx_http_map_module]], [[MODULE-NGX-HTTP-MP4-MODULE|MP4 pseudo-streaming và ranh giới metadata]], [[MODULE-NGX-HTTP-PROXY-MODULE|ngx_http_proxy_module]], [[MODULE-NGX-HTTP-REWRITE-MODULE|ngx_http_rewrite_module]], [[MODULE-NGX-HTTP-SCGI-MODULE|ngx_http_scgi_module]], [[MODULE-NGX-HTTP-SLICE-MODULE|ngx_http_slice_module]], [[MODULE-NGX-HTTP-SSI-MODULE|SSI và subrequest — công việc con, output và cleanup]], [[MODULE-NGX-HTTP-SSL-MODULE|ngx_http_ssl_module]], [[MODULE-NGX-HTTP-UWSGI-MODULE|ngx_http_uwsgi_module]], [[MODULE-NGX-HTTP-V2-MODULE|ngx_http_v2_module]], [[MODULE-NGX-HTTP-V3-MODULE|ngx_http_v3_module]], [[MODULE-NGX-MAIL-AUTH-HTTP-MODULE|Mail auth HTTP — trust boundary và vòng đời phiên]], [[MODULE-NGX-MAIL-IMAP-MODULE|ngx_mail_imap_module]], [[MODULE-NGX-MAIL-POP3-MODULE|ngx_mail_pop3_module]], [[MODULE-NGX-MAIL-PROXY-MODULE|ngx_mail_proxy_module]], [[MODULE-NGX-MAIL-SMTP-MODULE|ngx_mail_smtp_module]], [[MODULE-NGX-STREAM-SSL-MODULE|Stream TLS — chứng thư, policy và trạng thái OCSP]], [[MODULE-NGX-STREAM-SSL-PREREAD-MODULE|TLS preread — routing metadata và giới hạn tin cậy]]

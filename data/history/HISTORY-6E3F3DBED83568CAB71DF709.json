@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:3D9D29089EB1E262AF2EFD8A",
+    "claim_value": "\"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:48:59+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "id": "CLAIM:3D9D29089EB1E262AF2EFD8A",
+    "name": "WEAKNESS:CWE-349: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8AD94753451D74F7F738AEA6"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-349",
+    "updated_at": "2026-11-25T02:48:59+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:48:59+00:00",
+  "entity_id": "CLAIM:3D9D29089EB1E262AF2EFD8A",
+  "id": "HISTORY:6E3F3DBED83568CAB71DF709"
+}

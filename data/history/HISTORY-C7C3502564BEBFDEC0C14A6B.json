@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:2DEAFC169D9776390F6427C4",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:D7A0F15AA6BDB74E636988AA",
+    "claim_value": "\"Map regex và root/log format có tương tác capture theo CNA, hoặc non-cacheable variables trong một số điều kiện.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:23+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:662D152F4BC6298A07F60B8A"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:D7A0F15AA6BDB74E636988AA",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-93479: v1.3:applicability",
+    "observed_at": "2026-11-25T05:24:24+00:00",
+    "predicate": "v1.3:applicability",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:662D152F4BC6298A07F60B8A"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-93479",
+    "updated_at": "2026-11-25T05:24:24+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:24+00:00",
+  "entity_id": "CLAIM:D7A0F15AA6BDB74E636988AA",
+  "id": "HISTORY:C7C3502564BEBFDEC0C14A6B"
+}

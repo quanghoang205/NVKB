@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1B7544E17211D9AC2646DD80",
+    "claim_value": "\"A problem with SSL session resumption in nginx was identified.\\nIt was possible to reuse SSL sessions in named-based\\nvirtual hosts in unrelated contexts, allowing to bypass client\\ncertificate authentication in some configurations (CVE-2025-23419).\\n\\nThe problem affects nginx 1.11.4 and newer built with OpenSSL if the\\nTLSv1.3 protocol and session resumption are enabled either with\\nssl_session_cache or ssl_session_tickets.\\n\\nThe problem is fixed in 1.26.3 and 1.27.4.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:40:20+00:00",
+    "description": "vendor_advisory_statement",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4"
+    ],
+    "id": "CLAIM:1B7544E17211D9AC2646DD80",
+    "name": "CVE:CVE-2025-23419: vendor_advisory_statement",
+    "predicate": "vendor_advisory_statement",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:271344F0E2F0185FFAC444C4"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-23419",
+    "updated_at": "2026-11-25T02:40:21+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:21+00:00",
+  "entity_id": "CLAIM:1B7544E17211D9AC2646DD80",
+  "id": "HISTORY:D314ADB848E0733538B0E856"
+}

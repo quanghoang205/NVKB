@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:DC4EF6F80C1C371A24DF8855",
+    "claim_value": "\"Định tuyến hoặc xử lý response sai.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:825B88FA70EA2766B62C5351"
+    ],
+    "id": "CLAIM:DC4EF6F80C1C371A24DF8855",
+    "name": "COMPONENT:HTTP-REQUEST-LIFECYCLE: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:825B88FA70EA2766B62C5351"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-REQUEST-LIFECYCLE",
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:06+00:00",
+  "entity_id": "CLAIM:DC4EF6F80C1C371A24DF8855",
+  "id": "HISTORY:1C86E438425E2C29037E4EEA"
+}

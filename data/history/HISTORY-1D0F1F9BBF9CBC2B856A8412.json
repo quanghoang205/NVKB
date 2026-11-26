@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:A5300B1E97FAD6A2752A5354",
+    "claim_value": "\"Chuyển tiếp HTTP request/response đến upstream. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:30+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4CC5D57B6B6573849287D7EB"
+    ],
+    "id": "CLAIM:A5300B1E97FAD6A2752A5354",
+    "name": "MODULE:NGX-HTTP-PROXY-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4CC5D57B6B6573849287D7EB"
+    ],
+    "subject_entity_id": "MODULE:NGX-HTTP-PROXY-MODULE",
+    "updated_at": "2026-11-25T02:44:30+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:30+00:00",
+  "entity_id": "CLAIM:A5300B1E97FAD6A2752A5354",
+  "id": "HISTORY:1D0F1F9BBF9CBC2B856A8412"
+}

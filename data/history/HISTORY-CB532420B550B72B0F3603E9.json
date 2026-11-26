@@ -1,0 +1,61 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:43B1C8B8C138B98F706BDBC2",
+      "CLAIM:C240CD8C3EC10AC6B1ECFB97",
+      "CLAIM:02CA8AA4501CFE35889EE093",
+      "CLAIM:4816DA2C8D7CAEBFF31F2F65",
+      "CLAIM:340BA06E27E6CA6AFDF3493B",
+      "CLAIM:71FE1ABFD105E92AF0EF2F6E",
+      "CLAIM:3D6B836B3563F61EC22C8452",
+      "CLAIM:5A6E292A87679BCCAB55E62F"
+    ],
+    "created_at": "2026-11-25T02:28:34+00:00",
+    "cwe_id": "CWE-908",
+    "defensive_principles": "Khởi tạo rõ ràng, kiểm tra state transition và bao phủ nhánh lỗi.",
+    "definition": "Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.",
+    "description": "Sử dụng tài nguyên hoặc trường dữ liệu trước khi khởi tạo đầy đủ.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-908",
+    "learning_objectives": [
+      "Giải thích CWE-908 — Uninitialized Resource bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-908 — Uninitialized Resource",
+    "normal_behavior": "Các trường bắt buộc được khởi tạo trước khi đối tượng được công bố cho callback.",
+    "related_failure_classes": "Uninitialized Resource",
+    "related_knowledge": [],
+    "safety_assumptions": "Các trường bắt buộc được khởi tạo trước khi đối tượng được công bố cho callback.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:7D3E5C22A48FCE4BA1BEFF87",
+      "EVIDENCE:B76F07A8D7C0CE6F98B12DF7",
+      "EVIDENCE:E249E8C616C63CD9A664D9E4"
+    ],
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:28:34+00:00",
+    "cwe_id": "CWE-908",
+    "description": "CWE-908 Use of Uninitialized Resource",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-908",
+    "name": "CWE-908",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B76F07A8D7C0CE6F98B12DF7",
+      "EVIDENCE:E249E8C616C63CD9A664D9E4"
+    ],
+    "updated_at": "2026-11-25T02:28:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "WEAKNESS:CWE-908",
+  "id": "HISTORY:CB532420B550B72B0F3603E9"
+}

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:2C8D4BF7C3FCD955ABD66C70",
+  "authority": "NGINX / F5",
+  "authority_scope": "NGINX / F5",
+  "claim_id": "CLAIM:D46C4C0A83ADCF6B546E00CC",
+  "claim_value": "\"Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:44:34+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:0012C3AAFAE82D8CD012A953: Educational synthesis from linked knowledge notes; topic=LEARNING:PATH-01",
+  "evidence_refs": [
+    "EVIDENCE:0012C3AAFAE82D8CD012A953"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:D46C4C0A83ADCF6B546E00CC",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "LEARNING:PATH-01: failure_impact",
+  "observation_key": "OBSERVATION:EEF86945946BC39AE37A89D9",
+  "observed_at": "2026-11-25T02:44:34+00:00",
+  "predicate": "failure_impact",
+  "product_scope": "LEARNING:PATH-01",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:18:16+00:00",
+  "review_reason": "Earlier learning path edition preserved.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:0012C3AAFAE82D8CD012A953"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "LEARNING:PATH-01",
+  "updated_at": "2026-11-25T04:21:16+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:BF5611C8156D0892D265EA6B",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:38623189ECBE3B9B4CA522CF",
+    "claim_value": "\"resolver use-after-free in OCSP\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:54+00:00",
+    "description": "title",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:AC212FBB0E805BFB4B0627A9: li containing CVE-2026-40701",
+    "evidence_refs": [
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:38623189ECBE3B9B4CA522CF",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-40701: title",
+    "observation_key": "OBSERVATION:8B2101C9137CE434886D2CF1",
+    "observed_at": "2026-11-25T02:27:54+00:00",
+    "predicate": "title",
+    "product_scope": "CVE:CVE-2026-40701",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:18:10+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T04:12:33+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:38623189ECBE3B9B4CA522CF",
+    "claim_value": "\"resolver use-after-free in OCSP\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:27:54+00:00",
+    "description": "title",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9"
+    ],
+    "id": "CLAIM:38623189ECBE3B9B4CA522CF",
+    "name": "CVE:CVE-2026-40701: title",
+    "predicate": "title",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AC212FBB0E805BFB4B0627A9"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-40701",
+    "updated_at": "2026-11-25T02:27:54+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:33+00:00",
+  "entity_id": "CLAIM:38623189ECBE3B9B4CA522CF",
+  "id": "HISTORY:AF4DE5F6D25038C4435DE2AF"
+}

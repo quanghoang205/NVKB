@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:CF4F61C3B6DD32688EB91E57
+title: 'WEAKNESS:CWE-789: definition'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'WEAKNESS:CWE-789: definition'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# WEAKNESS:CWE-789: definition
+
+`CLAIM:CF4F61C3B6DD32688EB91E57` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[WEAKNESS-CWE-789|CWE-789 — Excessive Memory Allocation]]. Predicate: `definition`.
+
+```json
+"Kích thước cấp phát bộ nhớ vượt ngân sách hợp lý do giá trị đầu vào."
+```
+
+## Nguồn và phạm vi
+
+Authority: MITRE CWE. MITRE CWE
+
+[[EVIDENCE-10D1CE64C7D374A3FFA0935A|CWE - CWE-789: Memory Allocation with Excessive Size Value (5.0)]]
+
+Locator: EVIDENCE:10D1CE64C7D374A3FFA0935A: Description / Potential Mitigations; topic=WEAKNESS:CWE-789
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:48:59+00:00. Truy xuất: 2026-11-25T02:48:59+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:A78365E58F56F62312899CB3",
+  "authority": "MITRE CWE",
+  "authority_scope": "MITRE CWE",
+  "claim_id": "CLAIM:CB7FA5B536CA7873A5D4E264",
+  "claim_value": "\"Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.\"",
+  "confidence": 0.8,
+  "created_at": "2026-11-25T02:33:02+00:00",
+  "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:55A0718B812C050459CF0881: Overview / documented record",
+  "evidence_refs": [
+    "EVIDENCE:55A0718B812C050459CF0881"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:CB7FA5B536CA7873A5D4E264",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "CONCEPT:CWE: architecture_position",
+  "observation_key": "OBSERVATION:2B65BDEE9A9FE01D6DC83E6F",
+  "observed_at": "2026-11-25T02:33:02+00:00",
+  "predicate": "architecture_position",
+  "product_scope": "CONCEPT:CWE",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:33:02+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+  "schema_version": "1.2.0",
+  "source_authority": "MITRE CWE",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:55A0718B812C050459CF0881"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CONCEPT:CWE",
+  "updated_at": "2026-11-25T04:12:50+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

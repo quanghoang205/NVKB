@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:0BCF5AEB07675B3B9A63C68D",
+    "authority": "FIRST",
+    "authority_scope": "FIRST",
+    "claim_id": "CLAIM:007335D523CB7F6CE9BF9F65",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "HISTORICAL_GENERATION",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:8670D43F5B9389833DFC54A0: Overview / documented record",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:007335D523CB7F6CE9BF9F65",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "HISTORICAL",
+    "name": "CONCEPT:CVSS: defensive_principles",
+    "observation_key": "OBSERVATION:3B6AA9FA6690B31B4B767EE7",
+    "observed_at": "2026-11-25T02:33:04+00:00",
+    "predicate": "defensive_principles",
+    "product_scope": "CONCEPT:CVSS",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:33:04+00:00",
+    "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "FIRST",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T04:12:26+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "FIRST",
+    "claim_id": "CLAIM:007335D523CB7F6CE9BF9F65",
+    "claim_value": "\"Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:33:04+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "id": "CLAIM:007335D523CB7F6CE9BF9F65",
+    "name": "CONCEPT:CVSS: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:8670D43F5B9389833DFC54A0"
+    ],
+    "subject_entity_id": "CONCEPT:CVSS",
+    "updated_at": "2026-11-25T02:33:04+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:26+00:00",
+  "entity_id": "CLAIM:007335D523CB7F6CE9BF9F65",
+  "id": "HISTORY:2D44623FC2D7A2C1A36D674A"
+}

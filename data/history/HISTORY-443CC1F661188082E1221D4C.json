@@ -1,0 +1,49 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:9D2646BBFE3A1FD093CBBF1E",
+      "CLAIM:1C94B5E7929C8EEAF5F82E10",
+      "CLAIM:0E119E9DF970A65171A90D9D",
+      "CLAIM:F6898F560233ACC56E0E1CBB",
+      "CLAIM:52D2667DD42CFFA525D1795C"
+    ],
+    "created_at": "2026-11-25T05:08:40+00:00",
+    "description": "CVE:CVE-2024-31079 learns_from PROTOCOL:HTTP-3",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "evidence_locator": "/containers/cna/descriptions/0/value; li containing CVE-2024-31079",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "LEARNING",
+    "id": "REL:C38171D7866BEB871FE435CA",
+    "inference_type": "PEDAGOGICAL",
+    "legacy_verification_status": "INFERRED",
+    "name": "learns_from",
+    "object_entity_id": "PROTOCOL:HTTP-3",
+    "predicate": "learns_from",
+    "rationale": "Đọc HTTP/3 — message framing và stream chuyên biệt để thảo luận: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay? Quan hệ học tập; không xác nhận fault location.",
+    "reference_availability": "UNKNOWN",
+    "review_rationale": "Đọc HTTP/3 — message framing và stream chuyên biệt để thảo luận: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay? Quan hệ học tập; không xác nhận fault location.",
+    "review_required": true,
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:40+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Legacy pedagogical recommendation",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:23FEC271923D72AB95F66E42",
+      "EVIDENCE:D5DCCCCBE408A7A73B44E5E4"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2024-31079",
+    "updated_at": "2026-11-25T05:08:40+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "See source evidence; no implicit all-version applicability"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:40+00:00",
+  "entity_id": "REL:C38171D7866BEB871FE435CA",
+  "id": "HISTORY:443CC1F661188082E1221D4C"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:ED45992C8E8E086D5B990FD2",
+    "claim_value": "\"When NGINX Plus or NGINX Open Source is configured to require client certificates (\\\"ssl_verify_client on\\\") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.\\n\\nImpact:\\nAn attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "description": "documented_configuration_context",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001"
+    ],
+    "id": "CLAIM:ED45992C8E8E086D5B990FD2",
+    "name": "CVE:CVE-2026-120967: documented_configuration_context",
+    "predicate": "documented_configuration_context",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:178A68A85AD22B49FA72C001"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-120967",
+    "updated_at": "2026-11-25T02:26:46+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:46+00:00",
+  "entity_id": "CLAIM:ED45992C8E8E086D5B990FD2",
+  "id": "HISTORY:D79F4634E372665B22441A42"
+}

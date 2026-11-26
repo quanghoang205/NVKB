@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:D8349BB79F9C9D5728637E04",
+    "claim_value": "\"Kiểm tra cấu hình trước reload, giới hạn quyền sửa cấu hình và theo dõi lỗi reload.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:10+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "id": "CLAIM:D8349BB79F9C9D5728637E04",
+    "name": "COMPONENT:MASTER-PROCESS: defensive_principles",
+    "predicate": "defensive_principles",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0CE549207866AD440A1B35D8"
+    ],
+    "subject_entity_id": "COMPONENT:MASTER-PROCESS",
+    "updated_at": "2026-11-25T02:44:10+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:10+00:00",
+  "entity_id": "CLAIM:D8349BB79F9C9D5728637E04",
+  "id": "HISTORY:BBB5830DBF54F39E8FCEAE50"
+}

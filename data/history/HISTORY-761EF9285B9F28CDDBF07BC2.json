@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:8FBD94D201B0313055CA5525",
+    "claim_value": "\"Parser phân biệt request line, header và body framing theo giao thức, tiếp tục khi dữ liệu đến thành nhiều phần.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:15+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "id": "CLAIM:8FBD94D201B0313055CA5525",
+    "name": "COMPONENT:REQUEST-PARSING: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:4D44AF8511649D7946E70666"
+    ],
+    "subject_entity_id": "COMPONENT:REQUEST-PARSING",
+    "updated_at": "2026-11-25T02:44:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:15+00:00",
+  "entity_id": "CLAIM:8FBD94D201B0313055CA5525",
+  "id": "HISTORY:761EF9285B9F28CDDBF07BC2"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "claim_value": "\"Memory safety; resource exhaustion.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:11+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+    "name": "COMPONENT:WORKER-PROCESS: related_failure_classes",
+    "predicate": "related_failure_classes",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0AD050A8240D90FF01EE69D1"
+    ],
+    "subject_entity_id": "COMPONENT:WORKER-PROCESS",
+    "updated_at": "2026-11-25T02:44:11+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:11+00:00",
+  "entity_id": "CLAIM:87F4B0EE02C08F57117AAD5B",
+  "id": "HISTORY:A7FBD98EF842E3BEB7F6DB0A"
+}

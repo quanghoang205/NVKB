@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:E8D063544650809257BF3433",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F4A606428E459946B7CBED4E",
+    "claim_value": "\"Không khẳng định RCE từ heap overflow; nguồn của CVE này chỉ mô tả tác động giới hạn.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:46+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "/containers/cna/descriptions/0/value",
+    "evidence_refs": [
+      "EVIDENCE:39DD788819763E124CA119C7"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F4A606428E459946B7CBED4E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-90439: v1.3:potential",
+    "observed_at": "2026-11-25T05:08:47+00:00",
+    "predicate": "v1.3:potential",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:08:47+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:39DD788819763E124CA119C7"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "CVE:CVE-2026-90439",
+    "updated_at": "2026-11-25T05:08:47+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:28:35+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:E8D063544650809257BF3433",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:F4A606428E459946B7CBED4E",
+    "claim_value": "\"Không khẳng định RCE từ heap overflow; nguồn của CVE này chỉ mô tả tác động giới hạn.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:46+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:39DD788819763E124CA119C7"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:F4A606428E459946B7CBED4E",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-90439: v1.3:potential",
+    "observed_at": "2026-11-25T05:08:47+00:00",
+    "predicate": "v1.3:potential",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:39DD788819763E124CA119C7"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-90439",
+    "updated_at": "2026-11-25T05:08:47+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:08:47+00:00",
+  "entity_id": "CLAIM:F4A606428E459946B7CBED4E",
+  "id": "HISTORY:4DBEC1932D31E6B3F99FDF04"
+}

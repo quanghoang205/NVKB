@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:CF9FF7F14A003AFD591DAFE8"
+    ],
+    "created_at": "2026-11-25T02:28:58+00:00",
+    "description": "CVE:CVE-2026-97629 distribution_fix PACKAGE:6047720675D15BD0C6C5768F",
+    "entity_type": "Relationship",
+    "id": "REL:011F0FA091AA844AEFFB841E",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:6047720675D15BD0C6C5768F",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:24196ED39E03A5191BF0C523"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:58+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:58+00:00",
+  "entity_id": "REL:011F0FA091AA844AEFFB841E",
+  "id": "HISTORY:0700902F504A842BCEB7C71F"
+}

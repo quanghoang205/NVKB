@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:46+00:00",
+  "content_hash": "5936fe338823909bfbd4e6fd7efd357d899488fb4bf24c1f7e582e36b90f3b5a",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac72-306a\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:38 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/5936fe338823909bfbd4e6fd7efd357d899488fb4bf24c1f7e582e36b90f3b5a.html",
+  "retrieved_at": "2026-11-25T02:32:46+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_scgi_module.html"
+}

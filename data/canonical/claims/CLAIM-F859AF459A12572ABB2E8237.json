@@ -1,0 +1,37 @@
+{
+  "assertion_key": "ASSERTION:E9C898AF021F9236E55E0B36",
+  "authority": "Canonical / Ubuntu",
+  "claim_id": "CLAIM:F859AF459A12572ABB2E8237",
+  "claim_value": "{\"fixed_version\": \"\", \"patch_status\": \"not-affected\", \"release\": \"plucky\", \"source_status\": \"Not affected\"}",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T04:22:00+00:00",
+  "description": "distribution_patch_status",
+  "entity_type": "Claim",
+  "evidence_locator": "Ubuntu package nginx / plucky",
+  "evidence_refs": [
+    "EVIDENCE:3A62BA07BA6CB8645B2EC1AF"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:F859AF459A12572ABB2E8237",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "PACKAGE:9D67237552EC0418B94E1F45: distribution_patch_status",
+  "observed_at": "2026-11-25T04:22:00+00:00",
+  "predicate": "distribution_patch_status",
+  "reference_availability": "UNKNOWN",
+  "retrieved_at": "2026-11-25T03:24:30.132863+00:00",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:3A62BA07BA6CB8645B2EC1AF"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PACKAGE:9D67237552EC0418B94E1F45",
+  "updated_at": "2026-11-25T04:22:00+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED"
+}

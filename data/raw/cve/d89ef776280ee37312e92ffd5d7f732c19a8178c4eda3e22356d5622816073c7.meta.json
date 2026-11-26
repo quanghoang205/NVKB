@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:25:55+00:00",
+  "content_hash": "3c3302981321882be1c2f999bade3689d889c5cfa152ba57b640ff9393803690",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "W/\"bae7d85732678ae177a1d2a77c101779b0073d8c8eefed59dfd47233fc99fcbe\"",
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/cve/snapshots/3c3302981321882be1c2f999bade3689d889c5cfa152ba57b640ff9393803690.json",
+  "retrieved_at": "2026-11-25T02:25:55+00:00",
+  "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2017/7xxx/CVE-2017-7529.json"
+}

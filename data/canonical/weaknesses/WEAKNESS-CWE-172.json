@@ -1,0 +1,40 @@
+{
+  "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "claim_refs": [
+    "CLAIM:81906E1C0397D03C5D9B4A6F",
+    "CLAIM:CF848A7C389BB4158190612A",
+    "CLAIM:7C2C20DF355D8BBDC77018C3",
+    "CLAIM:D96FA7D4D4734F609AB456F5",
+    "CLAIM:F1D52207C8D79D7A70A80336",
+    "CLAIM:6378539924E54D61C071F478",
+    "CLAIM:F24248D5404D625771F4EB13",
+    "CLAIM:D22914D24D7E6C0B2EF5206D"
+  ],
+  "created_at": "2026-11-25T02:28:10+00:00",
+  "cwe_id": "CWE-172",
+  "defensive_principles": "Kiểm tra encoding hợp lệ, kích thước đầu ra và các trường hợp ký tự nhiều byte.",
+  "definition": "Sai xử lý biểu diễn hoặc chuyển đổi encoding.",
+  "description": "Sai xử lý biểu diễn hoặc chuyển đổi encoding.",
+  "diagram": "",
+  "entity_type": "Weakness",
+  "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+  "id": "WEAKNESS:CWE-172",
+  "learning_objectives": [
+    "Giải thích CWE-172 — Encoding Error bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "CWE-172 — Encoding Error",
+  "normal_behavior": "Encoder/decoder tuân thủ cùng quy tắc và duy trì chiều dài đầu vào/đầu ra.",
+  "related_failure_classes": "Encoding Error",
+  "related_knowledge": [],
+  "safety_assumptions": "Encoder/decoder tuân thủ cùng quy tắc và duy trì chiều dài đầu vào/đầu ra.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+  "source_refs": [
+    "EVIDENCE:7285356524F3AD0BF37D5F1B",
+    "EVIDENCE:97ABE046C832384B27C5D13B",
+    "EVIDENCE:C4A5449A62FA7F84636A2B3E"
+  ],
+  "updated_at": "2026-11-25T04:13:14+00:00",
+  "verification_status": "INFERRED"
+}

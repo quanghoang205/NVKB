@@ -1,0 +1,117 @@
+{
+  "action": "modified",
+  "after": {
+    "answer_explanations": "Cần implementation đúng state và verification policy; nhãn HTTPS không thay chứng cứ contract và bản sửa cho lỗi implementation.",
+    "architecture_position": "Ranh giới mạng giữa proxy và backend.",
+    "article_body": "Nguồn xác nhận: [[CLAIM-4F35ED7ED48D829CB9467480|phạm vi tài liệu]].\n\n## Cơ chế bình thường\n\nReverse proxy nhận message ở một hop và tạo trao đổi khác với upstream. Transport, TLS identity và protocol version của hai hop có thể khác nhau. Được xác thực trên hop client không tự chứng minh upstream đã được xác thực; có TLS ở upstream cũng cần policy verification đúng tên và trust source. Tài liệu có directive riêng cho TLS name/verification và phiên bản HTTP upstream.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-9B8164D27E42E49384968F91|Claim của section]].\n\n## Buffering và lifecycle\n\nResponse buffering cho phép đọc upstream và lưu dữ liệu trước khi client nhận hết; phần vượt bộ nhớ có thể tới temporary file. Khi tắt buffering, nhịp chuyển dữ liệu gắn chặt hơn với bên nhận, nhưng buffer vẫn tồn tại. Request buffering lại thuộc chiều client tới upstream. Hai công tắc không đồng nghĩa và không thay cho kiểm framing.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-82A002DFC36D6EDC7D156637|Claim của section]].\n\n## Invariant ranh giới\n\nDiễn giải: mỗi byte được chuyển phải thuộc đúng message và được đọc từ một nguồn hợp lệ trong state hiện hành. Response upstream là dữ liệu cần parse, không là chỉ thị tự do cho state của worker. Việc chuyển giữa HTTP/2 và representation nội bộ vẫn phải giữ ranh giới headers/body, độ dài và capacity. Khi upstream đóng sớm hoặc timeout, request không được coi là thành công chỉ vì trước đó đã có kết nối.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-B2B453778A6430D8BF5934F0|Claim của section]].\n\n## Tradeoff và phòng vệ\n\nBuffering tách tốc độ hai bên nhưng tiêu thụ tài nguyên; streaming giảm chờ nhưng kéo dài sự phụ thuộc lifecycle. TLS bảo vệ đường truyền trong phạm vi identity và state được triển khai đúng; nó không loại bỏ lỗi xử lý dữ liệu đã giải mã. Quản trị nguồn upstream, chứng thư, timeout và package update là các lớp riêng. Không áp dụng cùng cấu hình mitigation cho HTTP proxy, gRPC, SCGI và uwsgi chỉ vì tất cả đều có upstream.\n\n_Diễn giải tác giả; PARTIAL_: [[CLAIM-427B93525744D03B18CE4AAA|Claim của section]].",
+    "assessment": "Một deployment dùng HTTPS tới upstream có bảo đảm mọi byte đưa vào response đều thuộc phiên được xác thực không?",
+    "claim_refs": [
+      "CLAIM:4F35ED7ED48D829CB9467480",
+      "CLAIM:9B8164D27E42E49384968F91",
+      "CLAIM:82A002DFC36D6EDC7D156637",
+      "CLAIM:B2B453778A6430D8BF5934F0",
+      "CLAIM:427B93525744D03B18CE4AAA"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "curated_fields": [
+      "answer_explanations",
+      "article_body",
+      "assessment",
+      "claim_refs",
+      "curation_version",
+      "definition",
+      "description",
+      "diagram",
+      "editorial_maturity",
+      "editorial_review_note",
+      "learning_objectives",
+      "name",
+      "prerequisites",
+      "related_knowledge",
+      "research_claim_refs",
+      "source_refs",
+      "verification_limitations"
+    ],
+    "curation_version": "1.3.0",
+    "defensive_principles": "Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream theo yêu cầu triển khai.",
+    "definition": "Proxy module quản lý request/response tới upstream, chế độ buffering và TLS verification riêng; connection tới client và upstream là hai context khác nhau.",
+    "description": "Proxy module quản lý request/response tới upstream, chế độ buffering và TLS verification riêng; connection tới client và upstream là hai context khác nhau.",
+    "diagram": "",
+    "editorial_maturity": "AI_REVIEWED",
+    "editorial_review_note": "AI self-review of cited sources and authored reasoning; independent/human/learner review pending.",
+    "entity_type": "Component",
+    "failure_impact": "Kết quả request trùng lặp hoặc truyền dữ liệu sai backend.",
+    "id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "learning_objectives": [
+      "Vẽ hai trust boundary client/proxy và proxy/upstream.",
+      "Phân biệt response buffering với request buffering."
+    ],
+    "name": "Upstream communication — hai hop và ownership của response",
+    "normal_behavior": "Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.",
+    "prerequisites": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "PROTOCOL:TLS"
+    ],
+    "related_failure_classes": "State confusion; improper certificate validation.",
+    "related_knowledge": [
+      "COMPONENT:CONNECTION-LIFECYCLE",
+      "PROTOCOL:TLS"
+    ],
+    "research_claim_refs": [
+      "CLAIM:4F35ED7ED48D829CB9467480",
+      "CLAIM:9B8164D27E42E49384968F91",
+      "CLAIM:82A002DFC36D6EDC7D156637",
+      "CLAIM:B2B453778A6430D8BF5934F0",
+      "CLAIM:427B93525744D03B18CE4AAA"
+    ],
+    "safety_assumptions": "Không coi mọi request có thể retry an toàn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới mạng giữa proxy và backend.",
+    "source_refs": [
+      "EVIDENCE:866DA2E2D0C2FB0A535A8A90"
+    ],
+    "updated_at": "2026-11-25T05:28:16+00:00",
+    "verification_limitations": "Per-section interpretations remain PARTIAL; not a source-code audit or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới mạng giữa proxy và backend.",
+    "claim_refs": [
+      "CLAIM:2273D46050187FBAE1119DFA",
+      "CLAIM:B317621A9B2FC76F4294510B",
+      "CLAIM:896C64D525D89052ABCF7C60",
+      "CLAIM:5DC014C4A8E36F9D163E5F7D",
+      "CLAIM:F6A758740EC902B1961D13D1",
+      "CLAIM:28E59CA3C2DB948A8DC495E0",
+      "CLAIM:2816A7BFB804C374024870AD",
+      "CLAIM:1CFFD0DC41D442211D667ACF"
+    ],
+    "created_at": "2026-11-25T02:32:12+00:00",
+    "defensive_principles": "Rà soát retry, giới hạn kết nối và xác minh chứng chỉ upstream theo yêu cầu triển khai.",
+    "definition": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "description": "Quản lý peer, kết nối và trao đổi với dịch vụ backend.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Kết quả request trùng lặp hoặc truyền dữ liệu sai backend.",
+    "id": "COMPONENT:UPSTREAM-COMMUNICATION",
+    "learning_objectives": [
+      "Giải thích Upstream communication bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "Upstream communication",
+    "normal_behavior": "Upstream lựa chọn peer theo cấu hình; quá trình connect/send/read phải xử lý lỗi và timeout. Retry phải phù hợp với semantics request.",
+    "related_failure_classes": "State confusion; improper certificate validation.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không coi mọi request có thể retry an toàn.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới mạng giữa proxy và backend.",
+    "source_refs": [
+      "EVIDENCE:CF0A5819734837C63FAD4EB1"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:28:16+00:00",
+  "entity_id": "COMPONENT:UPSTREAM-COMMUNICATION",
+  "id": "HISTORY:1BE22DB8DDD51A157C9DCD32"
+}

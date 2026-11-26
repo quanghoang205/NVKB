@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:44+00:00",
+  "content_hash": "d98c907df5f9e4927c2ed12f64fa3d73037fa922a78d1677dabceade669c11aa",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac71-9ee\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:37 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/d98c907df5f9e4927c2ed12f64fa3d73037fa922a78d1677dabceade669c11aa.html",
+  "retrieved_at": "2026-11-25T02:32:44+00:00",
+  "source_url": "https://nginx.org/en/docs/http/ngx_http_dav_module.html"
+}

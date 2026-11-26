@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:7872B87E81668133440F843D",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:42CA9CD3EDDAE8437190E3A3",
+    "claim_value": "\"## Tradeoff và giới hạn phòng vệ\\n\\nResumption giảm chi phí handshake nhưng thêm state và policy về tái sử dụng. Early data có giới hạn replay riêng, không được coi như dữ liệu sau full handshake trong mọi ứng dụng. Hỗ trợ giao thức của NGINX còn phụ thuộc build và thư viện TLS; RFC là chuẩn giao thức, không chứng minh compile flags của binary đang chạy.\\n\\nVí dụ: chứng thư client hợp lệ cho tài khoản A không đủ chứng minh A được sửa tài liệu của B. Xác định kiểm tra nào thuộc TLS và kiểm tra nào thuộc ứng dụng. Câu hỏi mở: trust store, revocation policy và tên peer được xác minh ở thành phần nào trong deployment?\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:58+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:42CA9CD3EDDAE8437190E3A3",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:TLS: pilot_section:Tradeoff và giới hạn phòng vệ",
+    "observed_at": "2026-11-25T04:20:58+00:00",
+    "predicate": "pilot_section:Tradeoff và giới hạn phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:D520284776E11B5BE3AC5151"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:TLS",
+    "updated_at": "2026-11-25T04:20:58+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:58+00:00",
+  "entity_id": "CLAIM:42CA9CD3EDDAE8437190E3A3",
+  "id": "HISTORY:4779E347A8462F8689830999"
+}

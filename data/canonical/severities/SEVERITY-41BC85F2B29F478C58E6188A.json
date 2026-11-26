@@ -1,0 +1,22 @@
+{
+  "assessment_key": "ASSESSMENT:5E97A6970A422B912E0CBB14",
+  "claim_refs": [
+    "CLAIM:C28E0055F4A6168AC9DC0B20"
+  ],
+  "created_at": "2026-11-25T02:28:19+00:00",
+  "description": "Nhãn severity từ upstream; không tự ánh xạ thành CVSS.",
+  "distribution_channel": "NGINX / F5",
+  "entity_type": "Severity",
+  "id": "SEVERITY:41BC85F2B29F478C58E6188A",
+  "name": "NGINX severity: medium",
+  "original_authority": "F5",
+  "schema_version": "1.2.0",
+  "scoring_authority": "NGINX / F5",
+  "severity_label": "medium",
+  "source_refs": [
+    "EVIDENCE:9A41A4C86EE0F14F74983A61"
+  ],
+  "subject_entity_id": "CVE:CVE-2026-42945",
+  "updated_at": "2026-11-25T04:13:11+00:00",
+  "verification_status": "VERIFIED"
+}

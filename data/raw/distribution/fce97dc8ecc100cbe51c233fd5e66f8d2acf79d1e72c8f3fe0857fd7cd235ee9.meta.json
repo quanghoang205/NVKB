@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:28:26+00:00",
+  "content_hash": "c489ab85e38b236b7525e456020a8708c787b62d7f29c80d2ad019f816322eeb",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/c489ab85e38b236b7525e456020a8708c787b62d7f29c80d2ad019f816322eeb.html",
+  "retrieved_at": "2026-11-25T02:28:26+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2026-48142"
+}

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd",
+    "created_at": "2026-11-25T02:26:34+00:00",
+    "description": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "document_title": "CVE-2025-53859",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+    "id": "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+    "local_snapshot_path": "data/raw/cve/snapshots/16c73771f1791c9b7d5c062d8c8213d455d8c7bd00fbd314bf396839321bacdd.json",
+    "name": "CVE-2025-53859",
+    "paraphrase": "Điểm CVSS giữ riêng theo scoring authority và phiên bản.",
+    "publisher": "CVE Program",
+    "retrieved_at": "2026-11-25T02:26:33+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/metrics",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/53xxx/CVE-2025-53859.json",
+    "updated_at": "2026-11-25T02:26:34+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:34+00:00",
+  "entity_id": "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+  "id": "HISTORY:F9CBD722766F0B06FCE1A46B"
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:20+00:00",
+  "content_hash": "6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/6a1c53205c31239ce8db36ac59bc276d3dcd35c4d15aae511017d760c66ab6c8.html",
+  "retrieved_at": "2026-11-25T02:26:20+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-32760"
+}

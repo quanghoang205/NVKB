@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:5DEB8014C341BE35357890C9",
+    "claim_value": "\"Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:26+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:A8E0CD4EC39541F68F84D25F"
+    ],
+    "id": "CLAIM:5DEB8014C341BE35357890C9",
+    "name": "WEAKNESS:CWE-125: definition",
+    "predicate": "definition",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:A8E0CD4EC39541F68F84D25F"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-125",
+    "updated_at": "2026-11-25T02:44:26+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:26+00:00",
+  "entity_id": "CLAIM:5DEB8014C341BE35357890C9",
+  "id": "HISTORY:189911613BB68250B161815B"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:29A33A97C59D96025CE3A257",
+    "authority": "CNA F5 / CVE Program",
+    "claim_id": "CLAIM:7A67B57ED9F0A348E9AB4916",
+    "claim_value": "\"CNA công bố worker termination.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:43+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7A67B57ED9F0A348E9AB4916",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2024-35200: v1.3:impact",
+    "observed_at": "2026-11-25T05:08:43+00:00",
+    "predicate": "v1.3:impact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:80A0AE63DCFFAA16F5132FFC"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2024-35200",
+    "updated_at": "2026-11-25T05:08:43+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:43+00:00",
+  "entity_id": "CLAIM:7A67B57ED9F0A348E9AB4916",
+  "id": "HISTORY:7B0F20EAD3976CAD4837E146"
+}

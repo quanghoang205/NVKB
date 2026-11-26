@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:27:25+00:00",
+    "cwe_id": "CWE-349",
+    "description": "CWE-349: Acceptance of Extraneous Untrusted Data With Trusted Data",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-349",
+    "name": "CWE-349",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:390C6877B8808296F820D86C"
+    ],
+    "updated_at": "2026-11-25T02:27:25+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:25+00:00",
+  "entity_id": "WEAKNESS:CWE-349",
+  "id": "HISTORY:CD65790181E76371F65C6F77"
+}

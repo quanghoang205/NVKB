@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:82E63336DF85833C317AF1B2",
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:9152EC0FFF2E4DF223C54BA7",
+    "claim_value": "\"CWE-787 mô tả ghi ngoài biên buffer dự định; các hậu quả và biện pháp giảm thiểu được taxonomy nêu không chứng minh tất cả cùng xảy ra ở một CVE cụ thể.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:57+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "Description; Common Consequences; Potential Mitigations",
+    "evidence_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9152EC0FFF2E4DF223C54BA7",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-787: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T05:28:57+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Support is limited to the named product, conditions and documented impact; no independent root-cause verification.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:28:58+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "source_support_status": "SUPPORTED",
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T05:28:58+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED",
+    "version_scope": "Document snapshot 2026-11-25T02:32:33+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:82E63336DF85833C317AF1B2",
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:9152EC0FFF2E4DF223C54BA7",
+    "claim_value": "\"CWE-787 mô tả ghi ngoài biên buffer dự định; các hậu quả và biện pháp giảm thiểu được taxonomy nêu không chứng minh tất cả cùng xảy ra ở một CVE cụ thể.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:28:57+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:9152EC0FFF2E4DF223C54BA7",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-787: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T05:28:57+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:2EA269027FEA7940F910D54E"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-787",
+    "updated_at": "2026-11-25T05:28:57+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "changed_at": "2026-11-25T05:28:58+00:00",
+  "entity_id": "CLAIM:9152EC0FFF2E4DF223C54BA7",
+  "id": "HISTORY:ADE63E4D13EA8C490A7491A0"
+}

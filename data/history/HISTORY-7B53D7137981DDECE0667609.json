@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:AD4746EA4BD90281EEEAFB62",
+    "authority": "NGINX / F5",
+    "authority_scope": "NGINX / F5",
+    "claim_id": "CLAIM:1B8B469AC7C40B3B30EA29F9",
+    "claim_value": "\"Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:EB05C6F9389F40F1937A4BF0: proxy_cache; topic=COMPONENT:HTTP-CACHING",
+    "evidence_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1B8B469AC7C40B3B30EA29F9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:HTTP-CACHING: failure_impact",
+    "observation_key": "OBSERVATION:6D56960D3C935BA84C18B6C5",
+    "observed_at": "2026-11-25T02:44:18+00:00",
+    "predicate": "failure_impact",
+    "product_scope": "COMPONENT:HTTP-CACHING",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:11+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "NGINX / F5",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T04:12:30+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:1B8B469AC7C40B3B30EA29F9",
+    "claim_value": "\"Nội dung bị chia sẻ sai phạm vi hoặc lỗi thời.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "id": "CLAIM:1B8B469AC7C40B3B30EA29F9",
+    "name": "COMPONENT:HTTP-CACHING: failure_impact",
+    "predicate": "failure_impact",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:EB05C6F9389F40F1937A4BF0"
+    ],
+    "subject_entity_id": "COMPONENT:HTTP-CACHING",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:30+00:00",
+  "entity_id": "CLAIM:1B8B469AC7C40B3B30EA29F9",
+  "id": "HISTORY:7B53D7137981DDECE0667609"
+}

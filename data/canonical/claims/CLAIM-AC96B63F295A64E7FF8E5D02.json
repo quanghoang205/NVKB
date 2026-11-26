@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:5E519F2D0338437CC90587C6",
+  "authority": "CVE Program",
+  "authority_scope": "CVE Program",
+  "claim_id": "CLAIM:AC96B63F295A64E7FF8E5D02",
+  "claim_value": "[{\"lessThan\": \"*\", \"status\": \"unaffected\", \"version\": \"1.31.0\", \"versionType\": \"semver\"}, {\"lessThan\": \"1.30.1\", \"status\": \"affected\", \"version\": \"1.29.4\", \"versionType\": \"semver\"}]",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:28:10+00:00",
+  "description": "cna_version_data:CVE Program",
+  "disposition_reason": "CURRENT_REFERENCE",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:2E6E0CE3B1CC5B8D5E9E050B: /containers/cna/affected",
+  "evidence_refs": [
+    "EVIDENCE:2E6E0CE3B1CC5B8D5E9E050B"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:AC96B63F295A64E7FF8E5D02",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "CURRENT",
+  "name": "CVE:CVE-2026-42926: cna_version_data:CVE Program",
+  "observation_key": "OBSERVATION:BC55C91EFD57127F97F4D5BB",
+  "observed_at": "2026-11-25T02:28:10+00:00",
+  "predicate": "cna_version_data:CVE Program",
+  "product_scope": "CVE:CVE-2026-42926",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:28:08+00:00",
+  "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "",
+  "schema_version": "1.2.0",
+  "source_authority": "CVE Program",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:2E6E0CE3B1CC5B8D5E9E050B"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "CVE:CVE-2026-42926",
+  "updated_at": "2026-11-25T04:12:47+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

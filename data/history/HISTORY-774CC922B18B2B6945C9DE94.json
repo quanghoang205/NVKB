@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:1B4E0EA27F5C3843FAFE7D7A",
+    "claim_value": "\"Description\\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \\n\\nshared:name:size\\n\\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \\n\\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\\n\\nImpact\\n\\n\\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\\n\\n\\n\\n\\n\\n\\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:57+00:00",
+    "description": "description",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:B82A818F173B70E95BF7A4CA"
+    ],
+    "id": "CLAIM:1B4E0EA27F5C3843FAFE7D7A",
+    "name": "CVE:CVE-2026-97629: description",
+    "predicate": "description",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:B82A818F173B70E95BF7A4CA"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-97629",
+    "updated_at": "2026-11-25T02:28:57+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:57+00:00",
+  "entity_id": "CLAIM:1B4E0EA27F5C3843FAFE7D7A",
+  "id": "HISTORY:774CC922B18B2B6945C9DE94"
+}

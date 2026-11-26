@@ -1,0 +1,52 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NVKB curation",
+    "claim_id": "CLAIM:784D1FEED1E53FA925DC2ACF",
+    "claim_value": "\"Nguồn phân loại vấn đề: Buffer overread in the ngx_mail_smtp_module.\\n\\nCWE-125 — Out-of-bounds read: Đọc ngoài giới hạn một vùng bộ nhớ hợp lệ.\\n\\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:40:21+00:00",
+    "description": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C",
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:731A4A54AEE8E3E27D50F0A5",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:C64041668867A3477B753896",
+      "EVIDENCE:C991C441AABF308862C5097D",
+      "EVIDENCE:DA3DD605D5072152D133FF26",
+      "EVIDENCE:DBDA0BDE4EFAD46D32B6E9FC",
+      "EVIDENCE:ED3FFFAC9D39C0D9C5057BC3",
+      "EVIDENCE:F43E09B91F0D0A09B4E42149",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "id": "CLAIM:784D1FEED1E53FA925DC2ACF",
+    "name": "CVE:CVE-2025-53859: root_cause_summary",
+    "predicate": "root_cause_summary",
+    "reviewer_notes": "CWE-based teaching explanation; specific code-level root cause not independently reviewed.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:0EC22AB6E6F9ED760E17126C",
+      "EVIDENCE:55A782C361CE5C36D1E3B3FC",
+      "EVIDENCE:662C7E7EF279A8418B10DAAC",
+      "EVIDENCE:731A4A54AEE8E3E27D50F0A5",
+      "EVIDENCE:7BB1B2DFE97D5E0D0A8019E0",
+      "EVIDENCE:C64041668867A3477B753896",
+      "EVIDENCE:C991C441AABF308862C5097D",
+      "EVIDENCE:DA3DD605D5072152D133FF26",
+      "EVIDENCE:DBDA0BDE4EFAD46D32B6E9FC",
+      "EVIDENCE:ED3FFFAC9D39C0D9C5057BC3",
+      "EVIDENCE:F43E09B91F0D0A09B4E42149",
+      "EVIDENCE:FB2A7E51F617D62E623BB202"
+    ],
+    "subject_entity_id": "CVE:CVE-2025-53859",
+    "updated_at": "2026-11-25T02:40:22+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:40:22+00:00",
+  "entity_id": "CLAIM:784D1FEED1E53FA925DC2ACF",
+  "id": "HISTORY:093A101CE712B08C6040A0F6"
+}

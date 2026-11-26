@@ -1,0 +1,58 @@
+{
+  "action": "modified",
+  "after": {
+    "claim_refs": [
+      "CLAIM:E302CC72E77C45C833C2862D"
+    ],
+    "created_at": "2026-11-25T02:27:39+00:00",
+    "description": "CVE:CVE-2026-28753 fixed_in VERSION:NGINX-1.28.3",
+    "direction": "subject_to_object",
+    "entity_type": "Relationship",
+    "extraction_status": "NOT_CHECKED",
+    "graph_layer": "TECHNICAL",
+    "id": "REL:55604E31EF33523FBB1385B1",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "VERIFIED",
+    "name": "fixed_in",
+    "object_entity_id": "VERSION:NGINX-1.28.3",
+    "predicate": "fixed_in",
+    "rationale": "Legacy association: Documented fixed upstream release. Source references alone do not establish causation.",
+    "reference_availability": "UNKNOWN",
+    "review_required": true,
+    "review_status": "NOT_REVIEWED",
+    "schema_version": "1.2.0",
+    "semantic_meaning": "Documented fixed upstream release",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:C5A225F86EA1A78912011287"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T04:13:07+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "VERIFIED",
+    "version_scope": "Legacy evidence scope; no all-version generalization"
+  },
+  "before": {
+    "claim_refs": [
+      "CLAIM:E302CC72E77C45C833C2862D"
+    ],
+    "created_at": "2026-11-25T02:27:39+00:00",
+    "description": "CVE:CVE-2026-28753 fixed_in VERSION:NGINX-1.28.3",
+    "entity_type": "Relationship",
+    "id": "REL:55604E31EF33523FBB1385B1",
+    "name": "fixed_in",
+    "object_entity_id": "VERSION:NGINX-1.28.3",
+    "predicate": "fixed_in",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:C5A225F86EA1A78912011287"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-28753",
+    "updated_at": "2026-11-25T02:27:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:13:07+00:00",
+  "entity_id": "REL:55604E31EF33523FBB1385B1",
+  "id": "HISTORY:85CE507B51EA86CCD7F9BE41"
+}

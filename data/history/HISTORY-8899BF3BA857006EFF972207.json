@@ -1,0 +1,21 @@
+{
+  "action": "created",
+  "after": {
+    "created_at": "2026-11-25T02:26:15+00:00",
+    "cwe_id": "CWE-121",
+    "description": "CWE-121 Stack-based Buffer Overflow",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-121",
+    "name": "CWE-121",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:794F9317F5F0B67AF541B6D4"
+    ],
+    "updated_at": "2026-11-25T02:26:15+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:15+00:00",
+  "entity_id": "WEAKNESS:CWE-121",
+  "id": "HISTORY:8899BF3BA857006EFF972207"
+}

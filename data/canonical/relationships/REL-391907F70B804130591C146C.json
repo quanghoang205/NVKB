@@ -1,0 +1,37 @@
+{
+  "claim_refs": [
+    "CLAIM:8D23AFE0D3FDEADF28990AAA"
+  ],
+  "created_at": "2026-11-25T05:38:28+00:00",
+  "description": "WEAKNESS:CWE-863 CONTEXTUAL_ASSOCIATION IMPACT:CLIENT-AUTHENTICATION-POLICY",
+  "direction": "subject_to_object",
+  "entity_type": "Relationship",
+  "evidence_locator": "/containers/cna/descriptions/0/value",
+  "extraction_status": "NOT_CHECKED",
+  "graph_layer": "TECHNICAL",
+  "id": "REL:391907F70B804130591C146C",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "name": "CONTEXTUAL_ASSOCIATION",
+  "object_entity_id": "IMPACT:CLIENT-AUTHENTICATION-POLICY",
+  "predicate": "CONTEXTUAL_ASSOCIATION",
+  "rationale": "Policy context ở 23419 là ví dụ học về identity/authorization, không gộp hai thuật ngữ. Lớp lỗi được CNA gán trong case này; impact là mô tả nguồn riêng, không suy từ CWE.",
+  "reference_availability": "UNKNOWN",
+  "review_rationale": "Policy context ở 23419 là ví dụ học về identity/authorization, không gộp hai thuật ngữ. Lớp lỗi được CNA gán trong case này; impact là mô tả nguồn riêng, không suy từ CWE.",
+  "review_required": true,
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:38:28+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "schema_version": "1.2.0",
+  "semantic_meaning": "Related context, not causation",
+  "source_integrity": "NOT_CHECKED",
+  "source_refs": [
+    "EVIDENCE:1982F926ED09EC13B93A0EAB"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "WEAKNESS:CWE-863",
+  "updated_at": "2026-11-25T05:38:28+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "CVE-2025-23419; see per-CVE advisory versions"
+}

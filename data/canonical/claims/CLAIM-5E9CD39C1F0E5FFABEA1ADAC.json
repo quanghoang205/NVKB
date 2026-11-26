@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:4F93FCFAED1C79F24BB2CB62",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+  "claim_value": "\"## Điều khiển và giới hạn\\n\\nPolicy ở server side tránh phụ thuộc đơn thuần vào trạng thái do client tự khai báo. Tách quyền của tiến trình và hạn chế tài nguyên có thể giảm hậu quả, nhưng không thay cập nhật bản vá hay sửa logic. Một worker chạy quyền hạn chế vẫn có thể truy cập dữ liệu mà ứng dụng đã cho phép nó đọc; ranh giới OS không giải quyết tự động quyền giữa khách hàng.\\n\\n\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:07+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#Potential_Mitigations",
+  "evidence_refs": [
+    "EVIDENCE:7A43D63D03C50227DF951CF8"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:5E9CD39C1F0E5FFABEA1ADAC",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "CONTROL:LEAST-PRIVILEGE: pilot_section:Điều khiển và giới hạn",
+  "observed_at": "2026-11-25T04:21:08+00:00",
+  "predicate": "pilot_section:Điều khiển và giới hạn",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read cwe863 at #Potential_Mitigations; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:08+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:7A43D63D03C50227DF951CF8"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "CONTROL:LEAST-PRIVILEGE",
+  "updated_at": "2026-11-25T04:21:08+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Official document snapshot retrieved 2026-11-25T04:10:42+00:00; deployment version not established"
+}

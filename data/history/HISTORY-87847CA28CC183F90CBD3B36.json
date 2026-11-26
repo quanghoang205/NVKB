@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "CVE Program / CNA",
+    "claim_id": "CLAIM:9252E23EDBC990FFC8F37FA5",
+    "claim_value": "\"WEAKNESS:CWE-122\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:28:41+00:00",
+    "description": "related_weaknesses",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "id": "CLAIM:9252E23EDBC990FFC8F37FA5",
+    "name": "CVE:CVE-2026-9256: related_weaknesses",
+    "predicate": "related_weaknesses",
+    "reviewer_notes": "",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F8A106D1BC0974617FFB0815"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-9256",
+    "updated_at": "2026-11-25T02:28:41+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:28:41+00:00",
+  "entity_id": "CLAIM:9252E23EDBC990FFC8F37FA5",
+  "id": "HISTORY:87847CA28CC183F90CBD3B36"
+}

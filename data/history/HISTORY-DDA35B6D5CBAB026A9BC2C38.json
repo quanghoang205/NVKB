@@ -1,0 +1,24 @@
+{
+  "action": "created",
+  "after": {
+    "branch": "mainline",
+    "created_at": "2026-11-25T02:21:55+00:00",
+    "description": "Upstream release được advisory xác định đã sửa lỗi.",
+    "ecosystem": "upstream",
+    "entity_type": "Version",
+    "id": "VERSION:NGINX-1.27.4",
+    "name": "NGINX 1.27.4",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:E19E68B2E196A0C50233787A"
+    ],
+    "updated_at": "2026-11-25T02:21:55+00:00",
+    "verification_status": "VERIFIED",
+    "version": "1.27.4"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:21:55+00:00",
+  "entity_id": "VERSION:NGINX-1.27.4",
+  "id": "HISTORY:DDA35B6D5CBAB026A9BC2C38"
+}

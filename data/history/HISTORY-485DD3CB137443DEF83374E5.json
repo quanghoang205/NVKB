@@ -1,0 +1,86 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:67B9EC490C46CCA2495C828C",
+      "CLAIM:43CEBCA8B3B3D6D96B86DAA8",
+      "CLAIM:AFADD1530EEF781CB56C34DD",
+      "CLAIM:A21E9F3B0A0B446717C068DD",
+      "CLAIM:685852DDEF91C87533D0CC36",
+      "CLAIM:8654A56DFD4A5C620D3DE936",
+      "CLAIM:AD784617D468CBD33821C150",
+      "CLAIM:9B8E1E02AAFC4CA4B14072BE"
+    ],
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "cwe_id": "CWE-1289",
+    "defensive_principles": "Xác định canonical representation và kiểm tra cùng policy ở các lớp.",
+    "definition": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "description": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-1289",
+    "learning_objectives": [
+      "Giải thích CWE-1289 — Unsafe Equivalence in Input bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-1289 — Unsafe Equivalence in Input",
+    "normal_behavior": "Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.",
+    "related_failure_classes": "Unsafe Equivalence in Input",
+    "related_knowledge": [],
+    "safety_assumptions": "Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:71362C6FD38E82A400DFCC59",
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "updated_at": "2026-11-25T04:13:14+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:67B9EC490C46CCA2495C828C",
+      "CLAIM:43CEBCA8B3B3D6D96B86DAA8",
+      "CLAIM:AFADD1530EEF781CB56C34DD",
+      "CLAIM:A21E9F3B0A0B446717C068DD",
+      "CLAIM:685852DDEF91C87533D0CC36",
+      "CLAIM:8654A56DFD4A5C620D3DE936",
+      "CLAIM:AD784617D468CBD33821C150",
+      "CLAIM:9B8E1E02AAFC4CA4B14072BE"
+    ],
+    "created_at": "2026-11-25T02:26:46+00:00",
+    "cwe_id": "CWE-1289",
+    "defensive_principles": "Xác định canonical representation và kiểm tra cùng policy ở các lớp.",
+    "definition": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "description": "Xem hai biểu diễn input là tương đương khi phép tương đương không an toàn.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-1289",
+    "learning_objectives": [
+      "Giải thích CWE-1289 — Unsafe Equivalence in Input bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-1289 — Unsafe Equivalence in Input",
+    "normal_behavior": "Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.",
+    "related_failure_classes": "Unsafe Equivalence in Input",
+    "related_knowledge": [],
+    "safety_assumptions": "Quy tắc chuẩn hóa và so sánh phải giữ nguyên ý nghĩa bảo mật.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:423B8012C6D7EE5916766C00",
+      "EVIDENCE:71362C6FD38E82A400DFCC59",
+      "EVIDENCE:89A71DECA0CDA7465848AA99"
+    ],
+    "updated_at": "2026-11-25T02:48:55+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:13:14+00:00",
+  "entity_id": "WEAKNESS:CWE-1289",
+  "id": "HISTORY:485DD3CB137443DEF83374E5"
+}

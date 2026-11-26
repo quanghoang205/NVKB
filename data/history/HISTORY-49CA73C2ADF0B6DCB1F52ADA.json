@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:52CDC79F79FE7B0A42B885AF",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:1A26476243AB200244198FFA",
+    "claim_value": "\"## Invariant và ranh giới\\n\\nDiễn giải phòng vệ: mọi lần dùng một con trỏ phải xảy ra khi allocation và owner tương ứng còn sống. Một callback còn trong queue không tự kéo dài tuổi pool; nhà phát triển phải dùng cơ chế lifecycle thích hợp. Process heap và shared memory có phạm vi khác nhau. Hủy pool trong một worker không chứng minh state dùng chung giữa worker đã được xử lý đúng.\\n\\n\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T04:20:53+00:00",
+    "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:1A26476243AB200244198FFA",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "COMPONENT:MEMORY-POOL: pilot_section:Invariant và ranh giới",
+    "observed_at": "2026-11-25T04:20:53+00:00",
+    "predicate": "pilot_section:Invariant và ranh giới",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:F3FDC08074102946B250B1B6"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "COMPONENT:MEMORY-POOL",
+    "updated_at": "2026-11-25T04:20:53+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T04:20:53+00:00",
+  "entity_id": "CLAIM:1A26476243AB200244198FFA",
+  "id": "HISTORY:49CA73C2ADF0B6DCB1F52ADA"
+}

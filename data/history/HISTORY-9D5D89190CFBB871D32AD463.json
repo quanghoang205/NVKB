@@ -1,0 +1,26 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:3D5C45EEF7E0BF385247F140"
+    ],
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "CVE:CVE-2026-42055 distribution_fix PACKAGE:B81B35F53CE1CB991EE32CB9",
+    "entity_type": "Relationship",
+    "id": "REL:EC86D5BF22B02FD050C3C059",
+    "name": "distribution_fix",
+    "object_entity_id": "PACKAGE:B81B35F53CE1CB991EE32CB9",
+    "predicate": "distribution_fix",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:615C82DFAD5E4E560F7E1F42"
+    ],
+    "subject_entity_id": "CVE:CVE-2026-42055",
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:59+00:00",
+  "entity_id": "REL:EC86D5BF22B02FD050C3C059",
+  "id": "HISTORY:9D5D89190CFBB871D32AD463"
+}

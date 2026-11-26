@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:79288A3BBD857C84389A2E61",
+    "claim_value": "\"Xử lý POP3 trong vai trò mail proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:32:51+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:AFED1E0F5D3FB3E985B8EB38"
+    ],
+    "id": "CLAIM:79288A3BBD857C84389A2E61",
+    "name": "MODULE:NGX-MAIL-POP3-MODULE: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:AFED1E0F5D3FB3E985B8EB38"
+    ],
+    "subject_entity_id": "MODULE:NGX-MAIL-POP3-MODULE",
+    "updated_at": "2026-11-25T02:32:51+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:51+00:00",
+  "entity_id": "CLAIM:79288A3BBD857C84389A2E61",
+  "id": "HISTORY:847E46A7AB22FB30E9F81D81"
+}

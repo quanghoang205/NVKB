@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "NGINX / F5",
+    "claim_id": "CLAIM:CB7BE9082C9E3C76B7C8B747",
+    "claim_value": "\"Ranh giới hệ điều hành giữa quyền quản trị, tệp hệ thống và dữ liệu request.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:06+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "id": "CLAIM:CB7BE9082C9E3C76B7C8B747",
+    "name": "COMPONENT:PROCESS-PRIVILEGES: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:59CE30AA3E107BC7084952CD"
+    ],
+    "subject_entity_id": "COMPONENT:PROCESS-PRIVILEGES",
+    "updated_at": "2026-11-25T02:32:06+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:06+00:00",
+  "entity_id": "CLAIM:CB7BE9082C9E3C76B7C8B747",
+  "id": "HISTORY:06F0A8CD3A2883FF53F2A7B7"
+}

@@ -1,0 +1,298 @@
+{
+  "action": "modified",
+  "after": {
+    "affected_feature_description": "NULL pointer dereference when using PROXY protocol version 2",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:014F3149E5707360ED947277"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:09299B0B028EAA58475AD57A",
+      "CLAIM:0CC8FE80CBF7449347447892",
+      "CLAIM:2C04F08A6901F2579F713D88",
+      "CLAIM:53B5C65E2D36DE7DC110C89D",
+      "CLAIM:5400C8483B7172F19E44E1A8",
+      "CLAIM:551D3A520595B3940A941681",
+      "CLAIM:56C971320BE0EE4CB1D9873B",
+      "CLAIM:5CC573CFC2C369EE5ABE4738",
+      "CLAIM:5CD1D5FFC5884D0CF14C42A8",
+      "CLAIM:64A07138A451C55650906D00",
+      "CLAIM:6A835B33FBB7314D7A2E3430",
+      "CLAIM:6AA16A62464C8F8AB675C842",
+      "CLAIM:75FEBF22B315BE845C409F12",
+      "CLAIM:7B7FC82E246BC9A5D6B61EEE",
+      "CLAIM:7C496DF5CEC2DF564539C571",
+      "CLAIM:8C2D80BB15B3129ED4118E33",
+      "CLAIM:8D2CB47C0A904E9FC859F454",
+      "CLAIM:96417889EEB865498377D9E0",
+      "CLAIM:9663C62C709D7F66529E4B04",
+      "CLAIM:9B8AFC1B9D13A98964C2C548",
+      "CLAIM:9E03759E548CEDA824AD63EE",
+      "CLAIM:9FC33B673A7A93C3F140B8A3",
+      "CLAIM:A4D88697EC12D178DF63CD84",
+      "CLAIM:BE0A415E613CFC2E064B1E0E",
+      "CLAIM:D43625C3237E3E99419D8FA6",
+      "CLAIM:D46B37D7E651370CF8F8F491",
+      "CLAIM:DD91C0950CE6BF043E90E69F",
+      "CLAIM:F2396DBC2CC1D80D33A52DD8"
+    ],
+    "condition_refs": [
+      "CONDITION:2FAF6D999E86CCF5EE275E19"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "cve_id": "CVE-2026-120993",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:7A33ECE84DC704B464AE0D15"
+    ],
+    "distribution_status": [
+      "PACKAGE:7A33ECE84DC704B464AE0D15"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-120993 ghi nhận: NULL pointer dereference when using PROXY protocol version 2. Phạm vi upstream: 1.31.4-1.31.8. Bản sửa được công bố: 1.31.9+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120993",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T22:56:16.483000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-120993",
+    "normal_component_behavior": "Cấu hình TLS cho stream proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.729000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:8961C4A9579C0EE636A06D1A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-STREAM-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: NULL pointer dereference when using PROXY protocol version 2.\n\nCWE-476 — NULL pointer dereference: Truy cập qua con trỏ NULL.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.2.0",
+    "security_assumption_violated": "Đường lỗi không tiếp tục như đường thành công.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:3DF722CEC93FF2FF66D64D3E",
+      "SEVERITY:4706B12B66A666D7FCC58B63",
+      "SEVERITY:5E3DBD0F3CF286848B38A5F6",
+      "SEVERITY:9460C3FA80C0E735548BC777",
+      "SEVERITY:D67D9F7ED54341FF19E20502"
+    ],
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "title": "NULL pointer dereference when using PROXY protocol version 2",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "upstream_affected_expression": "1.31.4-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "before": {
+    "affected_feature_description": "NULL pointer dereference when using PROXY protocol version 2",
+    "affected_process": "NGINX worker process (được nêu trực tiếp trong mô tả nguồn).",
+    "affected_products": [
+      "PRODUCT:NGINX-OSS"
+    ],
+    "affected_version_ranges": [
+      "RANGE:014F3149E5707360ED947277"
+    ],
+    "applicability_limitations": "Inventory phiên bản không xác định cấu hình đang hoạt động. ",
+    "availability_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "claim_refs": [
+      "CLAIM:09299B0B028EAA58475AD57A",
+      "CLAIM:0CC8FE80CBF7449347447892",
+      "CLAIM:2C04F08A6901F2579F713D88",
+      "CLAIM:53B5C65E2D36DE7DC110C89D",
+      "CLAIM:5400C8483B7172F19E44E1A8",
+      "CLAIM:551D3A520595B3940A941681",
+      "CLAIM:56C971320BE0EE4CB1D9873B",
+      "CLAIM:5CC573CFC2C369EE5ABE4738",
+      "CLAIM:5CD1D5FFC5884D0CF14C42A8",
+      "CLAIM:64A07138A451C55650906D00",
+      "CLAIM:6A835B33FBB7314D7A2E3430",
+      "CLAIM:6AA16A62464C8F8AB675C842",
+      "CLAIM:75FEBF22B315BE845C409F12",
+      "CLAIM:7B7FC82E246BC9A5D6B61EEE",
+      "CLAIM:7C496DF5CEC2DF564539C571",
+      "CLAIM:8C2D80BB15B3129ED4118E33",
+      "CLAIM:8D2CB47C0A904E9FC859F454",
+      "CLAIM:96417889EEB865498377D9E0",
+      "CLAIM:9663C62C709D7F66529E4B04",
+      "CLAIM:9B8AFC1B9D13A98964C2C548",
+      "CLAIM:9E03759E548CEDA824AD63EE",
+      "CLAIM:9FC33B673A7A93C3F140B8A3",
+      "CLAIM:A4D88697EC12D178DF63CD84",
+      "CLAIM:BE0A415E613CFC2E064B1E0E",
+      "CLAIM:D43625C3237E3E99419D8FA6",
+      "CLAIM:D46B37D7E651370CF8F8F491",
+      "CLAIM:DD91C0950CE6BF043E90E69F",
+      "CLAIM:F2396DBC2CC1D80D33A52DD8"
+    ],
+    "condition_refs": [
+      "CONDITION:2FAF6D999E86CCF5EE275E19"
+    ],
+    "confidentiality_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "confirmed_impact": "Tác động được nhà cung cấp công bố trong mô tả; chưa kiểm thử độc lập.",
+    "created_at": "2026-11-25T02:26:51+00:00",
+    "cve_id": "CVE-2026-120993",
+    "cve_year": 2026,
+    "defensive_recommendations": [
+      "Lập inventory nội bộ, chọn bản sửa đúng nhánh và xác minh package/backport của distribution."
+    ],
+    "description": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "direct_impact": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "distribution_backports": [
+      "PACKAGE:7A33ECE84DC704B464AE0D15"
+    ],
+    "distribution_status": [
+      "PACKAGE:7A33ECE84DC704B464AE0D15"
+    ],
+    "documented_configuration_context": "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "documented_exclusions": [],
+    "documented_privilege_context": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "educational_summary": "Advisory CVE-2026-120993 ghi nhận: NULL pointer dereference when using PROXY protocol version 2. Phạm vi upstream: 1.31.4-1.31.8. Bản sửa được công bố: 1.31.9+.",
+    "entity_type": "Vulnerability",
+    "fixed_release_refs": [
+      "VERSION:NGINX-1.31.9"
+    ],
+    "fixed_versions": [
+      "VERSION:NGINX-1.31.9"
+    ],
+    "id": "CVE:CVE-2026-120993",
+    "impact_limitations": "Không suy diễn tác động cao hơn nguồn công bố.",
+    "impact_refs": [],
+    "integrity_impact": "Xem từng CVSS metric có authority; không hợp nhất điểm số.",
+    "last_modified_date": "2026-11-18T22:56:16.483000+00:00",
+    "last_verified_at": "2026-11-25T02:18:10+00:00",
+    "learning_objectives": [
+      "Truy vết phiên bản ảnh hưởng và bản vá đến nguồn gốc.",
+      "Phân biệt điều kiện công bố với giả định chưa xác minh."
+    ],
+    "name": "CVE-2026-120993",
+    "normal_component_behavior": "Cấu hình TLS cho stream proxy. Module được kích hoạt theo build và directive, không mặc nhiên tồn tại trong mọi deployment.",
+    "official_mitigation_refs": [],
+    "patch_refs": [],
+    "potential_impact": "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công.",
+    "publication_date": "2026-11-18T15:23:29.729000+00:00",
+    "publication_year": 2026,
+    "record_status": "PUBLISHED",
+    "reference_refs": [
+      "REFERENCE:8961C4A9579C0EE636A06D1A"
+    ],
+    "related_components": [
+      "COMPONENT:WORKER-PROCESS"
+    ],
+    "related_modules": [
+      "MODULE:NGX-STREAM-SSL-MODULE"
+    ],
+    "related_protocols": [
+      "PROTOCOL:TLS"
+    ],
+    "related_weaknesses": [
+      "WEAKNESS:CWE-476"
+    ],
+    "remediation_limitations": "Fixed release chỉ nói về CVE này, không bảo đảm release còn được hỗ trợ hoặc đã sửa mọi CVE.",
+    "root_cause_summary": "Nguồn phân loại vấn đề: NULL pointer dereference when using PROXY protocol version 2.\n\nCWE-476 — NULL pointer dereference: Truy cập qua con trỏ NULL.\n\nĐây là giải thích lớp lỗi theo CWE mà CNA gán, không phải kết luận về dòng mã gây lỗi. Chưa có source-code root cause review độc lập.",
+    "schema_version": "1.0.0",
+    "security_assumption_violated": "Đường lỗi không tiếp tục như đường thành công.",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "severity_refs": [
+      "SEVERITY:3DF722CEC93FF2FF66D64D3E",
+      "SEVERITY:4706B12B66A666D7FCC58B63",
+      "SEVERITY:5E3DBD0F3CF286848B38A5F6",
+      "SEVERITY:9460C3FA80C0E735548BC777",
+      "SEVERITY:D67D9F7ED54341FF19E20502"
+    ],
+    "source_refs": [
+      "EVIDENCE:0206251B65641BE80BA36DFC",
+      "EVIDENCE:3CC0404EA39658FA0655CA46",
+      "EVIDENCE:4E599CAE86F15FF5026E3991",
+      "EVIDENCE:560BEA50426173CC5A908966",
+      "EVIDENCE:80DC2AA591D473C96E47B58C",
+      "EVIDENCE:9B8801CD3322F16D81945ECA",
+      "EVIDENCE:DDDB33034C1112AB022A4848",
+      "EVIDENCE:F6857C92B501A144D475D010"
+    ],
+    "title": "NULL pointer dereference when using PROXY protocol version 2",
+    "unaffected_versions": [],
+    "unknown_conditions": [
+      "Nguồn đã thu thập chưa cung cấp đủ thông tin; cần rà soát thủ công."
+    ],
+    "unresolved_conflicts": [],
+    "unsupported_fields": [
+      "credits",
+      "source",
+      "workarounds",
+      "x_generator"
+    ],
+    "updated_at": "2026-11-25T02:45:01+00:00",
+    "upstream_affected_expression": "1.31.4-1.31.8",
+    "upstream_unaffected_expression": "1.31.9+",
+    "vendor_documented_conditions": [
+      "When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CVE:CVE-2026-120993",
+  "id": "HISTORY:902721A48D700D0C112FD3A4"
+}

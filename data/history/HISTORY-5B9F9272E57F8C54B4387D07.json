@@ -1,0 +1,31 @@
+{
+  "action": "created",
+  "after": {
+    "claim_refs": [
+      "CLAIM:98D2F0861660B9E80D94CEEB"
+    ],
+    "created_at": "2026-11-25T02:26:39+00:00",
+    "cve_ref": "CVE:CVE-2026-113425",
+    "description": "Trạng thái source package đúng release; không ánh xạ sang Ubuntu hoặc RPM.",
+    "distribution": "debian",
+    "ecosystem": "debian",
+    "entity_type": "DistributionPackage",
+    "fixed_version": "1.26.3-3+deb13u11",
+    "id": "PACKAGE:AB9DF45403A47E412463FA90",
+    "name": "nginx / Debian trixie / CVE-2026-113425",
+    "package_name": "nginx",
+    "patch_status": "fixed",
+    "product_id": "PRODUCT:NGINX-OSS",
+    "release": "trixie",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:1B3B812852663B6897D502E1"
+    ],
+    "updated_at": "2026-11-25T02:26:39+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:26:39+00:00",
+  "entity_id": "PACKAGE:AB9DF45403A47E412463FA90",
+  "id": "HISTORY:5B9F9272E57F8C54B4387D07"
+}

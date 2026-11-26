@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:71185AAC51F4C37A91B6EF2E",
+    "claim_value": "\"Connection state ↔ từng stream.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:32:19+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "id": "CLAIM:71185AAC51F4C37A91B6EF2E",
+    "name": "PROTOCOL:HTTP-2: security_boundary",
+    "predicate": "security_boundary",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BBB9F585CBA6A76D66F40DA5"
+    ],
+    "subject_entity_id": "PROTOCOL:HTTP-2",
+    "updated_at": "2026-11-25T02:32:19+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:19+00:00",
+  "entity_id": "CLAIM:71185AAC51F4C37A91B6EF2E",
+  "id": "HISTORY:9A0F6EE5C40E31076C75D808"
+}

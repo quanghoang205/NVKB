@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4",
+    "created_at": "2026-11-25T02:32:05+00:00",
+    "description": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "document_title": "Development guide",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:DA8FA63AD841F188DF0128A2",
+    "id": "EVIDENCE:DA8FA63AD841F188DF0128A2",
+    "local_snapshot_path": "data/raw/documentation/snapshots/c270149ea88f99b1bb590794bc208fe5b7e52193c3147fed9c51ad1487c576e4.html",
+    "name": "Development guide",
+    "paraphrase": "Bộ cấp phát nhóm các allocation có vòng đời gần nhau.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:18:16+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "Pool",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/dev/development_guide.html",
+    "updated_at": "2026-11-25T02:32:05+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:32:05+00:00",
+  "entity_id": "EVIDENCE:DA8FA63AD841F188DF0128A2",
+  "id": "HISTORY:90FBE4A3551CD660E0C04A32"
+}

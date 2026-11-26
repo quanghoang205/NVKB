@@ -1,0 +1,235 @@
+group: quic
+name: HTTP/3 và QUIC — stream, connection và identity
+shared_knowledge: [PROTOCOL:HTTP-3, PROTOCOL:QUIC, COMPONENT:MEMORY-POOL]
+knowledge:
+  - id: PROTOCOL:QUIC
+    name: QUIC — stream, connection và kiểm chứng địa chỉ
+    source: https://www.rfc-editor.org/rfc/rfc9000.html
+    locator: §2 Streams; §3 Stream States; §4 Flow Control; §8 Address Validation; §10 Connection Termination
+    excerpt: Streams in QUIC
+    source_fact: RFC 9000 định nghĩa stream có thứ tự byte riêng, flow control và address validation; stream không đồng nhất connection, và ordering của hai stream không được bảo đảm bởi QUIC.
+    prerequisites: [COMPONENT:CONNECTION-LIFECYCLE, PROTOCOL:TLS]
+    objectives: [Phân biệt owner của stream với owner connection., Giải thích address validation khác với identity của người dùng.]
+    body: |
+      ## Cơ chế bình thường
+
+      QUIC vận chuyển dữ liệu qua UDP nhưng cung cấp cho ứng dụng các byte stream có thứ tự. Byte của một stream được sắp xếp trong stream đó; thứ tự byte giữa các stream không có cùng bảo đảm. Điều này cho phép nhiều công việc tiến triển độc lập hơn khi một stream còn chờ dữ liệu. Flow control giới hạn dữ liệu mà bên nhận sẵn sàng lưu; nó không đồng nghĩa congestion control quyết định tải lên đường truyền.
+
+      ## Ownership và lifecycle
+
+      Stream có trạng thái gửi và nhận; connection giữ state vận chuyển chung lâu hơn một request đơn lẻ. Đóng stream, hủy công việc ứng dụng và kết thúc connection là ba sự kiện cần phối hợp. Trong giai đoạn closing/draining, endpoint không còn hoạt động như kết nối đang trao đổi bình thường, nhưng một phần state vẫn cần tồn tại theo quy tắc giao thức. Diễn giải implementation: callback đã xếp hàng không được dùng một context stream sau khi owner giải phóng nó, kể cả khi connection vẫn sống.
+
+      ## Identity và invariant
+
+      Address validation kiểm tra khả năng nhận gói tại địa chỉ mà peer sử dụng, hỗ trợ hạn chế amplification. Nó không chứng minh danh tính tài khoản và không cấp quyền ứng dụng. Connection ID phục vụ nhận diện connection, không nên bị dùng thay chứng cứ authorization. Khi deployment dựa vào địa chỉ nguồn cho policy, cần phân biệt địa chỉ quan sát, địa chỉ đã xác nhận và identity được ứng dụng xác thực.
+
+      ## Tradeoff và phòng vệ
+
+      Nhiều stream tăng khả năng ghép kênh nhưng cũng tăng số context, timer và buffer cần quản lý. Giới hạn stream và flow-control budget phải được xem cùng ngân sách worker. Tăng hiệu suất không loại bỏ nghĩa vụ kiểm state transition và cleanup. RFC mô tả giao thức; bài CVE mới xác định giới hạn của từng implementation. Không suy từ một lỗi HTTP/3 rằng UDP hay QUIC nói chung không an toàn.
+    assessment: Một connection vẫn mở có đủ để chứng minh con trỏ của request stream đã đóng còn hợp lệ không?
+    answer: Không. Lifetime của connection bao chứa nhiều stream nhưng không kéo dài tự động allocation riêng của stream; cần chứng cứ owner và cleanup.
+  - id: PROTOCOL:HTTP-3
+    name: HTTP/3 — message framing và stream chuyên biệt
+    source: https://www.rfc-editor.org/rfc/rfc9114.html
+    locator: §4.1 HTTP Message Framing; §6 Stream Mapping and Usage
+    excerpt: A client sends an HTTP request
+    source_fact: RFC 9114 ánh xạ mỗi request lên một client-initiated bidirectional QUIC stream; HEADERS và DATA có thứ tự hợp lệ, còn control stream có vai trò riêng.
+    prerequisites: [PROTOCOL:QUIC]
+    objectives: [Vẽ ranh giới HTTP message và QUIC stream., Phân biệt state request với state điều khiển dùng chung.]
+    body: |
+      ## Cơ chế và phân lớp
+
+      HTTP/3 sử dụng QUIC stream để mang HTTP message. HEADERS biểu diễn phần trường, DATA mang nội dung; trailer nếu có đánh dấu một phần khác của message. Parser cần giữ trạng thái để chấp nhận đúng thứ tự và xử lý việc dữ liệu đến từng phần. Ranh giới một gói UDP, một lần callback và một HTTP message không trùng nhau.
+
+      ## Ownership và state dùng chung
+
+      Request stream thuộc một công việc HTTP, trong khi control stream và cơ chế nén trường có trạng thái phục vụ nhiều trao đổi. Việc đóng request không cho phép tùy tiện hủy state connection mà request khác còn dùng. Ngược lại, giữ connection sống không cho phép tái sử dụng con trỏ request đã kết thúc. Mô hình này giải thích nhu cầu đọc bài memory pool trước khi phân tích use-after-free.
+
+      ## Invariant và tradeoff
+
+      Diễn giải: mọi byte được bàn giao cho upstream phải thuộc đúng body của request đang xét; trạng thái parser phải xác định liệu vùng buffer chứa message data hay control data. Buffering giúp tách tốc độ client và upstream nhưng đòi hỏi ghi nhận độ dài, ownership và điểm kết thúc chính xác. Không dùng việc message đi qua TLS để bỏ qua kiểm cấu trúc sau giải mã.
+
+      ## Nguyên tắc review
+
+      So sánh lifetime request, control stream và buffer khi đọc advisory. Với lỗi ở nén trường, tên encoder không tự chỉ ra hàm hay thuật toán cụ thể; nguồn chuẩn chỉ dạy cơ chế bình thường. Với lỗi address spoofing, đọc QUIC address validation và policy ứng dụng; với lỗi body injection, đọc ranh giới message/upstream. Các bài CVE không cung cấp traffic hay quy trình tái hiện.
+    assessment: Tại sao xác thực tính toàn vẹn của một kết nối vẫn chưa chứng minh các byte được gán đúng request?
+    answer: Bảo vệ vận chuyển và parsing ứng dụng là hai lớp; parser vẫn phải xác định đúng ownership, framing và trạng thái của message đã nhận.
+articles:
+  - cve: CVE-2024-24989
+    summary: NULL pointer dereference trong HTTP/3 được công bố có thể kết thúc worker. Phạm vi OSS rất hẹp ở 1.25.3, khác lỗi use-after-free được công bố cùng đợt.
+    architecture: HTTP/3 QUIC module tại worker; chưa biết hàm dereference hoặc đối tượng NULL.
+    normal: Callback chỉ truy cập context của stream/connection sau khi context được tạo và xác nhận hợp lệ.
+    mechanism: Advisory gọi lỗi NULL pointer dereference; nguồn CNA mô tả worker termination. Việc giả định một context luôn tồn tại là mô hình lỗi khái niệm, không xác định nhánh mã gây ra nó.
+    applicability: Build và cấu hình sử dụng HTTP/3 QUIC module; module không bật mặc định và được nguồn mô tả là experimental. Bài này dùng version scope OSS.
+    impact: Nguồn công bố worker processes có thể kết thúc, ảnh hưởng tính sẵn sàng.
+    potential: Không có chứng cứ trong mô tả đã đọc để xác nhận memory disclosure, RCE hay root compromise.
+    principle: Đặt điều kiện tồn tại của context trước truy cập và xử lý nhất quán lỗi khởi tạo.
+    defense: Rà soát inventory HTTP/3 và triển khai release có bản sửa; kiểm callback cleanup ở mức review thiết kế.
+    patch_note: Advisory chỉ nêu OSS 1.25.3 bị ảnh hưởng và fix 1.25.4+; không nhập khoảng 1.25.0–1.25.3 của CVE-2024-24990.
+    question: Vì sao cùng ngày công bố và cùng module không đủ để gộp version ranges?
+    answer: Hai lỗi có thời điểm được đưa vào phần mềm khác nhau; entry từng CVE mới quyết định phạm vi.
+    unknown: Chưa xác định object NULL, hàm lỗi hoặc mức gián đoạn toàn dịch vụ trong deployment.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2024-24990
+    summary: Use-after-free trong HTTP/3 có hậu quả worker termination được CNA mô tả; không chuyển tên lớp lỗi thành confirmed code execution.
+    architecture: State HTTP/3 trong worker; nguồn không chứng minh allocation nằm ở memory pool cụ thể.
+    normal: Đối tượng stream tồn tại đến khi mọi công việc sử dụng nó đã kết thúc hoặc bị hủy hợp lệ.
+    mechanism: Use-after-free là truy cập đối tượng sau khi lifetime kết thúc. Nguồn xác định lớp lỗi nhưng chưa chỉ ra cặp allocation/free hay callback liên quan.
+    applicability: NGINX sử dụng HTTP/3 QUIC module, không bật mặc định. Version table chỉ áp dụng OSS.
+    impact: CNA nêu khả năng kết thúc worker processes.
+    potential: Khả năng thực thi mã hoặc rò dữ liệu cho riêng CVE này chưa được nguồn mô tả xác nhận.
+    principle: Hủy mọi tham chiếu bất đồng bộ hoặc kéo dài ownership có kiểm soát trước khi giải phóng state.
+    defense: Dùng bản sửa và theo dõi thế hệ worker đang chạy; crash supervision không sửa lifetime violation.
+    patch_note: Khoảng affected 1.25.0–1.25.3; fix 1.25.4+. Không áp giới hạn 1.25.3 của lỗi NULL pointer cùng đợt.
+    question: Worker tự khởi động lại có đóng được lỗi use-after-free không?
+    answer: Không; đó là phục hồi tiến trình sau lỗi, còn đường truy cập bộ nhớ sai vẫn có thể tồn tại trong binary cũ.
+    unknown: Chưa biết callback, object ownership và khả năng tác động ngoài worker termination.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2024-31079
+    summary: Advisory nêu stack overflow và use-after-free trong HTTP/3; CNA liên hệ lỗi với connection draining. Tác động được công bố là worker termination và other potential impact chưa cụ thể.
+    architecture: HTTP/3 connection teardown trong worker; không suy root cause nằm ở memory pool chỉ từ từ khóa use-after-free.
+    normal: Draining là giai đoạn kết thúc connection có state riêng; cleanup cần phối hợp các công việc còn giữ tham chiếu.
+    mechanism: Advisory xác định hai lớp lỗi, còn CNA nêu context draining. Mô hình diễn giải là trách nhiệm dọn tài nguyên và tiếp tục callback không nhất quán; chưa có review call stack hoặc đường free cụ thể.
+    applicability: HTTP/3 QUIC module được sử dụng; CNA còn nêu điều kiện thời gian trong draining nằm ngoài khả năng quan sát và chịu ảnh hưởng hạn chế của tác nhân.
+    impact: Worker có thể kết thúc theo CNA và announcement.
+    potential: Other potential impact không được nguồn định lượng; không chuyển thành confirmed RCE.
+    principle: Kết thúc connection phải có thứ tự hủy state nhất quán với các callback còn chờ.
+    defense: Dùng bản sửa; review graceful shutdown và lifetime của đối tượng riêng với giới hạn concurrency.
+    patch_note: Fix 1.26.1/1.27.0; nguồn ghi 1.25.0–1.25.5 và 1.26.0 bị ảnh hưởng.
+    question: Vì sao draining không đồng nghĩa mọi bộ nhớ của connection được giải phóng ngay?
+    answer: Giao thức còn cần state cho giai đoạn kết thúc; phần nào còn sống phải tuân lifetime rõ ràng.
+    unknown: Chưa biết thứ tự callback, độ sâu stack hoặc hậu quả ngoài worker termination.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2024-32760
+    summary: Buffer overwrite trong HTTP/3 có thể kết thúc worker; CNA chỉ ra ngữ cảnh xử lý encoder instructions.
+    architecture: Đường HTTP/3 encoder instruction của worker; không gán vị trí lỗi chỉ từ từ khóa buffer.
+    normal: Bộ xử lý instruction cập nhật state liên quan đến mã hóa trường, với giới hạn buffer và state transition hợp lệ.
+    mechanism: Nguồn xác nhận overwrite, nhưng chưa chỉ ra phép tính kích thước hoặc cấu trúc bị ghi. Kiểm biên đích là invariant diễn giải.
+    applicability: NGINX sử dụng HTTP/3 QUIC; announcement yêu cầu build module và listener quic.
+    impact: Worker crash được công bố.
+    potential: CNA nêu tác động khác ở mức tiềm năng nhưng chưa xác định; không xác nhận RCE.
+    principle: Instruction hợp lệ về hình thức vẫn phải thỏa giới hạn state và vùng ghi đích.
+    defense: Cập nhật implementation HTTP/3; review phân biệt parsing, sizing và lifetime.
+    patch_note: 1.26.1/1.27.0 là ngưỡng sửa của hai nhánh trong advisory.
+    question: Có thể lấy tên buffer overwrite để kết luận allocator gây lỗi không?
+    answer: Không; nguồn chỉ mô tả phép ghi sai, chưa chỉ ra owner hoặc allocator.
+    unknown: Hàm xử lý instruction, allocation và tác động khác chưa được xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2024-34161
+    source_disagreements:
+      - predicate: mtu_boundary
+        statements:
+          - label: mtu_cna
+            source: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/34xxx/CVE-2024-34161.json
+            locator: /containers/cna/descriptions/0/value
+            excerpt: "4096"
+            value: Hạ tầng mạng hỗ trợ MTU ít nhất 4096 byte, không fragmentation, theo CNA.
+          - label: mtu_announcement
+            source: https://mailman.nginx.org/pipermail/nginx-announce/2024/GMY32CSHFH6VFTN76HJNX7WNEX4RLHF6.html
+            locator: pre, first paragraph, MTU boundary for CVE-2024-34161
+            excerpt: MTU larger than 4096
+            value: Hệ thống có MTU lớn hơn 4096 byte, theo announcement NGINX.
+    summary: HTTP/3 có thể tiết lộ bộ nhớ worker đã được giải phóng. CNA và announcement có khác biệt ở ranh giới MTU cần giữ để review.
+    architecture: Xử lý QUIC trong worker; nguồn không chỉ ra memory pool cụ thể.
+    normal: Byte gửi ra phải được khởi tạo và thuộc dữ liệu hợp lệ của trao đổi hiện hành, không là phần còn lại của allocation trước.
+    mechanism: Nguồn mô tả lộ bộ nhớ đã giải phóng; loại trừ dữ liệu cũ khỏi output là nguyên tắc phòng vệ, chưa là phân tích patch.
+    applicability: CNA ghi HTTP/3 QUIC và hạ tầng MTU từ 4096 trở lên không fragmentation; announcement ghi MTU lớn hơn 4096. Chính xác tại 4096 cần chuyên gia đối chiếu.
+    impact: Rò bộ nhớ worker đã giải phóng là tác động được CNA công bố.
+    potential: Loại bí mật thực sự có trong vùng nhớ và lượng lộ ra chưa biết; không suy thành toàn bộ credential hay quyền root.
+    principle: Chỉ phát các byte đã khởi tạo trong đúng miền output hợp lệ.
+    defense: Ưu tiên bản sửa; không coi thay đổi MTU chưa được vendor hướng dẫn là mitigation đã xác minh.
+    patch_note: Fix 1.26.1/1.27.0. Bất đồng ngưỡng MTU không làm thay đổi ngưỡng version được hai nguồn nêu.
+    question: Hai nguồn ghi greater than và greater than or equal có được hợp nhất im lặng không?
+    answer: Không; giữ cả hai scope và đánh dấu trường hợp biên chưa giải quyết.
+    unknown: Điều kiện chính xác tại MTU 4096, cấu trúc vùng nhớ và dữ liệu thực tế bị lộ chưa xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2024-35200
+    summary: NULL pointer dereference HTTP/3 có thể kết thúc worker; đây là lỗi riêng với khoảng affected rộng hơn CVE-2024-24989.
+    architecture: Xử lý HTTP/3 ở worker; chưa có bằng chứng về object NULL cụ thể.
+    normal: State mà handler sử dụng phải tồn tại và được kiểm tra sau các nhánh lỗi hoặc kết thúc request.
+    mechanism: Advisory phân loại NULL pointer dereference; không đủ dữ kiện xác định thiếu kiểm NULL ở hàm nào.
+    applicability: Build có module HTTP/3 và cấu hình sử dụng QUIC theo announcement.
+    impact: CNA công bố worker termination.
+    potential: Không có xác nhận tác động bí mật, toàn vẹn hoặc code execution trong mô tả đã đọc.
+    principle: Không coi state đã tồn tại ở callback trước là bảo đảm nó còn hợp lệ ở callback sau.
+    defense: Cập nhật bản sửa và kiểm chứng thế hệ worker; phục hồi process chỉ giảm thời gian gián đoạn.
+    patch_note: Advisory ghi 1.25.0–1.25.5 và 1.26.0; fix 1.26.1/1.27.0.
+    question: Hai lỗi NULL pointer có bắt buộc cùng root cause không?
+    answer: Không; lớp biểu hiện không chỉ ra lịch sử thay đổi, owner hoặc đường điều khiển.
+    unknown: Object, hàm và trạng thái trước dereference chưa được xác minh độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-40460
+    summary: Sai lệch địa chỉ nguồn trong HTTP/3 có thể ảnh hưởng authorization hoặc rate limiting dựa vào địa chỉ. Đây là vấn đề identity/context, không phải lỗi memory được suy từ cùng module.
+    architecture: QUIC peer address và policy sử dụng địa chỉ tại NGINX; vị trí implementation chưa được xác minh.
+    normal: Địa chỉ vận chuyển được xác nhận trong đúng connection context; ứng dụng phân biệt nó với identity tài khoản.
+    mechanism: CNA nêu address spoofing. Diễn giải là giá trị địa chỉ dùng cho quyết định policy không bảo toàn ý nghĩa peer; chưa xác định bước address validation sai.
+    applicability: NGINX có cấu hình HTTP/3 QUIC; CNA bao gồm OSS và Plus, version table tại đây chỉ OSS.
+    impact: CNA nêu khả năng bỏ qua authorization hoặc rate limiting dựa trên địa chỉ nguồn.
+    potential: Quyền ứng dụng, dữ liệu cụ thể và tác động trên policy không dựa IP là UNKNOWN.
+    principle: Không gộp transport address, address validation và application identity thành cùng một khái niệm.
+    defense: Vá implementation và rà soát policy phụ thuộc địa chỉ; xác thực ứng dụng là kiểm soát bổ sung, không chứng nhận lỗi QUIC đã hết.
+    patch_note: Fix 1.30.1/1.31.0; khoảng affected bắt đầu từ 1.25.0 theo advisory.
+    question: Một địa chỉ đã quan sát trên mạng có đủ để cấp quyền tài khoản không?
+    answer: Không; cần policy và chứng cứ identity tương ứng, riêng với address validation của transport.
+    unknown: Bước kiểm địa chỉ sai và tác động chính xác lên từng policy chưa được xác minh.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-42530
+    summary: Use-after-free ở HTTP/3 liên quan lifecycle QPACK encoder stream trong một khoảng release OSS hẹp.
+    architecture: State encoder stream dùng chung trong HTTP/3; không đồng nhất với bộ nhớ một request độc lập.
+    normal: Control/nén trường có state connection; cleanup và xử lý chuyển trạng thái phải không để tham chiếu tới allocation đã hết lifetime.
+    mechanism: CNA nêu use-after-free liên quan encoder stream. Mô hình phòng vệ là kiểm state transition và ownership, chưa phải phân tích mã thực thi.
+    applicability: NGINX Open Source sử dụng HTTP/3 QUIC; CNA còn nêu điều kiện ngoài kiểm soát của tác nhân. Không suy bản Plus nào bị ảnh hưởng từ tên NGINX chung.
+    impact: Worker có thể restart do use-after-free theo CNA.
+    potential: CNA nêu code execution có điều kiện liên quan hiệu lực ASLR. Không có xác nhận thực thi thành công hoặc quyền root.
+    principle: State connection còn sống không hợp thức hóa việc dùng lại state encoder đã bị hủy.
+    defense: Cập nhật release sửa, kiểm lifetime các stream điều khiển; ASLR là lớp giảm thiểu, không thay patch.
+    patch_note: Chỉ 1.31.0–1.31.1 trong entry upstream; fix 1.31.2+. Không mở rộng sang mọi HTTP/3 release.
+    question: Vì sao lifetime control stream khác lifetime request stream lại quan trọng cho review?
+    answer: Chúng có owner và phạm vi chia sẻ khác nhau; dọn state sai cấp có thể ảnh hưởng công việc còn dùng state.
+    unknown: Hàm và object bị giải phóng, hiệu lực mitigation thực tế chưa được kiểm chứng.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-90439
+    summary: Heap buffer overflow giới hạn khi HTTP/3 xử lý TLS handshake có liên hệ phiên bản OpenSSL theo CNA.
+    architecture: Ranh giới HTTP/3 và thư viện TLS trong worker; không có chứng cứ rằng đây là CVE độc lập của OpenSSL.
+    normal: Adapter TLS bàn giao dữ liệu theo dung lượng và lifetime buffer đã thỏa thuận; kết quả handshake không được vượt vùng nhớ đích.
+    mechanism: CNA công bố limited heap overflow trong handshake, phụ thuộc điều kiện không tất định. Ownership và dung lượng ở ranh giới thư viện là invariant cần review.
+    applicability: HTTP/3 với OpenSSL <=3.5.0 trong một số cấu hình theo CNA; điều kiện cấu hình đầy đủ chưa được công bố trong đoạn mô tả.
+    impact: Worker restart và/hoặc limited data corruption được nguồn nêu.
+    potential: Không khẳng định RCE từ heap overflow; nguồn của CVE này chỉ mô tả tác động giới hạn.
+    principle: Kiểm đồng thời contract của thư viện, dung lượng buffer và state handshake.
+    defense: Inventory phải gồm NGINX build và TLS library; bản sửa NGINX là remediation có chứng cứ, không suy chỉ đổi thư viện là đủ.
+    patch_note: Fix 1.30.5/1.31.6, affected 1.29.2–1.31.5 theo upstream.
+    question: Điều kiện phiên bản OpenSSL có chứng minh root cause nằm trong OpenSSL không?
+    answer: Không; điều kiện tương tác thư viện không xác định bên vi phạm contract.
+    unknown: Những cấu hình bổ sung, cấu trúc buffer và vị trí lỗi trong adapter chưa rõ.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-95101
+    summary: HTTP/3 có thể gán dữ liệu sai vào request được proxy khi request buffering bật.
+    architecture: HTTP/3 request body và đường proxy request trong data plane.
+    normal: Buffer body được gắn với đúng request và giới hạn message trước khi chuyển sang upstream.
+    mechanism: CNA xác nhận data injection vào proxied request; mô hình giải thích là ranh giới framing/ownership của body cần được duy trì xuyên buffering.
+    applicability: HTTP/3 với proxy_request_buffering on; CNA bao gồm OSS và Plus.
+    impact: Dữ liệu có thể bị đưa vào proxied request; CNA xác định data-plane issue.
+    potential: Hành vi ứng dụng upstream và dữ liệu bị thay đổi cụ thể là UNKNOWN; không xây dựng chuỗi tác động suy diễn.
+    principle: Buffering được phép đổi nhịp I/O, không được đổi chủ thể hoặc ranh giới message.
+    defense: Cập nhật bản sửa, kiểm contract parsing và forwarding. Không coi tắt buffering là mitigation chính thức khi chưa có nguồn xác nhận.
+    patch_note: Fix 1.30.6/1.31.7; khoảng affected bắt đầu ở 1.25.0.
+    question: Vì sao byte hợp lệ ở transport vẫn có thể sai ở upstream request?
+    answer: Transport bảo vệ trao đổi, còn HTTP implementation phải giữ đúng framing và ownership khi tạo request mới.
+    unknown: Cấu trúc buffer, đường tạo body và hậu quả ứng dụng chưa xác minh độc lập.
+    maturity: TECHNICAL_DRAFT
+  - cve: CVE-2026-121810
+    summary: Use-after-free HTTP/3 có thể restart worker; nguồn giữ code execution ở mức khả năng có điều kiện.
+    architecture: HTTP/3 state tại worker; không có bằng chứng đủ để gộp với encoder-stream CVE-2026-42530.
+    normal: Các tham chiếu tới context HTTP/3 chỉ được dùng khi owner còn sống, kể cả qua nhiều callback.
+    mechanism: CNA xác nhận lớp use-after-free nhưng không mô tả object hay đường cleanup. Điều kiện ngoài kiểm soát tác nhân vẫn là giới hạn cần giữ.
+    applicability: Cấu hình sử dụng HTTP/3; CNA nêu OSS và Plus và các điều kiện ngoài kiểm soát tác nhân.
+    impact: Restart worker/DoS và memory lifetime violation được CNA công bố.
+    potential: Code execution được CNA nêu có điều kiện liên quan ASLR; chưa được xác minh runtime, không đồng nghĩa root compromise.
+    principle: Quy tắc dọn tài nguyên phải phối hợp với mọi đường hoàn tất, lỗi và hủy request.
+    defense: Dùng release sửa và kiểm bằng chứng worker chạy binary mới; hardening không thay thế sửa lifetime.
+    patch_note: Fix 1.30.7/1.31.9, khoảng affected bắt đầu 1.25.0; không dùng khoảng hẹp của 42530.
+    question: Cùng use-after-free trong HTTP/3 có chứng minh hai CVE trùng nhau không?
+    answer: Không; cần đối chiếu đối tượng, commit và lịch sử release riêng trước khi kết luận trùng nguyên nhân.
+    unknown: Object, callback, patch correctness và tác động runtime còn chờ chuyên gia.
+    maturity: TECHNICAL_DRAFT

@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "5936fe338823909bfbd4e6fd7efd357d899488fb4bf24c1f7e582e36b90f3b5a",
+    "created_at": "2026-11-25T02:44:31+00:00",
+    "description": "Chuyển tiếp request đến SCGI server.",
+    "document_title": "Module ngx_http_scgi_module",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:D7461F17784B49277FF0F288",
+    "id": "EVIDENCE:D7461F17784B49277FF0F288",
+    "local_snapshot_path": "data/raw/documentation/snapshots/5936fe338823909bfbd4e6fd7efd357d899488fb4bf24c1f7e582e36b90f3b5a.html",
+    "name": "Module ngx_http_scgi_module",
+    "paraphrase": "Chuyển tiếp request đến SCGI server.",
+    "publisher": "NGINX / F5",
+    "retrieved_at": "2026-11-25T02:32:46+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "ngx_http_scgi_module; topic=MODULE:NGX-HTTP-SCGI-MODULE",
+    "source_refs": [],
+    "source_type": "technical_documentation",
+    "source_url": "https://nginx.org/en/docs/http/ngx_http_scgi_module.html",
+    "updated_at": "2026-11-25T02:44:31+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:31+00:00",
+  "entity_id": "EVIDENCE:D7461F17784B49277FF0F288",
+  "id": "HISTORY:8C070591EC876ADB1373719A"
+}

@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:CBD40807E6934B1FE475060C",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:DF4B10202FF103B4C9579426",
+    "claim_value": "\"CNA xác nhận over-read; không đủ dữ liệu để khẳng định cùng nhánh lỗi với 42934.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:26+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:664AF4C9941A1A284D028AE8"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:DF4B10202FF103B4C9579426",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "CVE:CVE-2026-48142: v1.3:mechanism",
+    "observed_at": "2026-11-25T05:24:27+00:00",
+    "predicate": "v1.3:mechanism",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:664AF4C9941A1A284D028AE8"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "CVE:CVE-2026-48142",
+    "updated_at": "2026-11-25T05:24:27+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:24:27+00:00",
+  "entity_id": "CLAIM:DF4B10202FF103B4C9579426",
+  "id": "HISTORY:B98DE4999008BE1A32EDB339"
+}

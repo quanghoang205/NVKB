@@ -1,0 +1,65 @@
+---
+entity_type: claim
+id: CLAIM:6D080EAE490D7AF6F7F5D301
+title: 'PROTOCOL:TCP: definition'
+verification_status: VERIFIED
+generated: true
+schema_version: 1.2.0
+aliases:
+- 'PROTOCOL:TCP: definition'
+tags:
+- nginx
+- claim
+- provenance
+---
+
+# PROTOCOL:TCP: definition
+
+`CLAIM:6D080EAE490D7AF6F7F5D301` · **CURRENT**
+
+## Nhận định
+
+Chủ thể: [[PROTOCOL-TCP|TCP]]. Predicate: `definition`.
+
+```json
+"Transport byte stream tin cậy, có thứ tự."
+```
+
+## Nguồn và phạm vi
+
+Authority: IETF / RFC Editor. IETF / RFC Editor
+
+[[EVIDENCE-9CB9359531A83E40EF3A2F04|RFC 9293: Transmission Control Protocol (TCP)]]
+
+Locator: EVIDENCE:9CB9359531A83E40EF3A2F04: Protocol overview and state machine; topic=PROTOCOL:TCP
+
+Phạm vi phiên bản: Legacy scope: consult evidence; not established for all releases
+
+## Kiểm chứng độc lập
+
+| Chiều kiểm chứng | Kết quả |
+| --- | --- |
+| Reference | AVAILABLE |
+| Hash nguồn | HASH_MATCH |
+| Trích xuất | NOT_CHECKED |
+| Nguồn hỗ trợ | NOT_REVIEWED |
+| Review | NOT_REVIEWED |
+| Loại suy luận | SOURCE_STATEMENT |
+| Legacy | VERIFIED — nhãn pipeline cũ |
+
+
+Legacy verification is ingestion provenance, not semantic or human approval.
+
+## Vòng đời
+
+Referenced in current read model; not a factual accuracy decision.
+
+Quan sát: 2026-11-25T02:44:18+00:00. Truy xuất: 2026-11-25T02:32:15+00:00.
+
+Hiệu lực từ: UNKNOWN; đến: UNKNOWN.
+
+Thay thế: Không ghi nhận.
+
+Được thay bởi: Không ghi nhận.
+
+[[Research-Library|Research Library]] · [[Learning-Library|Learning Library]]

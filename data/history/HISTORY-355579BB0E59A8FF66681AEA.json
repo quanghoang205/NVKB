@@ -1,0 +1,28 @@
+{
+  "action": "created",
+  "after": {
+    "content_hash": "22a1ef4da87c99edeb9b5e4b20dbd6f9488e0b46e289f7ac12080a66c09dbb8e",
+    "created_at": "2026-11-25T02:27:59+00:00",
+    "description": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "document_title": "CVE-2026-42055",
+    "entity_type": "Evidence",
+    "evidence_id": "EVIDENCE:37F199B99DBEA79229B4C468",
+    "id": "EVIDENCE:37F199B99DBEA79229B4C468",
+    "local_snapshot_path": "data/raw/vulnerability_lookup/snapshots/22a1ef4da87c99edeb9b5e4b20dbd6f9488e0b46e289f7ac12080a66c09dbb8e.json",
+    "name": "CVE-2026-42055",
+    "paraphrase": "Sản phẩm và phiên bản được CNA liệt kê.",
+    "publisher": "CIRCL mirror",
+    "retrieved_at": "2026-11-25T02:27:58+00:00",
+    "schema_version": "1.0.0",
+    "source_locator": "/containers/cna/affected",
+    "source_refs": [],
+    "source_type": "cve_record",
+    "source_url": "https://vulnerability.circl.lu/api/vulnerability/CVE-2026-42055",
+    "updated_at": "2026-11-25T02:27:59+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:27:59+00:00",
+  "entity_id": "EVIDENCE:37F199B99DBEA79229B4C468",
+  "id": "HISTORY:355579BB0E59A8FF66681AEA"
+}

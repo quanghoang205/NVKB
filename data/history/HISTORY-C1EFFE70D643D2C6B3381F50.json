@@ -1,0 +1,80 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:652AA62546E4FA80701C0058",
+      "CLAIM:B2BCEC45A91885F6062E4920",
+      "CLAIM:ABE30E8B10232D3991DC3301",
+      "CLAIM:20F3F5927117C88AD38978F2",
+      "CLAIM:C836D47AD98DF721CBEBD4F3",
+      "CLAIM:4039B39A32ABF021D2F51F06",
+      "CLAIM:17406CECD696950318D27299",
+      "CLAIM:AF6EA88FDE57BF989B481FFF"
+    ],
+    "created_at": "2026-11-25T02:33:02+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "description": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CWE",
+    "learning_objectives": [
+      "Giải thích CWE bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE",
+    "normal_behavior": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.2.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:9925DD082C49842C94D96D0D"
+    ],
+    "updated_at": "2026-11-25T04:12:57+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "architecture_position": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "claim_refs": [
+      "CLAIM:652AA62546E4FA80701C0058",
+      "CLAIM:B2BCEC45A91885F6062E4920",
+      "CLAIM:ABE30E8B10232D3991DC3301",
+      "CLAIM:20F3F5927117C88AD38978F2",
+      "CLAIM:C836D47AD98DF721CBEBD4F3",
+      "CLAIM:4039B39A32ABF021D2F51F06",
+      "CLAIM:17406CECD696950318D27299",
+      "CLAIM:AF6EA88FDE57BF989B481FFF"
+    ],
+    "created_at": "2026-11-25T02:33:02+00:00",
+    "defensive_principles": "Giữ nguồn, thời gian, phạm vi và trạng thái chưa biết cho từng nhận định.",
+    "definition": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "description": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "diagram": "",
+    "entity_type": "Component",
+    "failure_impact": "Ưu tiên hoặc kết luận trạng thái bản vá sai.",
+    "id": "CONCEPT:CWE",
+    "learning_objectives": [
+      "Giải thích CWE bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE",
+    "normal_behavior": "Taxonomy lớp yếu điểm phần mềm; một CWE không phải một sự kiện CVE cụ thể.",
+    "related_failure_classes": "Incorrect inference; stale metadata.",
+    "related_knowledge": [],
+    "safety_assumptions": "Không thay một loại bằng chứng bằng loại khác.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới giữa định danh, phân loại, đánh giá và quyết định vận hành.",
+    "source_refs": [
+      "EVIDENCE:9925DD082C49842C94D96D0D"
+    ],
+    "updated_at": "2026-11-25T02:44:33+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:57+00:00",
+  "entity_id": "CONCEPT:CWE",
+  "id": "HISTORY:C1EFFE70D643D2C6B3381F50"
+}

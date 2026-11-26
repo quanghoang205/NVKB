@@ -1,0 +1,40 @@
+{
+  "assertion_key": "ASSERTION:67FC3BCEFCE441C17CA3616A",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:646B78F60A69821F9008AAA1",
+  "claim_value": "\"## Early data và tradeoff\\n\\nResumption giúp giảm công việc handshake. 0-RTT còn giảm chờ trước khi gửi dữ liệu nhưng có vấn đề replay được RFC §8 xử lý riêng. Không suy ra 'đã mã hóa' thành 'chỉ xử lý một lần'. Ứng dụng cần xem tính chất thao tác trước khi cho phép early data; bài này không bật cấu hình hoặc tạo traffic kiểm thử.\\n\\nVí dụ giấy: đánh dấu ticket được cấp tại T1, policy thay đổi ở T2, connection mới ở T3. Liệt kê bằng chứng cần có để kết luận state ở T1 còn được chấp nhận đúng tại T3. Không có policy/version thì kết luận UNKNOWN. Câu hỏi mở gồm invalidation khi đổi cấu hình, đặc tính thư viện TLS và phạm vi shared cache thực tế.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T04:21:01+00:00",
+  "description": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "entity_type": "Claim",
+  "evidence_locator": "#section-2.2; #section-4.6.1; #section-8",
+  "evidence_refs": [
+    "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:646B78F60A69821F9008AAA1",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "COMPONENT:TLS-SESSION-LIFECYCLE: pilot_section:Early data và tradeoff",
+  "observed_at": "2026-11-25T04:21:01+00:00",
+  "predicate": "pilot_section:Early data và tradeoff",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read tls13 at #section-2.2; #section-4.6.1; #section-8; compared the statement with the documented mechanism. Mechanism is grounded in the cited section; examples, tradeoffs, invariant and assessment are authored interpretation, not vendor-confirmed facts. Human expert review pending.",
+  "review_reason": "Included in the current authored pilot; AI review is separate from temporal status.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T04:21:02+00:00",
+  "reviewer_id": "nvkb-v1.2-ai-curator",
+  "reviewer_notes": "Confidence is not a measured factual probability; see source_support_status and review metadata.",
+  "schema_version": "1.2.0",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:9BCA2F54CE3AA01B30718FD6"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "COMPONENT:TLS-SESSION-LIFECYCLE",
+  "updated_at": "2026-11-25T04:21:02+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "RFC 8446 TLS 1.3 (2018)"
+}

@@ -1,0 +1,81 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:9EE816BEAEFBE139F943A920",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:7F538B18B1504867F91EABE8",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nChuyển mã tại proxy giúp tương thích client nhưng tốn CPU, buffer và tăng state filter. Chuẩn hóa encoding ở upstream có thể đơn giản vận hành, song không chứng minh parser cũ đã an toàn. Review từ source response đến output sau chuyển đổi; chỉ gán applicability từng CVE khi CNA nêu đúng cấu hình. Không suy từ buffer over-read rằng byte đã đọc nhất thiết đến client.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:16+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_locator": "Introduction;",
+    "evidence_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7F538B18B1504867F91EABE8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:24:17+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "AVAILABLE",
+    "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "AI_REVIEWED",
+    "reviewed_at": "2026-11-25T05:24:17+00:00",
+    "reviewer_id": "nvkb-v1.3-ai-curator",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "source_support_status": "PARTIAL",
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Document snapshot 2026-11-25T02:32:46+00:00; CVE versions are scoped separately."
+  },
+  "before": {
+    "assertion_key": "ASSERTION:9EE816BEAEFBE139F943A920",
+    "authority": "NVKB AI curation",
+    "claim_id": "CLAIM:7F538B18B1504867F91EABE8",
+    "claim_value": "\"## Tradeoff và phòng vệ\\n\\nChuyển mã tại proxy giúp tương thích client nhưng tốn CPU, buffer và tăng state filter. Chuẩn hóa encoding ở upstream có thể đơn giản vận hành, song không chứng minh parser cũ đã an toàn. Review từ source response đến output sau chuyển đổi; chỉ gán applicability từng CVE khi CNA nêu đúng cấu hình. Không suy từ buffer over-read rằng byte đã đọc nhất thiết đến client.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:24:16+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:7F538B18B1504867F91EABE8",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "MODULE:NGX-HTTP-CHARSET-MODULE: v1.3:knowledge:Tradeoff và phòng vệ",
+    "observed_at": "2026-11-25T05:24:17+00:00",
+    "predicate": "v1.3:knowledge:Tradeoff và phòng vệ",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E127D95D2D770043E3AAD29B"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "MODULE:NGX-HTTP-CHARSET-MODULE",
+    "updated_at": "2026-11-25T05:24:17+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T05:24:17+00:00",
+  "entity_id": "CLAIM:7F538B18B1504867F91EABE8",
+  "id": "HISTORY:2BDA5B892E1CE0B6F42261D8"
+}

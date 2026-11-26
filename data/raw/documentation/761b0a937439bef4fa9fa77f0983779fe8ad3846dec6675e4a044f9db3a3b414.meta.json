@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:32:53+00:00",
+  "content_hash": "ed89e4d203daa411862d29723cd87bc85f8d603957a5becc7edf0878758896fe",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"6b05ac73-a77\"",
+  "last_modified": "Tue, 24 Nov 2026 15:25:39 GMT",
+  "local_snapshot_path": "data/raw/documentation/snapshots/ed89e4d203daa411862d29723cd87bc85f8d603957a5becc7edf0878758896fe.html",
+  "retrieved_at": "2026-11-25T02:32:53+00:00",
+  "source_url": "https://nginx.org/en/docs/mail/ngx_mail_proxy_module.html"
+}

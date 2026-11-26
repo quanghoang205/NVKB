@@ -1,0 +1,59 @@
+{
+  "action": "modified",
+  "after": {
+    "architecture_position": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "claim_refs": [
+      "CLAIM:3DEB79AA46C1BD0D874FC17A",
+      "CLAIM:A7E74D3787C72852B343470C",
+      "CLAIM:B4A7CCDBF35B61B3A5277CAB",
+      "CLAIM:C1A7347DA287C62E796C4FFD",
+      "CLAIM:96454F659377CA29AF45B8BF",
+      "CLAIM:DB4AAA7A1BB0521D31B32D18",
+      "CLAIM:AB01914CC118781E202D71FA",
+      "CLAIM:6161E52695D8475ECADCE557"
+    ],
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "cwe_id": "CWE-93",
+    "defensive_principles": "Dùng encoder theo giao thức và kiểm tra giá trị không được chứa dấu phân cách.",
+    "definition": "Không xử lý đúng ký tự phân cách CR/LF khi tạo dữ liệu có cấu trúc dòng.",
+    "description": "Không xử lý đúng ký tự phân cách CR/LF khi tạo dữ liệu có cấu trúc dòng.",
+    "diagram": "",
+    "entity_type": "Weakness",
+    "failure_impact": "Tác động phụ thuộc lớp lỗi và context triển khai; chỉ khẳng định tác động cụ thể khi advisory tương ứng công bố.",
+    "id": "WEAKNESS:CWE-93",
+    "learning_objectives": [
+      "Giải thích CWE-93 — CRLF Injection bằng cơ chế và ranh giới tin cậy.",
+      "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+    ],
+    "name": "CWE-93 — CRLF Injection",
+    "normal_behavior": "Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần tự hóa.",
+    "related_failure_classes": "CRLF Injection",
+    "related_knowledge": [],
+    "safety_assumptions": "Dữ liệu và ký tự điều khiển framing phải được phân biệt khi tuần tự hóa.",
+    "schema_version": "1.0.0",
+    "security_boundary": "Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.",
+    "source_refs": [
+      "EVIDENCE:D6FC4E12FED72955B93B5303",
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "updated_at": "2026-11-25T02:49:02+00:00",
+    "verification_status": "INFERRED"
+  },
+  "before": {
+    "created_at": "2026-11-25T02:27:40+00:00",
+    "cwe_id": "CWE-93",
+    "description": "CWE-93 Improper Neutralization of CRLF Sequences ('CRLF Injection')",
+    "entity_type": "Weakness",
+    "id": "WEAKNESS:CWE-93",
+    "name": "CWE-93",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:F6B37E93E32E5B5F09F042E3"
+    ],
+    "updated_at": "2026-11-25T02:27:40+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "changed_at": "2026-11-25T02:49:02+00:00",
+  "entity_id": "WEAKNESS:CWE-93",
+  "id": "HISTORY:D7F27353DC19C12255270373"
+}

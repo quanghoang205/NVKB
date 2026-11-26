@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-25T02:26:32+00:00",
+  "content_hash": "2d1077d05f0581537e5b40af0a2156c79dab59a19cf20875da3227810eb6d0db",
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null,
+  "local_snapshot_path": "data/raw/distribution/snapshots/2d1077d05f0581537e5b40af0a2156c79dab59a19cf20875da3227810eb6d0db.html",
+  "retrieved_at": "2026-11-25T02:26:32+00:00",
+  "source_url": "https://security-tracker.debian.org/tracker/CVE-2024-7347"
+}

@@ -1,0 +1,30 @@
+{
+  "action": "created",
+  "after": {
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:41CBDFC8DE50ABE687C83AFB",
+    "claim_value": "\"Sequence number, acknowledgement và cơ chế truyền lại duy trì byte stream; ứng dụng vẫn phải tự phân định thông điệp.\"",
+    "confidence": 1.0,
+    "created_at": "2026-11-25T02:44:18+00:00",
+    "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "id": "CLAIM:41CBDFC8DE50ABE687C83AFB",
+    "name": "PROTOCOL:TCP: normal_behavior",
+    "predicate": "normal_behavior",
+    "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:9CB9359531A83E40EF3A2F04"
+    ],
+    "subject_entity_id": "PROTOCOL:TCP",
+    "updated_at": "2026-11-25T02:44:18+00:00",
+    "verification_status": "VERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T02:44:18+00:00",
+  "entity_id": "CLAIM:41CBDFC8DE50ABE687C83AFB",
+  "id": "HISTORY:4EF05B761558A098DA6F2027"
+}

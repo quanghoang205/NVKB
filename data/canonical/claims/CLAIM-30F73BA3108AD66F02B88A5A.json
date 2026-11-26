@@ -1,0 +1,43 @@
+{
+  "assertion_key": "ASSERTION:667E5FF6158765B6CB9C7689",
+  "authority": "IETF / RFC Editor",
+  "authority_scope": "IETF / RFC Editor",
+  "claim_id": "CLAIM:30F73BA3108AD66F02B88A5A",
+  "claim_value": "\"Client và server trao đổi trạng thái phiên, lệnh và dữ liệu thư; parser phân biệt rõ chế độ command với dữ liệu.\"",
+  "confidence": 1.0,
+  "created_at": "2026-11-25T02:32:25+00:00",
+  "description": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "disposition_reason": "HISTORICAL_GENERATION",
+  "entity_type": "Claim",
+  "evidence_locator": "EVIDENCE:50A866E441A4800F7F11E38E: Protocol overview and state machine",
+  "evidence_refs": [
+    "EVIDENCE:50A866E441A4800F7F11E38E"
+  ],
+  "extraction_status": "NOT_CHECKED",
+  "id": "CLAIM:30F73BA3108AD66F02B88A5A",
+  "inference_type": "SOURCE_STATEMENT",
+  "legacy_verification_status": "VERIFIED",
+  "lifecycle_status": "HISTORICAL",
+  "name": "PROTOCOL:SMTP: normal_behavior",
+  "observation_key": "OBSERVATION:3B7299A1A7900C3E467E86D3",
+  "observed_at": "2026-11-25T02:32:25+00:00",
+  "predicate": "normal_behavior",
+  "product_scope": "PROTOCOL:SMTP",
+  "reference_availability": "AVAILABLE",
+  "retrieved_at": "2026-11-25T02:32:25+00:00",
+  "review_reason": "Same subject/predicate/value/authority is referenced in a later/current generation; retain observation.",
+  "review_status": "NOT_REVIEWED",
+  "reviewer_notes": "Diễn giải tiếng Việt từ tài liệu nguồn.",
+  "schema_version": "1.2.0",
+  "source_authority": "IETF / RFC Editor",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:50A866E441A4800F7F11E38E"
+  ],
+  "source_support_status": "NOT_REVIEWED",
+  "subject_entity_id": "PROTOCOL:SMTP",
+  "updated_at": "2026-11-25T04:12:32+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "VERIFIED",
+  "version_scope": "Legacy scope: consult evidence; not established for all releases"
+}

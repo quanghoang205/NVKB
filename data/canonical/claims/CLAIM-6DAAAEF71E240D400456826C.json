@@ -1,0 +1,42 @@
+{
+  "assertion_key": "ASSERTION:E456B349AA24893AEE193749",
+  "authority": "NVKB AI curation",
+  "claim_id": "CLAIM:6DAAAEF71E240D400456826C",
+  "claim_value": "\"## Invariant giữa hai bên\\n\\nDiễn giải: giá trị được proxy sử dụng và ý nghĩa backend gán cho cùng ClientHello phải tương thích trong phạm vi phiên bản giao thức. Metadata không phải chứng thư và không chứng minh quyền vào backend. Routing segmentation không nên dựa vào giả định rằng một biến parser có thể thay thế authentication ở đích.\"",
+  "confidence": 0.0,
+  "created_at": "2026-11-25T05:15:04+00:00",
+  "description": "Explicit authored review; no human approval or runtime verification.",
+  "entity_type": "Claim",
+  "evidence_locator": "Introduction;",
+  "evidence_refs": [
+    "EVIDENCE:4BA76FA5ED0E407DE3B76040"
+  ],
+  "extraction_status": "MATCHED",
+  "id": "CLAIM:6DAAAEF71E240D400456826C",
+  "inference_type": "INTERPRETATION",
+  "legacy_verification_status": "INFERRED",
+  "lifecycle_status": "CURRENT",
+  "name": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE: v1.3:knowledge:Invariant giữa hai bên",
+  "observed_at": "2026-11-25T05:15:04+00:00",
+  "predicate": "v1.3:knowledge:Invariant giữa hai bên",
+  "product_scope": "NGINX OSS research edition; broader source scope kept explicit",
+  "reference_availability": "AVAILABLE",
+  "review_rationale": "Read the cited snapshot section and compared the authored bounded statement. Source grounds the mechanism; ownership/invariant/teaching reasoning is author interpretation.",
+  "review_reason": "New source observation; source support is separate.",
+  "review_status": "AI_REVIEWED",
+  "reviewed_at": "2026-11-25T05:15:04+00:00",
+  "reviewer_id": "nvkb-v1.3-ai-curator",
+  "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+  "schema_version": "1.2.0",
+  "source_authority": "NGINX / F5",
+  "source_integrity": "HASH_MATCH",
+  "source_refs": [
+    "EVIDENCE:4BA76FA5ED0E407DE3B76040"
+  ],
+  "source_support_status": "PARTIAL",
+  "subject_entity_id": "MODULE:NGX-STREAM-SSL-PREREAD-MODULE",
+  "updated_at": "2026-11-25T05:15:04+00:00",
+  "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+  "verification_status": "INFERRED",
+  "version_scope": "Document snapshot 2026-11-25T02:32:56+00:00; CVE versions are scoped separately."
+}

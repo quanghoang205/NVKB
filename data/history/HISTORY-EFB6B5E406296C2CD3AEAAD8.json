@@ -1,0 +1,42 @@
+{
+  "action": "created",
+  "after": {
+    "assertion_key": "ASSERTION:EFAD5D49B9E0514A9540B311",
+    "authority": "IETF / RFC Editor",
+    "claim_id": "CLAIM:0AC20EBC0BAB98223B3F6567",
+    "claim_value": "\"RFC 9000 định nghĩa stream có thứ tự byte riêng, flow control và address validation; stream không đồng nhất connection, và ordering của hai stream không được bảo đảm bởi QUIC.\"",
+    "confidence": 0.0,
+    "created_at": "2026-11-25T05:08:31+00:00",
+    "description": "Explicit authored review; no human approval or runtime verification.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:0AC20EBC0BAB98223B3F6567",
+    "inference_type": "SOURCE_STATEMENT",
+    "legacy_verification_status": "UNVERIFIED",
+    "lifecycle_status": "CURRENT",
+    "name": "PROTOCOL:QUIC: v1.3:knowledge_fact",
+    "observed_at": "2026-11-25T05:08:31+00:00",
+    "predicate": "v1.3:knowledge_fact",
+    "reference_availability": "UNKNOWN",
+    "review_reason": "New source observation; source support is separate.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Explicit authored review; no human approval or runtime verification.",
+    "schema_version": "1.2.0",
+    "source_integrity": "NOT_CHECKED",
+    "source_refs": [
+      "EVIDENCE:E2199047E6281CFD9EC42B26"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "PROTOCOL:QUIC",
+    "updated_at": "2026-11-25T05:08:31+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "UNVERIFIED"
+  },
+  "before": null,
+  "changed_at": "2026-11-25T05:08:31+00:00",
+  "entity_id": "CLAIM:0AC20EBC0BAB98223B3F6567",
+  "id": "HISTORY:EFB6B5E406296C2CD3AEAAD8"
+}

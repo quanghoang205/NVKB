@@ -1,0 +1,72 @@
+{
+  "action": "modified",
+  "after": {
+    "assertion_key": "ASSERTION:30FD5D526F9A1CBC2E1C9FD5",
+    "authority": "MITRE CWE",
+    "authority_scope": "MITRE CWE",
+    "claim_id": "CLAIM:438875123DF87062EE3E12D9",
+    "claim_value": "\"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "disposition_reason": "CURRENT_REFERENCE",
+    "entity_type": "Claim",
+    "evidence_locator": "EVIDENCE:BF818BD2C0248E0A0E1C69B0: Description / Potential Mitigations; topic=WEAKNESS:CWE-120",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "extraction_status": "NOT_CHECKED",
+    "id": "CLAIM:438875123DF87062EE3E12D9",
+    "inference_type": "INTERPRETATION",
+    "legacy_verification_status": "INFERRED",
+    "lifecycle_status": "CURRENT",
+    "name": "WEAKNESS:CWE-120: architecture_position",
+    "observation_key": "OBSERVATION:17AB86BEAD8FA01247E435CD",
+    "observed_at": "2026-11-25T02:44:25+00:00",
+    "predicate": "architecture_position",
+    "product_scope": "WEAKNESS:CWE-120",
+    "reference_availability": "AVAILABLE",
+    "retrieved_at": "2026-11-25T02:32:32+00:00",
+    "review_reason": "Referenced in current read model; not a factual accuracy decision.",
+    "review_status": "NOT_REVIEWED",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.2.0",
+    "source_authority": "MITRE CWE",
+    "source_integrity": "HASH_MATCH",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "source_support_status": "NOT_REVIEWED",
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T04:12:35+00:00",
+    "verification_limitations": "Legacy verification is ingestion provenance, not semantic or human approval.",
+    "verification_status": "INFERRED",
+    "version_scope": "Legacy scope: consult evidence; not established for all releases"
+  },
+  "before": {
+    "authority": "MITRE CWE",
+    "claim_id": "CLAIM:438875123DF87062EE3E12D9",
+    "claim_value": "\"Ranh giới bộ nhớ, trạng thái hoặc quyền của phần mềm xử lý dữ liệu không tin cậy.\"",
+    "confidence": 0.8,
+    "created_at": "2026-11-25T02:44:25+00:00",
+    "description": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "entity_type": "Claim",
+    "evidence_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "id": "CLAIM:438875123DF87062EE3E12D9",
+    "name": "WEAKNESS:CWE-120: architecture_position",
+    "predicate": "architecture_position",
+    "reviewer_notes": "Tổng hợp sư phạm/phòng vệ; không phải kết luận CVE cụ thể từ nhà cung cấp.",
+    "schema_version": "1.0.0",
+    "source_refs": [
+      "EVIDENCE:BF818BD2C0248E0A0E1C69B0"
+    ],
+    "subject_entity_id": "WEAKNESS:CWE-120",
+    "updated_at": "2026-11-25T02:44:25+00:00",
+    "verification_status": "INFERRED"
+  },
+  "changed_at": "2026-11-25T04:12:35+00:00",
+  "entity_id": "CLAIM:438875123DF87062EE3E12D9",
+  "id": "HISTORY:EBD2DABB2DE05F078B5EA0AE"
+}

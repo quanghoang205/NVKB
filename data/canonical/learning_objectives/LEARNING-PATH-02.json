@@ -1,0 +1,45 @@
+{
+  "architecture_position": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+  "claim_refs": [
+    "CLAIM:0E7F6E71927C3DDA19CB8153",
+    "CLAIM:021E7BB8C6955CAA105977FF",
+    "CLAIM:9FAD044A7311C439E72F6824",
+    "CLAIM:4A9513B2CA4653A7AF9BC5CB",
+    "CLAIM:713C3F7316CFEBFDF83DEE99",
+    "CLAIM:1F1050FB0803B90F3A34EA72",
+    "CLAIM:4D38620EC93C833C014B3297",
+    "CLAIM:5458D1FD208D9265FB9BB467"
+  ],
+  "created_at": "2026-11-25T02:33:09+00:00",
+  "defensive_principles": "Sản phẩm học tập: bản đồ khái niệm, bảng claim/evidence và checklist xác minh bản vá từ inventory được cung cấp.",
+  "definition": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+  "description": "Lộ trình học có thứ tự từ cơ chế đến phân tích bằng chứng.",
+  "diagram": "",
+  "entity_type": "LearningObjective",
+  "failure_impact": "Kết luận nghiên cứu hoặc kế hoạch bản vá thiếu căn cứ.",
+  "id": "LEARNING:PATH-02",
+  "learning_objectives": [
+    "Giải thích Learning Path 02 — Memory Safety bằng cơ chế và ranh giới tin cậy.",
+    "Phân biệt dữ kiện từ nguồn với nhận định suy luận; truy vết bằng evidence."
+  ],
+  "name": "Learning Path 02 — Memory Safety",
+  "normal_behavior": "Đọc lần lượt các note liên quan; vẽ sơ đồ cơ chế, chọn một advisory có nguồn và ghi lại nhận định/giới hạn.",
+  "related_failure_classes": "Nhầm nguồn; nhầm sản phẩm; nhầm phiên bản.",
+  "related_knowledge": [
+    "COMPONENT:MEMORY-POOL",
+    "COMPONENT:CONNECTION-LIFECYCLE",
+    "WEAKNESS:CWE-125",
+    "WEAKNESS:CWE-787",
+    "WEAKNESS:CWE-416",
+    "WEAKNESS:CWE-415",
+    "WEAKNESS:CWE-190"
+  ],
+  "safety_assumptions": "Mọi kết luận phải có evidence phù hợp và không vượt quá dữ liệu nguồn.",
+  "schema_version": "1.2.0",
+  "security_boundary": "Phân biệt kiến thức cơ chế với kết luận áp dụng cho inventory cụ thể.",
+  "source_refs": [
+    "EVIDENCE:8E30599D1D514858A998A326"
+  ],
+  "updated_at": "2026-11-25T04:13:03+00:00",
+  "verification_status": "INFERRED"
+}
